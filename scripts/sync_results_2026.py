@@ -26,6 +26,7 @@ TEXT_FIXES = {
     "Liz-Helen L?chen": "Liz-Helen Løchen",
     "Alva Witnes Ertresv?g": "Alva Witnes Ertresvåg",
     "Bj?rnar Slettv?g": "Bjørnar Slettvåg",
+    "Kristian Fr?yen": "Kristian Frøyen",
     "Holmestrand maraton 5k": "Holmestrand maraton",
     "M ?pen": "M åpen",
 }
