@@ -175,6 +175,18 @@ def apply_defaults(df: pd.DataFrame, overrides: dict[tuple[str, str, str, str], 
     for column in ["event_name", "athlete_name", "category", "class_name", "raw_entry", "slack_name", "name_in_message"]:
         if column in working.columns:
             working[column] = working[column].fillna("").map(_fix_text)
+    if "notes" in working.columns:
+        working["notes"] = working["notes"].fillna("")
+
+        anders_mask = (
+            working["athlete_name"].eq("Anders Nordby")
+            & working["event_name"].eq("Milano Marathon")
+        )
+        fredrikstad_5k_mask = (
+            working["event_name"].eq("Fredrikstadløpet")
+            & working["distance"].eq("5 km")
+        )
+        working.loc[anders_mask | fredrikstad_5k_mask, "notes"] = ""
 
     derived_class_name = working["class_name"].fillna("")
     derived_class_name = derived_class_name.mask(derived_class_name.eq(""), working["category"].fillna(""))

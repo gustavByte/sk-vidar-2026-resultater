@@ -472,7 +472,7 @@ tbody tr:hover {
 }
 
 .result-card {
-  padding: 9px 10px;
+  padding: 7px 8px;
   border-bottom: 1px solid #e6dfd6;
   background: #fffdf9;
 }
@@ -481,32 +481,34 @@ tbody tr:hover {
   background: #fdfbf8;
 }
 
-.result-card-top,
-.result-card-row {
+.result-card-top {
   display: flex;
   justify-content: space-between;
-  gap: 10px;
-  align-items: baseline;
-}
-
-.result-card-top {
-  margin-bottom: 5px;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 2px;
 }
 
 .result-card-athlete {
   min-width: 0;
   display: grid;
-  gap: 2px;
+  gap: 1px;
 }
 
-.result-card-athlete strong,
+.result-card-name,
 .result-card-time {
-  font-size: 0.92rem;
+  font-size: 0.88rem;
   line-height: 1.1;
 }
 
-.result-card-time {
+.result-card-side {
+  display: flex;
+  align-items: center;
+  gap: 6px;
   flex: 0 0 auto;
+}
+
+.result-card-time {
   font-weight: 700;
   white-space: nowrap;
 }
@@ -514,29 +516,46 @@ tbody tr:hover {
 .result-card-meta,
 .result-card-note {
   color: var(--muted);
-  font-size: 0.77rem;
-  line-height: 1.3;
-}
-
-.result-card-row {
-  flex-wrap: wrap;
-  margin-top: 4px;
-  font-size: 0.78rem;
-}
-
-.result-card-row strong {
   font-size: 0.72rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  line-height: 1.2;
 }
 
-.result-card-splits span,
-.result-card-placement span {
+.result-card-inline,
+.result-card-splits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+.result-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 20px;
+  padding: 2px 6px;
+  border: 1px solid #e3dbd1;
+  border-radius: 999px;
+  background: #fff;
+  font-size: 0.71rem;
+  line-height: 1.05;
   white-space: nowrap;
 }
 
+.result-pill strong {
+  font-size: 0.62rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+}
+
+.result-pill--muted {
+  color: var(--muted);
+}
+
 .result-card-note {
-  margin-top: 5px;
+  margin-top: 4px;
 }
 
 .footer {
@@ -571,7 +590,7 @@ tbody tr:hover {
 @media (max-width: 720px) {
   .page {
     width: min(100%, calc(100% - 12px));
-    padding-top: 6px;
+    padding-top: 4px;
   }
 
   .toolbar-main,
@@ -581,49 +600,97 @@ tbody tr:hover {
   }
 
   .hero {
-    gap: 8px;
-    margin-bottom: 6px;
+    gap: 4px;
+    margin-bottom: 4px;
+  }
+
+  .eyebrow {
+    margin-bottom: 2px;
+    font-size: 0.62rem;
+  }
+
+  .hero h1 {
+    font-size: 1.2rem;
   }
 
   .hero-copy {
-    font-size: 0.8rem;
+    display: none;
   }
 
   .stats {
-    grid-template-columns: 1fr 1fr;
-    gap: 6px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 4px;
   }
 
   .stats div {
-    padding: 6px 8px;
+    padding: 4px 5px;
+  }
+
+  .stats dt {
+    font-size: 0.52rem;
+    letter-spacing: 0.05em;
+  }
+
+  .stats dd {
+    font-size: 0.82rem;
   }
 
   .workspace {
-    gap: 6px;
+    gap: 4px;
   }
 
   .week-panel {
-    padding: 8px;
+    padding: 6px;
   }
 
   .weeks-list {
     grid-auto-flow: column;
-    grid-auto-columns: minmax(220px, 1fr);
+    grid-auto-columns: minmax(162px, 1fr);
     overflow-x: auto;
-    padding-bottom: 2px;
+    padding-bottom: 1px;
   }
 
   .week-item {
     min-height: 100%;
+    padding: 5px 6px;
+  }
+
+  .week-date,
+  .week-count,
+  .week-balance,
+  .week-events {
+    font-size: 0.68rem;
+  }
+
+  .week-events {
+    display: none;
   }
 
   .toolbar {
-    padding: 7px 8px 6px;
+    padding: 5px 6px 4px;
+  }
+
+  .toolbar h2 {
+    font-size: 1.02rem;
+  }
+
+  .toolbar-meta {
+    margin-top: 2px;
+    font-size: 0.69rem;
   }
 
   .toolbar-filters,
   .mini-stats {
     grid-template-columns: 1fr;
+  }
+
+  .toolbar-filters {
+    grid-template-columns: minmax(0, 1fr) 96px;
+    align-items: end;
+  }
+
+  .field-events {
+    grid-column: 1 / -1;
   }
 
   .segmented {
@@ -633,14 +700,31 @@ tbody tr:hover {
   .segment {
     flex: 1 1 0;
     text-align: center;
+    padding: 6px 0;
+    font-size: 0.74rem;
   }
 
   .event-chip {
-    max-width: 168px;
+    max-width: 144px;
+    padding: 4px 7px;
+    font-size: 0.7rem;
   }
 
   .mini-stats {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 4px;
+  }
+
+  .mini-stats div {
+    padding: 4px 5px;
+  }
+
+  .mini-stats .label {
+    font-size: 0.5rem;
+  }
+
+  .mini-stats .value {
+    font-size: 0.72rem;
   }
 
   table {
@@ -649,5 +733,35 @@ tbody tr:hover {
 
   .results-cards {
     display: block;
+  }
+
+  .result-card {
+    padding: 5px 6px;
+  }
+
+  .result-card-name,
+  .result-card-time {
+    font-size: 0.8rem;
+  }
+
+  .result-card-meta,
+  .result-card-note {
+    font-size: 0.66rem;
+  }
+
+  .result-pill {
+    min-height: 18px;
+    padding: 1px 5px;
+    font-size: 0.66rem;
+  }
+
+  .result-pill strong {
+    font-size: 0.56rem;
+  }
+
+  .gender-pill {
+    min-width: 22px;
+    padding: 1px 5px;
+    font-size: 0.66rem;
   }
 }

@@ -69,11 +69,24 @@ def format_duration(seconds: float | int | None) -> str:
     total = float(seconds)
     sign = "-" if total < 0 else ""
     total = abs(total)
-    minutes = int(total // 60)
-    remainder = total - minutes * 60
+    hours = int(total // 3600)
+    minutes = int((total % 3600) // 60)
+    remainder = total - (hours * 3600 + minutes * 60)
 
     if abs(remainder - round(remainder)) < 0.005:
-        return f"{sign}{minutes}:{int(round(remainder)):02d}"
+        seconds_part = int(round(remainder))
+        if seconds_part == 60:
+            seconds_part = 0
+            minutes += 1
+            if minutes == 60:
+                minutes = 0
+                hours += 1
+        if hours:
+            return f"{sign}{hours}:{minutes:02d}:{seconds_part:02d}"
+        return f"{sign}{minutes}:{seconds_part:02d}"
+
+    if hours:
+        return f"{sign}{hours}:{minutes:02d}:{remainder:05.2f}"
     return f"{sign}{minutes}:{remainder:05.2f}"
 
 
