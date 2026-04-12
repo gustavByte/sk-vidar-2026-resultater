@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#a61e22" />
     <title>SK Vidar 2026 resultater</title>
-    <meta
-      name="description"
-      content="En enkel oversikt over SK Vidar langdistanseresultater i 2026, sortert per uke."
-    />
+    <meta name="description" content="Kompakt oversikt over SK Vidar-resultater i 2026, sortert per uke." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,16 +16,12 @@
     <script type="module" src="./app.js"></script>
   </head>
   <body>
-    <div class="backdrop"></div>
     <main class="page">
       <header class="hero">
-        <div class="eyebrow">SK Vidar 2026</div>
-        <div class="hero-copy">
+        <div>
+          <p class="eyebrow">SK Vidar 2026</p>
           <h1>Resultater pr. uke</h1>
-          <p>
-            En ren oversikt over klubbens langdistanselop med ukevis navigasjon, søk og en
-            database i bunnen for videre utvidelser.
-          </p>
+          <p class="hero-copy">Siste uke åpnes som standard. Filtrer raskt på kjønn, distanse og søk.</p>
         </div>
         <dl class="stats" aria-label="Sammendrag">
           <div>
@@ -40,37 +33,45 @@
             <dd id="stat-athletes">-</dd>
           </div>
           <div>
-            <dt>Løp</dt>
-            <dd id="stat-events">-</dd>
+            <dt>Kvinner</dt>
+            <dd id="stat-women">-</dd>
           </div>
           <div>
-            <dt>Uker</dt>
-            <dd id="stat-weeks">-</dd>
+            <dt>Menn</dt>
+            <dd id="stat-men">-</dd>
           </div>
         </dl>
       </header>
 
       <section class="workspace" aria-label="Resultater">
-        <aside class="panel weeks-panel">
-          <div class="panel-head">
-            <div>
-              <p class="panel-label">Uker</p>
-              <h2>Velg uke</h2>
-            </div>
-            <p class="panel-note">Siste uke ligger øverst.</p>
+        <aside class="week-panel">
+          <div class="week-panel-head">
+            <strong>Uker</strong>
+            <span>Siste øverst</span>
           </div>
           <div id="weeks-list" class="weeks-list" role="list"></div>
         </aside>
 
-        <section class="panel results-panel">
-          <div class="panel-head results-head">
-            <div>
-              <p class="panel-label">Detaljer</p>
-              <h2 id="selected-week-title">Laster...</h2>
-              <p id="selected-week-meta" class="panel-note"></p>
+        <section class="table-panel">
+          <div class="toolbar">
+            <div class="toolbar-main">
+              <div>
+                <h2 id="selected-week-title">Laster…</h2>
+                <p id="selected-week-meta" class="toolbar-meta"></p>
+              </div>
+              <div class="segmented" role="tablist" aria-label="Kjønn">
+                <button id="gender-all" class="segment is-active" type="button">Alle</button>
+                <button id="gender-women" class="segment" type="button">Kvinner</button>
+                <button id="gender-men" class="segment" type="button">Menn</button>
+              </div>
             </div>
-            <div class="filters">
-              <label class="field">
+
+            <div class="toolbar-filters">
+              <div class="field field-events">
+                <span>Løp</span>
+                <div id="event-filter" class="event-filter" role="tablist" aria-label="Løp"></div>
+              </div>
+              <label class="field field-search">
                 <span>Søk</span>
                 <input id="search-input" type="search" placeholder="Løper, løp eller notat" />
               </label>
@@ -79,34 +80,53 @@
                 <select id="distance-filter"></select>
               </label>
             </div>
-          </div>
 
-          <div class="mini-stats" id="selected-week-stats" aria-live="polite"></div>
+            <div class="mini-stats" id="selected-week-stats" aria-live="polite"></div>
+          </div>
 
           <div class="table-wrap">
             <table>
+              <colgroup>
+                <col class="col-athlete" />
+                <col class="col-gender" />
+                <col class="col-class" />
+                <col class="col-event" />
+                <col class="col-distance" />
+                <col class="col-time" />
+                <col class="col-split" />
+                <col class="col-split" />
+                <col class="col-delta" />
+                <col class="col-place" />
+                <col class="col-place" />
+                <col class="col-note" />
+              </colgroup>
               <thead>
                 <tr>
                   <th>Løper</th>
+                  <th>Kjønn</th>
+                  <th>Klasse</th>
                   <th>Løp</th>
                   <th>Distanse</th>
                   <th>Tid</th>
-                  <th>Split 1</th>
-                  <th>Split 2</th>
-                  <th>Diff</th>
+                  <th>5 km / split 1</th>
+                  <th>Siste del / split 2</th>
+                  <th>Splitt</th>
                   <th>Plass</th>
+                  <th>Kl.plass</th>
                   <th>Notat</th>
                 </tr>
               </thead>
               <tbody id="results-table"></tbody>
             </table>
+            <div id="results-cards" class="results-cards" aria-live="polite"></div>
           </div>
+
           <p id="empty-state" class="empty-state" hidden>Ingen treff i valgt uke.</p>
         </section>
       </section>
 
       <footer class="footer">
-        <span id="last-updated">Data oppdateres fra Excel og SQLite.</span>
+        <span id="last-updated">Data oppdateres fra arbeidsboken.</span>
         <a href="./data/sk_vidar_2026.sqlite">Last ned databasen</a>
       </footer>
     </main>
