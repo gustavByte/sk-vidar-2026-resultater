@@ -1,0 +1,5 @@
+Kilde: C:\Users\guzze\Documents\Python kode\Div beregininger\API resulater\Drammen 10k\drammen_10k_2026_resultater.xlsx
+Ark: SK Vidar
+Løp: Sparebank 1 SØR-NORGE Drammen10K
+Dato: 11.04.2026
+Import: alle fullførte 10 KM-rader fra arket SK Vidar
