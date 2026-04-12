@@ -245,14 +245,12 @@ function renderResultsCards(results) {
         <article class="result-card">
           <div class="result-card-top">
             <div class="result-card-athlete">
-              <strong class="result-card-name">${escapeHtml(row.athlete_name || "")}</strong>
-              <span class="result-card-meta">${escapeHtml(getEventLabel(row))}</span>
-            </div>
-            <div class="result-card-side">
               <span class="gender-pill">${displayValue(row.gender)}</span>
+              <strong class="result-card-name">${escapeHtml(row.athlete_name || "")}</strong>
               <div class="result-card-time">${escapeHtml(row.result_time_normalized || row.result_time_raw || "")}</div>
             </div>
           </div>
+          <div class="result-card-meta">${escapeHtml(getEventLabel(row))}</div>
           ${metaParts.length ? `<div class="result-card-inline">${metaParts.join("")}</div>` : ""}
           ${splitMarkup}
           ${noteMarkup}
