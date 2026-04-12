@@ -483,29 +483,24 @@ tbody tr:hover {
 
 .result-card-top {
   display: flex;
-  justify-content: space-between;
-  gap: 8px;
+  justify-content: flex-start;
+  gap: 6px;
   align-items: center;
   margin-bottom: 2px;
 }
 
 .result-card-athlete {
   min-width: 0;
-  display: grid;
-  gap: 1px;
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  flex-wrap: wrap;
 }
 
 .result-card-name,
 .result-card-time {
   font-size: 0.88rem;
   line-height: 1.1;
-}
-
-.result-card-side {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  flex: 0 0 auto;
 }
 
 .result-card-time {
@@ -739,9 +734,21 @@ tbody tr:hover {
     padding: 5px 6px;
   }
 
+  .result-card-top {
+    gap: 5px;
+  }
+
+  .result-card-athlete {
+    gap: 5px;
+  }
+
   .result-card-name,
   .result-card-time {
     font-size: 0.8rem;
+  }
+
+  .result-card-time {
+    margin-left: 0;
   }
 
   .result-card-meta,
