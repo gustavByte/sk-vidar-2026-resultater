@@ -9,6 +9,7 @@ Prosjektet er ryddet slik at filer ligger etter funksjon i stedet for alt i rotm
 - `data/input_resultater/` inneholder innsamlede tekst-, csv- og Excel-filer for nye resultater
 - `data/database/` inneholder SQLite-databasen som brukes av nettsiden
 - `data/stottefiler/` inneholder overganger og NM-oppfolging
+- `data/stottefiler/result_overrides_2026.csv` inneholder manuelle overstyringer for kjønn og klasse
 - `scripts/` inneholder Python-skript for oppdatering
 - `docs/` inneholder den publiserbare nettsiden og enkel dokumentasjon
 
@@ -18,6 +19,7 @@ Prosjektet er ryddet slik at filer ligger etter funksjon i stedet for alt i rotm
 2. Kjor `Oppdater delt oversikt 2026.bat` fra prosjektroten.
 3. Hent ferdig fil fra `data/delt_oversikt/`.
 4. Nettsiden blir oppdatert i `docs/` og databasen i `data/database/`.
+5. Hvis et lop mangler kjønn eller klasse, fyll det inn i `data/stottefiler/result_overrides_2026.csv`.
 
 ## Merknad
 

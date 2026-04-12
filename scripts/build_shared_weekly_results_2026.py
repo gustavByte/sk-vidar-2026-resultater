@@ -42,6 +42,9 @@ DISTANCE_ORDER = {
 EVENT_NAME_OVERRIDES = {
     "Bislett DS 5k": "Bislett distanseserie 2- 5K",
     "Bislett DS 10k": "Bislett distanseserie 2- 10K",
+    "Sparebank 1 S?R-NORGE Drammen10K": "Drammen10K",
+    "Sparebank 1 SØR-NORGE Drammen10K": "Drammen10K",
+    "Fredrikstadl?pet": "Fredrikstadløpet",
 }
 
 NOTE_REPLACEMENTS = {
@@ -173,6 +176,9 @@ def build_display_rows(df: pd.DataFrame) -> pd.DataFrame:
     working = df.copy()
     working = working[working["athlete_name"].notna()].copy()
 
+    gender_column = "gender" if "gender" in working.columns else "WA Kjønn"
+    class_column = "class_name" if "class_name" in working.columns else "category"
+
     working["published_date_sort"] = pd.to_datetime(working["published_date"], errors="coerce")
     working["week_sort"] = pd.to_numeric(working["week_number"], errors="coerce")
     working["Uke"] = working["week_number"].apply(lambda value: f"Uke {int(value)}" if pd.notna(value) else "")
@@ -185,6 +191,8 @@ def build_display_rows(df: pd.DataFrame) -> pd.DataFrame:
         .replace(EVENT_NAME_OVERRIDES)
     )
     working["Navn"] = working["athlete_name"].fillna("").astype(str).str.strip()
+    working["Kjønn"] = working[gender_column].fillna("").astype(str).str.strip()
+    working["Klasse"] = working[class_column].fillna("").astype(str).str.strip()
     working["Distanse"] = working["distance"].fillna("").astype(str).str.strip()
     working["Tid"] = (
         working["result_time_normalized"]
@@ -209,6 +217,8 @@ def build_display_rows(df: pd.DataFrame) -> pd.DataFrame:
             "Dato",
             "Løp",
             "Navn",
+            "Kjønn",
+            "Klasse",
             "Distanse",
             "Tid",
             "Plass",
@@ -228,8 +238,9 @@ def build_week_summary(df: pd.DataFrame) -> pd.DataFrame:
     working = df.copy()
     working = working[working["athlete_name"].notna()].copy()
     grouped = (
-        working.groupby(["week_number", "published_date"], dropna=False)
+        working.groupby(["week_number"], dropna=False)
         .agg(
+            published_date=("published_date", "max"),
             resultater=("athlete_name", "count"),
             lopere=("athlete_name", "nunique"),
             lop=(
@@ -329,12 +340,14 @@ def write_dataframe_with_table(ws, df: pd.DataFrame, start_row: int, table_name:
     widths = {
         1: 12,
         2: 14,
-        3: 32,
-        4: 28,
-        5: 14,
-        6: 14,
-        7: 10,
-        8: 36,
+        3: 30,
+        4: 24,
+        5: 10,
+        6: 16,
+        7: 14,
+        8: 14,
+        9: 10,
+        10: 34,
     }
     for col_idx, width in widths.items():
         ws.column_dimensions[get_column_letter(col_idx)].width = width

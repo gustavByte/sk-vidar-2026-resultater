@@ -13,6 +13,11 @@ INPUT_RESULTATER_DIR = DATA_DIR / "input_resultater"
 STOTTEFILER_DIR = DATA_DIR / "stottefiler"
 OVERGANGER_DIR = STOTTEFILER_DIR / "overganger"
 NM_UTOVERE_DIR = STOTTEFILER_DIR / "nm_utovere_oppfolging"
+OVERRIDES_FILE = STOTTEFILER_DIR / "result_overrides_2026.csv"
+MISSING_REPORT_FILE = DATA_DIR / "database" / "missing_gender_class_2026.csv"
 
 WEEKLY_RESULTS_FILE = ARBEIDSFILER_DIR / "weekly_results_2026.xlsx"
 SHARED_OVERVIEW_FILE = DELT_OVERSIKT_DIR / "SK Vidar Langdistanse 2026.xlsx"
+DRAMMEN_RESULTS_FILE = (
+    ROOT_DIR.parent.parent / "Div beregininger" / "API resulater" / "Drammen 10k" / "drammen_10k_2026_resultater.xlsx"
+)
