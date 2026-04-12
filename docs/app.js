@@ -185,6 +185,10 @@ function displayValue(value) {
   return value ? escapeHtml(value) : "—";
 }
 
+function hasValue(value) {
+  return value !== null && value !== undefined && String(value).trim() !== "";
+}
+
 function renderResultsTable(results) {
   els.resultsTable.innerHTML = results
     .map((row) => {
@@ -218,12 +222,19 @@ function renderResultsTable(results) {
 function renderResultsCards(results) {
   els.resultsCards.innerHTML = results
     .map((row) => {
+      const metaParts = [
+        hasValue(row.distance) ? `<span class="result-pill">${escapeHtml(row.distance)}</span>` : "",
+        hasValue(row.class_name) ? `<span class="result-pill">${escapeHtml(row.class_name)}</span>` : "",
+        hasValue(row.place) ? `<span class="result-pill">#${escapeHtml(row.place)}</span>` : "",
+        hasValue(row.class_place) ? `<span class="result-pill result-pill--muted">Kl ${escapeHtml(row.class_place)}</span>` : "",
+      ].filter(Boolean);
+
       const splitMarkup = row.split_first_display || row.split_second_display || row.split_delta_display
         ? `
-          <div class="result-card-row result-card-splits">
-            <span><strong>${escapeHtml(row.split_first_label || "Split 1")}</strong> ${displayValue(row.split_first_display)}</span>
-            <span><strong>${escapeHtml(row.split_second_label || "Split 2")}</strong> ${displayValue(row.split_second_display)}</span>
-            <span class="split-delta ${splitClass(row)}"><strong>Splitt</strong> ${displayValue(row.split_delta_display)}</span>
+          <div class="result-card-splits">
+            ${hasValue(row.split_first_display) ? `<span class="result-pill"><strong>${escapeHtml(row.split_first_label || "Split 1")}</strong>${escapeHtml(row.split_first_display)}</span>` : ""}
+            ${hasValue(row.split_second_display) ? `<span class="result-pill"><strong>${escapeHtml(row.split_second_label || "Split 2")}</strong>${escapeHtml(row.split_second_display)}</span>` : ""}
+            ${hasValue(row.split_delta_display) ? `<span class="result-pill split-delta ${splitClass(row)}"><strong>Splitt</strong>${escapeHtml(row.split_delta_display)}</span>` : ""}
           </div>
         `
         : "";
@@ -234,21 +245,16 @@ function renderResultsCards(results) {
         <article class="result-card">
           <div class="result-card-top">
             <div class="result-card-athlete">
-              <strong>${escapeHtml(row.athlete_name || "")}</strong>
+              <strong class="result-card-name">${escapeHtml(row.athlete_name || "")}</strong>
               <span class="result-card-meta">${escapeHtml(getEventLabel(row))}</span>
             </div>
-            <div class="result-card-time">${escapeHtml(row.result_time_normalized || row.result_time_raw || "")}</div>
+            <div class="result-card-side">
+              <span class="gender-pill">${displayValue(row.gender)}</span>
+              <div class="result-card-time">${escapeHtml(row.result_time_normalized || row.result_time_raw || "")}</div>
+            </div>
           </div>
-          <div class="result-card-row">
-            <span class="gender-pill">${displayValue(row.gender)}</span>
-            <span>${displayValue(row.class_name)}</span>
-            <span>${displayValue(row.distance)}</span>
-          </div>
+          ${metaParts.length ? `<div class="result-card-inline">${metaParts.join("")}</div>` : ""}
           ${splitMarkup}
-          <div class="result-card-row result-card-placement">
-            <span><strong>Plass</strong> ${displayValue(row.place)}</span>
-            <span><strong>Kl.</strong> ${displayValue(row.class_place)}</span>
-          </div>
           ${noteMarkup}
         </article>
       `;
