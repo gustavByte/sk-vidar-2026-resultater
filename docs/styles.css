@@ -697,14 +697,16 @@ tbody tr:hover {
   }
 
   .segmented {
-    width: 100%;
+    width: auto;
+    max-width: 100%;
+    align-self: flex-start;
   }
 
   .segment {
-    flex: 1 1 0;
+    flex: 0 0 auto;
     text-align: center;
-    padding: 6px 0;
-    font-size: 0.74rem;
+    padding: 4px 8px;
+    font-size: 0.7rem;
   }
 
   .event-chip {
@@ -743,11 +745,15 @@ tbody tr:hover {
   }
 
   .result-card-top {
-    gap: 5px;
+    gap: 4px;
   }
 
   .result-card-athlete {
-    gap: 5px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    flex-wrap: nowrap;
+    overflow: hidden;
   }
 
   .result-card-name,
@@ -755,8 +761,17 @@ tbody tr:hover {
     font-size: 0.8rem;
   }
 
+  .result-card-name {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex: 0 1 auto;
+  }
+
   .result-card-time {
     margin-left: 0;
+    flex: 0 0 auto;
   }
 
   .result-card-meta,
@@ -797,7 +812,8 @@ tbody tr:hover {
 
   .result-card-time {
     min-height: 20px;
-    padding: 1px 6px;
-    font-size: 0.74rem;
+    padding: 1px 4px;
+    font-size: 0.7rem;
+    border-radius: 6px;
   }
 }
