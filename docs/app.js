@@ -70,14 +70,21 @@ function getEventLabel(row) {
 }
 
 function getWeekEvents(weekNumber) {
-  const events = new Set();
+  const counts = new Map();
   getWeekResults(weekNumber).forEach((row) => {
     const eventName = getEventLabel(row);
     if (eventName) {
-      events.add(eventName);
+      counts.set(eventName, (counts.get(eventName) || 0) + 1);
     }
   });
-  return Array.from(events).sort((a, b) => a.localeCompare(b, "nb-NO"));
+  return Array.from(counts.entries())
+    .sort((a, b) => {
+      if (b[1] !== a[1]) {
+        return b[1] - a[1];
+      }
+      return a[0].localeCompare(b[0], "nb-NO");
+    })
+    .map(([eventName]) => eventName);
 }
 
 function renderStats() {

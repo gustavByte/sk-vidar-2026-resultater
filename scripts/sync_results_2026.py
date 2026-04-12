@@ -24,6 +24,8 @@ TEXT_FIXES = {
     "Fredrikstadl?pet": "Fredrikstadløpet",
     "J?rgen Korum": "Jørgen Korum",
     "Liz-Helen L?chen": "Liz-Helen Løchen",
+    "Alva Witnes Ertresv?g": "Alva Witnes Ertresvåg",
+    "Bj?rnar Slettv?g": "Bjørnar Slettvåg",
     "M ?pen": "M åpen",
 }
 
