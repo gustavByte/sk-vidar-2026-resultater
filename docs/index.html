@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="no">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#a61e22" />
+    <title>SK Vidar 2026 resultater</title>
+    <meta
+      name="description"
+      content="En enkel oversikt over SK Vidar langdistanseresultater i 2026, sortert per uke."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./app.js"></script>
+  </head>
+  <body>
+    <div class="backdrop"></div>
+    <main class="page">
+      <header class="hero">
+        <div class="eyebrow">SK Vidar 2026</div>
+        <div class="hero-copy">
+          <h1>Resultater pr. uke</h1>
+          <p>
+            En ren oversikt over klubbens langdistanselop med ukevis navigasjon, søk og en
+            database i bunnen for videre utvidelser.
+          </p>
+        </div>
+        <dl class="stats" aria-label="Sammendrag">
+          <div>
+            <dt>Resultater</dt>
+            <dd id="stat-results">-</dd>
+          </div>
+          <div>
+            <dt>Løpere</dt>
+            <dd id="stat-athletes">-</dd>
+          </div>
+          <div>
+            <dt>Løp</dt>
+            <dd id="stat-events">-</dd>
+          </div>
+          <div>
+            <dt>Uker</dt>
+            <dd id="stat-weeks">-</dd>
+          </div>
+        </dl>
+      </header>
+
+      <section class="workspace" aria-label="Resultater">
+        <aside class="panel weeks-panel">
+          <div class="panel-head">
+            <div>
+              <p class="panel-label">Uker</p>
+              <h2>Velg uke</h2>
+            </div>
+            <p class="panel-note">Siste uke ligger øverst.</p>
+          </div>
+          <div id="weeks-list" class="weeks-list" role="list"></div>
+        </aside>
+
+        <section class="panel results-panel">
+          <div class="panel-head results-head">
+            <div>
+              <p class="panel-label">Detaljer</p>
+              <h2 id="selected-week-title">Laster...</h2>
+              <p id="selected-week-meta" class="panel-note"></p>
+            </div>
+            <div class="filters">
+              <label class="field">
+                <span>Søk</span>
+                <input id="search-input" type="search" placeholder="Løper, løp eller notat" />
+              </label>
+              <label class="field">
+                <span>Distanse</span>
+                <select id="distance-filter"></select>
+              </label>
+            </div>
+          </div>
+
+          <div class="mini-stats" id="selected-week-stats" aria-live="polite"></div>
+
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Løper</th>
+                  <th>Løp</th>
+                  <th>Distanse</th>
+                  <th>Tid</th>
+                  <th>Split 1</th>
+                  <th>Split 2</th>
+                  <th>Diff</th>
+                  <th>Plass</th>
+                  <th>Notat</th>
+                </tr>
+              </thead>
+              <tbody id="results-table"></tbody>
+            </table>
+          </div>
+          <p id="empty-state" class="empty-state" hidden>Ingen treff i valgt uke.</p>
+        </section>
+      </section>
+
+      <footer class="footer">
+        <span id="last-updated">Data oppdateres fra Excel og SQLite.</span>
+        <a href="./data/sk_vidar_2026.sqlite">Last ned databasen</a>
+      </footer>
+    </main>
+  </body>
+</html>
