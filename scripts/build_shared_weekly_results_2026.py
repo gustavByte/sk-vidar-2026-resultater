@@ -45,6 +45,7 @@ EVENT_NAME_OVERRIDES = {
     "Sparebank 1 S?R-NORGE Drammen10K": "Drammen10K",
     "Sparebank 1 SØR-NORGE Drammen10K": "Drammen10K",
     "Fredrikstadl?pet": "Fredrikstadløpet",
+    "Holmestrand maraton 5k": "Holmestrand maraton",
 }
 
 NOTE_REPLACEMENTS = {
