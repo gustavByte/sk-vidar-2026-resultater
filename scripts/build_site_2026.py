@@ -70,6 +70,8 @@ TEXT_REPLACEMENTS = {
     "K ?pen": "K åpen",
     "?pen": "åpen",
 }
+TEXT_REPLACEMENTS["NM terrengl?p kort l?ype"] = "NM terrengløp kort løype"
+TEXT_REPLACEMENTS["Oslo L?psfestival - 5'ern v?r!"] = "Oslo Løpsfestival - 5'ern vår!"
 
 
 def _serialize_value(value: object) -> object:
@@ -198,7 +200,7 @@ def load_results() -> pd.DataFrame:
     working["published_date_label"] = working["published_date"].dt.strftime("%d.%m.%Y")
     working["week_number"] = pd.to_numeric(working["week_number"], errors="coerce")
     working["week_label"] = working["week_number"].apply(lambda value: f"Uke {int(value)}" if pd.notna(value) else "")
-    for column in ["event_name", "athlete_name", "notes", "category", "class_name", "gender", "class_place", "distance"]:
+    for column in ["event_name", "athlete_name", "notes", "category", "class_name", "gender", "class_place", "distance", "NM sync"]:
         if column in working.columns:
             working[column] = working[column].map(normalize_text)
     working["event_label"] = working["event_name"].fillna("").astype(str).str.strip().replace(EVENT_NAME_OVERRIDES)
