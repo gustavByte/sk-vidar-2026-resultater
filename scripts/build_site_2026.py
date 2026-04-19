@@ -65,6 +65,12 @@ TRAIL_EVENT_KEYWORDS = (
     "destroyer",
 )
 
+TEXT_REPLACEMENTS = {
+    "M ?pen": "M åpen",
+    "K ?pen": "K åpen",
+    "?pen": "åpen",
+}
+
 
 def _serialize_value(value: object) -> object:
     if value is None:
@@ -143,6 +149,16 @@ def split_labels(event_name: str, distance: str) -> tuple[str, str]:
     return DEFAULT_SPLIT_LABELS.get(distance, ("Split 1", "Split 2"))
 
 
+def normalize_text(value: object) -> object:
+    if value is None or pd.isna(value):
+        return value
+
+    text = str(value)
+    for bad, good in TEXT_REPLACEMENTS.items():
+        text = text.replace(bad, good)
+    return text
+
+
 def has_valid_time(value: object) -> bool:
     return pd.notna(value) and value != float("inf")
 
@@ -182,6 +198,9 @@ def load_results() -> pd.DataFrame:
     working["published_date_label"] = working["published_date"].dt.strftime("%d.%m.%Y")
     working["week_number"] = pd.to_numeric(working["week_number"], errors="coerce")
     working["week_label"] = working["week_number"].apply(lambda value: f"Uke {int(value)}" if pd.notna(value) else "")
+    for column in ["event_name", "athlete_name", "notes", "category", "class_name", "gender", "class_place", "distance"]:
+        if column in working.columns:
+            working[column] = working[column].map(normalize_text)
     working["event_label"] = working["event_name"].fillna("").astype(str).str.strip().replace(EVENT_NAME_OVERRIDES)
     working["event_name"] = working["event_label"]
     working["notes_clean"] = working["notes"].apply(clean_note)
@@ -327,7 +346,8 @@ def build_rankings(df: pd.DataFrame) -> list[dict[str, object]]:
         na_position="last",
     )
 
-    rankings: list[dict[str, object]] = []
+    distance_priority = {distance: index for index, distance in enumerate(STANDARD_RANKING_DISTANCES)}
+    ranking_groups: list[tuple[int, int, dict[str, object]]] = []
     for distance in STANDARD_RANKING_DISTANCES:
         distance_rows = ranking_df[ranking_df["ranking_distance"] == distance]
         distance_group = {"distance": distance, "women": [], "men": []}
@@ -353,9 +373,10 @@ def build_rankings(df: pd.DataFrame) -> list[dict[str, object]]:
                 )
             distance_group[key] = entries
 
-        rankings.append(distance_group)
+        ranking_groups.append((len(distance_rows), distance_priority[distance], distance_group))
 
-    return rankings
+    ranking_groups.sort(key=lambda item: (-item[0], item[1]))
+    return [group for _, _, group in ranking_groups]
 
 
 def row_to_dict(row: pd.Series) -> dict[str, object]:
