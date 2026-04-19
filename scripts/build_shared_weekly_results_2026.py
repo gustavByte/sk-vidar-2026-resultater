@@ -65,8 +65,23 @@ NOTE_REPLACEMENTS = {
 }
 
 
+def repair_mojibake(text: str) -> str:
+    repaired = text
+    for _ in range(2):
+        if not any(marker in repaired for marker in ("Ã", "Â", "â")):
+            break
+        try:
+            candidate = repaired.encode("latin1").decode("utf-8")
+        except Exception:
+            break
+        if candidate == repaired:
+            break
+        repaired = candidate
+    return repaired
+
+
 def clean_note(value: object) -> str:
-    text = str(value or "").strip()
+    text = repair_mojibake(str(value or "")).strip()
     if not text or text.lower() == "nan":
         return ""
 
@@ -190,13 +205,14 @@ def build_display_rows(df: pd.DataFrame) -> pd.DataFrame:
         working["event_name"]
         .fillna("")
         .astype(str)
+        .map(repair_mojibake)
         .str.strip()
         .replace(EVENT_NAME_OVERRIDES)
     )
-    working["Navn"] = working["athlete_name"].fillna("").astype(str).str.strip()
-    working["Kjønn"] = working[gender_column].fillna("").astype(str).str.strip()
-    working["Klasse"] = working[class_column].fillna("").astype(str).str.strip()
-    working["Distanse"] = working["distance"].fillna("").astype(str).str.strip()
+    working["Navn"] = working["athlete_name"].fillna("").astype(str).map(repair_mojibake).str.strip()
+    working["Kjønn"] = working[gender_column].fillna("").astype(str).map(repair_mojibake).str.strip()
+    working["Klasse"] = working[class_column].fillna("").astype(str).map(repair_mojibake).str.strip()
+    working["Distanse"] = working["distance"].fillna("").astype(str).map(repair_mojibake).str.strip()
     working["Tid"] = (
         working["result_time_normalized"]
         .fillna(working["result_time_raw"])

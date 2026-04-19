@@ -74,6 +74,21 @@ TEXT_REPLACEMENTS["NM terrengl?p kort l?ype"] = "NM terrengløp kort løype"
 TEXT_REPLACEMENTS["Oslo L?psfestival - 5'ern v?r!"] = "Oslo Løpsfestival - 5'ern vår!"
 
 
+def repair_mojibake(text: str) -> str:
+    repaired = text
+    for _ in range(2):
+        if not any(marker in repaired for marker in ("Ã", "Â", "â")):
+            break
+        try:
+            candidate = repaired.encode("latin1").decode("utf-8")
+        except Exception:
+            break
+        if candidate == repaired:
+            break
+        repaired = candidate
+    return repaired
+
+
 def _serialize_value(value: object) -> object:
     if value is None:
         return None
@@ -155,7 +170,7 @@ def normalize_text(value: object) -> object:
     if value is None or pd.isna(value):
         return value
 
-    text = str(value)
+    text = repair_mojibake(str(value))
     for bad, good in TEXT_REPLACEMENTS.items():
         text = text.replace(bad, good)
     return text
@@ -200,7 +215,7 @@ def load_results() -> pd.DataFrame:
     working["published_date_label"] = working["published_date"].dt.strftime("%d.%m.%Y")
     working["week_number"] = pd.to_numeric(working["week_number"], errors="coerce")
     working["week_label"] = working["week_number"].apply(lambda value: f"Uke {int(value)}" if pd.notna(value) else "")
-    for column in ["event_name", "athlete_name", "notes", "category", "class_name", "gender", "class_place", "distance", "NM sync"]:
+    for column in ["event_name", "athlete_name", "notes", "category", "class_name", "gender", "class_place", "distance", "NM sync", "raw_entry", "slack_name", "name_in_message"]:
         if column in working.columns:
             working[column] = working[column].map(normalize_text)
     working["event_label"] = working["event_name"].fillna("").astype(str).str.strip().replace(EVENT_NAME_OVERRIDES)
