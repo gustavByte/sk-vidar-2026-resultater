@@ -44,6 +44,26 @@ SPECIAL_SPLIT_LABELS = {
 }
 
 GENDER_LABELS = {"K": "Kvinner", "M": "Menn"}
+STANDARD_RANKING_DISTANCES = [
+    "800 m",
+    "1500 m",
+    "3000 m",
+    "5 km",
+    "10 km",
+    "Halvmaraton",
+    "Maraton",
+]
+STANDARD_RANKING_DISTANCE_SET = set(STANDARD_RANKING_DISTANCES)
+TRAIL_EVENT_KEYWORDS = (
+    "trail",
+    "utmb",
+    "ultra",
+    "mountain",
+    "fjell",
+    "terreng",
+    "skyrace",
+    "destroyer",
+)
 
 
 def _serialize_value(value: object) -> object:
@@ -121,6 +141,27 @@ def split_labels(event_name: str, distance: str) -> tuple[str, str]:
     if event_name in SPECIAL_SPLIT_LABELS:
         return SPECIAL_SPLIT_LABELS[event_name]
     return DEFAULT_SPLIT_LABELS.get(distance, ("Split 1", "Split 2"))
+
+
+def has_valid_time(value: object) -> bool:
+    return pd.notna(value) and value != float("inf")
+
+
+def normalize_ranking_distance(row: pd.Series) -> str:
+    distance = str(row.get("distance") or "").strip()
+    if distance in STANDARD_RANKING_DISTANCE_SET:
+        return distance
+
+    if distance != "42 km" or not has_valid_time(row.get("result_time_seconds")):
+        return ""
+
+    event_text = " ".join(
+        str(row.get(field) or "").strip()
+        for field in ("event_label", "event_name", "notes_clean", "notes")
+    ).lower()
+    if any(keyword in event_text for keyword in TRAIL_EVENT_KEYWORDS):
+        return ""
+    return "Maraton"
 
 
 def load_overrides() -> pd.DataFrame:
@@ -262,13 +303,68 @@ def build_missing_report(df: pd.DataFrame) -> pd.DataFrame:
     return missing[["published_date_iso", "event_label", "distance", "athlete_name", "gender", "class_name"]]
 
 
+def build_rankings(df: pd.DataFrame) -> list[dict[str, object]]:
+    ranking_df = df.copy()
+    ranking_df["ranking_distance"] = ranking_df.apply(normalize_ranking_distance, axis=1)
+    ranking_df = ranking_df[
+        ranking_df["ranking_distance"].ne("")
+        & ranking_df["gender"].isin(GENDER_LABELS)
+        & ranking_df["result_time_seconds"].apply(has_valid_time)
+    ].copy()
+
+    if ranking_df.empty:
+        return [{"distance": distance, "women": [], "men": []} for distance in STANDARD_RANKING_DISTANCES]
+
+    ranking_df = ranking_df.sort_values(
+        ["ranking_distance", "gender", "athlete_name", "result_time_seconds", "published_date_sort", "event_label"],
+        ascending=[True, True, True, True, True, True],
+        na_position="last",
+    )
+    ranking_df = ranking_df.drop_duplicates(subset=["ranking_distance", "gender", "athlete_name"], keep="first")
+    ranking_df = ranking_df.sort_values(
+        ["ranking_distance", "gender", "result_time_seconds", "published_date_sort", "athlete_name"],
+        ascending=[True, True, True, True, True],
+        na_position="last",
+    )
+
+    rankings: list[dict[str, object]] = []
+    for distance in STANDARD_RANKING_DISTANCES:
+        distance_rows = ranking_df[ranking_df["ranking_distance"] == distance]
+        distance_group = {"distance": distance, "women": [], "men": []}
+
+        for gender, key in (("K", "women"), ("M", "men")):
+            gender_rows = distance_rows[distance_rows["gender"] == gender].head(10)
+            entries = []
+            for rank, (_, row) in enumerate(gender_rows.iterrows(), start=1):
+                entries.append(
+                    {
+                        "distance": distance,
+                        "source_distance": row.get("distance"),
+                        "gender": gender,
+                        "gender_label": GENDER_LABELS[gender],
+                        "rank": rank,
+                        "athlete_name": row.get("athlete_name"),
+                        "result_time": row.get("result_time_normalized") or row.get("result_time_raw"),
+                        "result_time_seconds": _serialize_value(row.get("result_time_seconds")),
+                        "event_label": row.get("event_label"),
+                        "published_date": row.get("published_date_iso"),
+                        "published_date_label": row.get("published_date_label"),
+                    }
+                )
+            distance_group[key] = entries
+
+        rankings.append(distance_group)
+
+    return rankings
+
+
 def row_to_dict(row: pd.Series) -> dict[str, object]:
     data = {key: _serialize_value(value) for key, value in row.to_dict().items()}
     data["week_number"] = int(data["week_number"]) if data["week_number"] is not None else None
     return data
 
 
-def build_payload(df: pd.DataFrame, summary_df: pd.DataFrame, missing_df: pd.DataFrame) -> dict[str, object]:
+def build_payload(df: pd.DataFrame, summary_df: pd.DataFrame, missing_df: pd.DataFrame, rankings: list[dict[str, object]]) -> dict[str, object]:
     results = [row_to_dict(row) for _, row in df.iterrows()]
     weeks = []
     for _, row in summary_df.iterrows():
@@ -305,6 +401,7 @@ def build_payload(df: pd.DataFrame, summary_df: pd.DataFrame, missing_df: pd.Dat
         "stats": stats,
         "weeks": weeks,
         "results": results,
+        "rankings": rankings,
     }
 
 
@@ -389,7 +486,8 @@ def main() -> None:
     df = load_results()
     summary_df = build_weekly_summary(df)
     missing_df = build_missing_report(df)
-    payload = build_payload(df, summary_df, missing_df)
+    rankings = build_rankings(df)
+    payload = build_payload(df, summary_df, missing_df, rankings)
     write_database(df, summary_df, payload, missing_df)
     write_json(payload)
 
