@@ -22,6 +22,7 @@ const els = {
   searchInput: document.getElementById("search-input"),
   distanceFilter: document.getElementById("distance-filter"),
   eventFilter: document.getElementById("event-filter"),
+  rankingsGrid: document.getElementById("rankings-grid"),
   statResults: document.getElementById("stat-results"),
   statAthletes: document.getElementById("stat-athletes"),
   statWomen: document.getElementById("stat-women"),
@@ -298,6 +299,84 @@ function renderEventButtons() {
   });
 }
 
+function renderRankingColumn(title, entries) {
+  if (!entries.length) {
+    return `
+      <section class="ranking-column" aria-label="${escapeHtml(title)}">
+        <div class="ranking-column-head">
+          <h4 class="ranking-title">${escapeHtml(title)}</h4>
+          <span class="ranking-count">0</span>
+        </div>
+        <p class="ranking-empty">Ingen gyldige tider registrert ennå.</p>
+      </section>
+    `;
+  }
+
+  const items = entries
+    .map((entry) => {
+      const dateMarkup = entry.published_date_label ? `<span>${escapeHtml(entry.published_date_label)}</span>` : "";
+      return `
+        <li class="ranking-item">
+          <span class="ranking-place">${escapeHtml(entry.rank)}</span>
+          <div class="ranking-body">
+            <div class="ranking-line">
+              <strong class="ranking-name">${escapeHtml(entry.athlete_name || "")}</strong>
+              <span class="ranking-time">${escapeHtml(entry.result_time || "")}</span>
+            </div>
+            <div class="ranking-meta">
+              <span>${escapeHtml(entry.event_label || "")}</span>
+              ${dateMarkup}
+            </div>
+          </div>
+        </li>
+      `;
+    })
+    .join("");
+
+  return `
+    <section class="ranking-column" aria-label="${escapeHtml(title)}">
+      <div class="ranking-column-head">
+        <h4 class="ranking-title">${escapeHtml(title)}</h4>
+        <span class="ranking-count">${formatCount(entries.length)}</span>
+      </div>
+      <ol class="ranking-list">
+        ${items}
+      </ol>
+    </section>
+  `;
+}
+
+function renderRankings() {
+  const rankings = Array.isArray(state.data.rankings) ? state.data.rankings : [];
+  if (!rankings.length) {
+    els.rankingsGrid.innerHTML = `<p class="ranking-empty">Ingen ranking-data tilgjengelig.</p>`;
+    return;
+  }
+
+  els.rankingsGrid.innerHTML = rankings
+    .map((group) => {
+      const women = Array.isArray(group.women) ? group.women : [];
+      const men = Array.isArray(group.men) ? group.men : [];
+
+      return `
+        <article class="ranking-card">
+          <div class="ranking-card-head">
+            <div>
+              <p class="ranking-kicker">Standarddistanse</p>
+              <h3>${escapeHtml(group.distance || "")}</h3>
+            </div>
+            <div class="ranking-summary">${formatCount(women.length)} kvinner · ${formatCount(men.length)} menn</div>
+          </div>
+          <div class="ranking-columns">
+            ${renderRankingColumn("Kvinner", women)}
+            ${renderRankingColumn("Menn", men)}
+          </div>
+        </article>
+      `;
+    })
+    .join("");
+}
+
 function renderSelectedWeek() {
   const week = getSelectedWeek();
   const results = getFilteredResults();
@@ -381,6 +460,7 @@ async function main() {
 
   renderStats();
   renderDistanceOptions();
+  renderRankings();
   bindFilters();
   renderAll();
 }

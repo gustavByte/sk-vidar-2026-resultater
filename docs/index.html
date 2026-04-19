@@ -15,8 +15,8 @@
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=20260412-1" />
-    <script type="module" src="./app.js?v=20260412-1"></script>
+    <link rel="stylesheet" href="./styles.css?v=20260419-1" />
+    <script type="module" src="./app.js?v=20260419-1"></script>
   </head>
   <body>
     <main class="page">
@@ -25,6 +25,9 @@
           <p class="eyebrow">SK Vidar 2026</p>
           <h1>Resultater pr. uke</h1>
           <p class="hero-copy">Siste uke åpnes som standard. Filtrer raskt på kjønn, distanse og søk.</p>
+          <div class="hero-actions">
+            <a class="jump-link" href="#season-top-10">Hopp til sesongens topp 10</a>
+          </div>
         </div>
         <dl class="stats" aria-label="Sammendrag">
           <div>
@@ -126,6 +129,17 @@
 
           <p id="empty-state" class="empty-state" hidden>Ingen treff i valgt uke.</p>
         </section>
+      </section>
+
+      <section id="season-top-10" class="rankings-section" aria-labelledby="rankings-title">
+        <div class="section-header">
+          <div>
+            <p class="section-kicker">Sesongoversikt</p>
+            <h2 id="rankings-title" class="section-heading">Topp 10 pr. standarddistanse</h2>
+          </div>
+          <p class="section-copy">Kun beste resultat per utøver vises. Kvinner og menn rangeres hver for seg.</p>
+        </div>
+        <div id="rankings-grid" class="rankings-grid" aria-live="polite"></div>
       </section>
 
       <footer class="footer">
