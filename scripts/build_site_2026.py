@@ -69,6 +69,10 @@ TEXT_REPLACEMENTS = {
     "M ?pen": "M åpen",
     "K ?pen": "K åpen",
     "?pen": "åpen",
+    "?dne Andersen Andersen": "Ådne Andersen Andersen",
+    "Anna Marie Sirev?g": "Anna Marie Sirevåg",
+    "Madel?ne Holum": "Madelène Holum",
+    "Madel?ne Wanvik Holum": "Madelène Wanvik Holum",
 }
 TEXT_REPLACEMENTS["NM terrengl?p kort l?ype"] = "NM terrengløp kort løype"
 TEXT_REPLACEMENTS["Oslo L?psfestival - 5'ern v?r!"] = "Oslo Løpsfestival - 5'ern vår!"

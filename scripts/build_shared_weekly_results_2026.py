@@ -50,6 +50,13 @@ EVENT_NAME_OVERRIDES = {
     "Oslo L?psfestival - 5'ern v?r!": "Oslo Løpsfestival - 5'ern vår!",
 }
 
+TEXT_REPLACEMENTS = {
+    "?dne Andersen Andersen": "Ådne Andersen Andersen",
+    "Anna Marie Sirev?g": "Anna Marie Sirevåg",
+    "Madel?ne Holum": "Madelène Holum",
+    "Madel?ne Wanvik Holum": "Madelène Wanvik Holum",
+}
+
 NOTE_REPLACEMENTS = {
     ":first place medal:": "1. plass",
     "first place medal": "1. plass",
@@ -80,8 +87,15 @@ def repair_mojibake(text: str) -> str:
     return repaired
 
 
+def normalize_display_text(value: object) -> str:
+    text = repair_mojibake(str(value or ""))
+    for old, new in TEXT_REPLACEMENTS.items():
+        text = text.replace(old, new)
+    return text
+
+
 def clean_note(value: object) -> str:
-    text = repair_mojibake(str(value or "")).strip()
+    text = normalize_display_text(value).strip()
     if not text or text.lower() == "nan":
         return ""
 
@@ -205,14 +219,14 @@ def build_display_rows(df: pd.DataFrame) -> pd.DataFrame:
         working["event_name"]
         .fillna("")
         .astype(str)
-        .map(repair_mojibake)
+        .map(normalize_display_text)
         .str.strip()
         .replace(EVENT_NAME_OVERRIDES)
     )
-    working["Navn"] = working["athlete_name"].fillna("").astype(str).map(repair_mojibake).str.strip()
-    working["Kjønn"] = working[gender_column].fillna("").astype(str).map(repair_mojibake).str.strip()
-    working["Klasse"] = working[class_column].fillna("").astype(str).map(repair_mojibake).str.strip()
-    working["Distanse"] = working["distance"].fillna("").astype(str).map(repair_mojibake).str.strip()
+    working["Navn"] = working["athlete_name"].fillna("").astype(str).map(normalize_display_text).str.strip()
+    working["Kjønn"] = working[gender_column].fillna("").astype(str).map(normalize_display_text).str.strip()
+    working["Klasse"] = working[class_column].fillna("").astype(str).map(normalize_display_text).str.strip()
+    working["Distanse"] = working["distance"].fillna("").astype(str).map(normalize_display_text).str.strip()
     working["Tid"] = (
         working["result_time_normalized"]
         .fillna(working["result_time_raw"])
