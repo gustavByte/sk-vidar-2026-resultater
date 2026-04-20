@@ -64,6 +64,12 @@ TRAIL_EVENT_KEYWORDS = (
     "destroyer",
 )
 
+
+SPLIT_DISABLED_KEYWORDS = (
+    "stafett",
+    "duo trail",
+)
+
 TEXT_REPLACEMENTS = {
     "M ?pen": "M åpen",
     "K ?pen": "K åpen",
@@ -281,11 +287,22 @@ def load_results() -> pd.DataFrame:
     for _, row in working.iterrows():
         event_name = str(row.get("event_label") or row.get("event_name") or "").strip()
         distance = str(row.get("distance") or "").strip()
+        notes_text = str(row.get("notes_clean") or row.get("notes") or "").strip().lower()
+        event_text = event_name.lower()
         first_label, second_label = split_labels(event_name, distance)
         first = row["split_first_seconds"]
         second = row["split_second_seconds"]
         delta = row["split_delta_seconds"]
         result_seconds = row["result_time_seconds"]
+
+        if any(keyword in event_text for keyword in SPLIT_DISABLED_KEYWORDS) or "lagtid" in notes_text:
+            first_labels.append("")
+            second_labels.append("")
+            split_states.append("")
+            split_first_display.append("")
+            split_second_display.append("")
+            split_delta_display.append("")
+            continue
 
         if (pd.isna(second) or second == float("inf")) and pd.notna(first) and first != float("inf") and pd.notna(result_seconds) and result_seconds != float("inf") and first < result_seconds:
             second = float(result_seconds) - float(first)

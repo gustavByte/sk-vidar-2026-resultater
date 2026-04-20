@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-20T10:43:27+02:00",
+  "generated_at": "2026-04-20T11:28:34+02:00",
   "stats": {
     "result_count": 431,
     "athlete_count": 279,
@@ -970,12 +970,12 @@
       "result_time_normalized": "1:48:10",
       "place": "1",
       "notes_clean": "Vant stafetten",
-      "split_first_label": "Split 1",
-      "split_first_display": "1:48:10",
-      "split_second_label": "Split 2",
-      "split_second_display": "4:29:34",
-      "split_delta_display": "+2:41:24",
-      "split_state": "slow"
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
     },
     {
       "week_number": 16,
@@ -990,12 +990,12 @@
       "result_time_normalized": "2:41:24",
       "place": "1",
       "notes_clean": "Vant stafetten",
-      "split_first_label": "Split 1",
-      "split_first_display": "2:41:24",
-      "split_second_label": "Split 2",
-      "split_second_display": "4:29:34",
-      "split_delta_display": "+1:48:10",
-      "split_state": "slow"
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
     },
     {
       "week_number": 16,
