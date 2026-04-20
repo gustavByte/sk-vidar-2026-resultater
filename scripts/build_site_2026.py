@@ -71,6 +71,7 @@ TEXT_REPLACEMENTS = {
     "?pen": "åpen",
     "?dne Andersen Andersen": "Ådne Andersen Andersen",
     "Anna Marie Sirev?g": "Anna Marie Sirevåg",
+    "Kasper S-R": "Kasper Sørlie-Reininger",
     "Madel?ne Holum": "Madelène Holum",
     "Madel?ne Wanvik Holum": "Madelène Wanvik Holum",
 }
