@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import json
 import math
-import shutil
 import sqlite3
 from datetime import datetime
 
@@ -15,8 +14,8 @@ from project_paths import MISSING_REPORT_FILE, OVERRIDES_FILE, ROOT_DIR, WEEKLY_
 DATA_DB_DIR = ROOT_DIR / "data" / "database"
 PUBLIC_DATA_DIR = ROOT_DIR / "docs" / "data"
 DB_FILE = DATA_DB_DIR / "sk_vidar_2026.sqlite"
-PUBLIC_DB_FILE = PUBLIC_DATA_DIR / "sk_vidar_2026.sqlite"
 JSON_FILE = PUBLIC_DATA_DIR / "results.json"
+LEGACY_PUBLIC_DB_FILE = PUBLIC_DATA_DIR / "sk_vidar_2026.sqlite"
 
 DISTANCE_ORDER = {
     "800 m": 1,
@@ -77,6 +76,28 @@ TEXT_REPLACEMENTS = {
 }
 TEXT_REPLACEMENTS["NM terrengl?p kort l?ype"] = "NM terrengløp kort løype"
 TEXT_REPLACEMENTS["Oslo L?psfestival - 5'ern v?r!"] = "Oslo Løpsfestival - 5'ern vår!"
+
+
+PUBLIC_RESULT_FIELDS = [
+    "week_number",
+    "athlete_name",
+    "gender",
+    "gender_label",
+    "class_name",
+    "class_place",
+    "event_label",
+    "distance",
+    "result_time_raw",
+    "result_time_normalized",
+    "place",
+    "notes_clean",
+    "split_first_label",
+    "split_first_display",
+    "split_second_label",
+    "split_second_display",
+    "split_delta_display",
+    "split_state",
+]
 
 
 def repair_mojibake(text: str) -> str:
@@ -407,8 +428,13 @@ def row_to_dict(row: pd.Series) -> dict[str, object]:
     return data
 
 
+def build_public_results(df: pd.DataFrame) -> list[dict[str, object]]:
+    public_df = df[PUBLIC_RESULT_FIELDS].copy()
+    return [row_to_dict(row) for _, row in public_df.iterrows()]
+
+
 def build_payload(df: pd.DataFrame, summary_df: pd.DataFrame, missing_df: pd.DataFrame, rankings: list[dict[str, object]]) -> dict[str, object]:
-    results = [row_to_dict(row) for _, row in df.iterrows()]
+    results = build_public_results(df)
     weeks = []
     for _, row in summary_df.iterrows():
         weeks.append(
@@ -440,7 +466,6 @@ def build_payload(df: pd.DataFrame, summary_df: pd.DataFrame, missing_df: pd.Dat
 
     return {
         "generated_at": datetime.now().astimezone().isoformat(timespec="seconds"),
-        "source_file": str(WEEKLY_RESULTS_FILE),
         "stats": stats,
         "weeks": weeks,
         "results": results,
@@ -455,7 +480,7 @@ def write_database(df: pd.DataFrame, summary_df: pd.DataFrame, payload: dict[str
     metadata = pd.DataFrame(
         [
             {"key": "generated_at", "value": payload["generated_at"]},
-            {"key": "source_file", "value": payload["source_file"]},
+            {"key": "source_file", "value": str(WEEKLY_RESULTS_FILE)},
             {"key": "result_count", "value": payload["stats"]["result_count"]},
             {"key": "athlete_count", "value": payload["stats"]["athlete_count"]},
             {"key": "event_count", "value": payload["stats"]["event_count"]},
@@ -516,7 +541,8 @@ def write_database(df: pd.DataFrame, summary_df: pd.DataFrame, payload: dict[str
         summary_db.to_sql("weekly_summary", connection, if_exists="replace", index=False)
         missing_df.to_sql("missing_gender_class", connection, if_exists="replace", index=False)
 
-    shutil.copy2(DB_FILE, PUBLIC_DB_FILE)
+    if LEGACY_PUBLIC_DB_FILE.exists():
+        LEGACY_PUBLIC_DB_FILE.unlink()
     missing_df.to_csv(MISSING_REPORT_FILE, index=False, encoding="utf-8")
 
 
@@ -535,7 +561,7 @@ def main() -> None:
     write_json(payload)
 
     print(f"Created SQLite database: {DB_FILE}")
-    print(f"Created public copy: {PUBLIC_DB_FILE}")
+    print("Public SQLite copy disabled")
     print(f"Created JSON export: {JSON_FILE}")
     print(f"Created missing report: {MISSING_REPORT_FILE}")
     print(f"Rows: {payload['stats']['result_count']}")

@@ -7,3 +7,11 @@ venv/
 .~lock.*#
 Thumbs.db
 Desktop.ini
+
+# Local/private data should not be tracked from a public repo.
+data/arbeidsfiler/
+data/database/
+data/stottefiler/
+
+# The site publishes JSON only; never commit a public SQLite export.
+docs/data/*.sqlite
