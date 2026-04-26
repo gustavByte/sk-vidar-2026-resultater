@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-04-26T19:39:53+02:00",
+  "generated_at": "2026-04-26T20:45:53+02:00",
   "stats": {
-    "result_count": 572,
-    "athlete_count": 359,
+    "result_count": 573,
+    "athlete_count": 360,
     "event_count": 62,
     "week_count": 14,
     "latest_week": 17,
     "latest_date": "2026-04-26",
     "women_count": 216,
-    "men_count": 356,
+    "men_count": 357,
     "missing_gender_or_class_count": 0
   },
   "weeks": [
@@ -17,11 +17,11 @@
       "week_label": "Uke 17",
       "published_date": "2026-04-26",
       "published_date_label": "26.04.2026",
-      "result_count": 141,
-      "athlete_count": 141,
+      "result_count": 142,
+      "athlete_count": 142,
       "event_count": 8,
       "women_count": 50,
-      "men_count": 91,
+      "men_count": 92,
       "events": [
         "Aurajoen Yöjuoksu",
         "Bergen City Marathon",
@@ -757,6 +757,26 @@
       "split_second_display": "16:43",
       "split_delta_display": "+0:06",
       "split_state": "slow"
+    },
+    {
+      "week_number": 17,
+      "athlete_name": "Said Abdullahi",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M23-34",
+      "class_place": "25",
+      "event_label": "Sentrumsløpet 10k",
+      "distance": "10 km",
+      "result_time_raw": "0:33:25",
+      "result_time_normalized": "0:33:25",
+      "place": "39",
+      "notes_clean": "",
+      "split_first_label": "5 km",
+      "split_first_display": "17:02",
+      "split_second_label": "5 km",
+      "split_second_display": "16:23",
+      "split_delta_display": "-0:39",
+      "split_state": "fast"
     },
     {
       "week_number": 17,
