@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-04-26T20:45:53+02:00",
+  "generated_at": "2026-04-27T10:14:36+02:00",
   "stats": {
-    "result_count": 573,
+    "result_count": 574,
     "athlete_count": 360,
-    "event_count": 62,
+    "event_count": 63,
     "week_count": 14,
     "latest_week": 17,
     "latest_date": "2026-04-26",
     "women_count": 216,
-    "men_count": 357,
+    "men_count": 358,
     "missing_gender_or_class_count": 0
   },
   "weeks": [
@@ -17,15 +17,16 @@
       "week_label": "Uke 17",
       "published_date": "2026-04-26",
       "published_date_label": "26.04.2026",
-      "result_count": 142,
-      "athlete_count": 142,
-      "event_count": 8,
+      "result_count": 143,
+      "athlete_count": 143,
+      "event_count": 9,
       "women_count": 50,
-      "men_count": 92,
+      "men_count": 93,
       "events": [
         "Aurajoen Yöjuoksu",
         "Bergen City Marathon",
         "Boston Marathon",
+        "Furumo Terrengløp 2026",
         "Hamburg Halvmaraton",
         "Hamburg Marathon",
         "Sentrumsløpet 10k",
@@ -258,6 +259,26 @@
     }
   ],
   "results": [
+    {
+      "week_number": 17,
+      "athlete_name": "Knut Borkholm",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M18-19/Senior/Veteran",
+      "class_place": "1",
+      "event_label": "Furumo Terrengløp 2026",
+      "distance": "3265 m",
+      "result_time_raw": "10:46",
+      "result_time_normalized": "10:46",
+      "place": "1",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
     {
       "week_number": 17,
       "athlete_name": "Oda Laegran",
