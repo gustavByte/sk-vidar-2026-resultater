@@ -22,6 +22,7 @@ Prosjektet er ryddet slik at filer ligger etter funksjon i stedet for alt i rotm
 4. Nettsiden blir oppdatert i `docs/` og databasen i `data/database/`.
 5. Hvis et løp mangler kjønn eller klasse, fyll det inn i `data/stottefiler/result_overrides_2026.csv`.
 6. Hvis en person er feil koblet, legg alias eller override i `data/stottefiler/personer/` og bygg siden på nytt.
+7. For raske navnematcher, kjør `python scripts/review_person_matches_2026.py --generate`, godkjenn i `person_match_decisions.csv`, og kjør `python scripts/review_person_matches_2026.py --apply`.
 
 ## Merknad
 

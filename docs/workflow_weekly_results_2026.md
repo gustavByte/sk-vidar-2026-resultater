@@ -42,6 +42,8 @@ Nettsiden publiserer `person_id` og `person_slug` for hvert resultat. Selve iden
 - Bruk `result_person_overrides.csv` for enkeltresultater som ikke bør kobles automatisk.
 - Ikke bruk fuzzy-forslag som automatisk fasit. De ligger i `fuzzy_match_candidates.csv` for manuell vurdering.
 - Sjekk `external_id_conflicts.csv` hvis samme eksterne ID ser ut til å peke til flere profiler.
+- Kjør `scripts/review_person_matches_2026.py --generate` for å lage en effektiv lokal kø med navnematcher som trenger manuell godkjenning.
+- Fyll `person_match_decisions.csv` og kjør `scripts/review_person_matches_2026.py --apply` før du bygger siden hvis profiler skal slås sammen.
 
 Se `docs/person_identity_model.md` for detaljer.
 

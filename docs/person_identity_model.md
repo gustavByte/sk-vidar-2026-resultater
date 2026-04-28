@@ -42,6 +42,10 @@ Historikk for slug-endringer. Gamle slugs kan dermed redirectes til riktig profi
 
 Manuell kobling for enkeltresultater. Brukes når et resultat ikke trygt kan kobles via alias eller ekstern ID.
 
+`person_match_decisions.csv`
+
+Manuell godkjenningskø for foreslåtte navnematcher. Kjør `python scripts/review_person_matches_2026.py --generate` for å lage `data/database/identity_reports/person_match_candidates.csv`, fyll beslutning i `person_match_decisions.csv`, og kjør `python scripts/review_person_matches_2026.py --apply`.
+
 Header-maler finnes i `docs/person_identity_templates/`.
 
 ## Byggeflyt
@@ -58,6 +62,8 @@ Header-maler finnes i `docs/person_identity_templates/`.
 
 Rapportene dekker manglende `person_id`, aliaser som peker til flere personer, eksterne ID-er som peker til flere personer, dupliserte normaliserte navn, slug-kollisjoner, fuzzy-forslag og mulig lekkasje av private felt i public payload.
 
+`person_match_candidates.csv` er en egen kø for manuell navnematching. Den bruker token-regler som samme første/siste navn, ekstra mellomnavn, initial mot mellomnavn og høy strenglikhet. Den kobler aldri automatisk.
+
 ## Korrigere feil kobling
 
 Hvis to resultater er koblet til feil person:
@@ -72,6 +78,17 @@ Hvis en navnevariant alltid skal peke til samme person:
 1. Legg aliaset i `person_aliases.csv`.
 2. Bruk normalisert alias hvis du vil være eksplisitt; ellers fyller koden dette ut ved neste bygg.
 3. Kjør byggeskriptet.
+
+## Godkjenne navnematcher
+
+1. Kjør `python scripts/review_person_matches_2026.py --generate`.
+2. Åpne `data/database/identity_reports/person_match_candidates.csv`.
+3. Kopier `candidate_id`, `primary_person_id` og den andre personen til `data/stottefiler/personer/person_match_decisions.csv`.
+4. Sett `decision` til `merge`, `alias_only`, `reject` eller `defer`.
+5. Kjør `python scripts/review_person_matches_2026.py --apply`.
+6. Kjør `python scripts/build_site_2026.py`.
+
+`merge` slår profilene sammen og beholder `primary_person_id`. `alias_only` legger navnevarianten som alias uten å slå sammen eksisterende profiler. `reject` skjuler forslaget fra fremtidige kandidatrapporter. `defer` lar forslaget bli liggende.
 
 ## Slå sammen profiler
 

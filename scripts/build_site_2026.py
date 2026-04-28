@@ -85,8 +85,10 @@ TEXT_REPLACEMENTS = {
     "M ?pen": "M åpen",
     "K ?pen": "K åpen",
     "?pen": "åpen",
-    "?dne Andersen Andersen": "Ådne Andersen Andersen",
+    "?dne Andersen Andersen": "Ådne Andersen",
+    "Ådne Andersen Andersen": "Ådne Andersen",
     "Anna Marie Sirev?g": "Anna Marie Sirevåg",
+    "Hege Njå Bjørkmanm": "Hege Njå Bjørkmann",
     "Kasper S-R": "Kasper Sørlie-Reininger",
     "Madel?ne Holum": "Madelène Holum",
     "Madel?ne Wanvik Holum": "Madelène Wanvik Holum",
@@ -378,11 +380,19 @@ def attach_person_identity(df: pd.DataFrame) -> tuple[pd.DataFrame, object]:
     working = df.copy()
     identity = ensure_new_people_are_appended_without_changing_existing_ids(working)
     indexes = build_identity_indexes(identity)
+    canonical_names = {}
+    for _, registry_row in identity.registry.fillna("").iterrows():
+        status = str(registry_row.get("status") or "").casefold()
+        person_id = str(registry_row.get("person_id") or "").strip()
+        display_name = str(registry_row.get("display_name") or "").strip()
+        if person_id and display_name and status not in {"inactive", "inaktiv", "deleted", "slettet", "merged"}:
+            canonical_names[person_id] = display_name
 
     person_ids = []
     person_slugs = []
     match_methods = []
     match_reviews = []
+    athlete_names = []
 
     for _, row in working.iterrows():
         match = match_result_to_person(row, identity, indexes)
@@ -390,7 +400,9 @@ def attach_person_identity(df: pd.DataFrame) -> tuple[pd.DataFrame, object]:
         person_slugs.append(indexes.slug_by_person_id.get(match.person_id, ""))
         match_methods.append(match.method)
         match_reviews.append(match.reason if match.needs_review else "")
+        athlete_names.append(canonical_names.get(match.person_id, row.get("athlete_name")))
 
+    working["athlete_name"] = athlete_names
     working["person_id"] = person_ids
     working["person_slug"] = person_slugs
     working["identity_match_method"] = match_methods

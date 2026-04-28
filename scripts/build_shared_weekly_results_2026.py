@@ -51,8 +51,10 @@ EVENT_NAME_OVERRIDES = {
 }
 
 TEXT_REPLACEMENTS = {
-    "?dne Andersen Andersen": "Ådne Andersen Andersen",
+    "?dne Andersen Andersen": "Ådne Andersen",
+    "Ådne Andersen Andersen": "Ådne Andersen",
     "Anna Marie Sirev?g": "Anna Marie Sirevåg",
+    "Hege Njå Bjørkmanm": "Hege Njå Bjørkmann",
     "Kasper S-R": "Kasper Sørlie-Reininger",
     "Madel?ne Holum": "Madelène Holum",
     "Madel?ne Wanvik Holum": "Madelène Wanvik Holum",

@@ -17,6 +17,7 @@ from project_paths import (
     PERSON_ALIASES_FILE,
     PERSON_EXTERNAL_IDS_FILE,
     PERSON_IDENTITY_DIR,
+    PERSON_MATCH_DECISIONS_FILE,
     PERSON_REGISTRY_FILE,
     PERSON_SLUG_HISTORY_FILE,
     RESULT_PERSON_OVERRIDES_FILE,
@@ -41,6 +42,38 @@ ALIAS_COLUMNS = ["person_id", "alias", "normalized_alias", "source", "active", "
 EXTERNAL_ID_COLUMNS = ["person_id", "source", "external_id", "active", "notes"]
 SLUG_HISTORY_COLUMNS = ["person_id", "profile_slug", "active_from", "active_to", "reason"]
 RESULT_OVERRIDE_COLUMNS = ["result_id", "person_id", "active", "reason", "notes"]
+MATCH_DECISION_COLUMNS = [
+    "candidate_id",
+    "decision",
+    "primary_person_id",
+    "secondary_person_id",
+    "notes",
+    "reviewed_at",
+    "applied_at",
+]
+MATCH_CANDIDATE_COLUMNS = [
+    "candidate_id",
+    "confidence",
+    "suggested_decision",
+    "suggested_primary_person_id",
+    "suggested_primary_name",
+    "person_id_1",
+    "display_name_1",
+    "result_count_1",
+    "latest_result_date_1",
+    "person_id_2",
+    "display_name_2",
+    "result_count_2",
+    "latest_result_date_2",
+    "shared_tokens",
+    "reason",
+    "sequence_similarity",
+    "token_overlap",
+    "decision",
+    "decision_notes",
+]
+APPLIED_MATCH_DECISIONS = {"merge", "alias_only", "reject"}
+OPEN_MATCH_DECISIONS = {"", "defer", "merge", "alias_only"}
 
 STANDARD_PROFILE_DISTANCES = ["800 m", "1500 m", "3000 m", "5 km", "10 km", "Halvmaraton", "Maraton"]
 DISTANCE_ORDER = {distance: index for index, distance in enumerate(STANDARD_PROFILE_DISTANCES)}
@@ -98,6 +131,7 @@ class IdentityPaths:
     external_ids: Path
     slug_history: Path
     result_overrides: Path
+    match_decisions: Path
 
 
 @dataclass
@@ -107,6 +141,7 @@ class IdentityData:
     external_ids: pd.DataFrame
     slug_history: pd.DataFrame
     result_overrides: pd.DataFrame
+    match_decisions: pd.DataFrame
 
 
 @dataclass(frozen=True)
@@ -135,6 +170,7 @@ def _identity_paths(identity_dir: Path | None = None) -> IdentityPaths:
         external_ids=base_dir / PERSON_EXTERNAL_IDS_FILE.name,
         slug_history=base_dir / PERSON_SLUG_HISTORY_FILE.name,
         result_overrides=base_dir / RESULT_PERSON_OVERRIDES_FILE.name,
+        match_decisions=base_dir / PERSON_MATCH_DECISIONS_FILE.name,
     )
 
 
@@ -218,7 +254,7 @@ def _active_registry_mask(registry: pd.DataFrame) -> pd.Series:
     if registry.empty:
         return pd.Series(dtype=bool)
     status = registry.get("status", pd.Series("", index=registry.index)).fillna("").astype(str).str.casefold()
-    return ~status.isin({"inactive", "inaktiv", "deleted", "slettet"})
+    return ~status.isin({"inactive", "inaktiv", "deleted", "slettet", "merged"})
 
 
 def _with_columns(df: pd.DataFrame, columns: list[str]) -> pd.DataFrame:
@@ -250,6 +286,7 @@ def ensure_identity_files(identity_dir: Path | None = None) -> IdentityPaths:
         (paths.external_ids, EXTERNAL_ID_COLUMNS),
         (paths.slug_history, SLUG_HISTORY_COLUMNS),
         (paths.result_overrides, RESULT_OVERRIDE_COLUMNS),
+        (paths.match_decisions, MATCH_DECISION_COLUMNS),
     ):
         if not path.exists():
             _write_csv(pd.DataFrame(columns=columns), path, columns)
@@ -276,6 +313,10 @@ def load_result_person_overrides(path: Path | None = None) -> pd.DataFrame:
     return _read_csv(path or RESULT_PERSON_OVERRIDES_FILE, RESULT_OVERRIDE_COLUMNS)
 
 
+def load_match_decisions(path: Path | None = None) -> pd.DataFrame:
+    return _read_csv(path or PERSON_MATCH_DECISIONS_FILE, MATCH_DECISION_COLUMNS)
+
+
 def load_identity_data(identity_dir: Path | None = None) -> IdentityData:
     paths = _identity_paths(identity_dir)
     return IdentityData(
@@ -284,6 +325,7 @@ def load_identity_data(identity_dir: Path | None = None) -> IdentityData:
         external_ids=load_external_ids(paths.external_ids),
         slug_history=load_slug_history(paths.slug_history),
         result_overrides=load_result_person_overrides(paths.result_overrides),
+        match_decisions=load_match_decisions(paths.match_decisions),
     )
 
 
@@ -570,6 +612,353 @@ def _append_external_id_if_missing(
     )
 
 
+def candidate_id_for_people(person_id_1: str, person_id_2: str) -> str:
+    person_ids = sorted([_clean_text(person_id_1), _clean_text(person_id_2)])
+    digest = hashlib.sha1("|".join(person_ids).encode("utf-8")).hexdigest()[:16]
+    return f"pmc-{digest}"
+
+
+def _tokens_for_name(value: object) -> list[str]:
+    return normalize_name(value).split()
+
+
+def _result_stats_by_person(results_df: pd.DataFrame | None) -> dict[str, dict[str, object]]:
+    stats: dict[str, dict[str, object]] = {}
+    if results_df is None or results_df.empty or "person_id" not in results_df.columns:
+        return stats
+
+    for person_id, group in results_df[results_df["person_id"].fillna("").ne("")].groupby("person_id"):
+        date_column = "published_date_iso" if "published_date_iso" in group.columns else "published_date"
+        dates = [_clean_text(value) for value in group.get(date_column, pd.Series(dtype=str)) if _clean_text(value)]
+        stats[_clean_text(person_id)] = {
+            "result_count": int(len(group)),
+            "latest_result_date": max(dates) if dates else "",
+        }
+    return stats
+
+
+def _match_decisions_by_candidate(decisions: pd.DataFrame) -> dict[str, dict[str, str]]:
+    if decisions.empty:
+        return {}
+    working = _with_columns(decisions, MATCH_DECISION_COLUMNS)
+    latest: dict[str, dict[str, str]] = {}
+    for _, row in working.iterrows():
+        candidate_id = _clean_text(row.get("candidate_id"))
+        if not candidate_id:
+            continue
+        latest[candidate_id] = {column: _clean_text(row.get(column)) for column in MATCH_DECISION_COLUMNS}
+    return latest
+
+
+def _classify_name_pair(tokens_1: list[str], tokens_2: list[str], name_1: str, name_2: str) -> dict[str, object] | None:
+    if not tokens_1 or not tokens_2:
+        return None
+
+    token_set_1 = set(tokens_1)
+    token_set_2 = set(tokens_2)
+    shared = token_set_1 & token_set_2
+    token_overlap = len(shared) / min(len(token_set_1), len(token_set_2))
+    sequence_similarity = SequenceMatcher(None, normalize_name(name_1), normalize_name(name_2)).ratio()
+    same_first = tokens_1[0] == tokens_2[0]
+    same_last = tokens_1[-1] == tokens_2[-1]
+    same_first_last = same_first and same_last
+
+    middle_1 = tokens_1[1:-1]
+    middle_2 = tokens_2[1:-1]
+    initial_variant = False
+    if same_first_last and middle_1 and middle_2:
+        short_middles, long_middles = (middle_1, middle_2) if len(middle_1) <= len(middle_2) else (middle_2, middle_1)
+        for short_middle in short_middles:
+            if len(short_middle) == 1 and any(long_middle.startswith(short_middle) for long_middle in long_middles):
+                initial_variant = True
+                break
+
+    if same_first_last and initial_variant:
+        return {
+            "confidence": "strong",
+            "reason": "same first+last; middle initial matches middle name",
+            "sequence_similarity": sequence_similarity,
+            "token_overlap": token_overlap,
+            "shared_tokens": " ".join(sorted(shared)),
+        }
+    if same_first_last and token_overlap == 1 and abs(len(token_set_1) - len(token_set_2)) <= 3:
+        return {
+            "confidence": "strong",
+            "reason": "same first+last; one name has extra middle token(s)",
+            "sequence_similarity": sequence_similarity,
+            "token_overlap": token_overlap,
+            "shared_tokens": " ".join(sorted(shared)),
+        }
+    if token_overlap == 1 and len(shared) >= 2 and (same_first or same_last):
+        return {
+            "confidence": "medium",
+            "reason": "shorter name is token subset",
+            "sequence_similarity": sequence_similarity,
+            "token_overlap": token_overlap,
+            "shared_tokens": " ".join(sorted(shared)),
+        }
+    if same_first_last and sequence_similarity >= 0.72:
+        return {
+            "confidence": "medium",
+            "reason": "same first+last and similar full name",
+            "sequence_similarity": sequence_similarity,
+            "token_overlap": token_overlap,
+            "shared_tokens": " ".join(sorted(shared)),
+        }
+    if sequence_similarity >= 0.9:
+        return {
+            "confidence": "review",
+            "reason": "very high string similarity",
+            "sequence_similarity": sequence_similarity,
+            "token_overlap": token_overlap,
+            "shared_tokens": " ".join(sorted(shared)),
+        }
+    return None
+
+
+def _suggest_primary_person(left: dict[str, object], right: dict[str, object]) -> dict[str, object]:
+    left_count = int(left.get("result_count") or 0)
+    right_count = int(right.get("result_count") or 0)
+    if left_count > right_count:
+        return left
+    if right_count > left_count:
+        return right
+    left_latest = _clean_text(left.get("latest_result_date"))
+    right_latest = _clean_text(right.get("latest_result_date"))
+    if left_latest > right_latest:
+        return left
+    if right_latest > left_latest:
+        return right
+    left_name = _clean_text(left.get("display_name"))
+    right_name = _clean_text(right.get("display_name"))
+    return left if len(left_name) >= len(right_name) else right
+
+
+def build_person_match_candidates(identity: IdentityData, results_df: pd.DataFrame | None = None) -> pd.DataFrame:
+    registry = _with_columns(identity.registry, REGISTRY_COLUMNS)
+    decisions = _with_columns(identity.match_decisions, MATCH_DECISION_COLUMNS)
+    decision_by_candidate = _match_decisions_by_candidate(decisions)
+    result_stats = _result_stats_by_person(results_df)
+
+    active_people: list[dict[str, object]] = []
+    for _, row in registry[_active_registry_mask(registry)].iterrows():
+        person_id = _clean_text(row.get("person_id"))
+        if not person_id or _resolve_person_id(person_id, registry) != person_id:
+            continue
+        display_name = _clean_text(row.get("display_name"))
+        tokens = _tokens_for_name(display_name)
+        if not display_name or not tokens:
+            continue
+        stats = result_stats.get(person_id, {})
+        active_people.append(
+            {
+                "person_id": person_id,
+                "display_name": display_name,
+                "tokens": tokens,
+                "result_count": int(stats.get("result_count") or 0),
+                "latest_result_date": _clean_text(stats.get("latest_result_date")),
+            }
+        )
+
+    rows: list[dict[str, object]] = []
+    for left_index, left in enumerate(active_people):
+        for right in active_people[left_index + 1 :]:
+            candidate_id = candidate_id_for_people(str(left["person_id"]), str(right["person_id"]))
+            decision = decision_by_candidate.get(candidate_id, {})
+            decision_value = _clean_text(decision.get("decision")).casefold()
+            applied_at = _clean_text(decision.get("applied_at"))
+            if decision_value == "reject" or (decision_value in APPLIED_MATCH_DECISIONS and applied_at):
+                continue
+
+            classification = _classify_name_pair(
+                list(left["tokens"]),
+                list(right["tokens"]),
+                str(left["display_name"]),
+                str(right["display_name"]),
+            )
+            if classification is None:
+                continue
+
+            suggested_primary = _suggest_primary_person(left, right)
+            rows.append(
+                {
+                    "candidate_id": candidate_id,
+                    "confidence": classification["confidence"],
+                    "suggested_decision": "merge",
+                    "suggested_primary_person_id": suggested_primary["person_id"],
+                    "suggested_primary_name": suggested_primary["display_name"],
+                    "person_id_1": left["person_id"],
+                    "display_name_1": left["display_name"],
+                    "result_count_1": left["result_count"],
+                    "latest_result_date_1": left["latest_result_date"],
+                    "person_id_2": right["person_id"],
+                    "display_name_2": right["display_name"],
+                    "result_count_2": right["result_count"],
+                    "latest_result_date_2": right["latest_result_date"],
+                    "shared_tokens": classification["shared_tokens"],
+                    "reason": classification["reason"],
+                    "sequence_similarity": round(float(classification["sequence_similarity"]), 3),
+                    "token_overlap": round(float(classification["token_overlap"]), 3),
+                    "decision": decision_value,
+                    "decision_notes": _clean_text(decision.get("notes")),
+                }
+            )
+
+    if not rows:
+        return pd.DataFrame(columns=MATCH_CANDIDATE_COLUMNS)
+
+    confidence_order = {"strong": 0, "medium": 1, "review": 2}
+    candidates = pd.DataFrame(rows)
+    candidates["_confidence_order"] = candidates["confidence"].map(confidence_order).fillna(99)
+    candidates = candidates.sort_values(
+        ["_confidence_order", "token_overlap", "sequence_similarity", "display_name_1", "display_name_2"],
+        ascending=[True, False, False, True, True],
+    )
+    return candidates.drop(columns=["_confidence_order"])[MATCH_CANDIDATE_COLUMNS].reset_index(drop=True)
+
+
+def _append_decision_error(errors: list[dict[str, str]], row: pd.Series, message: str) -> None:
+    errors.append(
+        {
+            "candidate_id": _clean_text(row.get("candidate_id")),
+            "decision": _clean_text(row.get("decision")),
+            "primary_person_id": _clean_text(row.get("primary_person_id")),
+            "secondary_person_id": _clean_text(row.get("secondary_person_id")),
+            "error": message,
+        }
+    )
+
+
+def _copy_aliases_to_primary(aliases: pd.DataFrame, primary_person_id: str, secondary_person_id: str, registry: pd.DataFrame) -> pd.DataFrame:
+    working = _with_columns(aliases, ALIAS_COLUMNS)
+    for person_id in (primary_person_id, secondary_person_id):
+        match = registry[registry["person_id"].eq(person_id)]
+        if not match.empty:
+            working = _append_alias_if_missing(working, primary_person_id, match.iloc[0].get("display_name"), "manual_match_decision")
+
+    secondary_aliases = working[working["person_id"].eq(secondary_person_id)].copy()
+    for _, alias_row in secondary_aliases.iterrows():
+        working = _append_alias_if_missing(working, primary_person_id, alias_row.get("alias"), "manual_match_decision")
+    return working
+
+
+def _copy_external_ids_to_primary(external_ids: pd.DataFrame, primary_person_id: str, secondary_person_id: str) -> pd.DataFrame:
+    working = _with_columns(external_ids, EXTERNAL_ID_COLUMNS)
+    secondary_external_ids = working[working["person_id"].eq(secondary_person_id)].copy()
+    for index, external_row in secondary_external_ids.iterrows():
+        source = _clean_text(external_row.get("source"))
+        external_id = _clean_text(external_row.get("external_id"))
+        same_primary_key = (
+            working["person_id"].eq(primary_person_id)
+            & working["source"].str.casefold().eq(source.casefold())
+            & working["external_id"].eq(external_id)
+        )
+        if same_primary_key.any():
+            working.at[index, "active"] = "false"
+            continue
+        working.at[index, "person_id"] = primary_person_id
+    return working
+
+
+def apply_match_decisions(identity_dir: Path | None = None, now: datetime | None = None) -> dict[str, object]:
+    paths = ensure_identity_files(identity_dir)
+    identity = load_identity_data(paths.identity_dir)
+    registry = _with_columns(identity.registry, REGISTRY_COLUMNS)
+    aliases = _with_columns(identity.aliases, ALIAS_COLUMNS)
+    external_ids = _with_columns(identity.external_ids, EXTERNAL_ID_COLUMNS)
+    slug_history = _with_columns(identity.slug_history, SLUG_HISTORY_COLUMNS)
+    decisions = _with_columns(identity.match_decisions, MATCH_DECISION_COLUMNS)
+    now_text = (now or datetime.now().astimezone()).isoformat(timespec="seconds")
+
+    applied_counts = {"merge": 0, "alias_only": 0, "reject": 0, "defer": 0}
+    errors: list[dict[str, str]] = []
+
+    for index, row in decisions.iterrows():
+        decision = _clean_text(row.get("decision")).casefold()
+        if not decision:
+            continue
+        if decision not in {"merge", "alias_only", "reject", "defer"}:
+            _append_decision_error(errors, row, "unknown decision")
+            continue
+        if decision == "defer":
+            applied_counts["defer"] += 1
+            continue
+        if _clean_text(row.get("applied_at")):
+            continue
+
+        primary_person_id = _clean_text(row.get("primary_person_id"))
+        secondary_person_id = _clean_text(row.get("secondary_person_id"))
+        if decision == "reject":
+            decisions.at[index, "applied_at"] = now_text
+            applied_counts["reject"] += 1
+            continue
+        if not primary_person_id or not secondary_person_id:
+            _append_decision_error(errors, row, "primary_person_id and secondary_person_id are required")
+            continue
+        primary_person_id = _resolve_person_id(primary_person_id, registry)
+        secondary_person_id = _clean_text(row.get("secondary_person_id"))
+        if primary_person_id == secondary_person_id:
+            decisions.at[index, "applied_at"] = now_text
+            applied_counts[decision] += 1
+            continue
+        if registry[registry["person_id"].eq(primary_person_id)].empty:
+            _append_decision_error(errors, row, "primary_person_id does not exist")
+            continue
+        if registry[registry["person_id"].eq(secondary_person_id)].empty:
+            _append_decision_error(errors, row, "secondary_person_id does not exist")
+            continue
+
+        aliases = _copy_aliases_to_primary(aliases, primary_person_id, secondary_person_id, registry)
+        if decision == "merge":
+            external_ids = _copy_external_ids_to_primary(external_ids, primary_person_id, secondary_person_id)
+            secondary_mask = registry["person_id"].eq(secondary_person_id)
+            registry.loc[secondary_mask, "status"] = "merged"
+            registry.loc[secondary_mask, "merged_into_person_id"] = primary_person_id
+            registry.loc[secondary_mask, "updated_at"] = now_text
+
+            primary_slug = _clean_text(registry.loc[registry["person_id"].eq(primary_person_id), "profile_slug"].iloc[0])
+            secondary_slug = _clean_text(registry.loc[secondary_mask, "profile_slug"].iloc[0])
+            if secondary_slug and primary_slug and secondary_slug != primary_slug:
+                active_secondary_slug = (
+                    slug_history["person_id"].eq(secondary_person_id)
+                    & slug_history["profile_slug"].eq(secondary_slug)
+                    & slug_history["active_to"].fillna("").eq("")
+                )
+                slug_history.loc[active_secondary_slug, "active_to"] = now_text
+                slug_history = pd.concat(
+                    [
+                        slug_history,
+                        pd.DataFrame(
+                            [
+                                {
+                                    "person_id": secondary_person_id,
+                                    "profile_slug": secondary_slug,
+                                    "active_from": "",
+                                    "active_to": now_text,
+                                    "reason": f"merged_into:{primary_person_id}",
+                                }
+                            ]
+                        ),
+                    ],
+                    ignore_index=True,
+                ).drop_duplicates(subset=["person_id", "profile_slug", "active_to", "reason"], keep="first")
+
+        decisions.at[index, "primary_person_id"] = primary_person_id
+        decisions.at[index, "applied_at"] = now_text
+        applied_counts[decision] += 1
+
+    _write_csv(registry, paths.registry, REGISTRY_COLUMNS)
+    _write_csv(aliases, paths.aliases, ALIAS_COLUMNS)
+    _write_csv(external_ids, paths.external_ids, EXTERNAL_ID_COLUMNS)
+    _write_csv(slug_history, paths.slug_history, SLUG_HISTORY_COLUMNS)
+    _write_csv(decisions, paths.match_decisions, MATCH_DECISION_COLUMNS)
+    return {
+        "applied_counts": applied_counts,
+        "error_count": len(errors),
+        "errors": errors,
+    }
+
+
 def ensure_new_people_are_appended_without_changing_existing_ids(
     results_df: pd.DataFrame,
     identity_dir: Path | None = None,
@@ -584,7 +973,7 @@ def ensure_new_people_are_appended_without_changing_existing_ids(
     external_ids = _with_columns(identity.external_ids, EXTERNAL_ID_COLUMNS)
     slug_history = _with_columns(identity.slug_history, SLUG_HISTORY_COLUMNS)
 
-    identity = IdentityData(registry, aliases, external_ids, slug_history, identity.result_overrides)
+    identity = IdentityData(registry, aliases, external_ids, slug_history, identity.result_overrides, identity.match_decisions)
     indexes = build_identity_indexes(identity)
 
     parent: dict[str, str] = {}
@@ -706,7 +1095,7 @@ def ensure_new_people_are_appended_without_changing_existing_ids(
     if new_slug_rows:
         slug_history = pd.concat([slug_history, pd.DataFrame(new_slug_rows)], ignore_index=True)
 
-    identity = IdentityData(registry, aliases, external_ids, slug_history, identity.result_overrides)
+    identity = IdentityData(registry, aliases, external_ids, slug_history, identity.result_overrides, identity.match_decisions)
     indexes = build_identity_indexes(identity)
 
     for _, row in results_df.iterrows():
@@ -840,11 +1229,12 @@ def build_people_payload(df: pd.DataFrame, identity: IdentityData) -> dict[str, 
     for _, row in slug_history.iterrows():
         old_slug = _clean_text(row.get("profile_slug"))
         person_id = _clean_text(row.get("person_id"))
+        resolved_person_id = _resolve_person_id(person_id, registry)
         active_to = _clean_text(row.get("active_to"))
-        current_slug = current_slug_by_id.get(person_id, "")
+        current_slug = current_slug_by_id.get(resolved_person_id, "")
         if old_slug and current_slug:
-            slug_map.setdefault(old_slug, person_id)
-        if active_to and old_slug and current_slug and old_slug != current_slug:
+            slug_map.setdefault(old_slug, resolved_person_id)
+        if (active_to or resolved_person_id != person_id) and old_slug and current_slug and old_slug != current_slug:
             slug_redirects[old_slug] = current_slug
 
     profiles.sort(key=lambda profile: normalize_name(profile["display_name"]))
@@ -975,14 +1365,19 @@ def build_identity_reports(
 
     missing_person = df[df.get("person_id", pd.Series("", index=df.index)).fillna("").eq("")]
     duplicate_names = _conflict_report(registry[_active_registry_mask(registry)], "normalized_name")
-    alias_conflicts = _conflict_report(aliases, "normalized_alias")
+    alias_report = aliases.copy()
+    alias_report["resolved_person_id"] = alias_report["person_id"].map(lambda person_id: _resolve_person_id(_clean_text(person_id), registry))
+    alias_conflicts = _conflict_report(alias_report, "normalized_alias", value_column="resolved_person_id")
     external_id_report = external_ids.copy()
+    external_id_report["resolved_person_id"] = external_id_report["person_id"].map(
+        lambda person_id: _resolve_person_id(_clean_text(person_id), registry)
+    )
     external_id_report["external_key"] = (
         external_id_report["source"].fillna("").astype(str).str.casefold()
         + ":"
         + external_id_report["external_id"].fillna("").astype(str)
     )
-    external_id_conflicts = _conflict_report(external_id_report, "external_key")
+    external_id_conflicts = _conflict_report(external_id_report, "external_key", value_column="resolved_person_id")
     slug_collisions = _conflict_report(registry[_active_registry_mask(registry)], "profile_slug")
     leaks = find_private_field_leaks(payload) if payload is not None else pd.DataFrame(
         columns=["path", "field", "issue", "value_preview"]
@@ -993,6 +1388,7 @@ def build_identity_reports(
             missing_person,
             ["result_id", "published_date_iso", "event_label", "distance", "athlete_name", "identity_match_method"],
         ),
+        "person_match_candidates": build_person_match_candidates(identity, df),
         "alias_conflicts": alias_conflicts,
         "external_id_conflicts": external_id_conflicts,
         "duplicate_normalized_names": duplicate_names,
