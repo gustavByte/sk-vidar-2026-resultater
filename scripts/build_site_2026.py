@@ -8,7 +8,18 @@ from datetime import datetime
 import pandas as pd
 
 from build_shared_weekly_results_2026 import EVENT_NAME_OVERRIDES, clean_note, extract_place, parse_time_for_sort
-from project_paths import MISSING_REPORT_FILE, OVERRIDES_FILE, ROOT_DIR, WEEKLY_RESULTS_FILE
+from person_identity import (
+    SCHEMA_VERSION,
+    assign_result_ids,
+    build_identity_indexes,
+    build_identity_reports,
+    build_people_payload,
+    ensure_new_people_are_appended_without_changing_existing_ids,
+    match_result_to_person,
+    validate_public_payload,
+    write_identity_reports,
+)
+from project_paths import IDENTITY_REPORT_DIR, MISSING_REPORT_FILE, OVERRIDES_FILE, ROOT_DIR, WEEKLY_RESULTS_FILE
 
 
 DATA_DB_DIR = ROOT_DIR / "data" / "database"
@@ -85,6 +96,11 @@ TEXT_REPLACEMENTS["Oslo L?psfestival - 5'ern v?r!"] = "Oslo Løpsfestival - 5'er
 
 
 PUBLIC_RESULT_FIELDS = [
+    "result_id",
+    "person_id",
+    "person_slug",
+    "published_date_iso",
+    "published_date_label",
     "week_number",
     "athlete_name",
     "gender",
@@ -95,6 +111,7 @@ PUBLIC_RESULT_FIELDS = [
     "distance",
     "result_time_raw",
     "result_time_normalized",
+    "result_time_seconds",
     "place",
     "notes_clean",
     "split_first_label",
@@ -346,6 +363,7 @@ def load_results() -> pd.DataFrame:
     working["split_second_display"] = split_second_display
     working["split_delta_display"] = split_delta_display
     working["split_state"] = split_states
+    working["result_id"] = assign_result_ids(working)
 
     working = working.sort_values(
         ["week_sort", "published_date_sort", "event_sort", "distance_sort", "result_time_seconds", "athlete_name"],
@@ -356,12 +374,37 @@ def load_results() -> pd.DataFrame:
     return working
 
 
+def attach_person_identity(df: pd.DataFrame) -> tuple[pd.DataFrame, object]:
+    working = df.copy()
+    identity = ensure_new_people_are_appended_without_changing_existing_ids(working)
+    indexes = build_identity_indexes(identity)
+
+    person_ids = []
+    person_slugs = []
+    match_methods = []
+    match_reviews = []
+
+    for _, row in working.iterrows():
+        match = match_result_to_person(row, identity, indexes)
+        person_ids.append(match.person_id)
+        person_slugs.append(indexes.slug_by_person_id.get(match.person_id, ""))
+        match_methods.append(match.method)
+        match_reviews.append(match.reason if match.needs_review else "")
+
+    working["person_id"] = person_ids
+    working["person_slug"] = person_slugs
+    working["identity_match_method"] = match_methods
+    working["identity_match_review"] = match_reviews
+    working["profile_distance"] = working.apply(normalize_ranking_distance, axis=1)
+    return working, identity
+
+
 def build_weekly_summary(df: pd.DataFrame) -> pd.DataFrame:
     grouped = (
         df.groupby(["week_number", "week_label"], dropna=False)
         .agg(
             result_count=("athlete_name", "count"),
-            athlete_count=("athlete_name", "nunique"),
+            athlete_count=("person_id", "nunique"),
             event_count=("event_label", "nunique"),
             published_date_iso=("published_date_iso", "max"),
             published_date_label=("published_date_label", "max"),
@@ -379,7 +422,7 @@ def build_weekly_summary(df: pd.DataFrame) -> pd.DataFrame:
 
 def build_missing_report(df: pd.DataFrame) -> pd.DataFrame:
     missing = df[(df["gender"].fillna("") == "") | (df["class_name"].fillna("") == "")].copy()
-    return missing[["published_date_iso", "event_label", "distance", "athlete_name", "gender", "class_name"]]
+    return missing[["published_date_iso", "event_label", "distance", "athlete_name", "person_id", "gender", "class_name"]]
 
 
 def build_rankings(df: pd.DataFrame) -> list[dict[str, object]]:
@@ -395,11 +438,11 @@ def build_rankings(df: pd.DataFrame) -> list[dict[str, object]]:
         return [{"distance": distance, "women": [], "men": []} for distance in STANDARD_RANKING_DISTANCES]
 
     ranking_df = ranking_df.sort_values(
-        ["ranking_distance", "gender", "athlete_name", "result_time_seconds", "published_date_sort", "event_label"],
+        ["ranking_distance", "gender", "person_id", "result_time_seconds", "published_date_sort", "event_label"],
         ascending=[True, True, True, True, True, True],
         na_position="last",
     )
-    ranking_df = ranking_df.drop_duplicates(subset=["ranking_distance", "gender", "athlete_name"], keep="first")
+    ranking_df = ranking_df.drop_duplicates(subset=["ranking_distance", "gender", "person_id"], keep="first")
     ranking_df = ranking_df.sort_values(
         ["ranking_distance", "gender", "result_time_seconds", "published_date_sort", "athlete_name"],
         ascending=[True, True, True, True, True],
@@ -423,6 +466,9 @@ def build_rankings(df: pd.DataFrame) -> list[dict[str, object]]:
                         "gender": gender,
                         "gender_label": GENDER_LABELS[gender],
                         "rank": rank,
+                        "person_id": row.get("person_id"),
+                        "person_slug": row.get("person_slug"),
+                        "result_id": row.get("result_id"),
                         "athlete_name": row.get("athlete_name"),
                         "result_time": row.get("result_time_normalized") or row.get("result_time_raw"),
                         "result_time_seconds": _serialize_value(row.get("result_time_seconds")),
@@ -447,10 +493,17 @@ def row_to_dict(row: pd.Series) -> dict[str, object]:
 
 def build_public_results(df: pd.DataFrame) -> list[dict[str, object]]:
     public_df = df[PUBLIC_RESULT_FIELDS].copy()
+    public_df = public_df.rename(columns={"published_date_iso": "published_date"})
     return [row_to_dict(row) for _, row in public_df.iterrows()]
 
 
-def build_payload(df: pd.DataFrame, summary_df: pd.DataFrame, missing_df: pd.DataFrame, rankings: list[dict[str, object]]) -> dict[str, object]:
+def build_payload(
+    df: pd.DataFrame,
+    summary_df: pd.DataFrame,
+    missing_df: pd.DataFrame,
+    rankings: list[dict[str, object]],
+    people_payload: dict[str, object],
+) -> dict[str, object]:
     results = build_public_results(df)
     weeks = []
     for _, row in summary_df.iterrows():
@@ -471,7 +524,7 @@ def build_payload(df: pd.DataFrame, summary_df: pd.DataFrame, missing_df: pd.Dat
 
     stats = {
         "result_count": int(len(df)),
-        "athlete_count": int(df["athlete_name"].nunique()),
+        "athlete_count": int(df["person_id"].nunique()),
         "event_count": int(df["event_label"].nunique()),
         "week_count": int(df["week_number"].nunique()),
         "latest_week": int(df["week_number"].max()),
@@ -482,11 +535,13 @@ def build_payload(df: pd.DataFrame, summary_df: pd.DataFrame, missing_df: pd.Dat
     }
 
     return {
+        "schema_version": SCHEMA_VERSION,
         "generated_at": datetime.now().astimezone().isoformat(timespec="seconds"),
         "stats": stats,
         "weeks": weeks,
         "results": results,
         "rankings": rankings,
+        "people": people_payload,
     }
 
 
@@ -496,6 +551,7 @@ def write_database(df: pd.DataFrame, summary_df: pd.DataFrame, payload: dict[str
 
     metadata = pd.DataFrame(
         [
+            {"key": "schema_version", "value": payload["schema_version"]},
             {"key": "generated_at", "value": payload["generated_at"]},
             {"key": "source_file", "value": str(WEEKLY_RESULTS_FILE)},
             {"key": "result_count", "value": payload["stats"]["result_count"]},
@@ -514,6 +570,11 @@ def write_database(df: pd.DataFrame, summary_df: pd.DataFrame, payload: dict[str
         [
             "published_date_iso",
             "published_date_label",
+            "result_id",
+            "person_id",
+            "person_slug",
+            "identity_match_method",
+            "identity_match_review",
             "week_number",
             "week_label",
             "event_name",
@@ -570,10 +631,15 @@ def write_json(payload: dict[str, object]) -> None:
 def main() -> None:
     load_overrides()
     df = load_results()
+    df, identity = attach_person_identity(df)
     summary_df = build_weekly_summary(df)
     missing_df = build_missing_report(df)
     rankings = build_rankings(df)
-    payload = build_payload(df, summary_df, missing_df, rankings)
+    people_payload = build_people_payload(df, identity)
+    payload = build_payload(df, summary_df, missing_df, rankings, people_payload)
+    reports = build_identity_reports(df, identity, payload)
+    write_identity_reports(reports, IDENTITY_REPORT_DIR)
+    validate_public_payload(payload)
     write_database(df, summary_df, payload, missing_df)
     write_json(payload)
 
@@ -581,7 +647,9 @@ def main() -> None:
     print("Public SQLite copy disabled")
     print(f"Created JSON export: {JSON_FILE}")
     print(f"Created missing report: {MISSING_REPORT_FILE}")
+    print(f"Created identity reports: {IDENTITY_REPORT_DIR}")
     print(f"Rows: {payload['stats']['result_count']}")
+    print(f"People: {payload['people']['profile_count']}")
     print(f"Missing gender/class: {payload['stats']['missing_gender_or_class_count']}")
 
 

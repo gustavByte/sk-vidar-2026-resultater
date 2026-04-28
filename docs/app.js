@@ -7,6 +7,10 @@ const state = {
   distance: "Alle",
   eventFilter: "Alle",
   genderFilter: "all",
+  route: { type: "week" },
+  peopleById: new Map(),
+  personIdBySlug: new Map(),
+  slugRedirects: new Map(),
 };
 
 const numberFormat = new Intl.NumberFormat("nb-NO");
@@ -23,6 +27,8 @@ const els = {
   distanceFilter: document.getElementById("distance-filter"),
   eventFilter: document.getElementById("event-filter"),
   rankingsGrid: document.getElementById("rankings-grid"),
+  weekView: document.getElementById("week-view"),
+  profileView: document.getElementById("profile-view"),
   statResults: document.getElementById("stat-results"),
   statAthletes: document.getElementById("stat-athletes"),
   statWomen: document.getElementById("stat-women"),
@@ -56,6 +62,44 @@ function escapeHtml(value) {
 
 function formatCount(value) {
   return numberFormat.format(value ?? 0);
+}
+
+function profileHref(slug) {
+  return slug ? `#/person/${encodeURIComponent(slug)}` : "#/";
+}
+
+function personLink(row, className = "person-link") {
+  const name = escapeHtml(row.athlete_name || "");
+  if (!row.person_slug) {
+    return name;
+  }
+  return `<a class="${className}" href="${profileHref(row.person_slug)}">${name}</a>`;
+}
+
+function buildPeopleIndex() {
+  const people = state.data.people || {};
+  const profiles = Array.isArray(people.profiles) ? people.profiles : [];
+  state.peopleById = new Map(profiles.map((profile) => [profile.person_id, profile]));
+  state.personIdBySlug = new Map(Object.entries(people.slug_map || {}));
+  state.slugRedirects = new Map(Object.entries(people.slug_redirects || {}));
+}
+
+function parseRoute() {
+  const hash = window.location.hash || "";
+  if (hash.startsWith("#/person/")) {
+    return {
+      type: "person",
+      slug: decodeURIComponent(hash.slice("#/person/".length)),
+    };
+  }
+  return { type: "week" };
+}
+
+function setView(route) {
+  state.route = route;
+  const isProfile = route.type === "person";
+  els.weekView.hidden = isProfile;
+  els.profileView.hidden = !isProfile;
 }
 
 function getWeekResults(weekNumber) {
@@ -209,7 +253,7 @@ function renderResultsTable(results) {
 
       return `
         <tr>
-          <td class="athlete">${escapeHtml(row.athlete_name || "")}</td>
+          <td class="athlete">${personLink(row)}</td>
           <td><span class="gender-pill">${displayValue(row.gender)}</span></td>
           <td>${displayValue(row.class_name)}</td>
           <td>${escapeHtml(getEventLabel(row))}</td>
@@ -254,7 +298,7 @@ function renderResultsCards(results) {
           <div class="result-card-top">
             <div class="result-card-athlete">
               <span class="gender-pill">${displayValue(row.gender)}</span>
-              <strong class="result-card-name">${escapeHtml(row.athlete_name || "")}</strong>
+              <strong class="result-card-name">${personLink(row)}</strong>
               <div class="result-card-time">${escapeHtml(row.result_time_normalized || row.result_time_raw || "")}</div>
             </div>
           </div>
@@ -320,7 +364,7 @@ function renderRankingColumn(title, entries) {
           <span class="ranking-place">${escapeHtml(entry.rank)}</span>
           <div class="ranking-body">
             <div class="ranking-line">
-              <strong class="ranking-name">${escapeHtml(entry.athlete_name || "")}</strong>
+              <strong class="ranking-name">${personLink(entry)}</strong>
               <span class="ranking-time">${escapeHtml(entry.result_time || "")}</span>
             </div>
             <div class="ranking-meta">
@@ -375,6 +419,167 @@ function renderRankings() {
       `;
     })
     .join("");
+}
+
+function sortResultsNewestFirst(results) {
+  return [...results].sort((a, b) => {
+    const dateCompare = String(b.published_date || "").localeCompare(String(a.published_date || ""));
+    if (dateCompare !== 0) {
+      return dateCompare;
+    }
+    const weekCompare = Number(b.week_number || 0) - Number(a.week_number || 0);
+    if (weekCompare !== 0) {
+      return weekCompare;
+    }
+    return Number(a.result_time_seconds || Number.POSITIVE_INFINITY) - Number(b.result_time_seconds || Number.POSITIVE_INFINITY);
+  });
+}
+
+function renderProfileNotFound(slug) {
+  els.profileView.innerHTML = `
+    <article class="profile-shell profile-shell--empty">
+      <a class="back-link" href="#/">Til ukeoversikt</a>
+      <p class="section-kicker">Personprofil</p>
+      <h2>Fant ikke profilen</h2>
+      <p class="profile-muted">Ingen publisert profil finnes for ${escapeHtml(slug || "denne lenken")}.</p>
+    </article>
+  `;
+}
+
+function renderBestResults(profile) {
+  const bestResults = Array.isArray(profile.best_results) ? profile.best_results : [];
+  if (!bestResults.length) {
+    return `<p class="profile-muted">Ingen standarddistanser med gyldig tid ennå.</p>`;
+  }
+
+  return `
+    <div class="profile-best-grid">
+      ${bestResults
+        .map(
+          (result) => `
+            <article class="profile-best-card">
+              <span class="profile-best-distance">${escapeHtml(result.distance || "")}</span>
+              <strong>${escapeHtml(result.result_time || "")}</strong>
+              <span>${escapeHtml(result.event_label || "")}</span>
+              <span>${escapeHtml(result.published_date_label || "")}</span>
+            </article>
+          `,
+        )
+        .join("")}
+    </div>
+  `;
+}
+
+function renderProfileResults(results) {
+  if (!results.length) {
+    return `<p class="profile-muted">Ingen publiserte resultater.</p>`;
+  }
+
+  return `
+    <div class="profile-results-list">
+      ${results
+        .map((row) => {
+          const time = row.result_time_normalized || row.result_time_raw || "";
+          const place = hasValue(row.place) ? `<span class="result-pill">#${escapeHtml(row.place)}</span>` : "";
+          const classPlace = hasValue(row.class_place)
+            ? `<span class="result-pill result-pill--muted">Kl ${escapeHtml(row.class_place)}</span>`
+            : "";
+          const note = hasValue(row.notes_clean) ? `<p class="profile-result-note">${escapeHtml(row.notes_clean)}</p>` : "";
+
+          return `
+            <article class="profile-result-row">
+              <div class="profile-result-date">
+                <span>${escapeHtml(row.published_date_label || "")}</span>
+                <small>Uke ${escapeHtml(row.week_number || "")}</small>
+              </div>
+              <div class="profile-result-main">
+                <div class="profile-result-title">
+                  <strong>${escapeHtml(row.event_label || "")}</strong>
+                  <span class="profile-result-time">${escapeHtml(time)}</span>
+                </div>
+                <div class="profile-result-meta">
+                  ${hasValue(row.distance) ? `<span class="result-pill">${escapeHtml(row.distance)}</span>` : ""}
+                  ${hasValue(row.class_name) ? `<span class="result-pill">${escapeHtml(row.class_name)}</span>` : ""}
+                  ${place}
+                  ${classPlace}
+                </div>
+                ${note}
+              </div>
+            </article>
+          `;
+        })
+        .join("")}
+    </div>
+  `;
+}
+
+function renderProfile(route) {
+  const redirectSlug = state.slugRedirects.get(route.slug);
+  if (redirectSlug && redirectSlug !== route.slug) {
+    window.location.hash = `/person/${redirectSlug}`;
+    return;
+  }
+
+  const personId = state.personIdBySlug.get(route.slug);
+  const profile = personId ? state.peopleById.get(personId) : null;
+  if (!profile) {
+    renderProfileNotFound(route.slug);
+    return;
+  }
+
+  const results = sortResultsNewestFirst(state.data.results.filter((row) => row.person_id === personId));
+  const distancePills = (profile.distances || [])
+    .map((distance) => `<span class="result-pill">${escapeHtml(distance)}</span>`)
+    .join("");
+  const latest = profile.latest_result_date ? `Sist registrert ${escapeHtml(profile.latest_result_date)}` : "";
+
+  els.profileView.innerHTML = `
+    <article class="profile-shell">
+      <div class="profile-head">
+        <div>
+          <a class="back-link" href="#/">Til ukeoversikt</a>
+          <p class="section-kicker">Personprofil</p>
+          <h2>${escapeHtml(profile.display_name || "")}</h2>
+          <p class="profile-muted">${formatCount(profile.result_count)} resultater${latest ? ` · ${latest}` : ""}</p>
+        </div>
+        <div class="profile-stat-grid" aria-label="Profilstatistikk">
+          <div><span>Resultater</span><strong>${formatCount(profile.result_count)}</strong></div>
+          <div><span>Distanser</span><strong>${formatCount((profile.distances || []).length)}</strong></div>
+          <div><span>Kjønn</span><strong>${escapeHtml(profile.gender || "–")}</strong></div>
+        </div>
+      </div>
+
+      ${distancePills ? `<div class="profile-distance-row">${distancePills}</div>` : ""}
+
+      <section class="profile-section" aria-labelledby="profile-best-title">
+        <div class="section-header profile-section-head">
+          <div>
+            <p class="section-kicker">Beste noteringer</p>
+            <h3 id="profile-best-title" class="section-heading">Per standarddistanse</h3>
+          </div>
+        </div>
+        ${renderBestResults(profile)}
+      </section>
+
+      <section class="profile-section" aria-labelledby="profile-results-title">
+        <div class="section-header profile-section-head">
+          <div>
+            <p class="section-kicker">Alle resultater</p>
+            <h3 id="profile-results-title" class="section-heading">Nyeste først</h3>
+          </div>
+        </div>
+        ${renderProfileResults(results)}
+      </section>
+    </article>
+  `;
+}
+
+function renderRoute() {
+  const route = parseRoute();
+  setView(route);
+  if (route.type === "person") {
+    renderProfile(route);
+  }
 }
 
 function renderSelectedWeek() {
@@ -457,12 +662,15 @@ async function main() {
 
   state.data = await response.json();
   state.selectedWeek = Number(state.data.stats.latest_week);
+  buildPeopleIndex();
 
   renderStats();
   renderDistanceOptions();
   renderRankings();
   bindFilters();
   renderAll();
+  window.addEventListener("hashchange", renderRoute);
+  renderRoute();
 }
 
 main().catch((error) => {

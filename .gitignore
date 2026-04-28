@@ -12,6 +12,8 @@ Desktop.ini
 data/arbeidsfiler/
 data/database/
 data/stottefiler/
+# Includes local person identity registry, aliases, external IDs, and overrides.
+data/stottefiler/personer/
 
 # The site publishes JSON only; never commit a public SQLite export.
 docs/data/*.sqlite
