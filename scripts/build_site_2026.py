@@ -125,14 +125,17 @@ PUBLIC_RESULT_FIELDS = [
 ]
 
 
+MOJIBAKE_MARKERS = ("\u00c3", "\u00c2", "\u00e2")
+
+
 def repair_mojibake(text: str) -> str:
     repaired = text
-    for _ in range(2):
-        if not any(marker in repaired for marker in ("Ã", "Â", "â")):
+    for _ in range(3):
+        if not any(marker in repaired for marker in MOJIBAKE_MARKERS):
             break
         try:
             candidate = repaired.encode("latin1").decode("utf-8")
-        except Exception:
+        except (UnicodeEncodeError, UnicodeDecodeError):
             break
         if candidate == repaired:
             break
@@ -384,7 +387,7 @@ def attach_person_identity(df: pd.DataFrame) -> tuple[pd.DataFrame, object]:
     for _, registry_row in identity.registry.fillna("").iterrows():
         status = str(registry_row.get("status") or "").casefold()
         person_id = str(registry_row.get("person_id") or "").strip()
-        display_name = str(registry_row.get("display_name") or "").strip()
+        display_name = repair_mojibake(str(registry_row.get("display_name") or "").strip())
         if person_id and display_name and status not in {"inactive", "inaktiv", "deleted", "slettet", "merged"}:
             canonical_names[person_id] = display_name
 

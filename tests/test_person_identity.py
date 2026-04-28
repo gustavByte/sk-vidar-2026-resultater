@@ -166,6 +166,45 @@ def write_basic_registry(tmp_path: Path, rows: list[dict[str, str]]) -> None:
     write_csv(tmp_path / "person_registry.csv", normalized_rows, columns)
 
 
+def test_existing_mojibake_display_names_are_repaired_for_public_profiles(tmp_path: Path) -> None:
+    write_basic_registry(
+        tmp_path,
+        [
+            {
+                "person_id": "skv-p000001",
+                "display_name": "\u00c3\u0085dne Andersen",
+                "profile_slug": "adne-andersen",
+            }
+        ],
+    )
+
+    results = pd.DataFrame([{"result_id": "res-1", "athlete_name": "\u00c3\u0085dne Andersen"}])
+    identity = ensure_new_people_are_appended_without_changing_existing_ids(
+        results,
+        tmp_path,
+        now=datetime.fromisoformat("2026-04-28T12:00:00+02:00"),
+    )
+
+    registry = identity.registry.set_index("person_id")
+    assert registry.loc["skv-p000001", "display_name"] == "\u00c5dne Andersen"
+
+    public_results = pd.DataFrame(
+        [
+            {
+                "person_id": "skv-p000001",
+                "athlete_name": "\u00c3\u0085dne Andersen",
+                "distance": "5 km",
+                "gender": "M",
+                "result_time_seconds": float("inf"),
+                "published_date_iso": "2026-04-25",
+            }
+        ]
+    )
+    payload = build_people_payload(public_results, identity)
+
+    assert payload["profiles"][0]["display_name"] == "\u00c5dne Andersen"
+
+
 def write_basic_slug_history(tmp_path: Path, rows: list[dict[str, str]]) -> None:
     write_csv(
         tmp_path / "person_slug_history.csv",

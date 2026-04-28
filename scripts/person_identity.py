@@ -195,19 +195,26 @@ def _clean_text(value: object) -> str:
     return "" if text.lower() == "nan" else text
 
 
+MOJIBAKE_MARKERS = ("\u00c3", "\u00c2", "\u00e2")
+
+
 def repair_mojibake(text: str) -> str:
     repaired = text
-    for _ in range(2):
-        if not any(marker in repaired for marker in ("Ã", "Â", "â")):
+    for _ in range(3):
+        if not any(marker in repaired for marker in MOJIBAKE_MARKERS):
             break
         try:
             candidate = repaired.encode("latin1").decode("utf-8")
-        except Exception:
+        except (UnicodeEncodeError, UnicodeDecodeError):
             break
         if candidate == repaired:
             break
         repaired = candidate
     return repaired
+
+
+def clean_display_text(value: object) -> str:
+    return repair_mojibake(_clean_text(value))
 
 
 def normalize_name(value: object) -> str:
@@ -269,7 +276,10 @@ def _with_columns(df: pd.DataFrame, columns: list[str]) -> pd.DataFrame:
 def _read_csv(path: Path, columns: list[str]) -> pd.DataFrame:
     if not path.exists():
         return pd.DataFrame(columns=columns)
-    return _with_columns(pd.read_csv(path, dtype=str).fillna(""), columns)
+    df = pd.read_csv(path, dtype=str).fillna("")
+    for column in df.columns:
+        df[column] = df[column].map(lambda value: repair_mojibake(value) if isinstance(value, str) else value)
+    return _with_columns(df, columns)
 
 
 def _write_csv(df: pd.DataFrame, path: Path, columns: list[str]) -> None:
@@ -529,7 +539,9 @@ def _prepare_registry(registry: pd.DataFrame, now_text: str) -> pd.DataFrame:
         if _clean_text(value)
     }
     for index, row in working.iterrows():
-        display_name = _clean_text(row.get("display_name"))
+        display_name = clean_display_text(row.get("display_name"))
+        if display_name != _clean_text(row.get("display_name")):
+            working.at[index, "display_name"] = display_name
         if not _clean_text(row.get("normalized_name")) and display_name:
             working.at[index, "normalized_name"] = normalize_name(display_name)
         if not _clean_text(row.get("status")):
@@ -542,7 +554,7 @@ def _prepare_registry(registry: pd.DataFrame, now_text: str) -> pd.DataFrame:
 
 
 def _append_alias_if_missing(aliases: pd.DataFrame, person_id: str, alias: str, source: str) -> pd.DataFrame:
-    cleaned_alias = _clean_text(alias)
+    cleaned_alias = clean_display_text(alias)
     normalized_alias = normalize_name(cleaned_alias)
     if not person_id or not normalized_alias:
         return aliases
@@ -745,7 +757,7 @@ def build_person_match_candidates(identity: IdentityData, results_df: pd.DataFra
         person_id = _clean_text(row.get("person_id"))
         if not person_id or _resolve_person_id(person_id, registry) != person_id:
             continue
-        display_name = _clean_text(row.get("display_name"))
+        display_name = clean_display_text(row.get("display_name"))
         tokens = _tokens_for_name(display_name)
         if not display_name or not tokens:
             continue
@@ -995,7 +1007,7 @@ def ensure_new_people_are_appended_without_changing_existing_ids(
         match = match_result_to_person(row, identity, indexes)
         if match.person_id or match.needs_review:
             continue
-        display_name = _clean_text(row.get("athlete_name"))
+        display_name = clean_display_text(row.get("athlete_name"))
         normalized_name = normalize_name(display_name)
         if not normalized_name:
             continue
@@ -1168,8 +1180,8 @@ def build_people_payload(df: pd.DataFrame, identity: IdentityData) -> dict[str, 
     for person_id, person_rows in df[df["person_id"].fillna("").ne("")].groupby("person_id"):
         registry_row = registry_by_id.get(person_id)
         display_name = (
-            _clean_text(registry_row.get("display_name")) if registry_row is not None else ""
-        ) or _clean_text(person_rows["athlete_name"].mode().iloc[0])
+            clean_display_text(registry_row.get("display_name")) if registry_row is not None else ""
+        ) or clean_display_text(person_rows["athlete_name"].mode().iloc[0])
         profile_slug = current_slug_by_id.get(person_id) or slugify_person_name(display_name)
         distances = _sort_distances(
             {
@@ -1277,7 +1289,7 @@ def _fuzzy_candidates(registry: pd.DataFrame) -> pd.DataFrame:
             people.append(
                 {
                     "person_id": _clean_text(row.get("person_id")),
-                    "display_name": _clean_text(row.get("display_name")),
+                    "display_name": clean_display_text(row.get("display_name")),
                     "normalized_name": normalized,
                 }
             )
