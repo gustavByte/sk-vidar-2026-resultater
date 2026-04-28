@@ -14,6 +14,7 @@ const state = {
 };
 
 const numberFormat = new Intl.NumberFormat("nb-NO");
+let searchRenderFrame = 0;
 
 const els = {
   weeksList: document.getElementById("weeks-list"),
@@ -25,6 +26,7 @@ const els = {
   emptyState: document.getElementById("empty-state"),
   searchInput: document.getElementById("search-input"),
   distanceFilter: document.getElementById("distance-filter"),
+  weekSelect: document.getElementById("week-select"),
   eventFilter: document.getElementById("event-filter"),
   rankingsGrid: document.getElementById("rankings-grid"),
   weekView: document.getElementById("week-view"),
@@ -62,6 +64,51 @@ function escapeHtml(value) {
 
 function formatCount(value) {
   return numberFormat.format(value ?? 0);
+}
+
+function preferredScrollBehavior() {
+  return window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth";
+}
+
+function normalizeSearchText(value) {
+  return String(value ?? "")
+    .normalize("NFKD")
+    .replace(/\p{Diacritic}/gu, "")
+    .toLocaleLowerCase("nb-NO")
+    .trim();
+}
+
+function scrollSelectedWeekIntoView() {
+  const selected = els.weeksList?.querySelector('.week-item[aria-pressed="true"]');
+  if (!selected) {
+    return;
+  }
+
+  selected.scrollIntoView({
+    behavior: preferredScrollBehavior(),
+    inline: "center",
+    block: "nearest",
+  });
+}
+
+function scrollActiveEventIntoView() {
+  const selected = els.eventFilter?.querySelector(".event-chip.is-active");
+  if (!selected) {
+    return;
+  }
+
+  selected.scrollIntoView({
+    behavior: preferredScrollBehavior(),
+    inline: "center",
+    block: "nearest",
+  });
+}
+
+function scheduleSelectedWeekRender() {
+  cancelAnimationFrame(searchRenderFrame);
+  searchRenderFrame = requestAnimationFrame(() => {
+    renderSelectedWeek();
+  });
 }
 
 function profileHref(slug) {
@@ -153,6 +200,39 @@ function renderDistanceOptions() {
   els.distanceFilter.innerHTML = options.map((distance) => `<option value="${escapeHtml(distance)}">${escapeHtml(distance)}</option>`).join("");
 }
 
+function renderWeekSelect() {
+  if (!els.weekSelect) {
+    return;
+  }
+
+  els.weekSelect.innerHTML = state.data.weeks
+    .map((week) => {
+      const selected = Number(week.week_number) === Number(state.selectedWeek);
+      const label = `${week.week_label} - ${week.published_date_label} - ${formatCount(week.result_count)} resultater`;
+      return `<option value="${escapeHtml(week.week_number)}"${selected ? " selected" : ""}>${escapeHtml(label)}</option>`;
+    })
+    .join("");
+}
+
+function setSelectedWeek(weekNumber, { resetEvent = true } = {}) {
+  const nextWeek = Number(weekNumber);
+  if (!Number.isFinite(nextWeek)) {
+    return;
+  }
+
+  state.selectedWeek = nextWeek;
+
+  if (resetEvent) {
+    state.eventFilter = "Alle";
+  }
+
+  renderWeeks();
+  renderWeekSelect();
+  renderEventButtons();
+  renderSelectedWeek();
+  requestAnimationFrame(scrollSelectedWeekIntoView);
+}
+
 function renderWeeks() {
   els.weeksList.innerHTML = state.data.weeks
     .map((week) => {
@@ -174,9 +254,7 @@ function renderWeeks() {
 
   els.weeksList.querySelectorAll(".week-item").forEach((button) => {
     button.addEventListener("click", () => {
-      state.selectedWeek = Number(button.dataset.week);
-      state.eventFilter = "Alle";
-      renderAll();
+      setSelectedWeek(button.dataset.week);
     });
   });
 }
@@ -193,11 +271,11 @@ function genderMatches(row) {
 
 function getFilteredResults() {
   const weekResults = getWeekResults(state.selectedWeek);
-  const query = state.search.trim().toLowerCase();
+  const query = normalizeSearchText(state.search);
 
   return weekResults.filter((row) => {
     const eventName = getEventLabel(row);
-    const text = [
+    const text = normalizeSearchText([
       row.athlete_name,
       eventName,
       row.notes_clean,
@@ -210,8 +288,7 @@ function getFilteredResults() {
       row.split_delta_display,
     ]
       .filter(Boolean)
-      .join(" ")
-      .toLowerCase();
+      .join(" "));
 
     const matchesSearch = !query || text.includes(query);
     const matchesEvent = state.eventFilter === "Alle" || eventName === state.eventFilter;
@@ -274,24 +351,26 @@ function renderResultsTable(results) {
 function renderResultsCards(results) {
   els.resultsCards.innerHTML = results
     .map((row) => {
+      const time = row.result_time_normalized || row.result_time_raw || "";
+      const eventLabel = getEventLabel(row);
       const metaParts = [
         hasValue(row.distance) ? `<span class="result-pill">${escapeHtml(row.distance)}</span>` : "",
         hasValue(row.class_name) ? `<span class="result-pill">${escapeHtml(row.class_name)}</span>` : "",
-        hasValue(row.place) ? `<span class="result-pill">#${escapeHtml(row.place)}</span>` : "",
-        hasValue(row.class_place) ? `<span class="result-pill result-pill--muted">Kl ${escapeHtml(row.class_place)}</span>` : "",
+        hasValue(row.place) ? `<span class="result-pill">Plass ${escapeHtml(row.place)}</span>` : "",
+        hasValue(row.class_place) ? `<span class="result-pill result-pill--muted">Klasse ${escapeHtml(row.class_place)}</span>` : "",
       ].filter(Boolean);
 
-      const splitMarkup = row.split_first_display || row.split_second_display || row.split_delta_display
-        ? `
-          <div class="result-card-splits">
-            ${hasValue(row.split_first_display) ? `<span class="result-pill"><strong>${escapeHtml(row.split_first_label || "Split 1")}</strong>${escapeHtml(row.split_first_display)}</span>` : ""}
-            ${hasValue(row.split_second_display) ? `<span class="result-pill"><strong>${escapeHtml(row.split_second_label || "Split 2")}</strong>${escapeHtml(row.split_second_display)}</span>` : ""}
-            ${hasValue(row.split_delta_display) ? `<span class="result-pill split-delta ${splitClass(row)}"><strong>Splitt</strong>${escapeHtml(row.split_delta_display)}</span>` : ""}
-          </div>
-        `
-        : "";
-
-      const noteMarkup = row.notes_clean ? `<div class="result-card-note">${escapeHtml(row.notes_clean)}</div>` : "";
+      const splitParts = [
+        hasValue(row.split_first_display)
+          ? `<span class="result-pill"><strong>${escapeHtml(row.split_first_label || "Split 1")}</strong>${escapeHtml(row.split_first_display)}</span>`
+          : "",
+        hasValue(row.split_second_display)
+          ? `<span class="result-pill"><strong>${escapeHtml(row.split_second_label || "Split 2")}</strong>${escapeHtml(row.split_second_display)}</span>`
+          : "",
+        hasValue(row.split_delta_display)
+          ? `<span class="result-pill split-delta ${splitClass(row)}"><strong>Splitt</strong>${escapeHtml(row.split_delta_display)}</span>`
+          : "",
+      ].filter(Boolean);
 
       return `
         <article class="result-card">
@@ -299,13 +378,13 @@ function renderResultsCards(results) {
             <div class="result-card-athlete">
               <span class="gender-pill">${displayValue(row.gender)}</span>
               <strong class="result-card-name">${personLink(row)}</strong>
-              <div class="result-card-time">${escapeHtml(row.result_time_normalized || row.result_time_raw || "")}</div>
+              <div class="result-card-time">${escapeHtml(time)}</div>
             </div>
           </div>
-          <div class="result-card-meta">${escapeHtml(getEventLabel(row))}</div>
+          <div class="result-card-meta">${escapeHtml(eventLabel)}</div>
           ${metaParts.length ? `<div class="result-card-inline">${metaParts.join("")}</div>` : ""}
-          ${splitMarkup}
-          ${noteMarkup}
+          ${splitParts.length ? `<div class="result-card-splits">${splitParts.join("")}</div>` : ""}
+          ${row.notes_clean ? `<div class="result-card-note">${escapeHtml(row.notes_clean)}</div>` : ""}
         </article>
       `;
     })
@@ -314,7 +393,9 @@ function renderResultsCards(results) {
 
 function renderGenderButtons() {
   Object.entries(els.genderButtons).forEach(([key, button]) => {
-    button.classList.toggle("is-active", state.genderFilter === key);
+    const active = state.genderFilter === key;
+    button.classList.toggle("is-active", active);
+    button.setAttribute("aria-pressed", active ? "true" : "false");
   });
 }
 
@@ -325,13 +406,19 @@ function renderEventButtons() {
   }
 
   els.eventFilter.innerHTML = events
-    .map(
-      (eventName) => `
-        <button class="event-chip${state.eventFilter === eventName ? " is-active" : ""}" type="button" data-event="${escapeHtml(eventName)}">
+    .map((eventName) => {
+      const active = state.eventFilter === eventName;
+      return `
+        <button
+          class="event-chip${active ? " is-active" : ""}"
+          type="button"
+          data-event="${escapeHtml(eventName)}"
+          aria-pressed="${active ? "true" : "false"}"
+        >
           ${escapeHtml(eventName)}
         </button>
-      `,
-    )
+      `;
+    })
     .join("");
 
   els.eventFilter.querySelectorAll(".event-chip").forEach((button) => {
@@ -339,6 +426,7 @@ function renderEventButtons() {
       state.eventFilter = button.dataset.event || "Alle";
       renderEventButtons();
       renderSelectedWeek();
+      requestAnimationFrame(scrollActiveEventIntoView);
     });
   });
 }
@@ -625,14 +713,16 @@ function renderSelectedWeek() {
 function renderAll() {
   renderGenderButtons();
   renderWeeks();
+  renderWeekSelect();
   renderEventButtons();
   renderSelectedWeek();
+  requestAnimationFrame(scrollSelectedWeekIntoView);
 }
 
 function bindFilters() {
   els.searchInput.addEventListener("input", (event) => {
     state.search = event.target.value;
-    renderSelectedWeek();
+    scheduleSelectedWeekRender();
   });
 
   els.distanceFilter.addEventListener("change", (event) => {
@@ -640,17 +730,26 @@ function bindFilters() {
     renderSelectedWeek();
   });
 
+  if (els.weekSelect) {
+    els.weekSelect.addEventListener("change", (event) => {
+      setSelectedWeek(event.target.value);
+    });
+  }
+
   els.genderButtons.all.addEventListener("click", () => {
     state.genderFilter = "all";
-    renderAll();
+    renderGenderButtons();
+    renderSelectedWeek();
   });
   els.genderButtons.women.addEventListener("click", () => {
     state.genderFilter = "women";
-    renderAll();
+    renderGenderButtons();
+    renderSelectedWeek();
   });
   els.genderButtons.men.addEventListener("click", () => {
     state.genderFilter = "men";
-    renderAll();
+    renderGenderButtons();
+    renderSelectedWeek();
   });
 }
 

@@ -15,8 +15,8 @@
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=20260427-people" />
-    <script type="module" src="./app.js?v=20260427-people"></script>
+    <link rel="stylesheet" href="./styles.css?v=20260428-mobile" />
+    <script type="module" src="./app.js?v=20260428-mobile"></script>
   </head>
   <body>
     <main class="page">
@@ -56,6 +56,10 @@
             <strong>Uker</strong>
             <span>Siste øverst</span>
           </div>
+          <label class="field week-select-field">
+            <span>Velg uke</span>
+            <select id="week-select"></select>
+          </label>
           <div id="weeks-list" class="weeks-list" role="list"></div>
         </aside>
 
@@ -66,7 +70,7 @@
                 <h2 id="selected-week-title">Laster…</h2>
                 <p id="selected-week-meta" class="toolbar-meta"></p>
               </div>
-              <div class="segmented" role="tablist" aria-label="Kjønn">
+              <div class="segmented" role="group" aria-label="Kjønn">
                 <button id="gender-all" class="segment is-active" type="button">Alle</button>
                 <button id="gender-women" class="segment" type="button">Kvinner</button>
                 <button id="gender-men" class="segment" type="button">Menn</button>
@@ -76,7 +80,7 @@
             <div class="toolbar-filters">
               <div class="field field-events">
                 <span>Løp</span>
-                <div id="event-filter" class="event-filter" role="tablist" aria-label="Løp"></div>
+                <div id="event-filter" class="event-filter" role="group" aria-label="Løp"></div>
               </div>
               <label class="field field-search">
                 <span>Søk</span>
