@@ -74,6 +74,12 @@ function normalizeSearchText(value) {
   return String(value ?? "")
     .normalize("NFKD")
     .replace(/\p{Diacritic}/gu, "")
+    .replace(/æ/g, "ae")
+    .replace(/ø/g, "o")
+    .replace(/å/g, "a")
+    .replace(/Æ/g, "ae")
+    .replace(/Ø/g, "o")
+    .replace(/Å/g, "a")
     .toLocaleLowerCase("nb-NO")
     .trim();
 }
@@ -239,7 +245,7 @@ function renderWeeks() {
       const active = Number(week.week_number) === Number(state.selectedWeek);
       const events = week.events.join(", ");
       return `
-        <button class="week-item" type="button" role="listitem" aria-pressed="${active ? "true" : "false"}" data-week="${escapeHtml(week.week_number)}">
+        <button class="week-item" type="button" aria-pressed="${active ? "true" : "false"}" data-week="${escapeHtml(week.week_number)}">
           <div class="week-top">
             <span class="week-label">${escapeHtml(week.week_label)}</span>
             <span class="week-date">${escapeHtml(week.published_date_label)}</span>
