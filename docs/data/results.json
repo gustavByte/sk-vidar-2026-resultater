@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-04-28T12:57:10+02:00",
+  "generated_at": "2026-04-29T12:37:58+02:00",
   "stats": {
-    "result_count": 574,
-    "athlete_count": 322,
-    "event_count": 63,
+    "result_count": 575,
+    "athlete_count": 323,
+    "event_count": 64,
     "week_count": 14,
     "latest_week": 17,
     "latest_date": "2026-04-26",
     "women_count": 216,
-    "men_count": 358,
+    "men_count": 359,
     "missing_gender_or_class_count": 0
   },
   "weeks": [
@@ -40,11 +40,11 @@
       "week_label": "Uke 16",
       "published_date": "2026-04-19",
       "published_date_label": "19.04.2026",
-      "result_count": 40,
-      "athlete_count": 38,
-      "event_count": 10,
+      "result_count": 41,
+      "athlete_count": 39,
+      "event_count": 11,
       "women_count": 16,
-      "men_count": 24,
+      "men_count": 25,
       "events": [
         "10 Km Villa de Laredo 2026",
         "3000 St. Haugen og Salomon",
@@ -54,6 +54,7 @@
         "NM terrengløp kort løype stafett 2026",
         "Oslo Løpsfestival - 5'ern vår!",
         "Perseløpet #1 - 2026",
+        "Sandnes Ultratrail 2026",
         "Seven Hills Record Run",
         "Österlen Spring Trail Duo Trail"
       ]
@@ -4621,6 +4622,32 @@
       "result_time_seconds": 16124.0,
       "place": "11",
       "notes_clean": "Ås skole, Hammerås, Eidsvoll",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-bff53db3bd6843b1",
+      "person_id": "skv-p000349",
+      "person_slug": "mathis-dahl-fenre",
+      "published_date": "2026-04-19",
+      "published_date_label": "19.04.2026",
+      "week_number": 16,
+      "athlete_name": "Mathis Dahl Fenre",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M åpen",
+      "class_place": "1",
+      "event_label": "Sandnes Ultratrail 2026",
+      "distance": "100 miles",
+      "result_time_raw": "26:34:53",
+      "result_time_normalized": "26:34:53",
+      "result_time_seconds": 95693.0,
+      "place": "1",
+      "notes_clean": "",
       "split_first_label": "",
       "split_first_display": "",
       "split_second_label": "",
@@ -16789,7 +16816,7 @@
     }
   ],
   "people": {
-    "profile_count": 322,
+    "profile_count": 323,
     "profiles": [
       {
         "person_id": "skv-p000001",
@@ -23833,6 +23860,20 @@
         "latest_result_date": "2026-03-21"
       },
       {
+        "person_id": "skv-p000349",
+        "profile_slug": "mathis-dahl-fenre",
+        "display_name": "Mathis Dahl Fenre",
+        "gender": "M",
+        "gender_label": "Menn",
+        "result_count": 1,
+        "distances": [
+          "100 miles"
+        ],
+        "best_results": [],
+        "first_result_date": "2026-04-19",
+        "latest_result_date": "2026-04-19"
+      },
+      {
         "person_id": "skv-p000225",
         "profile_slug": "matias-brekka",
         "display_name": "Matias Brekkå",
@@ -28079,6 +28120,7 @@
       "vilde-vage-henriksen": "skv-p000346",
       "william-morken-andersen": "skv-p000347",
       "yunpeng-ding": "skv-p000348",
+      "mathis-dahl-fenre": "skv-p000349",
       "adne-andersen-andersen": "skv-p000001",
       "adne-sandvik-dyrnesli": "skv-p000003",
       "erlend-fugleberg-bruaset": "skv-p000075",
