@@ -1,18 +1,32 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-05-01T17:39:06+02:00",
+  "generated_at": "2026-05-01T17:57:10+02:00",
   "stats": {
-    "result_count": 576,
-    "athlete_count": 323,
-    "event_count": 64,
-    "week_count": 14,
-    "latest_week": 17,
-    "latest_date": "2026-04-26",
-    "women_count": 216,
-    "men_count": 360,
+    "result_count": 596,
+    "athlete_count": 328,
+    "event_count": 65,
+    "week_count": 15,
+    "latest_week": 18,
+    "latest_date": "2026-05-01",
+    "women_count": 227,
+    "men_count": 369,
     "missing_gender_or_class_count": 0
   },
   "weeks": [
+    {
+      "week_number": 18,
+      "week_label": "Uke 18",
+      "published_date": "2026-05-01",
+      "published_date_label": "01.05.2026",
+      "result_count": 20,
+      "athlete_count": 20,
+      "event_count": 1,
+      "women_count": 11,
+      "men_count": 9,
+      "events": [
+        "Grue Halvmaraton 2026"
+      ]
+    },
     {
       "week_number": 17,
       "week_label": "Uke 17",
@@ -261,6 +275,526 @@
     }
   ],
   "results": [
+    {
+      "result_id": "res-0a664dcf35c6125b",
+      "person_id": "skv-p000295",
+      "person_slug": "sjur-krystad-prestsaeter",
+      "published_date": "2026-05-01",
+      "published_date_label": "01.05.2026",
+      "week_number": 18,
+      "athlete_name": "Sjur Krystad Prestsæter",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M35-39",
+      "class_place": "1",
+      "event_label": "Grue Halvmaraton 2026",
+      "distance": "Halvmaraton",
+      "result_time_raw": "1:04:43",
+      "result_time_normalized": "1:04:43",
+      "result_time_seconds": 3883.0,
+      "place": "2",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-ab316dc4a8e71dce",
+      "person_id": "skv-p000223",
+      "person_slug": "martin-stray-egeberg",
+      "published_date": "2026-05-01",
+      "published_date_label": "01.05.2026",
+      "week_number": 18,
+      "athlete_name": "Martin Stray Egeberg",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M23-34",
+      "class_place": "9",
+      "event_label": "Grue Halvmaraton 2026",
+      "distance": "Halvmaraton",
+      "result_time_raw": "1:12:28",
+      "result_time_normalized": "1:12:28",
+      "result_time_seconds": 4348.0,
+      "place": "14",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-ee5c0aaf6c9a5a13",
+      "person_id": "skv-p000193",
+      "person_slug": "madelene-wanvik-holum",
+      "published_date": "2026-05-01",
+      "published_date_label": "01.05.2026",
+      "week_number": 18,
+      "athlete_name": "Madelène Wanvik Holum",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K23-34",
+      "class_place": "1",
+      "event_label": "Grue Halvmaraton 2026",
+      "distance": "Halvmaraton",
+      "result_time_raw": "1:14:45",
+      "result_time_normalized": "1:14:45",
+      "result_time_seconds": 4485.0,
+      "place": "24",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-eb11842bf91d5037",
+      "person_id": "skv-p000331",
+      "person_slug": "tormod-fauske-tho",
+      "published_date": "2026-05-01",
+      "published_date_label": "01.05.2026",
+      "week_number": 18,
+      "athlete_name": "Tormod Fauske Tho *",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M23-34",
+      "class_place": "20",
+      "event_label": "Grue Halvmaraton 2026",
+      "distance": "Halvmaraton",
+      "result_time_raw": "1:16:09",
+      "result_time_normalized": "1:16:09",
+      "result_time_seconds": 4569.0,
+      "place": "34",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-9936de1d06e773be",
+      "person_id": "skv-p000255",
+      "person_slug": "oyvind-lie",
+      "published_date": "2026-05-01",
+      "published_date_label": "01.05.2026",
+      "week_number": 18,
+      "athlete_name": "Øyvind Lie *",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M23-34",
+      "class_place": "27",
+      "event_label": "Grue Halvmaraton 2026",
+      "distance": "Halvmaraton",
+      "result_time_raw": "1:17:56",
+      "result_time_normalized": "1:17:56",
+      "result_time_seconds": 4676.0,
+      "place": "44",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-9f4c727efa97c436",
+      "person_id": "skv-p000027",
+      "person_slug": "anette-killerud-odegard",
+      "published_date": "2026-05-01",
+      "published_date_label": "01.05.2026",
+      "week_number": 18,
+      "athlete_name": "Anette Killerud Ødegård",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K35-39",
+      "class_place": "2",
+      "event_label": "Grue Halvmaraton 2026",
+      "distance": "Halvmaraton",
+      "result_time_raw": "1:18:46",
+      "result_time_normalized": "1:18:46",
+      "result_time_seconds": 4726.0,
+      "place": "54",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-9cc14a9ef69ea2c6",
+      "person_id": "skv-p000173",
+      "person_slug": "kristian-brenni",
+      "published_date": "2026-05-01",
+      "published_date_label": "01.05.2026",
+      "week_number": 18,
+      "athlete_name": "Kristian Brenni",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M23-34",
+      "class_place": "40",
+      "event_label": "Grue Halvmaraton 2026",
+      "distance": "Halvmaraton",
+      "result_time_raw": "1:20:10",
+      "result_time_normalized": "1:20:10",
+      "result_time_seconds": 4810.0,
+      "place": "72",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-cb9ea177e65e089d",
+      "person_id": "skv-p000308",
+      "person_slug": "stein-ellingsen",
+      "published_date": "2026-05-01",
+      "published_date_label": "01.05.2026",
+      "week_number": 18,
+      "athlete_name": "Stein Ellingsen *",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M35-39",
+      "class_place": "39",
+      "event_label": "Grue Halvmaraton 2026",
+      "distance": "Halvmaraton",
+      "result_time_raw": "1:27:30",
+      "result_time_normalized": "1:27:30",
+      "result_time_seconds": 5250.0,
+      "place": "182",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-d252b6bbf3c4a77e",
+      "person_id": "skv-p000107",
+      "person_slug": "hege-nja-bjorkmann",
+      "published_date": "2026-05-01",
+      "published_date_label": "01.05.2026",
+      "week_number": 18,
+      "athlete_name": "Hege Njå Bjørkmann",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K45-49",
+      "class_place": "2",
+      "event_label": "Grue Halvmaraton 2026",
+      "distance": "Halvmaraton",
+      "result_time_raw": "1:27:36",
+      "result_time_normalized": "1:27:36",
+      "result_time_seconds": 5256.0,
+      "place": "185",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-478053f2b9d31814",
+      "person_id": "skv-p000352",
+      "person_slug": "lene-heimdal",
+      "published_date": "2026-05-01",
+      "published_date_label": "01.05.2026",
+      "week_number": 18,
+      "athlete_name": "Lene Heimdal",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K23-34",
+      "class_place": "6",
+      "event_label": "Grue Halvmaraton 2026",
+      "distance": "Halvmaraton",
+      "result_time_raw": "1:29:47",
+      "result_time_normalized": "1:29:47",
+      "result_time_seconds": 5387.0,
+      "place": "234",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-484cce73a60d22e9",
+      "person_id": "skv-p000008",
+      "person_slug": "aleksander-amundsen",
+      "published_date": "2026-05-01",
+      "published_date_label": "01.05.2026",
+      "week_number": 18,
+      "athlete_name": "Aleksander Amundsen",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M23-34",
+      "class_place": "115",
+      "event_label": "Grue Halvmaraton 2026",
+      "distance": "Halvmaraton",
+      "result_time_raw": "1:30:12",
+      "result_time_normalized": "1:30:12",
+      "result_time_seconds": 5412.0,
+      "place": "249",
+      "notes_clean": "fartsholder",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-08a9965cba773fb8",
+      "person_id": "skv-p000354",
+      "person_slug": "ole-jacobsen",
+      "published_date": "2026-05-01",
+      "published_date_label": "01.05.2026",
+      "week_number": 18,
+      "athlete_name": "Ole Jacobsen",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M65-69",
+      "class_place": "2",
+      "event_label": "Grue Halvmaraton 2026",
+      "distance": "Halvmaraton",
+      "result_time_raw": "1:30:36",
+      "result_time_normalized": "1:30:36",
+      "result_time_seconds": 5436.0,
+      "place": "258",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-a0fc4e3049bbcc05",
+      "person_id": "skv-p000163",
+      "person_slug": "karen-marie-hakonsen",
+      "published_date": "2026-05-01",
+      "published_date_label": "01.05.2026",
+      "week_number": 18,
+      "athlete_name": "Karen Marie Håkonsen",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K23-34",
+      "class_place": "9",
+      "event_label": "Grue Halvmaraton 2026",
+      "distance": "Halvmaraton",
+      "result_time_raw": "1:30:57",
+      "result_time_normalized": "1:30:57",
+      "result_time_seconds": 5457.0,
+      "place": "265",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-55f7d3e263a382e5",
+      "person_id": "skv-p000158",
+      "person_slug": "julie-lous",
+      "published_date": "2026-05-01",
+      "published_date_label": "01.05.2026",
+      "week_number": 18,
+      "athlete_name": "Julie Lous",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K20-22",
+      "class_place": "1",
+      "event_label": "Grue Halvmaraton 2026",
+      "distance": "Halvmaraton",
+      "result_time_raw": "1:33:21",
+      "result_time_normalized": "1:33:21",
+      "result_time_seconds": 5601.0,
+      "place": "308",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-227663c1f8866f05",
+      "person_id": "skv-p000014",
+      "person_slug": "anders-nordby",
+      "published_date": "2026-05-01",
+      "published_date_label": "01.05.2026",
+      "week_number": 18,
+      "athlete_name": "Anders Nordby",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M50-54",
+      "class_place": "15",
+      "event_label": "Grue Halvmaraton 2026",
+      "distance": "Halvmaraton",
+      "result_time_raw": "1:37:08",
+      "result_time_normalized": "1:37:08",
+      "result_time_seconds": 5828.0,
+      "place": "379",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-d30e2b03124f093a",
+      "person_id": "skv-p000353",
+      "person_slug": "ninni-jol-kken-brodalen",
+      "published_date": "2026-05-01",
+      "published_date_label": "01.05.2026",
+      "week_number": 18,
+      "athlete_name": "Ninni Jol?kken Brodalen",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K23-34",
+      "class_place": "33",
+      "event_label": "Grue Halvmaraton 2026",
+      "distance": "Halvmaraton",
+      "result_time_raw": "1:41:33",
+      "result_time_normalized": "1:41:33",
+      "result_time_seconds": 6093.0,
+      "place": "466",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-0c6d3fd272919398",
+      "person_id": "skv-p000159",
+      "person_slug": "julie-thorp",
+      "published_date": "2026-05-01",
+      "published_date_label": "01.05.2026",
+      "week_number": 18,
+      "athlete_name": "Julie Thorp",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K35-39",
+      "class_place": "27",
+      "event_label": "Grue Halvmaraton 2026",
+      "distance": "Halvmaraton",
+      "result_time_raw": "1:50:55",
+      "result_time_normalized": "1:50:55",
+      "result_time_seconds": 6655.0,
+      "place": "606",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-32e722fcd022e081",
+      "person_id": "skv-p000297",
+      "person_slug": "sofie-gotuholt",
+      "published_date": "2026-05-01",
+      "published_date_label": "01.05.2026",
+      "week_number": 18,
+      "athlete_name": "Sofie Gotuholt",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K23-34",
+      "class_place": "59",
+      "event_label": "Grue Halvmaraton 2026",
+      "distance": "Halvmaraton",
+      "result_time_raw": "1:53:43",
+      "result_time_normalized": "1:53:43",
+      "result_time_seconds": 6823.0,
+      "place": "641",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-6a350c0eb90c4634",
+      "person_id": "skv-p000350",
+      "person_slug": "elin-lippe-lippe-stavnes",
+      "published_date": "2026-05-01",
+      "published_date_label": "01.05.2026",
+      "week_number": 18,
+      "athlete_name": "Elin Lippe Lippe Stavnes",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K45-49",
+      "class_place": "16",
+      "event_label": "Grue Halvmaraton 2026",
+      "distance": "Halvmaraton",
+      "result_time_raw": "2:00:56",
+      "result_time_normalized": "2:00:56",
+      "result_time_seconds": 7256.0,
+      "place": "733",
+      "notes_clean": "para",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-f7cadfcf9648185f",
+      "person_id": "skv-p000351",
+      "person_slug": "julie-garsiot",
+      "published_date": "2026-05-01",
+      "published_date_label": "01.05.2026",
+      "week_number": 18,
+      "athlete_name": "Julie Garsiot",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K45-49",
+      "class_place": "17",
+      "event_label": "Grue Halvmaraton 2026",
+      "distance": "Halvmaraton",
+      "result_time_raw": "2:01:08",
+      "result_time_normalized": "2:01:08",
+      "result_time_seconds": 7268.0,
+      "place": "735",
+      "notes_clean": "para",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
     {
       "result_id": "res-8562be788e982aa5",
       "person_id": "skv-p000172",
@@ -15902,6 +16436,22 @@
           "gender": "K",
           "gender_label": "Kvinner",
           "rank": 1,
+          "person_id": "skv-p000193",
+          "person_slug": "madelene-wanvik-holum",
+          "result_id": "res-ee5c0aaf6c9a5a13",
+          "athlete_name": "Madelène Wanvik Holum",
+          "result_time": "1:14:45",
+          "result_time_seconds": 4485.0,
+          "event_label": "Grue Halvmaraton 2026",
+          "published_date": "2026-05-01",
+          "published_date_label": "01.05.2026"
+        },
+        {
+          "distance": "Halvmaraton",
+          "source_distance": "Halvmaraton",
+          "gender": "K",
+          "gender_label": "Kvinner",
+          "rank": 2,
           "person_id": "skv-p000129",
           "person_slug": "ingrid-helene-nyhus",
           "result_id": "res-318aa5677899bcdd",
@@ -15917,7 +16467,7 @@
           "source_distance": "Halvmaraton",
           "gender": "K",
           "gender_label": "Kvinner",
-          "rank": 2,
+          "rank": 3,
           "person_id": "skv-p000276",
           "person_slug": "sara-kjeldsen-lie",
           "result_id": "res-0f281f89cc4958a9",
@@ -15933,7 +16483,23 @@
           "source_distance": "Halvmaraton",
           "gender": "K",
           "gender_label": "Kvinner",
-          "rank": 3,
+          "rank": 4,
+          "person_id": "skv-p000027",
+          "person_slug": "anette-killerud-odegard",
+          "result_id": "res-9f4c727efa97c436",
+          "athlete_name": "Anette Killerud Ødegård",
+          "result_time": "1:18:46",
+          "result_time_seconds": 4726.0,
+          "event_label": "Grue Halvmaraton 2026",
+          "published_date": "2026-05-01",
+          "published_date_label": "01.05.2026"
+        },
+        {
+          "distance": "Halvmaraton",
+          "source_distance": "Halvmaraton",
+          "gender": "K",
+          "gender_label": "Kvinner",
+          "rank": 5,
           "person_id": "skv-p000216",
           "person_slug": "marte-lien-johnsen",
           "result_id": "res-02e98614a0b5d8e7",
@@ -15949,7 +16515,7 @@
           "source_distance": "Halvmaraton",
           "gender": "K",
           "gender_label": "Kvinner",
-          "rank": 4,
+          "rank": 6,
           "person_id": "skv-p000037",
           "person_slug": "asta-ellingvag",
           "result_id": "res-270db4b6d9452f35",
@@ -15965,7 +16531,7 @@
           "source_distance": "Halvmaraton",
           "gender": "K",
           "gender_label": "Kvinner",
-          "rank": 5,
+          "rank": 7,
           "person_id": "skv-p000309",
           "person_slug": "stine-isaksen",
           "result_id": "res-56e483558c2c177c",
@@ -15981,7 +16547,7 @@
           "source_distance": "Halvmaraton",
           "gender": "K",
           "gender_label": "Kvinner",
-          "rank": 6,
+          "rank": 8,
           "person_id": "skv-p000044",
           "person_slug": "catherine-vaugelade-pedersen",
           "result_id": "res-a4a60f77281a3e82",
@@ -15997,7 +16563,7 @@
           "source_distance": "Halvmaraton",
           "gender": "K",
           "gender_label": "Kvinner",
-          "rank": 7,
+          "rank": 9,
           "person_id": "skv-p000159",
           "person_slug": "julie-thorp",
           "result_id": "res-2f9d8095a1d0f4d0",
@@ -16013,7 +16579,7 @@
           "source_distance": "Halvmaraton",
           "gender": "K",
           "gender_label": "Kvinner",
-          "rank": 8,
+          "rank": 10,
           "person_id": "skv-p000140",
           "person_slug": "janne-dahle",
           "result_id": "res-b5baaa19a361d264",
@@ -16023,38 +16589,6 @@
           "event_label": "Bislett Indoor Marathon",
           "published_date": "2026-02-08",
           "published_date_label": "08.02.2026"
-        },
-        {
-          "distance": "Halvmaraton",
-          "source_distance": "Halvmaraton",
-          "gender": "K",
-          "gender_label": "Kvinner",
-          "rank": 9,
-          "person_id": "skv-p000264",
-          "person_slug": "rebekka-haugland",
-          "result_id": "res-ae8b60559b7ea3f7",
-          "athlete_name": "Rebekka Haugland",
-          "result_time": "1:24:46",
-          "result_time_seconds": 5086.0,
-          "event_label": "Lisboa halvmaraton",
-          "published_date": "2026-03-08",
-          "published_date_label": "08.03.2026"
-        },
-        {
-          "distance": "Halvmaraton",
-          "source_distance": "Halvmaraton",
-          "gender": "K",
-          "gender_label": "Kvinner",
-          "rank": 10,
-          "person_id": "skv-p000241",
-          "person_slug": "nora-melvold",
-          "result_id": "res-969765830b470d99",
-          "athlete_name": "Nora Melvold",
-          "result_time": "1:28:07",
-          "result_time_seconds": 5287.0,
-          "event_label": "Malaga Halvmaraton",
-          "published_date": "2026-03-15",
-          "published_date_label": "15.03.2026"
         }
       ],
       "men": [
@@ -16192,6 +16726,22 @@
           "gender": "M",
           "gender_label": "Menn",
           "rank": 9,
+          "person_id": "skv-p000223",
+          "person_slug": "martin-stray-egeberg",
+          "result_id": "res-ab316dc4a8e71dce",
+          "athlete_name": "Martin Stray Egeberg",
+          "result_time": "1:12:28",
+          "result_time_seconds": 4348.0,
+          "event_label": "Grue Halvmaraton 2026",
+          "published_date": "2026-05-01",
+          "published_date_label": "01.05.2026"
+        },
+        {
+          "distance": "Halvmaraton",
+          "source_distance": "Halvmaraton",
+          "gender": "M",
+          "gender_label": "Menn",
+          "rank": 10,
           "person_id": "skv-p000221",
           "person_slug": "martin-kjall-ohlsson",
           "result_id": "res-7e8e4f124e1fd553",
@@ -16201,22 +16751,6 @@
           "event_label": "Budapest halvmaraton",
           "published_date": "2026-03-22",
           "published_date_label": "22.03.2026"
-        },
-        {
-          "distance": "Halvmaraton",
-          "source_distance": "Halvmaraton",
-          "gender": "M",
-          "gender_label": "Menn",
-          "rank": 10,
-          "person_id": "skv-p000287",
-          "person_slug": "simon-skretting",
-          "result_id": "res-836d2a9b0243a54f",
-          "athlete_name": "Simon Skretting",
-          "result_time": "1:15:18",
-          "result_time_seconds": 4518.0,
-          "event_label": "Santa Pola Halvmaraton",
-          "published_date": "2026-01-18",
-          "published_date_label": "18.01.2026"
         }
       ]
     },
@@ -16842,7 +17376,7 @@
     }
   ],
   "people": {
-    "profile_count": 323,
+    "profile_count": 328,
     "profiles": [
       {
         "person_id": "skv-p000001",
@@ -17046,11 +17580,12 @@
         "display_name": "Aleksander Amundsen",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 4,
+        "result_count": 5,
         "distances": [
           "3000 m",
           "5 km",
-          "10 km"
+          "10 km",
+          "Halvmaraton"
         ],
         "best_results": [
           {
@@ -17091,10 +17626,23 @@
             "week_number": 15,
             "place": "1362",
             "class_place": "688"
+          },
+          {
+            "result_id": "res-484cce73a60d22e9",
+            "distance": "Halvmaraton",
+            "source_distance": "Halvmaraton",
+            "result_time": "1:30:12",
+            "result_time_seconds": 5412.0,
+            "event_label": "Grue Halvmaraton 2026",
+            "published_date": "2026-05-01",
+            "published_date_label": "01.05.2026",
+            "week_number": 18,
+            "place": "249",
+            "class_place": "115"
           }
         ],
         "first_result_date": "2026-04-11",
-        "latest_result_date": "2026-04-25"
+        "latest_result_date": "2026-05-01"
       },
       {
         "person_id": "skv-p000009",
@@ -17256,9 +17804,10 @@
         "display_name": "Anders Nordby",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 3,
+        "result_count": 4,
         "distances": [
           "10 km",
+          "Halvmaraton",
           "Maraton"
         ],
         "best_results": [
@@ -17276,6 +17825,19 @@
             "class_place": "424"
           },
           {
+            "result_id": "res-227663c1f8866f05",
+            "distance": "Halvmaraton",
+            "source_distance": "Halvmaraton",
+            "result_time": "1:37:08",
+            "result_time_seconds": 5828.0,
+            "event_label": "Grue Halvmaraton 2026",
+            "published_date": "2026-05-01",
+            "published_date_label": "01.05.2026",
+            "week_number": 18,
+            "place": "379",
+            "class_place": "15"
+          },
+          {
             "result_id": "res-34d5d649dd142ea3",
             "distance": "Maraton",
             "source_distance": "Maraton",
@@ -17290,7 +17852,7 @@
           }
         ],
         "first_result_date": "2026-02-15",
-        "latest_result_date": "2026-04-25"
+        "latest_result_date": "2026-05-01"
       },
       {
         "person_id": "skv-p000015",
@@ -17676,10 +18238,11 @@
         "display_name": "Anette Killerud Ødegård",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 2,
+        "result_count": 3,
         "distances": [
           "5 km",
-          "10 km"
+          "10 km",
+          "Halvmaraton"
         ],
         "best_results": [
           {
@@ -17707,10 +18270,23 @@
             "week_number": 15,
             "place": "17",
             "class_place": "3"
+          },
+          {
+            "result_id": "res-9f4c727efa97c436",
+            "distance": "Halvmaraton",
+            "source_distance": "Halvmaraton",
+            "result_time": "1:18:46",
+            "result_time_seconds": 4726.0,
+            "event_label": "Grue Halvmaraton 2026",
+            "published_date": "2026-05-01",
+            "published_date_label": "01.05.2026",
+            "week_number": 18,
+            "place": "54",
+            "class_place": "2"
           }
         ],
         "first_result_date": "2026-04-11",
-        "latest_result_date": "2026-04-25"
+        "latest_result_date": "2026-05-01"
       },
       {
         "person_id": "skv-p000028",
@@ -18833,6 +19409,34 @@
         ],
         "first_result_date": "2026-04-25",
         "latest_result_date": "2026-04-25"
+      },
+      {
+        "person_id": "skv-p000350",
+        "profile_slug": "elin-lippe-lippe-stavnes",
+        "display_name": "Elin Lippe Lippe Stavnes",
+        "gender": "K",
+        "gender_label": "Kvinner",
+        "result_count": 1,
+        "distances": [
+          "Halvmaraton"
+        ],
+        "best_results": [
+          {
+            "result_id": "res-6a350c0eb90c4634",
+            "distance": "Halvmaraton",
+            "source_distance": "Halvmaraton",
+            "result_time": "2:00:56",
+            "result_time_seconds": 7256.0,
+            "event_label": "Grue Halvmaraton 2026",
+            "published_date": "2026-05-01",
+            "published_date_label": "01.05.2026",
+            "week_number": 18,
+            "place": "733",
+            "class_place": "16"
+          }
+        ],
+        "first_result_date": "2026-05-01",
+        "latest_result_date": "2026-05-01"
       },
       {
         "person_id": "skv-p000063",
@@ -20215,10 +20819,11 @@
         "display_name": "Hege Njå Bjørkmann",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 2,
+        "result_count": 3,
         "distances": [
           "5 km",
-          "10 km"
+          "10 km",
+          "Halvmaraton"
         ],
         "best_results": [
           {
@@ -20246,10 +20851,23 @@
             "week_number": 15,
             "place": "65",
             "class_place": "1"
+          },
+          {
+            "result_id": "res-d252b6bbf3c4a77e",
+            "distance": "Halvmaraton",
+            "source_distance": "Halvmaraton",
+            "result_time": "1:27:36",
+            "result_time_seconds": 5256.0,
+            "event_label": "Grue Halvmaraton 2026",
+            "published_date": "2026-05-01",
+            "published_date_label": "01.05.2026",
+            "week_number": 18,
+            "place": "185",
+            "class_place": "2"
           }
         ],
         "first_result_date": "2026-03-21",
-        "latest_result_date": "2026-04-11"
+        "latest_result_date": "2026-05-01"
       },
       {
         "person_id": "skv-p000108",
@@ -21836,15 +22454,44 @@
         "latest_result_date": "2026-02-15"
       },
       {
+        "person_id": "skv-p000351",
+        "profile_slug": "julie-garsiot",
+        "display_name": "Julie Garsiot",
+        "gender": "K",
+        "gender_label": "Kvinner",
+        "result_count": 1,
+        "distances": [
+          "Halvmaraton"
+        ],
+        "best_results": [
+          {
+            "result_id": "res-f7cadfcf9648185f",
+            "distance": "Halvmaraton",
+            "source_distance": "Halvmaraton",
+            "result_time": "2:01:08",
+            "result_time_seconds": 7268.0,
+            "event_label": "Grue Halvmaraton 2026",
+            "published_date": "2026-05-01",
+            "published_date_label": "01.05.2026",
+            "week_number": 18,
+            "place": "735",
+            "class_place": "17"
+          }
+        ],
+        "first_result_date": "2026-05-01",
+        "latest_result_date": "2026-05-01"
+      },
+      {
         "person_id": "skv-p000158",
         "profile_slug": "julie-lous",
         "display_name": "Julie Lous",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 4,
+        "result_count": 5,
         "distances": [
           "5 km",
-          "10 km"
+          "10 km",
+          "Halvmaraton"
         ],
         "best_results": [
           {
@@ -21872,10 +22519,23 @@
             "week_number": 15,
             "place": "137",
             "class_place": "12"
+          },
+          {
+            "result_id": "res-55f7d3e263a382e5",
+            "distance": "Halvmaraton",
+            "source_distance": "Halvmaraton",
+            "result_time": "1:33:21",
+            "result_time_seconds": 5601.0,
+            "event_label": "Grue Halvmaraton 2026",
+            "published_date": "2026-05-01",
+            "published_date_label": "01.05.2026",
+            "week_number": 18,
+            "place": "308",
+            "class_place": "1"
           }
         ],
         "first_result_date": "2026-01-18",
-        "latest_result_date": "2026-04-11"
+        "latest_result_date": "2026-05-01"
       },
       {
         "person_id": "skv-p000159",
@@ -21883,7 +22543,7 @@
         "display_name": "Julie Thorp",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 3,
+        "result_count": 4,
         "distances": [
           "5 km",
           "Halvmaraton",
@@ -21931,7 +22591,7 @@
           }
         ],
         "first_result_date": "2026-02-08",
-        "latest_result_date": "2026-04-19"
+        "latest_result_date": "2026-05-01"
       },
       {
         "person_id": "skv-p000160",
@@ -21995,9 +22655,10 @@
         "display_name": "Karen Marie Håkonsen",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
-          "10 km"
+          "10 km",
+          "Halvmaraton"
         ],
         "best_results": [
           {
@@ -22012,10 +22673,23 @@
             "week_number": 15,
             "place": "123",
             "class_place": "72"
+          },
+          {
+            "result_id": "res-a0fc4e3049bbcc05",
+            "distance": "Halvmaraton",
+            "source_distance": "Halvmaraton",
+            "result_time": "1:30:57",
+            "result_time_seconds": 5457.0,
+            "event_label": "Grue Halvmaraton 2026",
+            "published_date": "2026-05-01",
+            "published_date_label": "01.05.2026",
+            "week_number": 18,
+            "place": "265",
+            "class_place": "9"
           }
         ],
         "first_result_date": "2026-04-11",
-        "latest_result_date": "2026-04-11"
+        "latest_result_date": "2026-05-01"
       },
       {
         "person_id": "skv-p000164",
@@ -22291,10 +22965,11 @@
         "display_name": "Kristian Brenni",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 3,
+        "result_count": 4,
         "distances": [
           "5 km",
-          "10 km"
+          "10 km",
+          "Halvmaraton"
         ],
         "best_results": [
           {
@@ -22322,10 +22997,23 @@
             "week_number": 15,
             "place": "149",
             "class_place": "87"
+          },
+          {
+            "result_id": "res-9cc14a9ef69ea2c6",
+            "distance": "Halvmaraton",
+            "source_distance": "Halvmaraton",
+            "result_time": "1:20:10",
+            "result_time_seconds": 4810.0,
+            "event_label": "Grue Halvmaraton 2026",
+            "published_date": "2026-05-01",
+            "published_date_label": "01.05.2026",
+            "week_number": 18,
+            "place": "72",
+            "class_place": "40"
           }
         ],
         "first_result_date": "2026-03-17",
-        "latest_result_date": "2026-04-11"
+        "latest_result_date": "2026-05-01"
       },
       {
         "person_id": "skv-p000174",
@@ -22693,6 +23381,34 @@
         "latest_result_date": "2026-04-25"
       },
       {
+        "person_id": "skv-p000352",
+        "profile_slug": "lene-heimdal",
+        "display_name": "Lene Heimdal",
+        "gender": "K",
+        "gender_label": "Kvinner",
+        "result_count": 1,
+        "distances": [
+          "Halvmaraton"
+        ],
+        "best_results": [
+          {
+            "result_id": "res-478053f2b9d31814",
+            "distance": "Halvmaraton",
+            "source_distance": "Halvmaraton",
+            "result_time": "1:29:47",
+            "result_time_seconds": 5387.0,
+            "event_label": "Grue Halvmaraton 2026",
+            "published_date": "2026-05-01",
+            "published_date_label": "01.05.2026",
+            "week_number": 18,
+            "place": "234",
+            "class_place": "6"
+          }
+        ],
+        "first_result_date": "2026-05-01",
+        "latest_result_date": "2026-05-01"
+      },
+      {
         "person_id": "skv-p000186",
         "profile_slug": "linnea-horn",
         "display_name": "Linnéa Horn",
@@ -22894,10 +23610,11 @@
         "display_name": "Madelène Wanvik Holum",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 5,
+        "result_count": 6,
         "distances": [
           "3000 m",
-          "10 km"
+          "10 km",
+          "Halvmaraton"
         ],
         "best_results": [
           {
@@ -22925,10 +23642,23 @@
             "week_number": 15,
             "place": "3",
             "class_place": "2"
+          },
+          {
+            "result_id": "res-ee5c0aaf6c9a5a13",
+            "distance": "Halvmaraton",
+            "source_distance": "Halvmaraton",
+            "result_time": "1:14:45",
+            "result_time_seconds": 4485.0,
+            "event_label": "Grue Halvmaraton 2026",
+            "published_date": "2026-05-01",
+            "published_date_label": "01.05.2026",
+            "week_number": 18,
+            "place": "24",
+            "class_place": "1"
           }
         ],
         "first_result_date": "2026-02-01",
-        "latest_result_date": "2026-04-18"
+        "latest_result_date": "2026-05-01"
       },
       {
         "person_id": "skv-p000194",
@@ -23821,10 +24551,11 @@
         "display_name": "Martin Stray Egeberg",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 3,
+        "result_count": 4,
         "distances": [
           "5 km",
           "10 km",
+          "Halvmaraton",
           "Maraton"
         ],
         "best_results": [
@@ -23855,6 +24586,19 @@
             "class_place": ""
           },
           {
+            "result_id": "res-ab316dc4a8e71dce",
+            "distance": "Halvmaraton",
+            "source_distance": "Halvmaraton",
+            "result_time": "1:12:28",
+            "result_time_seconds": 4348.0,
+            "event_label": "Grue Halvmaraton 2026",
+            "published_date": "2026-05-01",
+            "published_date_label": "01.05.2026",
+            "week_number": 18,
+            "place": "14",
+            "class_place": "9"
+          },
+          {
             "result_id": "res-0c81a22f496b16f0",
             "distance": "Maraton",
             "source_distance": "Maraton",
@@ -23869,7 +24613,7 @@
           }
         ],
         "first_result_date": "2026-01-18",
-        "latest_result_date": "2026-04-12"
+        "latest_result_date": "2026-05-01"
       },
       {
         "person_id": "skv-p000224",
@@ -24376,6 +25120,34 @@
         "latest_result_date": "2026-03-01"
       },
       {
+        "person_id": "skv-p000353",
+        "profile_slug": "ninni-jol-kken-brodalen",
+        "display_name": "Ninni Jol?kken Brodalen",
+        "gender": "K",
+        "gender_label": "Kvinner",
+        "result_count": 1,
+        "distances": [
+          "Halvmaraton"
+        ],
+        "best_results": [
+          {
+            "result_id": "res-d30e2b03124f093a",
+            "distance": "Halvmaraton",
+            "source_distance": "Halvmaraton",
+            "result_time": "1:41:33",
+            "result_time_seconds": 6093.0,
+            "event_label": "Grue Halvmaraton 2026",
+            "published_date": "2026-05-01",
+            "published_date_label": "01.05.2026",
+            "week_number": 18,
+            "place": "466",
+            "class_place": "33"
+          }
+        ],
+        "first_result_date": "2026-05-01",
+        "latest_result_date": "2026-05-01"
+      },
+      {
         "person_id": "skv-p000238",
         "profile_slug": "ninni-jolokken-brodalen",
         "display_name": "Ninni Joløkken Brodalen",
@@ -24769,6 +25541,34 @@
         "latest_result_date": "2026-04-11"
       },
       {
+        "person_id": "skv-p000354",
+        "profile_slug": "ole-jacobsen",
+        "display_name": "Ole Jacobsen",
+        "gender": "M",
+        "gender_label": "Menn",
+        "result_count": 1,
+        "distances": [
+          "Halvmaraton"
+        ],
+        "best_results": [
+          {
+            "result_id": "res-08a9965cba773fb8",
+            "distance": "Halvmaraton",
+            "source_distance": "Halvmaraton",
+            "result_time": "1:30:36",
+            "result_time_seconds": 5436.0,
+            "event_label": "Grue Halvmaraton 2026",
+            "published_date": "2026-05-01",
+            "published_date_label": "01.05.2026",
+            "week_number": 18,
+            "place": "258",
+            "class_place": "2"
+          }
+        ],
+        "first_result_date": "2026-05-01",
+        "latest_result_date": "2026-05-01"
+      },
+      {
         "person_id": "skv-p000250",
         "profile_slug": "ole-jonas-nybo",
         "display_name": "Ole Jonas Nybø",
@@ -24956,9 +25756,10 @@
         "display_name": "Øyvind Lie *",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
-          "10 km"
+          "10 km",
+          "Halvmaraton"
         ],
         "best_results": [
           {
@@ -24973,10 +25774,23 @@
             "week_number": 15,
             "place": "213",
             "class_place": "128"
+          },
+          {
+            "result_id": "res-9936de1d06e773be",
+            "distance": "Halvmaraton",
+            "source_distance": "Halvmaraton",
+            "result_time": "1:17:56",
+            "result_time_seconds": 4676.0,
+            "event_label": "Grue Halvmaraton 2026",
+            "published_date": "2026-05-01",
+            "published_date_label": "01.05.2026",
+            "week_number": 18,
+            "place": "44",
+            "class_place": "27"
           }
         ],
         "first_result_date": "2026-04-11",
-        "latest_result_date": "2026-04-11"
+        "latest_result_date": "2026-05-01"
       },
       {
         "person_id": "skv-p000257",
@@ -26147,7 +26961,7 @@
         "display_name": "Sjur Krystad Prestsæter",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 3,
+        "result_count": 4,
         "distances": [
           "10 km",
           "Halvmaraton",
@@ -26195,7 +27009,7 @@
           }
         ],
         "first_result_date": "2026-02-15",
-        "latest_result_date": "2026-04-25"
+        "latest_result_date": "2026-05-01"
       },
       {
         "person_id": "skv-p000296",
@@ -26231,9 +27045,10 @@
         "display_name": "Sofie Gotuholt",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
-          "10 km"
+          "10 km",
+          "Halvmaraton"
         ],
         "best_results": [
           {
@@ -26248,10 +27063,23 @@
             "week_number": 15,
             "place": "574",
             "class_place": "315"
+          },
+          {
+            "result_id": "res-32e722fcd022e081",
+            "distance": "Halvmaraton",
+            "source_distance": "Halvmaraton",
+            "result_time": "1:53:43",
+            "result_time_seconds": 6823.0,
+            "event_label": "Grue Halvmaraton 2026",
+            "published_date": "2026-05-01",
+            "published_date_label": "01.05.2026",
+            "week_number": 18,
+            "place": "641",
+            "class_place": "59"
           }
         ],
         "first_result_date": "2026-04-11",
-        "latest_result_date": "2026-04-11"
+        "latest_result_date": "2026-05-01"
       },
       {
         "person_id": "skv-p000298",
@@ -26511,9 +27339,10 @@
         "display_name": "Stein Ellingsen *",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
-          "10 km"
+          "10 km",
+          "Halvmaraton"
         ],
         "best_results": [
           {
@@ -26528,10 +27357,23 @@
             "week_number": 15,
             "place": "228",
             "class_place": "45"
+          },
+          {
+            "result_id": "res-cb9ea177e65e089d",
+            "distance": "Halvmaraton",
+            "source_distance": "Halvmaraton",
+            "result_time": "1:27:30",
+            "result_time_seconds": 5250.0,
+            "event_label": "Grue Halvmaraton 2026",
+            "published_date": "2026-05-01",
+            "published_date_label": "01.05.2026",
+            "week_number": 18,
+            "place": "182",
+            "class_place": "39"
           }
         ],
         "first_result_date": "2026-04-11",
-        "latest_result_date": "2026-04-11"
+        "latest_result_date": "2026-05-01"
       },
       {
         "person_id": "skv-p000309",
@@ -27296,9 +28138,10 @@
         "display_name": "Tormod Fauske Tho *",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
-          "10 km"
+          "10 km",
+          "Halvmaraton"
         ],
         "best_results": [
           {
@@ -27313,10 +28156,23 @@
             "week_number": 15,
             "place": "294",
             "class_place": "168"
+          },
+          {
+            "result_id": "res-eb11842bf91d5037",
+            "distance": "Halvmaraton",
+            "source_distance": "Halvmaraton",
+            "result_time": "1:16:09",
+            "result_time_seconds": 4569.0,
+            "event_label": "Grue Halvmaraton 2026",
+            "published_date": "2026-05-01",
+            "published_date_label": "01.05.2026",
+            "week_number": 18,
+            "place": "34",
+            "class_place": "20"
           }
         ],
         "first_result_date": "2026-04-11",
-        "latest_result_date": "2026-04-11"
+        "latest_result_date": "2026-05-01"
       },
       {
         "person_id": "skv-p000332",
@@ -28161,6 +29017,11 @@
       "william-morken-andersen": "skv-p000347",
       "yunpeng-ding": "skv-p000348",
       "mathis-dahl-fenre": "skv-p000349",
+      "elin-lippe-lippe-stavnes": "skv-p000350",
+      "julie-garsiot": "skv-p000351",
+      "lene-heimdal": "skv-p000352",
+      "ninni-jol-kken-brodalen": "skv-p000353",
+      "ole-jacobsen": "skv-p000354",
       "adne-andersen-andersen": "skv-p000001",
       "adne-sandvik-dyrnesli": "skv-p000003",
       "erlend-fugleberg-bruaset": "skv-p000075",
