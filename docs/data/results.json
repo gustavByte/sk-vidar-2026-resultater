@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-04-29T12:37:58+02:00",
+  "generated_at": "2026-05-01T17:39:06+02:00",
   "stats": {
-    "result_count": 575,
+    "result_count": 576,
     "athlete_count": 323,
     "event_count": 64,
     "week_count": 14,
     "latest_week": 17,
     "latest_date": "2026-04-26",
     "women_count": 216,
-    "men_count": 359,
+    "men_count": 360,
     "missing_gender_or_class_count": 0
   },
   "weeks": [
@@ -18,11 +18,11 @@
       "week_label": "Uke 17",
       "published_date": "2026-04-26",
       "published_date_label": "26.04.2026",
-      "result_count": 143,
-      "athlete_count": 143,
+      "result_count": 144,
+      "athlete_count": 144,
       "event_count": 9,
       "women_count": 50,
-      "men_count": 93,
+      "men_count": 94,
       "events": [
         "Aurajoen Yöjuoksu",
         "Bergen City Marathon",
@@ -2340,6 +2340,32 @@
       "split_second_display": "20:11",
       "split_delta_display": "+0:12",
       "split_state": "slow"
+    },
+    {
+      "result_id": "res-1b686c0ef7d234fb",
+      "person_id": "skv-p000079",
+      "person_slug": "erling-syversveen-lie",
+      "published_date": "2026-04-25",
+      "published_date_label": "25.04.2026",
+      "week_number": 17,
+      "athlete_name": "Erling Syversveen Lie",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M23-34",
+      "class_place": "636",
+      "event_label": "Sentrumsløpet 10k",
+      "distance": "10 km",
+      "result_time_raw": "0:40:15",
+      "result_time_normalized": "0:40:15",
+      "result_time_seconds": 2415.0,
+      "place": "1335",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
     },
     {
       "result_id": "res-8eb8add525854437",
@@ -19346,9 +19372,10 @@
         "display_name": "Erling Syversveen Lie",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
-          "3000 m"
+          "3000 m",
+          "10 km"
         ],
         "best_results": [
           {
@@ -19363,10 +19390,23 @@
             "week_number": 16,
             "place": "13",
             "class_place": "13"
+          },
+          {
+            "result_id": "res-1b686c0ef7d234fb",
+            "distance": "10 km",
+            "source_distance": "10 km",
+            "result_time": "0:40:15",
+            "result_time_seconds": 2415.0,
+            "event_label": "Sentrumsløpet 10k",
+            "published_date": "2026-04-25",
+            "published_date_label": "25.04.2026",
+            "week_number": 17,
+            "place": "1335",
+            "class_place": "636"
           }
         ],
         "first_result_date": "2026-04-19",
-        "latest_result_date": "2026-04-19"
+        "latest_result_date": "2026-04-25"
       },
       {
         "person_id": "skv-p000080",
