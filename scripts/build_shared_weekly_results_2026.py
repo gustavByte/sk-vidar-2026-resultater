@@ -27,6 +27,7 @@ THIN_BORDER = Border(
 )
 
 DISTANCE_ORDER = {
+    "600 m": 0,
     "800 m": 1,
     "1500 m": 2,
     "3000 m": 3,

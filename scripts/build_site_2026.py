@@ -29,6 +29,7 @@ JSON_FILE = PUBLIC_DATA_DIR / "results.json"
 LEGACY_PUBLIC_DB_FILE = PUBLIC_DATA_DIR / "sk_vidar_2026.sqlite"
 
 DISTANCE_ORDER = {
+    "600 m": 0,
     "800 m": 1,
     "1500 m": 2,
     "3000 m": 3,
@@ -114,6 +115,9 @@ PUBLIC_RESULT_FIELDS = [
     "result_time_raw",
     "result_time_normalized",
     "result_time_seconds",
+    "wa_gender",
+    "wa_event",
+    "wa_points",
     "place",
     "notes_clean",
     "split_first_label",
@@ -291,6 +295,12 @@ def load_results() -> pd.DataFrame:
     working["class_name"] = working["class_name"].mask(working["class_name"].eq(""), working.get("category", "").fillna(""))
     working["class_place"] = working.get("class_place", pd.Series(index=working.index, dtype=object)).fillna("")
     working["gender_label"] = working["gender"].map(GENDER_LABELS).fillna("")
+    working["wa_gender"] = working.get("WA Kjønn", pd.Series(index=working.index, dtype=object)).fillna("").astype(str).str.strip()
+    working["wa_event"] = working.get("WA Øvelse", pd.Series(index=working.index, dtype=object)).fillna("").astype(str).str.strip()
+    working["wa_points"] = pd.to_numeric(
+        working.get("WA Poeng", pd.Series(index=working.index, dtype=object)),
+        errors="coerce",
+    )
 
     working["split_first_source"] = working.get("split_first_raw", pd.Series(index=working.index, dtype=object)).fillna("")
     working["split_second_source"] = working.get("split_second_raw", pd.Series(index=working.index, dtype=object)).fillna("")
@@ -507,7 +517,11 @@ def row_to_dict(row: pd.Series) -> dict[str, object]:
 
 
 def build_public_results(df: pd.DataFrame) -> list[dict[str, object]]:
-    public_df = df[PUBLIC_RESULT_FIELDS].copy()
+    source_df = df.copy()
+    for field in PUBLIC_RESULT_FIELDS:
+        if field not in source_df.columns:
+            source_df[field] = None
+    public_df = source_df[PUBLIC_RESULT_FIELDS].copy()
     public_df = public_df.rename(columns={"published_date_iso": "published_date"})
     return [row_to_dict(row) for _, row in public_df.iterrows()]
 
@@ -602,6 +616,9 @@ def write_database(df: pd.DataFrame, summary_df: pd.DataFrame, payload: dict[str
             "class_place",
             "result_time_raw",
             "result_time_normalized",
+            "wa_gender",
+            "wa_event",
+            "wa_points",
             "position",
             "place",
             "notes",

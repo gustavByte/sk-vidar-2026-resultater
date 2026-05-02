@@ -1,4 +1,4 @@
-const distanceOrder = ["800 m", "1500 m", "3000 m", "5 km", "10 km", "Halvmaraton", "Maraton", "42 km", "30 km", "60 km"];
+const distanceOrder = ["600 m", "800 m", "1500 m", "3000 m", "5 km", "10 km", "Halvmaraton", "Maraton", "42 km", "30 km", "60 km"];
 
 const state = {
   data: null,
