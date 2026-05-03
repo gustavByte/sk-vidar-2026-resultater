@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-05-03T11:20:31+02:00",
+  "generated_at": "2026-05-03T11:30:29+02:00",
   "stats": {
-    "result_count": 617,
+    "result_count": 618,
     "athlete_count": 333,
-    "event_count": 67,
+    "event_count": 68,
     "week_count": 15,
     "latest_week": 18,
     "latest_date": "2026-05-02",
     "women_count": 234,
-    "men_count": 383,
+    "men_count": 384,
     "missing_gender_or_class_count": 0
   },
   "weeks": [
@@ -18,14 +18,15 @@
       "week_label": "Uke 18",
       "published_date": "2026-05-02",
       "published_date_label": "02.05.2026",
-      "result_count": 41,
-      "athlete_count": 41,
-      "event_count": 3,
+      "result_count": 42,
+      "athlete_count": 42,
+      "event_count": 4,
       "women_count": 18,
-      "men_count": 23,
+      "men_count": 24,
       "events": [
         "Bislett Spring",
         "Grue Halvmaraton 2026",
+        "IMRA Dargle Four Peaks",
         "Åpningsstevnet 2026 - Ås IL"
       ]
     },
@@ -850,6 +851,35 @@
       "wa_points": 598.0,
       "place": "10",
       "notes_clean": "SB",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-56fe6b4fc819eda2",
+      "person_id": "skv-p000268",
+      "person_slug": "ruairi-long",
+      "published_date": "2026-05-02",
+      "published_date_label": "02.05.2026",
+      "week_number": 18,
+      "athlete_name": "Ruairi Long",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M åpen",
+      "class_place": "1",
+      "event_label": "IMRA Dargle Four Peaks",
+      "distance": "15 km",
+      "result_time_raw": null,
+      "result_time_normalized": null,
+      "result_time_seconds": null,
+      "wa_gender": "M",
+      "wa_event": "15 km",
+      "wa_points": null,
+      "place": "1",
+      "notes_clean": "1.plass, 800 hm",
       "split_first_label": "",
       "split_first_display": "",
       "split_second_label": "",
@@ -29009,10 +29039,11 @@
         "display_name": "Ruairi Long",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 2,
+        "result_count": 3,
         "distances": [
           "5 km",
-          "10 km"
+          "10 km",
+          "15 km"
         ],
         "best_results": [
           {
@@ -29043,7 +29074,7 @@
           }
         ],
         "first_result_date": "2026-01-18",
-        "latest_result_date": "2026-04-25"
+        "latest_result_date": "2026-05-02"
       },
       {
         "person_id": "skv-p000269",
