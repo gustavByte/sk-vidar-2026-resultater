@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-05-03T11:30:29+02:00",
+  "generated_at": "2026-05-03T21:48:17+02:00",
   "stats": {
-    "result_count": 618,
-    "athlete_count": 333,
-    "event_count": 68,
+    "result_count": 624,
+    "athlete_count": 335,
+    "event_count": 69,
     "week_count": 15,
     "latest_week": 18,
     "latest_date": "2026-05-02",
-    "women_count": 234,
-    "men_count": 384,
+    "women_count": 236,
+    "men_count": 388,
     "missing_gender_or_class_count": 0
   },
   "weeks": [
@@ -18,15 +18,16 @@
       "week_label": "Uke 18",
       "published_date": "2026-05-02",
       "published_date_label": "02.05.2026",
-      "result_count": 42,
-      "athlete_count": 42,
-      "event_count": 4,
-      "women_count": 18,
-      "men_count": 24,
+      "result_count": 48,
+      "athlete_count": 48,
+      "event_count": 5,
+      "women_count": 20,
+      "men_count": 28,
       "events": [
         "Bislett Spring",
         "Grue Halvmaraton 2026",
         "IMRA Dargle Four Peaks",
+        "Lørenløpet 2026",
         "Åpningsstevnet 2026 - Ås IL"
       ]
     },
@@ -296,8 +297,8 @@
       "result_time_normalized": "1:28.13",
       "result_time_seconds": 88.13,
       "wa_gender": "M",
-      "wa_event": "",
-      "wa_points": null,
+      "wa_event": "600m",
+      "wa_points": 660.0,
       "place": "14",
       "notes_clean": "PB",
       "split_first_label": "",
@@ -880,6 +881,180 @@
       "wa_points": null,
       "place": "1",
       "notes_clean": "1.plass, 800 hm",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-61b97877ec49d6b7",
+      "person_id": "skv-p000197",
+      "person_slug": "magnus-warvik",
+      "published_date": "2026-05-02",
+      "published_date_label": "02.05.2026",
+      "week_number": 18,
+      "athlete_name": "Magnus Warvik",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M23-34",
+      "class_place": "1",
+      "event_label": "Lørenløpet 2026",
+      "distance": "5 km",
+      "result_time_raw": "15:53",
+      "result_time_normalized": "15:53",
+      "result_time_seconds": 953.0,
+      "wa_gender": "M",
+      "wa_event": "5 km",
+      "wa_points": null,
+      "place": "1",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-50abcf979f79e371",
+      "person_id": "skv-p000361",
+      "person_slug": "mathias-hansen",
+      "published_date": "2026-05-02",
+      "published_date_label": "02.05.2026",
+      "week_number": 18,
+      "athlete_name": "Mathias Hansen",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M23-34",
+      "class_place": "3",
+      "event_label": "Lørenløpet 2026",
+      "distance": "5 km",
+      "result_time_raw": "17:48",
+      "result_time_normalized": "17:48",
+      "result_time_seconds": 1068.0,
+      "wa_gender": "M",
+      "wa_event": "5 km",
+      "wa_points": null,
+      "place": "3",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-f850e8780258061d",
+      "person_id": "skv-p000360",
+      "person_slug": "anne-murvold",
+      "published_date": "2026-05-02",
+      "published_date_label": "02.05.2026",
+      "week_number": 18,
+      "athlete_name": "Anne Murvold",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K23-34",
+      "class_place": "8",
+      "event_label": "Lørenløpet 2026",
+      "distance": "5 km",
+      "result_time_raw": "23:18",
+      "result_time_normalized": "23:18",
+      "result_time_seconds": 1398.0,
+      "wa_gender": "K",
+      "wa_event": "5 km",
+      "wa_points": null,
+      "place": "63",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-9065afc30fded732",
+      "person_id": "skv-p000032",
+      "person_slug": "anne-myhr",
+      "published_date": "2026-05-02",
+      "published_date_label": "02.05.2026",
+      "week_number": 18,
+      "athlete_name": "Anne Myhr",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K60-64",
+      "class_place": "12",
+      "event_label": "Lørenløpet 2026",
+      "distance": "5 km",
+      "result_time_raw": "24:25",
+      "result_time_normalized": "24:25",
+      "result_time_seconds": 1465.0,
+      "wa_gender": "K",
+      "wa_event": "5 km",
+      "wa_points": null,
+      "place": "80",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-2561c0a1d75a283e",
+      "person_id": "skv-p000225",
+      "person_slug": "matias-brekka",
+      "published_date": "2026-05-02",
+      "published_date_label": "02.05.2026",
+      "week_number": 18,
+      "athlete_name": "Matias Brekkå",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M23-34",
+      "class_place": "1",
+      "event_label": "Lørenløpet 2026",
+      "distance": "10 km",
+      "result_time_raw": "34:34",
+      "result_time_normalized": "34:34",
+      "result_time_seconds": 2074.0,
+      "wa_gender": "M",
+      "wa_event": "10 km",
+      "wa_points": null,
+      "place": "1",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-472155f84f04c9c8",
+      "person_id": "skv-p000091",
+      "person_slug": "fredrik-saetereng-fyksen",
+      "published_date": "2026-05-02",
+      "published_date_label": "02.05.2026",
+      "week_number": 18,
+      "athlete_name": "Fredrik Sætereng Fyksen",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M35-39",
+      "class_place": "3",
+      "event_label": "Lørenløpet 2026",
+      "distance": "10 km",
+      "result_time_raw": "37:17",
+      "result_time_normalized": "37:17",
+      "result_time_seconds": 2237.0,
+      "wa_gender": "M",
+      "wa_event": "10 km",
+      "wa_points": null,
+      "place": "3",
+      "notes_clean": "",
       "split_first_label": "",
       "split_first_display": "",
       "split_second_label": "",
@@ -1485,8 +1660,8 @@
       "result_time_normalized": "1:36.46",
       "result_time_seconds": 96.46000000000001,
       "wa_gender": "K",
-      "wa_event": "600 m",
-      "wa_points": null,
+      "wa_event": "600m",
+      "wa_points": 900.0,
       "place": "",
       "notes_clean": "",
       "split_first_label": "",
@@ -20029,7 +20204,7 @@
     }
   ],
   "people": {
-    "profile_count": 333,
+    "profile_count": 335,
     "profiles": [
       {
         "person_id": "skv-p000001",
@@ -21110,16 +21285,58 @@
         "latest_result_date": "2026-04-25"
       },
       {
+        "person_id": "skv-p000360",
+        "profile_slug": "anne-murvold",
+        "display_name": "Anne Murvold",
+        "gender": "K",
+        "gender_label": "Kvinner",
+        "result_count": 1,
+        "distances": [
+          "5 km"
+        ],
+        "best_results": [
+          {
+            "result_id": "res-f850e8780258061d",
+            "distance": "5 km",
+            "source_distance": "5 km",
+            "result_time": "23:18",
+            "result_time_seconds": 1398.0,
+            "event_label": "Lørenløpet 2026",
+            "published_date": "2026-05-02",
+            "published_date_label": "02.05.2026",
+            "week_number": 18,
+            "place": "63",
+            "class_place": "8"
+          }
+        ],
+        "first_result_date": "2026-05-02",
+        "latest_result_date": "2026-05-02"
+      },
+      {
         "person_id": "skv-p000032",
         "profile_slug": "anne-myhr",
         "display_name": "Anne Myhr",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
+          "5 km",
           "Halvmaraton"
         ],
         "best_results": [
+          {
+            "result_id": "res-9065afc30fded732",
+            "distance": "5 km",
+            "source_distance": "5 km",
+            "result_time": "24:25",
+            "result_time_seconds": 1465.0,
+            "event_label": "Lørenløpet 2026",
+            "published_date": "2026-05-02",
+            "published_date_label": "02.05.2026",
+            "week_number": 18,
+            "place": "80",
+            "class_place": "12"
+          },
           {
             "result_id": "res-a4e9bbdc440143aa",
             "distance": "Halvmaraton",
@@ -21135,7 +21352,7 @@
           }
         ],
         "first_result_date": "2026-04-26",
-        "latest_result_date": "2026-04-26"
+        "latest_result_date": "2026-05-02"
       },
       {
         "person_id": "skv-p000033",
@@ -23106,9 +23323,10 @@
         "display_name": "Fredrik Sætereng Fyksen",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
-          "5 km"
+          "5 km",
+          "10 km"
         ],
         "best_results": [
           {
@@ -23123,10 +23341,23 @@
             "week_number": 9,
             "place": "",
             "class_place": ""
+          },
+          {
+            "result_id": "res-472155f84f04c9c8",
+            "distance": "10 km",
+            "source_distance": "10 km",
+            "result_time": "37:17",
+            "result_time_seconds": 2237.0,
+            "event_label": "Lørenløpet 2026",
+            "published_date": "2026-05-02",
+            "published_date_label": "02.05.2026",
+            "week_number": 18,
+            "place": "3",
+            "class_place": "3"
           }
         ],
         "first_result_date": "2026-03-01",
-        "latest_result_date": "2026-03-01"
+        "latest_result_date": "2026-05-02"
       },
       {
         "person_id": "skv-p000092",
@@ -26627,7 +26858,7 @@
         "display_name": "Magnus Warvik",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 4,
+        "result_count": 5,
         "distances": [
           "5 km",
           "10 km"
@@ -26661,7 +26892,7 @@
           }
         ],
         "first_result_date": "2026-01-18",
-        "latest_result_date": "2026-03-22"
+        "latest_result_date": "2026-05-02"
       },
       {
         "person_id": "skv-p000198",
@@ -27479,6 +27710,34 @@
         "latest_result_date": "2026-05-01"
       },
       {
+        "person_id": "skv-p000361",
+        "profile_slug": "mathias-hansen",
+        "display_name": "Mathias Hansen",
+        "gender": "M",
+        "gender_label": "Menn",
+        "result_count": 1,
+        "distances": [
+          "5 km"
+        ],
+        "best_results": [
+          {
+            "result_id": "res-50abcf979f79e371",
+            "distance": "5 km",
+            "source_distance": "5 km",
+            "result_time": "17:48",
+            "result_time_seconds": 1068.0,
+            "event_label": "Lørenløpet 2026",
+            "published_date": "2026-05-02",
+            "published_date_label": "02.05.2026",
+            "week_number": 18,
+            "place": "3",
+            "class_place": "3"
+          }
+        ],
+        "first_result_date": "2026-05-02",
+        "latest_result_date": "2026-05-02"
+      },
+      {
         "person_id": "skv-p000224",
         "profile_slug": "mathilde-sofie-nordahl",
         "display_name": "Mathilde Sofie Nordahl",
@@ -27526,7 +27785,7 @@
         "display_name": "Matias Brekkå",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
           "10 km"
         ],
@@ -27546,7 +27805,7 @@
           }
         ],
         "first_result_date": "2026-04-11",
-        "latest_result_date": "2026-04-11"
+        "latest_result_date": "2026-05-02"
       },
       {
         "person_id": "skv-p000227",
@@ -31989,6 +32248,8 @@
       "madelen-tronstad-sagebakken": "skv-p000357",
       "ole-skjelten-daasvatn": "skv-p000358",
       "susanne-tveit-amundsen": "skv-p000359",
+      "anne-murvold": "skv-p000360",
+      "mathias-hansen": "skv-p000361",
       "adne-andersen-andersen": "skv-p000001",
       "adne-sandvik-dyrnesli": "skv-p000003",
       "erlend-fugleberg-bruaset": "skv-p000075",
