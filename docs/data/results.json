@@ -1,14 +1,14 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-05-02T20:38:11+02:00",
+  "generated_at": "2026-05-03T11:20:31+02:00",
   "stats": {
-    "result_count": 616,
-    "athlete_count": 332,
-    "event_count": 66,
+    "result_count": 617,
+    "athlete_count": 333,
+    "event_count": 67,
     "week_count": 15,
     "latest_week": 18,
     "latest_date": "2026-05-02",
-    "women_count": 233,
+    "women_count": 234,
     "men_count": 383,
     "missing_gender_or_class_count": 0
   },
@@ -18,14 +18,15 @@
       "week_label": "Uke 18",
       "published_date": "2026-05-02",
       "published_date_label": "02.05.2026",
-      "result_count": 40,
-      "athlete_count": 40,
-      "event_count": 2,
-      "women_count": 17,
+      "result_count": 41,
+      "athlete_count": 41,
+      "event_count": 3,
+      "women_count": 18,
       "men_count": 23,
       "events": [
         "Bislett Spring",
-        "Grue Halvmaraton 2026"
+        "Grue Halvmaraton 2026",
+        "Åpningsstevnet 2026 - Ås IL"
       ]
     },
     {
@@ -1429,6 +1430,35 @@
       "wa_points": 323.0,
       "place": "735",
       "notes_clean": "para",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-ea00a79188317293",
+      "person_id": "skv-p000359",
+      "person_slug": "susanne-tveit-amundsen",
+      "published_date": "2026-05-01",
+      "published_date_label": "01.05.2026",
+      "week_number": 18,
+      "athlete_name": "Susanne Tveit Amundsen",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K åpen",
+      "class_place": "",
+      "event_label": "Åpningsstevnet 2026 - Ås IL",
+      "distance": "600 m",
+      "result_time_raw": "1:36.46",
+      "result_time_normalized": "1:36.46",
+      "result_time_seconds": 96.46000000000001,
+      "wa_gender": "K",
+      "wa_event": "600 m",
+      "wa_points": null,
+      "place": "",
+      "notes_clean": "",
       "split_first_label": "",
       "split_first_display": "",
       "split_second_label": "",
@@ -19969,7 +19999,7 @@
     }
   ],
   "people": {
-    "profile_count": 332,
+    "profile_count": 333,
     "profiles": [
       {
         "person_id": "skv-p000001",
@@ -30347,6 +30377,20 @@
         "latest_result_date": "2026-03-01"
       },
       {
+        "person_id": "skv-p000359",
+        "profile_slug": "susanne-tveit-amundsen",
+        "display_name": "Susanne Tveit Amundsen",
+        "gender": "K",
+        "gender_label": "Kvinner",
+        "result_count": 1,
+        "distances": [
+          "600 m"
+        ],
+        "best_results": [],
+        "first_result_date": "2026-05-01",
+        "latest_result_date": "2026-05-01"
+      },
+      {
         "person_id": "skv-p000314",
         "profile_slug": "sveinung-nersten",
         "display_name": "Sveinung Nersten",
@@ -31913,6 +31957,7 @@
       "kristine-meinert-rod": "skv-p000356",
       "madelen-tronstad-sagebakken": "skv-p000357",
       "ole-skjelten-daasvatn": "skv-p000358",
+      "susanne-tveit-amundsen": "skv-p000359",
       "adne-andersen-andersen": "skv-p000001",
       "adne-sandvik-dyrnesli": "skv-p000003",
       "erlend-fugleberg-bruaset": "skv-p000075",
