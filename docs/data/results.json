@@ -1,31 +1,32 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-05-03T21:50:24+02:00",
+  "generated_at": "2026-05-04T10:20:47+02:00",
   "stats": {
-    "result_count": 630,
+    "result_count": 631,
     "athlete_count": 339,
-    "event_count": 71,
+    "event_count": 72,
     "week_count": 15,
     "latest_week": 18,
-    "latest_date": "2026-05-02",
+    "latest_date": "2026-05-03",
     "women_count": 238,
-    "men_count": 392,
+    "men_count": 393,
     "missing_gender_or_class_count": 0
   },
   "weeks": [
     {
       "week_number": 18,
       "week_label": "Uke 18",
-      "published_date": "2026-05-02",
-      "published_date_label": "02.05.2026",
-      "result_count": 54,
-      "athlete_count": 54,
-      "event_count": 7,
+      "published_date": "2026-05-03",
+      "published_date_label": "03.05.2026",
+      "result_count": 55,
+      "athlete_count": 55,
+      "event_count": 8,
       "women_count": 22,
-      "men_count": 32,
+      "men_count": 33,
       "events": [
         "Bislett Spring",
         "Grue Halvmaraton 2026",
+        "Halden Byløp 2026",
         "IMRA Dargle Four Peaks",
         "Lørenløpet 2026",
         "Råskinnet 2026",
@@ -281,6 +282,35 @@
     }
   ],
   "results": [
+    {
+      "result_id": "res-849e272020d9f367",
+      "person_id": "skv-p000155",
+      "person_slug": "jorgen-korum",
+      "published_date": "2026-05-03",
+      "published_date_label": "03.05.2026",
+      "week_number": 18,
+      "athlete_name": "Jørgen Korum",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M35-39",
+      "class_place": "",
+      "event_label": "Halden Byløp 2026",
+      "distance": "5 km",
+      "result_time_raw": "16:14",
+      "result_time_normalized": "16:14",
+      "result_time_seconds": 974.0,
+      "wa_gender": "M",
+      "wa_event": "5 km",
+      "wa_points": null,
+      "place": "",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
     {
       "result_id": "res-55deb34c36ccea9e",
       "person_id": "skv-p000355",
@@ -25604,7 +25634,7 @@
         "display_name": "Jørgen Korum",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 3,
+        "result_count": 4,
         "distances": [
           "5 km",
           "10 km"
@@ -25638,7 +25668,7 @@
           }
         ],
         "first_result_date": "2026-03-29",
-        "latest_result_date": "2026-04-25"
+        "latest_result_date": "2026-05-03"
       },
       {
         "person_id": "skv-p000156",
