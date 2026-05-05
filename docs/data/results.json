@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-05-04T10:20:47+02:00",
+  "generated_at": "2026-05-05T20:45:02+02:00",
   "stats": {
-    "result_count": 631,
-    "athlete_count": 339,
-    "event_count": 72,
+    "result_count": 632,
+    "athlete_count": 340,
+    "event_count": 73,
     "week_count": 15,
     "latest_week": 18,
     "latest_date": "2026-05-03",
     "women_count": 238,
-    "men_count": 393,
+    "men_count": 394,
     "missing_gender_or_class_count": 0
   },
   "weeks": [
@@ -18,11 +18,11 @@
       "week_label": "Uke 18",
       "published_date": "2026-05-03",
       "published_date_label": "03.05.2026",
-      "result_count": 55,
-      "athlete_count": 55,
-      "event_count": 8,
+      "result_count": 56,
+      "athlete_count": 56,
+      "event_count": 9,
       "women_count": 22,
-      "men_count": 33,
+      "men_count": 34,
       "events": [
         "Bislett Spring",
         "Grue Halvmaraton 2026",
@@ -31,6 +31,7 @@
         "Lørenløpet 2026",
         "Råskinnet 2026",
         "Råtassen 2026",
+        "Sundvolden Challenge",
         "Åpningsstevnet 2026 - Ås IL"
       ]
     },
@@ -1261,6 +1262,35 @@
       "wa_points": null,
       "place": "10",
       "notes_clean": "Kjelsås IL",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-e239e2d58b06664d",
+      "person_id": "skv-p000366",
+      "person_slug": "havard-moholt-berge",
+      "published_date": "2026-05-02",
+      "published_date_label": "02.05.2026",
+      "week_number": 18,
+      "athlete_name": "Håvard Moholt Berge",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M23-39",
+      "class_place": "2",
+      "event_label": "Sundvolden Challenge",
+      "distance": "5 km",
+      "result_time_raw": "19:50",
+      "result_time_normalized": "19:50",
+      "result_time_seconds": 1190.0,
+      "wa_gender": "M",
+      "wa_event": "5 km",
+      "wa_points": null,
+      "place": "2",
+      "notes_clean": "",
       "split_first_label": "",
       "split_first_display": "",
       "split_second_label": "",
@@ -20410,7 +20440,7 @@
     }
   ],
   "people": {
-    "profile_count": 339,
+    "profile_count": 340,
     "profiles": [
       {
         "person_id": "skv-p000001",
@@ -23987,6 +24017,34 @@
         ],
         "first_result_date": "2026-04-11",
         "latest_result_date": "2026-04-11"
+      },
+      {
+        "person_id": "skv-p000366",
+        "profile_slug": "havard-moholt-berge",
+        "display_name": "Håvard Moholt Berge",
+        "gender": "M",
+        "gender_label": "Menn",
+        "result_count": 1,
+        "distances": [
+          "5 km"
+        ],
+        "best_results": [
+          {
+            "result_id": "res-e239e2d58b06664d",
+            "distance": "5 km",
+            "source_distance": "5 km",
+            "result_time": "19:50",
+            "result_time_seconds": 1190.0,
+            "event_label": "Sundvolden Challenge",
+            "published_date": "2026-05-02",
+            "published_date_label": "02.05.2026",
+            "week_number": 18,
+            "place": "2",
+            "class_place": "2"
+          }
+        ],
+        "first_result_date": "2026-05-02",
+        "latest_result_date": "2026-05-02"
       },
       {
         "person_id": "skv-p000105",
@@ -32518,6 +32576,7 @@
       "asmund-sunde-valseth": "skv-p000363",
       "gina-flugstad-oistuen": "skv-p000364",
       "kristine-green": "skv-p000365",
+      "havard-moholt-berge": "skv-p000366",
       "adne-andersen-andersen": "skv-p000001",
       "adne-sandvik-dyrnesli": "skv-p000003",
       "erlend-fugleberg-bruaset": "skv-p000075",
