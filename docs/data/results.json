@@ -1,14 +1,14 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-05-10T19:55:05+02:00",
+  "generated_at": "2026-05-10T19:57:33+02:00",
   "stats": {
-    "result_count": 644,
-    "athlete_count": 346,
+    "result_count": 643,
+    "athlete_count": 345,
     "event_count": 75,
     "week_count": 16,
     "latest_week": 19,
     "latest_date": "2026-05-10",
-    "women_count": 242,
+    "women_count": 241,
     "men_count": 402,
     "missing_gender_or_class_count": 0
   },
@@ -18,10 +18,10 @@
       "week_label": "Uke 19",
       "published_date": "2026-05-10",
       "published_date_label": "10.05.2026",
-      "result_count": 11,
-      "athlete_count": 11,
+      "result_count": 10,
+      "athlete_count": 10,
       "event_count": 1,
-      "women_count": 3,
+      "women_count": 2,
       "men_count": 8,
       "events": [
         "Copenhagen Marathon 2026"
@@ -557,35 +557,6 @@
       "split_second_label": "21.1 km",
       "split_second_display": "1:44:28",
       "split_delta_display": "+5:54",
-      "split_state": "slow"
-    },
-    {
-      "result_id": "res-2d2be244d26b4168",
-      "person_id": "skv-p000368",
-      "person_slug": "nora-funkqvist-haga",
-      "published_date": "2026-05-10",
-      "published_date_label": "10.05.2026",
-      "week_number": 19,
-      "athlete_name": "Nora Funkqvist Haga",
-      "gender": "K",
-      "gender_label": "Kvinner",
-      "class_name": "K30-34",
-      "class_place": "",
-      "event_label": "Copenhagen Marathon 2026",
-      "distance": "Maraton",
-      "result_time_raw": "03:42:41",
-      "result_time_normalized": "03:42:41",
-      "result_time_seconds": 13361.0,
-      "wa_gender": "K",
-      "wa_event": "Maraton",
-      "wa_points": null,
-      "place": "8936",
-      "notes_clean": "",
-      "split_first_label": "21.1 km",
-      "split_first_display": "1:47:46",
-      "split_second_label": "21.1 km",
-      "split_second_display": "1:54:55",
-      "split_delta_display": "+7:09",
       "split_state": "slow"
     },
     {
@@ -20094,22 +20065,6 @@
           "gender": "K",
           "gender_label": "Kvinner",
           "rank": 9,
-          "person_id": "skv-p000368",
-          "person_slug": "nora-funkqvist-haga",
-          "result_id": "res-2d2be244d26b4168",
-          "athlete_name": "Nora Funkqvist Haga",
-          "result_time": "03:42:41",
-          "result_time_seconds": 13361.0,
-          "event_label": "Copenhagen Marathon 2026",
-          "published_date": "2026-05-10",
-          "published_date_label": "10.05.2026"
-        },
-        {
-          "distance": "Maraton",
-          "source_distance": "Maraton",
-          "gender": "K",
-          "gender_label": "Kvinner",
-          "rank": 10,
           "person_id": "skv-p000325",
           "person_slug": "tiril-jorgensen",
           "result_id": "res-b5c0900701c6026d",
@@ -20119,6 +20074,22 @@
           "event_label": "Roma Maraton IT",
           "published_date": "2026-03-22",
           "published_date_label": "22.03.2026"
+        },
+        {
+          "distance": "Maraton",
+          "source_distance": "Maraton",
+          "gender": "K",
+          "gender_label": "Kvinner",
+          "rank": 10,
+          "person_id": "skv-p000189",
+          "person_slug": "liv-berit-jegteberg-lystad",
+          "result_id": "res-2e65b6bf63dba8d1",
+          "athlete_name": "Liv Berit Jegteberg Lystad",
+          "result_time": "4:17:33",
+          "result_time_seconds": 15453.0,
+          "event_label": "Bergen City Marathon",
+          "published_date": "2026-04-25",
+          "published_date_label": "25.04.2026"
         }
       ],
       "men": [
@@ -20835,7 +20806,7 @@
     }
   ],
   "people": {
-    "profile_count": 346,
+    "profile_count": 345,
     "profiles": [
       {
         "person_id": "skv-p000001",
@@ -29098,34 +29069,6 @@
         "latest_result_date": "2026-02-08"
       },
       {
-        "person_id": "skv-p000368",
-        "profile_slug": "nora-funkqvist-haga",
-        "display_name": "Nora Funkqvist Haga",
-        "gender": "K",
-        "gender_label": "Kvinner",
-        "result_count": 1,
-        "distances": [
-          "Maraton"
-        ],
-        "best_results": [
-          {
-            "result_id": "res-2d2be244d26b4168",
-            "distance": "Maraton",
-            "source_distance": "Maraton",
-            "result_time": "03:42:41",
-            "result_time_seconds": 13361.0,
-            "event_label": "Copenhagen Marathon 2026",
-            "published_date": "2026-05-10",
-            "published_date_label": "10.05.2026",
-            "week_number": 19,
-            "place": "8936",
-            "class_place": ""
-          }
-        ],
-        "first_result_date": "2026-05-10",
-        "latest_result_date": "2026-05-10"
-      },
-      {
         "person_id": "skv-p000241",
         "profile_slug": "nora-melvold",
         "display_name": "Nora Melvold",
@@ -33211,7 +33154,6 @@
       "kristine-green": "skv-p000365",
       "havard-moholt-berge": "skv-p000366",
       "therese-dahl-arvik": "skv-p000367",
-      "nora-funkqvist-haga": "skv-p000368",
       "per-olav-rohmer": "skv-p000369",
       "thomas-beka": "skv-p000370",
       "tom-kuyken-kjaerstad": "skv-p000371",
@@ -33249,7 +33191,8 @@
       "p-l-erik-johnsen": "skv-p000257",
       "sonia-slettv-g": "skv-p000306",
       "pia-m-ller": "skv-p000260",
-      "hege-nj-bj-rkmann": "skv-p000107"
+      "hege-nj-bj-rkmann": "skv-p000107",
+      "nora-funkqvist-haga": "skv-p000368"
     },
     "slug_redirects": {
       "adne-andersen-andersen": "adne-andersen",
