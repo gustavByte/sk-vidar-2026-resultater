@@ -1,14 +1,14 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-05-10T19:57:33+02:00",
+  "generated_at": "2026-05-10T20:40:36+02:00",
   "stats": {
-    "result_count": 643,
-    "athlete_count": 345,
-    "event_count": 75,
+    "result_count": 647,
+    "athlete_count": 348,
+    "event_count": 76,
     "week_count": 16,
     "latest_week": 19,
     "latest_date": "2026-05-10",
-    "women_count": 241,
+    "women_count": 245,
     "men_count": 402,
     "missing_gender_or_class_count": 0
   },
@@ -18,13 +18,14 @@
       "week_label": "Uke 19",
       "published_date": "2026-05-10",
       "published_date_label": "10.05.2026",
-      "result_count": 10,
-      "athlete_count": 10,
-      "event_count": 1,
-      "women_count": 2,
+      "result_count": 14,
+      "athlete_count": 14,
+      "event_count": 2,
+      "women_count": 6,
       "men_count": 8,
       "events": [
-        "Copenhagen Marathon 2026"
+        "Copenhagen Marathon 2026",
+        "Trail des Maures 2026"
       ]
     },
     {
@@ -444,6 +445,35 @@
       "split_state": "slow"
     },
     {
+      "result_id": "res-e78107518d6b9045",
+      "person_id": "skv-p000375",
+      "person_slug": "sarah-smalbro",
+      "published_date": "2026-05-10",
+      "published_date_label": "10.05.2026",
+      "week_number": 19,
+      "athlete_name": "Sarah Smalbro",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K åpen",
+      "class_place": "21",
+      "event_label": "Copenhagen Marathon 2026",
+      "distance": "Maraton",
+      "result_time_raw": "2:54:14",
+      "result_time_normalized": "2:54:14",
+      "result_time_seconds": 10454.0,
+      "wa_gender": "K",
+      "wa_event": "Maraton",
+      "wa_points": null,
+      "place": "1015",
+      "notes_clean": "",
+      "split_first_label": "21.1 km",
+      "split_first_display": "1:27:01",
+      "split_second_label": "21.1 km",
+      "split_second_display": "1:27:13",
+      "split_delta_display": "+0:12",
+      "split_state": "slow"
+    },
+    {
       "result_id": "res-0311b0063e8e1fc4",
       "person_id": "skv-p000187",
       "person_slug": "lisbeth-pedersen",
@@ -560,6 +590,64 @@
       "split_state": "slow"
     },
     {
+      "result_id": "res-3190057aecc4e337",
+      "person_id": "skv-p000373",
+      "person_slug": "judith-ingela-rickertsen-hole",
+      "published_date": "2026-05-10",
+      "published_date_label": "10.05.2026",
+      "week_number": 19,
+      "athlete_name": "Judith Ingela Rickertsen Hole",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K åpen",
+      "class_place": "203",
+      "event_label": "Copenhagen Marathon 2026",
+      "distance": "Maraton",
+      "result_time_raw": "3:24:34",
+      "result_time_normalized": "3:24:34",
+      "result_time_seconds": 12274.0,
+      "wa_gender": "K",
+      "wa_event": "Maraton",
+      "wa_points": null,
+      "place": "5206",
+      "notes_clean": "",
+      "split_first_label": "21.1 km",
+      "split_first_display": "1:33:48",
+      "split_second_label": "21.1 km",
+      "split_second_display": "1:50:46",
+      "split_delta_display": "+16:58",
+      "split_state": "slow"
+    },
+    {
+      "result_id": "res-f73fa1202a0c6de8",
+      "person_id": "skv-p000374",
+      "person_slug": "martine-solli",
+      "published_date": "2026-05-10",
+      "published_date_label": "10.05.2026",
+      "week_number": 19,
+      "athlete_name": "Martine Solli",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K åpen",
+      "class_place": "249",
+      "event_label": "Copenhagen Marathon 2026",
+      "distance": "Maraton",
+      "result_time_raw": "3:27:52",
+      "result_time_normalized": "3:27:52",
+      "result_time_seconds": 12472.0,
+      "wa_gender": "K",
+      "wa_event": "Maraton",
+      "wa_points": null,
+      "place": "5868",
+      "notes_clean": "",
+      "split_first_label": "21.1 km",
+      "split_first_display": "1:40:25",
+      "split_second_label": "21.1 km",
+      "split_second_display": "1:47:27",
+      "split_delta_display": "+7:02",
+      "split_state": "slow"
+    },
+    {
       "result_id": "res-a9dba35f231a591d",
       "person_id": "skv-p000372",
       "person_slug": "vebjorn-lovas",
@@ -587,6 +675,35 @@
       "split_second_display": "1:55:49",
       "split_delta_display": "+3:24",
       "split_state": "slow"
+    },
+    {
+      "result_id": "res-e377b9bf659aa7e8",
+      "person_id": "skv-p000202",
+      "person_slug": "maria-bipop",
+      "published_date": "2026-05-09",
+      "published_date_label": "09.05.2026",
+      "week_number": 19,
+      "athlete_name": "Maria Bipop",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K Senior",
+      "class_place": "1",
+      "event_label": "Trail des Maures 2026",
+      "distance": "30 km",
+      "result_time_raw": "3:34:57",
+      "result_time_normalized": "3:34:57",
+      "result_time_seconds": 12897.0,
+      "wa_gender": "K",
+      "wa_event": "30 km",
+      "wa_points": null,
+      "place": "23",
+      "notes_clean": "trail, 2. kvinne",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
     },
     {
       "result_id": "res-849e272020d9f367",
@@ -19953,6 +20070,22 @@
           "gender": "K",
           "gender_label": "Kvinner",
           "rank": 2,
+          "person_id": "skv-p000375",
+          "person_slug": "sarah-smalbro",
+          "result_id": "res-e78107518d6b9045",
+          "athlete_name": "Sarah Smalbro",
+          "result_time": "2:54:14",
+          "result_time_seconds": 10454.0,
+          "event_label": "Copenhagen Marathon 2026",
+          "published_date": "2026-05-10",
+          "published_date_label": "10.05.2026"
+        },
+        {
+          "distance": "Maraton",
+          "source_distance": "Maraton",
+          "gender": "K",
+          "gender_label": "Kvinner",
+          "rank": 3,
           "person_id": "skv-p000187",
           "person_slug": "lisbeth-pedersen",
           "result_id": "res-0311b0063e8e1fc4",
@@ -19968,7 +20101,7 @@
           "source_distance": "Maraton",
           "gender": "K",
           "gender_label": "Kvinner",
-          "rank": 3,
+          "rank": 4,
           "person_id": "skv-p000367",
           "person_slug": "therese-dahl-arvik",
           "result_id": "res-67eb722050460431",
@@ -19984,7 +20117,7 @@
           "source_distance": "Maraton",
           "gender": "K",
           "gender_label": "Kvinner",
-          "rank": 4,
+          "rank": 5,
           "person_id": "skv-p000159",
           "person_slug": "julie-thorp",
           "result_id": "res-51b946b20128cbf3",
@@ -20000,7 +20133,7 @@
           "source_distance": "Maraton",
           "gender": "K",
           "gender_label": "Kvinner",
-          "rank": 5,
+          "rank": 6,
           "person_id": "skv-p000043",
           "person_slug": "catherine-berg",
           "result_id": "res-6dd33d884e0c8503",
@@ -20016,7 +20149,39 @@
           "source_distance": "Maraton",
           "gender": "K",
           "gender_label": "Kvinner",
-          "rank": 6,
+          "rank": 7,
+          "person_id": "skv-p000373",
+          "person_slug": "judith-ingela-rickertsen-hole",
+          "result_id": "res-3190057aecc4e337",
+          "athlete_name": "Judith Ingela Rickertsen Hole",
+          "result_time": "3:24:34",
+          "result_time_seconds": 12274.0,
+          "event_label": "Copenhagen Marathon 2026",
+          "published_date": "2026-05-10",
+          "published_date_label": "10.05.2026"
+        },
+        {
+          "distance": "Maraton",
+          "source_distance": "Maraton",
+          "gender": "K",
+          "gender_label": "Kvinner",
+          "rank": 8,
+          "person_id": "skv-p000374",
+          "person_slug": "martine-solli",
+          "result_id": "res-f73fa1202a0c6de8",
+          "athlete_name": "Martine Solli",
+          "result_time": "3:27:52",
+          "result_time_seconds": 12472.0,
+          "event_label": "Copenhagen Marathon 2026",
+          "published_date": "2026-05-10",
+          "published_date_label": "10.05.2026"
+        },
+        {
+          "distance": "Maraton",
+          "source_distance": "Maraton",
+          "gender": "K",
+          "gender_label": "Kvinner",
+          "rank": 9,
           "person_id": "skv-p000282",
           "person_slug": "silje-solvang",
           "result_id": "res-75e9d100c8104a9d",
@@ -20032,7 +20197,7 @@
           "source_distance": "Maraton",
           "gender": "K",
           "gender_label": "Kvinner",
-          "rank": 7,
+          "rank": 10,
           "person_id": "skv-p000327",
           "person_slug": "tone-gravvold",
           "result_id": "res-e4864f353412207c",
@@ -20042,54 +20207,6 @@
           "event_label": "TCS London Marathon 2026",
           "published_date": "2026-04-26",
           "published_date_label": "26.04.2026"
-        },
-        {
-          "distance": "Maraton",
-          "source_distance": "Maraton",
-          "gender": "K",
-          "gender_label": "Kvinner",
-          "rank": 8,
-          "person_id": "skv-p000212",
-          "person_slug": "marita-sandberg",
-          "result_id": "res-cfbfa53d3d0a540a",
-          "athlete_name": "Marita Sandberg",
-          "result_time": "3:38:12",
-          "result_time_seconds": 13092.0,
-          "event_label": "Paris maraton",
-          "published_date": "2026-04-12",
-          "published_date_label": "12.04.2026"
-        },
-        {
-          "distance": "Maraton",
-          "source_distance": "Maraton",
-          "gender": "K",
-          "gender_label": "Kvinner",
-          "rank": 9,
-          "person_id": "skv-p000325",
-          "person_slug": "tiril-jorgensen",
-          "result_id": "res-b5c0900701c6026d",
-          "athlete_name": "Tiril Jørgensen",
-          "result_time": "3:53:53",
-          "result_time_seconds": 14033.0,
-          "event_label": "Roma Maraton IT",
-          "published_date": "2026-03-22",
-          "published_date_label": "22.03.2026"
-        },
-        {
-          "distance": "Maraton",
-          "source_distance": "Maraton",
-          "gender": "K",
-          "gender_label": "Kvinner",
-          "rank": 10,
-          "person_id": "skv-p000189",
-          "person_slug": "liv-berit-jegteberg-lystad",
-          "result_id": "res-2e65b6bf63dba8d1",
-          "athlete_name": "Liv Berit Jegteberg Lystad",
-          "result_time": "4:17:33",
-          "result_time_seconds": 15453.0,
-          "event_label": "Bergen City Marathon",
-          "published_date": "2026-04-25",
-          "published_date_label": "25.04.2026"
         }
       ],
       "men": [
@@ -20806,7 +20923,7 @@
     }
   ],
   "people": {
-    "profile_count": 345,
+    "profile_count": 348,
     "profiles": [
       {
         "person_id": "skv-p000001",
@@ -26123,6 +26240,34 @@
         "latest_result_date": "2026-04-25"
       },
       {
+        "person_id": "skv-p000373",
+        "profile_slug": "judith-ingela-rickertsen-hole",
+        "display_name": "Judith Ingela Rickertsen Hole",
+        "gender": "K",
+        "gender_label": "Kvinner",
+        "result_count": 1,
+        "distances": [
+          "Maraton"
+        ],
+        "best_results": [
+          {
+            "result_id": "res-3190057aecc4e337",
+            "distance": "Maraton",
+            "source_distance": "Maraton",
+            "result_time": "3:24:34",
+            "result_time_seconds": 12274.0,
+            "event_label": "Copenhagen Marathon 2026",
+            "published_date": "2026-05-10",
+            "published_date_label": "10.05.2026",
+            "week_number": 19,
+            "place": "5206",
+            "class_place": "203"
+          }
+        ],
+        "first_result_date": "2026-05-10",
+        "latest_result_date": "2026-05-10"
+      },
+      {
         "person_id": "skv-p000157",
         "profile_slug": "julie-didriksen",
         "display_name": "Julie Didriksen",
@@ -27713,10 +27858,11 @@
         "display_name": "Maria Bipop",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 6,
+        "result_count": 7,
         "distances": [
           "5 km",
           "10 km",
+          "30 km",
           "34 km",
           "42 km",
           "60 km"
@@ -27750,7 +27896,7 @@
           }
         ],
         "first_result_date": "2026-01-18",
-        "latest_result_date": "2026-04-25"
+        "latest_result_date": "2026-05-09"
       },
       {
         "person_id": "skv-p000204",
@@ -28395,6 +28541,34 @@
         ],
         "first_result_date": "2026-01-18",
         "latest_result_date": "2026-05-01"
+      },
+      {
+        "person_id": "skv-p000374",
+        "profile_slug": "martine-solli",
+        "display_name": "Martine Solli",
+        "gender": "K",
+        "gender_label": "Kvinner",
+        "result_count": 1,
+        "distances": [
+          "Maraton"
+        ],
+        "best_results": [
+          {
+            "result_id": "res-f73fa1202a0c6de8",
+            "distance": "Maraton",
+            "source_distance": "Maraton",
+            "result_time": "3:27:52",
+            "result_time_seconds": 12472.0,
+            "event_label": "Copenhagen Marathon 2026",
+            "published_date": "2026-05-10",
+            "published_date_label": "10.05.2026",
+            "week_number": 19,
+            "place": "5868",
+            "class_place": "249"
+          }
+        ],
+        "first_result_date": "2026-05-10",
+        "latest_result_date": "2026-05-10"
       },
       {
         "person_id": "skv-p000361",
@@ -30343,6 +30517,34 @@
         ],
         "first_result_date": "2026-03-01",
         "latest_result_date": "2026-04-11"
+      },
+      {
+        "person_id": "skv-p000375",
+        "profile_slug": "sarah-smalbro",
+        "display_name": "Sarah Smalbro",
+        "gender": "K",
+        "gender_label": "Kvinner",
+        "result_count": 1,
+        "distances": [
+          "Maraton"
+        ],
+        "best_results": [
+          {
+            "result_id": "res-e78107518d6b9045",
+            "distance": "Maraton",
+            "source_distance": "Maraton",
+            "result_time": "2:54:14",
+            "result_time_seconds": 10454.0,
+            "event_label": "Copenhagen Marathon 2026",
+            "published_date": "2026-05-10",
+            "published_date_label": "10.05.2026",
+            "week_number": 19,
+            "place": "1015",
+            "class_place": "21"
+          }
+        ],
+        "first_result_date": "2026-05-10",
+        "latest_result_date": "2026-05-10"
       },
       {
         "person_id": "skv-p000277",
@@ -33158,6 +33360,9 @@
       "thomas-beka": "skv-p000370",
       "tom-kuyken-kjaerstad": "skv-p000371",
       "vebjorn-lovas": "skv-p000372",
+      "judith-ingela-rickertsen-hole": "skv-p000373",
+      "martine-solli": "skv-p000374",
+      "sarah-smalbro": "skv-p000375",
       "adne-andersen-andersen": "skv-p000001",
       "adne-sandvik-dyrnesli": "skv-p000003",
       "erlend-fugleberg-bruaset": "skv-p000075",
