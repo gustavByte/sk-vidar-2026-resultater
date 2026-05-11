@@ -1,14 +1,14 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-05-11T12:56:51+02:00",
+  "generated_at": "2026-05-11T21:25:32+02:00",
   "stats": {
-    "result_count": 653,
-    "athlete_count": 350,
+    "result_count": 654,
+    "athlete_count": 351,
     "event_count": 77,
     "week_count": 16,
     "latest_week": 19,
     "latest_date": "2026-05-10",
-    "women_count": 248,
+    "women_count": 249,
     "men_count": 405,
     "missing_gender_or_class_count": 0
   },
@@ -18,10 +18,10 @@
       "week_label": "Uke 19",
       "published_date": "2026-05-10",
       "published_date_label": "10.05.2026",
-      "result_count": 20,
-      "athlete_count": 16,
+      "result_count": 21,
+      "athlete_count": 17,
       "event_count": 3,
-      "women_count": 9,
+      "women_count": 10,
       "men_count": 11,
       "events": [
         "Copenhagen Marathon 2026",
@@ -675,6 +675,35 @@
       "split_second_label": "21.1 km",
       "split_second_display": "1:55:49",
       "split_delta_display": "+3:24",
+      "split_state": "slow"
+    },
+    {
+      "result_id": "res-e5c20f520efc9d4d",
+      "person_id": "skv-p000378",
+      "person_slug": "hanna-heider-hov",
+      "published_date": "2026-05-10",
+      "published_date_label": "10.05.2026",
+      "week_number": 19,
+      "athlete_name": "Hanna Heider Hov",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K åpen",
+      "class_place": "540",
+      "event_label": "Copenhagen Marathon 2026",
+      "distance": "Maraton",
+      "result_time_raw": "3:54:46",
+      "result_time_normalized": "3:54:46",
+      "result_time_seconds": 14086.0,
+      "wa_gender": "K",
+      "wa_event": "Maraton",
+      "wa_points": null,
+      "place": "11751",
+      "notes_clean": "",
+      "split_first_label": "21.1 km",
+      "split_first_display": "1:52:31",
+      "split_second_label": "21.1 km",
+      "split_second_display": "2:02:15",
+      "split_delta_display": "+9:44",
       "split_state": "slow"
     },
     {
@@ -21098,7 +21127,7 @@
     }
   ],
   "people": {
-    "profile_count": 350,
+    "profile_count": 351,
     "profiles": [
       {
         "person_id": "skv-p000001",
@@ -24535,6 +24564,34 @@
         ],
         "first_result_date": "2026-04-11",
         "latest_result_date": "2026-04-11"
+      },
+      {
+        "person_id": "skv-p000378",
+        "profile_slug": "hanna-heider-hov",
+        "display_name": "Hanna Heider Hov",
+        "gender": "K",
+        "gender_label": "Kvinner",
+        "result_count": 1,
+        "distances": [
+          "Maraton"
+        ],
+        "best_results": [
+          {
+            "result_id": "res-e5c20f520efc9d4d",
+            "distance": "Maraton",
+            "source_distance": "Maraton",
+            "result_time": "3:54:46",
+            "result_time_seconds": 14086.0,
+            "event_label": "Copenhagen Marathon 2026",
+            "published_date": "2026-05-10",
+            "published_date_label": "10.05.2026",
+            "week_number": 19,
+            "place": "11751",
+            "class_place": "540"
+          }
+        ],
+        "first_result_date": "2026-05-10",
+        "latest_result_date": "2026-05-10"
       },
       {
         "person_id": "skv-p000099",
@@ -33572,6 +33629,7 @@
       "sarah-smalbro": "skv-p000375",
       "elia-thorvik": "skv-p000376",
       "maia-kulle-andreassen": "skv-p000377",
+      "hanna-heider-hov": "skv-p000378",
       "adne-andersen-andersen": "skv-p000001",
       "adne-sandvik-dyrnesli": "skv-p000003",
       "erlend-fugleberg-bruaset": "skv-p000075",
