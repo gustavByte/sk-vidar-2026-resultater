@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-05-17T15:58:30+02:00",
+  "generated_at": "2026-05-17T16:00:17+02:00",
   "stats": {
     "result_count": 702,
     "athlete_count": 369,
@@ -1566,7 +1566,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-91ef7184c0b0a92f",
+      "result_id": "res-6c19aa3b01f41cdc",
       "person_id": "skv-p000392",
       "person_slug": "karoline-wisloff-rud",
       "published_date": "2026-05-14",
@@ -1575,8 +1575,8 @@
       "athlete_name": "Karoline Wisløff Rud",
       "gender": "K",
       "gender_label": "Kvinner",
-      "class_name": "K35-39",
-      "class_place": "",
+      "class_name": "K23-39",
+      "class_place": "1",
       "event_label": "Revetal Halvmaraton 2026",
       "distance": "5 km",
       "result_time_raw": "16:33",
@@ -1595,7 +1595,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-66bb0c482d745300",
+      "result_id": "res-407962529e879468",
       "person_id": "skv-p000391",
       "person_slug": "ine-skjellum",
       "published_date": "2026-05-14",
@@ -1604,8 +1604,8 @@
       "athlete_name": "Ine Skjellum",
       "gender": "K",
       "gender_label": "Kvinner",
-      "class_name": "K23-34",
-      "class_place": "",
+      "class_name": "K23-39",
+      "class_place": "3",
       "event_label": "Revetal Halvmaraton 2026",
       "distance": "5 km",
       "result_time_raw": "17:22",
@@ -1624,7 +1624,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-228c2ce4feb00a23",
+      "result_id": "res-21f59a758eaf2f26",
       "person_id": "skv-p000283",
       "person_slug": "simen-hagerup-kjeldsen",
       "published_date": "2026-05-14",
@@ -1634,7 +1634,7 @@
       "gender": "M",
       "gender_label": "Menn",
       "class_name": "M40-44",
-      "class_place": "",
+      "class_place": "4",
       "event_label": "Revetal Halvmaraton 2026",
       "distance": "5 km",
       "result_time_raw": "18:38",
@@ -1653,7 +1653,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-3ab4b0e4cfd45a46",
+      "result_id": "res-f7bb5d0a7de38c17",
       "person_id": "skv-p000172",
       "person_slug": "knut-borkholm",
       "published_date": "2026-05-14",
@@ -1662,8 +1662,8 @@
       "athlete_name": "Knut Borkholm",
       "gender": "M",
       "gender_label": "Menn",
-      "class_name": "M23-34",
-      "class_place": "",
+      "class_name": "M23-39",
+      "class_place": "4",
       "event_label": "Revetal Halvmaraton 2026",
       "distance": "Halvmaraton",
       "result_time_raw": "1:11:11",
@@ -1682,7 +1682,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-96ff9b12dc3527ac",
+      "result_id": "res-ea098e3577e83e14",
       "person_id": "skv-p000088",
       "person_slug": "fredrik-camilo-halsbog",
       "published_date": "2026-05-14",
@@ -1692,7 +1692,7 @@
       "gender": "M",
       "gender_label": "Menn",
       "class_name": "M40-44",
-      "class_place": "",
+      "class_place": "6",
       "event_label": "Revetal Halvmaraton 2026",
       "distance": "Halvmaraton",
       "result_time_raw": "1:23:51",
@@ -21096,7 +21096,7 @@
           "rank": 6,
           "person_id": "skv-p000392",
           "person_slug": "karoline-wisloff-rud",
-          "result_id": "res-91ef7184c0b0a92f",
+          "result_id": "res-6c19aa3b01f41cdc",
           "athlete_name": "Karoline Wisløff Rud",
           "result_time": "16:33",
           "result_time_seconds": 993.0,
@@ -21160,7 +21160,7 @@
           "rank": 10,
           "person_id": "skv-p000391",
           "person_slug": "ine-skjellum",
-          "result_id": "res-66bb0c482d745300",
+          "result_id": "res-407962529e879468",
           "athlete_name": "Ine Skjellum",
           "result_time": "17:22",
           "result_time_seconds": 1042.0,
@@ -21633,7 +21633,7 @@
           "rank": 9,
           "person_id": "skv-p000172",
           "person_slug": "knut-borkholm",
-          "result_id": "res-3ab4b0e4cfd45a46",
+          "result_id": "res-f7bb5d0a7de38c17",
           "athlete_name": "Knut Borkholm",
           "result_time": "1:11:11",
           "result_time_seconds": 4271.0,
@@ -25753,7 +25753,7 @@
             "class_place": "169"
           },
           {
-            "result_id": "res-96ff9b12dc3527ac",
+            "result_id": "res-ea098e3577e83e14",
             "distance": "Halvmaraton",
             "source_distance": "Halvmaraton",
             "result_time": "1:23:51",
@@ -25763,7 +25763,7 @@
             "published_date_label": "14.05.2026",
             "week_number": 20,
             "place": "58",
-            "class_place": ""
+            "class_place": "6"
           },
           {
             "result_id": "res-18b8c3dcda9abdd7",
@@ -27143,7 +27143,7 @@
         ],
         "best_results": [
           {
-            "result_id": "res-66bb0c482d745300",
+            "result_id": "res-407962529e879468",
             "distance": "5 km",
             "source_distance": "5 km",
             "result_time": "17:22",
@@ -27153,7 +27153,7 @@
             "published_date_label": "14.05.2026",
             "week_number": 20,
             "place": "17",
-            "class_place": ""
+            "class_place": "3"
           }
         ],
         "first_result_date": "2026-05-14",
@@ -28559,7 +28559,7 @@
         ],
         "best_results": [
           {
-            "result_id": "res-91ef7184c0b0a92f",
+            "result_id": "res-6c19aa3b01f41cdc",
             "distance": "5 km",
             "source_distance": "5 km",
             "result_time": "16:33",
@@ -28569,7 +28569,7 @@
             "published_date_label": "14.05.2026",
             "week_number": 20,
             "place": "10",
-            "class_place": ""
+            "class_place": "1"
           }
         ],
         "first_result_date": "2026-05-14",
@@ -28799,7 +28799,7 @@
             "class_place": "85"
           },
           {
-            "result_id": "res-3ab4b0e4cfd45a46",
+            "result_id": "res-f7bb5d0a7de38c17",
             "distance": "Halvmaraton",
             "source_distance": "Halvmaraton",
             "result_time": "1:11:11",
@@ -28809,7 +28809,7 @@
             "published_date_label": "14.05.2026",
             "week_number": 20,
             "place": "4",
-            "class_place": ""
+            "class_place": "4"
           }
         ],
         "first_result_date": "2026-04-11",
@@ -32890,7 +32890,7 @@
         ],
         "best_results": [
           {
-            "result_id": "res-228c2ce4feb00a23",
+            "result_id": "res-21f59a758eaf2f26",
             "distance": "5 km",
             "source_distance": "5 km",
             "result_time": "18:38",
@@ -32900,7 +32900,7 @@
             "published_date_label": "14.05.2026",
             "week_number": 20,
             "place": "25",
-            "class_place": ""
+            "class_place": "4"
           },
           {
             "result_id": "res-646454f35a00a21b",
