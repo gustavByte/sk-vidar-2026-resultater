@@ -1,32 +1,33 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-05-17T15:48:28+02:00",
+  "generated_at": "2026-05-17T15:55:55+02:00",
   "stats": {
-    "result_count": 692,
+    "result_count": 694,
     "athlete_count": 365,
-    "event_count": 80,
+    "event_count": 81,
     "week_count": 17,
     "latest_week": 20,
-    "latest_date": "2026-05-16",
-    "women_count": 261,
-    "men_count": 431,
+    "latest_date": "2026-05-17",
+    "women_count": 262,
+    "men_count": 432,
     "missing_gender_or_class_count": 0
   },
   "weeks": [
     {
       "week_number": 20,
       "week_label": "Uke 20",
-      "published_date": "2026-05-16",
-      "published_date_label": "16.05.2026",
-      "result_count": 38,
-      "athlete_count": 38,
-      "event_count": 3,
-      "women_count": 12,
-      "men_count": 26,
+      "published_date": "2026-05-17",
+      "published_date_label": "17.05.2026",
+      "result_count": 40,
+      "athlete_count": 40,
+      "event_count": 4,
+      "women_count": 13,
+      "men_count": 27,
       "events": [
         "4625-løpet",
         "Bislettmila 2026",
-        "Revetal Halvmaraton 2026"
+        "Revetal Halvmaraton 2026",
+        "Zegama-Aizkorri Mendi Maratoia 2026"
       ]
     },
     {
@@ -316,6 +317,64 @@
     }
   ],
   "results": [
+    {
+      "result_id": "res-d94e04aaf3bc2bf5",
+      "person_id": "skv-p000123",
+      "person_slug": "ida-amalie-robsahm",
+      "published_date": "2026-05-17",
+      "published_date_label": "17.05.2026",
+      "week_number": 20,
+      "athlete_name": "Ida Amalie Robsahm",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "SENF",
+      "class_place": "4",
+      "event_label": "Zegama-Aizkorri Mendi Maratoia 2026",
+      "distance": "42 km",
+      "result_time_raw": "4:28:19",
+      "result_time_normalized": "4:28:19",
+      "result_time_seconds": 16099.0,
+      "wa_gender": "K",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "4",
+      "notes_clean": "fjelløp",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-2d3829f73a51cb2a",
+      "person_id": "skv-p000258",
+      "person_slug": "patrick-stangbye",
+      "published_date": "2026-05-17",
+      "published_date_label": "17.05.2026",
+      "week_number": 20,
+      "athlete_name": "Patrick Stangbye",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "SENM",
+      "class_place": "104",
+      "event_label": "Zegama-Aizkorri Mendi Maratoia 2026",
+      "distance": "42 km",
+      "result_time_raw": "4:57:09",
+      "result_time_normalized": "4:57:09",
+      "result_time_seconds": 17829.0,
+      "wa_gender": "M",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "120",
+      "notes_clean": "fjelløp",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
     {
       "result_id": "res-0305843cfcecba7f",
       "person_id": "skv-p000132",
@@ -26603,13 +26662,14 @@
         "display_name": "Ida Amalie Robsahm",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
+          "42 km",
           "46 km"
         ],
         "best_results": [],
         "first_result_date": "2026-03-21",
-        "latest_result_date": "2026-03-21"
+        "latest_result_date": "2026-05-17"
       },
       {
         "person_id": "skv-p000124",
@@ -31673,13 +31733,14 @@
         "display_name": "Patrick Stangbye",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
+          "42 km",
           "74 km"
         ],
         "best_results": [],
         "first_result_date": "2026-03-21",
-        "latest_result_date": "2026-03-21"
+        "latest_result_date": "2026-05-17"
       },
       {
         "person_id": "skv-p000369",
