@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-05-20T10:33:10+02:00",
+  "generated_at": "2026-05-20T10:35:08+02:00",
   "stats": {
-    "result_count": 720,
+    "result_count": 722,
     "athlete_count": 371,
-    "event_count": 84,
+    "event_count": 85,
     "week_count": 17,
     "latest_week": 20,
     "latest_date": "2026-05-17",
-    "women_count": 274,
-    "men_count": 446,
+    "women_count": 275,
+    "men_count": 447,
     "missing_gender_or_class_count": 0
   },
   "weeks": [
@@ -18,16 +18,17 @@
       "week_label": "Uke 20",
       "published_date": "2026-05-17",
       "published_date_label": "17.05.2026",
-      "result_count": 66,
-      "athlete_count": 64,
-      "event_count": 7,
-      "women_count": 25,
-      "men_count": 41,
+      "result_count": 68,
+      "athlete_count": 66,
+      "event_count": 8,
+      "women_count": 26,
+      "men_count": 42,
       "events": [
         "4625-løpet",
         "Bislettmila 2026",
         "Brunkollen Rundt 2026",
         "Ekebergløpet 2026",
+        "Kanada Rundt 2026",
         "Per Halle Invitational",
         "Revetal Halvmaraton 2026",
         "Zegama-Aizkorri Mendi Maratoia 2026"
@@ -2227,6 +2228,64 @@
       "wa_points": null,
       "place": "58",
       "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-bdcba37ca2b31dbf",
+      "person_id": "skv-p000129",
+      "person_slug": "ingrid-helene-nyhus",
+      "published_date": "2026-05-12",
+      "published_date_label": "12.05.2026",
+      "week_number": 20,
+      "athlete_name": "Ingrid Helene Nyhus",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K23-34",
+      "class_place": "1",
+      "event_label": "Kanada Rundt 2026",
+      "distance": "6 km",
+      "result_time_raw": "18:25.0",
+      "result_time_normalized": "18:25.0",
+      "result_time_seconds": 1105.0,
+      "wa_gender": "K",
+      "wa_event": "6 km",
+      "wa_points": null,
+      "place": "2",
+      "notes_clean": "gateløp",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-3301063694d4291c",
+      "person_id": "skv-p000332",
+      "person_slug": "trond-einar-moen-pedersli",
+      "published_date": "2026-05-12",
+      "published_date_label": "12.05.2026",
+      "week_number": 20,
+      "athlete_name": "Trond Einar Moen Pedersli",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M23-34",
+      "class_place": "1",
+      "event_label": "Kanada Rundt 2026",
+      "distance": "12 km",
+      "result_time_raw": "39:05.0",
+      "result_time_normalized": "39:05.0",
+      "result_time_seconds": 2345.0,
+      "wa_gender": "M",
+      "wa_event": "12 km",
+      "wa_points": null,
+      "place": "2",
+      "notes_clean": "gateløp",
       "split_first_label": "",
       "split_first_display": "",
       "split_second_label": "",
@@ -27929,10 +27988,11 @@
         "display_name": "Ingrid Helene Nyhus",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 3,
+        "result_count": 4,
         "distances": [
           "10 km",
-          "Halvmaraton"
+          "Halvmaraton",
+          "6 km"
         ],
         "best_results": [
           {
@@ -27963,7 +28023,7 @@
           }
         ],
         "first_result_date": "2026-01-11",
-        "latest_result_date": "2026-04-11"
+        "latest_result_date": "2026-05-12"
       },
       {
         "person_id": "skv-p000130",
@@ -35468,10 +35528,11 @@
         "display_name": "Trond Einar Moen Pedersli",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 4,
+        "result_count": 5,
         "distances": [
           "10 km",
-          "Halvmaraton"
+          "Halvmaraton",
+          "12 km"
         ],
         "best_results": [
           {
@@ -35502,7 +35563,7 @@
           }
         ],
         "first_result_date": "2026-01-11",
-        "latest_result_date": "2026-04-25"
+        "latest_result_date": "2026-05-12"
       },
       {
         "person_id": "skv-p000333",
