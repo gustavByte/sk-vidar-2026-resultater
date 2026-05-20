@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-05-17T16:00:17+02:00",
+  "generated_at": "2026-05-20T10:30:13+02:00",
   "stats": {
-    "result_count": 702,
+    "result_count": 706,
     "athlete_count": 369,
-    "event_count": 82,
+    "event_count": 83,
     "week_count": 17,
     "latest_week": 20,
     "latest_date": "2026-05-17",
     "women_count": 266,
-    "men_count": 436,
+    "men_count": 440,
     "missing_gender_or_class_count": 0
   },
   "weeks": [
@@ -18,15 +18,16 @@
       "week_label": "Uke 20",
       "published_date": "2026-05-17",
       "published_date_label": "17.05.2026",
-      "result_count": 48,
-      "athlete_count": 48,
-      "event_count": 5,
+      "result_count": 52,
+      "athlete_count": 52,
+      "event_count": 6,
       "women_count": 17,
-      "men_count": 31,
+      "men_count": 35,
       "events": [
         "4625-løpet",
         "Bislettmila 2026",
         "Brunkollen Rundt 2026",
+        "Ekebergløpet 2026",
         "Revetal Halvmaraton 2026",
         "Zegama-Aizkorri Mendi Maratoia 2026"
       ]
@@ -1558,6 +1559,122 @@
       "wa_points": null,
       "place": "76",
       "notes_clean": "terrengløp",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-6a6bdc53c84d70e3",
+      "person_id": "skv-p000135",
+      "person_slug": "jakob-slengesol",
+      "published_date": "2026-05-14",
+      "published_date_label": "14.05.2026",
+      "week_number": 20,
+      "athlete_name": "Jakob Slengesol",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M16-17",
+      "class_place": "",
+      "event_label": "Ekebergløpet 2026",
+      "distance": "5 km",
+      "result_time_raw": "16:18.2",
+      "result_time_normalized": "16:18.2",
+      "result_time_seconds": 978.2,
+      "wa_gender": "M",
+      "wa_event": "5 km",
+      "wa_points": null,
+      "place": "1",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-da22bff843078f5b",
+      "person_id": "skv-p000166",
+      "person_slug": "kasper-sorlie-reininger",
+      "published_date": "2026-05-14",
+      "published_date_label": "14.05.2026",
+      "week_number": 20,
+      "athlete_name": "Kasper Sørlie-Reininger",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M18-19",
+      "class_place": "",
+      "event_label": "Ekebergløpet 2026",
+      "distance": "5 km",
+      "result_time_raw": "16:19.3",
+      "result_time_normalized": "16:19.3",
+      "result_time_seconds": 979.3,
+      "wa_gender": "M",
+      "wa_event": "5 km",
+      "wa_points": null,
+      "place": "2",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-87f03539a7ae2d1f",
+      "person_id": "skv-p000156",
+      "person_slug": "jostein-rogstad",
+      "published_date": "2026-05-14",
+      "published_date_label": "14.05.2026",
+      "week_number": 20,
+      "athlete_name": "Jostein Rogstad",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M35-39",
+      "class_place": "",
+      "event_label": "Ekebergløpet 2026",
+      "distance": "10 km",
+      "result_time_raw": "33:49.9",
+      "result_time_normalized": "33:49.9",
+      "result_time_seconds": 2029.9,
+      "wa_gender": "M",
+      "wa_event": "10 km",
+      "wa_points": null,
+      "place": "1",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-edf25a0f513c1320",
+      "person_id": "skv-p000010",
+      "person_slug": "alfred-wendt-ingulstad",
+      "published_date": "2026-05-14",
+      "published_date_label": "14.05.2026",
+      "week_number": 20,
+      "athlete_name": "Alfred Wendt Ingulstad",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M16-17",
+      "class_place": "",
+      "event_label": "Ekebergløpet 2026",
+      "distance": "10 km",
+      "result_time_raw": "41:22.0",
+      "result_time_normalized": "41:22.0",
+      "result_time_seconds": 2482.0,
+      "wa_gender": "M",
+      "wa_event": "10 km",
+      "wa_points": null,
+      "place": "",
+      "notes_clean": "",
       "split_first_label": "",
       "split_first_display": "",
       "split_second_label": "",
@@ -22882,7 +22999,7 @@
         "display_name": "Alfred Wendt Ingulstad",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
           "10 km"
         ],
@@ -22902,7 +23019,7 @@
           }
         ],
         "first_result_date": "2026-04-25",
-        "latest_result_date": "2026-04-25"
+        "latest_result_date": "2026-05-14"
       },
       {
         "person_id": "skv-p000011",
@@ -27404,10 +27521,11 @@
         "display_name": "Jakob Slengesol",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 3,
+        "result_count": 4,
         "distances": [
           "1500 m",
           "3000 m",
+          "5 km",
           "10 km"
         ],
         "best_results": [
@@ -27438,6 +27556,19 @@
             "class_place": ""
           },
           {
+            "result_id": "res-6a6bdc53c84d70e3",
+            "distance": "5 km",
+            "source_distance": "5 km",
+            "result_time": "16:18.2",
+            "result_time_seconds": 978.2,
+            "event_label": "Ekebergløpet 2026",
+            "published_date": "2026-05-14",
+            "published_date_label": "14.05.2026",
+            "week_number": 20,
+            "place": "1",
+            "class_place": ""
+          },
+          {
             "result_id": "res-a54f189a6cb7d918",
             "distance": "10 km",
             "source_distance": "10 km",
@@ -27452,7 +27583,7 @@
           }
         ],
         "first_result_date": "2026-02-08",
-        "latest_result_date": "2026-05-02"
+        "latest_result_date": "2026-05-14"
       },
       {
         "person_id": "skv-p000136",
@@ -28175,7 +28306,7 @@
         "display_name": "Jostein Rogstad",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 2,
+        "result_count": 3,
         "distances": [
           "10 km"
         ],
@@ -28195,7 +28326,7 @@
           }
         ],
         "first_result_date": "2026-04-11",
-        "latest_result_date": "2026-04-25"
+        "latest_result_date": "2026-05-14"
       },
       {
         "person_id": "skv-p000373",
@@ -28581,7 +28712,7 @@
         "display_name": "Kasper Sørlie-Reininger",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 4,
+        "result_count": 5,
         "distances": [
           "1500 m",
           "5 km",
@@ -28630,7 +28761,7 @@
           }
         ],
         "first_result_date": "2026-01-18",
-        "latest_result_date": "2026-05-02"
+        "latest_result_date": "2026-05-14"
       },
       {
         "person_id": "skv-p000167",
