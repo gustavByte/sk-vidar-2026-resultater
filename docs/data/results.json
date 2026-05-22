@@ -1,14 +1,14 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-05-20T10:35:08+02:00",
+  "generated_at": "2026-05-22T15:07:46+02:00",
   "stats": {
-    "result_count": 722,
+    "result_count": 723,
     "athlete_count": 371,
-    "event_count": 85,
+    "event_count": 86,
     "week_count": 17,
     "latest_week": 20,
     "latest_date": "2026-05-17",
-    "women_count": 275,
+    "women_count": 276,
     "men_count": 447,
     "missing_gender_or_class_count": 0
   },
@@ -18,10 +18,10 @@
       "week_label": "Uke 20",
       "published_date": "2026-05-17",
       "published_date_label": "17.05.2026",
-      "result_count": 68,
-      "athlete_count": 66,
-      "event_count": 8,
-      "women_count": 26,
+      "result_count": 69,
+      "athlete_count": 67,
+      "event_count": 9,
+      "women_count": 27,
       "men_count": 42,
       "events": [
         "4625-løpet",
@@ -31,6 +31,7 @@
         "Kanada Rundt 2026",
         "Per Halle Invitational",
         "Revetal Halvmaraton 2026",
+        "Varig Orkla Forsikring-løpet 2026",
         "Zegama-Aizkorri Mendi Maratoia 2026"
       ]
     },
@@ -401,6 +402,35 @@
       "wa_points": null,
       "place": "41",
       "notes_clean": "3. kvinne",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-5fb98087a9993927",
+      "person_id": "skv-p000216",
+      "person_slug": "marte-lien-johnsen",
+      "published_date": "2026-05-16",
+      "published_date_label": "16.05.2026",
+      "week_number": 20,
+      "athlete_name": "Marte Lien Johnsen",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K23-34",
+      "class_place": "1",
+      "event_label": "Varig Orkla Forsikring-løpet 2026",
+      "distance": "5 km",
+      "result_time_raw": "17:43",
+      "result_time_normalized": "17:43",
+      "result_time_seconds": 1063.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": 868.0,
+      "place": "26",
+      "notes_clean": "",
       "split_first_label": "",
       "split_first_display": "",
       "split_second_label": "",
@@ -31193,11 +31223,25 @@
         "display_name": "Marte Lien Johnsen",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
+          "5 km",
           "Halvmaraton"
         ],
         "best_results": [
+          {
+            "result_id": "res-5fb98087a9993927",
+            "distance": "5 km",
+            "source_distance": "5 km",
+            "result_time": "17:43",
+            "result_time_seconds": 1063.0,
+            "event_label": "Varig Orkla Forsikring-løpet 2026",
+            "published_date": "2026-05-16",
+            "published_date_label": "16.05.2026",
+            "week_number": 20,
+            "place": "26",
+            "class_place": "1"
+          },
           {
             "result_id": "res-02e98614a0b5d8e7",
             "distance": "Halvmaraton",
@@ -31213,7 +31257,7 @@
           }
         ],
         "first_result_date": "2026-04-25",
-        "latest_result_date": "2026-04-25"
+        "latest_result_date": "2026-05-16"
       },
       {
         "person_id": "skv-p000387",
