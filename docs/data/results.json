@@ -1,14 +1,14 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-05-24T21:11:01+02:00",
+  "generated_at": "2026-05-24T21:20:49+02:00",
   "stats": {
-    "result_count": 726,
+    "result_count": 729,
     "athlete_count": 372,
-    "event_count": 89,
+    "event_count": 90,
     "week_count": 18,
     "latest_week": 21,
-    "latest_date": "2026-05-23",
-    "women_count": 278,
+    "latest_date": "2026-05-24",
+    "women_count": 281,
     "men_count": 448,
     "missing_gender_or_class_count": 0
   },
@@ -16,16 +16,17 @@
     {
       "week_number": 21,
       "week_label": "Uke 21",
-      "published_date": "2026-05-23",
-      "published_date_label": "23.05.2026",
-      "result_count": 3,
-      "athlete_count": 3,
-      "event_count": 3,
-      "women_count": 2,
+      "published_date": "2026-05-24",
+      "published_date_label": "24.05.2026",
+      "result_count": 6,
+      "athlete_count": 6,
+      "event_count": 4,
+      "women_count": 5,
       "men_count": 1,
       "events": [
         "European 10,000m Cup",
         "Hamarløpet 2026",
+        "IFAM Outdoor Brussels 2026",
         "Nidaros Løpefest 2026"
       ]
     },
@@ -339,6 +340,35 @@
   ],
   "results": [
     {
+      "result_id": "res-4366abfdd4c25043",
+      "person_id": "skv-p000346",
+      "person_slug": "vilde-vage-henriksen",
+      "published_date": "2026-05-24",
+      "published_date_label": "24.05.2026",
+      "week_number": 21,
+      "athlete_name": "Vilde Våge Henriksen",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "KS",
+      "class_place": "",
+      "event_label": "IFAM Outdoor Brussels 2026",
+      "distance": "3000 m hinder",
+      "result_time_raw": "9:45.25",
+      "result_time_normalized": "9:45.25",
+      "result_time_seconds": 585.25,
+      "wa_gender": "K",
+      "wa_event": "3000m SC",
+      "wa_points": 1131.0,
+      "place": "5",
+      "notes_clean": "PB",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
       "result_id": "res-a3aee8dc9e3e0539",
       "person_id": "skv-p000029",
       "person_slug": "anna-marie-sirevag",
@@ -395,6 +425,64 @@
       "split_second_display": "18:55",
       "split_delta_display": "+0:26",
       "split_state": "slow"
+    },
+    {
+      "result_id": "res-98a0a3a4b7a75845",
+      "person_id": "skv-p000126",
+      "person_slug": "ilona-mononen",
+      "published_date": "2026-05-23",
+      "published_date_label": "23.05.2026",
+      "week_number": 21,
+      "athlete_name": "Ilona Mononen",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "KS",
+      "class_place": "",
+      "event_label": "IFAM Outdoor Brussels 2026",
+      "distance": "5000 m",
+      "result_time_raw": "15:04.48",
+      "result_time_normalized": "15:04.48",
+      "result_time_seconds": 904.48,
+      "wa_gender": "K",
+      "wa_event": "5000m",
+      "wa_points": 1155.0,
+      "place": "3",
+      "notes_clean": "Relatert utøver, FIN",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-662efc6aaeaeaaba",
+      "person_id": "skv-p000012",
+      "person_slug": "amalie-saeten",
+      "published_date": "2026-05-23",
+      "published_date_label": "23.05.2026",
+      "week_number": 21,
+      "athlete_name": "Amalie Sæten",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "KS",
+      "class_place": "",
+      "event_label": "IFAM Outdoor Brussels 2026",
+      "distance": "5000 m",
+      "result_time_raw": "15:24.50",
+      "result_time_normalized": "15:24.50",
+      "result_time_seconds": 924.5,
+      "wa_gender": "K",
+      "wa_event": "5000m",
+      "wa_points": 1116.0,
+      "place": "16",
+      "notes_clean": "SK Vidar, NOR",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
     },
     {
       "result_id": "res-b6894db289bea8ba",
@@ -23810,11 +23898,12 @@
         "display_name": "Amalie Sæten",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 3,
+        "result_count": 4,
         "distances": [
           "3000 m",
           "5 km",
-          "10 km"
+          "10 km",
+          "5000 m"
         ],
         "best_results": [
           {
@@ -23858,7 +23947,7 @@
           }
         ],
         "first_result_date": "2026-02-15",
-        "latest_result_date": "2026-05-15"
+        "latest_result_date": "2026-05-23"
       },
       {
         "person_id": "skv-p000013",
@@ -27967,11 +28056,12 @@
         "display_name": "Ilona Mononen",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 4,
+        "result_count": 5,
         "distances": [
           "3000 m",
           "5 km",
-          "10 km"
+          "10 km",
+          "5000 m"
         ],
         "best_results": [
           {
@@ -28015,7 +28105,7 @@
           }
         ],
         "first_result_date": "2026-03-01",
-        "latest_result_date": "2026-05-15"
+        "latest_result_date": "2026-05-23"
       },
       {
         "person_id": "skv-p000127",
@@ -36196,11 +36286,12 @@
         "display_name": "Vilde Våge Henriksen",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 3,
+        "result_count": 4,
         "distances": [
           "1500 m",
           "3000 m",
-          "10 km"
+          "10 km",
+          "3000 m hinder"
         ],
         "best_results": [
           {
@@ -36244,7 +36335,7 @@
           }
         ],
         "first_result_date": "2026-04-11",
-        "latest_result_date": "2026-05-15"
+        "latest_result_date": "2026-05-24"
       },
       {
         "person_id": "skv-p000347",
