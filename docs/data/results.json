@@ -1,18 +1,32 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-05-22T15:07:46+02:00",
+  "generated_at": "2026-05-24T21:07:04+02:00",
   "stats": {
-    "result_count": 723,
+    "result_count": 724,
     "athlete_count": 371,
-    "event_count": 86,
-    "week_count": 17,
-    "latest_week": 20,
-    "latest_date": "2026-05-17",
-    "women_count": 276,
+    "event_count": 87,
+    "week_count": 18,
+    "latest_week": 21,
+    "latest_date": "2026-05-23",
+    "women_count": 277,
     "men_count": 447,
     "missing_gender_or_class_count": 0
   },
   "weeks": [
+    {
+      "week_number": 21,
+      "week_label": "Uke 21",
+      "published_date": "2026-05-23",
+      "published_date_label": "23.05.2026",
+      "result_count": 1,
+      "athlete_count": 1,
+      "event_count": 1,
+      "women_count": 1,
+      "men_count": 0,
+      "events": [
+        "Hamarløpet 2026"
+      ]
+    },
     {
       "week_number": 20,
       "week_label": "Uke 20",
@@ -322,6 +336,35 @@
     }
   ],
   "results": [
+    {
+      "result_id": "res-9c7a57c318594407",
+      "person_id": "skv-p000344",
+      "person_slug": "vilde-antonsen",
+      "published_date": "2026-05-23",
+      "published_date_label": "23.05.2026",
+      "week_number": 21,
+      "athlete_name": "Vilde Antonsen",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K30-34",
+      "class_place": "1",
+      "event_label": "Hamarløpet 2026",
+      "distance": "10 km",
+      "result_time_raw": "37:24",
+      "result_time_normalized": "37:24",
+      "result_time_seconds": 2244.0,
+      "wa_gender": "K",
+      "wa_event": "10 km",
+      "wa_points": 871.0,
+      "place": "31",
+      "notes_clean": "1. kvinne, 1. K30-34",
+      "split_first_label": "5 km",
+      "split_first_display": "18:29",
+      "split_second_label": "5 km",
+      "split_second_display": "18:55",
+      "split_delta_display": "+0:26",
+      "split_state": "slow"
+    },
     {
       "result_id": "res-d94e04aaf3bc2bf5",
       "person_id": "skv-p000123",
@@ -36008,7 +36051,7 @@
         "display_name": "Vilde Antonsen",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
           "10 km"
         ],
@@ -36028,7 +36071,7 @@
           }
         ],
         "first_result_date": "2026-04-25",
-        "latest_result_date": "2026-04-25"
+        "latest_result_date": "2026-05-23"
       },
       {
         "person_id": "skv-p000345",
