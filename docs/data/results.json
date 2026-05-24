@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-05-24T22:22:20+02:00",
+  "generated_at": "2026-05-24T22:25:35+02:00",
   "stats": {
-    "result_count": 788,
+    "result_count": 791,
     "athlete_count": 394,
-    "event_count": 98,
+    "event_count": 99,
     "week_count": 18,
     "latest_week": 21,
     "latest_date": "2026-05-24",
-    "women_count": 301,
-    "men_count": 487,
+    "women_count": 302,
+    "men_count": 489,
     "missing_gender_or_class_count": 0
   },
   "weeks": [
@@ -18,12 +18,13 @@
       "week_label": "Uke 21",
       "published_date": "2026-05-24",
       "published_date_label": "24.05.2026",
-      "result_count": 65,
-      "athlete_count": 62,
-      "event_count": 12,
-      "women_count": 25,
-      "men_count": 40,
+      "result_count": 68,
+      "athlete_count": 64,
+      "event_count": 13,
+      "women_count": 26,
+      "men_count": 42,
       "events": [
+        "ACCELEREX 5K | Bislett 2026",
         "Bislett 3000 - Torshov Sport x Kiprun",
         "Bjørndalenmila 2026",
         "European 10,000m Cup",
@@ -347,6 +348,93 @@
     }
   ],
   "results": [
+    {
+      "result_id": "res-e80087ca3542889c",
+      "person_id": "skv-p000252",
+      "person_slug": "ole-jorgen-knoph",
+      "published_date": "2026-05-24",
+      "published_date_label": "24.05.2026",
+      "week_number": 21,
+      "athlete_name": "Ole Jørgen Knoph",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M åpen",
+      "class_place": "",
+      "event_label": "ACCELEREX 5K | Bislett 2026",
+      "distance": "5 km",
+      "result_time_raw": "16:00",
+      "result_time_normalized": "16:00",
+      "result_time_seconds": 960.0,
+      "wa_gender": "M",
+      "wa_event": "5 km",
+      "wa_points": 640.0,
+      "place": "1",
+      "notes_clean": "1. plass",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-1bb6256a5ce29a22",
+      "person_id": "skv-p000312",
+      "person_slug": "sunniva-kveim",
+      "published_date": "2026-05-24",
+      "published_date_label": "24.05.2026",
+      "week_number": 21,
+      "athlete_name": "Sunniva Kveim",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K åpen",
+      "class_place": "",
+      "event_label": "ACCELEREX 5K | Bislett 2026",
+      "distance": "5 km",
+      "result_time_raw": "18:46",
+      "result_time_normalized": "18:46",
+      "result_time_seconds": 1126.0,
+      "wa_gender": "K",
+      "wa_event": "5 km",
+      "wa_points": 766.0,
+      "place": "",
+      "notes_clean": "2. kvinne",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-2af3d54696ead8f5",
+      "person_id": "skv-p000144",
+      "person_slug": "jo-trieu-soreide",
+      "published_date": "2026-05-24",
+      "published_date_label": "24.05.2026",
+      "week_number": 21,
+      "athlete_name": "Jo Trieu Søreide",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M åpen",
+      "class_place": "",
+      "event_label": "ACCELEREX 5K | Bislett 2026",
+      "distance": "5 km",
+      "result_time_raw": "19:34",
+      "result_time_normalized": "19:34",
+      "result_time_seconds": 1174.0,
+      "wa_gender": "M",
+      "wa_event": "5 km",
+      "wa_points": 196.0,
+      "place": "",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
     {
       "result_id": "res-4366abfdd4c25043",
       "person_id": "skv-p000346",
@@ -30977,24 +31065,24 @@
         "display_name": "Jo Trieu Søreide",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 2,
+        "result_count": 3,
         "distances": [
           "5 km",
           "10 km"
         ],
         "best_results": [
           {
-            "result_id": "res-50a21e1dd7c70ea9",
+            "result_id": "res-2af3d54696ead8f5",
             "distance": "5 km",
             "source_distance": "5 km",
-            "result_time": "19:42",
-            "result_time_seconds": 1182.0,
-            "event_label": "Oslo Løpsfestival - 5'ern vår!",
-            "published_date": "2026-04-19",
-            "published_date_label": "19.04.2026",
-            "week_number": 16,
-            "place": "80",
-            "class_place": "SOLO"
+            "result_time": "19:34",
+            "result_time_seconds": 1174.0,
+            "event_label": "ACCELEREX 5K | Bislett 2026",
+            "published_date": "2026-05-24",
+            "published_date_label": "24.05.2026",
+            "week_number": 21,
+            "place": "",
+            "class_place": ""
           },
           {
             "result_id": "res-808d76d337d71797",
@@ -31011,7 +31099,7 @@
           }
         ],
         "first_result_date": "2026-04-11",
-        "latest_result_date": "2026-04-19"
+        "latest_result_date": "2026-05-24"
       },
       {
         "person_id": "skv-p000421",
@@ -35304,12 +35392,26 @@
         "display_name": "Ole Jørgen Knoph",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 2,
+        "result_count": 3,
         "distances": [
+          "5 km",
           "10 km",
           "5000 m"
         ],
         "best_results": [
+          {
+            "result_id": "res-e80087ca3542889c",
+            "distance": "5 km",
+            "source_distance": "5 km",
+            "result_time": "16:00",
+            "result_time_seconds": 960.0,
+            "event_label": "ACCELEREX 5K | Bislett 2026",
+            "published_date": "2026-05-24",
+            "published_date_label": "24.05.2026",
+            "week_number": 21,
+            "place": "1",
+            "class_place": ""
+          },
           {
             "result_id": "res-ba79b1966c0f581f",
             "distance": "10 km",
@@ -35325,7 +35427,7 @@
           }
         ],
         "first_result_date": "2026-04-25",
-        "latest_result_date": "2026-05-15"
+        "latest_result_date": "2026-05-24"
       },
       {
         "person_id": "skv-p000253",
@@ -37396,12 +37498,26 @@
         "display_name": "Sunniva Kveim",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 2,
+        "result_count": 3,
         "distances": [
+          "5 km",
           "10 km",
           "4,7 km"
         ],
         "best_results": [
+          {
+            "result_id": "res-1bb6256a5ce29a22",
+            "distance": "5 km",
+            "source_distance": "5 km",
+            "result_time": "18:46",
+            "result_time_seconds": 1126.0,
+            "event_label": "ACCELEREX 5K | Bislett 2026",
+            "published_date": "2026-05-24",
+            "published_date_label": "24.05.2026",
+            "week_number": 21,
+            "place": "",
+            "class_place": ""
+          },
           {
             "result_id": "res-e47b62ec197beb47",
             "distance": "10 km",
@@ -37417,7 +37533,7 @@
           }
         ],
         "first_result_date": "2026-04-11",
-        "latest_result_date": "2026-05-20"
+        "latest_result_date": "2026-05-24"
       },
       {
         "person_id": "skv-p000313",
