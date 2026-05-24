@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-05-24T22:25:35+02:00",
+  "generated_at": "2026-05-24T22:46:20+02:00",
   "stats": {
-    "result_count": 791,
-    "athlete_count": 394,
+    "result_count": 790,
+    "athlete_count": 393,
     "event_count": 99,
     "week_count": 18,
     "latest_week": 21,
     "latest_date": "2026-05-24",
     "women_count": 302,
-    "men_count": 489,
+    "men_count": 488,
     "missing_gender_or_class_count": 0
   },
   "weeks": [
@@ -18,11 +18,11 @@
       "week_label": "Uke 21",
       "published_date": "2026-05-24",
       "published_date_label": "24.05.2026",
-      "result_count": 68,
-      "athlete_count": 64,
+      "result_count": 67,
+      "athlete_count": 63,
       "event_count": 13,
       "women_count": 26,
-      "men_count": 42,
+      "men_count": 41,
       "events": [
         "ACCELEREX 5K | Bislett 2026",
         "Bislett 3000 - Torshov Sport x Kiprun",
@@ -718,35 +718,6 @@
       "wa_points": 683.0,
       "place": "51",
       "notes_clean": "",
-      "split_first_label": "",
-      "split_first_display": "",
-      "split_second_label": "",
-      "split_second_display": "",
-      "split_delta_display": "",
-      "split_state": ""
-    },
-    {
-      "result_id": "res-49f2fabe2e25eaa5",
-      "person_id": "skv-p000407",
-      "person_slug": "sondre-fylling",
-      "published_date": "2026-05-23",
-      "published_date_label": "23.05.2026",
-      "week_number": 21,
-      "athlete_name": "Sondre Fylling",
-      "gender": "M",
-      "gender_label": "Menn",
-      "class_name": "M35-39",
-      "class_place": "",
-      "event_label": "Bjørndalenmila 2026",
-      "distance": "10 km",
-      "result_time_raw": "34:02",
-      "result_time_normalized": "34:02",
-      "result_time_seconds": 2042.0,
-      "wa_gender": "M",
-      "wa_event": "10 km",
-      "wa_points": 643.0,
-      "place": "71",
-      "notes_clean": "SK Vidar Slack",
       "split_first_label": "",
       "split_first_display": "",
       "split_second_label": "",
@@ -25340,7 +25311,7 @@
     }
   ],
   "people": {
-    "profile_count": 394,
+    "profile_count": 393,
     "profiles": [
       {
         "person_id": "skv-p000001",
@@ -37185,34 +37156,6 @@
         "latest_result_date": "2026-04-25"
       },
       {
-        "person_id": "skv-p000407",
-        "profile_slug": "sondre-fylling",
-        "display_name": "Sondre Fylling",
-        "gender": "M",
-        "gender_label": "Menn",
-        "result_count": 1,
-        "distances": [
-          "10 km"
-        ],
-        "best_results": [
-          {
-            "result_id": "res-49f2fabe2e25eaa5",
-            "distance": "10 km",
-            "source_distance": "10 km",
-            "result_time": "34:02",
-            "result_time_seconds": 2042.0,
-            "event_label": "Bjørndalenmila 2026",
-            "published_date": "2026-05-23",
-            "published_date_label": "23.05.2026",
-            "week_number": 21,
-            "place": "71",
-            "class_place": ""
-          }
-        ],
-        "first_result_date": "2026-05-23",
-        "latest_result_date": "2026-05-23"
-      },
-      {
         "person_id": "skv-p000302",
         "profile_slug": "sondre-lomeland",
         "display_name": "Sondre Lomeland",
@@ -39449,7 +39392,6 @@
       "madeleine-heiberg": "skv-p000404",
       "mathilde-christin-knutsen": "skv-p000405",
       "reidar-sobstad": "skv-p000406",
-      "sondre-fylling": "skv-p000407",
       "celine-nordstaa": "skv-p000408",
       "elin-mattsson": "skv-p000409",
       "frode-semb": "skv-p000410",
