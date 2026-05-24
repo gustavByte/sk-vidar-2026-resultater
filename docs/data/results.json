@@ -1,14 +1,14 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-05-24T21:08:46+02:00",
+  "generated_at": "2026-05-24T21:11:01+02:00",
   "stats": {
-    "result_count": 725,
+    "result_count": 726,
     "athlete_count": 372,
-    "event_count": 88,
+    "event_count": 89,
     "week_count": 18,
     "latest_week": 21,
     "latest_date": "2026-05-23",
-    "women_count": 277,
+    "women_count": 278,
     "men_count": 448,
     "missing_gender_or_class_count": 0
   },
@@ -18,12 +18,13 @@
       "week_label": "Uke 21",
       "published_date": "2026-05-23",
       "published_date_label": "23.05.2026",
-      "result_count": 2,
-      "athlete_count": 2,
-      "event_count": 2,
-      "women_count": 1,
+      "result_count": 3,
+      "athlete_count": 3,
+      "event_count": 3,
+      "women_count": 2,
       "men_count": 1,
       "events": [
+        "European 10,000m Cup",
         "Hamarløpet 2026",
         "Nidaros Løpefest 2026"
       ]
@@ -337,6 +338,35 @@
     }
   ],
   "results": [
+    {
+      "result_id": "res-a3aee8dc9e3e0539",
+      "person_id": "skv-p000029",
+      "person_slug": "anna-marie-sirevag",
+      "published_date": "2026-05-23",
+      "published_date_label": "23.05.2026",
+      "week_number": 21,
+      "athlete_name": "Anna Marie Sirevåg",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "U23K",
+      "class_place": "",
+      "event_label": "European 10,000m Cup",
+      "distance": "10000 m",
+      "result_time_raw": "34:30.81",
+      "result_time_normalized": "34:30.81",
+      "result_time_seconds": 2070.81,
+      "wa_gender": "K",
+      "wa_event": "10000 m",
+      "wa_points": 1010.0,
+      "place": "33",
+      "notes_clean": "B-finale",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
     {
       "result_id": "res-9c7a57c318594407",
       "person_id": "skv-p000344",
@@ -24383,12 +24413,13 @@
         "display_name": "Anna Marie Sirevåg",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 5,
+        "result_count": 6,
         "distances": [
           "1500 m",
           "3000 m",
           "5 km",
-          "10 km"
+          "10 km",
+          "10000 m"
         ],
         "best_results": [
           {
@@ -24445,7 +24476,7 @@
           }
         ],
         "first_result_date": "2026-02-08",
-        "latest_result_date": "2026-05-15"
+        "latest_result_date": "2026-05-23"
       },
       {
         "person_id": "skv-p000030",
