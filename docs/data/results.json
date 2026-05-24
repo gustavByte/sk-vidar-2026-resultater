@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-05-24T21:38:03+02:00",
+  "generated_at": "2026-05-24T21:55:54+02:00",
   "stats": {
-    "result_count": 778,
-    "athlete_count": 391,
-    "event_count": 96,
+    "result_count": 783,
+    "athlete_count": 392,
+    "event_count": 97,
     "week_count": 18,
     "latest_week": 21,
     "latest_date": "2026-05-24",
-    "women_count": 299,
-    "men_count": 479,
+    "women_count": 301,
+    "men_count": 482,
     "missing_gender_or_class_count": 0
   },
   "weeks": [
@@ -18,14 +18,15 @@
       "week_label": "Uke 21",
       "published_date": "2026-05-24",
       "published_date_label": "24.05.2026",
-      "result_count": 55,
-      "athlete_count": 53,
-      "event_count": 10,
-      "women_count": 23,
-      "men_count": 32,
+      "result_count": 60,
+      "athlete_count": 57,
+      "event_count": 11,
+      "women_count": 25,
+      "men_count": 35,
       "events": [
         "Bjørndalenmila 2026",
         "European 10,000m Cup",
+        "Grefsenkollen Opp 2026",
         "Göteborgsvarvet",
         "Hamarløpet 2026",
         "IFAM Outdoor Brussels 2026",
@@ -1788,6 +1789,151 @@
       "wa_points": 339.0,
       "place": "95",
       "notes_clean": "95. plass menn totalt",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-aaa98fdd35fda702",
+      "person_id": "skv-p000419",
+      "person_slug": "mathias-moen",
+      "published_date": "2026-05-20",
+      "published_date_label": "20.05.2026",
+      "week_number": 21,
+      "athlete_name": "Mathias Moen",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M23-39",
+      "class_place": "",
+      "event_label": "Grefsenkollen Opp 2026",
+      "distance": "4,7 km",
+      "result_time_raw": "17:01",
+      "result_time_normalized": "17:01",
+      "result_time_seconds": 1021.0,
+      "wa_gender": "M",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "8",
+      "notes_clean": "motbakkeløp",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-d26fa7b3b7424b9c",
+      "person_id": "skv-p000390",
+      "person_slug": "ulrik-moen-odegard",
+      "published_date": "2026-05-20",
+      "published_date_label": "20.05.2026",
+      "week_number": 21,
+      "athlete_name": "Ulrik Moen Ødegård",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M23-39",
+      "class_place": "",
+      "event_label": "Grefsenkollen Opp 2026",
+      "distance": "4,7 km",
+      "result_time_raw": "17:05",
+      "result_time_normalized": "17:05",
+      "result_time_seconds": 1025.0,
+      "wa_gender": "M",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "11",
+      "notes_clean": "motbakkeløp",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-b6889701f5f23571",
+      "person_id": "skv-p000333",
+      "person_slug": "truls-skarvoy",
+      "published_date": "2026-05-20",
+      "published_date_label": "20.05.2026",
+      "week_number": 21,
+      "athlete_name": "Truls Vegard Skarvøy",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M23-39",
+      "class_place": "",
+      "event_label": "Grefsenkollen Opp 2026",
+      "distance": "4,7 km",
+      "result_time_raw": "18:43",
+      "result_time_normalized": "18:43",
+      "result_time_seconds": 1123.0,
+      "wa_gender": "M",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "32",
+      "notes_clean": "motbakkeløp",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-66c8594cf0ea4494",
+      "person_id": "skv-p000377",
+      "person_slug": "maia-kulle-andreassen",
+      "published_date": "2026-05-20",
+      "published_date_label": "20.05.2026",
+      "week_number": 21,
+      "athlete_name": "Maia Kulle Andreassen",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K16-17",
+      "class_place": "",
+      "event_label": "Grefsenkollen Opp 2026",
+      "distance": "4,7 km",
+      "result_time_raw": "22:14",
+      "result_time_normalized": "22:14",
+      "result_time_seconds": 1334.0,
+      "wa_gender": "K",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "137",
+      "notes_clean": "motbakkeløp",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-72e56f0c429f30ac",
+      "person_id": "skv-p000312",
+      "person_slug": "sunniva-kveim",
+      "published_date": "2026-05-20",
+      "published_date_label": "20.05.2026",
+      "week_number": 21,
+      "athlete_name": "Sunniva Kveim",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K23-39",
+      "class_place": "",
+      "event_label": "Grefsenkollen Opp 2026",
+      "distance": "4,7 km",
+      "result_time_raw": "22:38",
+      "result_time_normalized": "22:38",
+      "result_time_seconds": 1358.0,
+      "wa_gender": "K",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "157",
+      "notes_clean": "motbakkeløp",
       "split_first_label": "",
       "split_first_display": "",
       "split_second_label": "",
@@ -24960,7 +25106,7 @@
     }
   ],
   "people": {
-    "profile_count": 391,
+    "profile_count": 392,
     "profiles": [
       {
         "person_id": "skv-p000001",
@@ -32845,15 +32991,16 @@
         "display_name": "Maia Kulle Andreassen",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 3,
+        "result_count": 4,
         "distances": [
+          "4,7 km",
           "Kombinert",
           "SKY 12.5K",
           "Vertical"
         ],
         "best_results": [],
         "first_result_date": "2026-05-08",
-        "latest_result_date": "2026-05-10"
+        "latest_result_date": "2026-05-20"
       },
       {
         "person_id": "skv-p000199",
@@ -33755,6 +33902,20 @@
         ],
         "first_result_date": "2026-05-02",
         "latest_result_date": "2026-05-02"
+      },
+      {
+        "person_id": "skv-p000419",
+        "profile_slug": "mathias-moen",
+        "display_name": "Mathias Moen",
+        "gender": "M",
+        "gender_label": "Menn",
+        "result_count": 1,
+        "distances": [
+          "4,7 km"
+        ],
+        "best_results": [],
+        "first_result_date": "2026-05-20",
+        "latest_result_date": "2026-05-20"
       },
       {
         "person_id": "skv-p000405",
@@ -37019,9 +37180,10 @@
         "display_name": "Sunniva Kveim",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
-          "10 km"
+          "10 km",
+          "4,7 km"
         ],
         "best_results": [
           {
@@ -37039,7 +37201,7 @@
           }
         ],
         "first_result_date": "2026-04-11",
-        "latest_result_date": "2026-04-11"
+        "latest_result_date": "2026-05-20"
       },
       {
         "person_id": "skv-p000313",
@@ -37988,12 +38150,13 @@
         "display_name": "Truls Vegard Skarvøy",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 4,
+        "result_count": 5,
         "distances": [
           "800 m",
           "1500 m",
           "5 km",
-          "10 km"
+          "10 km",
+          "4,7 km"
         ],
         "best_results": [
           {
@@ -38050,7 +38213,7 @@
           }
         ],
         "first_result_date": "2026-01-18",
-        "latest_result_date": "2026-05-19"
+        "latest_result_date": "2026-05-20"
       },
       {
         "person_id": "skv-p000396",
@@ -38072,13 +38235,14 @@
         "display_name": "Ulrik Moen Ødegård",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
-          "10000 m"
+          "10000 m",
+          "4,7 km"
         ],
         "best_results": [],
         "first_result_date": "2026-05-15",
-        "latest_result_date": "2026-05-15"
+        "latest_result_date": "2026-05-20"
       },
       {
         "person_id": "skv-p000334",
@@ -38965,6 +39129,7 @@
       "oscar-b": "skv-p000416",
       "tina-hatland": "skv-p000417",
       "anton-janovskis-heldal": "skv-p000418",
+      "mathias-moen": "skv-p000419",
       "adne-andersen-andersen": "skv-p000001",
       "adne-sandvik-dyrnesli": "skv-p000003",
       "erlend-fugleberg-bruaset": "skv-p000075",
