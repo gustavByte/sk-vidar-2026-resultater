@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-05-24T21:32:23+02:00",
+  "generated_at": "2026-05-24T21:35:04+02:00",
   "stats": {
-    "result_count": 773,
+    "result_count": 774,
     "athlete_count": 390,
-    "event_count": 94,
+    "event_count": 95,
     "week_count": 18,
     "latest_week": 21,
     "latest_date": "2026-05-24",
     "women_count": 299,
-    "men_count": 474,
+    "men_count": 475,
     "missing_gender_or_class_count": 0
   },
   "weeks": [
@@ -18,11 +18,11 @@
       "week_label": "Uke 21",
       "published_date": "2026-05-24",
       "published_date_label": "24.05.2026",
-      "result_count": 50,
-      "athlete_count": 49,
-      "event_count": 8,
+      "result_count": 51,
+      "athlete_count": 50,
+      "event_count": 9,
       "women_count": 23,
-      "men_count": 27,
+      "men_count": 28,
       "events": [
         "Bjørndalenmila 2026",
         "European 10,000m Cup",
@@ -31,7 +31,8 @@
         "IFAM Outdoor Brussels 2026",
         "Lilla Varvet 7-10 år",
         "Nidaros Løpefest 2026",
-        "Specialvarvet Blå 1,4 km"
+        "Specialvarvet Blå 1,4 km",
+        "Stockholm 5000m"
       ]
     },
     {
@@ -1757,6 +1758,35 @@
       "wa_points": 82.0,
       "place": "227",
       "notes_clean": "3. M60-64",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-2b9b491a33a2f7f6",
+      "person_id": "skv-p000315",
+      "person_slug": "sven-thelin",
+      "published_date": "2026-05-23",
+      "published_date_label": "23.05.2026",
+      "week_number": 21,
+      "athlete_name": "Sven Thelin",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M åpen",
+      "class_place": "",
+      "event_label": "Stockholm 5000m",
+      "distance": "5000 m",
+      "result_time_raw": "18:10.43",
+      "result_time_normalized": "18:10.43",
+      "result_time_seconds": 1090.43,
+      "wa_gender": "M",
+      "wa_event": "5000m",
+      "wa_points": 339.0,
+      "place": "95",
+      "notes_clean": "95. plass menn totalt",
       "split_first_label": "",
       "split_first_display": "",
       "split_second_label": "",
@@ -36878,11 +36908,12 @@
         "display_name": "Sven Thelin",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 5,
+        "result_count": 6,
         "distances": [
           "3000 m",
           "5 km",
-          "10 km"
+          "10 km",
+          "5000 m"
         ],
         "best_results": [
           {
@@ -36926,7 +36957,7 @@
           }
         ],
         "first_result_date": "2026-03-01",
-        "latest_result_date": "2026-05-15"
+        "latest_result_date": "2026-05-23"
       },
       {
         "person_id": "skv-p000316",
