@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-05-24T21:55:54+02:00",
+  "generated_at": "2026-05-24T22:22:20+02:00",
   "stats": {
-    "result_count": 783,
-    "athlete_count": 392,
-    "event_count": 97,
+    "result_count": 788,
+    "athlete_count": 394,
+    "event_count": 98,
     "week_count": 18,
     "latest_week": 21,
     "latest_date": "2026-05-24",
     "women_count": 301,
-    "men_count": 482,
+    "men_count": 487,
     "missing_gender_or_class_count": 0
   },
   "weeks": [
@@ -18,12 +18,13 @@
       "week_label": "Uke 21",
       "published_date": "2026-05-24",
       "published_date_label": "24.05.2026",
-      "result_count": 60,
-      "athlete_count": 57,
-      "event_count": 11,
+      "result_count": 65,
+      "athlete_count": 62,
+      "event_count": 12,
       "women_count": 25,
-      "men_count": 35,
+      "men_count": 40,
       "events": [
+        "Bislett 3000 - Torshov Sport x Kiprun",
         "Bjørndalenmila 2026",
         "European 10,000m Cup",
         "Grefsenkollen Opp 2026",
@@ -1789,6 +1790,151 @@
       "wa_points": 339.0,
       "place": "95",
       "notes_clean": "95. plass menn totalt",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-c196a2b6085f71b0",
+      "person_id": "skv-p000239",
+      "person_slug": "njal-hjelde-anderssen",
+      "published_date": "2026-05-21",
+      "published_date_label": "21.05.2026",
+      "week_number": 21,
+      "athlete_name": "Njål Hjelde Anderssen",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M Elite",
+      "class_place": "",
+      "event_label": "Bislett 3000 - Torshov Sport x Kiprun",
+      "distance": "3000 m",
+      "result_time_raw": "9:22.8",
+      "result_time_normalized": "9:22.8",
+      "result_time_seconds": 562.8,
+      "wa_gender": "M",
+      "wa_event": "3000m",
+      "wa_points": 626.0,
+      "place": "6",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-5301f9a4d30858ea",
+      "person_id": "skv-p000420",
+      "person_slug": "haakon-hellebust",
+      "published_date": "2026-05-21",
+      "published_date_label": "21.05.2026",
+      "week_number": 21,
+      "athlete_name": "Haakon Hellebust",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M Elite",
+      "class_place": "",
+      "event_label": "Bislett 3000 - Torshov Sport x Kiprun",
+      "distance": "3000 m",
+      "result_time_raw": "9:24.2",
+      "result_time_normalized": "9:24.2",
+      "result_time_seconds": 564.2,
+      "wa_gender": "M",
+      "wa_event": "3000m",
+      "wa_points": 620.0,
+      "place": "9",
+      "notes_clean": "SK Vidar Slack",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-afd5ee583fc6316d",
+      "person_id": "skv-p000008",
+      "person_slug": "aleksander-amundsen",
+      "published_date": "2026-05-21",
+      "published_date_label": "21.05.2026",
+      "week_number": 21,
+      "athlete_name": "Aleksander Amundsen",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M Elite",
+      "class_place": "",
+      "event_label": "Bislett 3000 - Torshov Sport x Kiprun",
+      "distance": "3000 m",
+      "result_time_raw": "9:29.8",
+      "result_time_normalized": "9:29.8",
+      "result_time_seconds": 569.8,
+      "wa_gender": "M",
+      "wa_event": "3000m",
+      "wa_points": 595.0,
+      "place": "12",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-9031ccef4133c719",
+      "person_id": "skv-p000421",
+      "person_slug": "joakim-hope-soltveit",
+      "published_date": "2026-05-21",
+      "published_date_label": "21.05.2026",
+      "week_number": 21,
+      "athlete_name": "Joakim Hope Soltveit",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M Elite",
+      "class_place": "",
+      "event_label": "Bislett 3000 - Torshov Sport x Kiprun",
+      "distance": "3000 m",
+      "result_time_raw": "10:16.1",
+      "result_time_normalized": "10:16.1",
+      "result_time_seconds": 616.1,
+      "wa_gender": "M",
+      "wa_event": "3000m",
+      "wa_points": 409.0,
+      "place": "31",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-d458a2201867c23b",
+      "person_id": "skv-p000283",
+      "person_slug": "simen-hagerup-kjeldsen",
+      "published_date": "2026-05-21",
+      "published_date_label": "21.05.2026",
+      "week_number": 21,
+      "athlete_name": "Simen Hagerup Kjeldsen",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M Elite",
+      "class_place": "",
+      "event_label": "Bislett 3000 - Torshov Sport x Kiprun",
+      "distance": "3000 m",
+      "result_time_raw": "10:59.2",
+      "result_time_normalized": "10:59.2",
+      "result_time_seconds": 659.2,
+      "wa_gender": "M",
+      "wa_event": "3000m",
+      "wa_points": 266.0,
+      "place": "51",
+      "notes_clean": "",
       "split_first_label": "",
       "split_first_display": "",
       "split_second_label": "",
@@ -24664,13 +24810,13 @@
           "rank": 10,
           "person_id": "skv-p000239",
           "person_slug": "njal-hjelde-anderssen",
-          "result_id": "res-eb5ec051b8053a30",
+          "result_id": "res-c196a2b6085f71b0",
           "athlete_name": "Njål Hjelde Anderssen",
-          "result_time": "09:43.800",
-          "result_time_seconds": 583.8,
-          "event_label": "3000 St. Haugen og Salomon",
-          "published_date": "2026-04-16",
-          "published_date_label": "16.04.2026"
+          "result_time": "9:22.8",
+          "result_time_seconds": 562.8,
+          "event_label": "Bislett 3000 - Torshov Sport x Kiprun",
+          "published_date": "2026-05-21",
+          "published_date_label": "21.05.2026"
         }
       ]
     },
@@ -25106,7 +25252,7 @@
     }
   ],
   "people": {
-    "profile_count": 392,
+    "profile_count": 394,
     "profiles": [
       {
         "person_id": "skv-p000001",
@@ -25353,7 +25499,7 @@
         "display_name": "Aleksander Amundsen",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 6,
+        "result_count": 7,
         "distances": [
           "3000 m",
           "5 km",
@@ -25362,17 +25508,17 @@
         ],
         "best_results": [
           {
-            "result_id": "res-8aa82ee4e0fdc252",
+            "result_id": "res-afd5ee583fc6316d",
             "distance": "3000 m",
             "source_distance": "3000 m",
-            "result_time": "10:07",
-            "result_time_seconds": 607.0,
-            "event_label": "Bislett distanseserie 4- 3K",
-            "published_date": "2026-04-19",
-            "published_date_label": "19.04.2026",
-            "week_number": 16,
-            "place": "7",
-            "class_place": "7"
+            "result_time": "9:29.8",
+            "result_time_seconds": 569.8,
+            "event_label": "Bislett 3000 - Torshov Sport x Kiprun",
+            "published_date": "2026-05-21",
+            "published_date_label": "21.05.2026",
+            "week_number": 21,
+            "place": "12",
+            "class_place": ""
           },
           {
             "result_id": "res-6579099bb72c60b7",
@@ -25415,7 +25561,7 @@
           }
         ],
         "first_result_date": "2026-04-11",
-        "latest_result_date": "2026-05-15"
+        "latest_result_date": "2026-05-21"
       },
       {
         "person_id": "skv-p000009",
@@ -28984,6 +29130,34 @@
         "latest_result_date": "2026-04-11"
       },
       {
+        "person_id": "skv-p000420",
+        "profile_slug": "haakon-hellebust",
+        "display_name": "Haakon Hellebust",
+        "gender": "M",
+        "gender_label": "Menn",
+        "result_count": 1,
+        "distances": [
+          "3000 m"
+        ],
+        "best_results": [
+          {
+            "result_id": "res-5301f9a4d30858ea",
+            "distance": "3000 m",
+            "source_distance": "3000 m",
+            "result_time": "9:24.2",
+            "result_time_seconds": 564.2,
+            "event_label": "Bislett 3000 - Torshov Sport x Kiprun",
+            "published_date": "2026-05-21",
+            "published_date_label": "21.05.2026",
+            "week_number": 21,
+            "place": "9",
+            "class_place": ""
+          }
+        ],
+        "first_result_date": "2026-05-21",
+        "latest_result_date": "2026-05-21"
+      },
+      {
         "person_id": "skv-p000097",
         "profile_slug": "halvor-elverum",
         "display_name": "Halvor Elverum",
@@ -30838,6 +31012,34 @@
         ],
         "first_result_date": "2026-04-11",
         "latest_result_date": "2026-04-19"
+      },
+      {
+        "person_id": "skv-p000421",
+        "profile_slug": "joakim-hope-soltveit",
+        "display_name": "Joakim Hope Soltveit",
+        "gender": "M",
+        "gender_label": "Menn",
+        "result_count": 1,
+        "distances": [
+          "3000 m"
+        ],
+        "best_results": [
+          {
+            "result_id": "res-9031ccef4133c719",
+            "distance": "3000 m",
+            "source_distance": "3000 m",
+            "result_time": "10:16.1",
+            "result_time_seconds": 616.1,
+            "event_label": "Bislett 3000 - Torshov Sport x Kiprun",
+            "published_date": "2026-05-21",
+            "published_date_label": "21.05.2026",
+            "week_number": 21,
+            "place": "31",
+            "class_place": ""
+          }
+        ],
+        "first_result_date": "2026-05-21",
+        "latest_result_date": "2026-05-21"
       },
       {
         "person_id": "skv-p000145",
@@ -34625,27 +34827,27 @@
         "display_name": "Njål Hjelde Anderssen",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
           "3000 m"
         ],
         "best_results": [
           {
-            "result_id": "res-eb5ec051b8053a30",
+            "result_id": "res-c196a2b6085f71b0",
             "distance": "3000 m",
             "source_distance": "3000 m",
-            "result_time": "09:43.800",
-            "result_time_seconds": 583.8,
-            "event_label": "3000 St. Haugen og Salomon",
-            "published_date": "2026-04-16",
-            "published_date_label": "16.04.2026",
-            "week_number": 16,
-            "place": "8",
-            "class_place": "3"
+            "result_time": "9:22.8",
+            "result_time_seconds": 562.8,
+            "event_label": "Bislett 3000 - Torshov Sport x Kiprun",
+            "published_date": "2026-05-21",
+            "published_date_label": "21.05.2026",
+            "week_number": 21,
+            "place": "6",
+            "class_place": ""
           }
         ],
         "first_result_date": "2026-04-16",
-        "latest_result_date": "2026-04-16"
+        "latest_result_date": "2026-05-21"
       },
       {
         "person_id": "skv-p000240",
@@ -36283,13 +36485,27 @@
         "display_name": "Simen Hagerup Kjeldsen",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 6,
+        "result_count": 7,
         "distances": [
+          "3000 m",
           "5 km",
           "10 km",
           "3 km"
         ],
         "best_results": [
+          {
+            "result_id": "res-d458a2201867c23b",
+            "distance": "3000 m",
+            "source_distance": "3000 m",
+            "result_time": "10:59.2",
+            "result_time_seconds": 659.2,
+            "event_label": "Bislett 3000 - Torshov Sport x Kiprun",
+            "published_date": "2026-05-21",
+            "published_date_label": "21.05.2026",
+            "week_number": 21,
+            "place": "51",
+            "class_place": ""
+          },
           {
             "result_id": "res-21f59a758eaf2f26",
             "distance": "5 km",
@@ -36318,7 +36534,7 @@
           }
         ],
         "first_result_date": "2026-01-18",
-        "latest_result_date": "2026-05-14"
+        "latest_result_date": "2026-05-21"
       },
       {
         "person_id": "skv-p000284",
@@ -39130,6 +39346,8 @@
       "tina-hatland": "skv-p000417",
       "anton-janovskis-heldal": "skv-p000418",
       "mathias-moen": "skv-p000419",
+      "haakon-hellebust": "skv-p000420",
+      "joakim-hope-soltveit": "skv-p000421",
       "adne-andersen-andersen": "skv-p000001",
       "adne-sandvik-dyrnesli": "skv-p000003",
       "erlend-fugleberg-bruaset": "skv-p000075",
