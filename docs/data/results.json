@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-05-24T21:25:04+02:00",
+  "generated_at": "2026-05-24T21:32:23+02:00",
   "stats": {
-    "result_count": 753,
-    "athlete_count": 380,
-    "event_count": 91,
+    "result_count": 773,
+    "athlete_count": 390,
+    "event_count": 94,
     "week_count": 18,
     "latest_week": 21,
     "latest_date": "2026-05-24",
-    "women_count": 290,
-    "men_count": 463,
+    "women_count": 299,
+    "men_count": 474,
     "missing_gender_or_class_count": 0
   },
   "weeks": [
@@ -18,17 +18,20 @@
       "week_label": "Uke 21",
       "published_date": "2026-05-24",
       "published_date_label": "24.05.2026",
-      "result_count": 30,
-      "athlete_count": 30,
-      "event_count": 5,
-      "women_count": 14,
-      "men_count": 16,
+      "result_count": 50,
+      "athlete_count": 49,
+      "event_count": 8,
+      "women_count": 23,
+      "men_count": 27,
       "events": [
         "Bjørndalenmila 2026",
         "European 10,000m Cup",
+        "Göteborgsvarvet",
         "Hamarløpet 2026",
         "IFAM Outdoor Brussels 2026",
-        "Nidaros Løpefest 2026"
+        "Lilla Varvet 7-10 år",
+        "Nidaros Løpefest 2026",
+        "Specialvarvet Blå 1,4 km"
       ]
     },
     {
@@ -362,6 +365,35 @@
       "wa_points": 1131.0,
       "place": "5",
       "notes_clean": "PB",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-4c2716d02770eac6",
+      "person_id": "skv-p000415",
+      "person_slug": "oliver-strand",
+      "published_date": "2026-05-24",
+      "published_date_label": "24.05.2026",
+      "week_number": 21,
+      "athlete_name": "Oliver Strand",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "F/P8",
+      "class_place": "",
+      "event_label": "Lilla Varvet 7-10 år",
+      "distance": "1,1 km",
+      "result_time_raw": "00:05:56",
+      "result_time_normalized": "00:05:56",
+      "result_time_seconds": 356.0,
+      "wa_gender": "M",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "",
+      "notes_clean": "SK Vidar aktiv medlem",
       "split_first_label": "",
       "split_first_display": "",
       "split_second_label": "",
@@ -1095,6 +1127,528 @@
       "split_state": ""
     },
     {
+      "result_id": "res-41213e36848c8456",
+      "person_id": "skv-p000304",
+      "person_slug": "sondre-nordstad-moen",
+      "published_date": "2026-05-23",
+      "published_date_label": "23.05.2026",
+      "week_number": 21,
+      "athlete_name": "Sondre Nordstad Moen",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M åpen",
+      "class_place": "",
+      "event_label": "Göteborgsvarvet",
+      "distance": "Halvmaraton",
+      "result_time_raw": "01:03:31",
+      "result_time_normalized": "01:03:31",
+      "result_time_seconds": 3811.0,
+      "wa_gender": "M",
+      "wa_event": "Halvmaraton",
+      "wa_points": 1049.0,
+      "place": "2",
+      "notes_clean": "SK Vidar aktiv medlem",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-ad305a3fe1567aa3",
+      "person_id": "skv-p000128",
+      "person_slug": "ine-bakken",
+      "published_date": "2026-05-23",
+      "published_date_label": "23.05.2026",
+      "week_number": 21,
+      "athlete_name": "Ine Bakken",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K åpen",
+      "class_place": "",
+      "event_label": "Göteborgsvarvet",
+      "distance": "Halvmaraton",
+      "result_time_raw": "01:18:14",
+      "result_time_normalized": "01:18:14",
+      "result_time_seconds": 4694.0,
+      "wa_gender": "K",
+      "wa_event": "Halvmaraton",
+      "wa_points": 967.0,
+      "place": "8",
+      "notes_clean": "Slack workspace, svak navnematch",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-e027e14ed1f2c014",
+      "person_id": "skv-p000356",
+      "person_slug": "kristine-meinert-rod",
+      "published_date": "2026-05-23",
+      "published_date_label": "23.05.2026",
+      "week_number": 21,
+      "athlete_name": "Kristine Meinert Rød",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K17",
+      "class_place": "",
+      "event_label": "Göteborgsvarvet",
+      "distance": "Halvmaraton",
+      "result_time_raw": "01:19:07",
+      "result_time_normalized": "01:19:07",
+      "result_time_seconds": 4747.0,
+      "wa_gender": "K",
+      "wa_event": "Halvmaraton",
+      "wa_points": 950.0,
+      "place": "10",
+      "notes_clean": "SK Vidar aktiv medlem; Slack",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-98434907e2b5e0b5",
+      "person_id": "skv-p000153",
+      "person_slug": "jonas-njerve",
+      "published_date": "2026-05-23",
+      "published_date_label": "23.05.2026",
+      "week_number": 21,
+      "athlete_name": "Jonas Njerve",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M17",
+      "class_place": "",
+      "event_label": "Göteborgsvarvet",
+      "distance": "Halvmaraton",
+      "result_time_raw": "01:19:40",
+      "result_time_normalized": "01:19:40",
+      "result_time_seconds": 4780.0,
+      "wa_gender": "M",
+      "wa_event": "Halvmaraton",
+      "wa_points": 527.0,
+      "place": "180",
+      "notes_clean": "Offisiell Vidar; SK Vidar aktiv medlem; Slack",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-347373f10747a062",
+      "person_id": "skv-p000077",
+      "person_slug": "erlend-hellum",
+      "published_date": "2026-05-23",
+      "published_date_label": "23.05.2026",
+      "week_number": 21,
+      "athlete_name": "Erlend Hellum",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M40",
+      "class_place": "",
+      "event_label": "Göteborgsvarvet",
+      "distance": "Halvmaraton",
+      "result_time_raw": "01:20:02",
+      "result_time_normalized": "01:20:02",
+      "result_time_seconds": 4802.0,
+      "wa_gender": "M",
+      "wa_event": "Halvmaraton",
+      "wa_points": 518.0,
+      "place": "198",
+      "notes_clean": "Offisiell Vidar; SK Vidar aktiv medlem; Slack",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-117bd841552a9d2a",
+      "person_id": "skv-p000147",
+      "person_slug": "johanne-laegran",
+      "published_date": "2026-05-23",
+      "published_date_label": "23.05.2026",
+      "week_number": 21,
+      "athlete_name": "Johanne Lægran",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K17",
+      "class_place": "",
+      "event_label": "Göteborgsvarvet",
+      "distance": "Halvmaraton",
+      "result_time_raw": "01:31:35",
+      "result_time_normalized": "01:31:35",
+      "result_time_seconds": 5495.0,
+      "wa_gender": "K",
+      "wa_event": "Halvmaraton",
+      "wa_points": 730.0,
+      "place": "106",
+      "notes_clean": "Offisiell Vidar; SK Vidar aktiv medlem",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-0ad3e97d2d0719c9",
+      "person_id": "skv-p000200",
+      "person_slug": "maren-mohagen",
+      "published_date": "2026-05-23",
+      "published_date_label": "23.05.2026",
+      "week_number": 21,
+      "athlete_name": "Maren Mohagen",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K17",
+      "class_place": "",
+      "event_label": "Göteborgsvarvet",
+      "distance": "Halvmaraton",
+      "result_time_raw": "01:37:42",
+      "result_time_normalized": "01:37:42",
+      "result_time_seconds": 5862.0,
+      "wa_gender": "K",
+      "wa_event": "Halvmaraton",
+      "wa_points": 632.0,
+      "place": "296",
+      "notes_clean": "Slack workspace, svak navnematch",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-0121352bc33f5fc0",
+      "person_id": "skv-p000412",
+      "person_slug": "magnus-baekkevar-semb",
+      "published_date": "2026-05-23",
+      "published_date_label": "23.05.2026",
+      "week_number": 21,
+      "athlete_name": "Magnus Bækkevar Semb",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M17",
+      "class_place": "",
+      "event_label": "Göteborgsvarvet",
+      "distance": "Halvmaraton",
+      "result_time_raw": "01:40:01",
+      "result_time_normalized": "01:40:01",
+      "result_time_seconds": 6001.0,
+      "wa_gender": "M",
+      "wa_event": "Halvmaraton",
+      "wa_points": 123.0,
+      "place": "3908",
+      "notes_clean": "Offisiell Vidar; SK Vidar aktiv medlem",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-e65edd390796dda8",
+      "person_id": "skv-p000410",
+      "person_slug": "frode-semb",
+      "published_date": "2026-05-23",
+      "published_date_label": "23.05.2026",
+      "week_number": 21,
+      "athlete_name": "Frode Semb",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M55",
+      "class_place": "",
+      "event_label": "Göteborgsvarvet",
+      "distance": "Halvmaraton",
+      "result_time_raw": "01:41:50",
+      "result_time_normalized": "01:41:50",
+      "result_time_seconds": 6110.0,
+      "wa_gender": "M",
+      "wa_event": "Halvmaraton",
+      "wa_points": 100.0,
+      "place": "4603",
+      "notes_clean": "Offisiell Vidar; SK Vidar aktiv medlem",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-112a1a69b1d6eee7",
+      "person_id": "skv-p000411",
+      "person_slug": "isak-by-stolan",
+      "published_date": "2026-05-23",
+      "published_date_label": "23.05.2026",
+      "week_number": 21,
+      "athlete_name": "Isak By-stølan",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M17",
+      "class_place": "",
+      "event_label": "Göteborgsvarvet",
+      "distance": "Halvmaraton",
+      "result_time_raw": "01:43:24",
+      "result_time_normalized": "01:43:24",
+      "result_time_seconds": 6204.0,
+      "wa_gender": "M",
+      "wa_event": "Halvmaraton",
+      "wa_points": 83.0,
+      "place": "5266",
+      "notes_clean": "Offisiell Vidar",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-07e0147405918351",
+      "person_id": "skv-p000417",
+      "person_slug": "tina-hatland",
+      "published_date": "2026-05-23",
+      "published_date_label": "23.05.2026",
+      "week_number": 21,
+      "athlete_name": "Tina Hatland",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K17",
+      "class_place": "",
+      "event_label": "Göteborgsvarvet",
+      "distance": "Halvmaraton",
+      "result_time_raw": "01:44:13",
+      "result_time_normalized": "01:44:13",
+      "result_time_seconds": 6253.0,
+      "wa_gender": "K",
+      "wa_event": "Halvmaraton",
+      "wa_points": 536.0,
+      "place": "741",
+      "notes_clean": "SK Vidar aktiv medlem; Slack",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-88fe60850f0a3b66",
+      "person_id": "skv-p000032",
+      "person_slug": "anne-myhr",
+      "published_date": "2026-05-23",
+      "published_date_label": "23.05.2026",
+      "week_number": 21,
+      "athlete_name": "Anne Myhr",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K60",
+      "class_place": "",
+      "event_label": "Göteborgsvarvet",
+      "distance": "Halvmaraton",
+      "result_time_raw": "01:49:12",
+      "result_time_normalized": "01:49:12",
+      "result_time_seconds": 6552.0,
+      "wa_gender": "K",
+      "wa_event": "Halvmaraton",
+      "wa_points": 468.0,
+      "place": "1384",
+      "notes_clean": "Offisiell Vidar; SK Vidar aktiv medlem",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-c3fd41de2a85f5c0",
+      "person_id": "skv-p000212",
+      "person_slug": "marita-sandberg",
+      "published_date": "2026-05-23",
+      "published_date_label": "23.05.2026",
+      "week_number": 21,
+      "athlete_name": "Marita Sandberg",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K45",
+      "class_place": "",
+      "event_label": "Göteborgsvarvet",
+      "distance": "Halvmaraton",
+      "result_time_raw": "01:53:19",
+      "result_time_normalized": "01:53:19",
+      "result_time_seconds": 6799.0,
+      "wa_gender": "K",
+      "wa_event": "Halvmaraton",
+      "wa_points": 415.0,
+      "place": "2084",
+      "notes_clean": "Offisiell Vidar",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-00e8b593d2e8b8d6",
+      "person_id": "skv-p000408",
+      "person_slug": "celine-nordstaa",
+      "published_date": "2026-05-23",
+      "published_date_label": "23.05.2026",
+      "week_number": 21,
+      "athlete_name": "Celine Nordstaa",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K17",
+      "class_place": "",
+      "event_label": "Göteborgsvarvet",
+      "distance": "Halvmaraton",
+      "result_time_raw": "01:56:22",
+      "result_time_normalized": "01:56:22",
+      "result_time_seconds": 6982.0,
+      "wa_gender": "K",
+      "wa_event": "Halvmaraton",
+      "wa_points": 378.0,
+      "place": "2755",
+      "notes_clean": "Slack; SK Vidar fellestrening",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-dd458f1279a7d937",
+      "person_id": "skv-p000413",
+      "person_slug": "morten-odegard",
+      "published_date": "2026-05-23",
+      "published_date_label": "23.05.2026",
+      "week_number": 21,
+      "athlete_name": "Morten Ødegård",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M50",
+      "class_place": "",
+      "event_label": "Göteborgsvarvet",
+      "distance": "Halvmaraton",
+      "result_time_raw": "02:15:27",
+      "result_time_normalized": "02:15:27",
+      "result_time_seconds": 8127.0,
+      "wa_gender": "M",
+      "wa_event": "Halvmaraton",
+      "wa_points": 1.0,
+      "place": "20203",
+      "notes_clean": "SK Vidar aktiv medlem",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-6717f1bd7d04f2b1",
+      "person_id": "skv-p000409",
+      "person_slug": "elin-mattsson",
+      "published_date": "2026-05-23",
+      "published_date_label": "23.05.2026",
+      "week_number": 21,
+      "athlete_name": "Elin Mattsson",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K17",
+      "class_place": "",
+      "event_label": "Göteborgsvarvet",
+      "distance": "Halvmaraton",
+      "result_time_raw": "02:28:41",
+      "result_time_normalized": "02:28:41",
+      "result_time_seconds": 8921.0,
+      "wa_gender": "K",
+      "wa_event": "Halvmaraton",
+      "wa_points": 91.0,
+      "place": "12385",
+      "notes_clean": "Slack workspace, svak navnematch",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-a5e28d2bfa5da195",
+      "person_id": "skv-p000415",
+      "person_slug": "oliver-strand",
+      "published_date": "2026-05-23",
+      "published_date_label": "23.05.2026",
+      "week_number": 21,
+      "athlete_name": "Oliver Strand",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M17",
+      "class_place": "",
+      "event_label": "Göteborgsvarvet",
+      "distance": "Halvmaraton",
+      "result_time_raw": "02:45:45",
+      "result_time_normalized": "02:45:45",
+      "result_time_seconds": 9945.0,
+      "wa_gender": "M",
+      "wa_event": "Halvmaraton",
+      "wa_points": 1.0,
+      "place": "25990",
+      "notes_clean": "SK Vidar aktiv medlem",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-d2f106983cd1ea9b",
+      "person_id": "skv-p000414",
+      "person_slug": "nils-jostein-helland",
+      "published_date": "2026-05-23",
+      "published_date_label": "23.05.2026",
+      "week_number": 21,
+      "athlete_name": "Nils-jostein Helland",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M70",
+      "class_place": "",
+      "event_label": "Göteborgsvarvet",
+      "distance": "Halvmaraton",
+      "result_time_raw": "03:52:32",
+      "result_time_normalized": "03:52:32",
+      "result_time_seconds": 13952.0,
+      "wa_gender": "M",
+      "wa_event": "Halvmaraton",
+      "wa_points": 1.0,
+      "place": "27249",
+      "notes_clean": "SK Vidar aktiv medlem",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
       "result_id": "res-9c7a57c318594407",
       "person_id": "skv-p000344",
       "person_slug": "vilde-antonsen",
@@ -1203,6 +1757,35 @@
       "wa_points": 82.0,
       "place": "227",
       "notes_clean": "3. M60-64",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-0cc4c26667767a7d",
+      "person_id": "skv-p000416",
+      "person_slug": "oscar-b",
+      "published_date": "2026-05-19",
+      "published_date_label": "19.05.2026",
+      "week_number": 21,
+      "athlete_name": "Oscar B.",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "Män kort bana",
+      "class_place": "",
+      "event_label": "Specialvarvet Blå 1,4 km",
+      "distance": "1,4 km",
+      "result_time_raw": "00:20:54",
+      "result_time_normalized": "00:20:54",
+      "result_time_seconds": 1254.0,
+      "wa_gender": "M",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "604",
+      "notes_clean": "Slack workspace, svak navnematch",
       "split_first_label": "",
       "split_first_display": "",
       "split_second_label": "",
@@ -5538,7 +6121,7 @@
       "published_date": "2026-04-26",
       "published_date_label": "26.04.2026",
       "week_number": 17,
-      "athlete_name": "Johanne Laegran",
+      "athlete_name": "Johanne Lægran",
       "gender": "K",
       "gender_label": "Kvinner",
       "class_name": "WH 1997-2008",
@@ -14528,7 +15111,7 @@
       "published_date": "2026-04-11",
       "published_date_label": "11.04.2026",
       "week_number": 15,
-      "athlete_name": "Maren Mohagen *",
+      "athlete_name": "Maren Mohagen",
       "gender": "K",
       "gender_label": "Kvinner",
       "class_name": "K23-34",
@@ -22890,6 +23473,22 @@
           "gender": "K",
           "gender_label": "Kvinner",
           "rank": 4,
+          "person_id": "skv-p000128",
+          "person_slug": "ine-bakken",
+          "result_id": "res-ad305a3fe1567aa3",
+          "athlete_name": "Ine Bakken",
+          "result_time": "01:18:14",
+          "result_time_seconds": 4694.0,
+          "event_label": "Göteborgsvarvet",
+          "published_date": "2026-05-23",
+          "published_date_label": "23.05.2026"
+        },
+        {
+          "distance": "Halvmaraton",
+          "source_distance": "Halvmaraton",
+          "gender": "K",
+          "gender_label": "Kvinner",
+          "rank": 5,
           "person_id": "skv-p000027",
           "person_slug": "anette-killerud-odegard",
           "result_id": "res-9f4c727efa97c436",
@@ -22905,7 +23504,23 @@
           "source_distance": "Halvmaraton",
           "gender": "K",
           "gender_label": "Kvinner",
-          "rank": 5,
+          "rank": 6,
+          "person_id": "skv-p000356",
+          "person_slug": "kristine-meinert-rod",
+          "result_id": "res-e027e14ed1f2c014",
+          "athlete_name": "Kristine Meinert Rød",
+          "result_time": "01:19:07",
+          "result_time_seconds": 4747.0,
+          "event_label": "Göteborgsvarvet",
+          "published_date": "2026-05-23",
+          "published_date_label": "23.05.2026"
+        },
+        {
+          "distance": "Halvmaraton",
+          "source_distance": "Halvmaraton",
+          "gender": "K",
+          "gender_label": "Kvinner",
+          "rank": 7,
           "person_id": "skv-p000216",
           "person_slug": "marte-lien-johnsen",
           "result_id": "res-02e98614a0b5d8e7",
@@ -22921,7 +23536,7 @@
           "source_distance": "Halvmaraton",
           "gender": "K",
           "gender_label": "Kvinner",
-          "rank": 6,
+          "rank": 8,
           "person_id": "skv-p000037",
           "person_slug": "asta-ellingvag",
           "result_id": "res-270db4b6d9452f35",
@@ -22937,7 +23552,7 @@
           "source_distance": "Halvmaraton",
           "gender": "K",
           "gender_label": "Kvinner",
-          "rank": 7,
+          "rank": 9,
           "person_id": "skv-p000309",
           "person_slug": "stine-isaksen",
           "result_id": "res-56e483558c2c177c",
@@ -22953,45 +23568,13 @@
           "source_distance": "Halvmaraton",
           "gender": "K",
           "gender_label": "Kvinner",
-          "rank": 8,
+          "rank": 10,
           "person_id": "skv-p000044",
           "person_slug": "catherine-vaugelade-pedersen",
           "result_id": "res-a4a60f77281a3e82",
           "athlete_name": "Catherine Vaugelade Pedersen",
           "result_time": "1:24:05",
           "result_time_seconds": 5045.0,
-          "event_label": "Bislett Indoor Marathon",
-          "published_date": "2026-02-08",
-          "published_date_label": "08.02.2026"
-        },
-        {
-          "distance": "Halvmaraton",
-          "source_distance": "Halvmaraton",
-          "gender": "K",
-          "gender_label": "Kvinner",
-          "rank": 9,
-          "person_id": "skv-p000159",
-          "person_slug": "julie-thorp",
-          "result_id": "res-2f9d8095a1d0f4d0",
-          "athlete_name": "Julie Thorp",
-          "result_time": "1:24:21",
-          "result_time_seconds": 5061.0,
-          "event_label": "Bislett Indoor Marathon",
-          "published_date": "2026-02-08",
-          "published_date_label": "08.02.2026"
-        },
-        {
-          "distance": "Halvmaraton",
-          "source_distance": "Halvmaraton",
-          "gender": "K",
-          "gender_label": "Kvinner",
-          "rank": 10,
-          "person_id": "skv-p000140",
-          "person_slug": "janne-dahle",
-          "result_id": "res-b5baaa19a361d264",
-          "athlete_name": "Janne Dahle",
-          "result_time": "1:24:22",
-          "result_time_seconds": 5062.0,
           "event_label": "Bislett Indoor Marathon",
           "published_date": "2026-02-08",
           "published_date_label": "08.02.2026"
@@ -24166,7 +24749,7 @@
     }
   ],
   "people": {
-    "profile_count": 380,
+    "profile_count": 390,
     "profiles": [
       {
         "person_id": "skv-p000001",
@@ -25396,7 +25979,7 @@
         "display_name": "Anne Myhr",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 2,
+        "result_count": 3,
         "distances": [
           "5 km",
           "Halvmaraton"
@@ -25430,7 +26013,7 @@
           }
         ],
         "first_result_date": "2026-04-26",
-        "latest_result_date": "2026-05-02"
+        "latest_result_date": "2026-05-23"
       },
       {
         "person_id": "skv-p000033",
@@ -25952,6 +26535,34 @@
         ],
         "first_result_date": "2026-01-18",
         "latest_result_date": "2026-03-01"
+      },
+      {
+        "person_id": "skv-p000408",
+        "profile_slug": "celine-nordstaa",
+        "display_name": "Celine Nordstaa",
+        "gender": "K",
+        "gender_label": "Kvinner",
+        "result_count": 1,
+        "distances": [
+          "Halvmaraton"
+        ],
+        "best_results": [
+          {
+            "result_id": "res-00e8b593d2e8b8d6",
+            "distance": "Halvmaraton",
+            "source_distance": "Halvmaraton",
+            "result_time": "01:56:22",
+            "result_time_seconds": 6982.0,
+            "event_label": "Göteborgsvarvet",
+            "published_date": "2026-05-23",
+            "published_date_label": "23.05.2026",
+            "week_number": 21,
+            "place": "2755",
+            "class_place": ""
+          }
+        ],
+        "first_result_date": "2026-05-23",
+        "latest_result_date": "2026-05-23"
       },
       {
         "person_id": "skv-p000045",
@@ -26657,6 +27268,34 @@
         "latest_result_date": "2026-05-01"
       },
       {
+        "person_id": "skv-p000409",
+        "profile_slug": "elin-mattsson",
+        "display_name": "Elin Mattsson",
+        "gender": "K",
+        "gender_label": "Kvinner",
+        "result_count": 1,
+        "distances": [
+          "Halvmaraton"
+        ],
+        "best_results": [
+          {
+            "result_id": "res-6717f1bd7d04f2b1",
+            "distance": "Halvmaraton",
+            "source_distance": "Halvmaraton",
+            "result_time": "02:28:41",
+            "result_time_seconds": 8921.0,
+            "event_label": "Göteborgsvarvet",
+            "published_date": "2026-05-23",
+            "published_date_label": "23.05.2026",
+            "week_number": 21,
+            "place": "12385",
+            "class_place": ""
+          }
+        ],
+        "first_result_date": "2026-05-23",
+        "latest_result_date": "2026-05-23"
+      },
+      {
         "person_id": "skv-p000063",
         "profile_slug": "eline-rud-wagle",
         "display_name": "Eline Rud Wagle",
@@ -27152,10 +27791,11 @@
         "display_name": "Erlend Hellum",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 5,
+        "result_count": 6,
         "distances": [
           "5 km",
-          "10 km"
+          "10 km",
+          "Halvmaraton"
         ],
         "best_results": [
           {
@@ -27183,10 +27823,23 @@
             "week_number": 15,
             "place": "258",
             "class_place": "25"
+          },
+          {
+            "result_id": "res-347373f10747a062",
+            "distance": "Halvmaraton",
+            "source_distance": "Halvmaraton",
+            "result_time": "01:20:02",
+            "result_time_seconds": 4802.0,
+            "event_label": "Göteborgsvarvet",
+            "published_date": "2026-05-23",
+            "published_date_label": "23.05.2026",
+            "week_number": 21,
+            "place": "198",
+            "class_place": ""
           }
         ],
         "first_result_date": "2026-02-08",
-        "latest_result_date": "2026-04-25"
+        "latest_result_date": "2026-05-23"
       },
       {
         "person_id": "skv-p000078",
@@ -27706,6 +28359,34 @@
         ],
         "first_result_date": "2026-03-01",
         "latest_result_date": "2026-05-02"
+      },
+      {
+        "person_id": "skv-p000410",
+        "profile_slug": "frode-semb",
+        "display_name": "Frode Semb",
+        "gender": "M",
+        "gender_label": "Menn",
+        "result_count": 1,
+        "distances": [
+          "Halvmaraton"
+        ],
+        "best_results": [
+          {
+            "result_id": "res-e65edd390796dda8",
+            "distance": "Halvmaraton",
+            "source_distance": "Halvmaraton",
+            "result_time": "01:41:50",
+            "result_time_seconds": 6110.0,
+            "event_label": "Göteborgsvarvet",
+            "published_date": "2026-05-23",
+            "published_date_label": "23.05.2026",
+            "week_number": 21,
+            "place": "4603",
+            "class_place": ""
+          }
+        ],
+        "first_result_date": "2026-05-23",
+        "latest_result_date": "2026-05-23"
       },
       {
         "person_id": "skv-p000092",
@@ -28936,10 +29617,11 @@
         "display_name": "Ine Bakken",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 4,
+        "result_count": 5,
         "distances": [
           "5 km",
           "10 km",
+          "Halvmaraton",
           "6 km stafett"
         ],
         "best_results": [
@@ -28968,10 +29650,23 @@
             "week_number": 8,
             "place": "",
             "class_place": ""
+          },
+          {
+            "result_id": "res-ad305a3fe1567aa3",
+            "distance": "Halvmaraton",
+            "source_distance": "Halvmaraton",
+            "result_time": "01:18:14",
+            "result_time_seconds": 4694.0,
+            "event_label": "Göteborgsvarvet",
+            "published_date": "2026-05-23",
+            "published_date_label": "23.05.2026",
+            "week_number": 21,
+            "place": "8",
+            "class_place": ""
           }
         ],
         "first_result_date": "2026-01-18",
-        "latest_result_date": "2026-04-19"
+        "latest_result_date": "2026-05-23"
       },
       {
         "person_id": "skv-p000391",
@@ -29184,6 +29879,34 @@
         ],
         "first_result_date": "2026-04-19",
         "latest_result_date": "2026-04-19"
+      },
+      {
+        "person_id": "skv-p000411",
+        "profile_slug": "isak-by-stolan",
+        "display_name": "Isak By-stølan",
+        "gender": "M",
+        "gender_label": "Menn",
+        "result_count": 1,
+        "distances": [
+          "Halvmaraton"
+        ],
+        "best_results": [
+          {
+            "result_id": "res-112a1a69b1d6eee7",
+            "distance": "Halvmaraton",
+            "source_distance": "Halvmaraton",
+            "result_time": "01:43:24",
+            "result_time_seconds": 6204.0,
+            "event_label": "Göteborgsvarvet",
+            "published_date": "2026-05-23",
+            "published_date_label": "23.05.2026",
+            "week_number": 21,
+            "place": "5266",
+            "class_place": ""
+          }
+        ],
+        "first_result_date": "2026-05-23",
+        "latest_result_date": "2026-05-23"
       },
       {
         "person_id": "skv-p000355",
@@ -29805,10 +30528,10 @@
       {
         "person_id": "skv-p000147",
         "profile_slug": "johanne-laegran",
-        "display_name": "Johanne Laegran",
+        "display_name": "Johanne Lægran",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
           "Halvmaraton"
         ],
@@ -29828,7 +30551,7 @@
           }
         ],
         "first_result_date": "2026-04-26",
-        "latest_result_date": "2026-04-26"
+        "latest_result_date": "2026-05-23"
       },
       {
         "person_id": "skv-p000148",
@@ -29976,10 +30699,11 @@
         "display_name": "Jonas Njerve",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 2,
+        "result_count": 3,
         "distances": [
           "1500 m",
-          "10 km"
+          "10 km",
+          "Halvmaraton"
         ],
         "best_results": [
           {
@@ -30007,10 +30731,23 @@
             "week_number": 15,
             "place": "261",
             "class_place": "149"
+          },
+          {
+            "result_id": "res-98434907e2b5e0b5",
+            "distance": "Halvmaraton",
+            "source_distance": "Halvmaraton",
+            "result_time": "01:19:40",
+            "result_time_seconds": 4780.0,
+            "event_label": "Göteborgsvarvet",
+            "published_date": "2026-05-23",
+            "published_date_label": "23.05.2026",
+            "week_number": 21,
+            "place": "180",
+            "class_place": ""
           }
         ],
         "first_result_date": "2026-04-11",
-        "latest_result_date": "2026-05-02"
+        "latest_result_date": "2026-05-23"
       },
       {
         "person_id": "skv-p000154",
@@ -31001,10 +31738,11 @@
         "display_name": "Kristine Meinert Rød",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 2,
+        "result_count": 3,
         "distances": [
           "1500 m",
-          "3000 m"
+          "3000 m",
+          "Halvmaraton"
         ],
         "best_results": [
           {
@@ -31032,10 +31770,23 @@
             "week_number": 20,
             "place": "11",
             "class_place": ""
+          },
+          {
+            "result_id": "res-e027e14ed1f2c014",
+            "distance": "Halvmaraton",
+            "source_distance": "Halvmaraton",
+            "result_time": "01:19:07",
+            "result_time_seconds": 4747.0,
+            "event_label": "Göteborgsvarvet",
+            "published_date": "2026-05-23",
+            "published_date_label": "23.05.2026",
+            "week_number": 21,
+            "place": "10",
+            "class_place": ""
           }
         ],
         "first_result_date": "2026-05-02",
-        "latest_result_date": "2026-05-15"
+        "latest_result_date": "2026-05-23"
       },
       {
         "person_id": "skv-p000179",
@@ -31710,6 +32461,34 @@
         "latest_result_date": "2026-04-25"
       },
       {
+        "person_id": "skv-p000412",
+        "profile_slug": "magnus-baekkevar-semb",
+        "display_name": "Magnus Bækkevar Semb",
+        "gender": "M",
+        "gender_label": "Menn",
+        "result_count": 1,
+        "distances": [
+          "Halvmaraton"
+        ],
+        "best_results": [
+          {
+            "result_id": "res-0121352bc33f5fc0",
+            "distance": "Halvmaraton",
+            "source_distance": "Halvmaraton",
+            "result_time": "01:40:01",
+            "result_time_seconds": 6001.0,
+            "event_label": "Göteborgsvarvet",
+            "published_date": "2026-05-23",
+            "published_date_label": "23.05.2026",
+            "week_number": 21,
+            "place": "3908",
+            "class_place": ""
+          }
+        ],
+        "first_result_date": "2026-05-23",
+        "latest_result_date": "2026-05-23"
+      },
+      {
         "person_id": "skv-p000196",
         "profile_slug": "magnus-nymoen-rundgren",
         "display_name": "Magnus Nymoen Rundgren",
@@ -31868,12 +32647,13 @@
       {
         "person_id": "skv-p000200",
         "profile_slug": "maren-mohagen",
-        "display_name": "Maren Mohagen *",
+        "display_name": "Maren Mohagen",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
-          "10 km"
+          "10 km",
+          "Halvmaraton"
         ],
         "best_results": [
           {
@@ -31888,10 +32668,23 @@
             "week_number": 15,
             "place": "259",
             "class_place": "157"
+          },
+          {
+            "result_id": "res-0ad3e97d2d0719c9",
+            "distance": "Halvmaraton",
+            "source_distance": "Halvmaraton",
+            "result_time": "01:37:42",
+            "result_time_seconds": 5862.0,
+            "event_label": "Göteborgsvarvet",
+            "published_date": "2026-05-23",
+            "published_date_label": "23.05.2026",
+            "week_number": 21,
+            "place": "296",
+            "class_place": ""
           }
         ],
         "first_result_date": "2026-04-11",
-        "latest_result_date": "2026-04-11"
+        "latest_result_date": "2026-05-23"
       },
       {
         "person_id": "skv-p000201",
@@ -32156,7 +32949,7 @@
         "display_name": "Marita Sandberg",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 3,
+        "result_count": 4,
         "distances": [
           "10 km",
           "Halvmaraton",
@@ -32204,7 +32997,7 @@
           }
         ],
         "first_result_date": "2026-03-29",
-        "latest_result_date": "2026-04-25"
+        "latest_result_date": "2026-05-23"
       },
       {
         "person_id": "skv-p000213",
@@ -33104,6 +33897,34 @@
         "latest_result_date": "2026-04-11"
       },
       {
+        "person_id": "skv-p000413",
+        "profile_slug": "morten-odegard",
+        "display_name": "Morten Ødegård",
+        "gender": "M",
+        "gender_label": "Menn",
+        "result_count": 1,
+        "distances": [
+          "Halvmaraton"
+        ],
+        "best_results": [
+          {
+            "result_id": "res-dd458f1279a7d937",
+            "distance": "Halvmaraton",
+            "source_distance": "Halvmaraton",
+            "result_time": "02:15:27",
+            "result_time_seconds": 8127.0,
+            "event_label": "Göteborgsvarvet",
+            "published_date": "2026-05-23",
+            "published_date_label": "23.05.2026",
+            "week_number": 21,
+            "place": "20203",
+            "class_place": ""
+          }
+        ],
+        "first_result_date": "2026-05-23",
+        "latest_result_date": "2026-05-23"
+      },
+      {
         "person_id": "skv-p000234",
         "profile_slug": "nathalie-moen-balhald",
         "display_name": "Nathalie Moen Balhald *",
@@ -33285,6 +34106,34 @@
         ],
         "first_result_date": "2026-02-08",
         "latest_result_date": "2026-05-15"
+      },
+      {
+        "person_id": "skv-p000414",
+        "profile_slug": "nils-jostein-helland",
+        "display_name": "Nils-jostein Helland",
+        "gender": "M",
+        "gender_label": "Menn",
+        "result_count": 1,
+        "distances": [
+          "Halvmaraton"
+        ],
+        "best_results": [
+          {
+            "result_id": "res-d2f106983cd1ea9b",
+            "distance": "Halvmaraton",
+            "source_distance": "Halvmaraton",
+            "result_time": "03:52:32",
+            "result_time_seconds": 13952.0,
+            "event_label": "Göteborgsvarvet",
+            "published_date": "2026-05-23",
+            "published_date_label": "23.05.2026",
+            "week_number": 21,
+            "place": "27249",
+            "class_place": ""
+          }
+        ],
+        "first_result_date": "2026-05-23",
+        "latest_result_date": "2026-05-23"
       },
       {
         "person_id": "skv-p000353",
@@ -33931,6 +34780,49 @@
         ],
         "first_result_date": "2026-05-02",
         "latest_result_date": "2026-05-02"
+      },
+      {
+        "person_id": "skv-p000415",
+        "profile_slug": "oliver-strand",
+        "display_name": "Oliver Strand",
+        "gender": "M",
+        "gender_label": "Menn",
+        "result_count": 2,
+        "distances": [
+          "Halvmaraton",
+          "1,1 km"
+        ],
+        "best_results": [
+          {
+            "result_id": "res-a5e28d2bfa5da195",
+            "distance": "Halvmaraton",
+            "source_distance": "Halvmaraton",
+            "result_time": "02:45:45",
+            "result_time_seconds": 9945.0,
+            "event_label": "Göteborgsvarvet",
+            "published_date": "2026-05-23",
+            "published_date_label": "23.05.2026",
+            "week_number": 21,
+            "place": "25990",
+            "class_place": ""
+          }
+        ],
+        "first_result_date": "2026-05-23",
+        "latest_result_date": "2026-05-24"
+      },
+      {
+        "person_id": "skv-p000416",
+        "profile_slug": "oscar-b",
+        "display_name": "Oscar B.",
+        "gender": "M",
+        "gender_label": "Menn",
+        "result_count": 1,
+        "distances": [
+          "1,4 km"
+        ],
+        "best_results": [],
+        "first_result_date": "2026-05-19",
+        "latest_result_date": "2026-05-19"
       },
       {
         "person_id": "skv-p000254",
@@ -35650,7 +36542,7 @@
         "display_name": "Sondre Nordstad Moen",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 3,
+        "result_count": 4,
         "distances": [
           "Halvmaraton",
           "Maraton"
@@ -35684,7 +36576,7 @@
           }
         ],
         "first_result_date": "2026-02-01",
-        "latest_result_date": "2026-04-20"
+        "latest_result_date": "2026-05-23"
       },
       {
         "person_id": "skv-p000306",
@@ -36452,6 +37344,34 @@
             "week_number": 21,
             "place": "227",
             "class_place": "3"
+          }
+        ],
+        "first_result_date": "2026-05-23",
+        "latest_result_date": "2026-05-23"
+      },
+      {
+        "person_id": "skv-p000417",
+        "profile_slug": "tina-hatland",
+        "display_name": "Tina Hatland",
+        "gender": "K",
+        "gender_label": "Kvinner",
+        "result_count": 1,
+        "distances": [
+          "Halvmaraton"
+        ],
+        "best_results": [
+          {
+            "result_id": "res-07e0147405918351",
+            "distance": "Halvmaraton",
+            "source_distance": "Halvmaraton",
+            "result_time": "01:44:13",
+            "result_time_seconds": 6253.0,
+            "event_label": "Göteborgsvarvet",
+            "published_date": "2026-05-23",
+            "published_date_label": "23.05.2026",
+            "week_number": 21,
+            "place": "741",
+            "class_place": ""
           }
         ],
         "first_result_date": "2026-05-23",
@@ -37752,6 +38672,16 @@
       "mathilde-christin-knutsen": "skv-p000405",
       "reidar-sobstad": "skv-p000406",
       "sondre-fylling": "skv-p000407",
+      "celine-nordstaa": "skv-p000408",
+      "elin-mattsson": "skv-p000409",
+      "frode-semb": "skv-p000410",
+      "isak-by-stolan": "skv-p000411",
+      "magnus-baekkevar-semb": "skv-p000412",
+      "morten-odegard": "skv-p000413",
+      "nils-jostein-helland": "skv-p000414",
+      "oliver-strand": "skv-p000415",
+      "oscar-b": "skv-p000416",
+      "tina-hatland": "skv-p000417",
       "adne-andersen-andersen": "skv-p000001",
       "adne-sandvik-dyrnesli": "skv-p000003",
       "erlend-fugleberg-bruaset": "skv-p000075",
