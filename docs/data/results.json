@@ -1,18 +1,32 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-05-25T10:13:52+02:00",
+  "generated_at": "2026-05-25T21:58:30+02:00",
   "stats": {
-    "result_count": 784,
+    "result_count": 786,
     "athlete_count": 388,
-    "event_count": 97,
-    "week_count": 18,
-    "latest_week": 21,
-    "latest_date": "2026-05-24",
-    "women_count": 301,
-    "men_count": 483,
+    "event_count": 98,
+    "week_count": 19,
+    "latest_week": 22,
+    "latest_date": "2026-05-25",
+    "women_count": 302,
+    "men_count": 484,
     "missing_gender_or_class_count": 0
   },
   "weeks": [
+    {
+      "week_number": 22,
+      "week_label": "Uke 22",
+      "published_date": "2026-05-25",
+      "published_date_label": "25.05.2026",
+      "result_count": 2,
+      "athlete_count": 2,
+      "event_count": 1,
+      "women_count": 1,
+      "men_count": 1,
+      "events": [
+        "Lygnaløpet 2026"
+      ]
+    },
     {
       "week_number": 21,
       "week_label": "Uke 21",
@@ -346,6 +360,64 @@
     }
   ],
   "results": [
+    {
+      "result_id": "res-38eb0c58fabceeff",
+      "person_id": "skv-p000306",
+      "person_slug": "sonia-slettvag",
+      "published_date": "2026-05-25",
+      "published_date_label": "25.05.2026",
+      "week_number": 22,
+      "athlete_name": "Sonia Slettvåg",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K11-12",
+      "class_place": "",
+      "event_label": "Lygnaløpet 2026",
+      "distance": "5 km",
+      "result_time_raw": "27:02.4",
+      "result_time_normalized": "27:02.4",
+      "result_time_seconds": 1622.4,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "1",
+      "notes_clean": "1. kvinne",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-cf5d01bc8bf177c8",
+      "person_id": "skv-p000041",
+      "person_slug": "bjornar-slettvag",
+      "published_date": "2026-05-25",
+      "published_date_label": "25.05.2026",
+      "week_number": 22,
+      "athlete_name": "Bjørnar Slettvåg",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M40-44",
+      "class_place": "",
+      "event_label": "Lygnaløpet 2026",
+      "distance": "21 km",
+      "result_time_raw": "1:24:39.0",
+      "result_time_normalized": "1:24:39.0",
+      "result_time_seconds": 5079.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "1",
+      "notes_clean": "1. plass totalt",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
     {
       "result_id": "res-e80087ca3542889c",
       "person_id": "skv-p000252",
@@ -26773,10 +26845,11 @@
         "display_name": "Bjørnar Slettvåg",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 2,
+        "result_count": 3,
         "distances": [
           "Maraton",
-          "10 mile"
+          "10 mile",
+          "21 km"
         ],
         "best_results": [
           {
@@ -26794,7 +26867,7 @@
           }
         ],
         "first_result_date": "2026-04-12",
-        "latest_result_date": "2026-04-20"
+        "latest_result_date": "2026-05-25"
       },
       {
         "person_id": "skv-p000042",
@@ -36956,7 +37029,7 @@
         "display_name": "Sonia Slettvåg",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 3,
+        "result_count": 4,
         "distances": [
           "5 km",
           "10 km"
@@ -36990,7 +37063,7 @@
           }
         ],
         "first_result_date": "2026-01-18",
-        "latest_result_date": "2026-04-25"
+        "latest_result_date": "2026-05-25"
       },
       {
         "person_id": "skv-p000307",
