@@ -1,8 +1,5 @@
 Goteborgsvarvet 2026 | 23.05.2026 | Halvmaraton
-Lilla Varvet 2026 | 24.05.2026 | 1,1 km for 7-10 ar
-Specialvarvet Bla 2026 | 19.05.2026 | 1,4 km
 
-2026-05-24 | Lilla Varvet 7-10 ar | Oliver Strand | SWE F/P8 | startnr 751 | 00:05:56 | SK Vidar aktiv medlem
 2026-05-23 | Goteborgsvarvet | Sondre Nordstad Moen | NOR | startnr 2 | plass 2 | 01:03:31 | SK Vidar aktiv medlem
 2026-05-23 | Goteborgsvarvet | Ine Bakken | NOR | startnr 15 | plass 8 | 01:18:14 | Slack workspace, svak navnematch
 2026-05-23 | Goteborgsvarvet | Kristine Meinert Rod | NOR K17 | startnr 17 | plass 10 | 01:19:07 | SK Vidar aktiv medlem; Slack
@@ -12,13 +9,8 @@ Specialvarvet Bla 2026 | 19.05.2026 | 1,4 km
 2026-05-23 | Goteborgsvarvet | Maren Mohagen | NOR K17 | startnr 11941 | plass 296 | 01:37:42 | Slack workspace, svak navnematch
 2026-05-23 | Goteborgsvarvet | Tina Hatland | NOR K17 | startnr 43848 | plass 741 | 01:44:13 | SK Vidar aktiv medlem; Slack
 2026-05-23 | Goteborgsvarvet | Anne Myhr | NOR K60 | SK Vidar | startnr 16489 | plass 1384 | 01:49:12 | Offisiell Vidar; SK Vidar aktiv medlem
-2026-05-23 | Goteborgsvarvet | Marita Sandberg | NOR K45 | ASICS FrontRunner/SK Vidar | startnr 43382 | plass 2084 | 01:53:19 | Offisiell Vidar
+2026-05-23 | Goteborgsvarvet | Marita Bergum Sandberg | NOR K45 | ASICS FrontRunner/SK Vidar | startnr 43382 | plass 2084 | 01:53:19 | Offisiell Vidar
 2026-05-23 | Goteborgsvarvet | Celine Nordstaa | NOR K17 | startnr 25797 | plass 2755 | 01:56:22 | Slack; SK Vidar fellestrening
 2026-05-23 | Goteborgsvarvet | Magnus Baekkevar Semb | NOR M17 | Sportsklubben Vidar | startnr 33450 | plass 3908 | 01:40:01 | Offisiell Vidar; SK Vidar aktiv medlem
 2026-05-23 | Goteborgsvarvet | Frode Semb | NOR M55 | Sportsklubben Vidar | startnr 34068 | plass 4603 | 01:41:50 | Offisiell Vidar; SK Vidar aktiv medlem
 2026-05-23 | Goteborgsvarvet | Isak By-stolan | NOR M17 | Sportsklubben Vidar | startnr 43851 | plass 5266 | 01:43:24 | Offisiell Vidar
-2026-05-23 | Goteborgsvarvet | Elin Mattsson | FIN K17 | startnr 26111 | plass 12385 | 02:28:41 | Slack workspace, svak navnematch
-2026-05-23 | Goteborgsvarvet | Morten Odegard | NOR M50 | Veidekke BIL | startnr 36670 | plass 20203 | 02:15:27 | SK Vidar aktiv medlem
-2026-05-23 | Goteborgsvarvet | Oliver Strand | SWE M17 | startnr 66136 | plass 25990 | 02:45:45 | SK Vidar aktiv medlem
-2026-05-23 | Goteborgsvarvet | Nils-jostein Helland | NOR M70 | Mikkeller Running Club | startnr 13347 | plass 27249 | 03:52:32 | SK Vidar aktiv medlem
-2026-05-19 | Specialvarvet Bla 1,4 km | Oscar B. | Man kort bana | startnr 1575 | plass 604 | 00:20:54 | Slack workspace, svak navnematch
