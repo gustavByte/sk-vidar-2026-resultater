@@ -1,14 +1,14 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-05-25T21:58:30+02:00",
+  "generated_at": "2026-05-27T08:54:10+02:00",
   "stats": {
-    "result_count": 786,
+    "result_count": 787,
     "athlete_count": 388,
     "event_count": 98,
     "week_count": 19,
     "latest_week": 22,
     "latest_date": "2026-05-25",
-    "women_count": 302,
+    "women_count": 303,
     "men_count": 484,
     "missing_gender_or_class_count": 0
   },
@@ -18,10 +18,10 @@
       "week_label": "Uke 22",
       "published_date": "2026-05-25",
       "published_date_label": "25.05.2026",
-      "result_count": 2,
-      "athlete_count": 2,
+      "result_count": 3,
+      "athlete_count": 3,
       "event_count": 1,
-      "women_count": 1,
+      "women_count": 2,
       "men_count": 1,
       "events": [
         "Lygnaløpet 2026"
@@ -382,6 +382,35 @@
       "wa_points": null,
       "place": "1",
       "notes_clean": "1. kvinne",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-2c9f07e1e22e7777",
+      "person_id": "skv-p000103",
+      "person_slug": "hanne-tingelstad",
+      "published_date": "2026-05-25",
+      "published_date_label": "25.05.2026",
+      "week_number": 22,
+      "athlete_name": "Hanne Tingelstad",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K35-39",
+      "class_place": "1",
+      "event_label": "Lygnaløpet 2026",
+      "distance": "10 km",
+      "result_time_raw": "44:39.7",
+      "result_time_normalized": "44:39.7",
+      "result_time_seconds": 2679.7,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "5",
+      "notes_clean": "2. kvinne",
       "split_first_label": "",
       "split_first_display": "",
       "split_second_label": "",
@@ -29275,7 +29304,7 @@
         "display_name": "Hanne Tingelstad",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
           "10 km"
         ],
@@ -29295,7 +29324,7 @@
           }
         ],
         "first_result_date": "2026-04-25",
-        "latest_result_date": "2026-04-25"
+        "latest_result_date": "2026-05-25"
       },
       {
         "person_id": "skv-p000104",
