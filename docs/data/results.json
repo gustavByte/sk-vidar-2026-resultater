@@ -1,14 +1,14 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-05-27T08:54:10+02:00",
+  "generated_at": "2026-05-30T19:04:34+02:00",
   "stats": {
-    "result_count": 787,
-    "athlete_count": 388,
-    "event_count": 98,
+    "result_count": 788,
+    "athlete_count": 371,
+    "event_count": 99,
     "week_count": 19,
     "latest_week": 22,
     "latest_date": "2026-05-25",
-    "women_count": 303,
+    "women_count": 304,
     "men_count": 484,
     "missing_gender_or_class_count": 0
   },
@@ -18,13 +18,14 @@
       "week_label": "Uke 22",
       "published_date": "2026-05-25",
       "published_date_label": "25.05.2026",
-      "result_count": 3,
-      "athlete_count": 3,
-      "event_count": 1,
-      "women_count": 2,
+      "result_count": 4,
+      "athlete_count": 4,
+      "event_count": 2,
+      "women_count": 3,
       "men_count": 1,
       "events": [
-        "Lygnaløpet 2026"
+        "Lygnaløpet 2026",
+        "Saldilten 2026"
       ]
     },
     {
@@ -33,7 +34,7 @@
       "published_date": "2026-05-24",
       "published_date_label": "24.05.2026",
       "result_count": 61,
-      "athlete_count": 58,
+      "athlete_count": 57,
       "event_count": 11,
       "women_count": 25,
       "men_count": 36,
@@ -440,6 +441,35 @@
       "wa_points": null,
       "place": "1",
       "notes_clean": "1. plass totalt",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-58fedcb24619713e",
+      "person_id": "skv-p000110",
+      "person_slug": "henriette-semb",
+      "published_date": "2026-05-25",
+      "published_date_label": "25.05.2026",
+      "week_number": 22,
+      "athlete_name": "Henriette Semb",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K23-39",
+      "class_place": "1",
+      "event_label": "Saldilten 2026",
+      "distance": "Konkurranse KORT",
+      "result_time_raw": "24:58",
+      "result_time_normalized": "24:58",
+      "result_time_seconds": 1498.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "11",
+      "notes_clean": "1. kvinne",
       "split_first_label": "",
       "split_first_display": "",
       "split_second_label": "",
@@ -1116,12 +1146,12 @@
     },
     {
       "result_id": "res-cee552fa04cda7a7",
-      "person_id": "skv-p000402",
-      "person_slug": "jessica-katarina-gunnarsson",
+      "person_id": "skv-p000143",
+      "person_slug": "jessica-gunnarsson",
       "published_date": "2026-05-23",
       "published_date_label": "23.05.2026",
       "week_number": 21,
-      "athlete_name": "Jessica Katarina Gunnarsson",
+      "athlete_name": "Jessica Gunnarsson",
       "gender": "K",
       "gender_label": "Kvinner",
       "class_name": "K50-54",
@@ -1145,12 +1175,12 @@
     },
     {
       "result_id": "res-56363affd7d73560",
-      "person_id": "skv-p000403",
-      "person_slug": "jo-soreide",
+      "person_id": "skv-p000144",
+      "person_slug": "jo-trieu-soreide",
       "published_date": "2026-05-23",
       "published_date_label": "23.05.2026",
       "week_number": 21,
-      "athlete_name": "Jo Søreide",
+      "athlete_name": "Jo Trieu Søreide",
       "gender": "M",
       "gender_label": "Menn",
       "class_name": "M50-54",
@@ -2131,12 +2161,12 @@
     },
     {
       "result_id": "res-cee24fae2c9b3bfc",
-      "person_id": "skv-p000418",
-      "person_slug": "anton-janovskis-heldal",
+      "person_id": "skv-p000033",
+      "person_slug": "anton-heldal",
       "published_date": "2026-05-19",
       "published_date_label": "19.05.2026",
       "week_number": 21,
-      "athlete_name": "Anton Janovskis Heldal",
+      "athlete_name": "Anton Heldal",
       "gender": "M",
       "gender_label": "Menn",
       "class_name": "MS",
@@ -2566,12 +2596,12 @@
     },
     {
       "result_id": "res-8ac8e9c08b86ff90",
-      "person_id": "skv-p000385",
-      "person_slug": "jo-trieu",
+      "person_id": "skv-p000144",
+      "person_slug": "jo-trieu-soreide",
       "published_date": "2026-05-15",
       "published_date_label": "15.05.2026",
       "week_number": 20,
-      "athlete_name": "Jo Trieu",
+      "athlete_name": "Jo Trieu Søreide",
       "gender": "M",
       "gender_label": "Menn",
       "class_name": "M åpen",
@@ -2769,12 +2799,12 @@
     },
     {
       "result_id": "res-05a21dcfaf2def6c",
-      "person_id": "skv-p000379",
-      "person_slug": "aksel-petter-spence",
+      "person_id": "skv-p000006",
+      "person_slug": "aksel-spence",
       "published_date": "2026-05-15",
       "published_date_label": "15.05.2026",
       "week_number": 20,
-      "athlete_name": "Aksel Petter Spence",
+      "athlete_name": "Aksel Spence",
       "gender": "M",
       "gender_label": "Menn",
       "class_name": "M åpen",
@@ -2827,12 +2857,12 @@
     },
     {
       "result_id": "res-f07bf9e6b2dd5f0e",
-      "person_id": "skv-p000381",
-      "person_slug": "bjornar-kjonnoy-slettvag",
+      "person_id": "skv-p000041",
+      "person_slug": "bjornar-slettvag",
       "published_date": "2026-05-15",
       "published_date_label": "15.05.2026",
       "week_number": 20,
-      "athlete_name": "Bjørnar Kjønnøy Slettvåg",
+      "athlete_name": "Bjørnar Slettvåg",
       "gender": "M",
       "gender_label": "Menn",
       "class_name": "M åpen",
@@ -3204,12 +3234,12 @@
     },
     {
       "result_id": "res-a2b5e1ac285e4246",
-      "person_id": "skv-p000382",
-      "person_slug": "catherine-synnove-vaugelade-berg",
+      "person_id": "skv-p000043",
+      "person_slug": "catherine-berg",
       "published_date": "2026-05-15",
       "published_date_label": "15.05.2026",
       "week_number": 20,
-      "athlete_name": "Catherine Synnøve Vaugelade Berg",
+      "athlete_name": "Catherine Berg",
       "gender": "K",
       "gender_label": "Kvinner",
       "class_name": "K åpen",
@@ -3581,12 +3611,12 @@
     },
     {
       "result_id": "res-e87ca92cdd77da2c",
-      "person_id": "skv-p000398",
-      "person_slug": "kristian-retterstol-froyen",
+      "person_id": "skv-p000174",
+      "person_slug": "kristian-froyen",
       "published_date": "2026-05-15",
       "published_date_label": "15.05.2026",
       "week_number": 20,
-      "athlete_name": "Kristian Retterstøl Frøyen",
+      "athlete_name": "Kristian Frøyen",
       "gender": "M",
       "gender_label": "Menn",
       "class_name": "MS",
@@ -5843,12 +5873,12 @@
     },
     {
       "result_id": "res-e239e2d58b06664d",
-      "person_id": "skv-p000366",
-      "person_slug": "havard-moholt-berge",
+      "person_id": "skv-p000401",
+      "person_slug": "havard-berge",
       "published_date": "2026-05-02",
       "published_date_label": "02.05.2026",
       "week_number": 18,
-      "athlete_name": "Håvard Moholt Berge",
+      "athlete_name": "Håvard Berge",
       "gender": "M",
       "gender_label": "Menn",
       "class_name": "M23-39",
@@ -6307,12 +6337,12 @@
     },
     {
       "result_id": "res-d30e2b03124f093a",
-      "person_id": "skv-p000353",
-      "person_slug": "ninni-jol-kken-brodalen",
+      "person_id": "skv-p000238",
+      "person_slug": "ninni-jolokken-brodalen",
       "published_date": "2026-05-01",
       "published_date_label": "01.05.2026",
       "week_number": 18,
-      "athlete_name": "Ninni Jol?kken Brodalen",
+      "athlete_name": "Ninni Joløkken Brodalen",
       "gender": "K",
       "gender_label": "Kvinner",
       "class_name": "K23-34",
@@ -9265,12 +9295,12 @@
     },
     {
       "result_id": "res-e71676059881c8ed",
-      "person_id": "skv-p000053",
-      "person_slug": "daniel-severinsen",
+      "person_id": "skv-p000383",
+      "person_slug": "daniel-espedokken-severinsen",
       "published_date": "2026-04-25",
       "published_date_label": "25.04.2026",
       "week_number": 17,
-      "athlete_name": "Daniel Severinsen",
+      "athlete_name": "Daniel Espedokken Severinsen",
       "gender": "M",
       "gender_label": "Menn",
       "class_name": "M23-34",
@@ -12397,12 +12427,12 @@
     },
     {
       "result_id": "res-23cd8d9aa1ceeee2",
-      "person_id": "skv-p000334",
-      "person_slug": "ulrik-odegard",
+      "person_id": "skv-p000390",
+      "person_slug": "ulrik-moen-odegard",
       "published_date": "2026-04-11",
       "published_date_label": "11.04.2026",
       "week_number": 15,
-      "athlete_name": "Ulrik Ødegård",
+      "athlete_name": "Ulrik Moen Ødegård",
       "gender": "M",
       "gender_label": "Menn",
       "class_name": "M35-39",
@@ -12455,12 +12485,12 @@
     },
     {
       "result_id": "res-34d794844c7a6880",
-      "person_id": "skv-p000023",
-      "person_slug": "andreas-sjurseth",
+      "person_id": "skv-p000400",
+      "person_slug": "andreas-myhre-sjurseth",
       "published_date": "2026-04-11",
       "published_date_label": "11.04.2026",
       "week_number": 15,
-      "athlete_name": "Andreas Sjurseth *",
+      "athlete_name": "Andreas Myhre Sjurseth",
       "gender": "M",
       "gender_label": "Menn",
       "class_name": "M40-44",
@@ -13934,12 +13964,12 @@
     },
     {
       "result_id": "res-0ab5b4bd82edc788",
-      "person_id": "skv-p000146",
-      "person_slug": "joakim-soltveit",
+      "person_id": "skv-p000421",
+      "person_slug": "joakim-hope-soltveit",
       "published_date": "2026-04-11",
       "published_date_label": "11.04.2026",
       "week_number": 15,
-      "athlete_name": "Joakim Soltveit",
+      "athlete_name": "Joakim Hope Soltveit",
       "gender": "M",
       "gender_label": "Menn",
       "class_name": "M40-44",
@@ -15877,12 +15907,12 @@
     },
     {
       "result_id": "res-bf4192d815eddacb",
-      "person_id": "skv-p000324",
-      "person_slug": "tim-bennett",
+      "person_id": "skv-p000399",
+      "person_slug": "tim-victor-bennett",
       "published_date": "2026-04-11",
       "published_date_label": "11.04.2026",
       "week_number": 15,
-      "athlete_name": "Tim Bennett",
+      "athlete_name": "Tim Victor Bennett",
       "gender": "M",
       "gender_label": "Menn",
       "class_name": "M60-64",
@@ -17414,12 +17444,12 @@
     },
     {
       "result_id": "res-d38548f1df8c3d14",
-      "person_id": "skv-p000224",
-      "person_slug": "mathilde-sofie-nordahl",
+      "person_id": "skv-p000388",
+      "person_slug": "mathilde-nordahl",
       "published_date": "2026-03-21",
       "published_date_label": "21.03.2026",
       "week_number": 12,
-      "athlete_name": "Mathilde Sofie Nordahl",
+      "athlete_name": "Mathilde Nordahl",
       "gender": "K",
       "gender_label": "Kvinner",
       "class_name": "K åpen",
@@ -17791,12 +17821,12 @@
     },
     {
       "result_id": "res-92e83a0f5e825396",
-      "person_id": "skv-p000334",
-      "person_slug": "ulrik-odegard",
+      "person_id": "skv-p000390",
+      "person_slug": "ulrik-moen-odegard",
       "published_date": "2026-03-01",
       "published_date_label": "01.03.2026",
       "week_number": 9,
-      "athlete_name": "Ulrik Ødegård",
+      "athlete_name": "Ulrik Moen Ødegård",
       "gender": "M",
       "gender_label": "Menn",
       "class_name": "M åpen",
@@ -20401,12 +20431,12 @@
     },
     {
       "result_id": "res-6df1f6332d3ba6a7",
-      "person_id": "skv-p000251",
-      "person_slug": "ole-jorgen-jacobsen",
+      "person_id": "skv-p000354",
+      "person_slug": "ole-jacobsen",
       "published_date": "2026-02-15",
       "published_date_label": "15.02.2026",
       "week_number": 7,
-      "athlete_name": "Ole Jørgen Jacobsen",
+      "athlete_name": "Ole Jacobsen",
       "gender": "M",
       "gender_label": "Menn",
       "class_name": "M åpen",
@@ -24760,10 +24790,10 @@
           "gender": "M",
           "gender_label": "Menn",
           "rank": 8,
-          "person_id": "skv-p000398",
-          "person_slug": "kristian-retterstol-froyen",
+          "person_id": "skv-p000174",
+          "person_slug": "kristian-froyen",
           "result_id": "res-e87ca92cdd77da2c",
-          "athlete_name": "Kristian Retterstøl Frøyen",
+          "athlete_name": "Kristian Frøyen",
           "result_time": "9:10.87",
           "result_time_seconds": 550.87,
           "event_label": "Per Halle Invitational",
@@ -25174,10 +25204,10 @@
           "gender": "M",
           "gender_label": "Menn",
           "rank": 2,
-          "person_id": "skv-p000418",
-          "person_slug": "anton-janovskis-heldal",
+          "person_id": "skv-p000033",
+          "person_slug": "anton-heldal",
           "result_id": "res-cee24fae2c9b3bfc",
-          "athlete_name": "Anton Janovskis Heldal",
+          "athlete_name": "Anton Heldal",
           "result_time": "2:00.61",
           "result_time_seconds": 120.61,
           "event_label": "KFUM Nasjonalt stevne",
@@ -25236,7 +25266,7 @@
     }
   ],
   "people": {
-    "profile_count": 388,
+    "profile_count": 371,
     "profiles": [
       {
         "person_id": "skv-p000001",
@@ -25380,40 +25410,12 @@
         "latest_result_date": "2026-05-02"
       },
       {
-        "person_id": "skv-p000379",
-        "profile_slug": "aksel-petter-spence",
-        "display_name": "Aksel Petter Spence",
-        "gender": "M",
-        "gender_label": "Menn",
-        "result_count": 1,
-        "distances": [
-          "10 km"
-        ],
-        "best_results": [
-          {
-            "result_id": "res-05a21dcfaf2def6c",
-            "distance": "10 km",
-            "source_distance": "10 km",
-            "result_time": "35:57",
-            "result_time_seconds": 2157.0,
-            "event_label": "Bislettmila 2026",
-            "published_date": "2026-05-15",
-            "published_date_label": "15.05.2026",
-            "week_number": 20,
-            "place": "10",
-            "class_place": "10"
-          }
-        ],
-        "first_result_date": "2026-05-15",
-        "latest_result_date": "2026-05-15"
-      },
-      {
         "person_id": "skv-p000006",
         "profile_slug": "aksel-spence",
         "display_name": "Aksel Spence",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 2,
+        "result_count": 3,
         "distances": [
           "5 km",
           "10 km"
@@ -25433,21 +25435,21 @@
             "class_place": ""
           },
           {
-            "result_id": "res-76c275aa2271f088",
+            "result_id": "res-05a21dcfaf2def6c",
             "distance": "10 km",
             "source_distance": "10 km",
-            "result_time": "39:57",
-            "result_time_seconds": 2397.0,
-            "event_label": "Drammen10K",
-            "published_date": "2026-04-11",
-            "published_date_label": "11.04.2026",
-            "week_number": 15,
-            "place": "1432",
-            "class_place": "722"
+            "result_time": "35:57",
+            "result_time_seconds": 2157.0,
+            "event_label": "Bislettmila 2026",
+            "published_date": "2026-05-15",
+            "published_date_label": "15.05.2026",
+            "week_number": 20,
+            "place": "10",
+            "class_place": "10"
           }
         ],
         "first_result_date": "2026-03-01",
-        "latest_result_date": "2026-04-11"
+        "latest_result_date": "2026-05-15"
       },
       {
         "person_id": "skv-p000007",
@@ -26059,7 +26061,7 @@
         "display_name": "Andreas Myhre Sjurseth",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
           "10 km"
         ],
@@ -26078,36 +26080,8 @@
             "class_place": ""
           }
         ],
-        "first_result_date": "2026-05-23",
-        "latest_result_date": "2026-05-23"
-      },
-      {
-        "person_id": "skv-p000023",
-        "profile_slug": "andreas-sjurseth",
-        "display_name": "Andreas Sjurseth *",
-        "gender": "M",
-        "gender_label": "Menn",
-        "result_count": 1,
-        "distances": [
-          "10 km"
-        ],
-        "best_results": [
-          {
-            "result_id": "res-34d794844c7a6880",
-            "distance": "10 km",
-            "source_distance": "10 km",
-            "result_time": "32:24",
-            "result_time_seconds": 1944.0,
-            "event_label": "Drammen10K",
-            "published_date": "2026-04-11",
-            "published_date_label": "11.04.2026",
-            "week_number": 15,
-            "place": "107",
-            "class_place": "9"
-          }
-        ],
         "first_result_date": "2026-04-11",
-        "latest_result_date": "2026-04-11"
+        "latest_result_date": "2026-05-23"
       },
       {
         "person_id": "skv-p000024",
@@ -26508,12 +26482,26 @@
         "display_name": "Anton Heldal",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 2,
+        "result_count": 3,
         "distances": [
+          "800 m",
           "5 km",
           "10 km"
         ],
         "best_results": [
+          {
+            "result_id": "res-cee24fae2c9b3bfc",
+            "distance": "800 m",
+            "source_distance": "800 m",
+            "result_time": "2:00.61",
+            "result_time_seconds": 120.61,
+            "event_label": "KFUM Nasjonalt stevne",
+            "published_date": "2026-05-19",
+            "published_date_label": "19.05.2026",
+            "week_number": 21,
+            "place": "5",
+            "class_place": ""
+          },
           {
             "result_id": "res-d4e3d33c174dd5c5",
             "distance": "5 km",
@@ -26542,34 +26530,6 @@
           }
         ],
         "first_result_date": "2026-01-18",
-        "latest_result_date": "2026-04-11"
-      },
-      {
-        "person_id": "skv-p000418",
-        "profile_slug": "anton-janovskis-heldal",
-        "display_name": "Anton Janovskis Heldal",
-        "gender": "M",
-        "gender_label": "Menn",
-        "result_count": 1,
-        "distances": [
-          "800 m"
-        ],
-        "best_results": [
-          {
-            "result_id": "res-cee24fae2c9b3bfc",
-            "distance": "800 m",
-            "source_distance": "800 m",
-            "result_time": "2:00.61",
-            "result_time_seconds": 120.61,
-            "event_label": "KFUM Nasjonalt stevne",
-            "published_date": "2026-05-19",
-            "published_date_label": "19.05.2026",
-            "week_number": 21,
-            "place": "5",
-            "class_place": ""
-          }
-        ],
-        "first_result_date": "2026-05-19",
         "latest_result_date": "2026-05-19"
       },
       {
@@ -26841,14 +26801,17 @@
         "latest_result_date": "2026-05-15"
       },
       {
-        "person_id": "skv-p000381",
-        "profile_slug": "bjornar-kjonnoy-slettvag",
-        "display_name": "Bjørnar Kjønnøy Slettvåg",
+        "person_id": "skv-p000041",
+        "profile_slug": "bjornar-slettvag",
+        "display_name": "Bjørnar Slettvåg",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 1,
+        "result_count": 4,
         "distances": [
-          "10 km"
+          "10 km",
+          "Maraton",
+          "10 mile",
+          "21 km"
         ],
         "best_results": [
           {
@@ -26863,24 +26826,7 @@
             "week_number": 20,
             "place": "17",
             "class_place": "16"
-          }
-        ],
-        "first_result_date": "2026-05-15",
-        "latest_result_date": "2026-05-15"
-      },
-      {
-        "person_id": "skv-p000041",
-        "profile_slug": "bjornar-slettvag",
-        "display_name": "Bjørnar Slettvåg",
-        "gender": "M",
-        "gender_label": "Menn",
-        "result_count": 3,
-        "distances": [
-          "Maraton",
-          "10 mile",
-          "21 km"
-        ],
-        "best_results": [
+          },
           {
             "result_id": "res-fecf462d4599bec5",
             "distance": "Maraton",
@@ -26960,10 +26906,11 @@
         "display_name": "Catherine Berg",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 3,
+        "result_count": 4,
         "distances": [
           "10 km",
-          "Maraton"
+          "Maraton",
+          "10000 m"
         ],
         "best_results": [
           {
@@ -26994,20 +26941,6 @@
           }
         ],
         "first_result_date": "2026-03-29",
-        "latest_result_date": "2026-04-25"
-      },
-      {
-        "person_id": "skv-p000382",
-        "profile_slug": "catherine-synnove-vaugelade-berg",
-        "display_name": "Catherine Synnøve Vaugelade Berg",
-        "gender": "K",
-        "gender_label": "Kvinner",
-        "result_count": 1,
-        "distances": [
-          "10000 m"
-        ],
-        "best_results": [],
-        "first_result_date": "2026-05-15",
         "latest_result_date": "2026-05-15"
       },
       {
@@ -27352,7 +27285,7 @@
         "display_name": "Daniel Espedokken Severinsen",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
           "10 km"
         ],
@@ -27371,36 +27304,8 @@
             "class_place": "6"
           }
         ],
-        "first_result_date": "2026-05-15",
-        "latest_result_date": "2026-05-15"
-      },
-      {
-        "person_id": "skv-p000053",
-        "profile_slug": "daniel-severinsen",
-        "display_name": "Daniel Severinsen",
-        "gender": "M",
-        "gender_label": "Menn",
-        "result_count": 1,
-        "distances": [
-          "10 km"
-        ],
-        "best_results": [
-          {
-            "result_id": "res-e71676059881c8ed",
-            "distance": "10 km",
-            "source_distance": "10 km",
-            "result_time": "0:43:34",
-            "result_time_seconds": 2614.0,
-            "event_label": "Sentrumsløpet 10k",
-            "published_date": "2026-04-25",
-            "published_date_label": "25.04.2026",
-            "week_number": 17,
-            "place": "2582",
-            "class_place": "1098"
-          }
-        ],
         "first_result_date": "2026-04-25",
-        "latest_result_date": "2026-04-25"
+        "latest_result_date": "2026-05-15"
       },
       {
         "person_id": "skv-p000054",
@@ -29360,37 +29265,10 @@
         "display_name": "Håvard Berge",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
+          "5 km",
           "10 km"
-        ],
-        "best_results": [
-          {
-            "result_id": "res-19ae768774e33fee",
-            "distance": "10 km",
-            "source_distance": "10 km",
-            "result_time": "32:38",
-            "result_time_seconds": 1958.0,
-            "event_label": "Bjørndalenmila 2026",
-            "published_date": "2026-05-23",
-            "published_date_label": "23.05.2026",
-            "week_number": 21,
-            "place": "38",
-            "class_place": ""
-          }
-        ],
-        "first_result_date": "2026-05-23",
-        "latest_result_date": "2026-05-23"
-      },
-      {
-        "person_id": "skv-p000366",
-        "profile_slug": "havard-moholt-berge",
-        "display_name": "Håvard Moholt Berge",
-        "gender": "M",
-        "gender_label": "Menn",
-        "result_count": 1,
-        "distances": [
-          "5 km"
         ],
         "best_results": [
           {
@@ -29405,10 +29283,23 @@
             "week_number": 18,
             "place": "2",
             "class_place": "2"
+          },
+          {
+            "result_id": "res-19ae768774e33fee",
+            "distance": "10 km",
+            "source_distance": "10 km",
+            "result_time": "32:38",
+            "result_time_seconds": 1958.0,
+            "event_label": "Bjørndalenmila 2026",
+            "published_date": "2026-05-23",
+            "published_date_label": "23.05.2026",
+            "week_number": 21,
+            "place": "38",
+            "class_place": ""
           }
         ],
         "first_result_date": "2026-05-02",
-        "latest_result_date": "2026-05-02"
+        "latest_result_date": "2026-05-23"
       },
       {
         "person_id": "skv-p000105",
@@ -29584,10 +29475,11 @@
         "display_name": "Henriette Semb",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 3,
+        "result_count": 4,
         "distances": [
           "5 km",
-          "10 km"
+          "10 km",
+          "Konkurranse KORT"
         ],
         "best_results": [
           {
@@ -29618,7 +29510,7 @@
           }
         ],
         "first_result_date": "2026-01-18",
-        "latest_result_date": "2026-04-25"
+        "latest_result_date": "2026-05-25"
       },
       {
         "person_id": "skv-p000112",
@@ -30822,9 +30714,10 @@
         "display_name": "Jessica Gunnarsson",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 2,
+        "result_count": 3,
         "distances": [
-          "5 km"
+          "5 km",
+          "10 km"
         ],
         "best_results": [
           {
@@ -30839,22 +30732,7 @@
             "week_number": 20,
             "place": "1",
             "class_place": "1"
-          }
-        ],
-        "first_result_date": "2026-04-25",
-        "latest_result_date": "2026-05-15"
-      },
-      {
-        "person_id": "skv-p000402",
-        "profile_slug": "jessica-katarina-gunnarsson",
-        "display_name": "Jessica Katarina Gunnarsson",
-        "gender": "K",
-        "gender_label": "Kvinner",
-        "result_count": 1,
-        "distances": [
-          "10 km"
-        ],
-        "best_results": [
+          },
           {
             "result_id": "res-cee552fa04cda7a7",
             "distance": "10 km",
@@ -30869,46 +30747,19 @@
             "class_place": ""
           }
         ],
-        "first_result_date": "2026-05-23",
+        "first_result_date": "2026-04-25",
         "latest_result_date": "2026-05-23"
       },
       {
-        "person_id": "skv-p000403",
-        "profile_slug": "jo-soreide",
-        "display_name": "Jo Søreide",
+        "person_id": "skv-p000144",
+        "profile_slug": "jo-trieu-soreide",
+        "display_name": "Jo Trieu Søreide",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 1,
+        "result_count": 5,
         "distances": [
+          "5 km",
           "10 km"
-        ],
-        "best_results": [
-          {
-            "result_id": "res-56363affd7d73560",
-            "distance": "10 km",
-            "source_distance": "10 km",
-            "result_time": "40:58",
-            "result_time_seconds": 2458.0,
-            "event_label": "Bjørndalenmila 2026",
-            "published_date": "2026-05-23",
-            "published_date_label": "23.05.2026",
-            "week_number": 21,
-            "place": "360",
-            "class_place": ""
-          }
-        ],
-        "first_result_date": "2026-05-23",
-        "latest_result_date": "2026-05-23"
-      },
-      {
-        "person_id": "skv-p000385",
-        "profile_slug": "jo-trieu",
-        "display_name": "Jo Trieu",
-        "gender": "M",
-        "gender_label": "Menn",
-        "result_count": 1,
-        "distances": [
-          "5 km"
         ],
         "best_results": [
           {
@@ -30923,48 +30774,19 @@
             "week_number": 20,
             "place": "6",
             "class_place": "5"
-          }
-        ],
-        "first_result_date": "2026-05-15",
-        "latest_result_date": "2026-05-15"
-      },
-      {
-        "person_id": "skv-p000144",
-        "profile_slug": "jo-trieu-soreide",
-        "display_name": "Jo Trieu Søreide",
-        "gender": "M",
-        "gender_label": "Menn",
-        "result_count": 3,
-        "distances": [
-          "5 km",
-          "10 km"
-        ],
-        "best_results": [
-          {
-            "result_id": "res-2af3d54696ead8f5",
-            "distance": "5 km",
-            "source_distance": "5 km",
-            "result_time": "19:34",
-            "result_time_seconds": 1174.0,
-            "event_label": "ACCELEREX 5K | Bislett 2026",
-            "published_date": "2026-05-24",
-            "published_date_label": "24.05.2026",
-            "week_number": 21,
-            "place": "",
-            "class_place": ""
           },
           {
-            "result_id": "res-808d76d337d71797",
+            "result_id": "res-56363affd7d73560",
             "distance": "10 km",
             "source_distance": "10 km",
-            "result_time": "42:01",
-            "result_time_seconds": 2521.0,
-            "event_label": "Drammen10K",
-            "published_date": "2026-04-11",
-            "published_date_label": "11.04.2026",
-            "week_number": 15,
-            "place": "1817",
-            "class_place": "52"
+            "result_time": "40:58",
+            "result_time_seconds": 2458.0,
+            "event_label": "Bjørndalenmila 2026",
+            "published_date": "2026-05-23",
+            "published_date_label": "23.05.2026",
+            "week_number": 21,
+            "place": "360",
+            "class_place": ""
           }
         ],
         "first_result_date": "2026-04-11",
@@ -30976,9 +30798,10 @@
         "display_name": "Joakim Hope Soltveit",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
-          "3000 m"
+          "3000 m",
+          "10 km"
         ],
         "best_results": [
           {
@@ -30993,9 +30816,22 @@
             "week_number": 21,
             "place": "31",
             "class_place": ""
+          },
+          {
+            "result_id": "res-0ab5b4bd82edc788",
+            "distance": "10 km",
+            "source_distance": "10 km",
+            "result_time": "36:57",
+            "result_time_seconds": 2217.0,
+            "event_label": "Drammen10K",
+            "published_date": "2026-04-11",
+            "published_date_label": "11.04.2026",
+            "week_number": 15,
+            "place": "691",
+            "class_place": "66"
           }
         ],
-        "first_result_date": "2026-05-21",
+        "first_result_date": "2026-04-11",
         "latest_result_date": "2026-05-21"
       },
       {
@@ -31040,34 +30876,6 @@
         ],
         "first_result_date": "2026-02-22",
         "latest_result_date": "2026-05-15"
-      },
-      {
-        "person_id": "skv-p000146",
-        "profile_slug": "joakim-soltveit",
-        "display_name": "Joakim Soltveit",
-        "gender": "M",
-        "gender_label": "Menn",
-        "result_count": 1,
-        "distances": [
-          "10 km"
-        ],
-        "best_results": [
-          {
-            "result_id": "res-0ab5b4bd82edc788",
-            "distance": "10 km",
-            "source_distance": "10 km",
-            "result_time": "36:57",
-            "result_time_seconds": 2217.0,
-            "event_label": "Drammen10K",
-            "published_date": "2026-04-11",
-            "published_date_label": "11.04.2026",
-            "week_number": 15,
-            "place": "691",
-            "class_place": "66"
-          }
-        ],
-        "first_result_date": "2026-04-11",
-        "latest_result_date": "2026-04-11"
       },
       {
         "person_id": "skv-p000147",
@@ -32099,7 +31907,7 @@
         "display_name": "Kristian Frøyen",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 4,
+        "result_count": 5,
         "distances": [
           "3000 m",
           "5 km",
@@ -32107,6 +31915,19 @@
           "Maraton"
         ],
         "best_results": [
+          {
+            "result_id": "res-e87ca92cdd77da2c",
+            "distance": "3000 m",
+            "source_distance": "3000 m",
+            "result_time": "9:10.87",
+            "result_time_seconds": 550.87,
+            "event_label": "Per Halle Invitational",
+            "published_date": "2026-05-15",
+            "published_date_label": "15.05.2026",
+            "week_number": 20,
+            "place": "26",
+            "class_place": ""
+          },
           {
             "result_id": "res-52d9931bffa165f4",
             "distance": "5 km",
@@ -32148,34 +31969,6 @@
           }
         ],
         "first_result_date": "2026-01-18",
-        "latest_result_date": "2026-04-19"
-      },
-      {
-        "person_id": "skv-p000398",
-        "profile_slug": "kristian-retterstol-froyen",
-        "display_name": "Kristian Retterstøl Frøyen",
-        "gender": "M",
-        "gender_label": "Menn",
-        "result_count": 1,
-        "distances": [
-          "3000 m"
-        ],
-        "best_results": [
-          {
-            "result_id": "res-e87ca92cdd77da2c",
-            "distance": "3000 m",
-            "source_distance": "3000 m",
-            "result_time": "9:10.87",
-            "result_time_seconds": 550.87,
-            "event_label": "Per Halle Invitational",
-            "published_date": "2026-05-15",
-            "published_date_label": "15.05.2026",
-            "week_number": 20,
-            "place": "26",
-            "class_place": ""
-          }
-        ],
-        "first_result_date": "2026-05-15",
         "latest_result_date": "2026-05-15"
       },
       {
@@ -34110,7 +33903,7 @@
         "display_name": "Mathilde Nordahl",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
           "5 km"
         ],
@@ -34129,36 +33922,8 @@
             "class_place": "3"
           }
         ],
-        "first_result_date": "2026-05-15",
-        "latest_result_date": "2026-05-15"
-      },
-      {
-        "person_id": "skv-p000224",
-        "profile_slug": "mathilde-sofie-nordahl",
-        "display_name": "Mathilde Sofie Nordahl",
-        "gender": "K",
-        "gender_label": "Kvinner",
-        "result_count": 1,
-        "distances": [
-          "5 km"
-        ],
-        "best_results": [
-          {
-            "result_id": "res-d38548f1df8c3d14",
-            "distance": "5 km",
-            "source_distance": "5 km",
-            "result_time": "21:01",
-            "result_time_seconds": 1261.0,
-            "event_label": "Bislett distanseserie 3- 5K",
-            "published_date": "2026-03-21",
-            "published_date_label": "21.03.2026",
-            "week_number": 12,
-            "place": "",
-            "class_place": ""
-          }
-        ],
         "first_result_date": "2026-03-21",
-        "latest_result_date": "2026-03-21"
+        "latest_result_date": "2026-05-15"
       },
       {
         "person_id": "skv-p000349",
@@ -34653,43 +34418,16 @@
         "latest_result_date": "2026-05-15"
       },
       {
-        "person_id": "skv-p000353",
-        "profile_slug": "ninni-jol-kken-brodalen",
-        "display_name": "Ninni Jol?kken Brodalen",
-        "gender": "K",
-        "gender_label": "Kvinner",
-        "result_count": 1,
-        "distances": [
-          "Halvmaraton"
-        ],
-        "best_results": [
-          {
-            "result_id": "res-d30e2b03124f093a",
-            "distance": "Halvmaraton",
-            "source_distance": "Halvmaraton",
-            "result_time": "1:41:33",
-            "result_time_seconds": 6093.0,
-            "event_label": "Grue Halvmaraton 2026",
-            "published_date": "2026-05-01",
-            "published_date_label": "01.05.2026",
-            "week_number": 18,
-            "place": "466",
-            "class_place": "33"
-          }
-        ],
-        "first_result_date": "2026-05-01",
-        "latest_result_date": "2026-05-01"
-      },
-      {
         "person_id": "skv-p000238",
         "profile_slug": "ninni-jolokken-brodalen",
         "display_name": "Ninni Joløkken Brodalen",
         "gender": "",
         "gender_label": "",
-        "result_count": 2,
+        "result_count": 3,
         "distances": [
           "5 km",
-          "10 km"
+          "10 km",
+          "Halvmaraton"
         ],
         "best_results": [
           {
@@ -34717,10 +34455,23 @@
             "week_number": 15,
             "place": "2305",
             "class_place": "1055"
+          },
+          {
+            "result_id": "res-d30e2b03124f093a",
+            "distance": "Halvmaraton",
+            "source_distance": "Halvmaraton",
+            "result_time": "1:41:33",
+            "result_time_seconds": 6093.0,
+            "event_label": "Grue Halvmaraton 2026",
+            "published_date": "2026-05-01",
+            "published_date_label": "01.05.2026",
+            "week_number": 18,
+            "place": "466",
+            "class_place": "33"
           }
         ],
         "first_result_date": "2026-03-01",
-        "latest_result_date": "2026-04-11"
+        "latest_result_date": "2026-05-01"
       },
       {
         "person_id": "skv-p000239",
@@ -35093,9 +34844,10 @@
         "display_name": "Ole Jacobsen",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
-          "Halvmaraton"
+          "Halvmaraton",
+          "Maraton"
         ],
         "best_results": [
           {
@@ -35110,9 +34862,22 @@
             "week_number": 18,
             "place": "258",
             "class_place": "2"
+          },
+          {
+            "result_id": "res-6df1f6332d3ba6a7",
+            "distance": "Maraton",
+            "source_distance": "Maraton",
+            "result_time": "03:21:32",
+            "result_time_seconds": 12092.0,
+            "event_label": "Sevilla Maraton",
+            "published_date": "2026-02-15",
+            "published_date_label": "15.02.2026",
+            "week_number": 7,
+            "place": "",
+            "class_place": ""
           }
         ],
-        "first_result_date": "2026-05-01",
+        "first_result_date": "2026-02-15",
         "latest_result_date": "2026-05-01"
       },
       {
@@ -35170,34 +34935,6 @@
         ],
         "first_result_date": "2026-01-18",
         "latest_result_date": "2026-03-29"
-      },
-      {
-        "person_id": "skv-p000251",
-        "profile_slug": "ole-jorgen-jacobsen",
-        "display_name": "Ole Jørgen Jacobsen",
-        "gender": "M",
-        "gender_label": "Menn",
-        "result_count": 1,
-        "distances": [
-          "Maraton"
-        ],
-        "best_results": [
-          {
-            "result_id": "res-6df1f6332d3ba6a7",
-            "distance": "Maraton",
-            "source_distance": "Maraton",
-            "result_time": "03:21:32",
-            "result_time_seconds": 12092.0,
-            "event_label": "Sevilla Maraton",
-            "published_date": "2026-02-15",
-            "published_date_label": "15.02.2026",
-            "week_number": 7,
-            "place": "",
-            "class_place": ""
-          }
-        ],
-        "first_result_date": "2026-02-15",
-        "latest_result_date": "2026-02-15"
       },
       {
         "person_id": "skv-p000252",
@@ -37798,40 +37535,12 @@
         "latest_result_date": "2026-04-25"
       },
       {
-        "person_id": "skv-p000324",
-        "profile_slug": "tim-bennett",
-        "display_name": "Tim Bennett",
-        "gender": "M",
-        "gender_label": "Menn",
-        "result_count": 1,
-        "distances": [
-          "10 km"
-        ],
-        "best_results": [
-          {
-            "result_id": "res-bf4192d815eddacb",
-            "distance": "10 km",
-            "source_distance": "10 km",
-            "result_time": "46:51",
-            "result_time_seconds": 2811.0,
-            "event_label": "Drammen10K",
-            "published_date": "2026-04-11",
-            "published_date_label": "11.04.2026",
-            "week_number": 15,
-            "place": "2543",
-            "class_place": "28"
-          }
-        ],
-        "first_result_date": "2026-04-11",
-        "latest_result_date": "2026-04-11"
-      },
-      {
         "person_id": "skv-p000399",
         "profile_slug": "tim-victor-bennett",
         "display_name": "Tim Victor Bennett",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
           "10 km"
         ],
@@ -37850,7 +37559,7 @@
             "class_place": "3"
           }
         ],
-        "first_result_date": "2026-05-23",
+        "first_result_date": "2026-04-11",
         "latest_result_date": "2026-05-23"
       },
       {
@@ -38309,24 +38018,11 @@
         "display_name": "Ulrik Moen Ødegård",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 2,
+        "result_count": 4,
         "distances": [
+          "10 km",
           "10000 m",
           "4,7 km"
-        ],
-        "best_results": [],
-        "first_result_date": "2026-05-15",
-        "latest_result_date": "2026-05-20"
-      },
-      {
-        "person_id": "skv-p000334",
-        "profile_slug": "ulrik-odegard",
-        "display_name": "Ulrik Ødegård",
-        "gender": "M",
-        "gender_label": "Menn",
-        "result_count": 2,
-        "distances": [
-          "10 km"
         ],
         "best_results": [
           {
@@ -38344,7 +38040,7 @@
           }
         ],
         "first_result_date": "2026-03-01",
-        "latest_result_date": "2026-04-11"
+        "latest_result_date": "2026-05-20"
       },
       {
         "person_id": "skv-p000335",
@@ -38832,7 +38528,6 @@
       "andreas-fossan": "skv-p000020",
       "andreas-haugen-torjussen": "skv-p000021",
       "andreas-havsberg": "skv-p000022",
-      "andreas-sjurseth": "skv-p000023",
       "andreas-skog-rost": "skv-p000024",
       "andreas-solheim": "skv-p000025",
       "andreas-sung-unstad": "skv-p000026",
@@ -38862,7 +38557,6 @@
       "christopher-wiig": "skv-p000050",
       "constantin-rust": "skv-p000051",
       "dadafo-dhaqabi-tesama": "skv-p000052",
-      "daniel-severinsen": "skv-p000053",
       "david-meier": "skv-p000054",
       "dina-anjara-herilanto-randrianampiantsoa": "skv-p000055",
       "dina-erika-hansen": "skv-p000056",
@@ -38950,7 +38644,6 @@
       "jessica-gunnarsson": "skv-p000143",
       "jo-trieu-soreide": "skv-p000144",
       "joakim-mohn": "skv-p000145",
-      "joakim-soltveit": "skv-p000146",
       "johanne-laegran": "skv-p000147",
       "johannes-nisja": "skv-p000148",
       "johannes-yngve": "skv-p000149",
@@ -39022,7 +38715,6 @@
       "martin-kjall-ohlsson": "skv-p000221",
       "martin-kvam": "skv-p000222",
       "martin-stray-egeberg": "skv-p000223",
-      "mathilde-sofie-nordahl": "skv-p000224",
       "matias-brekka": "skv-p000225",
       "matilde-belsvik": "skv-p000227",
       "michael-eriksson": "skv-p000228",
@@ -39047,7 +38739,6 @@
       "ole-anders-stokker": "skv-p000248",
       "ole-henrik-kabbe": "skv-p000249",
       "ole-jonas-nybo": "skv-p000250",
-      "ole-jorgen-jacobsen": "skv-p000251",
       "ole-jorgen-knoph": "skv-p000252",
       "ole-kristian-gjertsen": "skv-p000253",
       "oscar-sperre": "skv-p000254",
@@ -39110,7 +38801,6 @@
       "thomas-kjellberg": "skv-p000321",
       "thomas-nordbo-berg": "skv-p000322",
       "thomas-pedersen": "skv-p000323",
-      "tim-bennett": "skv-p000324",
       "tiril-jorgensen": "skv-p000325",
       "tobias-gram-caspersen": "skv-p000326",
       "tone-gravvold": "skv-p000327",
@@ -39120,7 +38810,6 @@
       "tormod-fauske-tho": "skv-p000331",
       "trond-einar-moen-pedersli": "skv-p000332",
       "truls-skarvoy": "skv-p000333",
-      "ulrik-odegard": "skv-p000334",
       "valentin-hachet": "skv-p000335",
       "vebjorn-hallberg-bakkestuen": "skv-p000336",
       "vegard-grut": "skv-p000337",
@@ -39138,7 +38827,6 @@
       "elin-lippe-lippe-stavnes": "skv-p000350",
       "julie-garsiot": "skv-p000351",
       "lene-heimdal": "skv-p000352",
-      "ninni-jol-kken-brodalen": "skv-p000353",
       "ole-jacobsen": "skv-p000354",
       "iver-johan-andreassen-holm": "skv-p000355",
       "kristine-meinert-rod": "skv-p000356",
@@ -39151,7 +38839,6 @@
       "asmund-sunde-valseth": "skv-p000363",
       "gina-flugstad-oistuen": "skv-p000364",
       "kristine-green": "skv-p000365",
-      "havard-moholt-berge": "skv-p000366",
       "therese-dahl-arvik": "skv-p000367",
       "per-olav-rohmer": "skv-p000369",
       "thomas-beka": "skv-p000370",
@@ -39163,13 +38850,9 @@
       "elia-thorvik": "skv-p000376",
       "maia-kulle-andreassen": "skv-p000377",
       "hanna-heider-hov": "skv-p000378",
-      "aksel-petter-spence": "skv-p000379",
       "bjarni-herrera-thorisson": "skv-p000380",
-      "bjornar-kjonnoy-slettvag": "skv-p000381",
-      "catherine-synnove-vaugelade-berg": "skv-p000382",
       "daniel-espedokken-severinsen": "skv-p000383",
       "jenny-lillehagen-garnes": "skv-p000384",
-      "jo-trieu": "skv-p000385",
       "live-maria-gronvold": "skv-p000386",
       "marte-solset-haug": "skv-p000387",
       "mathilde-nordahl": "skv-p000388",
@@ -39182,12 +38865,9 @@
       "gina-voll-didriksen": "skv-p000395",
       "tuva-toftdahl-staver": "skv-p000396",
       "alice-ulla-berg": "skv-p000397",
-      "kristian-retterstol-froyen": "skv-p000398",
       "tim-victor-bennett": "skv-p000399",
       "andreas-myhre-sjurseth": "skv-p000400",
       "havard-berge": "skv-p000401",
-      "jessica-katarina-gunnarsson": "skv-p000402",
-      "jo-soreide": "skv-p000403",
       "madeleine-heiberg": "skv-p000404",
       "mathilde-christin-knutsen": "skv-p000405",
       "reidar-sobstad": "skv-p000406",
@@ -39196,25 +38876,29 @@
       "isak-by-stolan": "skv-p000411",
       "magnus-baekkevar-semb": "skv-p000412",
       "tina-hatland": "skv-p000417",
-      "anton-janovskis-heldal": "skv-p000418",
       "mathias-moen": "skv-p000419",
       "haakon-hellebust": "skv-p000420",
       "joakim-hope-soltveit": "skv-p000421",
       "adne-andersen-andersen": "skv-p000001",
       "adne-sandvik-dyrnesli": "skv-p000003",
+      "andreas-sjurseth": "skv-p000400",
+      "daniel-severinsen": "skv-p000383",
       "erlend-fugleberg-bruaset": "skv-p000075",
       "ernst-herlof-kristiansen": "skv-p000080",
       "hanna-kristine-gunlaugsdatter-larsen": "skv-p000099",
       "hege-nja-bjorkmanm": "skv-p000107",
       "henriette-saeterdal-semb": "skv-p000110",
+      "joakim-soltveit": "skv-p000421",
       "john-christian-fuller": "skv-p000151",
       "june-kieu-van-thi-bui": "skv-p000160",
       "kristina-marcelius-stang": "skv-p000178",
       "maria-bipop-bang-jensen": "skv-p000202",
       "marianne-harnes": "skv-p000206",
       "marita-bergum-sandberg": "skv-p000212",
+      "mathilde-sofie-nordahl": "skv-p000388",
       "matilde-reinholdt-belsvik": "skv-p000227",
       "ole-anders": "skv-p000248",
+      "ole-jorgen-jacobsen": "skv-p000354",
       "pal-erik": "skv-p000257",
       "pia-fjeld-moller-johansen": "skv-p000260",
       "said-garaashe-abdullahi": "skv-p000273",
@@ -39225,6 +38909,8 @@
       "sondre-moen": "skv-p000304",
       "sonia-nakamura-slettvag-11-ar": "skv-p000306",
       "stine-strand-isaksen": "skv-p000309",
+      "tim-bennett": "skv-p000399",
+      "ulrik-odegard": "skv-p000390",
       "vidar-tveit-vasfaret-stenset": "skv-p000342",
       "sjur-krystad-prests-ter": "skv-p000295",
       "dne-dyrnesli": "skv-p000003",
@@ -39233,24 +38919,39 @@
       "p-l-erik-johnsen": "skv-p000257",
       "sonia-slettv-g": "skv-p000306",
       "pia-m-ller": "skv-p000260",
-      "hege-nj-bj-rkmann": "skv-p000107"
+      "hege-nj-bj-rkmann": "skv-p000107",
+      "ninni-jol-kken-brodalen": "skv-p000238",
+      "havard-moholt-berge": "skv-p000401",
+      "aksel-petter-spence": "skv-p000006",
+      "bjornar-kjonnoy-slettvag": "skv-p000041",
+      "catherine-synnove-vaugelade-berg": "skv-p000043",
+      "jo-trieu": "skv-p000144",
+      "kristian-retterstol-froyen": "skv-p000174",
+      "jessica-katarina-gunnarsson": "skv-p000143",
+      "jo-soreide": "skv-p000144",
+      "anton-janovskis-heldal": "skv-p000033"
     },
     "slug_redirects": {
       "adne-andersen-andersen": "adne-andersen",
       "adne-sandvik-dyrnesli": "adne-dyrnesli",
+      "andreas-sjurseth": "andreas-myhre-sjurseth",
+      "daniel-severinsen": "daniel-espedokken-severinsen",
       "erlend-fugleberg-bruaset": "erlend-bruaset",
       "ernst-herlof-kristiansen": "ernst-kristiansen",
       "hanna-kristine-gunlaugsdatter-larsen": "hanna-kristine-larsen",
       "hege-nja-bjorkmanm": "hege-nja-bjorkmann",
       "henriette-saeterdal-semb": "henriette-semb",
+      "joakim-soltveit": "joakim-hope-soltveit",
       "john-christian-fuller": "john-fuller",
       "june-kieu-van-thi-bui": "june-bui",
       "kristina-marcelius-stang": "kristina-m-stang",
       "maria-bipop-bang-jensen": "maria-bipop",
       "marianne-harnes": "marianne-harnes-myhrer",
       "marita-bergum-sandberg": "marita-sandberg",
+      "mathilde-sofie-nordahl": "mathilde-nordahl",
       "matilde-reinholdt-belsvik": "matilde-belsvik",
       "ole-anders": "ole-anders-stokker",
+      "ole-jorgen-jacobsen": "ole-jacobsen",
       "pal-erik": "pal-erik-johnsen",
       "pia-fjeld-moller-johansen": "pia-moller",
       "said-garaashe-abdullahi": "said-abdullahi",
@@ -39261,6 +38962,8 @@
       "sondre-moen": "sondre-nordstad-moen",
       "sonia-nakamura-slettvag-11-ar": "sonia-slettvag",
       "stine-strand-isaksen": "stine-isaksen",
+      "tim-bennett": "tim-victor-bennett",
+      "ulrik-odegard": "ulrik-moen-odegard",
       "vidar-tveit-vasfaret-stenset": "vidar-stenset",
       "sjur-krystad-prests-ter": "sjur-krystad-prestsaeter",
       "dne-dyrnesli": "adne-dyrnesli",
@@ -39269,7 +38972,17 @@
       "p-l-erik-johnsen": "pal-erik-johnsen",
       "sonia-slettv-g": "sonia-slettvag",
       "pia-m-ller": "pia-moller",
-      "hege-nj-bj-rkmann": "hege-nja-bjorkmann"
+      "hege-nj-bj-rkmann": "hege-nja-bjorkmann",
+      "ninni-jol-kken-brodalen": "ninni-jolokken-brodalen",
+      "havard-moholt-berge": "havard-berge",
+      "aksel-petter-spence": "aksel-spence",
+      "bjornar-kjonnoy-slettvag": "bjornar-slettvag",
+      "catherine-synnove-vaugelade-berg": "catherine-berg",
+      "jo-trieu": "jo-trieu-soreide",
+      "kristian-retterstol-froyen": "kristian-froyen",
+      "jessica-katarina-gunnarsson": "jessica-gunnarsson",
+      "jo-soreide": "jo-trieu-soreide",
+      "anton-janovskis-heldal": "anton-heldal"
     }
   }
 }
