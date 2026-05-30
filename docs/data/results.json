@@ -1,14 +1,14 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-05-30T19:04:34+02:00",
+  "generated_at": "2026-05-30T21:20:22+02:00",
   "stats": {
-    "result_count": 788,
+    "result_count": 789,
     "athlete_count": 371,
-    "event_count": 99,
+    "event_count": 100,
     "week_count": 19,
     "latest_week": 22,
-    "latest_date": "2026-05-25",
-    "women_count": 304,
+    "latest_date": "2026-05-30",
+    "women_count": 305,
     "men_count": 484,
     "missing_gender_or_class_count": 0
   },
@@ -16,14 +16,15 @@
     {
       "week_number": 22,
       "week_label": "Uke 22",
-      "published_date": "2026-05-25",
-      "published_date_label": "25.05.2026",
-      "result_count": 4,
-      "athlete_count": 4,
-      "event_count": 2,
-      "women_count": 3,
+      "published_date": "2026-05-30",
+      "published_date_label": "30.05.2026",
+      "result_count": 5,
+      "athlete_count": 5,
+      "event_count": 3,
+      "women_count": 4,
       "men_count": 1,
       "events": [
+        "Kragerø Sommerløp 2026",
         "Lygnaløpet 2026",
         "Saldilten 2026"
       ]
@@ -361,6 +362,35 @@
     }
   ],
   "results": [
+    {
+      "result_id": "res-87de427018aca9f5",
+      "person_id": "skv-p000405",
+      "person_slug": "mathilde-christin-knutsen",
+      "published_date": "2026-05-30",
+      "published_date_label": "30.05.2026",
+      "week_number": 22,
+      "athlete_name": "Mathilde Christin Knutsen",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K25-34",
+      "class_place": "",
+      "event_label": "Kragerø Sommerløp 2026",
+      "distance": "10 km",
+      "result_time_raw": "35:52",
+      "result_time_normalized": "35:52",
+      "result_time_seconds": 2152.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": 944.0,
+      "place": "",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
     {
       "result_id": "res-38eb0c58fabceeff",
       "person_id": "skv-p000306",
@@ -33875,7 +33905,7 @@
         "display_name": "Mathilde Christin Knutsen",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
           "10 km"
         ],
@@ -33895,7 +33925,7 @@
           }
         ],
         "first_result_date": "2026-05-23",
-        "latest_result_date": "2026-05-23"
+        "latest_result_date": "2026-05-30"
       },
       {
         "person_id": "skv-p000388",
