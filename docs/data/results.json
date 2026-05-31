@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-05-31T16:20:16+02:00",
+  "generated_at": "2026-05-31T19:00:57+02:00",
   "stats": {
-    "result_count": 890,
-    "athlete_count": 397,
-    "event_count": 102,
+    "result_count": 906,
+    "athlete_count": 401,
+    "event_count": 103,
     "week_count": 19,
     "latest_week": 22,
     "latest_date": "2026-05-31",
-    "women_count": 350,
-    "men_count": 540,
+    "women_count": 354,
+    "men_count": 552,
     "missing_gender_or_class_count": 0
   },
   "weeks": [
@@ -18,13 +18,14 @@
       "week_label": "Uke 22",
       "published_date": "2026-05-31",
       "published_date_label": "31.05.2026",
-      "result_count": 106,
-      "athlete_count": 87,
-      "event_count": 5,
-      "women_count": 49,
-      "men_count": 57,
+      "result_count": 122,
+      "athlete_count": 102,
+      "event_count": 6,
+      "women_count": 53,
+      "men_count": 69,
       "events": [
         "Fornebul?pet 2026",
+        "Jessheim Halvmaraton 2026",
         "Kragerø Sommerløp 2026",
         "Lygnaløpet 2026",
         "Saldilten 2026",
@@ -364,6 +365,470 @@
     }
   ],
   "results": [
+    {
+      "result_id": "res-5bf8ddc5b3487018",
+      "person_id": "skv-p000451",
+      "person_slug": "tobias-opdalshei-baumann",
+      "published_date": "2026-05-31",
+      "published_date_label": "31.05.2026",
+      "week_number": 22,
+      "athlete_name": "Tobias Opdalshei Baumann",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M23-34",
+      "class_place": "1",
+      "event_label": "Jessheim Halvmaraton 2026",
+      "distance": "5 km",
+      "result_time_raw": "15:51.5",
+      "result_time_normalized": "15:51.5",
+      "result_time_seconds": 951.5,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": 662.0,
+      "place": "1",
+      "notes_clean": "1. mann",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-368d6a589a12cbd8",
+      "person_id": "skv-p000136",
+      "person_slug": "jakov-semaskevic",
+      "published_date": "2026-05-31",
+      "published_date_label": "31.05.2026",
+      "week_number": 22,
+      "athlete_name": "Jakov Semaskevic",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M23-34",
+      "class_place": "4",
+      "event_label": "Jessheim Halvmaraton 2026",
+      "distance": "5 km",
+      "result_time_raw": "17:49.8",
+      "result_time_normalized": "17:49.8",
+      "result_time_seconds": 1069.8,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": 380.0,
+      "place": "8",
+      "notes_clean": "8. mann",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-3c9b56771d6386c1",
+      "person_id": "skv-p000152",
+      "person_slug": "jon-henrik-eskeland",
+      "published_date": "2026-05-31",
+      "published_date_label": "31.05.2026",
+      "week_number": 22,
+      "athlete_name": "Jon-Henrik Eskeland",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M23-34",
+      "class_place": "6",
+      "event_label": "Jessheim Halvmaraton 2026",
+      "distance": "Halvmaraton",
+      "result_time_raw": "1:19:44.0",
+      "result_time_normalized": "1:19:44.0",
+      "result_time_seconds": 4784.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": 526.0,
+      "place": "17",
+      "notes_clean": "16. mann",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-2736417358d62ddf",
+      "person_id": "skv-p000173",
+      "person_slug": "kristian-brenni",
+      "published_date": "2026-05-31",
+      "published_date_label": "31.05.2026",
+      "week_number": 22,
+      "athlete_name": "Kristian Brenni",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M Elite",
+      "class_place": "8",
+      "event_label": "Jessheim Halvmaraton 2026",
+      "distance": "Halvmaraton",
+      "result_time_raw": "1:22:09.9",
+      "result_time_normalized": "1:22:09.9",
+      "result_time_seconds": 4929.9,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": 462.0,
+      "place": "29",
+      "notes_clean": "27. mann",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-1301ea9b8ff6a98e",
+      "person_id": "skv-p000047",
+      "person_slug": "christian-lund-sorensen",
+      "published_date": "2026-05-31",
+      "published_date_label": "31.05.2026",
+      "week_number": 22,
+      "athlete_name": "Christian Lund Sørensen",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M23-34",
+      "class_place": "12",
+      "event_label": "Jessheim Halvmaraton 2026",
+      "distance": "Halvmaraton",
+      "result_time_raw": "1:23:04.5",
+      "result_time_normalized": "1:23:04.5",
+      "result_time_seconds": 4984.5,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": 440.0,
+      "place": "32",
+      "notes_clean": "30. mann",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-562e227140ae7e34",
+      "person_id": "skv-p000025",
+      "person_slug": "andreas-solheim",
+      "published_date": "2026-05-31",
+      "published_date_label": "31.05.2026",
+      "week_number": 22,
+      "athlete_name": "Andreas Solheim",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M23-34",
+      "class_place": "27",
+      "event_label": "Jessheim Halvmaraton 2026",
+      "distance": "Halvmaraton",
+      "result_time_raw": "1:26:48.8",
+      "result_time_normalized": "1:26:48.8",
+      "result_time_seconds": 5208.8,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": 353.0,
+      "place": "72",
+      "notes_clean": "66. mann",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-109adfd39aa1f794",
+      "person_id": "skv-p000026",
+      "person_slug": "andreas-sung-unstad",
+      "published_date": "2026-05-31",
+      "published_date_label": "31.05.2026",
+      "week_number": 22,
+      "athlete_name": "Andreas Sung Unstad",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M35-39",
+      "class_place": "16",
+      "event_label": "Jessheim Halvmaraton 2026",
+      "distance": "Halvmaraton",
+      "result_time_raw": "1:26:52.3",
+      "result_time_normalized": "1:26:52.3",
+      "result_time_seconds": 5212.3,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": 352.0,
+      "place": "73",
+      "notes_clean": "67. mann",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-dff403242c39bb32",
+      "person_id": "skv-p000449",
+      "person_slug": "martin-kildal",
+      "published_date": "2026-05-31",
+      "published_date_label": "31.05.2026",
+      "week_number": 22,
+      "athlete_name": "Martin Kildal",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M23-34",
+      "class_place": "43",
+      "event_label": "Jessheim Halvmaraton 2026",
+      "distance": "Halvmaraton",
+      "result_time_raw": "1:29:40.8",
+      "result_time_normalized": "1:29:40.8",
+      "result_time_seconds": 5380.8,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": 293.0,
+      "place": "117",
+      "notes_clean": "109. mann",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-7596dc4aa72d4049",
+      "person_id": "skv-p000083",
+      "person_slug": "eskild-willassen",
+      "published_date": "2026-05-31",
+      "published_date_label": "31.05.2026",
+      "week_number": 22,
+      "athlete_name": "Eskild Willassen",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M35-39",
+      "class_place": "29",
+      "event_label": "Jessheim Halvmaraton 2026",
+      "distance": "Halvmaraton",
+      "result_time_raw": "1:29:47.2",
+      "result_time_normalized": "1:29:47.2",
+      "result_time_seconds": 5387.2,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": 291.0,
+      "place": "122",
+      "notes_clean": "113. mann",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-06eef266967846bb",
+      "person_id": "skv-p000132",
+      "person_slug": "ingrid-skomedal-klovning",
+      "published_date": "2026-05-31",
+      "published_date_label": "31.05.2026",
+      "week_number": 22,
+      "athlete_name": "Ingrid Skomedal Klovning",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K35-39",
+      "class_place": "3",
+      "event_label": "Jessheim Halvmaraton 2026",
+      "distance": "Halvmaraton",
+      "result_time_raw": "1:35:42.4",
+      "result_time_normalized": "1:35:42.4",
+      "result_time_seconds": 5742.4,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": 663.0,
+      "place": "170",
+      "notes_clean": "16. kvinne",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-73dd2d91a439ca15",
+      "person_id": "skv-p000386",
+      "person_slug": "live-maria-gronvold",
+      "published_date": "2026-05-31",
+      "published_date_label": "31.05.2026",
+      "week_number": 22,
+      "athlete_name": "Live Maria Grønvold",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K23-34",
+      "class_place": "15",
+      "event_label": "Jessheim Halvmaraton 2026",
+      "distance": "Halvmaraton",
+      "result_time_raw": "1:39:06.7",
+      "result_time_normalized": "1:39:06.7",
+      "result_time_seconds": 5946.7,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": 611.0,
+      "place": "214",
+      "notes_clean": "33. kvinne",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-d1df6b7f6d583989",
+      "person_id": "skv-p000448",
+      "person_slug": "bjarni-herrera",
+      "published_date": "2026-05-31",
+      "published_date_label": "31.05.2026",
+      "week_number": 22,
+      "athlete_name": "Bjarni Herrera",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M40-44",
+      "class_place": "28",
+      "event_label": "Jessheim Halvmaraton 2026",
+      "distance": "Halvmaraton",
+      "result_time_raw": "1:43:43.1",
+      "result_time_normalized": "1:43:43.1",
+      "result_time_seconds": 6223.1,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": 79.0,
+      "place": "263",
+      "notes_clean": "215. mann",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-4cdbb5a5397781e2",
+      "person_id": "skv-p000207",
+      "person_slug": "marie-abelsen-arntsen",
+      "published_date": "2026-05-31",
+      "published_date_label": "31.05.2026",
+      "week_number": 22,
+      "athlete_name": "Marie Abelsen Arntsen",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K23-34",
+      "class_place": "27",
+      "event_label": "Jessheim Halvmaraton 2026",
+      "distance": "Halvmaraton",
+      "result_time_raw": "1:44:31.6",
+      "result_time_normalized": "1:44:31.6",
+      "result_time_seconds": 6271.6,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": 532.0,
+      "place": "275",
+      "notes_clean": "54. kvinne",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-e05964742936c6cb",
+      "person_id": "skv-p000280",
+      "person_slug": "sigurd-skomedal-klovning",
+      "published_date": "2026-05-31",
+      "published_date_label": "31.05.2026",
+      "week_number": 22,
+      "athlete_name": "Sigurd Skomedal Klovning",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M35-39",
+      "class_place": "54",
+      "event_label": "Jessheim Halvmaraton 2026",
+      "distance": "Halvmaraton",
+      "result_time_raw": "1:48:57.1",
+      "result_time_normalized": "1:48:57.1",
+      "result_time_seconds": 6537.1,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": 34.0,
+      "place": "313",
+      "notes_clean": "247. mann",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-8e78a7981b825718",
+      "person_id": "skv-p000429",
+      "person_slug": "fredrik-halsbog",
+      "published_date": "2026-05-31",
+      "published_date_label": "31.05.2026",
+      "week_number": 22,
+      "athlete_name": "Fredrik Halsbog",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M40-44",
+      "class_place": "34",
+      "event_label": "Jessheim Halvmaraton 2026",
+      "distance": "Halvmaraton",
+      "result_time_raw": "1:49:49.1",
+      "result_time_normalized": "1:49:49.1",
+      "result_time_seconds": 6589.1,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": 29.0,
+      "place": "324",
+      "notes_clean": "254. mann",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-de962f89ef9c7935",
+      "person_id": "skv-p000450",
+      "person_slug": "sara-fixdal",
+      "published_date": "2026-05-31",
+      "published_date_label": "31.05.2026",
+      "week_number": 22,
+      "athlete_name": "Sara Fixdal",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K23-34",
+      "class_place": "78",
+      "event_label": "Jessheim Halvmaraton 2026",
+      "distance": "Halvmaraton",
+      "result_time_raw": "2:21:25.2",
+      "result_time_normalized": "2:21:25.2",
+      "result_time_seconds": 8485.2,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": 139.0,
+      "place": "550",
+      "notes_clean": "182. kvinne",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
     {
       "result_id": "res-2d68c3973f80002c",
       "person_id": "skv-p000321",
@@ -28243,7 +28708,7 @@
     }
   ],
   "people": {
-    "profile_count": 397,
+    "profile_count": 401,
     "profiles": [
       {
         "person_id": "skv-p000001",
@@ -29109,9 +29574,10 @@
         "display_name": "Andreas Solheim",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 2,
+        "result_count": 3,
         "distances": [
-          "10 km"
+          "10 km",
+          "Halvmaraton"
         ],
         "best_results": [
           {
@@ -29126,10 +29592,23 @@
             "week_number": 20,
             "place": "11",
             "class_place": "11"
+          },
+          {
+            "result_id": "res-562e227140ae7e34",
+            "distance": "Halvmaraton",
+            "source_distance": "Halvmaraton",
+            "result_time": "1:26:48.8",
+            "result_time_seconds": 5208.8,
+            "event_label": "Jessheim Halvmaraton 2026",
+            "published_date": "2026-05-31",
+            "published_date_label": "31.05.2026",
+            "week_number": 22,
+            "place": "72",
+            "class_place": "27"
           }
         ],
         "first_result_date": "2026-04-25",
-        "latest_result_date": "2026-05-15"
+        "latest_result_date": "2026-05-31"
       },
       {
         "person_id": "skv-p000026",
@@ -29137,24 +29616,24 @@
         "display_name": "Andreas Sung Unstad",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 2,
+        "result_count": 3,
         "distances": [
           "Halvmaraton",
           "Maraton"
         ],
         "best_results": [
           {
-            "result_id": "res-8d0236254c4266f0",
+            "result_id": "res-109adfd39aa1f794",
             "distance": "Halvmaraton",
             "source_distance": "Halvmaraton",
-            "result_time": "01:29:16",
-            "result_time_seconds": 5356.0,
-            "event_label": "Barcelona Halvmaraton",
-            "published_date": "2026-02-15",
-            "published_date_label": "15.02.2026",
-            "week_number": 7,
-            "place": "",
-            "class_place": ""
+            "result_time": "1:26:52.3",
+            "result_time_seconds": 5212.3,
+            "event_label": "Jessheim Halvmaraton 2026",
+            "published_date": "2026-05-31",
+            "published_date_label": "31.05.2026",
+            "week_number": 22,
+            "place": "73",
+            "class_place": "16"
           },
           {
             "result_id": "res-36904d2b79c18e52",
@@ -29171,7 +29650,7 @@
           }
         ],
         "first_result_date": "2026-02-15",
-        "latest_result_date": "2026-04-26"
+        "latest_result_date": "2026-05-31"
       },
       {
         "person_id": "skv-p000027",
@@ -29822,6 +30301,34 @@
         "latest_result_date": "2026-05-23"
       },
       {
+        "person_id": "skv-p000448",
+        "profile_slug": "bjarni-herrera",
+        "display_name": "Bjarni Herrera",
+        "gender": "M",
+        "gender_label": "Menn",
+        "result_count": 1,
+        "distances": [
+          "Halvmaraton"
+        ],
+        "best_results": [
+          {
+            "result_id": "res-d1df6b7f6d583989",
+            "distance": "Halvmaraton",
+            "source_distance": "Halvmaraton",
+            "result_time": "1:43:43.1",
+            "result_time_seconds": 6223.1,
+            "event_label": "Jessheim Halvmaraton 2026",
+            "published_date": "2026-05-31",
+            "published_date_label": "31.05.2026",
+            "week_number": 22,
+            "place": "263",
+            "class_place": "28"
+          }
+        ],
+        "first_result_date": "2026-05-31",
+        "latest_result_date": "2026-05-31"
+      },
+      {
         "person_id": "skv-p000380",
         "profile_slug": "bjarni-herrera-thorisson",
         "display_name": "Bjarni Herrera Thorisson",
@@ -30223,9 +30730,10 @@
         "display_name": "Christian Lund Sørensen",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 2,
+        "result_count": 3,
         "distances": [
-          "5 km"
+          "5 km",
+          "Halvmaraton"
         ],
         "best_results": [
           {
@@ -30240,10 +30748,23 @@
             "week_number": 3,
             "place": "",
             "class_place": ""
+          },
+          {
+            "result_id": "res-1301ea9b8ff6a98e",
+            "distance": "Halvmaraton",
+            "source_distance": "Halvmaraton",
+            "result_time": "1:23:04.5",
+            "result_time_seconds": 4984.5,
+            "event_label": "Jessheim Halvmaraton 2026",
+            "published_date": "2026-05-31",
+            "published_date_label": "31.05.2026",
+            "week_number": 22,
+            "place": "32",
+            "class_place": "12"
           }
         ],
         "first_result_date": "2026-01-18",
-        "latest_result_date": "2026-03-21"
+        "latest_result_date": "2026-05-31"
       },
       {
         "person_id": "skv-p000048",
@@ -31614,7 +32135,7 @@
         "display_name": "Eskild Willassen",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
           "Halvmaraton"
         ],
@@ -31634,7 +32155,7 @@
           }
         ],
         "first_result_date": "2026-04-25",
-        "latest_result_date": "2026-04-25"
+        "latest_result_date": "2026-05-31"
       },
       {
         "person_id": "skv-p000084",
@@ -31909,9 +32430,10 @@
         "display_name": "Fredrik Halsbog",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
-          "10 km"
+          "10 km",
+          "Halvmaraton"
         ],
         "best_results": [
           {
@@ -31926,10 +32448,23 @@
             "week_number": 22,
             "place": "493",
             "class_place": "55"
+          },
+          {
+            "result_id": "res-8e78a7981b825718",
+            "distance": "Halvmaraton",
+            "source_distance": "Halvmaraton",
+            "result_time": "1:49:49.1",
+            "result_time_seconds": 6589.1,
+            "event_label": "Jessheim Halvmaraton 2026",
+            "published_date": "2026-05-31",
+            "published_date_label": "31.05.2026",
+            "week_number": 22,
+            "place": "324",
+            "class_place": "34"
           }
         ],
         "first_result_date": "2026-05-27",
-        "latest_result_date": "2026-05-27"
+        "latest_result_date": "2026-05-31"
       },
       {
         "person_id": "skv-p000090",
@@ -33628,11 +34163,12 @@
         "display_name": "Ingrid Skomedal Klovning",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 6,
+        "result_count": 7,
         "distances": [
           "3000 m",
           "5 km",
           "10 km",
+          "Halvmaraton",
           "4625 m"
         ],
         "best_results": [
@@ -33674,10 +34210,23 @@
             "week_number": 17,
             "place": "2202",
             "class_place": "33"
+          },
+          {
+            "result_id": "res-06eef266967846bb",
+            "distance": "Halvmaraton",
+            "source_distance": "Halvmaraton",
+            "result_time": "1:35:42.4",
+            "result_time_seconds": 5742.4,
+            "event_label": "Jessheim Halvmaraton 2026",
+            "published_date": "2026-05-31",
+            "published_date_label": "31.05.2026",
+            "week_number": 22,
+            "place": "170",
+            "class_place": "3"
           }
         ],
         "first_result_date": "2026-01-18",
-        "latest_result_date": "2026-05-16"
+        "latest_result_date": "2026-05-31"
       },
       {
         "person_id": "skv-p000133",
@@ -33867,12 +34416,26 @@
         "display_name": "Jakov Semaskevic",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 2,
+        "result_count": 3,
         "distances": [
+          "5 km",
           "10 km",
           "Halvmaraton"
         ],
         "best_results": [
+          {
+            "result_id": "res-368d6a589a12cbd8",
+            "distance": "5 km",
+            "source_distance": "5 km",
+            "result_time": "17:49.8",
+            "result_time_seconds": 1069.8,
+            "event_label": "Jessheim Halvmaraton 2026",
+            "published_date": "2026-05-31",
+            "published_date_label": "31.05.2026",
+            "week_number": 22,
+            "place": "8",
+            "class_place": "4"
+          },
           {
             "result_id": "res-f00471756f683673",
             "distance": "10 km",
@@ -33901,7 +34464,7 @@
           }
         ],
         "first_result_date": "2026-01-11",
-        "latest_result_date": "2026-02-15"
+        "latest_result_date": "2026-05-31"
       },
       {
         "person_id": "skv-p000137",
@@ -34442,9 +35005,10 @@
         "display_name": "Jon-Henrik Eskeland",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 2,
+        "result_count": 3,
         "distances": [
-          "10 km"
+          "10 km",
+          "Halvmaraton"
         ],
         "best_results": [
           {
@@ -34459,10 +35023,23 @@
             "week_number": 15,
             "place": "422",
             "class_place": "242"
+          },
+          {
+            "result_id": "res-3c9b56771d6386c1",
+            "distance": "Halvmaraton",
+            "source_distance": "Halvmaraton",
+            "result_time": "1:19:44.0",
+            "result_time_seconds": 4784.0,
+            "event_label": "Jessheim Halvmaraton 2026",
+            "published_date": "2026-05-31",
+            "published_date_label": "31.05.2026",
+            "week_number": 22,
+            "place": "17",
+            "class_place": "6"
           }
         ],
         "first_result_date": "2026-04-11",
-        "latest_result_date": "2026-05-23"
+        "latest_result_date": "2026-05-31"
       },
       {
         "person_id": "skv-p000153",
@@ -35439,7 +36016,7 @@
         "display_name": "Kristian Brenni",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 5,
+        "result_count": 6,
         "distances": [
           "5 km",
           "10 km",
@@ -35487,7 +36064,7 @@
           }
         ],
         "first_result_date": "2026-03-17",
-        "latest_result_date": "2026-05-23"
+        "latest_result_date": "2026-05-31"
       },
       {
         "person_id": "skv-p000174",
@@ -36139,9 +36716,10 @@
         "display_name": "Live Maria Grønvold",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
-          "10 km"
+          "10 km",
+          "Halvmaraton"
         ],
         "best_results": [
           {
@@ -36156,10 +36734,23 @@
             "week_number": 20,
             "place": "10",
             "class_place": "5"
+          },
+          {
+            "result_id": "res-73dd2d91a439ca15",
+            "distance": "Halvmaraton",
+            "source_distance": "Halvmaraton",
+            "result_time": "1:39:06.7",
+            "result_time_seconds": 5946.7,
+            "event_label": "Jessheim Halvmaraton 2026",
+            "published_date": "2026-05-31",
+            "published_date_label": "31.05.2026",
+            "week_number": 22,
+            "place": "214",
+            "class_place": "15"
           }
         ],
         "first_result_date": "2026-05-15",
-        "latest_result_date": "2026-05-15"
+        "latest_result_date": "2026-05-31"
       },
       {
         "person_id": "skv-p000191",
@@ -36877,7 +37468,7 @@
         "display_name": "Marie Abelsen Arntsen",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
           "Halvmaraton"
         ],
@@ -36897,7 +37488,7 @@
           }
         ],
         "first_result_date": "2026-04-25",
-        "latest_result_date": "2026-04-25"
+        "latest_result_date": "2026-05-31"
       },
       {
         "person_id": "skv-p000208",
@@ -37333,6 +37924,34 @@
         ],
         "first_result_date": "2026-03-01",
         "latest_result_date": "2026-03-01"
+      },
+      {
+        "person_id": "skv-p000449",
+        "profile_slug": "martin-kildal",
+        "display_name": "Martin Kildal",
+        "gender": "M",
+        "gender_label": "Menn",
+        "result_count": 1,
+        "distances": [
+          "Halvmaraton"
+        ],
+        "best_results": [
+          {
+            "result_id": "res-dff403242c39bb32",
+            "distance": "Halvmaraton",
+            "source_distance": "Halvmaraton",
+            "result_time": "1:29:40.8",
+            "result_time_seconds": 5380.8,
+            "event_label": "Jessheim Halvmaraton 2026",
+            "published_date": "2026-05-31",
+            "published_date_label": "31.05.2026",
+            "week_number": 22,
+            "place": "117",
+            "class_place": "43"
+          }
+        ],
+        "first_result_date": "2026-05-31",
+        "latest_result_date": "2026-05-31"
       },
       {
         "person_id": "skv-p000221",
@@ -39610,6 +40229,34 @@
         "latest_result_date": "2026-05-15"
       },
       {
+        "person_id": "skv-p000450",
+        "profile_slug": "sara-fixdal",
+        "display_name": "Sara Fixdal",
+        "gender": "K",
+        "gender_label": "Kvinner",
+        "result_count": 1,
+        "distances": [
+          "Halvmaraton"
+        ],
+        "best_results": [
+          {
+            "result_id": "res-de962f89ef9c7935",
+            "distance": "Halvmaraton",
+            "source_distance": "Halvmaraton",
+            "result_time": "2:21:25.2",
+            "result_time_seconds": 8485.2,
+            "event_label": "Jessheim Halvmaraton 2026",
+            "published_date": "2026-05-31",
+            "published_date_label": "31.05.2026",
+            "week_number": 22,
+            "place": "550",
+            "class_place": "78"
+          }
+        ],
+        "first_result_date": "2026-05-31",
+        "latest_result_date": "2026-05-31"
+      },
+      {
         "person_id": "skv-p000276",
         "profile_slug": "sara-kjeldsen-lie",
         "display_name": "Sara Kjeldsen Lie",
@@ -39783,9 +40430,10 @@
         "display_name": "Sigurd Skomedal Klovning",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
-          "3000 m"
+          "3000 m",
+          "Halvmaraton"
         ],
         "best_results": [
           {
@@ -39800,10 +40448,23 @@
             "week_number": 16,
             "place": "17",
             "class_place": "15"
+          },
+          {
+            "result_id": "res-e05964742936c6cb",
+            "distance": "Halvmaraton",
+            "source_distance": "Halvmaraton",
+            "result_time": "1:48:57.1",
+            "result_time_seconds": 6537.1,
+            "event_label": "Jessheim Halvmaraton 2026",
+            "published_date": "2026-05-31",
+            "published_date_label": "31.05.2026",
+            "week_number": 22,
+            "place": "313",
+            "class_place": "54"
           }
         ],
         "first_result_date": "2026-04-19",
-        "latest_result_date": "2026-04-19"
+        "latest_result_date": "2026-05-31"
       },
       {
         "person_id": "skv-p000442",
@@ -41603,6 +42264,34 @@
         "latest_result_date": "2026-05-15"
       },
       {
+        "person_id": "skv-p000451",
+        "profile_slug": "tobias-opdalshei-baumann",
+        "display_name": "Tobias Opdalshei Baumann",
+        "gender": "M",
+        "gender_label": "Menn",
+        "result_count": 1,
+        "distances": [
+          "5 km"
+        ],
+        "best_results": [
+          {
+            "result_id": "res-5bf8ddc5b3487018",
+            "distance": "5 km",
+            "source_distance": "5 km",
+            "result_time": "15:51.5",
+            "result_time_seconds": 951.5,
+            "event_label": "Jessheim Halvmaraton 2026",
+            "published_date": "2026-05-31",
+            "published_date_label": "31.05.2026",
+            "week_number": 22,
+            "place": "1",
+            "class_place": "1"
+          }
+        ],
+        "first_result_date": "2026-05-31",
+        "latest_result_date": "2026-05-31"
+      },
+      {
         "person_id": "skv-p000371",
         "profile_slug": "tom-kuyken-kjaerstad",
         "display_name": "Tom Kuyken Kjærstad",
@@ -42891,6 +43580,10 @@
       "tora-husum-kristensen": "skv-p000445",
       "julie-louise-sandrup": "skv-p000446",
       "oskar-roynas": "skv-p000447",
+      "bjarni-herrera": "skv-p000448",
+      "martin-kildal": "skv-p000449",
+      "sara-fixdal": "skv-p000450",
+      "tobias-opdalshei-baumann": "skv-p000451",
       "adne-andersen-andersen": "skv-p000001",
       "adne-sandvik-dyrnesli": "skv-p000003",
       "andreas-sjurseth": "skv-p000400",
@@ -42942,7 +43635,8 @@
       "jessica-katarina-gunnarsson": "skv-p000143",
       "jo-soreide": "skv-p000144",
       "anton-janovskis-heldal": "skv-p000033",
-      "oskar-r-yn-s": "skv-p000447"
+      "oskar-r-yn-s": "skv-p000447",
+      "truls-vegard-skarv-y": "skv-p000448"
     },
     "slug_redirects": {
       "adne-andersen-andersen": "adne-andersen",

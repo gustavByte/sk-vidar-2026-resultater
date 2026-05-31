@@ -1,0 +1,21 @@
+Jessheim Halvmaraton 2026 | 31.05.2026 | EQTiming workbook
+Kildeark: Forenklet klubbvalg i jessheim_halvmaraton_2026_vidar_osi_resultater.xlsx
+Filter: Status TIME og Klubb i EQ inneholder Vidar, men ikke OSI/Ås/blankt/andre klubber.
+Utelatt ikke-resultat: 4 DNF/DNS med Vidar-klubbfelt.
+
+2026-05-31 | 5 km | Tobias Opdalshei Baumann | startnr 1123 | M23-34 | Sportsklubben Vidar | 15:51.5 | plass 1 | kjønn 1 | klasse 1 | Offisiell klubb | Offisiell Vidar; SKV aktiv; OSIF medlem
+2026-05-31 | 5 km | Jakov Semaskevic | startnr 1051 | M23-34 | Sportsklubben Vidar | 17:49.8 | plass 8 | kjønn 8 | klasse 4 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack
+2026-05-31 | Halvmaraton | Jon-Henrik Eskeland | startnr 2138 | M23-34 | Sportsklubben Vidar | 1:19:44.0 | plass 17 | kjønn 16 | klasse 6 | Offisiell klubb | Offisiell Vidar
+2026-05-31 | Halvmaraton | Kristian Brenni | startnr 2727 | M Elite | Sportsklubben Vidar | 1:22:09.9 | plass 29 | kjønn 27 | klasse 8 | Offisiell klubb | Offisiell Vidar; SKV Slack
+2026-05-31 | Halvmaraton | Christian Lund Sørensen | startnr 2641 | M23-34 | Sportsklubben Vidar | 1:23:04.5 | plass 32 | kjønn 30 | klasse 12 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack
+2026-05-31 | Halvmaraton | Andreas Solheim | startnr 2738 | M23-34 | Sportsklubben Vidar | 1:26:48.8 | plass 72 | kjønn 66 | klasse 27 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack
+2026-05-31 | Halvmaraton | Andreas Sung Unstad | startnr 2323 | M35-39 | Sportsklubben Vidar | 1:26:52.3 | plass 73 | kjønn 67 | klasse 16 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack
+2026-05-31 | Halvmaraton | Martin Kildal | startnr 2235 | M23-34 | Sportsklubben Vidar | 1:29:40.8 | plass 117 | kjønn 109 | klasse 43 | Potensiell klubbrelasjon | SKV aktiv; SKV Slack
+2026-05-31 | Halvmaraton | Eskild Willassen | startnr 2238 | M35-39 | Sportsklubben Vidar | 1:29:47.2 | plass 122 | kjønn 113 | klasse 29 | Offisiell klubb | Offisiell Vidar; SKV oppmote; SKV Slack
+2026-05-31 | Halvmaraton | Ingrid Skomedal Klovning | startnr 2711 | K35-39 | Sportsklubben Vidar | 1:35:42.4 | plass 170 | kjønn 16 | klasse 3 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack
+2026-05-31 | Halvmaraton | Live Maria Grønvold | startnr 2070 | K23-34 | SK Vidar | 1:39:06.7 | plass 214 | kjønn 33 | klasse 15 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack
+2026-05-31 | Halvmaraton | Bjarni Herrera | startnr 2297 | M40-44 | Sportsklubben Vidar | 1:43:43.1 | plass 263 | kjønn 215 | klasse 28 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack
+2026-05-31 | Halvmaraton | Marie Abelsen Arntsen | startnr 2126 | K23-34 | Sportsklubben Vidar | 1:44:31.6 | plass 275 | kjønn 54 | klasse 27 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack
+2026-05-31 | Halvmaraton | Sigurd Skomedal Klovning | startnr 2705 | M35-39 | Sportsklubben Vidar | 1:48:57.1 | plass 313 | kjønn 247 | klasse 54 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack
+2026-05-31 | Halvmaraton | Fredrik Halsbog | startnr 9962 | M40-44 | Sportsklubben Vidar | 1:49:49.1 | plass 324 | kjønn 254 | klasse 34 | Offisiell klubb | Offisiell Vidar
+2026-05-31 | Halvmaraton | Sara Fixdal | startnr 2855 | K23-34 | Sportsklubben Vidar | 2:21:25.2 | plass 550 | kjønn 182 | klasse 78 | SK Vidar kun Slack | SKV Slack
