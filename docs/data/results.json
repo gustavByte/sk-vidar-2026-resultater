@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-05-31T19:00:57+02:00",
+  "generated_at": "2026-05-31T19:07:08+02:00",
   "stats": {
-    "result_count": 906,
+    "result_count": 907,
     "athlete_count": 401,
-    "event_count": 103,
+    "event_count": 104,
     "week_count": 19,
     "latest_week": 22,
     "latest_date": "2026-05-31",
     "women_count": 354,
-    "men_count": 552,
+    "men_count": 553,
     "missing_gender_or_class_count": 0
   },
   "weeks": [
@@ -18,17 +18,18 @@
       "week_label": "Uke 22",
       "published_date": "2026-05-31",
       "published_date_label": "31.05.2026",
-      "result_count": 122,
-      "athlete_count": 102,
-      "event_count": 6,
+      "result_count": 123,
+      "athlete_count": 103,
+      "event_count": 7,
       "women_count": 53,
-      "men_count": 69,
+      "men_count": 70,
       "events": [
-        "Fornebul?pet 2026",
+        "Fornebuløpet 2026",
         "Jessheim Halvmaraton 2026",
         "Kragerø Sommerløp 2026",
         "Lygnaløpet 2026",
         "Saldilten 2026",
+        "Stockholm Marathon 2026",
         "Tjalvelekene 2026"
       ]
     },
@@ -1033,6 +1034,35 @@
       "split_state": ""
     },
     {
+      "result_id": "res-c2488d81e9b01d11",
+      "person_id": "skv-p000338",
+      "person_slug": "vegard-henriksen",
+      "published_date": "2026-05-30",
+      "published_date_label": "30.05.2026",
+      "week_number": 22,
+      "athlete_name": "Vegard Henriksen",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M åpen",
+      "class_place": "",
+      "event_label": "Stockholm Marathon 2026",
+      "distance": "Maraton",
+      "result_time_raw": "4:20:49",
+      "result_time_normalized": "4:20:49",
+      "result_time_seconds": 15649.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": 1.0,
+      "place": "6514",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
       "result_id": "res-ec00911115efef7f",
       "person_id": "skv-p000358",
       "person_slug": "ole-skjelten-daasvatn",
@@ -1149,7 +1179,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-cca72482c617ad37",
+      "result_id": "res-b33f6344336b35a5",
       "person_id": "skv-p000001",
       "person_slug": "adne-andersen",
       "published_date": "2026-05-27",
@@ -1160,7 +1190,7 @@
       "gender_label": "Menn",
       "class_name": "Menn 23-34 år",
       "class_place": "1",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "5 km",
       "result_time_raw": "15:10",
       "result_time_normalized": "15:10",
@@ -1178,7 +1208,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-ab7a76fcdc283ccb",
+      "result_id": "res-9fc6dd5d125a0cd1",
       "person_id": "skv-p000432",
       "person_slug": "haakon-engelsen-berg",
       "published_date": "2026-05-27",
@@ -1189,7 +1219,7 @@
       "gender_label": "Menn",
       "class_name": "Fornebutrippelen Menn",
       "class_place": "1",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "5 km",
       "result_time_raw": "16:01",
       "result_time_normalized": "16:01",
@@ -1207,7 +1237,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-945a21eddce74cbc",
+      "result_id": "res-9293fd88cced77ed",
       "person_id": "skv-p000156",
       "person_slug": "jostein-rogstad",
       "published_date": "2026-05-27",
@@ -1218,7 +1248,7 @@
       "gender_label": "Menn",
       "class_name": "Fornebutrippelen Menn",
       "class_place": "2",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "5 km",
       "result_time_raw": "16:16",
       "result_time_normalized": "16:16",
@@ -1236,7 +1266,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-6ceff8663fac1fb9",
+      "result_id": "res-168b87b9d6d2572f",
       "person_id": "skv-p000221",
       "person_slug": "martin-kjall-ohlsson",
       "published_date": "2026-05-27",
@@ -1247,7 +1277,7 @@
       "gender_label": "Menn",
       "class_name": "Menn 45-49 år",
       "class_place": "1",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "5 km",
       "result_time_raw": "16:28",
       "result_time_normalized": "16:28",
@@ -1265,7 +1295,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-d5620caaeab8cb3e",
+      "result_id": "res-3c84431e7e940688",
       "person_id": "skv-p000393",
       "person_slug": "erlend-berger",
       "published_date": "2026-05-27",
@@ -1276,7 +1306,7 @@
       "gender_label": "Menn",
       "class_name": "Menn 23-34 år",
       "class_place": "7",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "5 km",
       "result_time_raw": "16:32",
       "result_time_normalized": "16:32",
@@ -1294,7 +1324,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-cbaf9fcbe85b799d",
+      "result_id": "res-82e818a3ae99f825",
       "person_id": "skv-p000193",
       "person_slug": "madelene-wanvik-holum",
       "published_date": "2026-05-27",
@@ -1305,7 +1335,7 @@
       "gender_label": "Kvinner",
       "class_name": "Fornebutrippelen kvinner",
       "class_place": "1",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "5 km",
       "result_time_raw": "16:39",
       "result_time_normalized": "16:39",
@@ -1323,7 +1353,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-2289365bbb556542",
+      "result_id": "res-77c8404cd51e8c6a",
       "person_id": "skv-p000430",
       "person_slug": "frida-bjornstad-konow",
       "published_date": "2026-05-27",
@@ -1334,7 +1364,7 @@
       "gender_label": "Kvinner",
       "class_name": "Kvinner 23-34 år",
       "class_place": "2",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "5 km",
       "result_time_raw": "16:40",
       "result_time_normalized": "16:40",
@@ -1352,7 +1382,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-df109c14f5258cd7",
+      "result_id": "res-8c44397e275c9375",
       "person_id": "skv-p000423",
       "person_slug": "axel-wollan",
       "published_date": "2026-05-27",
@@ -1363,7 +1393,7 @@
       "gender_label": "Menn",
       "class_name": "Menn 23-34 år",
       "class_place": "14",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "5 km",
       "result_time_raw": "17:37",
       "result_time_normalized": "17:37",
@@ -1381,7 +1411,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-27858d279f13681e",
+      "result_id": "res-9b800de104c4b81b",
       "person_id": "skv-p000191",
       "person_slug": "livius-sverdrup",
       "published_date": "2026-05-27",
@@ -1392,7 +1422,7 @@
       "gender_label": "Menn",
       "class_name": "Gutter 12 år ",
       "class_place": "1",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "5 km",
       "result_time_raw": "17:52",
       "result_time_normalized": "17:52",
@@ -1410,7 +1440,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-c80a581aa8a5dd82",
+      "result_id": "res-0cd6b53efeb5c53c",
       "person_id": "skv-p000151",
       "person_slug": "john-fuller",
       "published_date": "2026-05-27",
@@ -1421,7 +1451,7 @@
       "gender_label": "Menn",
       "class_name": "Menn 60-64 år ",
       "class_place": "1",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "5 km",
       "result_time_raw": "18:34",
       "result_time_normalized": "18:34",
@@ -1439,7 +1469,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-3ca769217c7af280",
+      "result_id": "res-3d08b080725868b9",
       "person_id": "skv-p000182",
       "person_slug": "lars-gellein-halvorsen",
       "published_date": "2026-05-27",
@@ -1450,7 +1480,7 @@
       "gender_label": "Menn",
       "class_name": "Menn 23-34 år",
       "class_place": "20",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "5 km",
       "result_time_raw": "18:34",
       "result_time_normalized": "18:34",
@@ -1468,7 +1498,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-48e33a0b044fcb27",
+      "result_id": "res-78c904800433dcdd",
       "person_id": "skv-p000003",
       "person_slug": "adne-dyrnesli",
       "published_date": "2026-05-27",
@@ -1479,7 +1509,7 @@
       "gender_label": "Menn",
       "class_name": "Menn 23-34 år",
       "class_place": "21",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "5 km",
       "result_time_raw": "18:39",
       "result_time_normalized": "18:39",
@@ -1497,7 +1527,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-28ad533d46521b96",
+      "result_id": "res-d0d408bd1ab446fb",
       "person_id": "skv-p000291",
       "person_slug": "siri-schone-ness",
       "published_date": "2026-05-27",
@@ -1508,7 +1538,7 @@
       "gender_label": "Kvinner",
       "class_name": "Kvinner 40-44 år ",
       "class_place": "1",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "5 km",
       "result_time_raw": "18:56",
       "result_time_normalized": "18:56",
@@ -1526,7 +1556,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-4d9f13c63037f8c0",
+      "result_id": "res-0132453f8939255f",
       "person_id": "skv-p000101",
       "person_slug": "hannah-bjelland",
       "published_date": "2026-05-27",
@@ -1537,7 +1567,7 @@
       "gender_label": "Kvinner",
       "class_name": "Kvinner 23-34 år",
       "class_place": "6",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "5 km",
       "result_time_raw": "18:58",
       "result_time_normalized": "18:58",
@@ -1555,7 +1585,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-77c813978136755e",
+      "result_id": "res-7efb3c1e71700e3b",
       "person_id": "skv-p000143",
       "person_slug": "jessica-gunnarsson",
       "published_date": "2026-05-27",
@@ -1566,7 +1596,7 @@
       "gender_label": "Kvinner",
       "class_name": "Kvinner 50-54 år ",
       "class_place": "1",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "5 km",
       "result_time_raw": "18:59",
       "result_time_normalized": "18:59",
@@ -1584,7 +1614,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-61ab8b98b42c7fef",
+      "result_id": "res-3e2b1cceb91d13b4",
       "person_id": "skv-p000005",
       "person_slug": "aksel-anker-solberg-hansen",
       "published_date": "2026-05-27",
@@ -1595,7 +1625,7 @@
       "gender_label": "Menn",
       "class_name": "Gutter 13 år",
       "class_place": "3",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "5 km",
       "result_time_raw": "19:11",
       "result_time_normalized": "19:11",
@@ -1613,7 +1643,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-324bffad9f179679",
+      "result_id": "res-99341b2aee440c77",
       "person_id": "skv-p000444",
       "person_slug": "stina-meinicke",
       "published_date": "2026-05-27",
@@ -1624,7 +1654,7 @@
       "gender_label": "Kvinner",
       "class_name": "Kvinner 23-34 år",
       "class_place": "8",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "5 km",
       "result_time_raw": "19:23",
       "result_time_normalized": "19:23",
@@ -1642,7 +1672,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-b6d0c6543f5e720a",
+      "result_id": "res-809d89caf8707757",
       "person_id": "skv-p000283",
       "person_slug": "simen-hagerup-kjeldsen",
       "published_date": "2026-05-27",
@@ -1653,7 +1683,7 @@
       "gender_label": "Menn",
       "class_name": "Menn 40-44 år ",
       "class_place": "7",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "5 km",
       "result_time_raw": "19:41",
       "result_time_normalized": "19:41",
@@ -1671,7 +1701,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-38dfc65c41eb5f7a",
+      "result_id": "res-3187d2ec7ba9c703",
       "person_id": "skv-p000315",
       "person_slug": "sven-thelin",
       "published_date": "2026-05-27",
@@ -1682,7 +1712,7 @@
       "gender_label": "Menn",
       "class_name": "Menn 55-59 år",
       "class_place": "4",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "5 km",
       "result_time_raw": "20:04",
       "result_time_normalized": "20:04",
@@ -1700,7 +1730,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-abfff69f32e886ae",
+      "result_id": "res-2785513c6f8213f5",
       "person_id": "skv-p000383",
       "person_slug": "daniel-espedokken-severinsen",
       "published_date": "2026-05-27",
@@ -1711,7 +1741,7 @@
       "gender_label": "Menn",
       "class_name": "Menn 23-34 år",
       "class_place": "38",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "5 km",
       "result_time_raw": "20:16",
       "result_time_normalized": "20:16",
@@ -1729,7 +1759,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-f3af8cf17a1c53ea",
+      "result_id": "res-10559eb2921ac0a4",
       "person_id": "skv-p000218",
       "person_slug": "marthe-meese-dolmen",
       "published_date": "2026-05-27",
@@ -1740,7 +1770,7 @@
       "gender_label": "Kvinner",
       "class_name": "Kvinner 23-34 år",
       "class_place": "12",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "5 km",
       "result_time_raw": "20:27",
       "result_time_normalized": "20:27",
@@ -1758,7 +1788,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-9fc1a7a8f30698aa",
+      "result_id": "res-b078952ebe46e216",
       "person_id": "skv-p000243",
       "person_slug": "oivind-larsen",
       "published_date": "2026-05-27",
@@ -1769,7 +1799,7 @@
       "gender_label": "Menn",
       "class_name": "Menn 60-64 år ",
       "class_place": "2",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "5 km",
       "result_time_raw": "20:32",
       "result_time_normalized": "20:32",
@@ -1787,7 +1817,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-386f6b7547d98046",
+      "result_id": "res-1f33a21ff51e081e",
       "person_id": "skv-p000262",
       "person_slug": "ragnhild-ertshus",
       "published_date": "2026-05-27",
@@ -1798,7 +1828,7 @@
       "gender_label": "Kvinner",
       "class_name": "Kvinner35-39 år ",
       "class_place": "6",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "5 km",
       "result_time_raw": "20:42",
       "result_time_normalized": "20:42",
@@ -1816,7 +1846,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-737343e114e10cf5",
+      "result_id": "res-b9bfa5e05c1b0179",
       "person_id": "skv-p000170",
       "person_slug": "kjersti-simensen",
       "published_date": "2026-05-27",
@@ -1827,7 +1857,7 @@
       "gender_label": "Kvinner",
       "class_name": "Kvinner 40-44 år ",
       "class_place": "2",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "5 km",
       "result_time_raw": "21:10",
       "result_time_normalized": "21:10",
@@ -1845,7 +1875,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-11cc821ed6d1ed3d",
+      "result_id": "res-73fb069b9accb175",
       "person_id": "skv-p000306",
       "person_slug": "sonia-slettvag",
       "published_date": "2026-05-27",
@@ -1856,7 +1886,7 @@
       "gender_label": "Kvinner",
       "class_name": "Jenter 11 år ",
       "class_place": "1",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "5 km",
       "result_time_raw": "21:16",
       "result_time_normalized": "21:16",
@@ -1874,7 +1904,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-19779067dadb516a",
+      "result_id": "res-1e886994c7166a09",
       "person_id": "skv-p000184",
       "person_slug": "lavrans-sverdrup",
       "published_date": "2026-05-27",
@@ -1885,7 +1915,7 @@
       "gender_label": "Menn",
       "class_name": "Gutter 11 år ",
       "class_place": "2",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "5 km",
       "result_time_raw": "21:24",
       "result_time_normalized": "21:24",
@@ -1903,7 +1933,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-99ea41ce76c9e64a",
+      "result_id": "res-040d0ad838d13838",
       "person_id": "skv-p000445",
       "person_slug": "tora-husum-kristensen",
       "published_date": "2026-05-27",
@@ -1914,7 +1944,7 @@
       "gender_label": "Kvinner",
       "class_name": "Fornebutrippelen kvinner",
       "class_place": "5",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "5 km",
       "result_time_raw": "21:26",
       "result_time_normalized": "21:26",
@@ -1932,7 +1962,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-da68a4d7dc42d400",
+      "result_id": "res-bc362e9613efd965",
       "person_id": "skv-p000431",
       "person_slug": "ger-wijnandus-van-graas",
       "published_date": "2026-05-27",
@@ -1943,7 +1973,7 @@
       "gender_label": "Menn",
       "class_name": "Fornebutrippelen Menn",
       "class_place": "38",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "5 km",
       "result_time_raw": "21:27",
       "result_time_normalized": "21:27",
@@ -1961,7 +1991,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-c0894714e0a57b27",
+      "result_id": "res-dd18f6707a1418f7",
       "person_id": "skv-p000440",
       "person_slug": "noomi-linnea-stenset",
       "published_date": "2026-05-27",
@@ -1972,7 +2002,7 @@
       "gender_label": "Kvinner",
       "class_name": "Jenter 12 år",
       "class_place": "2",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "5 km",
       "result_time_raw": "22:02",
       "result_time_normalized": "22:02",
@@ -1990,7 +2020,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-b26c7e753fee7c94",
+      "result_id": "res-3879281086100be3",
       "person_id": "skv-p000301",
       "person_slug": "sondre-anker-solberg-hansen",
       "published_date": "2026-05-27",
@@ -2001,7 +2031,7 @@
       "gender_label": "Menn",
       "class_name": "Gutter 11 år ",
       "class_place": "7",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "5 km",
       "result_time_raw": "22:55",
       "result_time_normalized": "22:55",
@@ -2019,7 +2049,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-518b9d44f6069421",
+      "result_id": "res-2c910e1762eaedb9",
       "person_id": "skv-p000032",
       "person_slug": "anne-myhr",
       "published_date": "2026-05-27",
@@ -2030,7 +2060,7 @@
       "gender_label": "Kvinner",
       "class_name": "Kvinner 60-64 år ",
       "class_place": "4",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "5 km",
       "result_time_raw": "23:02",
       "result_time_normalized": "23:02",
@@ -2048,7 +2078,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-eb030f2a88391478",
+      "result_id": "res-aebe29396e2938f2",
       "person_id": "skv-p000046",
       "person_slug": "christian-lillebo",
       "published_date": "2026-05-27",
@@ -2059,7 +2089,7 @@
       "gender_label": "Menn",
       "class_name": "Fornebutrippelen Menn",
       "class_place": "48",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "5 km",
       "result_time_raw": "23:11",
       "result_time_normalized": "23:11",
@@ -2077,7 +2107,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-137b51fc66961a26",
+      "result_id": "res-ec41ba468ee35ac5",
       "person_id": "skv-p000327",
       "person_slug": "tone-gravvold",
       "published_date": "2026-05-27",
@@ -2088,7 +2118,7 @@
       "gender_label": "Kvinner",
       "class_name": "Fornebutrippelen kvinner",
       "class_place": "10",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "5 km",
       "result_time_raw": "23:14",
       "result_time_normalized": "23:14",
@@ -2106,7 +2136,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-e2176ee1c7c84ac3",
+      "result_id": "res-b313a1fe698391ec",
       "person_id": "skv-p000297",
       "person_slug": "sofie-gotuholt",
       "published_date": "2026-05-27",
@@ -2117,7 +2147,7 @@
       "gender_label": "Kvinner",
       "class_name": "Kvinner 23-34 år",
       "class_place": "23",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "5 km",
       "result_time_raw": "23:20",
       "result_time_normalized": "23:20",
@@ -2135,7 +2165,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-8544dc79761c47de",
+      "result_id": "res-0f0b369bceb3afc6",
       "person_id": "skv-p000436",
       "person_slug": "knut-sorskar",
       "published_date": "2026-05-27",
@@ -2146,7 +2176,7 @@
       "gender_label": "Menn",
       "class_name": "FH Menn",
       "class_place": "1",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "5 km",
       "result_time_raw": "23:56",
       "result_time_normalized": "23:56",
@@ -2164,7 +2194,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-64cc7a72228802f6",
+      "result_id": "res-b93d423e1baadac2",
       "person_id": "skv-p000250",
       "person_slug": "ole-jonas-nybo",
       "published_date": "2026-05-27",
@@ -2175,7 +2205,7 @@
       "gender_label": "Menn",
       "class_name": "Menn 40-44 år ",
       "class_place": "30",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "5 km",
       "result_time_raw": "24:58",
       "result_time_normalized": "24:58",
@@ -2193,7 +2223,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-28e4e7b77f55d254",
+      "result_id": "res-b0daf1e0cc4cd751",
       "person_id": "skv-p000080",
       "person_slug": "ernst-kristiansen",
       "published_date": "2026-05-27",
@@ -2204,7 +2234,7 @@
       "gender_label": "Menn",
       "class_name": "Menn 75-79 år ",
       "class_place": "1",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "5 km",
       "result_time_raw": "25:05",
       "result_time_normalized": "25:05",
@@ -2222,7 +2252,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-704b8ab4dc396f31",
+      "result_id": "res-f00ebe26f8173a68",
       "person_id": "skv-p000437",
       "person_slug": "magnus-kjesrud",
       "published_date": "2026-05-27",
@@ -2233,7 +2263,7 @@
       "gender_label": "Menn",
       "class_name": "Menn 45-49 år",
       "class_place": "28",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "5 km",
       "result_time_raw": "25:20",
       "result_time_normalized": "25:20",
@@ -2251,7 +2281,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-51961f9d5f2fb7b6",
+      "result_id": "res-741d28a228d09ce7",
       "person_id": "skv-p000427",
       "person_slug": "elin-lippe-stavnes",
       "published_date": "2026-05-27",
@@ -2262,7 +2292,7 @@
       "gender_label": "Kvinner",
       "class_name": "Fornebutrippelen kvinner",
       "class_place": "15",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "5 km",
       "result_time_raw": "26:25",
       "result_time_normalized": "26:25",
@@ -2280,7 +2310,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-65f7f2d43bd39876",
+      "result_id": "res-c5a69096ba6e4d09",
       "person_id": "skv-p000031",
       "person_slug": "anne-berit-gravvold",
       "published_date": "2026-05-27",
@@ -2291,7 +2321,7 @@
       "gender_label": "Kvinner",
       "class_name": "Kvinner 45-49 år ",
       "class_place": "8",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "5 km",
       "result_time_raw": "28:03",
       "result_time_normalized": "28:03",
@@ -2309,7 +2339,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-7ea0f9779cd5565a",
+      "result_id": "res-8dd5ae70d1161c24",
       "person_id": "skv-p000422",
       "person_slug": "anne-sofie-fosselie",
       "published_date": "2026-05-27",
@@ -2320,7 +2350,7 @@
       "gender_label": "Kvinner",
       "class_name": "Kvinner 23-34 år",
       "class_place": "53",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "5 km",
       "result_time_raw": "29:35",
       "result_time_normalized": "29:35",
@@ -2338,7 +2368,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-8328060e1f695e2e",
+      "result_id": "res-bf39c03b9fe26028",
       "person_id": "skv-p000433",
       "person_slug": "julian-baevre",
       "published_date": "2026-05-27",
@@ -2349,7 +2379,7 @@
       "gender_label": "Menn",
       "class_name": "FH Barn",
       "class_place": "",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "5 km",
       "result_time_raw": "33:03",
       "result_time_normalized": "33:03",
@@ -2367,7 +2397,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-ca81d93b50b822e2",
+      "result_id": "res-046c8b672621d0b4",
       "person_id": "skv-p000319",
       "person_slug": "theodor-berre-jacobsen",
       "published_date": "2026-05-27",
@@ -2378,7 +2408,7 @@
       "gender_label": "Menn",
       "class_name": "Menn 23-34 år",
       "class_place": "1",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "10 km",
       "result_time_raw": "30:29",
       "result_time_normalized": "30:29",
@@ -2396,7 +2426,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-794296024c2ba2a4",
+      "result_id": "res-7a90b28cd83b3e9f",
       "person_id": "skv-p000051",
       "person_slug": "constantin-rust",
       "published_date": "2026-05-27",
@@ -2407,7 +2437,7 @@
       "gender_label": "Menn",
       "class_name": "Menn 23-34 år",
       "class_place": "2",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "10 km",
       "result_time_raw": "31:39",
       "result_time_normalized": "31:39",
@@ -2425,7 +2455,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-fbf74333b38b983e",
+      "result_id": "res-d0e666ca050a8339",
       "person_id": "skv-p000156",
       "person_slug": "jostein-rogstad",
       "published_date": "2026-05-27",
@@ -2436,7 +2466,7 @@
       "gender_label": "Menn",
       "class_name": "Fornebutrippelen Menn",
       "class_place": "1",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "10 km",
       "result_time_raw": "32:11",
       "result_time_normalized": "32:11",
@@ -2454,7 +2484,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-642d97c72d342615",
+      "result_id": "res-3239026239ed65f1",
       "person_id": "skv-p000174",
       "person_slug": "kristian-froyen",
       "published_date": "2026-05-27",
@@ -2465,7 +2495,7 @@
       "gender_label": "Menn",
       "class_name": "Menn 23-34 år",
       "class_place": "5",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "10 km",
       "result_time_raw": "32:16",
       "result_time_normalized": "32:16",
@@ -2483,7 +2513,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-0d0a5de7d87547ab",
+      "result_id": "res-83ef24f503e3ee44",
       "person_id": "skv-p000432",
       "person_slug": "haakon-engelsen-berg",
       "published_date": "2026-05-27",
@@ -2494,7 +2524,7 @@
       "gender_label": "Menn",
       "class_name": "Fornebutrippelen Menn",
       "class_place": "2",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "10 km",
       "result_time_raw": "32:53",
       "result_time_normalized": "32:53",
@@ -2512,7 +2542,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-2e875f810b55c8a7",
+      "result_id": "res-0ce69cd038c9feb1",
       "person_id": "skv-p000424",
       "person_slug": "bjorn-alexander-hovland",
       "published_date": "2026-05-27",
@@ -2523,7 +2553,7 @@
       "gender_label": "Menn",
       "class_name": "Menn 23-34 år",
       "class_place": "12",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "10 km",
       "result_time_raw": "33:39",
       "result_time_normalized": "33:39",
@@ -2541,7 +2571,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-407a7002f8a7a327",
+      "result_id": "res-890809a2ed43d12f",
       "person_id": "skv-p000193",
       "person_slug": "madelene-wanvik-holum",
       "published_date": "2026-05-27",
@@ -2552,7 +2582,7 @@
       "gender_label": "Kvinner",
       "class_name": "Fornebutrippelen kvinner",
       "class_place": "1",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "10 km",
       "result_time_raw": "34:58",
       "result_time_normalized": "34:58",
@@ -2570,7 +2600,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-6a43b60cbbbbc473",
+      "result_id": "res-c88d9708135d24d7",
       "person_id": "skv-p000439",
       "person_slug": "mathias-moller",
       "published_date": "2026-05-27",
@@ -2581,7 +2611,7 @@
       "gender_label": "Menn",
       "class_name": "Menn 23-34 år",
       "class_place": "43",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "10 km",
       "result_time_raw": "36:26",
       "result_time_normalized": "36:26",
@@ -2599,7 +2629,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-e0b26dc78a6de4a3",
+      "result_id": "res-239271f3c9a39995",
       "person_id": "skv-p000069",
       "person_slug": "erik-bjorgum",
       "published_date": "2026-05-27",
@@ -2610,7 +2640,7 @@
       "gender_label": "Menn",
       "class_name": "Menn 23-34 år",
       "class_place": "68",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "10 km",
       "result_time_raw": "37:51",
       "result_time_normalized": "37:51",
@@ -2628,7 +2658,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-a540183ecf6dc16d",
+      "result_id": "res-d3e43d38804bd8ba",
       "person_id": "skv-p000442",
       "person_slug": "sigve-aalmo",
       "published_date": "2026-05-27",
@@ -2639,7 +2669,7 @@
       "gender_label": "Menn",
       "class_name": "Menn 23-34 år",
       "class_place": "69",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "10 km",
       "result_time_raw": "37:52",
       "result_time_normalized": "37:52",
@@ -2657,7 +2687,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-e9eb7ec67b7bc986",
+      "result_id": "res-bce47de0c4682a4d",
       "person_id": "skv-p000315",
       "person_slug": "sven-thelin",
       "published_date": "2026-05-27",
@@ -2668,7 +2698,7 @@
       "gender_label": "Menn",
       "class_name": "Menn 55-59 år",
       "class_place": "5",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "10 km",
       "result_time_raw": "38:46",
       "result_time_normalized": "38:46",
@@ -2686,7 +2716,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-4f9be78798b82b8b",
+      "result_id": "res-ba4db65e2cbda1d9",
       "person_id": "skv-p000287",
       "person_slug": "simon-skretting",
       "published_date": "2026-05-27",
@@ -2697,7 +2727,7 @@
       "gender_label": "Menn",
       "class_name": "Menn 23-34 år",
       "class_place": "110",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "10 km",
       "result_time_raw": "39:30",
       "result_time_normalized": "39:30",
@@ -2715,7 +2745,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-59c9ef37d141f870",
+      "result_id": "res-6ed0a47818b20d19",
       "person_id": "skv-p000425",
       "person_slug": "cecilie-knudsen",
       "published_date": "2026-05-27",
@@ -2726,7 +2756,7 @@
       "gender_label": "Kvinner",
       "class_name": "Kvinner 23-34 år",
       "class_place": "14",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "10 km",
       "result_time_raw": "39:48",
       "result_time_normalized": "39:48",
@@ -2744,7 +2774,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-df0da40c321eac7e",
+      "result_id": "res-74822dcc30b84ac4",
       "person_id": "skv-p000013",
       "person_slug": "amalie-tolcsiner",
       "published_date": "2026-05-27",
@@ -2755,7 +2785,7 @@
       "gender_label": "Kvinner",
       "class_name": "Kvinner 23-34 år",
       "class_place": "16",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "10 km",
       "result_time_raw": "40:13",
       "result_time_normalized": "40:13",
@@ -2773,7 +2803,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-5ab8736db33fab29",
+      "result_id": "res-a7b14b0b3a3dca6e",
       "person_id": "skv-p000072",
       "person_slug": "erik-flolo",
       "published_date": "2026-05-27",
@@ -2784,7 +2814,7 @@
       "gender_label": "Menn",
       "class_name": "Menn 23-34 år",
       "class_place": "137",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "10 km",
       "result_time_raw": "40:39",
       "result_time_normalized": "40:39",
@@ -2802,7 +2832,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-f84f0fcdfce119ca",
+      "result_id": "res-a13176baf1cefcb5",
       "person_id": "skv-p000434",
       "person_slug": "kara-hua-meunier",
       "published_date": "2026-05-27",
@@ -2813,7 +2843,7 @@
       "gender_label": "Kvinner",
       "class_name": "Kvinner 23-34 år",
       "class_place": "20",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "10 km",
       "result_time_raw": "40:58",
       "result_time_normalized": "40:58",
@@ -2831,7 +2861,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-b36c258c278302f5",
+      "result_id": "res-0a709692132339fa",
       "person_id": "skv-p000441",
       "person_slug": "ragnhild-aamdal",
       "published_date": "2026-05-27",
@@ -2842,7 +2872,7 @@
       "gender_label": "Kvinner",
       "class_name": "Kvinner 45-49 år ",
       "class_place": "2",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "10 km",
       "result_time_raw": "41:34",
       "result_time_normalized": "41:34",
@@ -2860,7 +2890,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-6587378c8b5a71ec",
+      "result_id": "res-39eca3d0abad60e6",
       "person_id": "skv-p000293",
       "person_slug": "sissel-oversand",
       "published_date": "2026-05-27",
@@ -2871,7 +2901,7 @@
       "gender_label": "Kvinner",
       "class_name": "Kvinner 50-54 år ",
       "class_place": "2",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "10 km",
       "result_time_raw": "41:35",
       "result_time_normalized": "41:35",
@@ -2889,7 +2919,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-82860408570b9f53",
+      "result_id": "res-819334b832f28d76",
       "person_id": "skv-p000030",
       "person_slug": "anna-syrstad",
       "published_date": "2026-05-27",
@@ -2900,7 +2930,7 @@
       "gender_label": "Kvinner",
       "class_name": "Kvinner 23-34 år",
       "class_place": "27",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "10 km",
       "result_time_raw": "41:41",
       "result_time_normalized": "41:41",
@@ -2918,7 +2948,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-64d7831dce6d174f",
+      "result_id": "res-c35f0d13601f5a0c",
       "person_id": "skv-p000282",
       "person_slug": "silje-solvang",
       "published_date": "2026-05-27",
@@ -2929,7 +2959,7 @@
       "gender_label": "Kvinner",
       "class_name": "Kvinner 23-34 år",
       "class_place": "29",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "10 km",
       "result_time_raw": "41:59",
       "result_time_normalized": "41:59",
@@ -2947,7 +2977,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-c682cfd211645641",
+      "result_id": "res-4e7be6d2717dd7ea",
       "person_id": "skv-p000445",
       "person_slug": "tora-husum-kristensen",
       "published_date": "2026-05-27",
@@ -2958,7 +2988,7 @@
       "gender_label": "Kvinner",
       "class_name": "Fornebutrippelen kvinner",
       "class_place": "4",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "10 km",
       "result_time_raw": "42:28",
       "result_time_normalized": "42:28",
@@ -2976,7 +3006,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-ccabf67d5a22cd3c",
+      "result_id": "res-2ea2f57a36782c14",
       "person_id": "skv-p000429",
       "person_slug": "fredrik-halsbog",
       "published_date": "2026-05-27",
@@ -2987,7 +3017,7 @@
       "gender_label": "Menn",
       "class_name": "Menn 40-44 år ",
       "class_place": "55",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "10 km",
       "result_time_raw": "42:29",
       "result_time_normalized": "42:29",
@@ -3005,7 +3035,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-6c833a3529f1f187",
+      "result_id": "res-d04202d56102c885",
       "person_id": "skv-p000431",
       "person_slug": "ger-wijnandus-van-graas",
       "published_date": "2026-05-27",
@@ -3016,7 +3046,7 @@
       "gender_label": "Menn",
       "class_name": "Fornebutrippelen Menn",
       "class_place": "28",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "10 km",
       "result_time_raw": "42:49",
       "result_time_normalized": "42:49",
@@ -3034,7 +3064,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-589f76c74f05f191",
+      "result_id": "res-d6229dcae16146ea",
       "person_id": "skv-p000370",
       "person_slug": "thomas-beka",
       "published_date": "2026-05-27",
@@ -3045,7 +3075,7 @@
       "gender_label": "Menn",
       "class_name": "Menn 40-44 år ",
       "class_place": "61",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "10 km",
       "result_time_raw": "42:50",
       "result_time_normalized": "42:50",
@@ -3063,7 +3093,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-5ecaa9229a0b0b89",
+      "result_id": "res-525e1ba6b79a6ed5",
       "person_id": "skv-p000014",
       "person_slug": "anders-nordby",
       "published_date": "2026-05-27",
@@ -3074,7 +3104,7 @@
       "gender_label": "Menn",
       "class_name": "Menn 50-54 år",
       "class_place": "43",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "10 km",
       "result_time_raw": "44:47",
       "result_time_normalized": "44:47",
@@ -3092,7 +3122,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-379679f855409bb5",
+      "result_id": "res-4366735cde190fd0",
       "person_id": "skv-p000438",
       "person_slug": "mari-gronning-vatn",
       "published_date": "2026-05-27",
@@ -3103,7 +3133,7 @@
       "gender_label": "Kvinner",
       "class_name": "Kvinner35-39 år ",
       "class_place": "16",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "10 km",
       "result_time_raw": "44:58",
       "result_time_normalized": "44:58",
@@ -3121,7 +3151,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-357e4fe8041d688c",
+      "result_id": "res-597e0ff676dd15e6",
       "person_id": "skv-p000327",
       "person_slug": "tone-gravvold",
       "published_date": "2026-05-27",
@@ -3132,7 +3162,7 @@
       "gender_label": "Kvinner",
       "class_name": "Fornebutrippelen kvinner",
       "class_place": "8",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "10 km",
       "result_time_raw": "45:13",
       "result_time_normalized": "45:13",
@@ -3150,7 +3180,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-fd737196d685600a",
+      "result_id": "res-89573669af9c0571",
       "person_id": "skv-p000046",
       "person_slug": "christian-lillebo",
       "published_date": "2026-05-27",
@@ -3161,7 +3191,7 @@
       "gender_label": "Menn",
       "class_name": "Fornebutrippelen Menn",
       "class_place": "39",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "10 km",
       "result_time_raw": "45:57",
       "result_time_normalized": "45:57",
@@ -3179,7 +3209,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-00e0197190b4f1c2",
+      "result_id": "res-0f7fc2c1ea595fe8",
       "person_id": "skv-p000443",
       "person_slug": "solveig-hveem",
       "published_date": "2026-05-27",
@@ -3190,7 +3220,7 @@
       "gender_label": "Kvinner",
       "class_name": "Jenter 15 år",
       "class_place": "2",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "10 km",
       "result_time_raw": "45:59",
       "result_time_normalized": "45:59",
@@ -3208,7 +3238,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-207f3e747562c51b",
+      "result_id": "res-d84d29ac41270fcc",
       "person_id": "skv-p000022",
       "person_slug": "andreas-havsberg",
       "published_date": "2026-05-27",
@@ -3219,7 +3249,7 @@
       "gender_label": "Menn",
       "class_name": "Menn 50-54 år",
       "class_place": "59",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "10 km",
       "result_time_raw": "47:40",
       "result_time_normalized": "47:40",
@@ -3237,7 +3267,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-17a0804c3eb3c1d3",
+      "result_id": "res-2ca28e95d3d2b2d2",
       "person_id": "skv-p000037",
       "person_slug": "asta-ellingvag",
       "published_date": "2026-05-27",
@@ -3248,7 +3278,7 @@
       "gender_label": "Kvinner",
       "class_name": "Kvinner35-39 år ",
       "class_place": "41",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "10 km",
       "result_time_raw": "50:00",
       "result_time_normalized": "50:00",
@@ -3266,7 +3296,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-b396a2fcedb9a71b",
+      "result_id": "res-c9656eaab4302043",
       "person_id": "skv-p000428",
       "person_slug": "fredrik-cornelius-rygh-jensen",
       "published_date": "2026-05-27",
@@ -3277,7 +3307,7 @@
       "gender_label": "Menn",
       "class_name": "Gutter 14 år ",
       "class_place": "7",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "10 km",
       "result_time_raw": "54:20",
       "result_time_normalized": "54:20",
@@ -3295,7 +3325,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-589d6074839668d7",
+      "result_id": "res-56eaf986b342e084",
       "person_id": "skv-p000212",
       "person_slug": "marita-sandberg",
       "published_date": "2026-05-27",
@@ -3306,7 +3336,7 @@
       "gender_label": "Kvinner",
       "class_name": "Kvinner 45-49 år ",
       "class_place": "30",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "10 km",
       "result_time_raw": "54:44",
       "result_time_normalized": "54:44",
@@ -3324,7 +3354,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-9302f74bfabae641",
+      "result_id": "res-35383a78b9194500",
       "person_id": "skv-p000427",
       "person_slug": "elin-lippe-stavnes",
       "published_date": "2026-05-27",
@@ -3335,7 +3365,7 @@
       "gender_label": "Kvinner",
       "class_name": "Fornebutrippelen kvinner",
       "class_place": "29",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "10 km",
       "result_time_raw": "1:00:27",
       "result_time_normalized": "1:00:27",
@@ -3353,7 +3383,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-bf32a776007ee16a",
+      "result_id": "res-f3462f86d52ec04b",
       "person_id": "skv-p000435",
       "person_slug": "karianne-havsberg",
       "published_date": "2026-05-27",
@@ -3364,7 +3394,7 @@
       "gender_label": "Kvinner",
       "class_name": "FH Damer",
       "class_place": "1",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "10 km",
       "result_time_raw": "1:04:41",
       "result_time_normalized": "1:04:41",
@@ -3382,7 +3412,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-fd959d7b97d85071",
+      "result_id": "res-0984ebc14836952c",
       "person_id": "skv-p000001",
       "person_slug": "adne-andersen",
       "published_date": "2026-05-27",
@@ -3393,7 +3423,7 @@
       "gender_label": "Menn",
       "class_name": "Menn 23-34 år",
       "class_place": "1",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "3 km",
       "result_time_raw": "8:32",
       "result_time_normalized": "8:32",
@@ -3411,7 +3441,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-2e41ecd09b7bcffb",
+      "result_id": "res-828e7c7101d64d07",
       "person_id": "skv-p000432",
       "person_slug": "haakon-engelsen-berg",
       "published_date": "2026-05-27",
@@ -3422,7 +3452,7 @@
       "gender_label": "Menn",
       "class_name": "Fornebutrippelen Menn",
       "class_place": "1",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "3 km",
       "result_time_raw": "9:26",
       "result_time_normalized": "9:26",
@@ -3440,7 +3470,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-22f3306e51d2b212",
+      "result_id": "res-ad795df780566607",
       "person_id": "skv-p000156",
       "person_slug": "jostein-rogstad",
       "published_date": "2026-05-27",
@@ -3451,7 +3481,7 @@
       "gender_label": "Menn",
       "class_name": "Fornebutrippelen Menn",
       "class_place": "3",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "3 km",
       "result_time_raw": "9:29",
       "result_time_normalized": "9:29",
@@ -3469,7 +3499,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-767aac7fcfce9c25",
+      "result_id": "res-3a11b95644bbc3da",
       "person_id": "skv-p000193",
       "person_slug": "madelene-wanvik-holum",
       "published_date": "2026-05-27",
@@ -3480,7 +3510,7 @@
       "gender_label": "Kvinner",
       "class_name": "Fornebutrippelen kvinner",
       "class_place": "1",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "3 km",
       "result_time_raw": "9:54",
       "result_time_normalized": "9:54",
@@ -3498,7 +3528,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-d4047a8ae8c42342",
+      "result_id": "res-d5e26ff426eea7b6",
       "person_id": "skv-p000128",
       "person_slug": "ine-bakken",
       "published_date": "2026-05-27",
@@ -3509,7 +3539,7 @@
       "gender_label": "Kvinner",
       "class_name": "Kvinner 23-34 år",
       "class_place": "2",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "3 km",
       "result_time_raw": "9:57",
       "result_time_normalized": "9:57",
@@ -3527,7 +3557,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-7f0e315d94681700",
+      "result_id": "res-3f9aa71b12b3cde5",
       "person_id": "skv-p000027",
       "person_slug": "anette-killerud-odegard",
       "published_date": "2026-05-27",
@@ -3538,7 +3568,7 @@
       "gender_label": "Kvinner",
       "class_name": "Kvinner35-39 år ",
       "class_place": "1",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "3 km",
       "result_time_raw": "10:09",
       "result_time_normalized": "10:09",
@@ -3556,7 +3586,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-b6aa89316388295b",
+      "result_id": "res-17f15137a6622564",
       "person_id": "skv-p000216",
       "person_slug": "marte-lien-johnsen",
       "published_date": "2026-05-27",
@@ -3567,7 +3597,7 @@
       "gender_label": "Kvinner",
       "class_name": "Kvinner 23-34 år",
       "class_place": "4",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "3 km",
       "result_time_raw": "10:40",
       "result_time_normalized": "10:40",
@@ -3585,7 +3615,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-21c09ac824b19995",
+      "result_id": "res-fa1150fb3da6e0ab",
       "person_id": "skv-p000412",
       "person_slug": "magnus-baekkevar-semb",
       "published_date": "2026-05-27",
@@ -3596,7 +3626,7 @@
       "gender_label": "Menn",
       "class_name": "Gutter 14 år ",
       "class_place": "3",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "3 km",
       "result_time_raw": "11:17",
       "result_time_normalized": "11:17",
@@ -3614,7 +3644,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-1f1023e24cb99e73",
+      "result_id": "res-071dd779798fbeef",
       "person_id": "skv-p000445",
       "person_slug": "tora-husum-kristensen",
       "published_date": "2026-05-27",
@@ -3625,7 +3655,7 @@
       "gender_label": "Kvinner",
       "class_name": "Fornebutrippelen kvinner",
       "class_place": "5",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "3 km",
       "result_time_raw": "12:26",
       "result_time_normalized": "12:26",
@@ -3643,7 +3673,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-cee0deb4f6e839bb",
+      "result_id": "res-d57beff6cdb84114",
       "person_id": "skv-p000431",
       "person_slug": "ger-wijnandus-van-graas",
       "published_date": "2026-05-27",
@@ -3654,7 +3684,7 @@
       "gender_label": "Menn",
       "class_name": "Fornebutrippelen Menn",
       "class_place": "41",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "3 km",
       "result_time_raw": "12:27",
       "result_time_normalized": "12:27",
@@ -3672,7 +3702,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-1b87c220073b2a2e",
+      "result_id": "res-5845d5028bfe480b",
       "person_id": "skv-p000426",
       "person_slug": "edvald-slettvag",
       "published_date": "2026-05-27",
@@ -3683,7 +3713,7 @@
       "gender_label": "Menn",
       "class_name": "Gutter 10 år",
       "class_place": "",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "3 km",
       "result_time_raw": "13:15",
       "result_time_normalized": "13:15",
@@ -3701,7 +3731,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-329f20895cec7516",
+      "result_id": "res-9e8b89e4da059f98",
       "person_id": "skv-p000046",
       "person_slug": "christian-lillebo",
       "published_date": "2026-05-27",
@@ -3712,7 +3742,7 @@
       "gender_label": "Menn",
       "class_name": "Fornebutrippelen Menn",
       "class_place": "49",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "3 km",
       "result_time_raw": "13:39",
       "result_time_normalized": "13:39",
@@ -3730,7 +3760,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-2b257ececac3e725",
+      "result_id": "res-3d4f84c3c4fa7e5b",
       "person_id": "skv-p000327",
       "person_slug": "tone-gravvold",
       "published_date": "2026-05-27",
@@ -3741,7 +3771,7 @@
       "gender_label": "Kvinner",
       "class_name": "Fornebutrippelen kvinner",
       "class_place": "11",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "3 km",
       "result_time_raw": "14:07",
       "result_time_normalized": "14:07",
@@ -3759,7 +3789,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-5cecbc3ee2cee465",
+      "result_id": "res-c40db8349d2b1fc1",
       "person_id": "skv-p000427",
       "person_slug": "elin-lippe-stavnes",
       "published_date": "2026-05-27",
@@ -3770,7 +3800,7 @@
       "gender_label": "Kvinner",
       "class_name": "Fornebutrippelen kvinner",
       "class_place": "17",
-      "event_label": "Fornebul?pet 2026",
+      "event_label": "Fornebuløpet 2026",
       "distance": "3 km",
       "result_time_raw": "15:07",
       "result_time_normalized": "15:07",
@@ -27075,11 +27105,11 @@
           "rank": 7,
           "person_id": "skv-p000193",
           "person_slug": "madelene-wanvik-holum",
-          "result_id": "res-cbaf9fcbe85b799d",
+          "result_id": "res-82e818a3ae99f825",
           "athlete_name": "Madelène Wanvik Holum",
           "result_time": "16:39",
           "result_time_seconds": 999.0,
-          "event_label": "Fornebul?pet 2026",
+          "event_label": "Fornebuløpet 2026",
           "published_date": "2026-05-27",
           "published_date_label": "27.05.2026"
         },
@@ -27091,11 +27121,11 @@
           "rank": 8,
           "person_id": "skv-p000430",
           "person_slug": "frida-bjornstad-konow",
-          "result_id": "res-2289365bbb556542",
+          "result_id": "res-77c8404cd51e8c6a",
           "athlete_name": "Frida Bjørnstad Konow",
           "result_time": "16:40",
           "result_time_seconds": 1000.0,
-          "event_label": "Fornebul?pet 2026",
+          "event_label": "Fornebuløpet 2026",
           "published_date": "2026-05-27",
           "published_date_label": "27.05.2026"
         },
@@ -27173,11 +27203,11 @@
           "rank": 3,
           "person_id": "skv-p000001",
           "person_slug": "adne-andersen",
-          "result_id": "res-cca72482c617ad37",
+          "result_id": "res-b33f6344336b35a5",
           "athlete_name": "Ådne Andersen",
           "result_time": "15:10",
           "result_time_seconds": 910.0,
-          "event_label": "Fornebul?pet 2026",
+          "event_label": "Fornebuløpet 2026",
           "published_date": "2026-05-27",
           "published_date_label": "27.05.2026"
         },
@@ -28738,12 +28768,12 @@
             "class_place": "6"
           },
           {
-            "result_id": "res-cca72482c617ad37",
+            "result_id": "res-b33f6344336b35a5",
             "distance": "5 km",
             "source_distance": "5 km",
             "result_time": "15:10",
             "result_time_seconds": 910.0,
-            "event_label": "Fornebul?pet 2026",
+            "event_label": "Fornebuløpet 2026",
             "published_date": "2026-05-27",
             "published_date_label": "27.05.2026",
             "week_number": 22,
@@ -28780,12 +28810,12 @@
         ],
         "best_results": [
           {
-            "result_id": "res-48e33a0b044fcb27",
+            "result_id": "res-78c904800433dcdd",
             "distance": "5 km",
             "source_distance": "5 km",
             "result_time": "18:39",
             "result_time_seconds": 1119.0,
-            "event_label": "Fornebul?pet 2026",
+            "event_label": "Fornebuløpet 2026",
             "published_date": "2026-05-27",
             "published_date_label": "27.05.2026",
             "week_number": 22,
@@ -29203,12 +29233,12 @@
         ],
         "best_results": [
           {
-            "result_id": "res-5ecaa9229a0b0b89",
+            "result_id": "res-525e1ba6b79a6ed5",
             "distance": "10 km",
             "source_distance": "10 km",
             "result_time": "44:47",
             "result_time_seconds": 2687.0,
-            "event_label": "Fornebul?pet 2026",
+            "event_label": "Fornebuløpet 2026",
             "published_date": "2026-05-27",
             "published_date_label": "27.05.2026",
             "week_number": 22,
@@ -29496,12 +29526,12 @@
             "class_place": "TRIO"
           },
           {
-            "result_id": "res-207f3e747562c51b",
+            "result_id": "res-d84d29ac41270fcc",
             "distance": "10 km",
             "source_distance": "10 km",
             "result_time": "47:40",
             "result_time_seconds": 2860.0,
-            "event_label": "Fornebul?pet 2026",
+            "event_label": "Fornebuløpet 2026",
             "published_date": "2026-05-27",
             "published_date_label": "27.05.2026",
             "week_number": 22,
@@ -29849,12 +29879,12 @@
         ],
         "best_results": [
           {
-            "result_id": "res-65f7f2d43bd39876",
+            "result_id": "res-c5a69096ba6e4d09",
             "distance": "5 km",
             "source_distance": "5 km",
             "result_time": "28:03",
             "result_time_seconds": 1683.0,
-            "event_label": "Fornebul?pet 2026",
+            "event_label": "Fornebuløpet 2026",
             "published_date": "2026-05-27",
             "published_date_label": "27.05.2026",
             "week_number": 22,
@@ -29919,12 +29949,12 @@
         ],
         "best_results": [
           {
-            "result_id": "res-518b9d44f6069421",
+            "result_id": "res-2c910e1762eaedb9",
             "distance": "5 km",
             "source_distance": "5 km",
             "result_time": "23:02",
             "result_time_seconds": 1382.0,
-            "event_label": "Fornebul?pet 2026",
+            "event_label": "Fornebuløpet 2026",
             "published_date": "2026-05-27",
             "published_date_label": "27.05.2026",
             "week_number": 22,
@@ -29960,12 +29990,12 @@
         ],
         "best_results": [
           {
-            "result_id": "res-7ea0f9779cd5565a",
+            "result_id": "res-8dd5ae70d1161c24",
             "distance": "5 km",
             "source_distance": "5 km",
             "result_time": "29:35",
             "result_time_seconds": 1775.0,
-            "event_label": "Fornebul?pet 2026",
+            "event_label": "Fornebuløpet 2026",
             "published_date": "2026-05-27",
             "published_date_label": "27.05.2026",
             "week_number": 22,
@@ -30228,12 +30258,12 @@
         ],
         "best_results": [
           {
-            "result_id": "res-df109c14f5258cd7",
+            "result_id": "res-8c44397e275c9375",
             "distance": "5 km",
             "source_distance": "5 km",
             "result_time": "17:37",
             "result_time_seconds": 1057.0,
-            "event_label": "Fornebul?pet 2026",
+            "event_label": "Fornebuløpet 2026",
             "published_date": "2026-05-27",
             "published_date_label": "27.05.2026",
             "week_number": 22,
@@ -30368,12 +30398,12 @@
         ],
         "best_results": [
           {
-            "result_id": "res-2e875f810b55c8a7",
+            "result_id": "res-0ce69cd038c9feb1",
             "distance": "10 km",
             "source_distance": "10 km",
             "result_time": "33:39",
             "result_time_seconds": 2019.0,
-            "event_label": "Fornebul?pet 2026",
+            "event_label": "Fornebuløpet 2026",
             "published_date": "2026-05-27",
             "published_date_label": "27.05.2026",
             "week_number": 22,
@@ -30581,12 +30611,12 @@
         ],
         "best_results": [
           {
-            "result_id": "res-59c9ef37d141f870",
+            "result_id": "res-6ed0a47818b20d19",
             "distance": "10 km",
             "source_distance": "10 km",
             "result_time": "39:48",
             "result_time_seconds": 2388.0,
-            "event_label": "Fornebul?pet 2026",
+            "event_label": "Fornebuløpet 2026",
             "published_date": "2026-05-27",
             "published_date_label": "27.05.2026",
             "week_number": 22,
@@ -30695,12 +30725,12 @@
             "class_place": ""
           },
           {
-            "result_id": "res-fd737196d685600a",
+            "result_id": "res-89573669af9c0571",
             "distance": "10 km",
             "source_distance": "10 km",
             "result_time": "45:57",
             "result_time_seconds": 2757.0,
-            "event_label": "Fornebul?pet 2026",
+            "event_label": "Fornebuløpet 2026",
             "published_date": "2026-05-27",
             "published_date_label": "27.05.2026",
             "week_number": 22,
@@ -30933,12 +30963,12 @@
         ],
         "best_results": [
           {
-            "result_id": "res-abfff69f32e886ae",
+            "result_id": "res-2785513c6f8213f5",
             "distance": "5 km",
             "source_distance": "5 km",
             "result_time": "20:16",
             "result_time_seconds": 1216.0,
-            "event_label": "Fornebul?pet 2026",
+            "event_label": "Fornebuløpet 2026",
             "published_date": "2026-05-27",
             "published_date_label": "27.05.2026",
             "week_number": 22,
@@ -31371,12 +31401,12 @@
         ],
         "best_results": [
           {
-            "result_id": "res-51961f9d5f2fb7b6",
+            "result_id": "res-741d28a228d09ce7",
             "distance": "5 km",
             "source_distance": "5 km",
             "result_time": "26:25",
             "result_time_seconds": 1585.0,
-            "event_label": "Fornebul?pet 2026",
+            "event_label": "Fornebuløpet 2026",
             "published_date": "2026-05-27",
             "published_date_label": "27.05.2026",
             "week_number": 22,
@@ -31384,12 +31414,12 @@
             "class_place": "15"
           },
           {
-            "result_id": "res-9302f74bfabae641",
+            "result_id": "res-35383a78b9194500",
             "distance": "10 km",
             "source_distance": "10 km",
             "result_time": "1:00:27",
             "result_time_seconds": 3627.0,
-            "event_label": "Fornebul?pet 2026",
+            "event_label": "Fornebuløpet 2026",
             "published_date": "2026-05-27",
             "published_date_label": "27.05.2026",
             "week_number": 22,
@@ -31636,12 +31666,12 @@
             "class_place": "8"
           },
           {
-            "result_id": "res-e0b26dc78a6de4a3",
+            "result_id": "res-239271f3c9a39995",
             "distance": "10 km",
             "source_distance": "10 km",
             "result_time": "37:51",
             "result_time_seconds": 2271.0,
-            "event_label": "Fornebul?pet 2026",
+            "event_label": "Fornebuløpet 2026",
             "published_date": "2026-05-27",
             "published_date_label": "27.05.2026",
             "week_number": 22,
@@ -31805,12 +31835,12 @@
         ],
         "best_results": [
           {
-            "result_id": "res-d5620caaeab8cb3e",
+            "result_id": "res-3c84431e7e940688",
             "distance": "5 km",
             "source_distance": "5 km",
             "result_time": "16:32",
             "result_time_seconds": 992.0,
-            "event_label": "Fornebul?pet 2026",
+            "event_label": "Fornebuløpet 2026",
             "published_date": "2026-05-27",
             "published_date_label": "27.05.2026",
             "week_number": 22,
@@ -32071,12 +32101,12 @@
         ],
         "best_results": [
           {
-            "result_id": "res-28e4e7b77f55d254",
+            "result_id": "res-b0daf1e0cc4cd751",
             "distance": "5 km",
             "source_distance": "5 km",
             "result_time": "25:05",
             "result_time_seconds": 1505.0,
-            "event_label": "Fornebul?pet 2026",
+            "event_label": "Fornebuløpet 2026",
             "published_date": "2026-05-27",
             "published_date_label": "27.05.2026",
             "week_number": 22,
@@ -32380,12 +32410,12 @@
         ],
         "best_results": [
           {
-            "result_id": "res-b396a2fcedb9a71b",
+            "result_id": "res-c9656eaab4302043",
             "distance": "10 km",
             "source_distance": "10 km",
             "result_time": "54:20",
             "result_time_seconds": 3260.0,
-            "event_label": "Fornebul?pet 2026",
+            "event_label": "Fornebuløpet 2026",
             "published_date": "2026-05-27",
             "published_date_label": "27.05.2026",
             "week_number": 22,
@@ -32437,12 +32467,12 @@
         ],
         "best_results": [
           {
-            "result_id": "res-ccabf67d5a22cd3c",
+            "result_id": "res-2ea2f57a36782c14",
             "distance": "10 km",
             "source_distance": "10 km",
             "result_time": "42:29",
             "result_time_seconds": 2549.0,
-            "event_label": "Fornebul?pet 2026",
+            "event_label": "Fornebuløpet 2026",
             "published_date": "2026-05-27",
             "published_date_label": "27.05.2026",
             "week_number": 22,
@@ -32590,12 +32620,12 @@
         ],
         "best_results": [
           {
-            "result_id": "res-2289365bbb556542",
+            "result_id": "res-77c8404cd51e8c6a",
             "distance": "5 km",
             "source_distance": "5 km",
             "result_time": "16:40",
             "result_time_seconds": 1000.0,
-            "event_label": "Fornebul?pet 2026",
+            "event_label": "Fornebuløpet 2026",
             "published_date": "2026-05-27",
             "published_date_label": "27.05.2026",
             "week_number": 22,
@@ -32690,12 +32720,12 @@
         ],
         "best_results": [
           {
-            "result_id": "res-da68a4d7dc42d400",
+            "result_id": "res-bc362e9613efd965",
             "distance": "5 km",
             "source_distance": "5 km",
             "result_time": "21:27",
             "result_time_seconds": 1287.0,
-            "event_label": "Fornebul?pet 2026",
+            "event_label": "Fornebuløpet 2026",
             "published_date": "2026-05-27",
             "published_date_label": "27.05.2026",
             "week_number": 22,
@@ -32703,12 +32733,12 @@
             "class_place": "38"
           },
           {
-            "result_id": "res-6c833a3529f1f187",
+            "result_id": "res-d04202d56102c885",
             "distance": "10 km",
             "source_distance": "10 km",
             "result_time": "42:49",
             "result_time_seconds": 2569.0,
-            "event_label": "Fornebul?pet 2026",
+            "event_label": "Fornebuløpet 2026",
             "published_date": "2026-05-27",
             "published_date_label": "27.05.2026",
             "week_number": 22,
@@ -32901,12 +32931,12 @@
         ],
         "best_results": [
           {
-            "result_id": "res-ab7a76fcdc283ccb",
+            "result_id": "res-9fc6dd5d125a0cd1",
             "distance": "5 km",
             "source_distance": "5 km",
             "result_time": "16:01",
             "result_time_seconds": 961.0,
-            "event_label": "Fornebul?pet 2026",
+            "event_label": "Fornebuløpet 2026",
             "published_date": "2026-05-27",
             "published_date_label": "27.05.2026",
             "week_number": 22,
@@ -32914,12 +32944,12 @@
             "class_place": "1"
           },
           {
-            "result_id": "res-0d0a5de7d87547ab",
+            "result_id": "res-83ef24f503e3ee44",
             "distance": "10 km",
             "source_distance": "10 km",
             "result_time": "32:53",
             "result_time_seconds": 1973.0,
-            "event_label": "Fornebul?pet 2026",
+            "event_label": "Fornebuløpet 2026",
             "published_date": "2026-05-27",
             "published_date_label": "27.05.2026",
             "week_number": 22,
@@ -33099,12 +33129,12 @@
         ],
         "best_results": [
           {
-            "result_id": "res-4d9f13c63037f8c0",
+            "result_id": "res-0132453f8939255f",
             "distance": "5 km",
             "source_distance": "5 km",
             "result_time": "18:58",
             "result_time_seconds": 1138.0,
-            "event_label": "Fornebul?pet 2026",
+            "event_label": "Fornebuløpet 2026",
             "published_date": "2026-05-27",
             "published_date_label": "27.05.2026",
             "week_number": 22,
@@ -35195,12 +35225,12 @@
         ],
         "best_results": [
           {
-            "result_id": "res-945a21eddce74cbc",
+            "result_id": "res-9293fd88cced77ed",
             "distance": "5 km",
             "source_distance": "5 km",
             "result_time": "16:16",
             "result_time_seconds": 976.0,
-            "event_label": "Fornebul?pet 2026",
+            "event_label": "Fornebuløpet 2026",
             "published_date": "2026-05-27",
             "published_date_label": "27.05.2026",
             "week_number": 22,
@@ -35264,12 +35294,12 @@
         ],
         "best_results": [
           {
-            "result_id": "res-8328060e1f695e2e",
+            "result_id": "res-bf39c03b9fe26028",
             "distance": "5 km",
             "source_distance": "5 km",
             "result_time": "33:03",
             "result_time_seconds": 1983.0,
-            "event_label": "Fornebul?pet 2026",
+            "event_label": "Fornebuløpet 2026",
             "published_date": "2026-05-27",
             "published_date_label": "27.05.2026",
             "week_number": 22,
@@ -35516,12 +35546,12 @@
         ],
         "best_results": [
           {
-            "result_id": "res-f84f0fcdfce119ca",
+            "result_id": "res-a13176baf1cefcb5",
             "distance": "10 km",
             "source_distance": "10 km",
             "result_time": "40:58",
             "result_time_seconds": 2458.0,
-            "event_label": "Fornebul?pet 2026",
+            "event_label": "Fornebuløpet 2026",
             "published_date": "2026-05-27",
             "published_date_label": "27.05.2026",
             "week_number": 22,
@@ -35670,12 +35700,12 @@
         ],
         "best_results": [
           {
-            "result_id": "res-bf32a776007ee16a",
+            "result_id": "res-f3462f86d52ec04b",
             "distance": "10 km",
             "source_distance": "10 km",
             "result_time": "1:04:41",
             "result_time_seconds": 3881.0,
-            "event_label": "Fornebul?pet 2026",
+            "event_label": "Fornebuløpet 2026",
             "published_date": "2026-05-27",
             "published_date_label": "27.05.2026",
             "week_number": 22,
@@ -35882,12 +35912,12 @@
         ],
         "best_results": [
           {
-            "result_id": "res-737343e114e10cf5",
+            "result_id": "res-b9bfa5e05c1b0179",
             "distance": "5 km",
             "source_distance": "5 km",
             "result_time": "21:10",
             "result_time_seconds": 1270.0,
-            "event_label": "Fornebul?pet 2026",
+            "event_label": "Fornebuløpet 2026",
             "published_date": "2026-05-27",
             "published_date_label": "27.05.2026",
             "week_number": 22,
@@ -35994,12 +36024,12 @@
         ],
         "best_results": [
           {
-            "result_id": "res-8544dc79761c47de",
+            "result_id": "res-0f0b369bceb3afc6",
             "distance": "5 km",
             "source_distance": "5 km",
             "result_time": "23:56",
             "result_time_seconds": 1436.0,
-            "event_label": "Fornebul?pet 2026",
+            "event_label": "Fornebuløpet 2026",
             "published_date": "2026-05-27",
             "published_date_label": "27.05.2026",
             "week_number": 22,
@@ -36108,12 +36138,12 @@
             "class_place": ""
           },
           {
-            "result_id": "res-642d97c72d342615",
+            "result_id": "res-3239026239ed65f1",
             "distance": "10 km",
             "source_distance": "10 km",
             "result_time": "32:16",
             "result_time_seconds": 1936.0,
-            "event_label": "Fornebul?pet 2026",
+            "event_label": "Fornebuløpet 2026",
             "published_date": "2026-05-27",
             "published_date_label": "27.05.2026",
             "week_number": 22,
@@ -36485,12 +36515,12 @@
         ],
         "best_results": [
           {
-            "result_id": "res-19779067dadb516a",
+            "result_id": "res-1e886994c7166a09",
             "distance": "5 km",
             "source_distance": "5 km",
             "result_time": "21:24",
             "result_time_seconds": 1284.0,
-            "event_label": "Fornebul?pet 2026",
+            "event_label": "Fornebuløpet 2026",
             "published_date": "2026-05-27",
             "published_date_label": "27.05.2026",
             "week_number": 22,
@@ -36765,12 +36795,12 @@
         ],
         "best_results": [
           {
-            "result_id": "res-27858d279f13681e",
+            "result_id": "res-9b800de104c4b81b",
             "distance": "5 km",
             "source_distance": "5 km",
             "result_time": "17:52",
             "result_time_seconds": 1072.0,
-            "event_label": "Fornebul?pet 2026",
+            "event_label": "Fornebuløpet 2026",
             "published_date": "2026-05-27",
             "published_date_label": "27.05.2026",
             "week_number": 22,
@@ -36921,12 +36951,12 @@
             "class_place": ""
           },
           {
-            "result_id": "res-cbaf9fcbe85b799d",
+            "result_id": "res-82e818a3ae99f825",
             "distance": "5 km",
             "source_distance": "5 km",
             "result_time": "16:39",
             "result_time_seconds": 999.0,
-            "event_label": "Fornebul?pet 2026",
+            "event_label": "Fornebuløpet 2026",
             "published_date": "2026-05-27",
             "published_date_label": "27.05.2026",
             "week_number": 22,
@@ -37074,12 +37104,12 @@
         ],
         "best_results": [
           {
-            "result_id": "res-704b8ab4dc396f31",
+            "result_id": "res-f00ebe26f8173a68",
             "distance": "5 km",
             "source_distance": "5 km",
             "result_time": "25:20",
             "result_time_seconds": 1520.0,
-            "event_label": "Fornebul?pet 2026",
+            "event_label": "Fornebuløpet 2026",
             "published_date": "2026-05-27",
             "published_date_label": "27.05.2026",
             "week_number": 22,
@@ -37301,12 +37331,12 @@
         ],
         "best_results": [
           {
-            "result_id": "res-379679f855409bb5",
+            "result_id": "res-4366735cde190fd0",
             "distance": "10 km",
             "source_distance": "10 km",
             "result_time": "44:58",
             "result_time_seconds": 2698.0,
-            "event_label": "Fornebul?pet 2026",
+            "event_label": "Fornebuløpet 2026",
             "published_date": "2026-05-27",
             "published_date_label": "27.05.2026",
             "week_number": 22,
@@ -37588,12 +37618,12 @@
         ],
         "best_results": [
           {
-            "result_id": "res-589d6074839668d7",
+            "result_id": "res-56eaf986b342e084",
             "distance": "10 km",
             "source_distance": "10 km",
             "result_time": "54:44",
             "result_time_seconds": 3284.0,
-            "event_label": "Fornebul?pet 2026",
+            "event_label": "Fornebuløpet 2026",
             "published_date": "2026-05-27",
             "published_date_label": "27.05.2026",
             "week_number": 22,
@@ -38189,12 +38219,12 @@
         ],
         "best_results": [
           {
-            "result_id": "res-6a43b60cbbbbc473",
+            "result_id": "res-c88d9708135d24d7",
             "distance": "10 km",
             "source_distance": "10 km",
             "result_time": "36:26",
             "result_time_seconds": 2186.0,
-            "event_label": "Fornebul?pet 2026",
+            "event_label": "Fornebuløpet 2026",
             "published_date": "2026-05-27",
             "published_date_label": "27.05.2026",
             "week_number": 22,
@@ -38877,12 +38907,12 @@
         ],
         "best_results": [
           {
-            "result_id": "res-c0894714e0a57b27",
+            "result_id": "res-dd18f6707a1418f7",
             "distance": "5 km",
             "source_distance": "5 km",
             "result_time": "22:02",
             "result_time_seconds": 1322.0,
-            "event_label": "Fornebul?pet 2026",
+            "event_label": "Fornebuløpet 2026",
             "published_date": "2026-05-27",
             "published_date_label": "27.05.2026",
             "week_number": 22,
@@ -39692,12 +39722,12 @@
         ],
         "best_results": [
           {
-            "result_id": "res-b36c258c278302f5",
+            "result_id": "res-0a709692132339fa",
             "distance": "10 km",
             "source_distance": "10 km",
             "result_time": "41:34",
             "result_time_seconds": 2494.0,
-            "event_label": "Fornebul?pet 2026",
+            "event_label": "Fornebuløpet 2026",
             "published_date": "2026-05-27",
             "published_date_label": "27.05.2026",
             "week_number": 22,
@@ -39721,12 +39751,12 @@
         ],
         "best_results": [
           {
-            "result_id": "res-386f6b7547d98046",
+            "result_id": "res-1f33a21ff51e081e",
             "distance": "5 km",
             "source_distance": "5 km",
             "result_time": "20:42",
             "result_time_seconds": 1242.0,
-            "event_label": "Fornebul?pet 2026",
+            "event_label": "Fornebuløpet 2026",
             "published_date": "2026-05-27",
             "published_date_label": "27.05.2026",
             "week_number": 22,
@@ -40478,12 +40508,12 @@
         ],
         "best_results": [
           {
-            "result_id": "res-a540183ecf6dc16d",
+            "result_id": "res-d3e43d38804bd8ba",
             "distance": "10 km",
             "source_distance": "10 km",
             "result_time": "37:52",
             "result_time_seconds": 2272.0,
-            "event_label": "Fornebul?pet 2026",
+            "event_label": "Fornebuløpet 2026",
             "published_date": "2026-05-27",
             "published_date_label": "27.05.2026",
             "week_number": 22,
@@ -40536,12 +40566,12 @@
         ],
         "best_results": [
           {
-            "result_id": "res-64d7831dce6d174f",
+            "result_id": "res-c35f0d13601f5a0c",
             "distance": "10 km",
             "source_distance": "10 km",
             "result_time": "41:59",
             "result_time_seconds": 2519.0,
-            "event_label": "Fornebul?pet 2026",
+            "event_label": "Fornebuløpet 2026",
             "published_date": "2026-05-27",
             "published_date_label": "27.05.2026",
             "week_number": 22,
@@ -40900,12 +40930,12 @@
         ],
         "best_results": [
           {
-            "result_id": "res-28ad533d46521b96",
+            "result_id": "res-d0d408bd1ab446fb",
             "distance": "5 km",
             "source_distance": "5 km",
             "result_time": "18:56",
             "result_time_seconds": 1136.0,
-            "event_label": "Fornebul?pet 2026",
+            "event_label": "Fornebuløpet 2026",
             "published_date": "2026-05-27",
             "published_date_label": "27.05.2026",
             "week_number": 22,
@@ -40943,12 +40973,12 @@
             "class_place": "1"
           },
           {
-            "result_id": "res-6587378c8b5a71ec",
+            "result_id": "res-39eca3d0abad60e6",
             "distance": "10 km",
             "source_distance": "10 km",
             "result_time": "41:35",
             "result_time_seconds": 2495.0,
-            "event_label": "Fornebul?pet 2026",
+            "event_label": "Fornebuløpet 2026",
             "published_date": "2026-05-27",
             "published_date_label": "27.05.2026",
             "week_number": 22,
@@ -41070,12 +41100,12 @@
         ],
         "best_results": [
           {
-            "result_id": "res-e2176ee1c7c84ac3",
+            "result_id": "res-b313a1fe698391ec",
             "distance": "5 km",
             "source_distance": "5 km",
             "result_time": "23:20",
             "result_time_seconds": 1400.0,
-            "event_label": "Fornebul?pet 2026",
+            "event_label": "Fornebuløpet 2026",
             "published_date": "2026-05-27",
             "published_date_label": "27.05.2026",
             "week_number": 22,
@@ -41208,12 +41238,12 @@
         ],
         "best_results": [
           {
-            "result_id": "res-00e0197190b4f1c2",
+            "result_id": "res-0f7fc2c1ea595fe8",
             "distance": "10 km",
             "source_distance": "10 km",
             "result_time": "45:59",
             "result_time_seconds": 2759.0,
-            "event_label": "Fornebul?pet 2026",
+            "event_label": "Fornebuløpet 2026",
             "published_date": "2026-05-27",
             "published_date_label": "27.05.2026",
             "week_number": 22,
@@ -41236,12 +41266,12 @@
         ],
         "best_results": [
           {
-            "result_id": "res-b26c7e753fee7c94",
+            "result_id": "res-3879281086100be3",
             "distance": "5 km",
             "source_distance": "5 km",
             "result_time": "22:55",
             "result_time_seconds": 1375.0,
-            "event_label": "Fornebul?pet 2026",
+            "event_label": "Fornebuløpet 2026",
             "published_date": "2026-05-27",
             "published_date_label": "27.05.2026",
             "week_number": 22,
@@ -41460,12 +41490,12 @@
         ],
         "best_results": [
           {
-            "result_id": "res-324bffad9f179679",
+            "result_id": "res-99341b2aee440c77",
             "distance": "5 km",
             "source_distance": "5 km",
             "result_time": "19:23",
             "result_time_seconds": 1163.0,
-            "event_label": "Fornebul?pet 2026",
+            "event_label": "Fornebuløpet 2026",
             "published_date": "2026-05-27",
             "published_date_label": "27.05.2026",
             "week_number": 22,
@@ -41968,12 +41998,12 @@
         ],
         "best_results": [
           {
-            "result_id": "res-589f76c74f05f191",
+            "result_id": "res-d6229dcae16146ea",
             "distance": "10 km",
             "source_distance": "10 km",
             "result_time": "42:50",
             "result_time_seconds": 2570.0,
-            "event_label": "Fornebul?pet 2026",
+            "event_label": "Fornebuløpet 2026",
             "published_date": "2026-05-27",
             "published_date_label": "27.05.2026",
             "week_number": 22,
@@ -42418,12 +42448,12 @@
         ],
         "best_results": [
           {
-            "result_id": "res-99ea41ce76c9e64a",
+            "result_id": "res-040d0ad838d13838",
             "distance": "5 km",
             "source_distance": "5 km",
             "result_time": "21:26",
             "result_time_seconds": 1286.0,
-            "event_label": "Fornebul?pet 2026",
+            "event_label": "Fornebuløpet 2026",
             "published_date": "2026-05-27",
             "published_date_label": "27.05.2026",
             "week_number": 22,
@@ -42431,12 +42461,12 @@
             "class_place": "5"
           },
           {
-            "result_id": "res-c682cfd211645641",
+            "result_id": "res-4e7be6d2717dd7ea",
             "distance": "10 km",
             "source_distance": "10 km",
             "result_time": "42:28",
             "result_time_seconds": 2548.0,
-            "event_label": "Fornebul?pet 2026",
+            "event_label": "Fornebuløpet 2026",
             "published_date": "2026-05-27",
             "published_date_label": "27.05.2026",
             "week_number": 22,
@@ -42849,9 +42879,10 @@
         "display_name": "Vegard Henriksen",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
-          "Halvmaraton"
+          "Halvmaraton",
+          "Maraton"
         ],
         "best_results": [
           {
@@ -42866,10 +42897,23 @@
             "week_number": 15,
             "place": "255",
             "class_place": ""
+          },
+          {
+            "result_id": "res-c2488d81e9b01d11",
+            "distance": "Maraton",
+            "source_distance": "Maraton",
+            "result_time": "4:20:49",
+            "result_time_seconds": 15649.0,
+            "event_label": "Stockholm Marathon 2026",
+            "published_date": "2026-05-30",
+            "published_date_label": "30.05.2026",
+            "week_number": 22,
+            "place": "6514",
+            "class_place": ""
           }
         ],
         "first_result_date": "2026-04-12",
-        "latest_result_date": "2026-04-12"
+        "latest_result_date": "2026-05-30"
       },
       {
         "person_id": "skv-p000339",
