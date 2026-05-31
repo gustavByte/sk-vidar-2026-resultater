@@ -1,0 +1,95 @@
+Fornebulopet 2026 | 27.05.2026 | EQTiming/Kondis workbook
+Kildeark: Forenklet klubbvalg i fornebulopet_2026_vidar_osi_resultater.xlsx
+Filter: Status TIME og Klubb i EQ inneholder Vidar, men ikke OSI/?s/blankt/andre klubber.
+
+2026-05-27 | 10 km | Theodor Berre Jacobsen | startnr 4484 | Menn 23-34 år | Sportsklubben Vidar | 30:29 | plass 1 | kj?nn 1 | klasse 1 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack
+2026-05-27 | 10 km | Constantin Rust | startnr 3497 | Menn 23-34 år | Sportsklubben Vidar | 31:39 | plass 3 | kj?nn 3 | klasse 2 | SK Vidar kun Slack | SKV Slack
+2026-05-27 | 10 km | Jostein Rogstad | startnr 9148 | Fornebutrippelen Menn | Sportsklubben Vidar | 32:11 | plass 6 | kj?nn 6 | klasse 1 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack
+2026-05-27 | 10 km | Kristian Retterstøl Frøyen | startnr 3035 | Menn 23-34 år | Sportsklubben Vidar | 32:16 | plass 7 | kj?nn 7 | klasse 5 | Offisiell klubb | Offisiell Vidar
+2026-05-27 | 10 km | Haakon Engelsen Berg | startnr 9150 | Fornebutrippelen Menn | Sportsklubben Vidar | 32:53 | plass 10 | kj?nn 10 | klasse 2 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack
+2026-05-27 | 10 km | Bjørn Alexander Hovland | startnr 3188 | Menn 23-34 år | Sportsklubben Vidar | 33:39 | plass 14 | kj?nn 14 | klasse 12 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack
+2026-05-27 | 10 km | Madelène Wanvik Holum | startnr 9137 | Fornebutrippelen kvinner | Sportsklubben Vidar | 34:58 | plass 32 | kj?nn 1 | klasse 1 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack; OSIF medlem
+2026-05-27 | 10 km | Mathias Møller | startnr 3021 | Menn 23-34 år | Sportsklubben Vidar | 36:26 | plass 74 | kj?nn 70 | klasse 43 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack
+2026-05-27 | 10 km | Erik Bjørgum | startnr 3161 | Menn 23-34 år | Sportsklubben Vidar | 37:51 | plass 132 | kj?nn 125 | klasse 68 | Offisiell klubb | Offisiell Vidar
+2026-05-27 | 10 km | Sigve Aalmo | startnr 3151 | Menn 23-34 år | Sportsklubben Vidar | 37:52 | plass 134 | kj?nn 127 | klasse 69 | Offisiell klubb | Offisiell Vidar
+2026-05-27 | 10 km | Sven Thelin | startnr 3180 | Menn 55-59 år | Sportsklubben Vidar | 38:46 | plass 185 | kj?nn 171 | klasse 5 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack
+2026-05-27 | 10 km | Simon Skretting | startnr 3457 | Menn 23-34 år | Sportsklubben Vidar | 39:30 | plass 242 | kj?nn 226 | klasse 110 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack
+2026-05-27 | 10 km | Cecilie Knudsen | startnr 3595 | Kvinner 23-34 år | Sportsklubben Vidar | 39:48 | plass 265 | kj?nn 18 | klasse 14 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV oppmote; SKV Slack
+2026-05-27 | 10 km | Amalie Tolcsiner | startnr 3377 | Kvinner 23-34 år | Vidar | 40:13 | plass 292 | kj?nn 21 | klasse 16 | Offisiell klubb | Offisiell Vidar
+2026-05-27 | 10 km | Erik Flølo | startnr 3454 | Menn 23-34 år | Sportsklubben Vidar | 40:39 | plass 330 | kj?nn 305 | klasse 137 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack
+2026-05-27 | 10 km | Kara Hua Meunier | startnr 3890 | Kvinner 23-34 år | Sportsklubben Vidar | 40:58 | plass 354 | kj?nn 26 | klasse 20 | Offisiell klubb | Offisiell Vidar
+2026-05-27 | 10 km | Ragnhild Aamdal | startnr 3453 | Kvinner 45-49 år  | Sportsklubben Vidar | 41:34 | plass 414 | kj?nn 30 | klasse 2 | Offisiell klubb | Offisiell Vidar
+2026-05-27 | 10 km | Sissel Hegdahl Oversand | startnr 3376 | Kvinner 50-54 år  | Sportsklubben Vidar | 41:35 | plass 417 | kj?nn 32 | klasse 2 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack
+2026-05-27 | 10 km | Anna Syrstad | startnr 3179 | Kvinner 23-34 år | SK Vidar | 41:41 | plass 427 | kj?nn 35 | klasse 27 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack
+2026-05-27 | 10 km | Silje Solvang | startnr 5103 | Kvinner 23-34 år | Sportsklubben Vidar | 41:59 | plass 447 | kj?nn 38 | klasse 29 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack
+2026-05-27 | 10 km | Tora Husum Kristensen | startnr 9136 | Fornebutrippelen kvinner | Sportsklubben Vidar | 42:28 | plass 491 | kj?nn 46 | klasse 4 | Potensiell klubbrelasjon | SKV aktiv; OSIF medlem
+2026-05-27 | 10 km | Fredrik Halsbog | startnr 3036 | Menn 40-44 år  | Sportsklubben Vidar | 42:29 | plass 493 | kj?nn 447 | klasse 55 | Offisiell klubb | Offisiell Vidar
+2026-05-27 | 10 km | Ger Wijnandus van Graas | startnr 9066 | Fornebutrippelen Menn | Sportsklubben Vidar | 42:49 | plass 528 | kj?nn 478 | klasse 28 | Offisiell klubb | Offisiell Vidar
+2026-05-27 | 10 km | Thomas Beka | startnr 3651 | Menn 40-44 år  | Sportsklubben Vidar | 42:50 | plass 529 | kj?nn 479 | klasse 61 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack
+2026-05-27 | 10 km | Anders Nordby | startnr 3706 | Menn 50-54 år | Sportsklubben Vidar | 44:47 | plass 686 | kj?nn 602 | klasse 43 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack
+2026-05-27 | 10 km | Mari Grønning Vatn | startnr 3458 | Kvinner35-39 år  | Sportsklubben Vidar | 44:58 | plass 699 | kj?nn 89 | klasse 16 | Offisiell klubb | Offisiell Vidar; OSIF medlem
+2026-05-27 | 10 km | Tone Gravvold | startnr 9149 | Fornebutrippelen kvinner | Sportsklubben Vidar | 45:13 | plass 729 | kj?nn 95 | klasse 8 | Offisiell klubb | Offisiell Vidar; SKV aktiv
+2026-05-27 | 10 km | Christian Lillebo | startnr 9064 | Fornebutrippelen Menn | Sportsklubben Vidar | 45:57 | plass 782 | kj?nn 672 | klasse 39 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack
+2026-05-27 | 10 km | Solveig Hveem | startnr 3999 | Jenter 15 år | Sportsklubben Vidar | 45:59 | plass 786 | kj?nn 112 | klasse 2 | Offisiell klubb | Offisiell Vidar
+2026-05-27 | 10 km | Andreas Havsberg | startnr 4913 | Menn 50-54 år | Sportsklubben Vidar | 47:40 | plass 910 | kj?nn 768 | klasse 59 | Offisiell klubb | Offisiell Vidar; SKV aktiv
+2026-05-27 | 10 km | Asta Ellingvåg | startnr 4298 | Kvinner35-39 år  | Sportsklubben Vidar | 50:00 | plass 1109 | kj?nn 229 | klasse 41 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack
+2026-05-27 | 10 km | Fredrik Cornelius Rygh-Jensen | startnr 5104 | Gutter 14 år  | Sportsklubben Vidar | 54:20 | plass 1361 | kj?nn 1017 | klasse 7 | Offisiell klubb | Offisiell Vidar; SKV aktiv
+2026-05-27 | 10 km | Marita Bergum Sandberg | startnr 4912 | Kvinner 45-49 år  | SK Vidar/ASICS FrontRunner | 54:44 | plass 1381 | kj?nn 357 | klasse 30 | Offisiell klubb | Offisiell Vidar; SKV Slack
+2026-05-27 | 10 km | Elin Lippe Stavnes | startnr 9065 | Fornebutrippelen kvinner | Sportsklubben Vidar | 1:00:27 | plass 1613 | kj?nn 490 | klasse 29 | Offisiell klubb | Offisiell Vidar; SKV aktiv
+2026-05-27 | 10 km | Karianne Havsberg | startnr 4914 | FH Damer | Sportsklubben Vidar | 1:04:41 | plass 1682 | kj?nn 537 | klasse 1 | Offisiell klubb | Offisiell Vidar
+2026-05-27 | 3 km | Ådne Andersen | startnr 28 | Menn 23-34 år | Sportsklubben Vidar | 8:32 | plass 1 | kj?nn 1 | klasse 1 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack
+2026-05-27 | 3 km | Haakon Engelsen Berg | startnr 9150 | Fornebutrippelen Menn | Sportsklubben Vidar | 9:26 | plass 5 | kj?nn 5 | klasse 1 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack
+2026-05-27 | 3 km | Jostein Rogstad | startnr 9148 | Fornebutrippelen Menn | Sportsklubben Vidar | 9:29 | plass 8 | kj?nn 8 | klasse 3 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack
+2026-05-27 | 3 km | Madelène Wanvik Holum | startnr 9137 | Fornebutrippelen kvinner | Sportsklubben Vidar | 9:54 | plass 10 | kj?nn 1 | klasse 1 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack; OSIF medlem
+2026-05-27 | 3 km | Ine Bakken | startnr 37 | Kvinner 23-34 år | Sportsklubben Vidar | 9:57 | plass 11 | kj?nn 2 | klasse 2 | Offisiell klubb | Offisiell Vidar; SKV Slack
+2026-05-27 | 3 km | Anette Killerud Ødegård | startnr 58 | Kvinner35-39 år  | Sportsklubben Vidar | 10:09 | plass 14 | kj?nn 4 | klasse 1 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack
+2026-05-27 | 3 km | Marte Lien Johnsen | startnr 53 | Kvinner 23-34 år | Sportsklubben Vidar | 10:40 | plass 20 | kj?nn 5 | klasse 4 | Offisiell klubb | Offisiell Vidar; SKV aktiv
+2026-05-27 | 3 km | Magnus Bækkevar Semb | startnr 17 | Gutter 14 år  | Sportsklubben Vidar | 11:17 | plass 38 | kj?nn 33 | klasse 3 | Offisiell klubb | Offisiell Vidar; SKV aktiv
+2026-05-27 | 3 km | Tora Husum Kristensen | startnr 9136 | Fornebutrippelen kvinner | Sportsklubben Vidar | 12:26 | plass 73 | kj?nn 10 | klasse 5 | Potensiell klubbrelasjon | SKV aktiv; OSIF medlem
+2026-05-27 | 3 km | Ger Wijnandus van Graas | startnr 9066 | Fornebutrippelen Menn | Sportsklubben Vidar | 12:27 | plass 74 | kj?nn 64 | klasse 41 | Offisiell klubb | Offisiell Vidar
+2026-05-27 | 3 km | Christian Lillebo | startnr 9064 | Fornebutrippelen Menn | Sportsklubben Vidar | 13:39 | plass 108 | kj?nn 87 | klasse 49 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack
+2026-05-27 | 3 km | Tone Gravvold | startnr 9149 | Fornebutrippelen kvinner | Sportsklubben Vidar | 14:07 | plass 130 | kj?nn 27 | klasse 11 | Offisiell klubb | Offisiell Vidar; SKV aktiv
+2026-05-27 | 3 km | Elin Lippe Stavnes | startnr 9065 | Fornebutrippelen kvinner | Sportsklubben Vidar | 15:07 | plass 173 | kj?nn 43 | klasse 17 | Offisiell klubb | Offisiell Vidar; SKV aktiv
+2026-05-27 | 3 km | Edvald Slettvåg | startnr 295 | Gutter 10 år | Sportsklubben Vidar | 13:15 | plass  | kj?nn  | klasse  | Offisiell klubb | Offisiell Vidar; SKV aktiv
+2026-05-27 | 5 km | Ådne Andersen | startnr 1105 | Menn 23-34 år | Sportsklubben Vidar | 15:10 | plass 1 | kj?nn 1 | klasse 1 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack
+2026-05-27 | 5 km | Haakon Engelsen Berg | startnr 9150 | Fornebutrippelen Menn | Sportsklubben Vidar | 16:01 | plass 6 | kj?nn 6 | klasse 1 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack
+2026-05-27 | 5 km | Jostein Rogstad | startnr 9148 | Fornebutrippelen Menn | Sportsklubben Vidar | 16:16 | plass 7 | kj?nn 7 | klasse 2 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack
+2026-05-27 | 5 km | Martin Kjäll-Ohlsson | startnr 1161 | Menn 45-49 år | Sportsklubben Vidar | 16:28 | plass 10 | kj?nn 10 | klasse 1 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack
+2026-05-27 | 5 km | Erlend Berger | startnr 1104 | Menn 23-34 år | Sportsklubben Vidar | 16:32 | plass 11 | kj?nn 11 | klasse 7 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack
+2026-05-27 | 5 km | Madelène Wanvik Holum | startnr 9137 | Fornebutrippelen kvinner | Sportsklubben Vidar | 16:39 | plass 13 | kj?nn 1 | klasse 1 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack; OSIF medlem
+2026-05-27 | 5 km | Frida Bjørnstad Konow | startnr 1148 | Kvinner 23-34 år | Sportsklubben Vidar | 16:40 | plass 15 | kj?nn 2 | klasse 2 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack
+2026-05-27 | 5 km | Axel Wollan | startnr 1144 | Menn 23-34 år | Sportsklubben Vidar | 17:37 | plass 35 | kj?nn 32 | klasse 14 | Offisiell klubb | Offisiell Vidar; SKV Slack
+2026-05-27 | 5 km | Livius Sverdrup | startnr 1051 | Gutter 12 år  | Sportsklubben Vidar | 17:52 | plass 43 | kj?nn 38 | klasse 1 | Offisiell klubb | Offisiell Vidar; SKV aktiv
+2026-05-27 | 5 km | John Christian Fuller | startnr 1097 | Menn 60-64 år  | Sportsklubben Vidar | 18:34 | plass 65 | kj?nn 57 | klasse 1 | Offisiell klubb | Offisiell Vidar; SKV aktiv
+2026-05-27 | 5 km | Lars Gellein Halvorsen | startnr 1141 | Menn 23-34 år | Sportsklubben Vidar | 18:34 | plass 65 | kj?nn 57 | klasse 20 | Potensiell klubbrelasjon | SKV aktiv; SKV Slack
+2026-05-27 | 5 km | Ådne Dyrnesli | startnr 1045 | Menn 23-34 år | Sportsklubben Vidar | 18:39 | plass 71 | kj?nn 63 | klasse 21 | Offisiell klubb | Offisiell Vidar; SKV oppmote; SKV Slack
+2026-05-27 | 5 km | Siri Schøne Ness | startnr 1108 | Kvinner 40-44 år  | Sportsklubben Vidar | 18:56 | plass 78 | kj?nn 9 | klasse 1 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack
+2026-05-27 | 5 km | Hannah Bjelland | startnr 1122 | Kvinner 23-34 år | Sportsklubben Vidar | 18:58 | plass 81 | kj?nn 10 | klasse 6 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack
+2026-05-27 | 5 km | Jessica Katarina Gunnarsson | startnr 1047 | Kvinner 50-54 år  | Sportsklubben Vidar | 18:59 | plass 84 | kj?nn 11 | klasse 1 | Offisiell klubb | Offisiell Vidar
+2026-05-27 | 5 km | Aksel Anker Solberg-Hansen | startnr 1160 | Gutter 13 år | Sportsklubben Vidar | 19:11 | plass 90 | kj?nn 79 | klasse 3 | Offisiell klubb | Offisiell Vidar; SKV aktiv
+2026-05-27 | 5 km | Stina Meinicke | startnr 1903 | Kvinner 23-34 år | Sportsklubben Vidar | 19:23 | plass 97 | kj?nn 14 | klasse 8 | Potensiell klubbrelasjon | SKV aktiv; SKV Slack
+2026-05-27 | 5 km | Simen Hagerup Kjeldsen | startnr 1126 | Menn 40-44 år  | Sportsklubben Vidar | 19:41 | plass 120 | kj?nn 104 | klasse 7 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack
+2026-05-27 | 5 km | Sven Thelin | startnr 1046 | Menn 55-59 år | Sportsklubben Vidar | 20:04 | plass 145 | kj?nn 124 | klasse 4 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack
+2026-05-27 | 5 km | Daniel Severinsen | startnr 1427 | Menn 23-34 år | Sportsklubben Vidar | 20:16 | plass 152 | kj?nn 129 | klasse 38 | Offisiell klubb | Offisiell Vidar; SKV aktiv
+2026-05-27 | 5 km | Marthe Meese Dolmen | startnr 1473 | Kvinner 23-34 år | Sportsklubben Vidar | 20:27 | plass 164 | kj?nn 26 | klasse 12 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack
+2026-05-27 | 5 km | Øivind Larsen | startnr 1049 | Menn 60-64 år  | Sportsklubben Vidar | 20:32 | plass 169 | kj?nn 142 | klasse 2 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack
+2026-05-27 | 5 km | Ragnhild Ertshus | startnr 1680 | Kvinner35-39 år  | Sportsklubben Vidar | 20:42 | plass 179 | kj?nn 30 | klasse 6 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack
+2026-05-27 | 5 km | Kjersti Simensen | startnr 1050 | Kvinner 40-44 år  | Sportsklubben Vidar | 21:10 | plass 194 | kj?nn 33 | klasse 2 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack
+2026-05-27 | 5 km | Sonia Nakamura Slettvåg | startnr 1169 | Jenter 11 år  | Sportsklubben Vidar | 21:16 | plass 199 | kj?nn 36 | klasse 1 | Offisiell klubb | Offisiell Vidar
+2026-05-27 | 5 km | Lavrans Sverdrup | startnr 1150 | Gutter 11 år  | Sportsklubben Vidar | 21:24 | plass 209 | kj?nn 170 | klasse 2 | Offisiell klubb | Offisiell Vidar; SKV aktiv
+2026-05-27 | 5 km | Tora Husum Kristensen | startnr 9136 | Fornebutrippelen kvinner | Sportsklubben Vidar | 21:26 | plass 210 | kj?nn 40 | klasse 5 | Potensiell klubbrelasjon | SKV aktiv; OSIF medlem
+2026-05-27 | 5 km | Ger Wijnandus van Graas | startnr 9066 | Fornebutrippelen Menn | Sportsklubben Vidar | 21:27 | plass 211 | kj?nn 171 | klasse 38 | Offisiell klubb | Offisiell Vidar
+2026-05-27 | 5 km | Noomi Linnea Stenset | startnr 1554 | Jenter 12 år | Sportsklubben Vidar | 22:02 | plass 231 | kj?nn 50 | klasse 2 | Offisiell klubb | Offisiell Vidar
+2026-05-27 | 5 km | Sondre Anker Solberg-Hansen | startnr 1671 | Gutter 11 år  | Sportsklubben Vidar | 22:55 | plass 275 | kj?nn 213 | klasse 7 | Offisiell klubb | Offisiell Vidar; SKV aktiv
+2026-05-27 | 5 km | Anne Myhr | startnr 1474 | Kvinner 60-64 år  | Sportsklubben Vidar | 23:02 | plass 278 | kj?nn 64 | klasse 4 | Offisiell klubb | Offisiell Vidar; SKV aktiv
+2026-05-27 | 5 km | Christian Lillebo | startnr 9064 | Fornebutrippelen Menn | Sportsklubben Vidar | 23:11 | plass 287 | kj?nn 221 | klasse 48 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack
+2026-05-27 | 5 km | Tone Gravvold | startnr 9149 | Fornebutrippelen kvinner | Sportsklubben Vidar | 23:14 | plass 291 | kj?nn 67 | klasse 10 | Offisiell klubb | Offisiell Vidar; SKV aktiv
+2026-05-27 | 5 km | Sofie Gotuholt | startnr 1469 | Kvinner 23-34 år | Sportsklubben Vidar | 23:20 | plass 294 | kj?nn 69 | klasse 23 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack; OSIF medlem
+2026-05-27 | 5 km | Knut Sørskår | startnr 1799 | FH Menn | SK Vidar Para | 23:56 | plass 317 | kj?nn 242 | klasse 1 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack
+2026-05-27 | 5 km | Ole Jonas Nybø | startnr 1470 | Menn 40-44 år  | Sportsklubben Vidar | 24:58 | plass 370 | kj?nn 278 | klasse 30 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack
+2026-05-27 | 5 km | Ernst Herlof Kristiansen | startnr 1472 | Menn 75-79 år  | Sportsklubben Vidar | 25:05 | plass 379 | kj?nn 284 | klasse 1 | Offisiell klubb | Offisiell Vidar
+2026-05-27 | 5 km | Magnus Kjesrud | startnr 1471 | Menn 45-49 år | Sportsklubben Vidar | 25:20 | plass 391 | kj?nn 290 | klasse 28 | Offisiell klubb | Offisiell Vidar
+2026-05-27 | 5 km | Elin Lippe Stavnes | startnr 9065 | Fornebutrippelen kvinner | Sportsklubben Vidar | 26:25 | plass 427 | kj?nn 124 | klasse 15 | Offisiell klubb | Offisiell Vidar; SKV aktiv
+2026-05-27 | 5 km | Anne Berit Gravvold | startnr 1594 | Kvinner 45-49 år  | Sportsklubben Vidar | 28:03 | plass 499 | kj?nn 162 | klasse 8 | Offisiell klubb | Offisiell Vidar
+2026-05-27 | 5 km | Anne Sofie Fosselie | startnr 1816 | Kvinner 23-34 år | Sportsklubben Vidar | 29:35 | plass 579 | kj?nn 209 | klasse 53 | Offisiell klubb | Offisiell Vidar
+2026-05-27 | 5 km | Julian Bævre | startnr 1815 | FH Barn | Sportsklubben Vidar | 33:03 | plass  | kj?nn  | klasse  | Offisiell klubb | Offisiell Vidar; SKV aktiv
