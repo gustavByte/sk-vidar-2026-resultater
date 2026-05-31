@@ -22,6 +22,7 @@ MANAGED_COLUMNS = [
 
 TEXT_FIXES = {
     "Fredrikstadl?pet": "Fredrikstadløpet",
+    "Fornebul?pet 2026": "Fornebuløpet 2026",
     "J?rgen Korum": "Jørgen Korum",
     "Liz-Helen L?chen": "Liz-Helen Løchen",
     "Alva Witnes Ertresv?g": "Alva Witnes Ertresvåg",
