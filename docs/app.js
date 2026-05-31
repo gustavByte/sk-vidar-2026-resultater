@@ -16,6 +16,10 @@ const state = {
 const numberFormat = new Intl.NumberFormat("nb-NO");
 let searchRenderFrame = 0;
 
+const eventLabelReplacements = {
+  "Fornebul?pet 2026": "Fornebuløpet 2026",
+};
+
 const els = {
   weeksList: document.getElementById("weeks-list"),
   selectedWeekTitle: document.getElementById("selected-week-title"),
@@ -164,7 +168,12 @@ function getSelectedWeek() {
 }
 
 function getEventLabel(row) {
-  return String(row.event_label || row.event_name || "").trim();
+  return formatEventLabel(row.event_label || row.event_name);
+}
+
+function formatEventLabel(value) {
+  const eventName = String(value || "").trim();
+  return eventLabelReplacements[eventName] || eventName;
 }
 
 function getWeekEvents(weekNumber) {
@@ -243,7 +252,7 @@ function renderWeeks() {
   els.weeksList.innerHTML = state.data.weeks
     .map((week) => {
       const active = Number(week.week_number) === Number(state.selectedWeek);
-      const events = week.events.join(", ");
+      const events = week.events.map(formatEventLabel).join(", ");
       return `
         <button class="week-item" type="button" aria-pressed="${active ? "true" : "false"}" data-week="${escapeHtml(week.week_number)}">
           <div class="week-top">
@@ -462,7 +471,7 @@ function renderRankingColumn(title, entries) {
               <span class="ranking-time">${escapeHtml(entry.result_time || "")}</span>
             </div>
             <div class="ranking-meta">
-              <span>${escapeHtml(entry.event_label || "")}</span>
+              <span>${escapeHtml(formatEventLabel(entry.event_label))}</span>
               ${dateMarkup}
             </div>
           </div>
@@ -554,7 +563,7 @@ function renderBestResults(profile) {
             <article class="profile-best-card">
               <span class="profile-best-distance">${escapeHtml(result.distance || "")}</span>
               <strong>${escapeHtml(result.result_time || "")}</strong>
-              <span>${escapeHtml(result.event_label || "")}</span>
+              <span>${escapeHtml(formatEventLabel(result.event_label))}</span>
               <span>${escapeHtml(result.published_date_label || "")}</span>
             </article>
           `,
@@ -588,7 +597,7 @@ function renderProfileResults(results) {
               </div>
               <div class="profile-result-main">
                 <div class="profile-result-title">
-                  <strong>${escapeHtml(row.event_label || "")}</strong>
+                  <strong>${escapeHtml(formatEventLabel(row.event_label))}</strong>
                   <span class="profile-result-time">${escapeHtml(time)}</span>
                 </div>
                 <div class="profile-result-meta">
