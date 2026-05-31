@@ -1,0 +1,13 @@
+Tjalvelekene 2026 | 30-31.05.2026 | Bislett | manuell import
+
+Dag | Klasse | Øvelse | Plass | Navn | Resultat
+Lørdag | G-15 | 2000 m | 2 | Oskar Røynås | 6,09,27
+Lørdag | MS | 3000 m | 2 | Ole Skjelten Daasvatn | 8,43,37
+Lørdag | MS | 3000 m | 4 | Fredrik Aleksander Skovdahl Killerud | 8,55,76
+Lørdag | MS | 3000 m | 6 | Jakob Slengesol | 9,00,08
+Søndag | J-15-16 | 800 m | 3 | Julie Louise Sandrup | 2,22,17
+Søndag | KS | 800 m | 1 | Hanna Kristine Gunlaugsdatter Larsen | 2,07,21
+Søndag | KS | 800 m | 3 | Alice Ulla Berg | 2,12,95
+Søndag | J-17-19 | 800 m | 8 | Caroline Marie Wiig | 2,30,79
+Søndag | MS | 800 m | 19 | Thomas Kjellberg | 1,59,63
+Søndag | MS | 800 m | 25 | Truls Vegard Skarvøy | 2,02,71

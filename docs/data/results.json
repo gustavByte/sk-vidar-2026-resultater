@@ -1,33 +1,34 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-05-31T16:13:08+02:00",
+  "generated_at": "2026-05-31T16:20:16+02:00",
   "stats": {
-    "result_count": 880,
-    "athlete_count": 395,
-    "event_count": 101,
+    "result_count": 890,
+    "athlete_count": 397,
+    "event_count": 102,
     "week_count": 19,
     "latest_week": 22,
-    "latest_date": "2026-05-30",
-    "women_count": 346,
-    "men_count": 534,
+    "latest_date": "2026-05-31",
+    "women_count": 350,
+    "men_count": 540,
     "missing_gender_or_class_count": 0
   },
   "weeks": [
     {
       "week_number": 22,
       "week_label": "Uke 22",
-      "published_date": "2026-05-30",
-      "published_date_label": "30.05.2026",
-      "result_count": 96,
-      "athlete_count": 77,
-      "event_count": 4,
-      "women_count": 45,
-      "men_count": 51,
+      "published_date": "2026-05-31",
+      "published_date_label": "31.05.2026",
+      "result_count": 106,
+      "athlete_count": 87,
+      "event_count": 5,
+      "women_count": 49,
+      "men_count": 57,
       "events": [
         "Fornebul?pet 2026",
         "Kragerø Sommerløp 2026",
         "Lygnaløpet 2026",
-        "Saldilten 2026"
+        "Saldilten 2026",
+        "Tjalvelekene 2026"
       ]
     },
     {
@@ -364,6 +365,180 @@
   ],
   "results": [
     {
+      "result_id": "res-2d68c3973f80002c",
+      "person_id": "skv-p000321",
+      "person_slug": "thomas-kjellberg",
+      "published_date": "2026-05-31",
+      "published_date_label": "31.05.2026",
+      "week_number": 22,
+      "athlete_name": "Thomas Kjellberg",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "MS",
+      "class_place": "19",
+      "event_label": "Tjalvelekene 2026",
+      "distance": "800 m",
+      "result_time_raw": "1:59.63",
+      "result_time_normalized": "1:59.63",
+      "result_time_seconds": 119.63,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": 770.0,
+      "place": "19",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-a0b0351aabfde8ed",
+      "person_id": "skv-p000333",
+      "person_slug": "truls-skarvoy",
+      "published_date": "2026-05-31",
+      "published_date_label": "31.05.2026",
+      "week_number": 22,
+      "athlete_name": "Truls Vegard Skarvøy",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "MS",
+      "class_place": "25",
+      "event_label": "Tjalvelekene 2026",
+      "distance": "800 m",
+      "result_time_raw": "2:02.71",
+      "result_time_normalized": "2:02.71",
+      "result_time_seconds": 122.71,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": 696.0,
+      "place": "25",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-49a63eb656bf4690",
+      "person_id": "skv-p000099",
+      "person_slug": "hanna-kristine-larsen",
+      "published_date": "2026-05-31",
+      "published_date_label": "31.05.2026",
+      "week_number": 22,
+      "athlete_name": "Hanna Kristine Larsen",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "KS",
+      "class_place": "1",
+      "event_label": "Tjalvelekene 2026",
+      "distance": "800 m",
+      "result_time_raw": "2:07.21",
+      "result_time_normalized": "2:07.21",
+      "result_time_seconds": 127.21,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": 1037.0,
+      "place": "1",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-ba9261552f47917b",
+      "person_id": "skv-p000397",
+      "person_slug": "alice-ulla-berg",
+      "published_date": "2026-05-31",
+      "published_date_label": "31.05.2026",
+      "week_number": 22,
+      "athlete_name": "Alice Ulla Berg",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "KS",
+      "class_place": "3",
+      "event_label": "Tjalvelekene 2026",
+      "distance": "800 m",
+      "result_time_raw": "2:12.95",
+      "result_time_normalized": "2:12.95",
+      "result_time_seconds": 132.95,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": 942.0,
+      "place": "3",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-10b31c98d7692d25",
+      "person_id": "skv-p000446",
+      "person_slug": "julie-louise-sandrup",
+      "published_date": "2026-05-31",
+      "published_date_label": "31.05.2026",
+      "week_number": 22,
+      "athlete_name": "Julie Louise Sandrup",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "J-15-16",
+      "class_place": "3",
+      "event_label": "Tjalvelekene 2026",
+      "distance": "800 m",
+      "result_time_raw": "2:22.17",
+      "result_time_normalized": "2:22.17",
+      "result_time_seconds": 142.17000000000002,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": 800.0,
+      "place": "3",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-99ea57eeea79998b",
+      "person_id": "skv-p000042",
+      "person_slug": "caroline-marie-wiig",
+      "published_date": "2026-05-31",
+      "published_date_label": "31.05.2026",
+      "week_number": 22,
+      "athlete_name": "Caroline Marie Wiig",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "J-17-19",
+      "class_place": "8",
+      "event_label": "Tjalvelekene 2026",
+      "distance": "800 m",
+      "result_time_raw": "2:30.79",
+      "result_time_normalized": "2:30.79",
+      "result_time_seconds": 150.79,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": 677.0,
+      "place": "8",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
       "result_id": "res-87de427018aca9f5",
       "person_id": "skv-p000405",
       "person_slug": "mathilde-christin-knutsen",
@@ -384,6 +559,122 @@
       "wa_event": "",
       "wa_points": 944.0,
       "place": "",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-ec00911115efef7f",
+      "person_id": "skv-p000358",
+      "person_slug": "ole-skjelten-daasvatn",
+      "published_date": "2026-05-30",
+      "published_date_label": "30.05.2026",
+      "week_number": 22,
+      "athlete_name": "Ole Skjelten Daasvatn",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "MS",
+      "class_place": "2",
+      "event_label": "Tjalvelekene 2026",
+      "distance": "3000 m",
+      "result_time_raw": "8:43.37",
+      "result_time_normalized": "8:43.37",
+      "result_time_seconds": 523.37,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": 817.0,
+      "place": "2",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-5d9fae406665afbe",
+      "person_id": "skv-p000090",
+      "person_slug": "fredrik-killerud",
+      "published_date": "2026-05-30",
+      "published_date_label": "30.05.2026",
+      "week_number": 22,
+      "athlete_name": "Fredrik Killerud",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "MS",
+      "class_place": "4",
+      "event_label": "Tjalvelekene 2026",
+      "distance": "3000 m",
+      "result_time_raw": "8:55.76",
+      "result_time_normalized": "8:55.76",
+      "result_time_seconds": 535.76,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": 754.0,
+      "place": "4",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-a515ac1e7aa060b7",
+      "person_id": "skv-p000135",
+      "person_slug": "jakob-slengesol",
+      "published_date": "2026-05-30",
+      "published_date_label": "30.05.2026",
+      "week_number": 22,
+      "athlete_name": "Jakob Slengesol",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "MS",
+      "class_place": "6",
+      "event_label": "Tjalvelekene 2026",
+      "distance": "3000 m",
+      "result_time_raw": "9:00.08",
+      "result_time_normalized": "9:00.08",
+      "result_time_seconds": 540.08,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": 733.0,
+      "place": "6",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-e7a7fc9c3e0b9634",
+      "person_id": "skv-p000447",
+      "person_slug": "oskar-roynas",
+      "published_date": "2026-05-30",
+      "published_date_label": "30.05.2026",
+      "week_number": 22,
+      "athlete_name": "Oskar Røynås",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "G-15",
+      "class_place": "2",
+      "event_label": "Tjalvelekene 2026",
+      "distance": "2000 m",
+      "result_time_raw": "6:09.27",
+      "result_time_normalized": "6:09.27",
+      "result_time_seconds": 369.27,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": 549.0,
+      "place": "2",
       "notes_clean": "",
       "split_first_label": "",
       "split_first_display": "",
@@ -27396,6 +27687,22 @@
           "gender": "M",
           "gender_label": "Menn",
           "rank": 4,
+          "person_id": "skv-p000358",
+          "person_slug": "ole-skjelten-daasvatn",
+          "result_id": "res-ec00911115efef7f",
+          "athlete_name": "Ole Skjelten Daasvatn",
+          "result_time": "8:43.37",
+          "result_time_seconds": 523.37,
+          "event_label": "Tjalvelekene 2026",
+          "published_date": "2026-05-30",
+          "published_date_label": "30.05.2026"
+        },
+        {
+          "distance": "3000 m",
+          "source_distance": "3000 m",
+          "gender": "M",
+          "gender_label": "Menn",
+          "rank": 5,
           "person_id": "skv-p000166",
           "person_slug": "kasper-sorlie-reininger",
           "result_id": "res-1f1c5ca24b95c6f9",
@@ -27411,7 +27718,7 @@
           "source_distance": "3000 m",
           "gender": "M",
           "gender_label": "Menn",
-          "rank": 5,
+          "rank": 6,
           "person_id": "skv-p000038",
           "person_slug": "atle-wendel-scheie",
           "result_id": "res-f9187ec911c1d319",
@@ -27427,7 +27734,7 @@
           "source_distance": "3000 m",
           "gender": "M",
           "gender_label": "Menn",
-          "rank": 6,
+          "rank": 7,
           "person_id": "skv-p000135",
           "person_slug": "jakob-slengesol",
           "result_id": "res-f328ea48d425747a",
@@ -27443,7 +27750,7 @@
           "source_distance": "3000 m",
           "gender": "M",
           "gender_label": "Menn",
-          "rank": 7,
+          "rank": 8,
           "person_id": "skv-p000054",
           "person_slug": "david-meier",
           "result_id": "res-11d13ca57b72ac03",
@@ -27459,7 +27766,23 @@
           "source_distance": "3000 m",
           "gender": "M",
           "gender_label": "Menn",
-          "rank": 8,
+          "rank": 9,
+          "person_id": "skv-p000090",
+          "person_slug": "fredrik-killerud",
+          "result_id": "res-5d9fae406665afbe",
+          "athlete_name": "Fredrik Killerud",
+          "result_time": "8:55.76",
+          "result_time_seconds": 535.76,
+          "event_label": "Tjalvelekene 2026",
+          "published_date": "2026-05-30",
+          "published_date_label": "30.05.2026"
+        },
+        {
+          "distance": "3000 m",
+          "source_distance": "3000 m",
+          "gender": "M",
+          "gender_label": "Menn",
+          "rank": 10,
           "person_id": "skv-p000174",
           "person_slug": "kristian-froyen",
           "result_id": "res-e87ca92cdd77da2c",
@@ -27469,38 +27792,6 @@
           "event_label": "Per Halle Invitational",
           "published_date": "2026-05-15",
           "published_date_label": "15.05.2026"
-        },
-        {
-          "distance": "3000 m",
-          "source_distance": "3000 m",
-          "gender": "M",
-          "gender_label": "Menn",
-          "rank": 9,
-          "person_id": "skv-p000320",
-          "person_slug": "theodor-botten",
-          "result_id": "res-5b0b449f52d84973",
-          "athlete_name": "Theodor Botten",
-          "result_time": "09:21.300",
-          "result_time_seconds": 561.3,
-          "event_label": "3000 St. Haugen og Salomon",
-          "published_date": "2026-04-16",
-          "published_date_label": "16.04.2026"
-        },
-        {
-          "distance": "3000 m",
-          "source_distance": "3000 m",
-          "gender": "M",
-          "gender_label": "Menn",
-          "rank": 10,
-          "person_id": "skv-p000239",
-          "person_slug": "njal-hjelde-anderssen",
-          "result_id": "res-c196a2b6085f71b0",
-          "athlete_name": "Njål Hjelde Anderssen",
-          "result_time": "9:22.8",
-          "result_time_seconds": 562.8,
-          "event_label": "Bislett 3000 - Torshov Sport x Kiprun",
-          "published_date": "2026-05-21",
-          "published_date_label": "21.05.2026"
         }
       ]
     },
@@ -27794,13 +28085,13 @@
           "rank": 1,
           "person_id": "skv-p000099",
           "person_slug": "hanna-kristine-larsen",
-          "result_id": "res-8fa8833fdcaf75e8",
+          "result_id": "res-49a63eb656bf4690",
           "athlete_name": "Hanna Kristine Larsen",
-          "result_time": "2:10.21",
-          "result_time_seconds": 130.21,
-          "event_label": "Tyrvinglekene inn",
-          "published_date": "2026-02-08",
-          "published_date_label": "08.02.2026"
+          "result_time": "2:07.21",
+          "result_time_seconds": 127.21,
+          "event_label": "Tjalvelekene 2026",
+          "published_date": "2026-05-31",
+          "published_date_label": "31.05.2026"
         },
         {
           "distance": "800 m",
@@ -27810,13 +28101,13 @@
           "rank": 2,
           "person_id": "skv-p000397",
           "person_slug": "alice-ulla-berg",
-          "result_id": "res-f90eb10538078ec9",
+          "result_id": "res-ba9261552f47917b",
           "athlete_name": "Alice Ulla Berg",
-          "result_time": "2:14.92",
-          "result_time_seconds": 134.92,
-          "event_label": "Per Halle Invitational",
-          "published_date": "2026-05-15",
-          "published_date_label": "15.05.2026"
+          "result_time": "2:12.95",
+          "result_time_seconds": 132.95,
+          "event_label": "Tjalvelekene 2026",
+          "published_date": "2026-05-31",
+          "published_date_label": "31.05.2026"
         },
         {
           "distance": "800 m",
@@ -27824,6 +28115,22 @@
           "gender": "K",
           "gender_label": "Kvinner",
           "rank": 3,
+          "person_id": "skv-p000446",
+          "person_slug": "julie-louise-sandrup",
+          "result_id": "res-10b31c98d7692d25",
+          "athlete_name": "Julie Louise Sandrup",
+          "result_time": "2:22.17",
+          "result_time_seconds": 142.17000000000002,
+          "event_label": "Tjalvelekene 2026",
+          "published_date": "2026-05-31",
+          "published_date_label": "31.05.2026"
+        },
+        {
+          "distance": "800 m",
+          "source_distance": "800 m",
+          "gender": "K",
+          "gender_label": "Kvinner",
+          "rank": 4,
           "person_id": "skv-p000357",
           "person_slug": "madelen-tronstad-sagebakken",
           "result_id": "res-9be6f6e964eba7d6",
@@ -27839,16 +28146,16 @@
           "source_distance": "800 m",
           "gender": "K",
           "gender_label": "Kvinner",
-          "rank": 4,
+          "rank": 5,
           "person_id": "skv-p000042",
           "person_slug": "caroline-marie-wiig",
-          "result_id": "res-8a7bf7029009a3af",
+          "result_id": "res-99ea57eeea79998b",
           "athlete_name": "Caroline Marie Wiig",
-          "result_time": "2:33.07",
-          "result_time_seconds": 153.07,
-          "event_label": "Per Halle Invitational",
-          "published_date": "2026-05-15",
-          "published_date_label": "15.05.2026"
+          "result_time": "2:30.79",
+          "result_time_seconds": 150.79,
+          "event_label": "Tjalvelekene 2026",
+          "published_date": "2026-05-31",
+          "published_date_label": "31.05.2026"
         }
       ],
       "men": [
@@ -27860,13 +28167,13 @@
           "rank": 1,
           "person_id": "skv-p000321",
           "person_slug": "thomas-kjellberg",
-          "result_id": "res-74bd51a116b623d4",
+          "result_id": "res-2d68c3973f80002c",
           "athlete_name": "Thomas Kjellberg",
-          "result_time": "1:59.86",
-          "result_time_seconds": 119.86,
-          "event_label": "KFUM Nasjonalt stevne",
-          "published_date": "2026-05-19",
-          "published_date_label": "19.05.2026"
+          "result_time": "1:59.63",
+          "result_time_seconds": 119.63,
+          "event_label": "Tjalvelekene 2026",
+          "published_date": "2026-05-31",
+          "published_date_label": "31.05.2026"
         },
         {
           "distance": "800 m",
@@ -27908,13 +28215,13 @@
           "rank": 4,
           "person_id": "skv-p000333",
           "person_slug": "truls-skarvoy",
-          "result_id": "res-5877561fceca8ff1",
+          "result_id": "res-a0b0351aabfde8ed",
           "athlete_name": "Truls Vegard Skarvøy",
-          "result_time": "2:05.18",
-          "result_time_seconds": 125.18,
-          "event_label": "KFUM Nasjonalt stevne",
-          "published_date": "2026-05-19",
-          "published_date_label": "19.05.2026"
+          "result_time": "2:02.71",
+          "result_time_seconds": 122.71,
+          "event_label": "Tjalvelekene 2026",
+          "published_date": "2026-05-31",
+          "published_date_label": "31.05.2026"
         },
         {
           "distance": "800 m",
@@ -27936,7 +28243,7 @@
     }
   ],
   "people": {
-    "profile_count": 395,
+    "profile_count": 397,
     "profiles": [
       {
         "person_id": "skv-p000001",
@@ -28282,27 +28589,27 @@
         "display_name": "Alice Ulla Berg",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
           "800 m"
         ],
         "best_results": [
           {
-            "result_id": "res-f90eb10538078ec9",
+            "result_id": "res-ba9261552f47917b",
             "distance": "800 m",
             "source_distance": "800 m",
-            "result_time": "2:14.92",
-            "result_time_seconds": 134.92,
-            "event_label": "Per Halle Invitational",
-            "published_date": "2026-05-15",
-            "published_date_label": "15.05.2026",
-            "week_number": 20,
-            "place": "12",
-            "class_place": ""
+            "result_time": "2:12.95",
+            "result_time_seconds": 132.95,
+            "event_label": "Tjalvelekene 2026",
+            "published_date": "2026-05-31",
+            "published_date_label": "31.05.2026",
+            "week_number": 22,
+            "place": "3",
+            "class_place": "3"
           }
         ],
         "first_result_date": "2026-05-15",
-        "latest_result_date": "2026-05-15"
+        "latest_result_date": "2026-05-31"
       },
       {
         "person_id": "skv-p000011",
@@ -29620,7 +29927,7 @@
         "display_name": "Caroline Marie Wiig",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 3,
+        "result_count": 4,
         "distances": [
           "800 m",
           "1500 m",
@@ -29628,17 +29935,17 @@
         ],
         "best_results": [
           {
-            "result_id": "res-8a7bf7029009a3af",
+            "result_id": "res-99ea57eeea79998b",
             "distance": "800 m",
             "source_distance": "800 m",
-            "result_time": "2:33.07",
-            "result_time_seconds": 153.07,
-            "event_label": "Per Halle Invitational",
-            "published_date": "2026-05-15",
-            "published_date_label": "15.05.2026",
-            "week_number": 20,
-            "place": "21",
-            "class_place": ""
+            "result_time": "2:30.79",
+            "result_time_seconds": 150.79,
+            "event_label": "Tjalvelekene 2026",
+            "published_date": "2026-05-31",
+            "published_date_label": "31.05.2026",
+            "week_number": 22,
+            "place": "8",
+            "class_place": "8"
           },
           {
             "result_id": "res-c103385697362b60",
@@ -29668,7 +29975,7 @@
           }
         ],
         "first_result_date": "2026-04-11",
-        "latest_result_date": "2026-05-15"
+        "latest_result_date": "2026-05-31"
       },
       {
         "person_id": "skv-p000043",
@@ -31630,9 +31937,10 @@
         "display_name": "Fredrik Killerud",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 4,
+        "result_count": 5,
         "distances": [
           "1500 m",
+          "3000 m",
           "5 km",
           "10 km"
         ],
@@ -31649,6 +31957,19 @@
             "week_number": 18,
             "place": "28",
             "class_place": "1"
+          },
+          {
+            "result_id": "res-5d9fae406665afbe",
+            "distance": "3000 m",
+            "source_distance": "3000 m",
+            "result_time": "8:55.76",
+            "result_time_seconds": 535.76,
+            "event_label": "Tjalvelekene 2026",
+            "published_date": "2026-05-30",
+            "published_date_label": "30.05.2026",
+            "week_number": 22,
+            "place": "4",
+            "class_place": "4"
           },
           {
             "result_id": "res-b5dc1a71b0d58a6f",
@@ -31678,7 +31999,7 @@
           }
         ],
         "first_result_date": "2026-01-18",
-        "latest_result_date": "2026-05-23"
+        "latest_result_date": "2026-05-30"
       },
       {
         "person_id": "skv-p000091",
@@ -32192,7 +32513,7 @@
         "display_name": "Hanna Kristine Larsen",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 6,
+        "result_count": 7,
         "distances": [
           "800 m",
           "10 km",
@@ -32201,17 +32522,17 @@
         ],
         "best_results": [
           {
-            "result_id": "res-8fa8833fdcaf75e8",
+            "result_id": "res-49a63eb656bf4690",
             "distance": "800 m",
             "source_distance": "800 m",
-            "result_time": "2:10.21",
-            "result_time_seconds": 130.21,
-            "event_label": "Tyrvinglekene inn",
-            "published_date": "2026-02-08",
-            "published_date_label": "08.02.2026",
-            "week_number": 6,
+            "result_time": "2:07.21",
+            "result_time_seconds": 127.21,
+            "event_label": "Tjalvelekene 2026",
+            "published_date": "2026-05-31",
+            "published_date_label": "31.05.2026",
+            "week_number": 22,
             "place": "1",
-            "class_place": ""
+            "class_place": "1"
           },
           {
             "result_id": "res-2d325e2562af0579",
@@ -32228,7 +32549,7 @@
           }
         ],
         "first_result_date": "2026-01-11",
-        "latest_result_date": "2026-04-25"
+        "latest_result_date": "2026-05-31"
       },
       {
         "person_id": "skv-p000101",
@@ -33476,7 +33797,7 @@
         "display_name": "Jakob Slengesol",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 5,
+        "result_count": 6,
         "distances": [
           "1500 m",
           "3000 m",
@@ -33538,7 +33859,7 @@
           }
         ],
         "first_result_date": "2026-02-08",
-        "latest_result_date": "2026-05-15"
+        "latest_result_date": "2026-05-30"
       },
       {
         "person_id": "skv-p000136",
@@ -34437,6 +34758,34 @@
         ],
         "first_result_date": "2026-05-01",
         "latest_result_date": "2026-05-01"
+      },
+      {
+        "person_id": "skv-p000446",
+        "profile_slug": "julie-louise-sandrup",
+        "display_name": "Julie Louise Sandrup",
+        "gender": "K",
+        "gender_label": "Kvinner",
+        "result_count": 1,
+        "distances": [
+          "800 m"
+        ],
+        "best_results": [
+          {
+            "result_id": "res-10b31c98d7692d25",
+            "distance": "800 m",
+            "source_distance": "800 m",
+            "result_time": "2:22.17",
+            "result_time_seconds": 142.17000000000002,
+            "event_label": "Tjalvelekene 2026",
+            "published_date": "2026-05-31",
+            "published_date_label": "31.05.2026",
+            "week_number": 22,
+            "place": "3",
+            "class_place": "3"
+          }
+        ],
+        "first_result_date": "2026-05-31",
+        "latest_result_date": "2026-05-31"
       },
       {
         "person_id": "skv-p000158",
@@ -38423,9 +38772,10 @@
         "display_name": "Ole Skjelten Daasvatn",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
-          "1500 m"
+          "1500 m",
+          "3000 m"
         ],
         "best_results": [
           {
@@ -38440,10 +38790,23 @@
             "week_number": 18,
             "place": "20",
             "class_place": "11"
+          },
+          {
+            "result_id": "res-ec00911115efef7f",
+            "distance": "3000 m",
+            "source_distance": "3000 m",
+            "result_time": "8:43.37",
+            "result_time_seconds": 523.37,
+            "event_label": "Tjalvelekene 2026",
+            "published_date": "2026-05-30",
+            "published_date_label": "30.05.2026",
+            "week_number": 22,
+            "place": "2",
+            "class_place": "2"
           }
         ],
         "first_result_date": "2026-05-02",
-        "latest_result_date": "2026-05-02"
+        "latest_result_date": "2026-05-30"
       },
       {
         "person_id": "skv-p000254",
@@ -38486,6 +38849,20 @@
         ],
         "first_result_date": "2026-03-29",
         "latest_result_date": "2026-05-10"
+      },
+      {
+        "person_id": "skv-p000447",
+        "profile_slug": "oskar-roynas",
+        "display_name": "Oskar Røynås",
+        "gender": "M",
+        "gender_label": "Menn",
+        "result_count": 1,
+        "distances": [
+          "2000 m"
+        ],
+        "best_results": [],
+        "first_result_date": "2026-05-30",
+        "latest_result_date": "2026-05-30"
       },
       {
         "person_id": "skv-p000255",
@@ -40965,7 +41342,7 @@
         "display_name": "Thomas Kjellberg",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 4,
+        "result_count": 5,
         "distances": [
           "800 m",
           "1500 m",
@@ -40974,17 +41351,17 @@
         ],
         "best_results": [
           {
-            "result_id": "res-74bd51a116b623d4",
+            "result_id": "res-2d68c3973f80002c",
             "distance": "800 m",
             "source_distance": "800 m",
-            "result_time": "1:59.86",
-            "result_time_seconds": 119.86,
-            "event_label": "KFUM Nasjonalt stevne",
-            "published_date": "2026-05-19",
-            "published_date_label": "19.05.2026",
-            "week_number": 21,
-            "place": "3",
-            "class_place": ""
+            "result_time": "1:59.63",
+            "result_time_seconds": 119.63,
+            "event_label": "Tjalvelekene 2026",
+            "published_date": "2026-05-31",
+            "published_date_label": "31.05.2026",
+            "week_number": 22,
+            "place": "19",
+            "class_place": "19"
           },
           {
             "result_id": "res-d57e10869f853a93",
@@ -41027,7 +41404,7 @@
           }
         ],
         "first_result_date": "2026-01-18",
-        "latest_result_date": "2026-05-19"
+        "latest_result_date": "2026-05-31"
       },
       {
         "person_id": "skv-p000322",
@@ -41542,7 +41919,7 @@
         "display_name": "Truls Vegard Skarvøy",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 5,
+        "result_count": 6,
         "distances": [
           "800 m",
           "1500 m",
@@ -41552,17 +41929,17 @@
         ],
         "best_results": [
           {
-            "result_id": "res-5877561fceca8ff1",
+            "result_id": "res-a0b0351aabfde8ed",
             "distance": "800 m",
             "source_distance": "800 m",
-            "result_time": "2:05.18",
-            "result_time_seconds": 125.18,
-            "event_label": "KFUM Nasjonalt stevne",
-            "published_date": "2026-05-19",
-            "published_date_label": "19.05.2026",
-            "week_number": 21,
-            "place": "8",
-            "class_place": ""
+            "result_time": "2:02.71",
+            "result_time_seconds": 122.71,
+            "event_label": "Tjalvelekene 2026",
+            "published_date": "2026-05-31",
+            "published_date_label": "31.05.2026",
+            "week_number": 22,
+            "place": "25",
+            "class_place": "25"
           },
           {
             "result_id": "res-a2f4ab57478986f7",
@@ -41605,7 +41982,7 @@
           }
         ],
         "first_result_date": "2026-01-18",
-        "latest_result_date": "2026-05-20"
+        "latest_result_date": "2026-05-31"
       },
       {
         "person_id": "skv-p000396",
@@ -42512,6 +42889,8 @@
       "solveig-hveem": "skv-p000443",
       "stina-meinicke": "skv-p000444",
       "tora-husum-kristensen": "skv-p000445",
+      "julie-louise-sandrup": "skv-p000446",
+      "oskar-roynas": "skv-p000447",
       "adne-andersen-andersen": "skv-p000001",
       "adne-sandvik-dyrnesli": "skv-p000003",
       "andreas-sjurseth": "skv-p000400",
@@ -42562,7 +42941,8 @@
       "kristian-retterstol-froyen": "skv-p000174",
       "jessica-katarina-gunnarsson": "skv-p000143",
       "jo-soreide": "skv-p000144",
-      "anton-janovskis-heldal": "skv-p000033"
+      "anton-janovskis-heldal": "skv-p000033",
+      "oskar-r-yn-s": "skv-p000447"
     },
     "slug_redirects": {
       "adne-andersen-andersen": "adne-andersen",
