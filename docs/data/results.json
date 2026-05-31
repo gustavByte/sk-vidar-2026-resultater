@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-05-31T19:07:08+02:00",
+  "generated_at": "2026-05-31T19:10:40+02:00",
   "stats": {
-    "result_count": 907,
-    "athlete_count": 401,
-    "event_count": 104,
+    "result_count": 925,
+    "athlete_count": 407,
+    "event_count": 105,
     "week_count": 19,
     "latest_week": 22,
     "latest_date": "2026-05-31",
-    "women_count": 354,
-    "men_count": 553,
+    "women_count": 363,
+    "men_count": 562,
     "missing_gender_or_class_count": 0
   },
   "weeks": [
@@ -18,12 +18,13 @@
       "week_label": "Uke 22",
       "published_date": "2026-05-31",
       "published_date_label": "31.05.2026",
-      "result_count": 123,
-      "athlete_count": 103,
-      "event_count": 7,
-      "women_count": 53,
-      "men_count": 70,
+      "result_count": 141,
+      "athlete_count": 117,
+      "event_count": 8,
+      "women_count": 62,
+      "men_count": 79,
       "events": [
+        "EcoTrail Oslo 2026",
         "Fornebuløpet 2026",
         "Jessheim Halvmaraton 2026",
         "Kragerø Sommerløp 2026",
@@ -997,6 +998,528 @@
       "wa_points": 677.0,
       "place": "8",
       "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-153068fdd3e12018",
+      "person_id": "skv-p000453",
+      "person_slug": "jonas-gronn-jespersen",
+      "published_date": "2026-05-30",
+      "published_date_label": "30.05.2026",
+      "week_number": 22,
+      "athlete_name": "Jonas Grønn Jespersen",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M12-13",
+      "class_place": "1",
+      "event_label": "EcoTrail Oslo 2026",
+      "distance": "Trail 10 km",
+      "result_time_raw": "0:40:24",
+      "result_time_normalized": "0:40:24",
+      "result_time_seconds": 2424.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "10",
+      "notes_clean": "8. mann",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-b6f3072e5e160181",
+      "person_id": "skv-p000456",
+      "person_slug": "victor-emmanuel-barbosa",
+      "published_date": "2026-05-30",
+      "published_date_label": "30.05.2026",
+      "week_number": 22,
+      "athlete_name": "Victor-Emmanuel Barbosa",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M35-39",
+      "class_place": "2",
+      "event_label": "EcoTrail Oslo 2026",
+      "distance": "Trail 21 km",
+      "result_time_raw": "1:17:29",
+      "result_time_normalized": "1:17:29",
+      "result_time_seconds": 4649.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "3",
+      "notes_clean": "3. mann",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-0cb6646ca38c0e60",
+      "person_id": "skv-p000392",
+      "person_slug": "karoline-wisloff-rud",
+      "published_date": "2026-05-30",
+      "published_date_label": "30.05.2026",
+      "week_number": 22,
+      "athlete_name": "Karoline Wisløff Rud",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K35-39",
+      "class_place": "1",
+      "event_label": "EcoTrail Oslo 2026",
+      "distance": "Trail 21 km",
+      "result_time_raw": "1:20:27",
+      "result_time_normalized": "1:20:27",
+      "result_time_seconds": 4827.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "5",
+      "notes_clean": "1. kvinne",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-ec5476075c9f3bad",
+      "person_id": "skv-p000185",
+      "person_slug": "leif-ole-havardsrud",
+      "published_date": "2026-05-30",
+      "published_date_label": "30.05.2026",
+      "week_number": 22,
+      "athlete_name": "Leif Ole Håvardsrud",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M35-39",
+      "class_place": "4",
+      "event_label": "EcoTrail Oslo 2026",
+      "distance": "Trail 21 km",
+      "result_time_raw": "1:26:55",
+      "result_time_normalized": "1:26:55",
+      "result_time_seconds": 5215.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "14",
+      "notes_clean": "12. mann",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-77bd3b1156d5dd99",
+      "person_id": "skv-p000140",
+      "person_slug": "janne-dahle",
+      "published_date": "2026-05-30",
+      "published_date_label": "30.05.2026",
+      "week_number": 22,
+      "athlete_name": "Janne Dahle",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K35-39",
+      "class_place": "2",
+      "event_label": "EcoTrail Oslo 2026",
+      "distance": "Trail 21 km",
+      "result_time_raw": "1:30:33",
+      "result_time_normalized": "1:30:33",
+      "result_time_seconds": 5433.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "21",
+      "notes_clean": "4. kvinne",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-c9e4e6809e34f8b5",
+      "person_id": "skv-p000218",
+      "person_slug": "marthe-meese-dolmen",
+      "published_date": "2026-05-30",
+      "published_date_label": "30.05.2026",
+      "week_number": 22,
+      "athlete_name": "Marthe Meese Dolmen",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K23-34",
+      "class_place": "9",
+      "event_label": "EcoTrail Oslo 2026",
+      "distance": "Trail 21 km",
+      "result_time_raw": "1:43:57",
+      "result_time_normalized": "1:43:57",
+      "result_time_seconds": 6237.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "93",
+      "notes_clean": "20. kvinne",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-27ed9ec65989d512",
+      "person_id": "skv-p000051",
+      "person_slug": "constantin-rust",
+      "published_date": "2026-05-30",
+      "published_date_label": "30.05.2026",
+      "week_number": 22,
+      "athlete_name": "Constantin Rust *",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M23-34",
+      "class_place": "3",
+      "event_label": "EcoTrail Oslo 2026",
+      "distance": "Trail 31 km",
+      "result_time_raw": "2:05:12",
+      "result_time_normalized": "2:05:12",
+      "result_time_seconds": 7512.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "3",
+      "notes_clean": "3. mann",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-0c1ad214c4efcda3",
+      "person_id": "skv-p000156",
+      "person_slug": "jostein-rogstad",
+      "published_date": "2026-05-30",
+      "published_date_label": "30.05.2026",
+      "week_number": 22,
+      "athlete_name": "Jostein Rogstad",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M35-39",
+      "class_place": "1",
+      "event_label": "EcoTrail Oslo 2026",
+      "distance": "Trail 31 km",
+      "result_time_raw": "2:07:54",
+      "result_time_normalized": "2:07:54",
+      "result_time_seconds": 7674.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "6",
+      "notes_clean": "6. mann",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-1972ae31f53ecc4d",
+      "person_id": "skv-p000396",
+      "person_slug": "tuva-toftdahl-staver",
+      "published_date": "2026-05-30",
+      "published_date_label": "30.05.2026",
+      "week_number": 22,
+      "athlete_name": "Tuva Toftdahl Staver",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K35-39",
+      "class_place": "1",
+      "event_label": "EcoTrail Oslo 2026",
+      "distance": "Trail 31 km",
+      "result_time_raw": "2:18:54",
+      "result_time_normalized": "2:18:54",
+      "result_time_seconds": 8334.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "10",
+      "notes_clean": "1. kvinne",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-79805bb60d5f1658",
+      "person_id": "skv-p000454",
+      "person_slug": "kristoffer-werner-hansen",
+      "published_date": "2026-05-30",
+      "published_date_label": "30.05.2026",
+      "week_number": 22,
+      "athlete_name": "Kristoffer Werner Hansen",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M35-39",
+      "class_place": "5",
+      "event_label": "EcoTrail Oslo 2026",
+      "distance": "Trail 31 km",
+      "result_time_raw": "2:38:33",
+      "result_time_normalized": "2:38:33",
+      "result_time_seconds": 9513.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "35",
+      "notes_clean": "31. mann",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-d57771614624f8aa",
+      "person_id": "skv-p000452",
+      "person_slug": "jens-kortner",
+      "published_date": "2026-05-30",
+      "published_date_label": "30.05.2026",
+      "week_number": 22,
+      "athlete_name": "Jens Kortner",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M40-44",
+      "class_place": "10",
+      "event_label": "EcoTrail Oslo 2026",
+      "distance": "Trail 31 km",
+      "result_time_raw": "2:44:02",
+      "result_time_normalized": "2:44:02",
+      "result_time_seconds": 9842.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "53",
+      "notes_clean": "46. mann",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-dc569c2609fcf1fa",
+      "person_id": "skv-p000103",
+      "person_slug": "hanne-tingelstad",
+      "published_date": "2026-05-30",
+      "published_date_label": "30.05.2026",
+      "week_number": 22,
+      "athlete_name": "Hanne Tingelstad",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K35-39",
+      "class_place": "4",
+      "event_label": "EcoTrail Oslo 2026",
+      "distance": "Trail 31 km",
+      "result_time_raw": "2:49:47",
+      "result_time_normalized": "2:49:47",
+      "result_time_seconds": 10187.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "74",
+      "notes_clean": "14. kvinne",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-a18b695be20027a6",
+      "person_id": "skv-p000417",
+      "person_slug": "tina-hatland",
+      "published_date": "2026-05-30",
+      "published_date_label": "30.05.2026",
+      "week_number": 22,
+      "athlete_name": "Tina Hatland",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K23-34",
+      "class_place": "16",
+      "event_label": "EcoTrail Oslo 2026",
+      "distance": "Trail 31 km",
+      "result_time_raw": "3:06:09",
+      "result_time_normalized": "3:06:09",
+      "result_time_seconds": 11169.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "167",
+      "notes_clean": "39. kvinne",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-3d2d23dd6ff2b5d6",
+      "person_id": "skv-p000308",
+      "person_slug": "stein-ellingsen",
+      "published_date": "2026-05-30",
+      "published_date_label": "30.05.2026",
+      "week_number": 22,
+      "athlete_name": "Stein Ellingsen *",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M35-39",
+      "class_place": "4",
+      "event_label": "EcoTrail Oslo 2026",
+      "distance": "Trail 50 km",
+      "result_time_raw": "4:14:19",
+      "result_time_normalized": "4:14:19",
+      "result_time_seconds": 15259.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "10",
+      "notes_clean": "10. mann",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-3248a0c888a564f9",
+      "person_id": "skv-p000455",
+      "person_slug": "veslemoy-ronnevik",
+      "published_date": "2026-05-30",
+      "published_date_label": "30.05.2026",
+      "week_number": 22,
+      "athlete_name": "Veslemøy Rønnevik",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K35-39",
+      "class_place": "1",
+      "event_label": "EcoTrail Oslo 2026",
+      "distance": "Trail 50 km",
+      "result_time_raw": "4:15:15",
+      "result_time_normalized": "4:15:15",
+      "result_time_seconds": 15315.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "12",
+      "notes_clean": "1. kvinne",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-42fa74c881599eef",
+      "person_id": "skv-p000316",
+      "person_slug": "sylvia-nordskar",
+      "published_date": "2026-05-30",
+      "published_date_label": "30.05.2026",
+      "week_number": 22,
+      "athlete_name": "Sylvia Nordskar",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K23-34",
+      "class_place": "1",
+      "event_label": "EcoTrail Oslo 2026",
+      "distance": "Trail 50 km",
+      "result_time_raw": "4:30:25",
+      "result_time_normalized": "4:30:25",
+      "result_time_seconds": 16225.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "21",
+      "notes_clean": "3. kvinne",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-dbd92d2db1bf2887",
+      "person_id": "skv-p000363",
+      "person_slug": "asmund-sunde-valseth",
+      "published_date": "2026-05-30",
+      "published_date_label": "30.05.2026",
+      "week_number": 22,
+      "athlete_name": "Åsmund Sunde Valseth",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M35-39",
+      "class_place": "1",
+      "event_label": "EcoTrail Oslo 2026",
+      "distance": "Trail 80 km",
+      "result_time_raw": "6:39:18",
+      "result_time_normalized": "6:39:18",
+      "result_time_seconds": 23958.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "1",
+      "notes_clean": "1. mann",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-c51d9846a80f97ce",
+      "person_id": "skv-p000457",
+      "person_slug": "victoria-rochelois",
+      "published_date": "2026-05-30",
+      "published_date_label": "30.05.2026",
+      "week_number": 22,
+      "athlete_name": "Victoria Rochelois",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K23-34",
+      "class_place": "5",
+      "event_label": "EcoTrail Oslo 2026",
+      "distance": "Trail 80 km",
+      "result_time_raw": "8:47:07",
+      "result_time_normalized": "8:47:07",
+      "result_time_seconds": 31627.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "46",
+      "notes_clean": "11. kvinne",
       "split_first_label": "",
       "split_first_display": "",
       "split_second_label": "",
@@ -28738,7 +29261,7 @@
     }
   ],
   "people": {
-    "profile_count": 401,
+    "profile_count": 407,
     "profiles": [
       {
         "person_id": "skv-p000001",
@@ -30154,13 +30677,14 @@
         "display_name": "Åsmund Sunde Valseth",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
-          "9 km"
+          "9 km",
+          "Trail 80 km"
         ],
         "best_results": [],
         "first_result_date": "2026-05-02",
-        "latest_result_date": "2026-05-02"
+        "latest_result_date": "2026-05-30"
       },
       {
         "person_id": "skv-p000037",
@@ -30900,9 +31424,10 @@
         "display_name": "Constantin Rust *",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 2,
+        "result_count": 3,
         "distances": [
-          "10 km"
+          "10 km",
+          "Trail 31 km"
         ],
         "best_results": [
           {
@@ -30920,7 +31445,7 @@
           }
         ],
         "first_result_date": "2026-04-11",
-        "latest_result_date": "2026-05-27"
+        "latest_result_date": "2026-05-30"
       },
       {
         "person_id": "skv-p000052",
@@ -33192,9 +33717,10 @@
         "display_name": "Hanne Tingelstad",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 2,
+        "result_count": 3,
         "distances": [
-          "10 km"
+          "10 km",
+          "Trail 31 km"
         ],
         "best_results": [
           {
@@ -33212,7 +33738,7 @@
           }
         ],
         "first_result_date": "2026-04-25",
-        "latest_result_date": "2026-05-25"
+        "latest_result_date": "2026-05-30"
       },
       {
         "person_id": "skv-p000104",
@@ -34600,10 +35126,11 @@
         "display_name": "Janne Dahle",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 2,
+        "result_count": 3,
         "distances": [
           "10 km",
-          "Halvmaraton"
+          "Halvmaraton",
+          "Trail 21 km"
         ],
         "best_results": [
           {
@@ -34634,7 +35161,7 @@
           }
         ],
         "first_result_date": "2026-02-08",
-        "latest_result_date": "2026-04-11"
+        "latest_result_date": "2026-05-30"
       },
       {
         "person_id": "skv-p000384",
@@ -34663,6 +35190,20 @@
         ],
         "first_result_date": "2026-05-15",
         "latest_result_date": "2026-05-15"
+      },
+      {
+        "person_id": "skv-p000452",
+        "profile_slug": "jens-kortner",
+        "display_name": "Jens Kortner",
+        "gender": "M",
+        "gender_label": "Menn",
+        "result_count": 1,
+        "distances": [
+          "Trail 31 km"
+        ],
+        "best_results": [],
+        "first_result_date": "2026-05-30",
+        "latest_result_date": "2026-05-30"
       },
       {
         "person_id": "skv-p000141",
@@ -35072,6 +35613,20 @@
         "latest_result_date": "2026-05-31"
       },
       {
+        "person_id": "skv-p000453",
+        "profile_slug": "jonas-gronn-jespersen",
+        "display_name": "Jonas Grønn Jespersen",
+        "gender": "M",
+        "gender_label": "Menn",
+        "result_count": 1,
+        "distances": [
+          "Trail 10 km"
+        ],
+        "best_results": [],
+        "first_result_date": "2026-05-30",
+        "latest_result_date": "2026-05-30"
+      },
+      {
         "person_id": "skv-p000153",
         "profile_slug": "jonas-njerve",
         "display_name": "Jonas Njerve",
@@ -35217,11 +35772,12 @@
         "display_name": "Jostein Rogstad",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 6,
+        "result_count": 7,
         "distances": [
           "5 km",
           "10 km",
-          "3 km"
+          "3 km",
+          "Trail 31 km"
         ],
         "best_results": [
           {
@@ -35252,7 +35808,7 @@
           }
         ],
         "first_result_date": "2026-04-11",
-        "latest_result_date": "2026-05-27"
+        "latest_result_date": "2026-05-30"
       },
       {
         "person_id": "skv-p000373",
@@ -35722,9 +36278,10 @@
         "display_name": "Karoline Wisløff Rud",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
-          "5 km"
+          "5 km",
+          "Trail 21 km"
         ],
         "best_results": [
           {
@@ -35742,7 +36299,7 @@
           }
         ],
         "first_result_date": "2026-05-14",
-        "latest_result_date": "2026-05-14"
+        "latest_result_date": "2026-05-30"
       },
       {
         "person_id": "skv-p000166",
@@ -36405,6 +36962,20 @@
         "latest_result_date": "2026-01-18"
       },
       {
+        "person_id": "skv-p000454",
+        "profile_slug": "kristoffer-werner-hansen",
+        "display_name": "Kristoffer Werner Hansen",
+        "gender": "M",
+        "gender_label": "Menn",
+        "result_count": 1,
+        "distances": [
+          "Trail 31 km"
+        ],
+        "best_results": [],
+        "first_result_date": "2026-05-30",
+        "latest_result_date": "2026-05-30"
+      },
+      {
         "person_id": "skv-p000181",
         "profile_slug": "kyrre-berland",
         "display_name": "Kyrre Berland",
@@ -36550,9 +37121,10 @@
         "display_name": "Leif Ole Håvardsrud",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
-          "10 km"
+          "10 km",
+          "Trail 21 km"
         ],
         "best_results": [
           {
@@ -36570,7 +37142,7 @@
           }
         ],
         "first_result_date": "2026-04-25",
-        "latest_result_date": "2026-04-25"
+        "latest_result_date": "2026-05-30"
       },
       {
         "person_id": "skv-p000352",
@@ -37863,9 +38435,10 @@
         "display_name": "Marthe Meese Dolmen",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 2,
+        "result_count": 3,
         "distances": [
-          "5 km"
+          "5 km",
+          "Trail 21 km"
         ],
         "best_results": [
           {
@@ -37883,7 +38456,7 @@
           }
         ],
         "first_result_date": "2026-03-01",
-        "latest_result_date": "2026-05-27"
+        "latest_result_date": "2026-05-30"
       },
       {
         "person_id": "skv-p000219",
@@ -41442,10 +42015,11 @@
         "display_name": "Stein Ellingsen *",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 2,
+        "result_count": 3,
         "distances": [
           "10 km",
-          "Halvmaraton"
+          "Halvmaraton",
+          "Trail 50 km"
         ],
         "best_results": [
           {
@@ -41476,7 +42050,7 @@
           }
         ],
         "first_result_date": "2026-04-11",
-        "latest_result_date": "2026-05-01"
+        "latest_result_date": "2026-05-30"
       },
       {
         "person_id": "skv-p000444",
@@ -41780,9 +42354,10 @@
         "display_name": "Sylvia Nordskar",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
-          "10 km"
+          "10 km",
+          "Trail 50 km"
         ],
         "best_results": [
           {
@@ -41800,7 +42375,7 @@
           }
         ],
         "first_result_date": "2026-04-25",
-        "latest_result_date": "2026-04-25"
+        "latest_result_date": "2026-05-30"
       },
       {
         "person_id": "skv-p000317",
@@ -42201,9 +42776,10 @@
         "display_name": "Tina Hatland",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
-          "Halvmaraton"
+          "Halvmaraton",
+          "Trail 31 km"
         ],
         "best_results": [
           {
@@ -42221,7 +42797,7 @@
           }
         ],
         "first_result_date": "2026-05-23",
-        "latest_result_date": "2026-05-23"
+        "latest_result_date": "2026-05-30"
       },
       {
         "person_id": "skv-p000325",
@@ -42709,13 +43285,14 @@
         "display_name": "Tuva Toftdahl Staver",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
-          "13 km"
+          "13 km",
+          "Trail 31 km"
         ],
         "best_results": [],
         "first_result_date": "2026-05-14",
-        "latest_result_date": "2026-05-14"
+        "latest_result_date": "2026-05-30"
       },
       {
         "person_id": "skv-p000390",
@@ -42944,6 +43521,20 @@
         "latest_result_date": "2026-04-25"
       },
       {
+        "person_id": "skv-p000455",
+        "profile_slug": "veslemoy-ronnevik",
+        "display_name": "Veslemøy Rønnevik",
+        "gender": "K",
+        "gender_label": "Kvinner",
+        "result_count": 1,
+        "distances": [
+          "Trail 50 km"
+        ],
+        "best_results": [],
+        "first_result_date": "2026-05-30",
+        "latest_result_date": "2026-05-30"
+      },
+      {
         "person_id": "skv-p000340",
         "profile_slug": "vetle-elstad-kjensli",
         "display_name": "Vetle Elstad Kjensli",
@@ -42972,6 +43563,20 @@
         "latest_result_date": "2026-04-25"
       },
       {
+        "person_id": "skv-p000456",
+        "profile_slug": "victor-emmanuel-barbosa",
+        "display_name": "Victor-Emmanuel Barbosa",
+        "gender": "M",
+        "gender_label": "Menn",
+        "result_count": 1,
+        "distances": [
+          "Trail 21 km"
+        ],
+        "best_results": [],
+        "first_result_date": "2026-05-30",
+        "latest_result_date": "2026-05-30"
+      },
+      {
         "person_id": "skv-p000341",
         "profile_slug": "victoria-haestad-bjornstad",
         "display_name": "Victoria Hæstad Bjørnstad",
@@ -42998,6 +43603,20 @@
         ],
         "first_result_date": "2026-03-01",
         "latest_result_date": "2026-03-01"
+      },
+      {
+        "person_id": "skv-p000457",
+        "profile_slug": "victoria-rochelois",
+        "display_name": "Victoria Rochelois",
+        "gender": "K",
+        "gender_label": "Kvinner",
+        "result_count": 1,
+        "distances": [
+          "Trail 80 km"
+        ],
+        "best_results": [],
+        "first_result_date": "2026-05-30",
+        "latest_result_date": "2026-05-30"
       },
       {
         "person_id": "skv-p000342",
@@ -43628,6 +44247,12 @@
       "martin-kildal": "skv-p000449",
       "sara-fixdal": "skv-p000450",
       "tobias-opdalshei-baumann": "skv-p000451",
+      "jens-kortner": "skv-p000452",
+      "jonas-gronn-jespersen": "skv-p000453",
+      "kristoffer-werner-hansen": "skv-p000454",
+      "veslemoy-ronnevik": "skv-p000455",
+      "victor-emmanuel-barbosa": "skv-p000456",
+      "victoria-rochelois": "skv-p000457",
       "adne-andersen-andersen": "skv-p000001",
       "adne-sandvik-dyrnesli": "skv-p000003",
       "andreas-sjurseth": "skv-p000400",
