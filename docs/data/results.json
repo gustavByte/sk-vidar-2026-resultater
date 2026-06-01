@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-06-01T08:59:16+02:00",
+  "generated_at": "2026-06-01T20:22:31+02:00",
   "stats": {
-    "result_count": 938,
-    "athlete_count": 409,
-    "event_count": 112,
+    "result_count": 941,
+    "athlete_count": 411,
+    "event_count": 113,
     "week_count": 19,
     "latest_week": 22,
     "latest_date": "2026-05-31",
     "women_count": 367,
-    "men_count": 571,
+    "men_count": 574,
     "missing_gender_or_class_count": 0
   },
   "weeks": [
@@ -18,11 +18,11 @@
       "week_label": "Uke 22",
       "published_date": "2026-05-31",
       "published_date_label": "31.05.2026",
-      "result_count": 154,
-      "athlete_count": 128,
-      "event_count": 15,
+      "result_count": 157,
+      "athlete_count": 131,
+      "event_count": 16,
       "women_count": 66,
-      "men_count": 88,
+      "men_count": 91,
       "events": [
         "EcoTrail Oslo 2026",
         "Fornebuløpet 2026",
@@ -32,6 +32,7 @@
         "Jessheim Halvmaraton 2026",
         "Kragerø Sommerløp 2026",
         "Lygnaløpet 2026",
+        "Molde7topper 2026",
         "NM halvmaraton / Farsund Maraton 2026",
         "Nordic Senior Championships 2026",
         "Saldilten 2026",
@@ -1788,6 +1789,93 @@
       "wa_points": 944.0,
       "place": "",
       "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-684ece4f4bd0a678",
+      "person_id": "skv-p000460",
+      "person_slug": "magnus-hojen",
+      "published_date": "2026-05-30",
+      "published_date_label": "30.05.2026",
+      "week_number": 22,
+      "athlete_name": "Magnus Højen",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "Herre 30-39",
+      "class_place": "5",
+      "event_label": "Molde7topper 2026",
+      "distance": "19 km",
+      "result_time_raw": "2:06:38.0",
+      "result_time_normalized": "2:06:38.0",
+      "result_time_seconds": 7598.0,
+      "wa_gender": "M",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "9",
+      "notes_clean": "9. mann; 5. Herre 30-39",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-ecd550f4fb83cde9",
+      "person_id": "skv-p000087",
+      "person_slug": "frederik-emil-juul",
+      "published_date": "2026-05-30",
+      "published_date_label": "30.05.2026",
+      "week_number": 22,
+      "athlete_name": "Frederik Emil Juul",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "Herre 30-39",
+      "class_place": "9",
+      "event_label": "Molde7topper 2026",
+      "distance": "19 km",
+      "result_time_raw": "2:16:59.0",
+      "result_time_normalized": "2:16:59.0",
+      "result_time_seconds": 8219.0,
+      "wa_gender": "M",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "16",
+      "notes_clean": "16. mann; 9. Herre 30-39",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-c686a084f49c58d5",
+      "person_id": "skv-p000461",
+      "person_slug": "ole-petter-k-schmedling",
+      "published_date": "2026-05-30",
+      "published_date_label": "30.05.2026",
+      "week_number": 22,
+      "athlete_name": "Ole Petter K Schmedling",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "Herre 30-39",
+      "class_place": "47",
+      "event_label": "Molde7topper 2026",
+      "distance": "19 km",
+      "result_time_raw": "2:46:12.0",
+      "result_time_normalized": "2:46:12.0",
+      "result_time_seconds": 9972.0,
+      "wa_gender": "M",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "103",
+      "notes_clean": "86. mann; 47. Herre 30-39",
       "split_first_label": "",
       "split_first_display": "",
       "split_second_label": "",
@@ -29645,7 +29733,7 @@
     }
   ],
   "people": {
-    "profile_count": 409,
+    "profile_count": 411,
     "profiles": [
       {
         "person_id": "skv-p000001",
@@ -33214,9 +33302,10 @@
         "display_name": "Frederik Emil Juul",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
-          "10 km"
+          "10 km",
+          "19 km"
         ],
         "best_results": [
           {
@@ -33234,7 +33323,7 @@
           }
         ],
         "first_result_date": "2026-04-25",
-        "latest_result_date": "2026-04-25"
+        "latest_result_date": "2026-05-30"
       },
       {
         "person_id": "skv-p000088",
@@ -38063,6 +38152,20 @@
         "latest_result_date": "2026-05-27"
       },
       {
+        "person_id": "skv-p000460",
+        "profile_slug": "magnus-hojen",
+        "display_name": "Magnus Højen",
+        "gender": "M",
+        "gender_label": "Menn",
+        "result_count": 1,
+        "distances": [
+          "19 km"
+        ],
+        "best_results": [],
+        "first_result_date": "2026-05-30",
+        "latest_result_date": "2026-05-30"
+      },
+      {
         "person_id": "skv-p000437",
         "profile_slug": "magnus-kjesrud",
         "display_name": "Magnus Kjesrud",
@@ -40385,6 +40488,20 @@
         ],
         "first_result_date": "2026-01-18",
         "latest_result_date": "2026-03-15"
+      },
+      {
+        "person_id": "skv-p000461",
+        "profile_slug": "ole-petter-k-schmedling",
+        "display_name": "Ole Petter K Schmedling",
+        "gender": "M",
+        "gender_label": "Menn",
+        "result_count": 1,
+        "distances": [
+          "19 km"
+        ],
+        "best_results": [],
+        "first_result_date": "2026-05-30",
+        "latest_result_date": "2026-05-30"
       },
       {
         "person_id": "skv-p000358",
@@ -44696,6 +44813,8 @@
       "victoria-rochelois": "skv-p000457",
       "ozlem-akdas": "skv-p000458",
       "gunnar-berthelsen": "skv-p000459",
+      "magnus-hojen": "skv-p000460",
+      "ole-petter-k-schmedling": "skv-p000461",
       "adne-andersen-andersen": "skv-p000001",
       "adne-sandvik-dyrnesli": "skv-p000003",
       "andreas-sjurseth": "skv-p000400",

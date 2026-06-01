@@ -1,0 +1,5 @@
+Molde7topper 2026 | 30.05.2026 | Molde Idrettspark | CSV
+
+2026-05-30 | 19 km | Magnus Højen | startnr 122 | Herre 30-39 | Sportsklubben Vidar | 2:06:38.0 | plass 9 | kjønn 9 | klasse 5 | Offisiell klubb | Offisiell Vidar
+2026-05-30 | 19 km | Frederik Emil Juul | startnr 288 | Herre 30-39 | SK Vidar | 2:16:59.0 | plass 16 | kjønn 16 | klasse 9 | Offisiell klubb | SK Vidar i ClubTeamFormatted
+2026-05-30 | 19 km | Ole Petter K Schmedling | startnr 318 | Herre 30-39 | Sportsklubben Vidar / Team Ole | 2:46:12.0 | plass 103 | kjønn 86 | klasse 47 | Offisiell klubb | Offisiell Vidar
