@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-06-01T08:31:16+02:00",
+  "generated_at": "2026-06-01T08:34:36+02:00",
   "stats": {
-    "result_count": 935,
-    "athlete_count": 408,
+    "result_count": 936,
+    "athlete_count": 409,
     "event_count": 111,
     "week_count": 19,
     "latest_week": 22,
     "latest_date": "2026-05-31",
     "women_count": 366,
-    "men_count": 569,
+    "men_count": 570,
     "missing_gender_or_class_count": 0
   },
   "weeks": [
@@ -18,11 +18,11 @@
       "week_label": "Uke 22",
       "published_date": "2026-05-31",
       "published_date_label": "31.05.2026",
-      "result_count": 151,
-      "athlete_count": 126,
+      "result_count": 152,
+      "athlete_count": 127,
       "event_count": 14,
       "women_count": 65,
-      "men_count": 86,
+      "men_count": 87,
       "events": [
         "EcoTrail Oslo 2026",
         "Fornebuløpet 2026",
@@ -1671,6 +1671,35 @@
       "wa_points": 712.0,
       "place": "1",
       "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-a662872cb26b51b4",
+      "person_id": "skv-p000459",
+      "person_slug": "gunnar-berthelsen",
+      "published_date": "2026-05-30",
+      "published_date_label": "30.05.2026",
+      "week_number": 22,
+      "athlete_name": "Gunnar Berthelsen",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M65-69",
+      "class_place": "1",
+      "event_label": "Glommaløpet 2026",
+      "distance": "10 miles",
+      "result_time_raw": "1:14:24",
+      "result_time_normalized": "1:14:24",
+      "result_time_seconds": 4464.0,
+      "wa_gender": "M",
+      "wa_event": "10 Miles",
+      "wa_points": 114.0,
+      "place": "129",
+      "notes_clean": "1. M65-69",
       "split_first_label": "",
       "split_first_display": "",
       "split_second_label": "",
@@ -29557,7 +29586,7 @@
     }
   ],
   "people": {
-    "profile_count": 408,
+    "profile_count": 409,
     "profiles": [
       {
         "person_id": "skv-p000001",
@@ -33709,6 +33738,20 @@
         ],
         "first_result_date": "2026-04-25",
         "latest_result_date": "2026-04-25"
+      },
+      {
+        "person_id": "skv-p000459",
+        "profile_slug": "gunnar-berthelsen",
+        "display_name": "Gunnar Berthelsen",
+        "gender": "M",
+        "gender_label": "Menn",
+        "result_count": 1,
+        "distances": [
+          "10 miles"
+        ],
+        "best_results": [],
+        "first_result_date": "2026-05-30",
+        "latest_result_date": "2026-05-30"
       },
       {
         "person_id": "skv-p000096",
@@ -44593,6 +44636,7 @@
       "victor-emmanuel-barbosa": "skv-p000456",
       "victoria-rochelois": "skv-p000457",
       "ozlem-akdas": "skv-p000458",
+      "gunnar-berthelsen": "skv-p000459",
       "adne-andersen-andersen": "skv-p000001",
       "adne-sandvik-dyrnesli": "skv-p000003",
       "andreas-sjurseth": "skv-p000400",
