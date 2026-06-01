@@ -1,14 +1,14 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-05-31T21:57:16+02:00",
+  "generated_at": "2026-06-01T08:00:02+02:00",
   "stats": {
-    "result_count": 933,
-    "athlete_count": 407,
+    "result_count": 934,
+    "athlete_count": 408,
     "event_count": 110,
     "week_count": 19,
     "latest_week": 22,
     "latest_date": "2026-05-31",
-    "women_count": 365,
+    "women_count": 366,
     "men_count": 568,
     "missing_gender_or_class_count": 0
   },
@@ -18,10 +18,10 @@
       "week_label": "Uke 22",
       "published_date": "2026-05-31",
       "published_date_label": "31.05.2026",
-      "result_count": 149,
-      "athlete_count": 124,
+      "result_count": 150,
+      "athlete_count": 125,
       "event_count": 13,
-      "women_count": 64,
+      "women_count": 65,
       "men_count": 85,
       "events": [
         "EcoTrail Oslo 2026",
@@ -3874,6 +3874,35 @@
       "wa_points": 112.0,
       "place": "686",
       "notes_clean": "602. mann; Fartsholder",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-ce8e04f81c68193a",
+      "person_id": "skv-p000458",
+      "person_slug": "ozlem-akdas",
+      "published_date": "2026-05-27",
+      "published_date_label": "27.05.2026",
+      "week_number": 22,
+      "athlete_name": "Øzlem Akdas",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "Kvinner",
+      "class_place": "",
+      "event_label": "Fornebuløpet 2026",
+      "distance": "10 km",
+      "result_time_raw": "44:54",
+      "result_time_normalized": "44:54",
+      "result_time_seconds": 2694.0,
+      "wa_gender": "K",
+      "wa_event": "10 km",
+      "wa_points": 558.0,
+      "place": "",
+      "notes_clean": "87. kvinne",
       "split_first_label": "",
       "split_first_display": "",
       "split_second_label": "",
@@ -29498,7 +29527,7 @@
     }
   ],
   "people": {
-    "profile_count": 407,
+    "profile_count": 408,
     "profiles": [
       {
         "person_id": "skv-p000001",
@@ -40366,6 +40395,34 @@
         "latest_result_date": "2026-05-01"
       },
       {
+        "person_id": "skv-p000458",
+        "profile_slug": "ozlem-akdas",
+        "display_name": "Øzlem Akdas",
+        "gender": "K",
+        "gender_label": "Kvinner",
+        "result_count": 1,
+        "distances": [
+          "10 km"
+        ],
+        "best_results": [
+          {
+            "result_id": "res-ce8e04f81c68193a",
+            "distance": "10 km",
+            "source_distance": "10 km",
+            "result_time": "44:54",
+            "result_time_seconds": 2694.0,
+            "event_label": "Fornebuløpet 2026",
+            "published_date": "2026-05-27",
+            "published_date_label": "27.05.2026",
+            "week_number": 22,
+            "place": "",
+            "class_place": ""
+          }
+        ],
+        "first_result_date": "2026-05-27",
+        "latest_result_date": "2026-05-27"
+      },
+      {
         "person_id": "skv-p000257",
         "profile_slug": "pal-erik-johnsen",
         "display_name": "Pål Erik Johnsen",
@@ -44504,6 +44561,7 @@
       "veslemoy-ronnevik": "skv-p000455",
       "victor-emmanuel-barbosa": "skv-p000456",
       "victoria-rochelois": "skv-p000457",
+      "ozlem-akdas": "skv-p000458",
       "adne-andersen-andersen": "skv-p000001",
       "adne-sandvik-dyrnesli": "skv-p000003",
       "andreas-sjurseth": "skv-p000400",

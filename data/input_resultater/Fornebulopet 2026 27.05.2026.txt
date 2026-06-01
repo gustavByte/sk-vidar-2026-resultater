@@ -27,6 +27,7 @@ Filter: Status TIME og Klubb i EQ inneholder Vidar, men ikke OSI/?s/blankt/andre
 2026-05-27 | 10 km | Ger Wijnandus van Graas | startnr 9066 | Fornebutrippelen Menn | Sportsklubben Vidar | 42:49 | plass 528 | kj?nn 478 | klasse 28 | Offisiell klubb | Offisiell Vidar
 2026-05-27 | 10 km | Thomas Beka | startnr 3651 | Menn 40-44 år  | Sportsklubben Vidar | 42:50 | plass 529 | kj?nn 479 | klasse 61 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack
 2026-05-27 | 10 km | Anders Nordby | startnr 3706 | Menn 50-54 år | Sportsklubben Vidar | 44:47 | plass 686 | kj?nn 602 | klasse 43 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack
+2026-05-27 | 10 km | Øzlem Akdas | startnr  | Kvinner | SK Vidar | 44:54 | plass  | kj?nn 87 | klasse  | Offisiell klubb | Offisiell Vidar; brukeroppgitt
 2026-05-27 | 10 km | Mari Grønning Vatn | startnr 3458 | Kvinner35-39 år  | Sportsklubben Vidar | 44:58 | plass 699 | kj?nn 89 | klasse 16 | Offisiell klubb | Offisiell Vidar; OSIF medlem
 2026-05-27 | 10 km | Tone Gravvold | startnr 9149 | Fornebutrippelen kvinner | Sportsklubben Vidar | 45:13 | plass 729 | kj?nn 95 | klasse 8 | Offisiell klubb | Offisiell Vidar; SKV aktiv
 2026-05-27 | 10 km | Christian Lillebo | startnr 9064 | Fornebutrippelen Menn | Sportsklubben Vidar | 45:57 | plass 782 | kj?nn 672 | klasse 39 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack
