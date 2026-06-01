@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-06-01T08:00:02+02:00",
+  "generated_at": "2026-06-01T08:31:16+02:00",
   "stats": {
-    "result_count": 934,
+    "result_count": 935,
     "athlete_count": 408,
-    "event_count": 110,
+    "event_count": 111,
     "week_count": 19,
     "latest_week": 22,
     "latest_date": "2026-05-31",
     "women_count": 366,
-    "men_count": 568,
+    "men_count": 569,
     "missing_gender_or_class_count": 0
   },
   "weeks": [
@@ -18,14 +18,15 @@
       "week_label": "Uke 22",
       "published_date": "2026-05-31",
       "published_date_label": "31.05.2026",
-      "result_count": 150,
-      "athlete_count": 125,
-      "event_count": 13,
+      "result_count": 151,
+      "athlete_count": 126,
+      "event_count": 14,
       "women_count": 65,
-      "men_count": 85,
+      "men_count": 86,
       "events": [
         "EcoTrail Oslo 2026",
         "Fornebuløpet 2026",
+        "Glommaløpet 2026",
         "Great Manchester Run 2026",
         "Jessheim Halvmaraton 2026",
         "Kragerø Sommerløp 2026",
@@ -1641,6 +1642,35 @@
       "wa_points": null,
       "place": "46",
       "notes_clean": "11. kvinne",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-afe680a08b971203",
+      "person_id": "skv-p000302",
+      "person_slug": "sondre-lomeland",
+      "published_date": "2026-05-30",
+      "published_date_label": "30.05.2026",
+      "week_number": 22,
+      "athlete_name": "Sondre Lomeland",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M23-34",
+      "class_place": "1",
+      "event_label": "Glommaløpet 2026",
+      "distance": "10 miles",
+      "result_time_raw": "54:48",
+      "result_time_normalized": "54:48",
+      "result_time_seconds": 3288.0,
+      "wa_gender": "M",
+      "wa_event": "10 Miles",
+      "wa_points": 712.0,
+      "place": "1",
+      "notes_clean": "",
       "split_first_label": "",
       "split_first_display": "",
       "split_second_label": "",
@@ -42155,11 +42185,12 @@
         "display_name": "Sondre Lomeland",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 3,
+        "result_count": 4,
         "distances": [
           "1500 m",
           "10 km",
-          "Halvmaraton"
+          "Halvmaraton",
+          "10 miles"
         ],
         "best_results": [
           {
@@ -42203,7 +42234,7 @@
           }
         ],
         "first_result_date": "2026-02-15",
-        "latest_result_date": "2026-05-02"
+        "latest_result_date": "2026-05-30"
       },
       {
         "person_id": "skv-p000304",
