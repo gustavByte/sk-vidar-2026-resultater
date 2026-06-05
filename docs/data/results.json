@@ -1,18 +1,32 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-06-02T14:14:53+02:00",
+  "generated_at": "2026-06-05T15:05:38+02:00",
   "stats": {
-    "result_count": 942,
+    "result_count": 946,
     "athlete_count": 411,
-    "event_count": 114,
-    "week_count": 19,
-    "latest_week": 22,
-    "latest_date": "2026-05-31",
-    "women_count": 367,
-    "men_count": 575,
+    "event_count": 115,
+    "week_count": 20,
+    "latest_week": 23,
+    "latest_date": "2026-06-04",
+    "women_count": 370,
+    "men_count": 576,
     "missing_gender_or_class_count": 0
   },
   "weeks": [
+    {
+      "week_number": 23,
+      "week_label": "Uke 23",
+      "published_date": "2026-06-04",
+      "published_date_label": "04.06.2026",
+      "result_count": 4,
+      "athlete_count": 4,
+      "event_count": 1,
+      "women_count": 3,
+      "men_count": 1,
+      "events": [
+        "Torshov Trail Run 2026"
+      ]
+    },
     {
       "week_number": 22,
       "week_label": "Uke 22",
@@ -376,6 +390,122 @@
     }
   ],
   "results": [
+    {
+      "result_id": "res-6b733d78584e710d",
+      "person_id": "skv-p000008",
+      "person_slug": "aleksander-amundsen",
+      "published_date": "2026-06-04",
+      "published_date_label": "04.06.2026",
+      "week_number": 23,
+      "athlete_name": "Aleksander Amundsen",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "Menn",
+      "class_place": "1",
+      "event_label": "Torshov Trail Run 2026",
+      "distance": "6 km",
+      "result_time_raw": "27:42",
+      "result_time_normalized": "27:42",
+      "result_time_seconds": 1662.0,
+      "wa_gender": "M",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "1",
+      "notes_clean": "1. mann",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-d48985f3cf3177c8",
+      "person_id": "skv-p000056",
+      "person_slug": "dina-erika-hansen",
+      "published_date": "2026-06-04",
+      "published_date_label": "04.06.2026",
+      "week_number": 23,
+      "athlete_name": "Dina Erika Hansen",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "Kvinner",
+      "class_place": "1",
+      "event_label": "Torshov Trail Run 2026",
+      "distance": "6 km",
+      "result_time_raw": "30:23",
+      "result_time_normalized": "30:23",
+      "result_time_seconds": 1823.0,
+      "wa_gender": "K",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "2",
+      "notes_clean": "1. kvinne",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-bc3ba91266c7e594",
+      "person_id": "skv-p000162",
+      "person_slug": "kara-meunier",
+      "published_date": "2026-06-04",
+      "published_date_label": "04.06.2026",
+      "week_number": 23,
+      "athlete_name": "Kara Meunier",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "Kvinner",
+      "class_place": "9",
+      "event_label": "Torshov Trail Run 2026",
+      "distance": "6 km",
+      "result_time_raw": "38:17",
+      "result_time_normalized": "38:17",
+      "result_time_seconds": 2297.0,
+      "wa_gender": "K",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "13",
+      "notes_clean": "9. kvinne",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-84de3b36be6a70cf",
+      "person_id": "skv-p000202",
+      "person_slug": "maria-bipop",
+      "published_date": "2026-06-04",
+      "published_date_label": "04.06.2026",
+      "week_number": 23,
+      "athlete_name": "Maria Bipop",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "Kvinner",
+      "class_place": "2",
+      "event_label": "Torshov Trail Run 2026",
+      "distance": "11 km",
+      "result_time_raw": "1:11:37",
+      "result_time_normalized": "1:11:37",
+      "result_time_seconds": 4297.0,
+      "wa_gender": "K",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "12",
+      "notes_clean": "2. kvinne",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
     {
       "result_id": "res-293568d6a08bae41",
       "person_id": "skv-p000304",
@@ -29983,12 +30113,13 @@
         "display_name": "Aleksander Amundsen",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 7,
+        "result_count": 8,
         "distances": [
           "3000 m",
           "5 km",
           "10 km",
-          "Halvmaraton"
+          "Halvmaraton",
+          "6 km"
         ],
         "best_results": [
           {
@@ -30045,7 +30176,7 @@
           }
         ],
         "first_result_date": "2026-04-11",
-        "latest_result_date": "2026-05-21"
+        "latest_result_date": "2026-06-04"
       },
       {
         "person_id": "skv-p000009",
@@ -32124,9 +32255,10 @@
         "display_name": "Dina Erika Hansen",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
-          "10 km"
+          "10 km",
+          "6 km"
         ],
         "best_results": [
           {
@@ -32144,7 +32276,7 @@
           }
         ],
         "first_result_date": "2026-04-25",
-        "latest_result_date": "2026-04-25"
+        "latest_result_date": "2026-06-04"
       },
       {
         "person_id": "skv-p000057",
@@ -36642,9 +36774,10 @@
         "display_name": "Kara Meunier",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 2,
+        "result_count": 3,
         "distances": [
-          "5 km"
+          "5 km",
+          "6 km"
         ],
         "best_results": [
           {
@@ -36662,7 +36795,7 @@
           }
         ],
         "first_result_date": "2026-01-18",
-        "latest_result_date": "2026-03-01"
+        "latest_result_date": "2026-06-04"
       },
       {
         "person_id": "skv-p000163",
@@ -38485,10 +38618,11 @@
         "display_name": "Maria Bipop",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 8,
+        "result_count": 9,
         "distances": [
           "5 km",
           "10 km",
+          "11 km",
           "13 km",
           "30 km",
           "34 km",
@@ -38524,7 +38658,7 @@
           }
         ],
         "first_result_date": "2026-01-18",
-        "latest_result_date": "2026-05-14"
+        "latest_result_date": "2026-06-04"
       },
       {
         "person_id": "skv-p000204",
