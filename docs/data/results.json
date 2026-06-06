@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-06-06T17:13:12+02:00",
+  "generated_at": "2026-06-06T17:16:59+02:00",
   "stats": {
-    "result_count": 962,
-    "athlete_count": 412,
-    "event_count": 118,
+    "result_count": 969,
+    "athlete_count": 414,
+    "event_count": 119,
     "week_count": 20,
     "latest_week": 23,
     "latest_date": "2026-06-06",
-    "women_count": 380,
-    "men_count": 582,
+    "women_count": 385,
+    "men_count": 584,
     "missing_gender_or_class_count": 0
   },
   "weeks": [
@@ -18,15 +18,16 @@
       "week_label": "Uke 23",
       "published_date": "2026-06-06",
       "published_date_label": "06.06.2026",
-      "result_count": 20,
-      "athlete_count": 19,
-      "event_count": 4,
-      "women_count": 13,
-      "men_count": 7,
+      "result_count": 27,
+      "athlete_count": 25,
+      "event_count": 5,
+      "women_count": 18,
+      "men_count": 9,
       "events": [
         "Byløpet Skien 2026",
         "Det Norske Fjellmaraton 2026",
         "KK Mila 2026",
+        "The Arctic Run 2026",
         "Torshov Trail Run 2026"
       ]
     },
@@ -850,6 +851,209 @@
       "wa_points": 446.0,
       "place": "64",
       "notes_clean": "64. kvinne",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-0b5c6a1331d4ae02",
+      "person_id": "skv-p000261",
+      "person_slug": "quentin-agrinier",
+      "published_date": "2026-06-06",
+      "published_date_label": "06.06.2026",
+      "week_number": 23,
+      "athlete_name": "Quentin Agrinier",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M23-34",
+      "class_place": "",
+      "event_label": "The Arctic Run 2026",
+      "distance": "10 km",
+      "result_time_raw": "38:17.6",
+      "result_time_normalized": "38:17.6",
+      "result_time_seconds": 2297.6,
+      "wa_gender": "M",
+      "wa_event": "10 km",
+      "wa_points": 380.0,
+      "place": "18",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-fac85d672681311f",
+      "person_id": "skv-p000162",
+      "person_slug": "kara-meunier",
+      "published_date": "2026-06-06",
+      "published_date_label": "06.06.2026",
+      "week_number": 23,
+      "athlete_name": "Kara Meunier",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K23-34",
+      "class_place": "",
+      "event_label": "The Arctic Run 2026",
+      "distance": "10 km",
+      "result_time_raw": "42:57.1",
+      "result_time_normalized": "42:57.1",
+      "result_time_seconds": 2577.1,
+      "wa_gender": "K",
+      "wa_event": "10 km",
+      "wa_points": 633.0,
+      "place": "53",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-9baa67ff86c5ee98",
+      "person_id": "skv-p000088",
+      "person_slug": "fredrik-camilo-halsbog",
+      "published_date": "2026-06-06",
+      "published_date_label": "06.06.2026",
+      "week_number": 23,
+      "athlete_name": "Fredrik Camilo Halsbog",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M40-44",
+      "class_place": "",
+      "event_label": "The Arctic Run 2026",
+      "distance": "Halvmaraton",
+      "result_time_raw": "1:25:50.8",
+      "result_time_normalized": "1:25:50.8",
+      "result_time_seconds": 5150.8,
+      "wa_gender": "M",
+      "wa_event": "Halvmaraton",
+      "wa_points": 375.0,
+      "place": "15",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-7c6530a0c1fdbd22",
+      "person_id": "skv-p000312",
+      "person_slug": "sunniva-kveim",
+      "published_date": "2026-06-06",
+      "published_date_label": "06.06.2026",
+      "week_number": 23,
+      "athlete_name": "Sunniva Kveim",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K23-34",
+      "class_place": "",
+      "event_label": "The Arctic Run 2026",
+      "distance": "Halvmaraton",
+      "result_time_raw": "1:38:17.0",
+      "result_time_normalized": "1:38:17.0",
+      "result_time_seconds": 5897.0,
+      "wa_gender": "K",
+      "wa_event": "Halvmaraton",
+      "wa_points": 624.0,
+      "place": "133",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-3040be04a3188d85",
+      "person_id": "skv-p000463",
+      "person_slug": "hannah-altmeier",
+      "published_date": "2026-06-06",
+      "published_date_label": "06.06.2026",
+      "week_number": 23,
+      "athlete_name": "Hannah Altmeier",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K23-34",
+      "class_place": "",
+      "event_label": "The Arctic Run 2026",
+      "distance": "Halvmaraton",
+      "result_time_raw": "1:41:23.8",
+      "result_time_normalized": "1:41:23.8",
+      "result_time_seconds": 6083.8,
+      "wa_gender": "K",
+      "wa_event": "Halvmaraton",
+      "wa_points": 577.0,
+      "place": "177",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-6b9b0efe93a5d0f5",
+      "person_id": "skv-p000464",
+      "person_slug": "marion-tibar",
+      "published_date": "2026-06-06",
+      "published_date_label": "06.06.2026",
+      "week_number": 23,
+      "athlete_name": "Marion Tibar",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K45-49",
+      "class_place": "",
+      "event_label": "The Arctic Run 2026",
+      "distance": "Maraton",
+      "result_time_raw": "3:04:08.2",
+      "result_time_normalized": "3:04:08.2",
+      "result_time_seconds": 11048.2,
+      "wa_gender": "K",
+      "wa_event": "Maraton",
+      "wa_points": 822.0,
+      "place": "20",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-524687a6876eb45d",
+      "person_id": "skv-p000327",
+      "person_slug": "tone-gravvold",
+      "published_date": "2026-06-06",
+      "published_date_label": "06.06.2026",
+      "week_number": 23,
+      "athlete_name": "Tone Gravvold",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "Para kvinner",
+      "class_place": "",
+      "event_label": "The Arctic Run 2026",
+      "distance": "Para Arctic Run",
+      "result_time_raw": "1:41:10.1",
+      "result_time_normalized": "1:41:10.1",
+      "result_time_seconds": 6070.1,
+      "wa_gender": "K",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "",
+      "notes_clean": "Para kvinner",
       "split_first_label": "",
       "split_first_display": "",
       "split_second_label": "",
@@ -29363,6 +29567,22 @@
           "gender": "K",
           "gender_label": "Kvinner",
           "rank": 6,
+          "person_id": "skv-p000464",
+          "person_slug": "marion-tibar",
+          "result_id": "res-6b9b0efe93a5d0f5",
+          "athlete_name": "Marion Tibar",
+          "result_time": "3:04:08.2",
+          "result_time_seconds": 11048.2,
+          "event_label": "The Arctic Run 2026",
+          "published_date": "2026-06-06",
+          "published_date_label": "06.06.2026"
+        },
+        {
+          "distance": "Maraton",
+          "source_distance": "Maraton",
+          "gender": "K",
+          "gender_label": "Kvinner",
+          "rank": 7,
           "person_id": "skv-p000043",
           "person_slug": "catherine-berg",
           "result_id": "res-6dd33d884e0c8503",
@@ -29378,7 +29598,7 @@
           "source_distance": "Maraton",
           "gender": "K",
           "gender_label": "Kvinner",
-          "rank": 7,
+          "rank": 8,
           "person_id": "skv-p000373",
           "person_slug": "judith-ingela-rickertsen-hole",
           "result_id": "res-3190057aecc4e337",
@@ -29394,7 +29614,7 @@
           "source_distance": "Maraton",
           "gender": "K",
           "gender_label": "Kvinner",
-          "rank": 8,
+          "rank": 9,
           "person_id": "skv-p000374",
           "person_slug": "martine-solli",
           "result_id": "res-f73fa1202a0c6de8",
@@ -29410,7 +29630,7 @@
           "source_distance": "Maraton",
           "gender": "K",
           "gender_label": "Kvinner",
-          "rank": 9,
+          "rank": 10,
           "person_id": "skv-p000282",
           "person_slug": "silje-solvang",
           "result_id": "res-75e9d100c8104a9d",
@@ -29420,22 +29640,6 @@
           "event_label": "Bergen City Marathon",
           "published_date": "2026-04-25",
           "published_date_label": "25.04.2026"
-        },
-        {
-          "distance": "Maraton",
-          "source_distance": "Maraton",
-          "gender": "K",
-          "gender_label": "Kvinner",
-          "rank": 10,
-          "person_id": "skv-p000327",
-          "person_slug": "tone-gravvold",
-          "result_id": "res-e4864f353412207c",
-          "athlete_name": "Tone Gravvold",
-          "result_time": "3:35:51",
-          "result_time_seconds": 12951.0,
-          "event_label": "TCS London Marathon 2026",
-          "published_date": "2026-04-26",
-          "published_date_label": "26.04.2026"
         }
       ],
       "men": [
@@ -30360,7 +30564,7 @@
     }
   ],
   "people": {
-    "profile_count": 412,
+    "profile_count": 414,
     "profiles": [
       {
         "person_id": "skv-p000001",
@@ -33989,7 +34193,7 @@
         "display_name": "Fredrik Camilo Halsbog",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 8,
+        "result_count": 9,
         "distances": [
           "3000 m",
           "5 km",
@@ -34052,7 +34256,7 @@
           }
         ],
         "first_result_date": "2026-01-18",
-        "latest_result_date": "2026-05-14"
+        "latest_result_date": "2026-06-06"
       },
       {
         "person_id": "skv-p000428",
@@ -34785,6 +34989,34 @@
         ],
         "first_result_date": "2026-01-11",
         "latest_result_date": "2026-05-31"
+      },
+      {
+        "person_id": "skv-p000463",
+        "profile_slug": "hannah-altmeier",
+        "display_name": "Hannah Altmeier",
+        "gender": "K",
+        "gender_label": "Kvinner",
+        "result_count": 1,
+        "distances": [
+          "Halvmaraton"
+        ],
+        "best_results": [
+          {
+            "result_id": "res-3040be04a3188d85",
+            "distance": "Halvmaraton",
+            "source_distance": "Halvmaraton",
+            "result_time": "1:41:23.8",
+            "result_time_seconds": 6083.8,
+            "event_label": "The Arctic Run 2026",
+            "published_date": "2026-06-06",
+            "published_date_label": "06.06.2026",
+            "week_number": 23,
+            "place": "177",
+            "class_place": ""
+          }
+        ],
+        "first_result_date": "2026-06-06",
+        "latest_result_date": "2026-06-06"
       },
       {
         "person_id": "skv-p000101",
@@ -37283,9 +37515,10 @@
         "display_name": "Kara Meunier",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 3,
+        "result_count": 4,
         "distances": [
           "5 km",
+          "10 km",
           "6 km"
         ],
         "best_results": [
@@ -37301,10 +37534,23 @@
             "week_number": 3,
             "place": "",
             "class_place": ""
+          },
+          {
+            "result_id": "res-fac85d672681311f",
+            "distance": "10 km",
+            "source_distance": "10 km",
+            "result_time": "42:57.1",
+            "result_time_seconds": 2577.1,
+            "event_label": "The Arctic Run 2026",
+            "published_date": "2026-06-06",
+            "published_date_label": "06.06.2026",
+            "week_number": 23,
+            "place": "53",
+            "class_place": ""
           }
         ],
         "first_result_date": "2026-01-18",
-        "latest_result_date": "2026-06-04"
+        "latest_result_date": "2026-06-06"
       },
       {
         "person_id": "skv-p000163",
@@ -39352,6 +39598,34 @@
         ],
         "first_result_date": "2026-01-18",
         "latest_result_date": "2026-01-18"
+      },
+      {
+        "person_id": "skv-p000464",
+        "profile_slug": "marion-tibar",
+        "display_name": "Marion Tibar",
+        "gender": "K",
+        "gender_label": "Kvinner",
+        "result_count": 1,
+        "distances": [
+          "Maraton"
+        ],
+        "best_results": [
+          {
+            "result_id": "res-6b9b0efe93a5d0f5",
+            "distance": "Maraton",
+            "source_distance": "Maraton",
+            "result_time": "3:04:08.2",
+            "result_time_seconds": 11048.2,
+            "event_label": "The Arctic Run 2026",
+            "published_date": "2026-06-06",
+            "published_date_label": "06.06.2026",
+            "week_number": 23,
+            "place": "20",
+            "class_place": ""
+          }
+        ],
+        "first_result_date": "2026-06-06",
+        "latest_result_date": "2026-06-06"
       },
       {
         "person_id": "skv-p000210",
@@ -41508,7 +41782,7 @@
         "display_name": "Quentin Agrinier",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
           "10 km"
         ],
@@ -41528,7 +41802,7 @@
           }
         ],
         "first_result_date": "2026-04-25",
-        "latest_result_date": "2026-04-25"
+        "latest_result_date": "2026-06-06"
       },
       {
         "person_id": "skv-p000441",
@@ -43446,10 +43720,11 @@
         "display_name": "Sunniva Kveim",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 3,
+        "result_count": 4,
         "distances": [
           "5 km",
           "10 km",
+          "Halvmaraton",
           "4,7 km"
         ],
         "best_results": [
@@ -43478,10 +43753,23 @@
             "week_number": 15,
             "place": "92",
             "class_place": "53"
+          },
+          {
+            "result_id": "res-7c6530a0c1fdbd22",
+            "distance": "Halvmaraton",
+            "source_distance": "Halvmaraton",
+            "result_time": "1:38:17.0",
+            "result_time_seconds": 5897.0,
+            "event_label": "The Arctic Run 2026",
+            "published_date": "2026-06-06",
+            "published_date_label": "06.06.2026",
+            "week_number": 23,
+            "place": "133",
+            "class_place": ""
           }
         ],
         "first_result_date": "2026-04-11",
-        "latest_result_date": "2026-05-24"
+        "latest_result_date": "2026-06-06"
       },
       {
         "person_id": "skv-p000313",
@@ -44207,12 +44495,13 @@
         "display_name": "Tone Gravvold",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 7,
+        "result_count": 8,
         "distances": [
           "5 km",
           "10 km",
           "Maraton",
-          "3 km"
+          "3 km",
+          "Para Arctic Run"
         ],
         "best_results": [
           {
@@ -44256,7 +44545,7 @@
           }
         ],
         "first_result_date": "2026-01-18",
-        "latest_result_date": "2026-05-27"
+        "latest_result_date": "2026-06-06"
       },
       {
         "person_id": "skv-p000328",
@@ -45549,6 +45838,8 @@
       "magnus-hojen": "skv-p000460",
       "ole-petter-k-schmedling": "skv-p000461",
       "kari-lien-johnsen": "skv-p000462",
+      "hannah-altmeier": "skv-p000463",
+      "marion-tibar": "skv-p000464",
       "adne-andersen-andersen": "skv-p000001",
       "adne-sandvik-dyrnesli": "skv-p000003",
       "andreas-sjurseth": "skv-p000400",
