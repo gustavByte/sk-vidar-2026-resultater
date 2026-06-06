@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-06-06T17:09:56+02:00",
+  "generated_at": "2026-06-06T17:13:12+02:00",
   "stats": {
-    "result_count": 956,
-    "athlete_count": 411,
-    "event_count": 117,
+    "result_count": 962,
+    "athlete_count": 412,
+    "event_count": 118,
     "week_count": 20,
     "latest_week": 23,
     "latest_date": "2026-06-06",
-    "women_count": 376,
-    "men_count": 580,
+    "women_count": 380,
+    "men_count": 582,
     "missing_gender_or_class_count": 0
   },
   "weeks": [
@@ -18,14 +18,15 @@
       "week_label": "Uke 23",
       "published_date": "2026-06-06",
       "published_date_label": "06.06.2026",
-      "result_count": 14,
-      "athlete_count": 14,
-      "event_count": 3,
-      "women_count": 9,
-      "men_count": 5,
+      "result_count": 20,
+      "athlete_count": 19,
+      "event_count": 4,
+      "women_count": 13,
+      "men_count": 7,
       "events": [
         "Byløpet Skien 2026",
         "Det Norske Fjellmaraton 2026",
+        "KK Mila 2026",
         "Torshov Trail Run 2026"
       ]
     },
@@ -675,6 +676,180 @@
       "wa_points": null,
       "place": "133",
       "notes_clean": "77. mann",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-577dbbb50f426fd1",
+      "person_id": "skv-p000216",
+      "person_slug": "marte-lien-johnsen",
+      "published_date": "2026-06-06",
+      "published_date_label": "06.06.2026",
+      "week_number": 23,
+      "athlete_name": "Marte Lien Johnsen",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "Kvinner",
+      "class_place": "",
+      "event_label": "KK Mila 2026",
+      "distance": "5 km",
+      "result_time_raw": "18:50",
+      "result_time_normalized": "18:50",
+      "result_time_seconds": 1130.0,
+      "wa_gender": "K",
+      "wa_event": "5 km",
+      "wa_points": 760.0,
+      "place": "1",
+      "notes_clean": "1. kvinne",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-dd21c4233b745556",
+      "person_id": "skv-p000462",
+      "person_slug": "kari-lien-johnsen",
+      "published_date": "2026-06-06",
+      "published_date_label": "06.06.2026",
+      "week_number": 23,
+      "athlete_name": "Kari Lien Johnsen",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "Kvinner",
+      "class_place": "",
+      "event_label": "KK Mila 2026",
+      "distance": "5 km",
+      "result_time_raw": "20:54",
+      "result_time_normalized": "20:54",
+      "result_time_seconds": 1254.0,
+      "wa_gender": "K",
+      "wa_event": "5 km",
+      "wa_points": 578.0,
+      "place": "7",
+      "notes_clean": "7. kvinne",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-bf08b1db275b1fb9",
+      "person_id": "skv-p000014",
+      "person_slug": "anders-nordby",
+      "published_date": "2026-06-06",
+      "published_date_label": "06.06.2026",
+      "week_number": 23,
+      "athlete_name": "Anders Nordby",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "Fartsholder",
+      "class_place": "",
+      "event_label": "KK Mila 2026",
+      "distance": "5 km",
+      "result_time_raw": "25:12",
+      "result_time_normalized": "25:12",
+      "result_time_seconds": 1512.0,
+      "wa_gender": "M",
+      "wa_event": "5 km",
+      "wa_points": 1.0,
+      "place": "24",
+      "notes_clean": "fartsholder",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-870866ae9a567b86",
+      "person_id": "skv-p000276",
+      "person_slug": "sara-kjeldsen-lie",
+      "published_date": "2026-06-06",
+      "published_date_label": "06.06.2026",
+      "week_number": 23,
+      "athlete_name": "Sara Kjeldsen Lie",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "Kvinner",
+      "class_place": "",
+      "event_label": "KK Mila 2026",
+      "distance": "10 km",
+      "result_time_raw": "37:33",
+      "result_time_normalized": "37:33",
+      "result_time_seconds": 2253.0,
+      "wa_gender": "K",
+      "wa_event": "10 km",
+      "wa_points": 864.0,
+      "place": "1",
+      "notes_clean": "1. kvinne",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-cabd28e4e9c14b75",
+      "person_id": "skv-p000014",
+      "person_slug": "anders-nordby",
+      "published_date": "2026-06-06",
+      "published_date_label": "06.06.2026",
+      "week_number": 23,
+      "athlete_name": "Anders Nordby",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "Fartsholder",
+      "class_place": "",
+      "event_label": "KK Mila 2026",
+      "distance": "10 km",
+      "result_time_raw": "44:47",
+      "result_time_normalized": "44:47",
+      "result_time_seconds": 2687.0,
+      "wa_gender": "M",
+      "wa_event": "10 km",
+      "wa_points": 112.0,
+      "place": "28",
+      "notes_clean": "fartsholder",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-15ed4cce512d3cf1",
+      "person_id": "skv-p000263",
+      "person_slug": "ragnhild-tunaal",
+      "published_date": "2026-06-06",
+      "published_date_label": "06.06.2026",
+      "week_number": 23,
+      "athlete_name": "Ragnhild Tunaal",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "Kvinner",
+      "class_place": "",
+      "event_label": "KK Mila 2026",
+      "distance": "10 km",
+      "result_time_raw": "48:06",
+      "result_time_normalized": "48:06",
+      "result_time_seconds": 2886.0,
+      "wa_gender": "K",
+      "wa_event": "10 km",
+      "wa_points": 446.0,
+      "place": "64",
+      "notes_clean": "64. kvinne",
       "split_first_label": "",
       "split_first_display": "",
       "split_second_label": "",
@@ -30185,7 +30360,7 @@
     }
   ],
   "people": {
-    "profile_count": 411,
+    "profile_count": 412,
     "profiles": [
       {
         "person_id": "skv-p000001",
@@ -30673,13 +30848,27 @@
         "display_name": "Anders Nordby",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 5,
+        "result_count": 7,
         "distances": [
+          "5 km",
           "10 km",
           "Halvmaraton",
           "Maraton"
         ],
         "best_results": [
+          {
+            "result_id": "res-bf08b1db275b1fb9",
+            "distance": "5 km",
+            "source_distance": "5 km",
+            "result_time": "25:12",
+            "result_time_seconds": 1512.0,
+            "event_label": "KK Mila 2026",
+            "published_date": "2026-06-06",
+            "published_date_label": "06.06.2026",
+            "week_number": 23,
+            "place": "24",
+            "class_place": ""
+          },
           {
             "result_id": "res-525e1ba6b79a6ed5",
             "distance": "10 km",
@@ -30721,7 +30910,7 @@
           }
         ],
         "first_result_date": "2026-02-15",
-        "latest_result_date": "2026-05-27"
+        "latest_result_date": "2026-06-06"
       },
       {
         "person_id": "skv-p000015",
@@ -37160,6 +37349,34 @@
         "latest_result_date": "2026-05-01"
       },
       {
+        "person_id": "skv-p000462",
+        "profile_slug": "kari-lien-johnsen",
+        "display_name": "Kari Lien Johnsen",
+        "gender": "K",
+        "gender_label": "Kvinner",
+        "result_count": 1,
+        "distances": [
+          "5 km"
+        ],
+        "best_results": [
+          {
+            "result_id": "res-dd21c4233b745556",
+            "distance": "5 km",
+            "source_distance": "5 km",
+            "result_time": "20:54",
+            "result_time_seconds": 1254.0,
+            "event_label": "KK Mila 2026",
+            "published_date": "2026-06-06",
+            "published_date_label": "06.06.2026",
+            "week_number": 23,
+            "place": "7",
+            "class_place": ""
+          }
+        ],
+        "first_result_date": "2026-06-06",
+        "latest_result_date": "2026-06-06"
+      },
+      {
         "person_id": "skv-p000164",
         "profile_slug": "kari-oen",
         "display_name": "Kari Øen",
@@ -39310,7 +39527,7 @@
         "display_name": "Marte Lien Johnsen",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 3,
+        "result_count": 4,
         "distances": [
           "5 km",
           "Halvmaraton",
@@ -39345,7 +39562,7 @@
           }
         ],
         "first_result_date": "2026-04-25",
-        "latest_result_date": "2026-05-27"
+        "latest_result_date": "2026-06-06"
       },
       {
         "person_id": "skv-p000387",
@@ -41403,7 +41620,7 @@
         "display_name": "Ragnhild Tunaal",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
           "10 km"
         ],
@@ -41423,7 +41640,7 @@
           }
         ],
         "first_result_date": "2026-04-25",
-        "latest_result_date": "2026-04-25"
+        "latest_result_date": "2026-06-06"
       },
       {
         "person_id": "skv-p000264",
@@ -41909,7 +42126,7 @@
         "display_name": "Sara Kjeldsen Lie",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 3,
+        "result_count": 4,
         "distances": [
           "10 km",
           "Halvmaraton"
@@ -41943,7 +42160,7 @@
           }
         ],
         "first_result_date": "2026-03-01",
-        "latest_result_date": "2026-04-11"
+        "latest_result_date": "2026-06-06"
       },
       {
         "person_id": "skv-p000375",
@@ -45331,6 +45548,7 @@
       "gunnar-berthelsen": "skv-p000459",
       "magnus-hojen": "skv-p000460",
       "ole-petter-k-schmedling": "skv-p000461",
+      "kari-lien-johnsen": "skv-p000462",
       "adne-andersen-andersen": "skv-p000001",
       "adne-sandvik-dyrnesli": "skv-p000003",
       "andreas-sjurseth": "skv-p000400",
