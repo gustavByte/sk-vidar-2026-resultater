@@ -1,0 +1,14 @@
+Det Norske Fjellmaraton 2026 | 06.06.2026 | Beitostølen | EQTiming workbook
+Kilde: https://live.eqtiming.com/77949
+Kildeark: Brukeroppgitt godkjent SK Vidar-utvalg fra EQTiming.
+Filter: Alle radene under er godkjent som SK Vidar av bruker.
+
+2026-06-06 | Halvmaraton | Ine Bakken | startnr 872 | HM Kvinner 23-34 | Sportsklubben Vidar | 1:13:52.0 | plass 9 | kjønn 1 | klasse 1 | Offisiell klubb | Offisiell Vidar; SKV Slack
+2026-06-06 | Halvmaraton | Veslemøy Rønnevik | startnr 875 | HM Kvinner 35-39 | Sportsklubben Vidar | 1:19:49.0 | plass 23 | kjønn 3 | klasse 1 | Offisiell klubb | Offisiell Vidar; SKV aktiv
+2026-06-06 | Halvmaraton | Ragnhild Ertshus | startnr 873 | HM Kvinner 35-39 | Sportsklubben Vidar | 1:33:27.0 | plass 176 | kjønn 24 | klasse 6 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack
+2026-06-06 | Halvmaraton | Yunpeng Ding | startnr 1118 | HM Menn 40-44 | Oslo | 1:37:20.4 | plass 245 | kjønn 199 | klasse 35 | Potensiell klubbrelasjon | SKV aktiv; SKV Slack
+2026-06-06 | Halvmaraton | Celine Nordstaa | startnr 1468 | HM Kvinner 23-34 | Oslo | 1:49:40.8 | plass 486 | kjønn 139 | klasse 59 | Potensiell klubbrelasjon | SKV oppmøte; SKV Slack
+2026-06-06 | Maraton | Jostein Rogstad | startnr 154 | Maraton Menn 35-39 | Sportsklubben Vidar / Skrautvål | 2:41:01.4 | plass 2 | kjønn 2 | klasse 2 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack
+2026-06-06 | Maraton | Liv Berit Jegteberg Lystad | startnr 52 | Maraton Kvinner 65-69 | Team Kondis | 4:15:34.2 | plass 67 | kjønn 22 | klasse 1 | Potensiell klubbrelasjon | SKV aktiv
+2026-06-06 | Fjellbukk | Karoline Wisløff Rud | startnr 3227 | Fjellbukk Kvinner 35-39 | Sportsklubben Vidar / Storebrand Sport | 45:59.5 | plass 9 | kjønn 2 | klasse 2 | Offisiell klubb | Offisiell Vidar; SKV aktiv; SKV Slack
+2026-06-06 | Fjellbukk | Magnus Højen | startnr 3142 | Fjellbukk Menn 23-34 | Isfjorden | 1:18:30.9 | plass 133 | kjønn 77 | klasse 18 | Potensiell klubbrelasjon | SKV aktiv; SKV Slack

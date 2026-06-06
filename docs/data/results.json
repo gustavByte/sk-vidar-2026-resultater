@@ -1,29 +1,30 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-06-05T15:05:38+02:00",
+  "generated_at": "2026-06-06T17:07:37+02:00",
   "stats": {
-    "result_count": 946,
+    "result_count": 955,
     "athlete_count": 411,
-    "event_count": 115,
+    "event_count": 116,
     "week_count": 20,
     "latest_week": 23,
-    "latest_date": "2026-06-04",
-    "women_count": 370,
-    "men_count": 576,
+    "latest_date": "2026-06-06",
+    "women_count": 376,
+    "men_count": 579,
     "missing_gender_or_class_count": 0
   },
   "weeks": [
     {
       "week_number": 23,
       "week_label": "Uke 23",
-      "published_date": "2026-06-04",
-      "published_date_label": "04.06.2026",
-      "result_count": 4,
-      "athlete_count": 4,
-      "event_count": 1,
-      "women_count": 3,
-      "men_count": 1,
+      "published_date": "2026-06-06",
+      "published_date_label": "06.06.2026",
+      "result_count": 13,
+      "athlete_count": 13,
+      "event_count": 2,
+      "women_count": 9,
+      "men_count": 4,
       "events": [
+        "Det Norske Fjellmaraton 2026",
         "Torshov Trail Run 2026"
       ]
     },
@@ -390,6 +391,267 @@
     }
   ],
   "results": [
+    {
+      "result_id": "res-85c2b9382f0ed396",
+      "person_id": "skv-p000128",
+      "person_slug": "ine-bakken",
+      "published_date": "2026-06-06",
+      "published_date_label": "06.06.2026",
+      "week_number": 23,
+      "athlete_name": "Ine Bakken",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "HM Kvinner 23-34",
+      "class_place": "1",
+      "event_label": "Det Norske Fjellmaraton 2026",
+      "distance": "Halvmaraton",
+      "result_time_raw": "1:13:52.0",
+      "result_time_normalized": "1:13:52.0",
+      "result_time_seconds": 4432.0,
+      "wa_gender": "K",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "9",
+      "notes_clean": "1. kvinne",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-07498e54a87a5a94",
+      "person_id": "skv-p000455",
+      "person_slug": "veslemoy-ronnevik",
+      "published_date": "2026-06-06",
+      "published_date_label": "06.06.2026",
+      "week_number": 23,
+      "athlete_name": "Veslemøy Rønnevik",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "HM Kvinner 35-39",
+      "class_place": "1",
+      "event_label": "Det Norske Fjellmaraton 2026",
+      "distance": "Halvmaraton",
+      "result_time_raw": "1:19:49.0",
+      "result_time_normalized": "1:19:49.0",
+      "result_time_seconds": 4789.0,
+      "wa_gender": "K",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "23",
+      "notes_clean": "3. kvinne",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-aff27b7c7f67591b",
+      "person_id": "skv-p000262",
+      "person_slug": "ragnhild-ertshus",
+      "published_date": "2026-06-06",
+      "published_date_label": "06.06.2026",
+      "week_number": 23,
+      "athlete_name": "Ragnhild Ertshus",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "HM Kvinner 35-39",
+      "class_place": "6",
+      "event_label": "Det Norske Fjellmaraton 2026",
+      "distance": "Halvmaraton",
+      "result_time_raw": "1:33:27.0",
+      "result_time_normalized": "1:33:27.0",
+      "result_time_seconds": 5607.0,
+      "wa_gender": "K",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "176",
+      "notes_clean": "24. kvinne",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-65ada4380de7bda1",
+      "person_id": "skv-p000348",
+      "person_slug": "yunpeng-ding",
+      "published_date": "2026-06-06",
+      "published_date_label": "06.06.2026",
+      "week_number": 23,
+      "athlete_name": "Yunpeng Ding",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "HM Menn 40-44",
+      "class_place": "35",
+      "event_label": "Det Norske Fjellmaraton 2026",
+      "distance": "Halvmaraton",
+      "result_time_raw": "1:37:20.4",
+      "result_time_normalized": "1:37:20.4",
+      "result_time_seconds": 5840.4,
+      "wa_gender": "M",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "245",
+      "notes_clean": "199. mann",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-1db5e853bea9aae9",
+      "person_id": "skv-p000408",
+      "person_slug": "celine-nordstaa",
+      "published_date": "2026-06-06",
+      "published_date_label": "06.06.2026",
+      "week_number": 23,
+      "athlete_name": "Celine Nordstaa",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "HM Kvinner 23-34",
+      "class_place": "59",
+      "event_label": "Det Norske Fjellmaraton 2026",
+      "distance": "Halvmaraton",
+      "result_time_raw": "1:49:40.8",
+      "result_time_normalized": "1:49:40.8",
+      "result_time_seconds": 6580.8,
+      "wa_gender": "K",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "486",
+      "notes_clean": "139. kvinne",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-8c226e910e58b672",
+      "person_id": "skv-p000156",
+      "person_slug": "jostein-rogstad",
+      "published_date": "2026-06-06",
+      "published_date_label": "06.06.2026",
+      "week_number": 23,
+      "athlete_name": "Jostein Rogstad",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "Maraton Menn 35-39",
+      "class_place": "2",
+      "event_label": "Det Norske Fjellmaraton 2026",
+      "distance": "Maraton",
+      "result_time_raw": "2:41:01.4",
+      "result_time_normalized": "2:41:01.4",
+      "result_time_seconds": 9661.4,
+      "wa_gender": "M",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "2",
+      "notes_clean": "2. mann",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-dc294175a8db332c",
+      "person_id": "skv-p000189",
+      "person_slug": "liv-berit-jegteberg-lystad",
+      "published_date": "2026-06-06",
+      "published_date_label": "06.06.2026",
+      "week_number": 23,
+      "athlete_name": "Liv Berit Jegteberg Lystad",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "Maraton Kvinner 65-69",
+      "class_place": "1",
+      "event_label": "Det Norske Fjellmaraton 2026",
+      "distance": "Maraton",
+      "result_time_raw": "4:15:34.2",
+      "result_time_normalized": "4:15:34.2",
+      "result_time_seconds": 15334.2,
+      "wa_gender": "K",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "67",
+      "notes_clean": "22. kvinne",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-3644c546bb9c6ed3",
+      "person_id": "skv-p000392",
+      "person_slug": "karoline-wisloff-rud",
+      "published_date": "2026-06-06",
+      "published_date_label": "06.06.2026",
+      "week_number": 23,
+      "athlete_name": "Karoline Wisløff Rud",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "Fjellbukk Kvinner 35-39",
+      "class_place": "2",
+      "event_label": "Det Norske Fjellmaraton 2026",
+      "distance": "Fjellbukk",
+      "result_time_raw": "45:59.5",
+      "result_time_normalized": "45:59.5",
+      "result_time_seconds": 2759.5,
+      "wa_gender": "K",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "9",
+      "notes_clean": "2. kvinne",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-15c278b66d8c8925",
+      "person_id": "skv-p000460",
+      "person_slug": "magnus-hojen",
+      "published_date": "2026-06-06",
+      "published_date_label": "06.06.2026",
+      "week_number": 23,
+      "athlete_name": "Magnus Højen",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "Fjellbukk Menn 23-34",
+      "class_place": "18",
+      "event_label": "Det Norske Fjellmaraton 2026",
+      "distance": "Fjellbukk",
+      "result_time_raw": "1:18:30.9",
+      "result_time_normalized": "1:18:30.9",
+      "result_time_seconds": 4710.9,
+      "wa_gender": "M",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "133",
+      "notes_clean": "77. mann",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
     {
       "result_id": "res-6b733d78584e710d",
       "person_id": "skv-p000008",
@@ -28489,6 +28751,22 @@
           "gender": "K",
           "gender_label": "Kvinner",
           "rank": 1,
+          "person_id": "skv-p000128",
+          "person_slug": "ine-bakken",
+          "result_id": "res-85c2b9382f0ed396",
+          "athlete_name": "Ine Bakken",
+          "result_time": "1:13:52.0",
+          "result_time_seconds": 4432.0,
+          "event_label": "Det Norske Fjellmaraton 2026",
+          "published_date": "2026-06-06",
+          "published_date_label": "06.06.2026"
+        },
+        {
+          "distance": "Halvmaraton",
+          "source_distance": "Halvmaraton",
+          "gender": "K",
+          "gender_label": "Kvinner",
+          "rank": 2,
           "person_id": "skv-p000193",
           "person_slug": "madelene-wanvik-holum",
           "result_id": "res-ee5c0aaf6c9a5a13",
@@ -28504,7 +28782,7 @@
           "source_distance": "Halvmaraton",
           "gender": "K",
           "gender_label": "Kvinner",
-          "rank": 2,
+          "rank": 3,
           "person_id": "skv-p000129",
           "person_slug": "ingrid-helene-nyhus",
           "result_id": "res-318aa5677899bcdd",
@@ -28520,7 +28798,7 @@
           "source_distance": "Halvmaraton",
           "gender": "K",
           "gender_label": "Kvinner",
-          "rank": 3,
+          "rank": 4,
           "person_id": "skv-p000276",
           "person_slug": "sara-kjeldsen-lie",
           "result_id": "res-0f281f89cc4958a9",
@@ -28530,22 +28808,6 @@
           "event_label": "Generali Prague Half Marathon 2026",
           "published_date": "2026-03-28",
           "published_date_label": "28.03.2026"
-        },
-        {
-          "distance": "Halvmaraton",
-          "source_distance": "Halvmaraton",
-          "gender": "K",
-          "gender_label": "Kvinner",
-          "rank": 4,
-          "person_id": "skv-p000128",
-          "person_slug": "ine-bakken",
-          "result_id": "res-ad305a3fe1567aa3",
-          "athlete_name": "Ine Bakken",
-          "result_time": "01:18:14",
-          "result_time_seconds": 4694.0,
-          "event_label": "Göteborgsvarvet",
-          "published_date": "2026-05-23",
-          "published_date_label": "23.05.2026"
         },
         {
           "distance": "Halvmaraton",
@@ -28601,6 +28863,22 @@
           "gender": "K",
           "gender_label": "Kvinner",
           "rank": 8,
+          "person_id": "skv-p000455",
+          "person_slug": "veslemoy-ronnevik",
+          "result_id": "res-07498e54a87a5a94",
+          "athlete_name": "Veslemøy Rønnevik",
+          "result_time": "1:19:49.0",
+          "result_time_seconds": 4789.0,
+          "event_label": "Det Norske Fjellmaraton 2026",
+          "published_date": "2026-06-06",
+          "published_date_label": "06.06.2026"
+        },
+        {
+          "distance": "Halvmaraton",
+          "source_distance": "Halvmaraton",
+          "gender": "K",
+          "gender_label": "Kvinner",
+          "rank": 9,
           "person_id": "skv-p000037",
           "person_slug": "asta-ellingvag",
           "result_id": "res-270db4b6d9452f35",
@@ -28616,7 +28894,7 @@
           "source_distance": "Halvmaraton",
           "gender": "K",
           "gender_label": "Kvinner",
-          "rank": 9,
+          "rank": 10,
           "person_id": "skv-p000309",
           "person_slug": "stine-isaksen",
           "result_id": "res-56e483558c2c177c",
@@ -28626,22 +28904,6 @@
           "event_label": "CPC loop Den Haag (NED)",
           "published_date": "2026-03-14",
           "published_date_label": "14.03.2026"
-        },
-        {
-          "distance": "Halvmaraton",
-          "source_distance": "Halvmaraton",
-          "gender": "K",
-          "gender_label": "Kvinner",
-          "rank": 10,
-          "person_id": "skv-p000044",
-          "person_slug": "catherine-vaugelade-pedersen",
-          "result_id": "res-a4a60f77281a3e82",
-          "athlete_name": "Catherine Vaugelade Pedersen",
-          "result_time": "1:24:05",
-          "result_time_seconds": 5045.0,
-          "event_label": "Bislett Indoor Marathon",
-          "published_date": "2026-02-08",
-          "published_date_label": "08.02.2026"
         }
       ],
       "men": [
@@ -29106,6 +29368,22 @@
           "gender": "M",
           "gender_label": "Menn",
           "rank": 9,
+          "person_id": "skv-p000156",
+          "person_slug": "jostein-rogstad",
+          "result_id": "res-8c226e910e58b672",
+          "athlete_name": "Jostein Rogstad",
+          "result_time": "2:41:01.4",
+          "result_time_seconds": 9661.4,
+          "event_label": "Det Norske Fjellmaraton 2026",
+          "published_date": "2026-06-06",
+          "published_date_label": "06.06.2026"
+        },
+        {
+          "distance": "Maraton",
+          "source_distance": "Maraton",
+          "gender": "M",
+          "gender_label": "Menn",
+          "rank": 10,
           "person_id": "skv-p000061",
           "person_slug": "eivind-baekkedal",
           "result_id": "res-58587fb6407f65ca",
@@ -29115,22 +29393,6 @@
           "event_label": "Boston Marathon",
           "published_date": "2026-04-20",
           "published_date_label": "20.04.2026"
-        },
-        {
-          "distance": "Maraton",
-          "source_distance": "Maraton",
-          "gender": "M",
-          "gender_label": "Menn",
-          "rank": 10,
-          "person_id": "skv-p000007",
-          "person_slug": "aleksander",
-          "result_id": "res-51435a11727fdacc",
-          "athlete_name": "Aleksander",
-          "result_time": "2:42:30",
-          "result_time_seconds": 9750.0,
-          "event_label": "Sevilla Maraton",
-          "published_date": "2026-02-15",
-          "published_date_label": "15.02.2026"
         }
       ]
     },
@@ -31791,27 +32053,27 @@
         "display_name": "Celine Nordstaa",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
           "Halvmaraton"
         ],
         "best_results": [
           {
-            "result_id": "res-00e8b593d2e8b8d6",
+            "result_id": "res-1db5e853bea9aae9",
             "distance": "Halvmaraton",
             "source_distance": "Halvmaraton",
-            "result_time": "01:56:22",
-            "result_time_seconds": 6982.0,
-            "event_label": "Göteborgsvarvet",
-            "published_date": "2026-05-23",
-            "published_date_label": "23.05.2026",
-            "week_number": 21,
-            "place": "2755",
-            "class_place": ""
+            "result_time": "1:49:40.8",
+            "result_time_seconds": 6580.8,
+            "event_label": "Det Norske Fjellmaraton 2026",
+            "published_date": "2026-06-06",
+            "published_date_label": "06.06.2026",
+            "week_number": 23,
+            "place": "486",
+            "class_place": "59"
           }
         ],
         "first_result_date": "2026-05-23",
-        "latest_result_date": "2026-05-23"
+        "latest_result_date": "2026-06-06"
       },
       {
         "person_id": "skv-p000045",
@@ -35184,7 +35446,7 @@
         "display_name": "Ine Bakken",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 6,
+        "result_count": 7,
         "distances": [
           "5 km",
           "10 km",
@@ -35220,21 +35482,21 @@
             "class_place": ""
           },
           {
-            "result_id": "res-ad305a3fe1567aa3",
+            "result_id": "res-85c2b9382f0ed396",
             "distance": "Halvmaraton",
             "source_distance": "Halvmaraton",
-            "result_time": "01:18:14",
-            "result_time_seconds": 4694.0,
-            "event_label": "Göteborgsvarvet",
-            "published_date": "2026-05-23",
-            "published_date_label": "23.05.2026",
-            "week_number": 21,
-            "place": "8",
-            "class_place": ""
+            "result_time": "1:13:52.0",
+            "result_time_seconds": 4432.0,
+            "event_label": "Det Norske Fjellmaraton 2026",
+            "published_date": "2026-06-06",
+            "published_date_label": "06.06.2026",
+            "week_number": 23,
+            "place": "9",
+            "class_place": "1"
           }
         ],
         "first_result_date": "2026-01-18",
-        "latest_result_date": "2026-05-27"
+        "latest_result_date": "2026-06-06"
       },
       {
         "person_id": "skv-p000391",
@@ -36422,10 +36684,11 @@
         "display_name": "Jostein Rogstad",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 7,
+        "result_count": 8,
         "distances": [
           "5 km",
           "10 km",
+          "Maraton",
           "3 km",
           "Trail 31 km"
         ],
@@ -36455,10 +36718,23 @@
             "week_number": 15,
             "place": "49",
             "class_place": "6"
+          },
+          {
+            "result_id": "res-8c226e910e58b672",
+            "distance": "Maraton",
+            "source_distance": "Maraton",
+            "result_time": "2:41:01.4",
+            "result_time_seconds": 9661.4,
+            "event_label": "Det Norske Fjellmaraton 2026",
+            "published_date": "2026-06-06",
+            "published_date_label": "06.06.2026",
+            "week_number": 23,
+            "place": "2",
+            "class_place": "2"
           }
         ],
         "first_result_date": "2026-04-11",
-        "latest_result_date": "2026-05-30"
+        "latest_result_date": "2026-06-06"
       },
       {
         "person_id": "skv-p000373",
@@ -36929,9 +37205,10 @@
         "display_name": "Karoline Wisløff Rud",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 2,
+        "result_count": 3,
         "distances": [
           "5 km",
+          "Fjellbukk",
           "Trail 21 km"
         ],
         "best_results": [
@@ -36950,7 +37227,7 @@
           }
         ],
         "first_result_date": "2026-05-14",
-        "latest_result_date": "2026-05-30"
+        "latest_result_date": "2026-06-06"
       },
       {
         "person_id": "skv-p000166",
@@ -37913,27 +38190,27 @@
         "display_name": "Liv Berit Jegteberg Lystad",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 3,
+        "result_count": 4,
         "distances": [
           "Maraton"
         ],
         "best_results": [
           {
-            "result_id": "res-2e65b6bf63dba8d1",
+            "result_id": "res-dc294175a8db332c",
             "distance": "Maraton",
             "source_distance": "Maraton",
-            "result_time": "4:17:33",
-            "result_time_seconds": 15453.0,
-            "event_label": "Bergen City Marathon",
-            "published_date": "2026-04-25",
-            "published_date_label": "25.04.2026",
-            "week_number": 17,
-            "place": "1023",
+            "result_time": "4:15:34.2",
+            "result_time_seconds": 15334.2,
+            "event_label": "Det Norske Fjellmaraton 2026",
+            "published_date": "2026-06-06",
+            "published_date_label": "06.06.2026",
+            "week_number": 23,
+            "place": "67",
             "class_place": "1"
           }
         ],
         "first_result_date": "2026-02-08",
-        "latest_result_date": "2026-04-25"
+        "latest_result_date": "2026-06-06"
       },
       {
         "person_id": "skv-p000190",
@@ -38321,13 +38598,14 @@
         "display_name": "Magnus Højen",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
-          "19 km"
+          "19 km",
+          "Fjellbukk"
         ],
         "best_results": [],
         "first_result_date": "2026-05-30",
-        "latest_result_date": "2026-05-30"
+        "latest_result_date": "2026-06-06"
       },
       {
         "person_id": "skv-p000437",
@@ -41025,10 +41303,11 @@
         "display_name": "Ragnhild Ertshus",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 3,
+        "result_count": 4,
         "distances": [
           "5 km",
-          "10 km"
+          "10 km",
+          "Halvmaraton"
         ],
         "best_results": [
           {
@@ -41056,10 +41335,23 @@
             "week_number": 17,
             "place": "2192",
             "class_place": "32"
+          },
+          {
+            "result_id": "res-aff27b7c7f67591b",
+            "distance": "Halvmaraton",
+            "source_distance": "Halvmaraton",
+            "result_time": "1:33:27.0",
+            "result_time_seconds": 5607.0,
+            "event_label": "Det Norske Fjellmaraton 2026",
+            "published_date": "2026-06-06",
+            "published_date_label": "06.06.2026",
+            "week_number": 23,
+            "place": "176",
+            "class_place": "6"
           }
         ],
         "first_result_date": "2026-03-01",
-        "latest_result_date": "2026-05-27"
+        "latest_result_date": "2026-06-06"
       },
       {
         "person_id": "skv-p000263",
@@ -44249,13 +44541,28 @@
         "display_name": "Veslemøy Rønnevik",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
+          "Halvmaraton",
           "Trail 50 km"
         ],
-        "best_results": [],
+        "best_results": [
+          {
+            "result_id": "res-07498e54a87a5a94",
+            "distance": "Halvmaraton",
+            "source_distance": "Halvmaraton",
+            "result_time": "1:19:49.0",
+            "result_time_seconds": 4789.0,
+            "event_label": "Det Norske Fjellmaraton 2026",
+            "published_date": "2026-06-06",
+            "published_date_label": "06.06.2026",
+            "week_number": 23,
+            "place": "23",
+            "class_place": "1"
+          }
+        ],
         "first_result_date": "2026-05-30",
-        "latest_result_date": "2026-05-30"
+        "latest_result_date": "2026-06-06"
       },
       {
         "person_id": "skv-p000340",
@@ -44531,7 +44838,7 @@
         "display_name": "Yunpeng Ding",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 2,
+        "result_count": 3,
         "distances": [
           "10 km",
           "Halvmaraton"
@@ -44565,7 +44872,7 @@
           }
         ],
         "first_result_date": "2026-03-29",
-        "latest_result_date": "2026-04-25"
+        "latest_result_date": "2026-06-06"
       }
     ],
     "slug_map": {
