@@ -1,14 +1,14 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-06-06T17:20:38+02:00",
+  "generated_at": "2026-06-06T17:27:21+02:00",
   "stats": {
-    "result_count": 973,
+    "result_count": 974,
     "athlete_count": 415,
-    "event_count": 120,
+    "event_count": 121,
     "week_count": 20,
     "latest_week": 23,
     "latest_date": "2026-06-06",
-    "women_count": 387,
+    "women_count": 388,
     "men_count": 586,
     "missing_gender_or_class_count": 0
   },
@@ -18,15 +18,16 @@
       "week_label": "Uke 23",
       "published_date": "2026-06-06",
       "published_date_label": "06.06.2026",
-      "result_count": 31,
+      "result_count": 32,
       "athlete_count": 29,
-      "event_count": 6,
-      "women_count": 20,
+      "event_count": 7,
+      "women_count": 21,
       "men_count": 11,
       "events": [
         "Byløpet Skien 2026",
         "Det Norske Fjellmaraton 2026",
         "KK Mila 2026",
+        "Sognefjord Trail Run 2026",
         "Sommerløpet Kristiansand 2026",
         "The Arctic Run 2026",
         "Torshov Trail Run 2026"
@@ -852,6 +853,35 @@
       "wa_points": 446.0,
       "place": "64",
       "notes_clean": "64. kvinne",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-30d2b8fba744e0be",
+      "person_id": "skv-p000202",
+      "person_slug": "maria-bipop",
+      "published_date": "2026-06-06",
+      "published_date_label": "06.06.2026",
+      "week_number": 23,
+      "athlete_name": "Maria Bipop",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "W23-34",
+      "class_place": "2",
+      "event_label": "Sognefjord Trail Run 2026",
+      "distance": "50K",
+      "result_time_raw": "6:08:23",
+      "result_time_normalized": "6:08:23",
+      "result_time_seconds": 22103.0,
+      "wa_gender": "K",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "7",
+      "notes_clean": "2. kvinne",
       "split_first_label": "",
       "split_first_display": "",
       "split_second_label": "",
@@ -39534,7 +39564,7 @@
         "display_name": "Maria Bipop",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 9,
+        "result_count": 10,
         "distances": [
           "5 km",
           "10 km",
@@ -39543,6 +39573,7 @@
           "30 km",
           "34 km",
           "42 km",
+          "50K",
           "60 km"
         ],
         "best_results": [
@@ -39574,7 +39605,7 @@
           }
         ],
         "first_result_date": "2026-01-18",
-        "latest_result_date": "2026-06-04"
+        "latest_result_date": "2026-06-06"
       },
       {
         "person_id": "skv-p000204",
