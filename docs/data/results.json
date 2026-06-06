@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-06-06T17:07:37+02:00",
+  "generated_at": "2026-06-06T17:09:56+02:00",
   "stats": {
-    "result_count": 955,
+    "result_count": 956,
     "athlete_count": 411,
-    "event_count": 116,
+    "event_count": 117,
     "week_count": 20,
     "latest_week": 23,
     "latest_date": "2026-06-06",
     "women_count": 376,
-    "men_count": 579,
+    "men_count": 580,
     "missing_gender_or_class_count": 0
   },
   "weeks": [
@@ -18,12 +18,13 @@
       "week_label": "Uke 23",
       "published_date": "2026-06-06",
       "published_date_label": "06.06.2026",
-      "result_count": 13,
-      "athlete_count": 13,
-      "event_count": 2,
+      "result_count": 14,
+      "athlete_count": 14,
+      "event_count": 3,
       "women_count": 9,
-      "men_count": 4,
+      "men_count": 5,
       "events": [
+        "Byløpet Skien 2026",
         "Det Norske Fjellmaraton 2026",
         "Torshov Trail Run 2026"
       ]
@@ -391,6 +392,35 @@
     }
   ],
   "results": [
+    {
+      "result_id": "res-85315dfbf100f556",
+      "person_id": "skv-p000065",
+      "person_slug": "elliot-jones",
+      "published_date": "2026-06-06",
+      "published_date_label": "06.06.2026",
+      "week_number": 23,
+      "athlete_name": "Elliot Jones",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M35-39",
+      "class_place": "3",
+      "event_label": "Byløpet Skien 2026",
+      "distance": "Halvmaraton",
+      "result_time_raw": "1:27:23",
+      "result_time_normalized": "1:27:23",
+      "result_time_seconds": 5243.0,
+      "wa_gender": "M",
+      "wa_event": "Halvmaraton",
+      "wa_points": null,
+      "place": "7",
+      "notes_clean": "6. mann",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
     {
       "result_id": "res-85c2b9382f0ed396",
       "person_id": "skv-p000128",
@@ -32928,9 +32958,10 @@
         "display_name": "Elliot Jones",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 2,
+        "result_count": 3,
         "distances": [
-          "10 km"
+          "10 km",
+          "Halvmaraton"
         ],
         "best_results": [
           {
@@ -32945,10 +32976,23 @@
             "week_number": 17,
             "place": "207",
             "class_place": "33"
+          },
+          {
+            "result_id": "res-85315dfbf100f556",
+            "distance": "Halvmaraton",
+            "source_distance": "Halvmaraton",
+            "result_time": "1:27:23",
+            "result_time_seconds": 5243.0,
+            "event_label": "Byløpet Skien 2026",
+            "published_date": "2026-06-06",
+            "published_date_label": "06.06.2026",
+            "week_number": 23,
+            "place": "7",
+            "class_place": "3"
           }
         ],
         "first_result_date": "2026-04-11",
-        "latest_result_date": "2026-04-25"
+        "latest_result_date": "2026-06-06"
       },
       {
         "person_id": "skv-p000066",
