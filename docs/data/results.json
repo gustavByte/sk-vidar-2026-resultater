@@ -1,14 +1,14 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-06-07T13:46:54+02:00",
+  "generated_at": "2026-06-07T14:20:37+02:00",
   "stats": {
-    "result_count": 997,
+    "result_count": 998,
     "athlete_count": 421,
-    "event_count": 124,
+    "event_count": 125,
     "week_count": 20,
     "latest_week": 23,
     "latest_date": "2026-06-06",
-    "women_count": 394,
+    "women_count": 395,
     "men_count": 603,
     "missing_gender_or_class_count": 0
   },
@@ -18,10 +18,10 @@
       "week_label": "Uke 23",
       "published_date": "2026-06-06",
       "published_date_label": "06.06.2026",
-      "result_count": 54,
-      "athlete_count": 49,
-      "event_count": 9,
-      "women_count": 27,
+      "result_count": 55,
+      "athlete_count": 50,
+      "event_count": 10,
+      "women_count": 28,
       "men_count": 27,
       "events": [
         "1500 m Elite 2026",
@@ -32,6 +32,7 @@
         "Sognefjord Trail Run 2026",
         "Sommerløpet Kristiansand 2026",
         "The Arctic Run 2026",
+        "The Lightning 10.000 2026",
         "Torshov Trail Run 2026"
       ]
     },
@@ -1465,6 +1466,35 @@
       "wa_points": null,
       "place": "",
       "notes_clean": "Para kvinner",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-ea77f0bece1cf9be",
+      "person_id": "skv-p000029",
+      "person_slug": "anna-marie-sirevag",
+      "published_date": "2026-06-06",
+      "published_date_label": "06.06.2026",
+      "week_number": 23,
+      "athlete_name": "Anna Marie Sirevåg",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "KS",
+      "class_place": "1",
+      "event_label": "The Lightning 10.000 2026",
+      "distance": "10000 m",
+      "result_time_raw": "31:52.53",
+      "result_time_normalized": "31:52.53",
+      "result_time_seconds": 1912.53,
+      "wa_gender": "Women",
+      "wa_event": "10000m",
+      "wa_points": 1146.0,
+      "place": "1",
+      "notes_clean": "Herrenwaldhalle, Stadtallendorf; World Athletics result score 1146",
       "split_first_label": "",
       "split_first_display": "",
       "split_second_label": "",
@@ -32493,7 +32523,7 @@
         "display_name": "Anna Marie Sirevåg",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 6,
+        "result_count": 7,
         "distances": [
           "1500 m",
           "3000 m",
@@ -32556,7 +32586,7 @@
           }
         ],
         "first_result_date": "2026-02-08",
-        "latest_result_date": "2026-05-23"
+        "latest_result_date": "2026-06-06"
       },
       {
         "person_id": "skv-p000030",
