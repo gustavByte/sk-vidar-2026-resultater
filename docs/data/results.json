@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-06-07T13:19:24+02:00",
+  "generated_at": "2026-06-07T13:46:54+02:00",
   "stats": {
-    "result_count": 988,
-    "athlete_count": 416,
-    "event_count": 123,
+    "result_count": 997,
+    "athlete_count": 421,
+    "event_count": 124,
     "week_count": 20,
     "latest_week": 23,
     "latest_date": "2026-06-06",
-    "women_count": 391,
-    "men_count": 597,
+    "women_count": 394,
+    "men_count": 603,
     "missing_gender_or_class_count": 0
   },
   "weeks": [
@@ -18,16 +18,17 @@
       "week_label": "Uke 23",
       "published_date": "2026-06-06",
       "published_date_label": "06.06.2026",
-      "result_count": 45,
-      "athlete_count": 42,
-      "event_count": 8,
-      "women_count": 24,
-      "men_count": 21,
+      "result_count": 54,
+      "athlete_count": 49,
+      "event_count": 9,
+      "women_count": 27,
+      "men_count": 27,
       "events": [
         "1500 m Elite 2026",
         "Byløpet Skien 2026",
         "Det Norske Fjellmaraton 2026",
         "KK Mila 2026",
+        "Oppegårdmila 2026",
         "Sognefjord Trail Run 2026",
         "Sommerløpet Kristiansand 2026",
         "The Arctic Run 2026",
@@ -855,6 +856,267 @@
       "wa_points": 446.0,
       "place": "64",
       "notes_clean": "64. kvinne",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-cb0cd5bef7efeb3a",
+      "person_id": "skv-p000470",
+      "person_slug": "ole-viktor-ravna",
+      "published_date": "2026-06-06",
+      "published_date_label": "06.06.2026",
+      "week_number": 23,
+      "athlete_name": "Ole Viktor Ravna",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "Menn",
+      "class_place": "",
+      "event_label": "Oppegårdmila 2026",
+      "distance": "5 km",
+      "result_time_raw": "22:18",
+      "result_time_normalized": "22:18",
+      "result_time_seconds": 1338.0,
+      "wa_gender": "Men",
+      "wa_event": "5 km",
+      "wa_points": 28.0,
+      "place": "",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-7b5aedd28fe8e554",
+      "person_id": "skv-p000471",
+      "person_slug": "steinar-boe-evenstad",
+      "published_date": "2026-06-06",
+      "published_date_label": "06.06.2026",
+      "week_number": 23,
+      "athlete_name": "Steinar Bøe Evenstad",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "Menn",
+      "class_place": "",
+      "event_label": "Oppegårdmila 2026",
+      "distance": "10 km",
+      "result_time_raw": "35:50",
+      "result_time_normalized": "35:50",
+      "result_time_seconds": 2150.0,
+      "wa_gender": "Men",
+      "wa_event": "10 km",
+      "wa_points": 524.0,
+      "place": "",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-46cfec13ec7889f7",
+      "person_id": "skv-p000468",
+      "person_slug": "hakon-mindreboe",
+      "published_date": "2026-06-06",
+      "published_date_label": "06.06.2026",
+      "week_number": 23,
+      "athlete_name": "Håkon Mindrebøe",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "Menn",
+      "class_place": "",
+      "event_label": "Oppegårdmila 2026",
+      "distance": "10 km",
+      "result_time_raw": "36:13",
+      "result_time_normalized": "36:13",
+      "result_time_seconds": 2173.0,
+      "wa_gender": "Men",
+      "wa_event": "10 km",
+      "wa_points": 500.0,
+      "place": "",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-293af32954058ce5",
+      "person_id": "skv-p000333",
+      "person_slug": "truls-skarvoy",
+      "published_date": "2026-06-06",
+      "published_date_label": "06.06.2026",
+      "week_number": 23,
+      "athlete_name": "Truls Vegard Skarvøy",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "Menn",
+      "class_place": "",
+      "event_label": "Oppegårdmila 2026",
+      "distance": "10 km",
+      "result_time_raw": "37:48",
+      "result_time_normalized": "37:48",
+      "result_time_seconds": 2268.0,
+      "wa_gender": "Men",
+      "wa_event": "10 km",
+      "wa_points": 407.0,
+      "place": "",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-74c18ea001bef16f",
+      "person_id": "skv-p000335",
+      "person_slug": "valentin-hachet",
+      "published_date": "2026-06-06",
+      "published_date_label": "06.06.2026",
+      "week_number": 23,
+      "athlete_name": "Valentin Hachet",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "Menn",
+      "class_place": "",
+      "event_label": "Oppegårdmila 2026",
+      "distance": "10 km",
+      "result_time_raw": "40:11",
+      "result_time_normalized": "40:11",
+      "result_time_seconds": 2411.0,
+      "wa_gender": "Men",
+      "wa_event": "10 km",
+      "wa_points": 286.0,
+      "place": "",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-081698c57979378f",
+      "person_id": "skv-p000467",
+      "person_slug": "anne-line-boe-evenstad",
+      "published_date": "2026-06-06",
+      "published_date_label": "06.06.2026",
+      "week_number": 23,
+      "athlete_name": "Anne-Line Bøe Evenstad",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "Kvinner",
+      "class_place": "",
+      "event_label": "Oppegårdmila 2026",
+      "distance": "10 km",
+      "result_time_raw": "44:36",
+      "result_time_normalized": "44:36",
+      "result_time_seconds": 2676.0,
+      "wa_gender": "Women",
+      "wa_event": "10 km",
+      "wa_points": 569.0,
+      "place": "",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-6c9a8c4bd695ed2e",
+      "person_id": "skv-p000469",
+      "person_slug": "mai-watson",
+      "published_date": "2026-06-06",
+      "published_date_label": "06.06.2026",
+      "week_number": 23,
+      "athlete_name": "Mai Watson",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "Kvinner",
+      "class_place": "",
+      "event_label": "Oppegårdmila 2026",
+      "distance": "10 km",
+      "result_time_raw": "46:19",
+      "result_time_normalized": "46:19",
+      "result_time_seconds": 2779.0,
+      "wa_gender": "Women",
+      "wa_event": "10 km",
+      "wa_points": 507.0,
+      "place": "",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-b8a49d335db8aa1d",
+      "person_id": "skv-p000457",
+      "person_slug": "victoria-rochelois",
+      "published_date": "2026-06-06",
+      "published_date_label": "06.06.2026",
+      "week_number": 23,
+      "athlete_name": "Victoria Rochelois",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "Kvinner",
+      "class_place": "",
+      "event_label": "Oppegårdmila 2026",
+      "distance": "10 km",
+      "result_time_raw": "58:08",
+      "result_time_normalized": "58:08",
+      "result_time_seconds": 3488.0,
+      "wa_gender": "Women",
+      "wa_event": "10 km",
+      "wa_points": 175.0,
+      "place": "",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-42b1a00c5bae48b7",
+      "person_id": "skv-p000008",
+      "person_slug": "aleksander-amundsen",
+      "published_date": "2026-06-06",
+      "published_date_label": "06.06.2026",
+      "week_number": 23,
+      "athlete_name": "Aleksander Amundsen",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "Menn",
+      "class_place": "",
+      "event_label": "Oppegårdmila 2026",
+      "distance": "10 km",
+      "result_time_raw": "59:20",
+      "result_time_normalized": "59:20",
+      "result_time_seconds": 3560.0,
+      "wa_gender": "Men",
+      "wa_event": "10 km",
+      "wa_points": 1.0,
+      "place": "",
+      "notes_clean": "",
       "split_first_label": "",
       "split_first_display": "",
       "split_second_label": "",
@@ -31167,7 +31429,7 @@
     }
   ],
   "people": {
-    "profile_count": 416,
+    "profile_count": 421,
     "profiles": [
       {
         "person_id": "skv-p000001",
@@ -31387,7 +31649,7 @@
         "display_name": "Aleksander Amundsen",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 8,
+        "result_count": 9,
         "distances": [
           "3000 m",
           "5 km",
@@ -31450,7 +31712,7 @@
           }
         ],
         "first_result_date": "2026-04-11",
-        "latest_result_date": "2026-06-04"
+        "latest_result_date": "2026-06-06"
       },
       {
         "person_id": "skv-p000009",
@@ -32365,6 +32627,34 @@
         ],
         "first_result_date": "2026-04-19",
         "latest_result_date": "2026-05-27"
+      },
+      {
+        "person_id": "skv-p000467",
+        "profile_slug": "anne-line-boe-evenstad",
+        "display_name": "Anne-Line Bøe Evenstad",
+        "gender": "K",
+        "gender_label": "Kvinner",
+        "result_count": 1,
+        "distances": [
+          "10 km"
+        ],
+        "best_results": [
+          {
+            "result_id": "res-081698c57979378f",
+            "distance": "10 km",
+            "source_distance": "10 km",
+            "result_time": "44:36",
+            "result_time_seconds": 2676.0,
+            "event_label": "Oppegårdmila 2026",
+            "published_date": "2026-06-06",
+            "published_date_label": "06.06.2026",
+            "week_number": 23,
+            "place": "",
+            "class_place": ""
+          }
+        ],
+        "first_result_date": "2026-06-06",
+        "latest_result_date": "2026-06-06"
       },
       {
         "person_id": "skv-p000360",
@@ -35521,6 +35811,34 @@
         ],
         "first_result_date": "2026-05-21",
         "latest_result_date": "2026-05-21"
+      },
+      {
+        "person_id": "skv-p000468",
+        "profile_slug": "hakon-mindreboe",
+        "display_name": "Håkon Mindrebøe",
+        "gender": "M",
+        "gender_label": "Menn",
+        "result_count": 1,
+        "distances": [
+          "10 km"
+        ],
+        "best_results": [
+          {
+            "result_id": "res-46cfec13ec7889f7",
+            "distance": "10 km",
+            "source_distance": "10 km",
+            "result_time": "36:13",
+            "result_time_seconds": 2173.0,
+            "event_label": "Oppegårdmila 2026",
+            "published_date": "2026-06-06",
+            "published_date_label": "06.06.2026",
+            "week_number": 23,
+            "place": "",
+            "class_place": ""
+          }
+        ],
+        "first_result_date": "2026-06-06",
+        "latest_result_date": "2026-06-06"
       },
       {
         "person_id": "skv-p000097",
@@ -39929,6 +40247,34 @@
         "latest_result_date": "2026-05-02"
       },
       {
+        "person_id": "skv-p000469",
+        "profile_slug": "mai-watson",
+        "display_name": "Mai Watson",
+        "gender": "K",
+        "gender_label": "Kvinner",
+        "result_count": 1,
+        "distances": [
+          "10 km"
+        ],
+        "best_results": [
+          {
+            "result_id": "res-6c9a8c4bd695ed2e",
+            "distance": "10 km",
+            "source_distance": "10 km",
+            "result_time": "46:19",
+            "result_time_seconds": 2779.0,
+            "event_label": "Oppegårdmila 2026",
+            "published_date": "2026-06-06",
+            "published_date_label": "06.06.2026",
+            "week_number": 23,
+            "place": "",
+            "class_place": ""
+          }
+        ],
+        "first_result_date": "2026-06-06",
+        "latest_result_date": "2026-06-06"
+      },
+      {
         "person_id": "skv-p000198",
         "profile_slug": "maia-gundersen",
         "display_name": "Maia Gundersen",
@@ -42269,6 +42615,34 @@
         "latest_result_date": "2026-06-06"
       },
       {
+        "person_id": "skv-p000470",
+        "profile_slug": "ole-viktor-ravna",
+        "display_name": "Ole Viktor Ravna",
+        "gender": "M",
+        "gender_label": "Menn",
+        "result_count": 1,
+        "distances": [
+          "5 km"
+        ],
+        "best_results": [
+          {
+            "result_id": "res-cb0cd5bef7efeb3a",
+            "distance": "5 km",
+            "source_distance": "5 km",
+            "result_time": "22:18",
+            "result_time_seconds": 1338.0,
+            "event_label": "Oppegårdmila 2026",
+            "published_date": "2026-06-06",
+            "published_date_label": "06.06.2026",
+            "week_number": 23,
+            "place": "",
+            "class_place": ""
+          }
+        ],
+        "first_result_date": "2026-06-06",
+        "latest_result_date": "2026-06-06"
+      },
+      {
         "person_id": "skv-p000254",
         "profile_slug": "oscar-sperre",
         "display_name": "Oscar Sperre",
@@ -44348,6 +44722,34 @@
         "latest_result_date": "2026-05-30"
       },
       {
+        "person_id": "skv-p000471",
+        "profile_slug": "steinar-boe-evenstad",
+        "display_name": "Steinar Bøe Evenstad",
+        "gender": "M",
+        "gender_label": "Menn",
+        "result_count": 1,
+        "distances": [
+          "10 km"
+        ],
+        "best_results": [
+          {
+            "result_id": "res-7b5aedd28fe8e554",
+            "distance": "10 km",
+            "source_distance": "10 km",
+            "result_time": "35:50",
+            "result_time_seconds": 2150.0,
+            "event_label": "Oppegårdmila 2026",
+            "published_date": "2026-06-06",
+            "published_date_label": "06.06.2026",
+            "week_number": 23,
+            "place": "",
+            "class_place": ""
+          }
+        ],
+        "first_result_date": "2026-06-06",
+        "latest_result_date": "2026-06-06"
+      },
+      {
         "person_id": "skv-p000444",
         "profile_slug": "stina-meinicke",
         "display_name": "Stina Meinicke",
@@ -45566,7 +45968,7 @@
         "display_name": "Truls Vegard Skarvøy",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 7,
+        "result_count": 8,
         "distances": [
           "800 m",
           "1500 m",
@@ -45629,7 +46031,7 @@
           }
         ],
         "first_result_date": "2026-01-18",
-        "latest_result_date": "2026-06-05"
+        "latest_result_date": "2026-06-06"
       },
       {
         "person_id": "skv-p000396",
@@ -45682,7 +46084,7 @@
         "display_name": "Valentin Hachet",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 2,
+        "result_count": 3,
         "distances": [
           "10 km"
         ],
@@ -45702,7 +46104,7 @@
           }
         ],
         "first_result_date": "2026-04-11",
-        "latest_result_date": "2026-04-25"
+        "latest_result_date": "2026-06-06"
       },
       {
         "person_id": "skv-p000336",
@@ -45977,13 +46379,28 @@
         "display_name": "Victoria Rochelois",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
+          "10 km",
           "Trail 80 km"
         ],
-        "best_results": [],
+        "best_results": [
+          {
+            "result_id": "res-b8a49d335db8aa1d",
+            "distance": "10 km",
+            "source_distance": "10 km",
+            "result_time": "58:08",
+            "result_time_seconds": 3488.0,
+            "event_label": "Oppegårdmila 2026",
+            "published_date": "2026-06-06",
+            "published_date_label": "06.06.2026",
+            "week_number": 23,
+            "place": "",
+            "class_place": ""
+          }
+        ],
         "first_result_date": "2026-05-30",
-        "latest_result_date": "2026-05-30"
+        "latest_result_date": "2026-06-06"
       },
       {
         "person_id": "skv-p000342",
@@ -46629,6 +47046,11 @@
       "marion-tibar": "skv-p000464",
       "trond-inge-carlsen": "skv-p000465",
       "madelene-tronstad-sagebakken": "skv-p000466",
+      "anne-line-boe-evenstad": "skv-p000467",
+      "hakon-mindreboe": "skv-p000468",
+      "mai-watson": "skv-p000469",
+      "ole-viktor-ravna": "skv-p000470",
+      "steinar-boe-evenstad": "skv-p000471",
       "adne-andersen-andersen": "skv-p000001",
       "adne-sandvik-dyrnesli": "skv-p000003",
       "andreas-sjurseth": "skv-p000400",
