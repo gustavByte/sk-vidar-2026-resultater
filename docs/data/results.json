@@ -1,14 +1,14 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-06-07T15:03:33+02:00",
+  "generated_at": "2026-06-07T15:42:05+02:00",
   "stats": {
-    "result_count": 1000,
-    "athlete_count": 421,
-    "event_count": 126,
+    "result_count": 1002,
+    "athlete_count": 422,
+    "event_count": 127,
     "week_count": 20,
     "latest_week": 23,
     "latest_date": "2026-06-06",
-    "women_count": 396,
+    "women_count": 398,
     "men_count": 604,
     "missing_gender_or_class_count": 0
   },
@@ -18,10 +18,10 @@
       "week_label": "Uke 23",
       "published_date": "2026-06-06",
       "published_date_label": "06.06.2026",
-      "result_count": 57,
-      "athlete_count": 52,
-      "event_count": 11,
-      "women_count": 29,
+      "result_count": 59,
+      "athlete_count": 54,
+      "event_count": 12,
+      "women_count": 31,
       "men_count": 28,
       "events": [
         "1500 m Elite 2026",
@@ -32,6 +32,7 @@
         "Oppegårdmila 2026",
         "Sognefjord Trail Run 2026",
         "Sommerløpet Kristiansand 2026",
+        "Sommernattsløpet Trondheim 2026",
         "The Arctic Run 2026",
         "The Lightning 10.000 2026",
         "Torshov Trail Run 2026"
@@ -1322,6 +1323,64 @@
       "wa_points": 952.0,
       "place": "14",
       "notes_clean": "1. kvinne",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-7c74684caff452a9",
+      "person_id": "skv-p000472",
+      "person_slug": "vilja-gruben",
+      "published_date": "2026-06-06",
+      "published_date_label": "06.06.2026",
+      "week_number": 23,
+      "athlete_name": "Vilja Gruben",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "Kvinner",
+      "class_place": "",
+      "event_label": "Sommernattsløpet Trondheim 2026",
+      "distance": "5 km",
+      "result_time_raw": "19:06",
+      "result_time_normalized": "19:06",
+      "result_time_seconds": 1146.0,
+      "wa_gender": "Women",
+      "wa_event": "5 km",
+      "wa_points": 735.0,
+      "place": "",
+      "notes_clean": "5. kvinne",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-d60dcd015fd7aba8",
+      "person_id": "skv-p000293",
+      "person_slug": "sissel-oversand",
+      "published_date": "2026-06-06",
+      "published_date_label": "06.06.2026",
+      "week_number": 23,
+      "athlete_name": "Sissel Oversand",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "Kvinner",
+      "class_place": "",
+      "event_label": "Sommernattsløpet Trondheim 2026",
+      "distance": "5 km",
+      "result_time_raw": "20:05",
+      "result_time_normalized": "20:05",
+      "result_time_seconds": 1205.0,
+      "wa_gender": "Women",
+      "wa_event": "5 km",
+      "wa_points": 647.0,
+      "place": "",
+      "notes_clean": "7. kvinne",
       "split_first_label": "",
       "split_first_display": "",
       "split_second_label": "",
@@ -31518,7 +31577,7 @@
     }
   ],
   "people": {
-    "profile_count": 421,
+    "profile_count": 422,
     "profiles": [
       {
         "person_id": "skv-p000001",
@@ -44282,9 +44341,10 @@
         "display_name": "Sissel Oversand",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 4,
+        "result_count": 5,
         "distances": [
           "3000 m",
+          "5 km",
           "10 km",
           "Halvmaraton"
         ],
@@ -44301,6 +44361,19 @@
             "week_number": 16,
             "place": "15",
             "class_place": "1"
+          },
+          {
+            "result_id": "res-d60dcd015fd7aba8",
+            "distance": "5 km",
+            "source_distance": "5 km",
+            "result_time": "20:05",
+            "result_time_seconds": 1205.0,
+            "event_label": "Sommernattsløpet Trondheim 2026",
+            "published_date": "2026-06-06",
+            "published_date_label": "06.06.2026",
+            "week_number": 23,
+            "place": "",
+            "class_place": ""
           },
           {
             "result_id": "res-39eca3d0abad60e6",
@@ -44330,7 +44403,7 @@
           }
         ],
         "first_result_date": "2026-02-08",
-        "latest_result_date": "2026-05-27"
+        "latest_result_date": "2026-06-06"
       },
       {
         "person_id": "skv-p000295",
@@ -46662,6 +46735,34 @@
         "latest_result_date": "2026-05-31"
       },
       {
+        "person_id": "skv-p000472",
+        "profile_slug": "vilja-gruben",
+        "display_name": "Vilja Gruben",
+        "gender": "K",
+        "gender_label": "Kvinner",
+        "result_count": 1,
+        "distances": [
+          "5 km"
+        ],
+        "best_results": [
+          {
+            "result_id": "res-7c74684caff452a9",
+            "distance": "5 km",
+            "source_distance": "5 km",
+            "result_time": "19:06",
+            "result_time_seconds": 1146.0,
+            "event_label": "Sommernattsløpet Trondheim 2026",
+            "published_date": "2026-06-06",
+            "published_date_label": "06.06.2026",
+            "week_number": 23,
+            "place": "",
+            "class_place": ""
+          }
+        ],
+        "first_result_date": "2026-06-06",
+        "latest_result_date": "2026-06-06"
+      },
+      {
         "person_id": "skv-p000347",
         "profile_slug": "william-morken-andersen",
         "display_name": "William Morken-Andersen",
@@ -47154,6 +47255,7 @@
       "mai-watson": "skv-p000469",
       "ole-viktor-ravna": "skv-p000470",
       "steinar-boe-evenstad": "skv-p000471",
+      "vilja-gruben": "skv-p000472",
       "adne-andersen-andersen": "skv-p000001",
       "adne-sandvik-dyrnesli": "skv-p000003",
       "andreas-sjurseth": "skv-p000400",
