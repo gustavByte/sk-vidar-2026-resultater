@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-06-08T11:59:19+02:00",
+  "generated_at": "2026-06-08T12:09:29+02:00",
   "stats": {
     "result_count": 1006,
     "athlete_count": 422,
@@ -1730,7 +1730,7 @@
       "wa_event": "10000m",
       "wa_points": 1146.0,
       "place": "1",
-      "notes_clean": "Herrenwaldhalle, Stadtallendorf; World Athletics result score 1146",
+      "notes_clean": "Herrenwaldhalle, Stadtallendorf",
       "split_first_label": "",
       "split_first_display": "",
       "split_second_label": "",
