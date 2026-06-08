@@ -1,34 +1,35 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-06-07T15:42:05+02:00",
+  "generated_at": "2026-06-08T11:56:43+02:00",
   "stats": {
-    "result_count": 1002,
+    "result_count": 1005,
     "athlete_count": 422,
-    "event_count": 127,
+    "event_count": 128,
     "week_count": 20,
     "latest_week": 23,
-    "latest_date": "2026-06-06",
+    "latest_date": "2026-06-07",
     "women_count": 398,
-    "men_count": 604,
+    "men_count": 607,
     "missing_gender_or_class_count": 0
   },
   "weeks": [
     {
       "week_number": 23,
       "week_label": "Uke 23",
-      "published_date": "2026-06-06",
-      "published_date_label": "06.06.2026",
-      "result_count": 59,
-      "athlete_count": 54,
-      "event_count": 12,
+      "published_date": "2026-06-07",
+      "published_date_label": "07.06.2026",
+      "result_count": 62,
+      "athlete_count": 57,
+      "event_count": 13,
       "women_count": 31,
-      "men_count": 28,
+      "men_count": 31,
       "events": [
         "1500 m Elite 2026",
         "Byløpet Skien 2026",
         "Det Norske Fjellmaraton 2026",
         "Hagebyløpet 2026",
         "KK Mila 2026",
+        "Lierløpet 2026",
         "Oppegårdmila 2026",
         "Sognefjord Trail Run 2026",
         "Sommerløpet Kristiansand 2026",
@@ -402,6 +403,93 @@
     }
   ],
   "results": [
+    {
+      "result_id": "res-b0896a96a608c429",
+      "person_id": "skv-p000424",
+      "person_slug": "bjorn-alexander-hovland",
+      "published_date": "2026-06-07",
+      "published_date_label": "07.06.2026",
+      "week_number": 23,
+      "athlete_name": "Bjørn Alexander Hovland",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M23",
+      "class_place": "",
+      "event_label": "Lierløpet 2026",
+      "distance": "5 km",
+      "result_time_raw": "16:37",
+      "result_time_normalized": "16:37",
+      "result_time_seconds": 997.0,
+      "wa_gender": "Men",
+      "wa_event": "5 km",
+      "wa_points": 545.0,
+      "place": "",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-008eae61d8c375fd",
+      "person_id": "skv-p000266",
+      "person_slug": "roger-thompson",
+      "published_date": "2026-06-07",
+      "published_date_label": "07.06.2026",
+      "week_number": 23,
+      "athlete_name": "Roger Thompson",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M45",
+      "class_place": "",
+      "event_label": "Lierløpet 2026",
+      "distance": "5 km",
+      "result_time_raw": "16:54",
+      "result_time_normalized": "16:54",
+      "result_time_seconds": 1014.0,
+      "wa_gender": "Men",
+      "wa_event": "5 km",
+      "wa_points": 504.0,
+      "place": "",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-933c1fb249ff6885",
+      "person_id": "skv-p000254",
+      "person_slug": "oscar-sperre",
+      "published_date": "2026-06-07",
+      "published_date_label": "07.06.2026",
+      "week_number": 23,
+      "athlete_name": "Oscar Sperre",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M23",
+      "class_place": "",
+      "event_label": "Lierløpet 2026",
+      "distance": "10 km",
+      "result_time_raw": "36:18",
+      "result_time_normalized": "36:18",
+      "result_time_seconds": 2178.0,
+      "wa_gender": "Men",
+      "wa_event": "10 km",
+      "wa_points": 495.0,
+      "place": "",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
     {
       "result_id": "res-85315dfbf100f556",
       "person_id": "skv-p000065",
@@ -33304,11 +33392,25 @@
         "display_name": "Bjørn Alexander Hovland",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
+          "5 km",
           "10 km"
         ],
         "best_results": [
+          {
+            "result_id": "res-b0896a96a608c429",
+            "distance": "5 km",
+            "source_distance": "5 km",
+            "result_time": "16:37",
+            "result_time_seconds": 997.0,
+            "event_label": "Lierløpet 2026",
+            "published_date": "2026-06-07",
+            "published_date_label": "07.06.2026",
+            "week_number": 23,
+            "place": "",
+            "class_place": ""
+          },
           {
             "result_id": "res-0ce69cd038c9feb1",
             "distance": "10 km",
@@ -33324,7 +33426,7 @@
           }
         ],
         "first_result_date": "2026-05-27",
-        "latest_result_date": "2026-05-27"
+        "latest_result_date": "2026-06-07"
       },
       {
         "person_id": "skv-p000041",
@@ -42810,7 +42912,7 @@
         "display_name": "Oscar Sperre",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 3,
+        "result_count": 4,
         "distances": [
           "10 km",
           "Maraton"
@@ -42844,7 +42946,7 @@
           }
         ],
         "first_result_date": "2026-03-29",
-        "latest_result_date": "2026-05-10"
+        "latest_result_date": "2026-06-07"
       },
       {
         "person_id": "skv-p000447",
@@ -43301,23 +43403,23 @@
         "display_name": "Roger Thompson",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 3,
+        "result_count": 4,
         "distances": [
           "5 km",
           "10 km"
         ],
         "best_results": [
           {
-            "result_id": "res-5dd9544c37c962e7",
+            "result_id": "res-008eae61d8c375fd",
             "distance": "5 km",
             "source_distance": "5 km",
-            "result_time": "16:56",
-            "result_time_seconds": 1016.0,
-            "event_label": "Holmestrand maraton",
-            "published_date": "2026-04-12",
-            "published_date_label": "12.04.2026",
-            "week_number": 15,
-            "place": "5",
+            "result_time": "16:54",
+            "result_time_seconds": 1014.0,
+            "event_label": "Lierløpet 2026",
+            "published_date": "2026-06-07",
+            "published_date_label": "07.06.2026",
+            "week_number": 23,
+            "place": "",
             "class_place": ""
           },
           {
@@ -43335,7 +43437,7 @@
           }
         ],
         "first_result_date": "2026-03-29",
-        "latest_result_date": "2026-04-25"
+        "latest_result_date": "2026-06-07"
       },
       {
         "person_id": "skv-p000267",
