@@ -1,14 +1,14 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-06-08T12:09:29+02:00",
+  "generated_at": "2026-06-11T13:41:13+02:00",
   "stats": {
-    "result_count": 1006,
-    "athlete_count": 422,
+    "result_count": 1007,
+    "athlete_count": 423,
     "event_count": 129,
     "week_count": 20,
     "latest_week": 23,
     "latest_date": "2026-06-07",
-    "women_count": 398,
+    "women_count": 399,
     "men_count": 608,
     "missing_gender_or_class_count": 0
   },
@@ -45,10 +45,10 @@
       "week_label": "Uke 22",
       "published_date": "2026-05-31",
       "published_date_label": "31.05.2026",
-      "result_count": 158,
-      "athlete_count": 132,
+      "result_count": 159,
+      "athlete_count": 133,
       "event_count": 17,
-      "women_count": 66,
+      "women_count": 67,
       "men_count": 92,
       "events": [
         "EcoTrail Oslo 2026",
@@ -3558,6 +3558,35 @@
       "wa_points": 712.0,
       "place": "1",
       "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-82b566c2285ff505",
+      "person_id": "skv-p000473",
+      "person_slug": "anja-kampenhoy",
+      "published_date": "2026-05-30",
+      "published_date_label": "30.05.2026",
+      "week_number": 22,
+      "athlete_name": "Anja Kampenhøy",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K23-34",
+      "class_place": "1",
+      "event_label": "Glommaløpet 2026",
+      "distance": "10 miles",
+      "result_time_raw": "1:02:42",
+      "result_time_normalized": "1:02:42",
+      "result_time_seconds": 3762.0,
+      "wa_gender": "Women",
+      "wa_event": "10 Miles",
+      "wa_points": 860.0,
+      "place": "19",
+      "notes_clean": "3. kvinne",
       "split_first_label": "",
       "split_first_display": "",
       "split_second_label": "",
@@ -31695,7 +31724,7 @@
     }
   ],
   "people": {
-    "profile_count": 422,
+    "profile_count": 423,
     "profiles": [
       {
         "person_id": "skv-p000001",
@@ -32723,6 +32752,20 @@
           }
         ],
         "first_result_date": "2026-04-11",
+        "latest_result_date": "2026-05-30"
+      },
+      {
+        "person_id": "skv-p000473",
+        "profile_slug": "anja-kampenhoy",
+        "display_name": "Anja Kampenhøy",
+        "gender": "K",
+        "gender_label": "Kvinner",
+        "result_count": 1,
+        "distances": [
+          "10 miles"
+        ],
+        "best_results": [],
+        "first_result_date": "2026-05-30",
         "latest_result_date": "2026-05-30"
       },
       {
@@ -47388,6 +47431,7 @@
       "ole-viktor-ravna": "skv-p000470",
       "steinar-boe-evenstad": "skv-p000471",
       "vilja-gruben": "skv-p000472",
+      "anja-kampenhoy": "skv-p000473",
       "adne-andersen-andersen": "skv-p000001",
       "adne-sandvik-dyrnesli": "skv-p000003",
       "andreas-sjurseth": "skv-p000400",
