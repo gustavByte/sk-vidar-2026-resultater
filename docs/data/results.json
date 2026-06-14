@@ -1,14 +1,14 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-06-14T14:50:11+02:00",
+  "generated_at": "2026-06-14T14:55:32+02:00",
   "stats": {
-    "result_count": 1030,
+    "result_count": 1031,
     "athlete_count": 428,
-    "event_count": 131,
+    "event_count": 132,
     "week_count": 21,
     "latest_week": 24,
     "latest_date": "2026-06-13",
-    "women_count": 408,
+    "women_count": 409,
     "men_count": 622,
     "missing_gender_or_class_count": 0
   },
@@ -18,12 +18,13 @@
       "week_label": "Uke 24",
       "published_date": "2026-06-13",
       "published_date_label": "13.06.2026",
-      "result_count": 23,
-      "athlete_count": 22,
-      "event_count": 2,
-      "women_count": 9,
+      "result_count": 24,
+      "athlete_count": 23,
+      "event_count": 3,
+      "women_count": 10,
       "men_count": 14,
       "events": [
+        "Besseggløpet Konkurranse 2026",
         "Nøsen Hundreds Ultramarathon 2026",
         "Tyrvinglekene 2026"
       ]
@@ -419,6 +420,35 @@
     }
   ],
   "results": [
+    {
+      "result_id": "res-1b61923fd142d1ab",
+      "person_id": "skv-p000377",
+      "person_slug": "maia-kulle-andreassen",
+      "published_date": "2026-06-13",
+      "published_date_label": "13.06.2026",
+      "week_number": 24,
+      "athlete_name": "Maia Kulle Andreassen",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K17-18",
+      "class_place": "2",
+      "event_label": "Besseggløpet Konkurranse 2026",
+      "distance": "14 km",
+      "result_time_raw": "2:00:03",
+      "result_time_normalized": "2:00:03",
+      "result_time_seconds": 7203.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "16",
+      "notes_clean": "2. kvinne",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
     {
       "result_id": "res-7f520fbc6c7bb3b4",
       "person_id": "skv-p000478",
@@ -41466,8 +41496,9 @@
         "display_name": "Maia Kulle Andreassen",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 4,
+        "result_count": 5,
         "distances": [
+          "14 km",
           "4,7 km",
           "Kombinert",
           "SKY 12.5K",
@@ -41475,7 +41506,7 @@
         ],
         "best_results": [],
         "first_result_date": "2026-05-08",
-        "latest_result_date": "2026-05-20"
+        "latest_result_date": "2026-06-13"
       },
       {
         "person_id": "skv-p000199",
