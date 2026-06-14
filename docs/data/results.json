@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-06-14T19:01:09+02:00",
+  "generated_at": "2026-06-14T21:41:23+02:00",
   "stats": {
-    "result_count": 1101,
-    "athlete_count": 438,
+    "result_count": 1109,
+    "athlete_count": 440,
     "event_count": 136,
     "week_count": 21,
     "latest_week": 24,
     "latest_date": "2026-06-14",
-    "women_count": 444,
-    "men_count": 657,
+    "women_count": 447,
+    "men_count": 662,
     "missing_gender_or_class_count": 0
   },
   "weeks": [
@@ -18,11 +18,11 @@
       "week_label": "Uke 24",
       "published_date": "2026-06-14",
       "published_date_label": "14.06.2026",
-      "result_count": 94,
-      "athlete_count": 89,
+      "result_count": 102,
+      "athlete_count": 97,
       "event_count": 7,
-      "women_count": 45,
-      "men_count": 49,
+      "women_count": 48,
+      "men_count": 54,
       "events": [
         "Besseggløpet Konkurranse 2026",
         "Birkebeinerløpene 2026",
@@ -1846,6 +1846,35 @@
       "split_state": ""
     },
     {
+      "result_id": "res-a8f4dc56c3d74b6d",
+      "person_id": "skv-p000206",
+      "person_slug": "marianne-harnes-myhrer",
+      "published_date": "2026-06-13",
+      "published_date_label": "13.06.2026",
+      "week_number": 24,
+      "athlete_name": "Marianne Harnes Myhrer",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K24-34",
+      "class_place": "3",
+      "event_label": "RunwayK 2026",
+      "distance": "5 km",
+      "result_time_raw": "17:03",
+      "result_time_normalized": "17:03",
+      "result_time_seconds": 1023.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "26",
+      "notes_clean": "3. kvinne, klasse 3",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
       "result_id": "res-b67054143b4281cb",
       "person_id": "skv-p000216",
       "person_slug": "marte-lien-johnsen",
@@ -1931,6 +1960,35 @@
       "split_second_display": "8:43",
       "split_delta_display": "+5:33",
       "split_state": "slow"
+    },
+    {
+      "result_id": "res-c4c4d1995c82934a",
+      "person_id": "skv-p000043",
+      "person_slug": "catherine-berg",
+      "published_date": "2026-06-13",
+      "published_date_label": "13.06.2026",
+      "week_number": 24,
+      "athlete_name": "Catherine Berg",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K24-34",
+      "class_place": "8",
+      "event_label": "RunwayK 2026",
+      "distance": "5 km",
+      "result_time_raw": "18:08",
+      "result_time_normalized": "18:08",
+      "result_time_seconds": 1088.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "61",
+      "notes_clean": "9. kvinne, klasse 8",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
     },
     {
       "result_id": "res-cba4cf3f940d84e1",
@@ -2020,6 +2078,35 @@
       "split_state": ""
     },
     {
+      "result_id": "res-90a32949ac906ebe",
+      "person_id": "skv-p000308",
+      "person_slug": "stein-ellingsen",
+      "published_date": "2026-06-13",
+      "published_date_label": "13.06.2026",
+      "week_number": 24,
+      "athlete_name": "Stein Ellingsen *",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M35-39",
+      "class_place": "15",
+      "event_label": "RunwayK 2026",
+      "distance": "5 km",
+      "result_time_raw": "18:48",
+      "result_time_normalized": "18:48",
+      "result_time_seconds": 1128.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "90",
+      "notes_clean": "77. mann, klasse 15",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
       "result_id": "res-92866472e227fec4",
       "person_id": "skv-p000107",
       "person_slug": "hege-nja-bjorkmann",
@@ -2049,6 +2136,35 @@
       "split_state": ""
     },
     {
+      "result_id": "res-df64c1f0238e37d5",
+      "person_id": "skv-p000494",
+      "person_slug": "borge-bardsen",
+      "published_date": "2026-06-13",
+      "published_date_label": "13.06.2026",
+      "week_number": 24,
+      "athlete_name": "Børge Bårdsen",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M24-34",
+      "class_place": "40",
+      "event_label": "RunwayK 2026",
+      "distance": "5 km",
+      "result_time_raw": "19:03",
+      "result_time_normalized": "19:03",
+      "result_time_seconds": 1143.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "96",
+      "notes_clean": "82. mann, klasse 40",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
       "result_id": "res-a0234cd0be3cda5e",
       "person_id": "skv-p000425",
       "person_slug": "cecilie-knudsen",
@@ -2070,6 +2186,35 @@
       "wa_points": null,
       "place": "101",
       "notes_clean": "15. kvinne, klasse 10",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-2e951ca18d92a8e6",
+      "person_id": "skv-p000008",
+      "person_slug": "aleksander-amundsen",
+      "published_date": "2026-06-13",
+      "published_date_label": "13.06.2026",
+      "week_number": 24,
+      "athlete_name": "Aleksander Amundsen",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M24-34",
+      "class_place": "55",
+      "event_label": "RunwayK 2026",
+      "distance": "5 km",
+      "result_time_raw": "19:46",
+      "result_time_normalized": "19:46",
+      "result_time_seconds": 1186.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "134",
+      "notes_clean": "114. mann, klasse 55",
       "split_first_label": "",
       "split_first_display": "",
       "split_second_label": "",
@@ -2157,6 +2302,35 @@
       "wa_points": null,
       "place": "312",
       "notes_clean": "52. kvinne, klasse 6",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-7722ae9795bb2735",
+      "person_id": "skv-p000427",
+      "person_slug": "elin-lippe-stavnes",
+      "published_date": "2026-06-13",
+      "published_date_label": "13.06.2026",
+      "week_number": 24,
+      "athlete_name": "Elin Lippe Stavnes",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K45-49",
+      "class_place": "5",
+      "event_label": "RunwayK 2026",
+      "distance": "5 km",
+      "result_time_raw": "24:35",
+      "result_time_normalized": "24:35",
+      "result_time_seconds": 1475.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "329",
+      "notes_clean": "61. kvinne, klasse 5",
       "split_first_label": "",
       "split_first_display": "",
       "split_second_label": "",
@@ -2484,6 +2658,35 @@
       "split_state": ""
     },
     {
+      "result_id": "res-4caa1174204f0baa",
+      "person_id": "skv-p000495",
+      "person_slug": "leon-victor-wold",
+      "published_date": "2026-06-13",
+      "published_date_label": "13.06.2026",
+      "week_number": 24,
+      "athlete_name": "Leon Victor Wold",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M16-17",
+      "class_place": "3",
+      "event_label": "RunwayK 2026",
+      "distance": "10 km",
+      "result_time_raw": "39:36",
+      "result_time_normalized": "39:36",
+      "result_time_seconds": 2376.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "146",
+      "notes_clean": "135. mann, klasse 3",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
       "result_id": "res-c266f0743d22f211",
       "person_id": "skv-p000370",
       "person_slug": "thomas-beka",
@@ -2505,6 +2708,35 @@
       "wa_points": null,
       "place": "188",
       "notes_clean": "174. mann, klasse 24",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-f78cbd12a682be4a",
+      "person_id": "skv-p000411",
+      "person_slug": "isak-by-stolan",
+      "published_date": "2026-06-13",
+      "published_date_label": "13.06.2026",
+      "week_number": 24,
+      "athlete_name": "Isak By-stølan",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M24-34",
+      "class_place": "85",
+      "event_label": "RunwayK 2026",
+      "distance": "10 km",
+      "result_time_raw": "44:01",
+      "result_time_normalized": "44:01",
+      "result_time_seconds": 2641.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "242",
+      "notes_clean": "222. mann, klasse 85",
       "split_first_label": "",
       "split_first_display": "",
       "split_second_label": "",
@@ -32835,15 +33067,15 @@
           "gender": "K",
           "gender_label": "Kvinner",
           "rank": 10,
-          "person_id": "skv-p000027",
-          "person_slug": "anette-killerud-odegard",
-          "result_id": "res-da013afbd4d11c10",
-          "athlete_name": "Anette Killerud Ødegård",
-          "result_time": "0:17:07",
-          "result_time_seconds": 1027.0,
-          "event_label": "Sentrumsløpet 5k",
-          "published_date": "2026-04-25",
-          "published_date_label": "25.04.2026"
+          "person_id": "skv-p000206",
+          "person_slug": "marianne-harnes-myhrer",
+          "result_id": "res-a8f4dc56c3d74b6d",
+          "athlete_name": "Marianne Harnes Myhrer",
+          "result_time": "17:03",
+          "result_time_seconds": 1023.0,
+          "event_label": "RunwayK 2026",
+          "published_date": "2026-06-13",
+          "published_date_label": "13.06.2026"
         }
       ],
       "men": [
@@ -34534,7 +34766,7 @@
     }
   ],
   "people": {
-    "profile_count": 438,
+    "profile_count": 440,
     "profiles": [
       {
         "person_id": "skv-p000001",
@@ -34754,7 +34986,7 @@
         "display_name": "Aleksander Amundsen",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 9,
+        "result_count": 10,
         "distances": [
           "3000 m",
           "5 km",
@@ -34817,7 +35049,7 @@
           }
         ],
         "first_result_date": "2026-04-11",
-        "latest_result_date": "2026-06-06"
+        "latest_result_date": "2026-06-13"
       },
       {
         "person_id": "skv-p000009",
@@ -36412,6 +36644,34 @@
         "latest_result_date": "2026-06-13"
       },
       {
+        "person_id": "skv-p000494",
+        "profile_slug": "borge-bardsen",
+        "display_name": "Børge Bårdsen",
+        "gender": "M",
+        "gender_label": "Menn",
+        "result_count": 1,
+        "distances": [
+          "5 km"
+        ],
+        "best_results": [
+          {
+            "result_id": "res-df64c1f0238e37d5",
+            "distance": "5 km",
+            "source_distance": "5 km",
+            "result_time": "19:03",
+            "result_time_seconds": 1143.0,
+            "event_label": "RunwayK 2026",
+            "published_date": "2026-06-13",
+            "published_date_label": "13.06.2026",
+            "week_number": 24,
+            "place": "96",
+            "class_place": "40"
+          }
+        ],
+        "first_result_date": "2026-06-13",
+        "latest_result_date": "2026-06-13"
+      },
+      {
         "person_id": "skv-p000042",
         "profile_slug": "caroline-marie-wiig",
         "display_name": "Caroline Marie Wiig",
@@ -36473,13 +36733,27 @@
         "display_name": "Catherine Berg",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 4,
+        "result_count": 5,
         "distances": [
+          "5 km",
           "10 km",
           "Maraton",
           "10000 m"
         ],
         "best_results": [
+          {
+            "result_id": "res-c4c4d1995c82934a",
+            "distance": "5 km",
+            "source_distance": "5 km",
+            "result_time": "18:08",
+            "result_time_seconds": 1088.0,
+            "event_label": "RunwayK 2026",
+            "published_date": "2026-06-13",
+            "published_date_label": "13.06.2026",
+            "week_number": 24,
+            "place": "61",
+            "class_place": "8"
+          },
           {
             "result_id": "res-ecb9a5959a9a7023",
             "distance": "10 km",
@@ -36508,7 +36782,7 @@
           }
         ],
         "first_result_date": "2026-03-29",
-        "latest_result_date": "2026-05-15"
+        "latest_result_date": "2026-06-13"
       },
       {
         "person_id": "skv-p000044",
@@ -37408,7 +37682,7 @@
         "display_name": "Elin Lippe Stavnes",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 3,
+        "result_count": 4,
         "distances": [
           "5 km",
           "10 km",
@@ -37416,17 +37690,17 @@
         ],
         "best_results": [
           {
-            "result_id": "res-741d28a228d09ce7",
+            "result_id": "res-7722ae9795bb2735",
             "distance": "5 km",
             "source_distance": "5 km",
-            "result_time": "26:25",
-            "result_time_seconds": 1585.0,
-            "event_label": "Fornebuløpet 2026",
-            "published_date": "2026-05-27",
-            "published_date_label": "27.05.2026",
-            "week_number": 22,
-            "place": "427",
-            "class_place": "15"
+            "result_time": "24:35",
+            "result_time_seconds": 1475.0,
+            "event_label": "RunwayK 2026",
+            "published_date": "2026-06-13",
+            "published_date_label": "13.06.2026",
+            "week_number": 24,
+            "place": "329",
+            "class_place": "5"
           },
           {
             "result_id": "res-35383a78b9194500",
@@ -37443,7 +37717,7 @@
           }
         ],
         "first_result_date": "2026-05-27",
-        "latest_result_date": "2026-05-27"
+        "latest_result_date": "2026-06-13"
       },
       {
         "person_id": "skv-p000063",
@@ -40523,11 +40797,25 @@
         "display_name": "Isak By-stølan",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
+          "10 km",
           "Halvmaraton"
         ],
         "best_results": [
+          {
+            "result_id": "res-f78cbd12a682be4a",
+            "distance": "10 km",
+            "source_distance": "10 km",
+            "result_time": "44:01",
+            "result_time_seconds": 2641.0,
+            "event_label": "RunwayK 2026",
+            "published_date": "2026-06-13",
+            "published_date_label": "13.06.2026",
+            "week_number": 24,
+            "place": "242",
+            "class_place": "85"
+          },
           {
             "result_id": "res-112a1a69b1d6eee7",
             "distance": "Halvmaraton",
@@ -40543,7 +40831,7 @@
           }
         ],
         "first_result_date": "2026-05-23",
-        "latest_result_date": "2026-05-23"
+        "latest_result_date": "2026-06-13"
       },
       {
         "person_id": "skv-p000355",
@@ -42969,6 +43257,34 @@
         "latest_result_date": "2026-05-01"
       },
       {
+        "person_id": "skv-p000495",
+        "profile_slug": "leon-victor-wold",
+        "display_name": "Leon Victor Wold",
+        "gender": "M",
+        "gender_label": "Menn",
+        "result_count": 1,
+        "distances": [
+          "10 km"
+        ],
+        "best_results": [
+          {
+            "result_id": "res-4caa1174204f0baa",
+            "distance": "10 km",
+            "source_distance": "10 km",
+            "result_time": "39:36",
+            "result_time_seconds": 2376.0,
+            "event_label": "RunwayK 2026",
+            "published_date": "2026-06-13",
+            "published_date_label": "13.06.2026",
+            "week_number": 24,
+            "place": "146",
+            "class_place": "3"
+          }
+        ],
+        "first_result_date": "2026-06-13",
+        "latest_result_date": "2026-06-13"
+      },
+      {
         "person_id": "skv-p000186",
         "profile_slug": "linnea-horn",
         "display_name": "Linnéa Horn",
@@ -43957,24 +44273,24 @@
         "display_name": "Marianne Harnes Myhrer",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 4,
+        "result_count": 5,
         "distances": [
           "5 km",
           "10 km"
         ],
         "best_results": [
           {
-            "result_id": "res-9a670a923bafb3cb",
+            "result_id": "res-a8f4dc56c3d74b6d",
             "distance": "5 km",
             "source_distance": "5 km",
-            "result_time": "0:17:17",
-            "result_time_seconds": 1037.0,
-            "event_label": "Sentrumsløpet 5k",
-            "published_date": "2026-04-25",
-            "published_date_label": "25.04.2026",
-            "week_number": 17,
-            "place": "32",
-            "class_place": "2"
+            "result_time": "17:03",
+            "result_time_seconds": 1023.0,
+            "event_label": "RunwayK 2026",
+            "published_date": "2026-06-13",
+            "published_date_label": "13.06.2026",
+            "week_number": 24,
+            "place": "26",
+            "class_place": "3"
           },
           {
             "result_id": "res-93d7dddd780ec196",
@@ -43991,7 +44307,7 @@
           }
         ],
         "first_result_date": "2026-02-22",
-        "latest_result_date": "2026-05-23"
+        "latest_result_date": "2026-06-13"
       },
       {
         "person_id": "skv-p000207",
@@ -48220,13 +48536,27 @@
         "display_name": "Stein Ellingsen *",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 3,
+        "result_count": 4,
         "distances": [
+          "5 km",
           "10 km",
           "Halvmaraton",
           "Trail 50 km"
         ],
         "best_results": [
+          {
+            "result_id": "res-90a32949ac906ebe",
+            "distance": "5 km",
+            "source_distance": "5 km",
+            "result_time": "18:48",
+            "result_time_seconds": 1128.0,
+            "event_label": "RunwayK 2026",
+            "published_date": "2026-06-13",
+            "published_date_label": "13.06.2026",
+            "week_number": 24,
+            "place": "90",
+            "class_place": "15"
+          },
           {
             "result_id": "res-f10dc5356cf69e96",
             "distance": "10 km",
@@ -48255,7 +48585,7 @@
           }
         ],
         "first_result_date": "2026-04-11",
-        "latest_result_date": "2026-05-30"
+        "latest_result_date": "2026-06-13"
       },
       {
         "person_id": "skv-p000471",
@@ -50692,6 +51022,8 @@
       "cecilie-lorsa": "skv-p000491",
       "martine-svendsen": "skv-p000492",
       "ingrid-langevei-maeland": "skv-p000493",
+      "borge-bardsen": "skv-p000494",
+      "leon-victor-wold": "skv-p000495",
       "adne-andersen-andersen": "skv-p000001",
       "adne-sandvik-dyrnesli": "skv-p000003",
       "andreas-sjurseth": "skv-p000400",

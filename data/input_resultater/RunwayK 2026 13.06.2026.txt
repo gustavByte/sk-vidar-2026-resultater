@@ -9,17 +9,23 @@ Truls Skarvøy | 5 km | M24-34 | total 11 | kjønn 11/419 | klasse 9/155 | 0:16:
 Amalie Sæten | 5 km | K24-34 | total 14 | kjønn 1/304 | klasse 1/105 | 0:16:19 | Sk Vidar | Sikker
 Fredrik Sætereng Fyksen | 5 km | M35-39 | total 15 | kjønn 14/419 | klasse 2/46 | 0:16:27 | SK Vidar | Sikker
 Frida Bjørnstad Konow | 5 km | K24-34 | total 18 | kjønn 2/304 | klasse 2/105 | 0:16:42 | SK Vidar | Sikker
+Marianne Harnes Myhrer | 5 km | K24-34 | total 26 | kjønn 3/304 | klasse 3/105 | 0:17:03 | SK Vidar | Sikker
 Marte Lien Johnsen | 5 km | K24-34 | total 40 | kjønn 7/304 | klasse 6/105 | 0:17:43 | SK Vidar | Kandidat
 Fredrik Camilo Halsbog | 5 km | M40-44 | total 53 | kjønn 46/419 | klasse 5/45 | 0:17:53 | Fartsholder26 | SK Vidar | Sikker
 Ingrid Langevei Mæland | 5 km | K24-34 | total 56 | kjønn 8/309 | klasse 7/107 | 0:17:55 | Sportsklubben Vidar | Sikker
+Catherine Berg | 5 km | K24-34 | total 61 | kjønn 9/304 | klasse 8/105 | 0:18:08 | SK Vidar | Sikker
 John Christian Fuller | 5 km | M60-64 | total 72 | kjønn 62/419 | klasse 1/12 | 0:18:23 | SK Vidar | Sikker
 Siri Schøne Ness | 5 km | K40-44 | total 83 | kjønn 12/304 | klasse 1/39 | 0:18:36 | SK Vidar | Sikker
 Jessica Gunnarsson | 5 km | K50-54 | total 86 | kjønn 13/304 | klasse 1/24 | 0:18:41 | SK Vidar | Sikker
+Stein Ellingsen | 5 km | M35-39 | total 90 | kjønn 77/419 | klasse 15/46 | 0:18:48 | SK Vidar | Sikker
 Hege Njå Bjørkmann | 5 km | K45-49 | total 91 | kjønn 14/304 | klasse 1/23 | 0:18:49 | SK Vidar | Sikker
+Børge Bårdsen | 5 km | M24-34 | total 96 | kjønn 82/419 | klasse 40/155 | 0:19:03 | Sportsklubben Vidar | Sikker
 Cecilie Knudsen | 5 km | K24-34 | total 101 | kjønn 15/304 | klasse 10/105 | 0:19:13 | SK Vidar | Sikker
+Aleksander Amundsen | 5 km | M24-34 | total 134 | kjønn 114/419 | klasse 55/155 | 0:19:46 | Sportsklubben Vidar / Fartsholder | Sikker
 Inanda Svelle | 5 km | K24-34 | total 236 | kjønn 34/304 | klasse 18/105 | 0:22:21 | SK Vidar | Sikker
 Anne Myhr | 5 km | K60-64 | total 251 | kjønn 38/304 | klasse 1/5 | 0:22:43 | SK Vidar | Kandidat
 Cecilie L'orsa | 5 km | K35-39 | total 312 | kjønn 52/304 | klasse 6/51 | 0:24:12 | SK Vidar | Kandidat
+Elin Stavnes | 5 km | K45-49 | total 329 | kjønn 61/304 | klasse 5/23 | 0:24:35 | SK Vidar | Sikker
 Ernst Kristiansen | 5 km | M75-79 | total 345 | kjønn 278/419 | klasse 2/4 | 0:25:02 | Vidar Sportsklubben | Sikker
 Ådne Andersen | 10 km | M24-34 | total 2 | kjønn 2/402 | klasse 2/147 | 0:31:50 | SK Vidar | Sikker
 Bjørnar Slettvåg | 10 km | M40-44 | total 6 | kjønn 6/402 | klasse 1/55 | 0:32:32 | SK Vidar | Kandidat
@@ -31,7 +37,9 @@ Marius Brevik | 10 km | M24-34 | total 49 | kjønn 46/402 | klasse 26/147 | 0:36
 Simon Skretting | 10 km | M24-34 | total 85 | kjønn 79/402 | klasse 37/147 | 0:37:55 | Fartsholder26 | SK Vidar | Sikker
 Martine Svendsen | 10 km | K24-34 | total 118 | kjønn 10/175 | klasse 8/84 | 0:39:04 | SK Vidar | Sikker
 Stine Isaksen | 10 km | K24-34 | total 120 | kjønn 11/175 | klasse 9/84 | 0:39:06 | SK Vidar | Sikker
+Leon Victor Wold | 10 km | M16-17 | total 146 | kjønn 135/402 | klasse 3/7 | 0:39:36 | Sportsklubben Vidar | Sikker
 Thomas Beka | 10 km | M40-44 | total 188 | kjønn 174/402 | klasse 24/55 | 0:41:22 | Fartsholder26 | SK Vidar | Sikker
+Isak By | 10 km | M24-34 | total 242 | kjønn 222/402 | klasse 85/147 | 0:44:01 | SK Vidar | Sikker
 Christian Lillebo | 10 km | M35-39 | total 250 | kjønn 230/402 | klasse 50/75 | 0:44:14 | SK Vidar | Sikker
 Anders Nordby | 10 km | M50-54 | total 268 | kjønn 243/402 | klasse 11/20 | 0:44:46 | Fartsholder26 | SK Vidar | Sikker
 Fredrik Camilo Halsbog | 10 km | M40-44 | total 389 | kjønn 317/402 | klasse 43/55 | 0:50:07 | Fartsholder26 | SK Vidar | Sikker
