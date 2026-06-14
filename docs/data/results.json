@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-06-14T14:45:25+02:00",
+  "generated_at": "2026-06-14T14:50:11+02:00",
   "stats": {
-    "result_count": 1021,
-    "athlete_count": 424,
-    "event_count": 130,
+    "result_count": 1030,
+    "athlete_count": 428,
+    "event_count": 131,
     "week_count": 21,
     "latest_week": 24,
     "latest_date": "2026-06-13",
-    "women_count": 402,
-    "men_count": 619,
+    "women_count": 408,
+    "men_count": 622,
     "missing_gender_or_class_count": 0
   },
   "weeks": [
@@ -18,12 +18,13 @@
       "week_label": "Uke 24",
       "published_date": "2026-06-13",
       "published_date_label": "13.06.2026",
-      "result_count": 14,
-      "athlete_count": 13,
-      "event_count": 1,
-      "women_count": 3,
-      "men_count": 11,
+      "result_count": 23,
+      "athlete_count": 22,
+      "event_count": 2,
+      "women_count": 9,
+      "men_count": 14,
       "events": [
+        "Nøsen Hundreds Ultramarathon 2026",
         "Tyrvinglekene 2026"
       ]
     },
@@ -418,6 +419,267 @@
     }
   ],
   "results": [
+    {
+      "result_id": "res-7f520fbc6c7bb3b4",
+      "person_id": "skv-p000478",
+      "person_slug": "asmund-skatvedt",
+      "published_date": "2026-06-13",
+      "published_date_label": "13.06.2026",
+      "week_number": 24,
+      "athlete_name": "Åsmund Skatvedt",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "Menn",
+      "class_place": "1",
+      "event_label": "Nøsen Hundreds Ultramarathon 2026",
+      "distance": "21,1 km",
+      "result_time_raw": "1:45:17",
+      "result_time_normalized": "1:45:17",
+      "result_time_seconds": 6317.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "1",
+      "notes_clean": "1. mann",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-465d5d2681d15f0a",
+      "person_id": "skv-p000056",
+      "person_slug": "dina-erika-hansen",
+      "published_date": "2026-06-13",
+      "published_date_label": "13.06.2026",
+      "week_number": 24,
+      "athlete_name": "Dina Erika Hansen",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "Kvinner",
+      "class_place": "8",
+      "event_label": "Nøsen Hundreds Ultramarathon 2026",
+      "distance": "21,1 km",
+      "result_time_raw": "2:12:29",
+      "result_time_normalized": "2:12:29",
+      "result_time_seconds": 7949.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "26",
+      "notes_clean": "8. kvinne",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-80497bf7d77fdd98",
+      "person_id": "skv-p000480",
+      "person_slug": "maren-thomasgaard",
+      "published_date": "2026-06-13",
+      "published_date_label": "13.06.2026",
+      "week_number": 24,
+      "athlete_name": "Maren Thomasgaard",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "Kvinner",
+      "class_place": "13",
+      "event_label": "Nøsen Hundreds Ultramarathon 2026",
+      "distance": "21,1 km",
+      "result_time_raw": "2:27:06",
+      "result_time_normalized": "2:27:06",
+      "result_time_seconds": 8826.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "43",
+      "notes_clean": "13. kvinne",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-3ae5fae4acd34520",
+      "person_id": "skv-p000162",
+      "person_slug": "kara-meunier",
+      "published_date": "2026-06-13",
+      "published_date_label": "13.06.2026",
+      "week_number": 24,
+      "athlete_name": "Kara Meunier",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "Kvinner",
+      "class_place": "21",
+      "event_label": "Nøsen Hundreds Ultramarathon 2026",
+      "distance": "21,1 km",
+      "result_time_raw": "2:43:28",
+      "result_time_normalized": "2:43:28",
+      "result_time_seconds": 9808.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "67",
+      "notes_clean": "21. kvinne",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-d632b6f51a19952c",
+      "person_id": "skv-p000483",
+      "person_slug": "thorkild-schrumpf",
+      "published_date": "2026-06-13",
+      "published_date_label": "13.06.2026",
+      "week_number": 24,
+      "athlete_name": "Thorkild Schrumpf",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "Menn",
+      "class_place": "5",
+      "event_label": "Nøsen Hundreds Ultramarathon 2026",
+      "distance": "50 km",
+      "result_time_raw": "5:02:57",
+      "result_time_normalized": "5:02:57",
+      "result_time_seconds": 18177.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "5",
+      "notes_clean": "5. mann",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-3b46648d0e8cea0b",
+      "person_id": "skv-p000367",
+      "person_slug": "therese-dahl-arvik",
+      "published_date": "2026-06-13",
+      "published_date_label": "13.06.2026",
+      "week_number": 24,
+      "athlete_name": "Therese Dahl Årvik",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "Kvinner",
+      "class_place": "3",
+      "event_label": "Nøsen Hundreds Ultramarathon 2026",
+      "distance": "50 km",
+      "result_time_raw": "5:38:52",
+      "result_time_normalized": "5:38:52",
+      "result_time_seconds": 20332.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "18",
+      "notes_clean": "3. kvinne",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-6bdcef7b67293141",
+      "person_id": "skv-p000365",
+      "person_slug": "kristine-green",
+      "published_date": "2026-06-13",
+      "published_date_label": "13.06.2026",
+      "week_number": 24,
+      "athlete_name": "Kristine Green",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "Kvinner",
+      "class_place": "8",
+      "event_label": "Nøsen Hundreds Ultramarathon 2026",
+      "distance": "50 km",
+      "result_time_raw": "6:35:29",
+      "result_time_normalized": "6:35:29",
+      "result_time_seconds": 23729.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "46",
+      "notes_clean": "8. kvinne",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-d623fe17b0e5b255",
+      "person_id": "skv-p000481",
+      "person_slug": "remi-hoiseth",
+      "published_date": "2026-06-13",
+      "published_date_label": "13.06.2026",
+      "week_number": 24,
+      "athlete_name": "Remi Høiseth",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "Menn",
+      "class_place": "104",
+      "event_label": "Nøsen Hundreds Ultramarathon 2026",
+      "distance": "50 km",
+      "result_time_raw": "8:54:48",
+      "result_time_normalized": "8:54:48",
+      "result_time_seconds": 32088.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "139",
+      "notes_clean": "104. mann",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-53adfb6141efc534",
+      "person_id": "skv-p000190",
+      "person_slug": "liv-melby",
+      "published_date": "2026-06-13",
+      "published_date_label": "13.06.2026",
+      "week_number": 24,
+      "athlete_name": "Liv Melby",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "Kvinner",
+      "class_place": "1",
+      "event_label": "Nøsen Hundreds Ultramarathon 2026",
+      "distance": "100 km",
+      "result_time_raw": "11:23:14",
+      "result_time_normalized": "11:23:14",
+      "result_time_seconds": 40994.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "3",
+      "notes_clean": "1. kvinne",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
     {
       "result_id": "res-7c99f1752436798c",
       "person_id": "skv-p000166",
@@ -32208,7 +32470,7 @@
     }
   ],
   "people": {
-    "profile_count": 424,
+    "profile_count": 428,
     "profiles": [
       {
         "person_id": "skv-p000001",
@@ -33705,6 +33967,20 @@
         "latest_result_date": "2026-04-18"
       },
       {
+        "person_id": "skv-p000478",
+        "profile_slug": "asmund-skatvedt",
+        "display_name": "Åsmund Skatvedt",
+        "gender": "M",
+        "gender_label": "Menn",
+        "result_count": 1,
+        "distances": [
+          "21,1 km"
+        ],
+        "best_results": [],
+        "first_result_date": "2026-06-13",
+        "latest_result_date": "2026-06-13"
+      },
+      {
         "person_id": "skv-p000363",
         "profile_slug": "asmund-sunde-valseth",
         "display_name": "Åsmund Sunde Valseth",
@@ -34711,9 +34987,10 @@
         "display_name": "Dina Erika Hansen",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 2,
+        "result_count": 3,
         "distances": [
           "10 km",
+          "21,1 km",
           "6 km"
         ],
         "best_results": [
@@ -34732,7 +35009,7 @@
           }
         ],
         "first_result_date": "2026-04-25",
-        "latest_result_date": "2026-06-04"
+        "latest_result_date": "2026-06-13"
       },
       {
         "person_id": "skv-p000057",
@@ -39371,10 +39648,11 @@
         "display_name": "Kara Meunier",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 4,
+        "result_count": 5,
         "distances": [
           "5 km",
           "10 km",
+          "21,1 km",
           "6 km"
         ],
         "best_results": [
@@ -39406,7 +39684,7 @@
           }
         ],
         "first_result_date": "2026-01-18",
-        "latest_result_date": "2026-06-06"
+        "latest_result_date": "2026-06-13"
       },
       {
         "person_id": "skv-p000163",
@@ -40146,13 +40424,14 @@
         "display_name": "Kristine Green",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
+          "50 km",
           "9 km"
         ],
         "best_results": [],
         "first_result_date": "2026-05-02",
-        "latest_result_date": "2026-05-02"
+        "latest_result_date": "2026-06-13"
       },
       {
         "person_id": "skv-p000356",
@@ -40595,9 +40874,10 @@
         "display_name": "Liv Melby",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
-          "10 km"
+          "10 km",
+          "100 km"
         ],
         "best_results": [
           {
@@ -40615,7 +40895,7 @@
           }
         ],
         "first_result_date": "2026-02-08",
-        "latest_result_date": "2026-02-08"
+        "latest_result_date": "2026-06-13"
       },
       {
         "person_id": "skv-p000386",
@@ -41280,6 +41560,20 @@
         ],
         "first_result_date": "2026-04-11",
         "latest_result_date": "2026-05-23"
+      },
+      {
+        "person_id": "skv-p000480",
+        "profile_slug": "maren-thomasgaard",
+        "display_name": "Maren Thomasgaard",
+        "gender": "K",
+        "gender_label": "Kvinner",
+        "result_count": 1,
+        "distances": [
+          "21,1 km"
+        ],
+        "best_results": [],
+        "first_result_date": "2026-06-13",
+        "latest_result_date": "2026-06-13"
       },
       {
         "person_id": "skv-p000438",
@@ -44012,6 +44306,20 @@
         "latest_result_date": "2026-05-23"
       },
       {
+        "person_id": "skv-p000481",
+        "profile_slug": "remi-hoiseth",
+        "display_name": "Remi Høiseth",
+        "gender": "M",
+        "gender_label": "Menn",
+        "result_count": 1,
+        "distances": [
+          "50 km"
+        ],
+        "best_results": [],
+        "first_result_date": "2026-06-13",
+        "latest_result_date": "2026-06-13"
+      },
+      {
         "person_id": "skv-p000265",
         "profile_slug": "riley-mcgown",
         "display_name": "Riley McGown",
@@ -46197,9 +46505,10 @@
         "display_name": "Therese Dahl Årvik",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
-          "Maraton"
+          "Maraton",
+          "50 km"
         ],
         "best_results": [
           {
@@ -46217,7 +46526,7 @@
           }
         ],
         "first_result_date": "2026-05-03",
-        "latest_result_date": "2026-05-03"
+        "latest_result_date": "2026-06-13"
       },
       {
         "person_id": "skv-p000370",
@@ -46400,6 +46709,20 @@
         ],
         "first_result_date": "2026-04-25",
         "latest_result_date": "2026-04-25"
+      },
+      {
+        "person_id": "skv-p000483",
+        "profile_slug": "thorkild-schrumpf",
+        "display_name": "Thorkild Schrumpf",
+        "gender": "M",
+        "gender_label": "Menn",
+        "result_count": 1,
+        "distances": [
+          "50 km"
+        ],
+        "best_results": [],
+        "first_result_date": "2026-06-13",
+        "latest_result_date": "2026-06-13"
       },
       {
         "person_id": "skv-p000399",
@@ -48016,6 +48339,10 @@
       "vilja-gruben": "skv-p000472",
       "anja-kampenhoy": "skv-p000473",
       "olav-carlsson": "skv-p000477",
+      "asmund-skatvedt": "skv-p000478",
+      "maren-thomasgaard": "skv-p000480",
+      "remi-hoiseth": "skv-p000481",
+      "thorkild-schrumpf": "skv-p000483",
       "adne-andersen-andersen": "skv-p000001",
       "adne-sandvik-dyrnesli": "skv-p000003",
       "andreas-sjurseth": "skv-p000400",

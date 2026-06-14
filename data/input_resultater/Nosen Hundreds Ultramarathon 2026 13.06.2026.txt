@@ -1,0 +1,11 @@
+Nøsen Hundreds Ultramarathon 2026 | Nøsen | 13.06.2026 | manuell import fra resultatuttak
+
+Liv Richter Melby | startnr 1 | 100 km | Kvinner | Salomon Norway | 11:23:14 | kjønn 1/11 | plass 3 | Aktiv SK Vidar
+Thorkild Schrumpf | startnr 205 | 50 km | Menn | 5:02:57 | kjønn 5/121 | plass 5 | Aktiv SK Vidar + Slack
+Therese Årvik | startnr 259 | 50 km | Kvinner | Salomon Norge | 5:38:52 | kjønn 3/44 | plass 18 | Aktiv SK Vidar + Slack
+Kristine Green | startnr 509 | 50 km | Kvinner | SK Vidar/Sidespor | 6:35:29 | kjønn 8/44 | plass 46 | Offisiell SK Vidar
+Remi Høiseth | startnr 375 | 50 km | Menn | 8:54:48 | kjønn 104/121 | plass 139 | Aktiv SK Vidar + Slack
+Åsmund Skatvedt | startnr 503 | 21,1 km | Menn | SK Vidar | 1:45:17 | kjønn 1/102 | plass 1 | Offisiell SK Vidar + Slack
+Dina Erika Hansen | startnr 685 | 21,1 km | Kvinner | Sidesporet løpeklubb | 2:12:29 | kjønn 8/91 | plass 26 | SK Vidar Slack
+Maren Thomasgaard | startnr 748 | 21,1 km | Kvinner | Nitteløp | 2:27:06 | kjønn 13/91 | plass 43 | Aktiv SK Vidar + Slack
+Kara Meunier | startnr 735 | 21,1 km | Kvinner | SK Vidar | 2:43:28 | kjønn 21/91 | plass 67 | Offisiell SK Vidar + aktiv SK + Slack
