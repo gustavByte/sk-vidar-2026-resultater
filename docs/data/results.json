@@ -1,14 +1,14 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-06-14T18:46:53+02:00",
+  "generated_at": "2026-06-14T19:01:09+02:00",
   "stats": {
-    "result_count": 1100,
-    "athlete_count": 437,
+    "result_count": 1101,
+    "athlete_count": 438,
     "event_count": 136,
     "week_count": 21,
     "latest_week": 24,
     "latest_date": "2026-06-14",
-    "women_count": 443,
+    "women_count": 444,
     "men_count": 657,
     "missing_gender_or_class_count": 0
   },
@@ -18,10 +18,10 @@
       "week_label": "Uke 24",
       "published_date": "2026-06-14",
       "published_date_label": "14.06.2026",
-      "result_count": 93,
-      "athlete_count": 88,
+      "result_count": 94,
+      "athlete_count": 89,
       "event_count": 7,
-      "women_count": 44,
+      "women_count": 45,
       "men_count": 49,
       "events": [
         "Besseggløpet Konkurranse 2026",
@@ -1902,6 +1902,35 @@
       "split_second_display": "",
       "split_delta_display": "",
       "split_state": ""
+    },
+    {
+      "result_id": "res-0e50f99a9165cb99",
+      "person_id": "skv-p000493",
+      "person_slug": "ingrid-langevei-maeland",
+      "published_date": "2026-06-13",
+      "published_date_label": "13.06.2026",
+      "week_number": 24,
+      "athlete_name": "Ingrid Langevei Mæland",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K24-34",
+      "class_place": "7",
+      "event_label": "RunwayK 2026",
+      "distance": "5 km",
+      "result_time_raw": "17:55",
+      "result_time_normalized": "17:55",
+      "result_time_seconds": 1075.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "56",
+      "notes_clean": "8. kvinne, klasse 7",
+      "split_first_label": "2.5 km",
+      "split_first_display": "3:40",
+      "split_second_label": "2.5 km",
+      "split_second_display": "8:43",
+      "split_delta_display": "+5:33",
+      "split_state": "slow"
     },
     {
       "result_id": "res-cba4cf3f940d84e1",
@@ -34505,7 +34534,7 @@
     }
   ],
   "people": {
-    "profile_count": 437,
+    "profile_count": 438,
     "profiles": [
       {
         "person_id": "skv-p000001",
@@ -40304,6 +40333,34 @@
         ],
         "first_result_date": "2026-01-11",
         "latest_result_date": "2026-05-12"
+      },
+      {
+        "person_id": "skv-p000493",
+        "profile_slug": "ingrid-langevei-maeland",
+        "display_name": "Ingrid Langevei Mæland",
+        "gender": "K",
+        "gender_label": "Kvinner",
+        "result_count": 1,
+        "distances": [
+          "5 km"
+        ],
+        "best_results": [
+          {
+            "result_id": "res-0e50f99a9165cb99",
+            "distance": "5 km",
+            "source_distance": "5 km",
+            "result_time": "17:55",
+            "result_time_seconds": 1075.0,
+            "event_label": "RunwayK 2026",
+            "published_date": "2026-06-13",
+            "published_date_label": "13.06.2026",
+            "week_number": 24,
+            "place": "56",
+            "class_place": "7"
+          }
+        ],
+        "first_result_date": "2026-06-13",
+        "latest_result_date": "2026-06-13"
       },
       {
         "person_id": "skv-p000130",
@@ -50634,6 +50691,7 @@
       "ulrika-axelsson": "skv-p000490",
       "cecilie-lorsa": "skv-p000491",
       "martine-svendsen": "skv-p000492",
+      "ingrid-langevei-maeland": "skv-p000493",
       "adne-andersen-andersen": "skv-p000001",
       "adne-sandvik-dyrnesli": "skv-p000003",
       "andreas-sjurseth": "skv-p000400",
