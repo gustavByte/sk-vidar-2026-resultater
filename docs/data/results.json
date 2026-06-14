@@ -1,14 +1,14 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-06-14T15:07:24+02:00",
+  "generated_at": "2026-06-14T18:46:53+02:00",
   "stats": {
-    "result_count": 1098,
+    "result_count": 1100,
     "athlete_count": 437,
-    "event_count": 135,
+    "event_count": 136,
     "week_count": 21,
     "latest_week": 24,
-    "latest_date": "2026-06-13",
-    "women_count": 441,
+    "latest_date": "2026-06-14",
+    "women_count": 443,
     "men_count": 657,
     "missing_gender_or_class_count": 0
   },
@@ -16,17 +16,18 @@
     {
       "week_number": 24,
       "week_label": "Uke 24",
-      "published_date": "2026-06-13",
-      "published_date_label": "13.06.2026",
-      "result_count": 91,
-      "athlete_count": 87,
-      "event_count": 6,
-      "women_count": 42,
+      "published_date": "2026-06-14",
+      "published_date_label": "14.06.2026",
+      "result_count": 93,
+      "athlete_count": 88,
+      "event_count": 7,
+      "women_count": 44,
       "men_count": 49,
       "events": [
         "Besseggløpet Konkurranse 2026",
         "Birkebeinerløpene 2026",
         "Bislett Games 2026",
+        "Folksam GP Sollentuna 2026",
         "Nøsen Hundreds Ultramarathon 2026",
         "RunwayK 2026",
         "Tyrvinglekene 2026"
@@ -423,6 +424,64 @@
     }
   ],
   "results": [
+    {
+      "result_id": "res-0048ecb73d1db448",
+      "person_id": "skv-p000029",
+      "person_slug": "anna-marie-sirevag",
+      "published_date": "2026-06-14",
+      "published_date_label": "14.06.2026",
+      "week_number": 24,
+      "athlete_name": "Anna Marie Sirevåg",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "Kvinner",
+      "class_place": "",
+      "event_label": "Folksam GP Sollentuna 2026",
+      "distance": "3000 m",
+      "result_time_raw": "8:59.52",
+      "result_time_normalized": "8:59.52",
+      "result_time_seconds": 539.52,
+      "wa_gender": "K",
+      "wa_event": "3000m",
+      "wa_points": null,
+      "place": "5",
+      "notes_clean": "PB",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-4e2a4746725c61be",
+      "person_id": "skv-p000193",
+      "person_slug": "madelene-wanvik-holum",
+      "published_date": "2026-06-14",
+      "published_date_label": "14.06.2026",
+      "week_number": 24,
+      "athlete_name": "Madelène Wanvik Holum",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "Kvinner",
+      "class_place": "",
+      "event_label": "Folksam GP Sollentuna 2026",
+      "distance": "3000 m",
+      "result_time_raw": "8:59.78",
+      "result_time_normalized": "8:59.78",
+      "result_time_seconds": 539.78,
+      "wa_gender": "K",
+      "wa_event": "3000m",
+      "wa_points": null,
+      "place": "6",
+      "notes_clean": "PB",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
     {
       "result_id": "res-1b61923fd142d1ab",
       "person_id": "skv-p000377",
@@ -33618,13 +33677,13 @@
           "rank": 3,
           "person_id": "skv-p000029",
           "person_slug": "anna-marie-sirevag",
-          "result_id": "res-3ce27f5ecac51e25",
+          "result_id": "res-0048ecb73d1db448",
           "athlete_name": "Anna Marie Sirevåg",
-          "result_time": "9:00.50",
-          "result_time_seconds": 540.5,
-          "event_label": "Per Halle Invitational",
-          "published_date": "2026-05-15",
-          "published_date_label": "15.05.2026"
+          "result_time": "8:59.52",
+          "result_time_seconds": 539.52,
+          "event_label": "Folksam GP Sollentuna 2026",
+          "published_date": "2026-06-14",
+          "published_date_label": "14.06.2026"
         },
         {
           "distance": "3000 m",
@@ -33632,6 +33691,22 @@
           "gender": "K",
           "gender_label": "Kvinner",
           "rank": 4,
+          "person_id": "skv-p000193",
+          "person_slug": "madelene-wanvik-holum",
+          "result_id": "res-4e2a4746725c61be",
+          "athlete_name": "Madelène Wanvik Holum",
+          "result_time": "8:59.78",
+          "result_time_seconds": 539.78,
+          "event_label": "Folksam GP Sollentuna 2026",
+          "published_date": "2026-06-14",
+          "published_date_label": "14.06.2026"
+        },
+        {
+          "distance": "3000 m",
+          "source_distance": "3000 m",
+          "gender": "K",
+          "gender_label": "Kvinner",
+          "rank": 5,
           "person_id": "skv-p000346",
           "person_slug": "vilde-vage-henriksen",
           "result_id": "res-4df2c3e670f4bc45",
@@ -33641,22 +33716,6 @@
           "event_label": "Per Halle Invitational",
           "published_date": "2026-05-15",
           "published_date_label": "15.05.2026"
-        },
-        {
-          "distance": "3000 m",
-          "source_distance": "3000 m",
-          "gender": "K",
-          "gender_label": "Kvinner",
-          "rank": 5,
-          "person_id": "skv-p000193",
-          "person_slug": "madelene-wanvik-holum",
-          "result_id": "res-802191f92a2edd25",
-          "athlete_name": "Madelène Wanvik Holum",
-          "result_time": "9:13.20",
-          "result_time_seconds": 553.2,
-          "event_label": "Nordenkampen",
-          "published_date": "2026-02-01",
-          "published_date_label": "01.02.2026"
         },
         {
           "distance": "3000 m",
@@ -35538,7 +35597,7 @@
         "display_name": "Anna Marie Sirevåg",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 8,
+        "result_count": 9,
         "distances": [
           "1500 m",
           "3000 m",
@@ -35561,16 +35620,16 @@
             "class_place": ""
           },
           {
-            "result_id": "res-3ce27f5ecac51e25",
+            "result_id": "res-0048ecb73d1db448",
             "distance": "3000 m",
             "source_distance": "3000 m",
-            "result_time": "9:00.50",
-            "result_time_seconds": 540.5,
-            "event_label": "Per Halle Invitational",
-            "published_date": "2026-05-15",
-            "published_date_label": "15.05.2026",
-            "week_number": 20,
-            "place": "3",
+            "result_time": "8:59.52",
+            "result_time_seconds": 539.52,
+            "event_label": "Folksam GP Sollentuna 2026",
+            "published_date": "2026-06-14",
+            "published_date_label": "14.06.2026",
+            "week_number": 24,
+            "place": "5",
             "class_place": ""
           },
           {
@@ -35601,7 +35660,7 @@
           }
         ],
         "first_result_date": "2026-02-08",
-        "latest_result_date": "2026-06-10"
+        "latest_result_date": "2026-06-14"
       },
       {
         "person_id": "skv-p000030",
@@ -43225,7 +43284,7 @@
         "display_name": "Madelène Wanvik Holum",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 10,
+        "result_count": 11,
         "distances": [
           "1500 m",
           "3000 m",
@@ -43249,16 +43308,16 @@
             "class_place": "16"
           },
           {
-            "result_id": "res-802191f92a2edd25",
+            "result_id": "res-4e2a4746725c61be",
             "distance": "3000 m",
             "source_distance": "3000 m",
-            "result_time": "9:13.20",
-            "result_time_seconds": 553.2,
-            "event_label": "Nordenkampen",
-            "published_date": "2026-02-01",
-            "published_date_label": "01.02.2026",
-            "week_number": 5,
-            "place": "3",
+            "result_time": "8:59.78",
+            "result_time_seconds": 539.78,
+            "event_label": "Folksam GP Sollentuna 2026",
+            "published_date": "2026-06-14",
+            "published_date_label": "14.06.2026",
+            "week_number": 24,
+            "place": "6",
             "class_place": ""
           },
           {
@@ -43302,7 +43361,7 @@
           }
         ],
         "first_result_date": "2026-02-01",
-        "latest_result_date": "2026-06-05"
+        "latest_result_date": "2026-06-14"
       },
       {
         "person_id": "skv-p000194",
