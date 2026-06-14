@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-06-14T14:55:32+02:00",
+  "generated_at": "2026-06-14T15:00:26+02:00",
   "stats": {
-    "result_count": 1031,
-    "athlete_count": 428,
-    "event_count": 132,
+    "result_count": 1059,
+    "athlete_count": 435,
+    "event_count": 133,
     "week_count": 21,
     "latest_week": 24,
     "latest_date": "2026-06-13",
-    "women_count": 409,
-    "men_count": 622,
+    "women_count": 424,
+    "men_count": 635,
     "missing_gender_or_class_count": 0
   },
   "weeks": [
@@ -18,13 +18,14 @@
       "week_label": "Uke 24",
       "published_date": "2026-06-13",
       "published_date_label": "13.06.2026",
-      "result_count": 24,
-      "athlete_count": 23,
-      "event_count": 3,
-      "women_count": 10,
-      "men_count": 14,
+      "result_count": 52,
+      "athlete_count": 51,
+      "event_count": 4,
+      "women_count": 25,
+      "men_count": 27,
       "events": [
         "Besseggløpet Konkurranse 2026",
+        "Birkebeinerløpene 2026",
         "Nøsen Hundreds Ultramarathon 2026",
         "Tyrvinglekene 2026"
       ]
@@ -442,6 +443,818 @@
       "wa_points": null,
       "place": "16",
       "notes_clean": "2. kvinne",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-292ba4bb321c7319",
+      "person_id": "skv-p000447",
+      "person_slug": "oskar-roynas",
+      "published_date": "2026-06-13",
+      "published_date_label": "13.06.2026",
+      "week_number": 24,
+      "athlete_name": "Oskar Røynås",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "Gutter 14",
+      "class_place": "",
+      "event_label": "Birkebeinerløpene 2026",
+      "distance": "Ungdomsbirken løp",
+      "result_time_raw": "17:11",
+      "result_time_normalized": "17:11",
+      "result_time_seconds": 1031.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "1",
+      "notes_clean": "Pl. 1",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-4f225a71a6bf390a",
+      "person_id": "skv-p000109",
+      "person_slug": "henning-hellebust",
+      "published_date": "2026-06-13",
+      "published_date_label": "13.06.2026",
+      "week_number": 24,
+      "athlete_name": "Henning Hellebust",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "Elite Menn",
+      "class_place": "25",
+      "event_label": "Birkebeinerløpene 2026",
+      "distance": "Birkebeinerløpet 21 km",
+      "result_time_raw": "1:17:54",
+      "result_time_normalized": "1:17:54",
+      "result_time_seconds": 4674.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "30",
+      "notes_clean": "klasse 25",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-d72ef035671ceb7a",
+      "person_id": "skv-p000173",
+      "person_slug": "kristian-brenni",
+      "published_date": "2026-06-13",
+      "published_date_label": "13.06.2026",
+      "week_number": 24,
+      "athlete_name": "Kristian Brenni",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "Menn 20-24",
+      "class_place": "2",
+      "event_label": "Birkebeinerløpene 2026",
+      "distance": "Birkebeinerløpet 21 km",
+      "result_time_raw": "1:20:14",
+      "result_time_normalized": "1:20:14",
+      "result_time_seconds": 4814.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "54",
+      "notes_clean": "klasse 2",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-1b1d7725a3a5f4e2",
+      "person_id": "skv-p000048",
+      "person_slug": "christoffer-hagen",
+      "published_date": "2026-06-13",
+      "published_date_label": "13.06.2026",
+      "week_number": 24,
+      "athlete_name": "Christoffer Hagen",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "Menn 35-39",
+      "class_place": "10",
+      "event_label": "Birkebeinerløpene 2026",
+      "distance": "Birkebeinerløpet 21 km",
+      "result_time_raw": "1:22:51",
+      "result_time_normalized": "1:22:51",
+      "result_time_seconds": 4971.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "91",
+      "notes_clean": "klasse 10",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-1a00a0e186698c49",
+      "person_id": "skv-p000266",
+      "person_slug": "roger-thompson",
+      "published_date": "2026-06-13",
+      "published_date_label": "13.06.2026",
+      "week_number": 24,
+      "athlete_name": "Roger Thompson",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "Menn 50-54",
+      "class_place": "",
+      "event_label": "Birkebeinerløpene 2026",
+      "distance": "Birkebeinerløpet 21 km",
+      "result_time_raw": "1:25:35",
+      "result_time_normalized": "1:25:35",
+      "result_time_seconds": 5135.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "4",
+      "notes_clean": "Pl. 4",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-89e5832fb033b8ee",
+      "person_id": "skv-p000277",
+      "person_slug": "sebastian-aas",
+      "published_date": "2026-06-13",
+      "published_date_label": "13.06.2026",
+      "week_number": 24,
+      "athlete_name": "Sebastian Aas",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "Menn 25-29",
+      "class_place": "",
+      "event_label": "Birkebeinerløpene 2026",
+      "distance": "Birkebeinerløpet 21 km",
+      "result_time_raw": "1:26:09",
+      "result_time_normalized": "1:26:09",
+      "result_time_seconds": 5169.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "14",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-ce310cadfe57e395",
+      "person_id": "skv-p000217",
+      "person_slug": "marte-sonstevold",
+      "published_date": "2026-06-13",
+      "published_date_label": "13.06.2026",
+      "week_number": 24,
+      "athlete_name": "Marte Sønstevold",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "Kvinner 35-39",
+      "class_place": "2",
+      "event_label": "Birkebeinerløpene 2026",
+      "distance": "Birkebeinerløpet 21 km",
+      "result_time_raw": "1:27:34",
+      "result_time_normalized": "1:27:34",
+      "result_time_seconds": 5254.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "10",
+      "notes_clean": "10. kvinne, klasse 2",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-49241697da4c306b",
+      "person_id": "skv-p000276",
+      "person_slug": "sara-kjeldsen-lie",
+      "published_date": "2026-06-13",
+      "published_date_label": "13.06.2026",
+      "week_number": 24,
+      "athlete_name": "Sara Kjeldsen Lie",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "Elite Kvinner",
+      "class_place": "7",
+      "event_label": "Birkebeinerløpene 2026",
+      "distance": "Birkebeinerløpet 21 km",
+      "result_time_raw": "1:28:03",
+      "result_time_normalized": "1:28:03",
+      "result_time_seconds": 5283.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "11",
+      "notes_clean": "11. kvinne, klasse 7",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-77f3d7084eda5dbe",
+      "person_id": "skv-p000485",
+      "person_slug": "hanne-marte-lie",
+      "published_date": "2026-06-13",
+      "published_date_label": "13.06.2026",
+      "week_number": 24,
+      "athlete_name": "Hanne Marte Lie",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "Kvinner 35-39",
+      "class_place": "3",
+      "event_label": "Birkebeinerløpene 2026",
+      "distance": "Birkebeinerløpet 21 km",
+      "result_time_raw": "1:28:25",
+      "result_time_normalized": "1:28:25",
+      "result_time_seconds": 5305.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "13",
+      "notes_clean": "13. kvinne, klasse 3",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-be5198dcc6931523",
+      "person_id": "skv-p000253",
+      "person_slug": "ole-kristian-gjertsen",
+      "published_date": "2026-06-13",
+      "published_date_label": "13.06.2026",
+      "week_number": 24,
+      "athlete_name": "Ole Kristian Gjertsen",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "Menn 35-39",
+      "class_place": "",
+      "event_label": "Birkebeinerløpene 2026",
+      "distance": "Birkebeinerløpet 21 km",
+      "result_time_raw": "1:28:58",
+      "result_time_normalized": "1:28:58",
+      "result_time_seconds": 5338.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "30",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-3ddbbc68e7cd35de",
+      "person_id": "skv-p000137",
+      "person_slug": "jan-petter-mork",
+      "published_date": "2026-06-13",
+      "published_date_label": "13.06.2026",
+      "week_number": 24,
+      "athlete_name": "Jan Petter Mork",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "Menn 30-34",
+      "class_place": "",
+      "event_label": "Birkebeinerløpene 2026",
+      "distance": "Birkebeinerløpet 21 km",
+      "result_time_raw": "1:29:06",
+      "result_time_normalized": "1:29:06",
+      "result_time_seconds": 5346.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "41",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-bd427d9442051b71",
+      "person_id": "skv-p000336",
+      "person_slug": "vebjorn-hallberg-bakkestuen",
+      "published_date": "2026-06-13",
+      "published_date_label": "13.06.2026",
+      "week_number": 24,
+      "athlete_name": "Vebjørn Hallberg Bakkestuen",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "Menn 25-29",
+      "class_place": "",
+      "event_label": "Birkebeinerløpene 2026",
+      "distance": "Birkebeinerløpet 21 km",
+      "result_time_raw": "1:30:31",
+      "result_time_normalized": "1:30:31",
+      "result_time_seconds": 5431.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "36",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-717f4d4e3002085f",
+      "person_id": "skv-p000454",
+      "person_slug": "kristoffer-werner-hansen",
+      "published_date": "2026-06-13",
+      "published_date_label": "13.06.2026",
+      "week_number": 24,
+      "athlete_name": "Kristoffer Werner Hansen",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "Menn 35-39",
+      "class_place": "",
+      "event_label": "Birkebeinerløpene 2026",
+      "distance": "Birkebeinerløpet 21 km",
+      "result_time_raw": "1:31:09",
+      "result_time_normalized": "1:31:09",
+      "result_time_seconds": 5469.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "47",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-91b9474ed0655824",
+      "person_id": "skv-p000335",
+      "person_slug": "valentin-hachet",
+      "published_date": "2026-06-13",
+      "published_date_label": "13.06.2026",
+      "week_number": 24,
+      "athlete_name": "Valentin Hachet",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "Menn 30-34",
+      "class_place": "",
+      "event_label": "Birkebeinerløpene 2026",
+      "distance": "Birkebeinerløpet 21 km",
+      "result_time_raw": "1:32:42",
+      "result_time_normalized": "1:32:42",
+      "result_time_seconds": 5562.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "78",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-3776be582a1e6e8e",
+      "person_id": "skv-p000490",
+      "person_slug": "ulrika-axelsson",
+      "published_date": "2026-06-13",
+      "published_date_label": "13.06.2026",
+      "week_number": 24,
+      "athlete_name": "Ulrika Axelsson",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "Kvinner 30-34",
+      "class_place": "6",
+      "event_label": "Birkebeinerløpene 2026",
+      "distance": "Birkebeinerløpet 21 km",
+      "result_time_raw": "1:34:14",
+      "result_time_normalized": "1:34:14",
+      "result_time_seconds": 5654.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "45",
+      "notes_clean": "45. kvinne, klasse 6",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-7b88748e409a0633",
+      "person_id": "skv-p000489",
+      "person_slug": "mari-robole-lien",
+      "published_date": "2026-06-13",
+      "published_date_label": "13.06.2026",
+      "week_number": 24,
+      "athlete_name": "Mari Robøle Lien",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "Kvinner 25-29",
+      "class_place": "14",
+      "event_label": "Birkebeinerløpene 2026",
+      "distance": "Birkebeinerløpet 21 km",
+      "result_time_raw": "1:35:52",
+      "result_time_normalized": "1:35:52",
+      "result_time_seconds": 5752.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "58",
+      "notes_clean": "58. kvinne, klasse 14",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-f90a77692ae330a2",
+      "person_id": "skv-p000361",
+      "person_slug": "mathias-hansen",
+      "published_date": "2026-06-13",
+      "published_date_label": "13.06.2026",
+      "week_number": 24,
+      "athlete_name": "Mathias Hansen",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "Menn 25-29",
+      "class_place": "",
+      "event_label": "Birkebeinerløpene 2026",
+      "distance": "Birkebeinerløpet 21 km",
+      "result_time_raw": "1:35:53",
+      "result_time_normalized": "1:35:53",
+      "result_time_seconds": 5753.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "82",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-11101311eaf9c537",
+      "person_id": "skv-p000103",
+      "person_slug": "hanne-tingelstad",
+      "published_date": "2026-06-13",
+      "published_date_label": "13.06.2026",
+      "week_number": 24,
+      "athlete_name": "Hanne Tingelstad",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "Kvinner 35-39",
+      "class_place": "6",
+      "event_label": "Birkebeinerløpene 2026",
+      "distance": "Birkebeinerløpet 21 km",
+      "result_time_raw": "1:36:25",
+      "result_time_normalized": "1:36:25",
+      "result_time_seconds": 5785.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "64",
+      "notes_clean": "64. kvinne, klasse 6",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-b4a6ed053c58e89b",
+      "person_id": "skv-p000486",
+      "person_slug": "hilde-gudem",
+      "published_date": "2026-06-13",
+      "published_date_label": "13.06.2026",
+      "week_number": 24,
+      "athlete_name": "Hilde Gudem",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "Kvinner 45-49",
+      "class_place": "5",
+      "event_label": "Birkebeinerløpene 2026",
+      "distance": "Birkebeinerløpet 21 km",
+      "result_time_raw": "1:40:26",
+      "result_time_normalized": "1:40:26",
+      "result_time_seconds": 6026.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "100",
+      "notes_clean": "100. kvinne, klasse 5",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-a4b2b543196bf942",
+      "person_id": "skv-p000330",
+      "person_slug": "torill-ytterhus-haugset",
+      "published_date": "2026-06-13",
+      "published_date_label": "13.06.2026",
+      "week_number": 24,
+      "athlete_name": "Torill Ytterhus Haugset",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "Kvinner 30-34",
+      "class_place": "",
+      "event_label": "Birkebeinerløpene 2026",
+      "distance": "Birkebeinerløpet 21 km",
+      "result_time_raw": "1:41:24",
+      "result_time_normalized": "1:41:24",
+      "result_time_seconds": 6084.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "16",
+      "notes_clean": "16. kvinne",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-bd12ecf64cf0c423",
+      "person_id": "skv-p000487",
+      "person_slug": "ida-widing",
+      "published_date": "2026-06-13",
+      "published_date_label": "13.06.2026",
+      "week_number": 24,
+      "athlete_name": "Ida Widing",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "Kvinner 30-34",
+      "class_place": "",
+      "event_label": "Birkebeinerløpene 2026",
+      "distance": "Birkebeinerløpet 21 km",
+      "result_time_raw": "1:42:01",
+      "result_time_normalized": "1:42:01",
+      "result_time_seconds": 6121.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "20",
+      "notes_clean": "20. kvinne",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-fd69a808d6834274",
+      "person_id": "skv-p000386",
+      "person_slug": "live-maria-gronvold",
+      "published_date": "2026-06-13",
+      "published_date_label": "13.06.2026",
+      "week_number": 24,
+      "athlete_name": "Live Maria Grønvold",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "Kvinner 30-34",
+      "class_place": "",
+      "event_label": "Birkebeinerløpene 2026",
+      "distance": "Birkebeinerløpet 21 km",
+      "result_time_raw": "1:43:23",
+      "result_time_normalized": "1:43:23",
+      "result_time_seconds": 6203.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "23",
+      "notes_clean": "23. kvinne",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-c6c0b4bd6735f592",
+      "person_id": "skv-p000108",
+      "person_slug": "helene-huglen",
+      "published_date": "2026-06-13",
+      "published_date_label": "13.06.2026",
+      "week_number": 24,
+      "athlete_name": "Helene Huglen",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "Kvinner 30-34",
+      "class_place": "",
+      "event_label": "Birkebeinerløpene 2026",
+      "distance": "Birkebeinerløpet 21 km",
+      "result_time_raw": "1:46:51",
+      "result_time_normalized": "1:46:51",
+      "result_time_seconds": 6411.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "30",
+      "notes_clean": "30. kvinne",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-e3f792cb31ca6a39",
+      "person_id": "skv-p000484",
+      "person_slug": "anniken-holst",
+      "published_date": "2026-06-13",
+      "published_date_label": "13.06.2026",
+      "week_number": 24,
+      "athlete_name": "Anniken Holst",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "Kvinner 30-34",
+      "class_place": "",
+      "event_label": "Birkebeinerløpene 2026",
+      "distance": "Birkebeinerløpet 21 km",
+      "result_time_raw": "1:55:26",
+      "result_time_normalized": "1:55:26",
+      "result_time_seconds": 6926.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "67",
+      "notes_clean": "67. kvinne",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-359d8213f8992819",
+      "person_id": "skv-p000393",
+      "person_slug": "erlend-berger",
+      "published_date": "2026-06-13",
+      "published_date_label": "13.06.2026",
+      "week_number": 24,
+      "athlete_name": "Erlend Berger",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "Menn 30-39",
+      "class_place": "",
+      "event_label": "Birkebeinerløpene 2026",
+      "distance": "Birken Fjellmaraton",
+      "result_time_raw": "3:10:14",
+      "result_time_normalized": "3:10:14",
+      "result_time_seconds": 11414.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "7",
+      "notes_clean": "Pl. 7",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-3f672dc4d7baae4c",
+      "person_id": "skv-p000488",
+      "person_slug": "lise-molden-stensrud",
+      "published_date": "2026-06-13",
+      "published_date_label": "13.06.2026",
+      "week_number": 24,
+      "athlete_name": "Lise Molden Stensrud",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K20-29",
+      "class_place": "7",
+      "event_label": "Birkebeinerløpene 2026",
+      "distance": "Birken Fjellmaraton",
+      "result_time_raw": "4:17:41",
+      "result_time_normalized": "4:17:41",
+      "result_time_seconds": 15461.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "13",
+      "notes_clean": "13. kvinne, klasse 7",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-337f11b70eca9121",
+      "person_id": "skv-p000260",
+      "person_slug": "pia-moller",
+      "published_date": "2026-06-13",
+      "published_date_label": "13.06.2026",
+      "week_number": 24,
+      "athlete_name": "Pia Møller",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K30-39",
+      "class_place": "5",
+      "event_label": "Birkebeinerløpene 2026",
+      "distance": "Birken Fjellmaraton",
+      "result_time_raw": "4:22:42",
+      "result_time_normalized": "4:22:42",
+      "result_time_seconds": 15762.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "18",
+      "notes_clean": "18. kvinne, klasse 5",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-48448d5ad048b33e",
+      "person_id": "skv-p000189",
+      "person_slug": "liv-berit-jegteberg-lystad",
+      "published_date": "2026-06-13",
+      "published_date_label": "13.06.2026",
+      "week_number": 24,
+      "athlete_name": "Liv Berit Jegteberg Lystad",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K60-69",
+      "class_place": "1",
+      "event_label": "Birkebeinerløpene 2026",
+      "distance": "Birken Fjellmaraton",
+      "result_time_raw": "5:43:41",
+      "result_time_normalized": "5:43:41",
+      "result_time_seconds": 20621.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "99",
+      "notes_clean": "99. kvinne, klasse 1",
       "split_first_label": "",
       "split_first_display": "",
       "split_second_label": "",
@@ -32500,7 +33313,7 @@
     }
   ],
   "people": {
-    "profile_count": 428,
+    "profile_count": 435,
     "profiles": [
       {
         "person_id": "skv-p000001",
@@ -33854,6 +34667,20 @@
         "latest_result_date": "2026-05-27"
       },
       {
+        "person_id": "skv-p000484",
+        "profile_slug": "anniken-holst",
+        "display_name": "Anniken Holst",
+        "gender": "K",
+        "gender_label": "Kvinner",
+        "result_count": 1,
+        "distances": [
+          "Birkebeinerløpet 21 km"
+        ],
+        "best_results": [],
+        "first_result_date": "2026-06-13",
+        "latest_result_date": "2026-06-13"
+      },
+      {
         "person_id": "skv-p000033",
         "profile_slug": "anton-heldal",
         "display_name": "Anton Heldal",
@@ -34707,9 +35534,10 @@
         "display_name": "Christoffer Hagen",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
-          "5 km"
+          "5 km",
+          "Birkebeinerløpet 21 km"
         ],
         "best_results": [
           {
@@ -34727,7 +35555,7 @@
           }
         ],
         "first_result_date": "2026-01-18",
-        "latest_result_date": "2026-01-18"
+        "latest_result_date": "2026-06-13"
       },
       {
         "person_id": "skv-p000049",
@@ -35766,10 +36594,11 @@
         "display_name": "Erlend Berger",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 2,
+        "result_count": 3,
         "distances": [
           "5 km",
-          "13 km"
+          "13 km",
+          "Birken Fjellmaraton"
         ],
         "best_results": [
           {
@@ -35787,7 +36616,7 @@
           }
         ],
         "first_result_date": "2026-05-14",
-        "latest_result_date": "2026-05-27"
+        "latest_result_date": "2026-06-13"
       },
       {
         "person_id": "skv-p000074",
@@ -37196,6 +38025,20 @@
         "latest_result_date": "2026-05-27"
       },
       {
+        "person_id": "skv-p000485",
+        "profile_slug": "hanne-marte-lie",
+        "display_name": "Hanne Marte Lie",
+        "gender": "K",
+        "gender_label": "Kvinner",
+        "result_count": 1,
+        "distances": [
+          "Birkebeinerløpet 21 km"
+        ],
+        "best_results": [],
+        "first_result_date": "2026-06-13",
+        "latest_result_date": "2026-06-13"
+      },
+      {
         "person_id": "skv-p000102",
         "profile_slug": "hanne-marthe-lie",
         "display_name": "Hanne Marthe Lie",
@@ -37229,9 +38072,10 @@
         "display_name": "Hanne Tingelstad",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 3,
+        "result_count": 4,
         "distances": [
           "10 km",
+          "Birkebeinerløpet 21 km",
           "Trail 31 km"
         ],
         "best_results": [
@@ -37250,7 +38094,7 @@
           }
         ],
         "first_result_date": "2026-04-25",
-        "latest_result_date": "2026-05-30"
+        "latest_result_date": "2026-06-13"
       },
       {
         "person_id": "skv-p000104",
@@ -37426,9 +38270,10 @@
         "display_name": "Helene Huglen",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
-          "10 km"
+          "10 km",
+          "Birkebeinerløpet 21 km"
         ],
         "best_results": [
           {
@@ -37446,7 +38291,7 @@
           }
         ],
         "first_result_date": "2026-04-25",
-        "latest_result_date": "2026-04-25"
+        "latest_result_date": "2026-06-13"
       },
       {
         "person_id": "skv-p000109",
@@ -37454,10 +38299,11 @@
         "display_name": "Henning Hellebust",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 3,
+        "result_count": 4,
         "distances": [
           "5 km",
-          "10 km"
+          "10 km",
+          "Birkebeinerløpet 21 km"
         ],
         "best_results": [
           {
@@ -37488,7 +38334,7 @@
           }
         ],
         "first_result_date": "2026-04-25",
-        "latest_result_date": "2026-05-23"
+        "latest_result_date": "2026-06-13"
       },
       {
         "person_id": "skv-p000110",
@@ -37843,6 +38689,20 @@
         "latest_result_date": "2026-06-13"
       },
       {
+        "person_id": "skv-p000486",
+        "profile_slug": "hilde-gudem",
+        "display_name": "Hilde Gudem",
+        "gender": "K",
+        "gender_label": "Kvinner",
+        "result_count": 1,
+        "distances": [
+          "Birkebeinerløpet 21 km"
+        ],
+        "best_results": [],
+        "first_result_date": "2026-06-13",
+        "latest_result_date": "2026-06-13"
+      },
+      {
         "person_id": "skv-p000122",
         "profile_slug": "iben-kvigne",
         "display_name": "Iben Kvigne",
@@ -37968,6 +38828,20 @@
         ],
         "first_result_date": "2026-01-18",
         "latest_result_date": "2026-04-25"
+      },
+      {
+        "person_id": "skv-p000487",
+        "profile_slug": "ida-widing",
+        "display_name": "Ida Widing",
+        "gender": "K",
+        "gender_label": "Kvinner",
+        "result_count": 1,
+        "distances": [
+          "Birkebeinerløpet 21 km"
+        ],
+        "best_results": [],
+        "first_result_date": "2026-06-13",
+        "latest_result_date": "2026-06-13"
       },
       {
         "person_id": "skv-p000126",
@@ -38554,10 +39428,11 @@
         "display_name": "Jan Petter Mork",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 5,
+        "result_count": 6,
         "distances": [
           "5 km",
-          "10 km"
+          "10 km",
+          "Birkebeinerløpet 21 km"
         ],
         "best_results": [
           {
@@ -38588,7 +39463,7 @@
           }
         ],
         "first_result_date": "2026-03-01",
-        "latest_result_date": "2026-05-23"
+        "latest_result_date": "2026-06-13"
       },
       {
         "person_id": "skv-p000138",
@@ -40216,11 +41091,12 @@
         "display_name": "Kristian Brenni",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 6,
+        "result_count": 7,
         "distances": [
           "5 km",
           "10 km",
-          "Halvmaraton"
+          "Halvmaraton",
+          "Birkebeinerløpet 21 km"
         ],
         "best_results": [
           {
@@ -40264,7 +41140,7 @@
           }
         ],
         "first_result_date": "2026-03-17",
-        "latest_result_date": "2026-05-31"
+        "latest_result_date": "2026-06-13"
       },
       {
         "person_id": "skv-p000174",
@@ -40581,13 +41457,14 @@
         "display_name": "Kristoffer Werner Hansen",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
+          "Birkebeinerløpet 21 km",
           "Trail 31 km"
         ],
         "best_results": [],
         "first_result_date": "2026-05-30",
-        "latest_result_date": "2026-05-30"
+        "latest_result_date": "2026-06-13"
       },
       {
         "person_id": "skv-p000181",
@@ -40843,6 +41720,20 @@
         "latest_result_date": "2026-05-10"
       },
       {
+        "person_id": "skv-p000488",
+        "profile_slug": "lise-molden-stensrud",
+        "display_name": "Lise Molden Stensrud",
+        "gender": "K",
+        "gender_label": "Kvinner",
+        "result_count": 1,
+        "distances": [
+          "Birken Fjellmaraton"
+        ],
+        "best_results": [],
+        "first_result_date": "2026-06-13",
+        "latest_result_date": "2026-06-13"
+      },
+      {
         "person_id": "skv-p000188",
         "profile_slug": "liselotte-farstad",
         "display_name": "Liselotte Farstad",
@@ -40876,9 +41767,10 @@
         "display_name": "Liv Berit Jegteberg Lystad",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 4,
+        "result_count": 5,
         "distances": [
-          "Maraton"
+          "Maraton",
+          "Birken Fjellmaraton"
         ],
         "best_results": [
           {
@@ -40896,7 +41788,7 @@
           }
         ],
         "first_result_date": "2026-02-08",
-        "latest_result_date": "2026-06-06"
+        "latest_result_date": "2026-06-13"
       },
       {
         "person_id": "skv-p000190",
@@ -40933,10 +41825,11 @@
         "display_name": "Live Maria Grønvold",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 2,
+        "result_count": 3,
         "distances": [
           "10 km",
-          "Halvmaraton"
+          "Halvmaraton",
+          "Birkebeinerløpet 21 km"
         ],
         "best_results": [
           {
@@ -40967,7 +41860,7 @@
           }
         ],
         "first_result_date": "2026-05-15",
-        "latest_result_date": "2026-05-31"
+        "latest_result_date": "2026-06-13"
       },
       {
         "person_id": "skv-p000191",
@@ -41635,6 +42528,20 @@
         "latest_result_date": "2026-05-27"
       },
       {
+        "person_id": "skv-p000489",
+        "profile_slug": "mari-robole-lien",
+        "display_name": "Mari Robøle Lien",
+        "gender": "K",
+        "gender_label": "Kvinner",
+        "result_count": 1,
+        "distances": [
+          "Birkebeinerløpet 21 km"
+        ],
+        "best_results": [],
+        "first_result_date": "2026-06-13",
+        "latest_result_date": "2026-06-13"
+      },
+      {
         "person_id": "skv-p000201",
         "profile_slug": "mari-vatn",
         "display_name": "Mari Vatn",
@@ -42138,10 +43045,11 @@
         "display_name": "Marte Sønstevold",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 5,
+        "result_count": 6,
         "distances": [
           "5 km",
-          "10 km"
+          "10 km",
+          "Birkebeinerløpet 21 km"
         ],
         "best_results": [
           {
@@ -42172,7 +43080,7 @@
           }
         ],
         "first_result_date": "2026-01-18",
-        "latest_result_date": "2026-05-23"
+        "latest_result_date": "2026-06-13"
       },
       {
         "person_id": "skv-p000218",
@@ -42489,9 +43397,10 @@
         "display_name": "Mathias Hansen",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
-          "5 km"
+          "5 km",
+          "Birkebeinerløpet 21 km"
         ],
         "best_results": [
           {
@@ -42509,7 +43418,7 @@
           }
         ],
         "first_result_date": "2026-05-02",
-        "latest_result_date": "2026-05-02"
+        "latest_result_date": "2026-06-13"
       },
       {
         "person_id": "skv-p000419",
@@ -43739,10 +44648,11 @@
         "display_name": "Ole Kristian Gjertsen",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 2,
+        "result_count": 3,
         "distances": [
           "5 km",
-          "Halvmaraton"
+          "Halvmaraton",
+          "Birkebeinerløpet 21 km"
         ],
         "best_results": [
           {
@@ -43773,7 +44683,7 @@
           }
         ],
         "first_result_date": "2026-01-18",
-        "latest_result_date": "2026-03-15"
+        "latest_result_date": "2026-06-13"
       },
       {
         "person_id": "skv-p000461",
@@ -43921,13 +44831,14 @@
         "display_name": "Oskar Røynås",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
-          "2000 m"
+          "2000 m",
+          "Ungdomsbirken løp"
         ],
         "best_results": [],
         "first_result_date": "2026-05-30",
-        "latest_result_date": "2026-05-30"
+        "latest_result_date": "2026-06-13"
       },
       {
         "person_id": "skv-p000255",
@@ -44090,10 +45001,11 @@
         "display_name": "Pia Møller",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 2,
+        "result_count": 3,
         "distances": [
           "5 km",
-          "10 km"
+          "10 km",
+          "Birken Fjellmaraton"
         ],
         "best_results": [
           {
@@ -44124,7 +45036,7 @@
           }
         ],
         "first_result_date": "2026-03-21",
-        "latest_result_date": "2026-04-11"
+        "latest_result_date": "2026-06-13"
       },
       {
         "person_id": "skv-p000261",
@@ -44384,10 +45296,11 @@
         "display_name": "Roger Thompson",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 4,
+        "result_count": 5,
         "distances": [
           "5 km",
-          "10 km"
+          "10 km",
+          "Birkebeinerløpet 21 km"
         ],
         "best_results": [
           {
@@ -44418,7 +45331,7 @@
           }
         ],
         "first_result_date": "2026-03-29",
-        "latest_result_date": "2026-06-07"
+        "latest_result_date": "2026-06-13"
       },
       {
         "person_id": "skv-p000267",
@@ -44764,10 +45677,11 @@
         "display_name": "Sara Kjeldsen Lie",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 4,
+        "result_count": 5,
         "distances": [
           "10 km",
-          "Halvmaraton"
+          "Halvmaraton",
+          "Birkebeinerløpet 21 km"
         ],
         "best_results": [
           {
@@ -44798,7 +45712,7 @@
           }
         ],
         "first_result_date": "2026-03-01",
-        "latest_result_date": "2026-06-06"
+        "latest_result_date": "2026-06-13"
       },
       {
         "person_id": "skv-p000375",
@@ -44834,9 +45748,10 @@
         "display_name": "Sebastian Aas",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
-          "10 km"
+          "10 km",
+          "Birkebeinerløpet 21 km"
         ],
         "best_results": [
           {
@@ -44854,7 +45769,7 @@
           }
         ],
         "first_result_date": "2026-04-25",
-        "latest_result_date": "2026-04-25"
+        "latest_result_date": "2026-06-13"
       },
       {
         "person_id": "skv-p000389",
@@ -47101,10 +48016,11 @@
         "display_name": "Torill Ytterhus Haugset",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 2,
+        "result_count": 3,
         "distances": [
           "5 km",
-          "10 km"
+          "10 km",
+          "Birkebeinerløpet 21 km"
         ],
         "best_results": [
           {
@@ -47135,7 +48051,7 @@
           }
         ],
         "first_result_date": "2026-01-18",
-        "latest_result_date": "2026-05-15"
+        "latest_result_date": "2026-06-13"
       },
       {
         "person_id": "skv-p000331",
@@ -47367,14 +48283,29 @@
         "latest_result_date": "2026-05-20"
       },
       {
+        "person_id": "skv-p000490",
+        "profile_slug": "ulrika-axelsson",
+        "display_name": "Ulrika Axelsson",
+        "gender": "K",
+        "gender_label": "Kvinner",
+        "result_count": 1,
+        "distances": [
+          "Birkebeinerløpet 21 km"
+        ],
+        "best_results": [],
+        "first_result_date": "2026-06-13",
+        "latest_result_date": "2026-06-13"
+      },
+      {
         "person_id": "skv-p000335",
         "profile_slug": "valentin-hachet",
         "display_name": "Valentin Hachet",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 3,
+        "result_count": 4,
         "distances": [
-          "10 km"
+          "10 km",
+          "Birkebeinerløpet 21 km"
         ],
         "best_results": [
           {
@@ -47392,7 +48323,7 @@
           }
         ],
         "first_result_date": "2026-04-11",
-        "latest_result_date": "2026-06-06"
+        "latest_result_date": "2026-06-13"
       },
       {
         "person_id": "skv-p000336",
@@ -47400,10 +48331,11 @@
         "display_name": "Vebjørn Hallberg Bakkestuen",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 3,
+        "result_count": 4,
         "distances": [
           "5 km",
-          "10 km"
+          "10 km",
+          "Birkebeinerløpet 21 km"
         ],
         "best_results": [
           {
@@ -47434,7 +48366,7 @@
           }
         ],
         "first_result_date": "2026-03-21",
-        "latest_result_date": "2026-04-25"
+        "latest_result_date": "2026-06-13"
       },
       {
         "person_id": "skv-p000372",
@@ -48374,6 +49306,13 @@
       "maren-thomasgaard": "skv-p000480",
       "remi-hoiseth": "skv-p000481",
       "thorkild-schrumpf": "skv-p000483",
+      "anniken-holst": "skv-p000484",
+      "hanne-marte-lie": "skv-p000485",
+      "hilde-gudem": "skv-p000486",
+      "ida-widing": "skv-p000487",
+      "lise-molden-stensrud": "skv-p000488",
+      "mari-robole-lien": "skv-p000489",
+      "ulrika-axelsson": "skv-p000490",
       "adne-andersen-andersen": "skv-p000001",
       "adne-sandvik-dyrnesli": "skv-p000003",
       "andreas-sjurseth": "skv-p000400",

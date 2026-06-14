@@ -1,0 +1,30 @@
+Birkebeinerløpene 2026 | Lillehammer | 13.06.2026 | manuell import fra brukeruttak
+
+Henning Hellebust | Birkebeinerløpet | Elite Menn | plass 30/25 | 01:17:54 | SK Vidar / Dravlaus IL | off. Vidar, SK medlem, Slack
+Kristian Brenni | Birkebeinerløpet | Menn 20-24 | plass 54/2 | 01:20:14 | Sportsklubben Vidar | off. Vidar, Slack
+Christoffer Hagen | Birkebeinerløpet | Menn 35-39 | plass 91/10 | 01:22:51 | Sk Vidar | off. Vidar, SK medlem, Slack
+Roger Thompson | Birkebeinerløpet | Menn 50-54 | plass 4 | 01:25:35 | SK Vidar | off. Vidar, SK medlem, Slack
+Sebastian Aas | Birkebeinerløpet | Menn 25-29 | plass 14 | 01:26:09 | SK Vidar | off. Vidar, SK medlem, Slack
+Marte Sønstevold | Birkebeinerløpet | Kvinner 35-39 | plass 10/2 | 01:27:34 | Sk Vidar / Wikborg Rein | off. Vidar, SK medlem, Slack
+Sara Kjeldsen Lie | Birkebeinerløpet | Elite Kvinner | plass 11/7 | 01:28:03 | Sk Vidar | off. Vidar, Slack
+Hanne Marte Lie | Birkebeinerløpet | Kvinner 35-39 | plass 13/3 | 01:28:25 | Sk Vidar | off. Vidar
+Ole Kristian Gjertsen | Birkebeinerløpet | Menn 35-39 | plass 30 | 01:28:58 | SK Vidar | off. Vidar, SK medlem, Slack
+Jan Petter Mork | Birkebeinerløpet | Menn 30-34 | plass 41 | 01:29:06 | Sportsklubben Vidar | off. Vidar, Slack, SK trening
+Vebjørn Hallberg Bakkestuen | Birkebeinerløpet | Menn 25-29 | plass 36 | 01:30:31 | SK Vidar / Trofé | off. Vidar, SK medlem, Slack
+Kristoffer Werner Hansen | Birkebeinerløpet | Menn 35-39 | plass 47 | 01:31:09 | SK Vidar | off. Vidar, SK medlem, Slack
+Valentin Hachet | Birkebeinerløpet | Menn 30-34 | plass 78 | 01:32:42 | Sk Vidar | off. Vidar, SK medlem, Slack
+Ulrika Axelsson | Birkebeinerløpet | Kvinner 30-34 | plass 45/6 | 01:34:14 | Sk Vidar | off. Vidar, SK medlem, Slack
+Hanne Tingelstad | Birkebeinerløpet | Kvinner 35-39 | plass 64/6 | 01:36:25 | Sportsklubben Vidar | off. Vidar, SK medlem, Slack
+Hilde Gudem | Birkebeinerløpet | Kvinner 45-49 | plass 100/5 | 01:40:26 | Sk Vidar | off. Vidar, SK medlem, Slack
+Torill Ytterhus Haugset | Birkebeinerløpet | Kvinner 30-34 | plass 16 | 01:41:24 | Sportsklubben Vidar | off. Vidar, SK medlem, Slack
+Live Maria Grønvold | Birkebeinerløpet | Kvinner 30-34 | plass 23 | 01:43:23 | Sk Vidar | off. Vidar, SK medlem, Slack
+Helene Huglen | Birkebeinerløpet | Kvinner 30-34 | plass 30 | 01:46:51 | Sk Vidar | off. Vidar, SK medlem, Slack
+Anniken Holst | Birkebeinerløpet | Kvinner 30-34 | plass 67 | 01:55:26 | Sk Vidar | off. Vidar, SK medlem, Slack
+Erlend Berger | Birken Fjellmaraton | Menn 30-39 | plass 7 | 03:10:14 | SK Vidar | off. Vidar, SK medlem, Slack
+Lise Molden Stensrud | Birken Fjellmaraton | K20-29 | plass 13/7 | 04:17:41 | Sk Vidar | off. Vidar, SK medlem, Slack
+Pia Møller | Birken Fjellmaraton | K30-39 | plass 18/5 | 04:22:42 | Sportsklubben Vidar | off. Vidar
+Liv Berit Jegteberg Lystad | Birken Fjellmaraton | K60-69 | plass 99/1 | 05:43:41 | Sportsklubben Vidar | off. Vidar, SK medlem
+Oskar Røynås | Ungdomsbirken løp | Gutter 14 | plass 1 | 00:17:11 | SK Vidar | off. Vidar
+Ida Widing | Birkebeinerløpet | Kvinner 30-34 | plass 20 | 01:42:01 | OSI friidrett | off. OSI, Slack, #student, OSI medlem
+Mari Robøle Lien | Birkebeinerløpet | Kvinner 25-29 | plass 58/14 | 01:35:52 | HAMAR | Slack, SK trening, #student, OSI medlem
+Mathias Hansen | Birkebeinerløpet | Menn 25-29 | plass 82 | 01:35:53 | - | Slack, #student, OSI medlem
