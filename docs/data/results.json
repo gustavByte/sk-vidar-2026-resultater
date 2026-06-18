@@ -1,18 +1,32 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-06-15T13:47:54+02:00",
+  "generated_at": "2026-06-18T13:10:10+02:00",
   "stats": {
-    "result_count": 1111,
+    "result_count": 1112,
     "athlete_count": 440,
-    "event_count": 137,
-    "week_count": 21,
-    "latest_week": 24,
-    "latest_date": "2026-06-14",
+    "event_count": 138,
+    "week_count": 22,
+    "latest_week": 25,
+    "latest_date": "2026-06-17",
     "women_count": 449,
-    "men_count": 662,
+    "men_count": 663,
     "missing_gender_or_class_count": 0
   },
   "weeks": [
+    {
+      "week_number": 25,
+      "week_label": "Uke 25",
+      "published_date": "2026-06-17",
+      "published_date_label": "17.06.2026",
+      "result_count": 1,
+      "athlete_count": 1,
+      "event_count": 1,
+      "women_count": 0,
+      "men_count": 1,
+      "events": [
+        "Långlöparnas kväll 2026"
+      ]
+    },
     {
       "week_number": 24,
       "week_label": "Uke 24",
@@ -425,6 +439,35 @@
     }
   ],
   "results": [
+    {
+      "result_id": "res-ad4ddee0fb91ae15",
+      "person_id": "skv-p000315",
+      "person_slug": "sven-thelin",
+      "published_date": "2026-06-17",
+      "published_date_label": "17.06.2026",
+      "week_number": 25,
+      "athlete_name": "Sven Thelin",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "Män",
+      "class_place": "",
+      "event_label": "Långlöparnas kväll 2026",
+      "distance": "10000 m",
+      "result_time_raw": "37:15.42",
+      "result_time_normalized": "37:15.42",
+      "result_time_seconds": 2235.42,
+      "wa_gender": "M",
+      "wa_event": "10000m",
+      "wa_points": null,
+      "place": "79",
+      "notes_clean": "baneløp",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
     {
       "result_id": "res-0048ecb73d1db448",
       "person_id": "skv-p000029",
@@ -48962,11 +49005,12 @@
         "display_name": "Sven Thelin",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 8,
+        "result_count": 9,
         "distances": [
           "3000 m",
           "5 km",
           "10 km",
+          "10000 m",
           "5000 m"
         ],
         "best_results": [
@@ -49011,7 +49055,7 @@
           }
         ],
         "first_result_date": "2026-03-01",
-        "latest_result_date": "2026-05-27"
+        "latest_result_date": "2026-06-17"
       },
       {
         "person_id": "skv-p000316",
