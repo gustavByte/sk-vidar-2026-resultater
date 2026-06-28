@@ -1,14 +1,14 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-06-28T19:58:04+02:00",
+  "generated_at": "2026-06-28T20:19:14+02:00",
   "stats": {
-    "result_count": 1254,
-    "athlete_count": 471,
+    "result_count": 1259,
+    "athlete_count": 472,
     "event_count": 165,
     "week_count": 23,
     "latest_week": 26,
     "latest_date": "2026-06-28",
-    "women_count": 509,
+    "women_count": 514,
     "men_count": 745,
     "missing_gender_or_class_count": 0
   },
@@ -41,10 +41,10 @@
       "week_label": "Uke 25",
       "published_date": "2026-06-21",
       "published_date_label": "21.06.2026",
-      "result_count": 86,
-      "athlete_count": 82,
+      "result_count": 91,
+      "athlete_count": 87,
       "event_count": 18,
-      "women_count": 40,
+      "women_count": 45,
       "men_count": 46,
       "events": [
         "Bankmila 2026",
@@ -3525,6 +3525,64 @@
       "split_state": ""
     },
     {
+      "result_id": "res-4d08129a0c65e6ee",
+      "person_id": "skv-p000377",
+      "person_slug": "maia-kulle-andreassen",
+      "published_date": "2026-06-20",
+      "published_date_label": "20.06.2026",
+      "week_number": 25,
+      "athlete_name": "Maia Kulle Andreassen",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K Junior",
+      "class_place": "1",
+      "event_label": "Norefjell Trail 2026",
+      "distance": "12 km",
+      "result_time_raw": "1:08:02",
+      "result_time_normalized": "1:08:02",
+      "result_time_seconds": 4082.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "7",
+      "notes_clean": "2. kvinne, klasse 1",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-a2f2999cdf43af73",
+      "person_id": "skv-p000306",
+      "person_slug": "sonia-slettvag",
+      "published_date": "2026-06-20",
+      "published_date_label": "20.06.2026",
+      "week_number": 25,
+      "athlete_name": "Sonia Slettvåg",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K Junior",
+      "class_place": "3",
+      "event_label": "Norefjell Trail 2026",
+      "distance": "12 km",
+      "result_time_raw": "1:19:07",
+      "result_time_normalized": "1:19:07",
+      "result_time_seconds": 4747.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "27",
+      "notes_clean": "7. kvinne, klasse 3",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
       "result_id": "res-85d57de43a231d9d",
       "person_id": "skv-p000376",
       "person_slug": "elia-thorvik",
@@ -3749,6 +3807,93 @@
       "wa_points": null,
       "place": "61",
       "notes_clean": "klasse 52",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-bea0346b9b969f94",
+      "person_id": "skv-p000536",
+      "person_slug": "roisin-maria-long",
+      "published_date": "2026-06-20",
+      "published_date_label": "20.06.2026",
+      "week_number": 25,
+      "athlete_name": "Roisin Maria Long",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K23-39",
+      "class_place": "107",
+      "event_label": "Norefjell Trail 2026",
+      "distance": "22 km",
+      "result_time_raw": "3:00:29",
+      "result_time_normalized": "3:00:29",
+      "result_time_seconds": 10829.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "327",
+      "notes_clean": "145. kvinne, klasse 107",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-29895216c396ef2a",
+      "person_id": "skv-p000299",
+      "person_slug": "sofie-kolsum",
+      "published_date": "2026-06-20",
+      "published_date_label": "20.06.2026",
+      "week_number": 25,
+      "athlete_name": "Sofie Kolsum",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K23-39",
+      "class_place": "115",
+      "event_label": "Norefjell Trail 2026",
+      "distance": "22 km",
+      "result_time_raw": "3:02:56",
+      "result_time_normalized": "3:02:56",
+      "result_time_seconds": 10976.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "344",
+      "notes_clean": "154. kvinne, klasse 115",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-398c14d499e9ec7d",
+      "person_id": "skv-p000167",
+      "person_slug": "katarina-thraning",
+      "published_date": "2026-06-20",
+      "published_date_label": "20.06.2026",
+      "week_number": 25,
+      "athlete_name": "Katarina Thraning",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K23-39",
+      "class_place": "125",
+      "event_label": "Norefjell Trail 2026",
+      "distance": "22 km",
+      "result_time_raw": "3:05:31",
+      "result_time_normalized": "3:05:31",
+      "result_time_seconds": 11131.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "357",
+      "notes_clean": "164. kvinne, klasse 125",
       "split_first_label": "",
       "split_first_display": "",
       "split_second_label": "",
@@ -39042,7 +39187,7 @@
     }
   ],
   "people": {
-    "profile_count": 471,
+    "profile_count": 472,
     "profiles": [
       {
         "person_id": "skv-p000001",
@@ -47366,9 +47511,10 @@
         "display_name": "Katarina Thraning",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
-          "10 km"
+          "10 km",
+          "22 km"
         ],
         "best_results": [
           {
@@ -47386,7 +47532,7 @@
           }
         ],
         "first_result_date": "2026-04-25",
-        "latest_result_date": "2026-04-25"
+        "latest_result_date": "2026-06-20"
       },
       {
         "person_id": "skv-p000168",
@@ -49062,8 +49208,9 @@
         "display_name": "Maia Kulle Andreassen",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 5,
+        "result_count": 6,
         "distances": [
+          "12 km",
           "14 km",
           "4,7 km",
           "Kombinert",
@@ -49072,7 +49219,7 @@
         ],
         "best_results": [],
         "first_result_date": "2026-05-08",
-        "latest_result_date": "2026-06-13"
+        "latest_result_date": "2026-06-20"
       },
       {
         "person_id": "skv-p000199",
@@ -52390,6 +52537,20 @@
         "latest_result_date": "2026-04-25"
       },
       {
+        "person_id": "skv-p000536",
+        "profile_slug": "roisin-maria-long",
+        "display_name": "Roisin Maria Long",
+        "gender": "K",
+        "gender_label": "Kvinner",
+        "result_count": 1,
+        "distances": [
+          "22 km"
+        ],
+        "best_results": [],
+        "first_result_date": "2026-06-20",
+        "latest_result_date": "2026-06-20"
+      },
+      {
         "person_id": "skv-p000268",
         "profile_slug": "ruairi-long",
         "display_name": "Ruairi Long",
@@ -53787,9 +53948,10 @@
         "display_name": "Sofie Kolsum",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
-          "10 km"
+          "10 km",
+          "22 km"
         ],
         "best_results": [
           {
@@ -53807,7 +53969,7 @@
           }
         ],
         "first_result_date": "2026-04-25",
-        "latest_result_date": "2026-04-25"
+        "latest_result_date": "2026-06-20"
       },
       {
         "person_id": "skv-p000300",
@@ -54028,10 +54190,11 @@
         "display_name": "Sonia Slettvåg",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 7,
+        "result_count": 8,
         "distances": [
           "5 km",
-          "10 km"
+          "10 km",
+          "12 km"
         ],
         "best_results": [
           {
@@ -56763,6 +56926,7 @@
       "therese-arvik": "skv-p000524",
       "tormod-tho": "skv-p000525",
       "madeleine-heiberg-tromborg": "skv-p000535",
+      "roisin-maria-long": "skv-p000536",
       "adne-andersen-andersen": "skv-p000001",
       "adne-sandvik-dyrnesli": "skv-p000003",
       "andreas-sjurseth": "skv-p000400",
