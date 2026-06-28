@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-06-28T21:38:16+02:00",
+  "generated_at": "2026-06-28T21:40:25+02:00",
   "stats": {
     "result_count": 1260,
     "athlete_count": 472,
@@ -4415,7 +4415,7 @@
       "wa_event": "",
       "wa_points": null,
       "place": "237",
-      "notes_clean": "",
+      "notes_clean": "fartsholder",
       "split_first_label": "",
       "split_first_display": "",
       "split_second_label": "",
