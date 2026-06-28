@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-06-28T19:17:49+02:00",
+  "generated_at": "2026-06-28T19:58:04+02:00",
   "stats": {
-    "result_count": 1251,
-    "athlete_count": 470,
-    "event_count": 164,
+    "result_count": 1254,
+    "athlete_count": 471,
+    "event_count": 165,
     "week_count": 23,
     "latest_week": 26,
     "latest_date": "2026-06-28",
-    "women_count": 508,
-    "men_count": 743,
+    "women_count": 509,
+    "men_count": 745,
     "missing_gender_or_class_count": 0
   },
   "weeks": [
@@ -18,17 +18,18 @@
       "week_label": "Uke 26",
       "published_date": "2026-06-28",
       "published_date_label": "28.06.2026",
-      "result_count": 54,
-      "athlete_count": 53,
-      "event_count": 9,
-      "women_count": 19,
-      "men_count": 35,
+      "result_count": 57,
+      "athlete_count": 56,
+      "event_count": 10,
+      "women_count": 20,
+      "men_count": 37,
       "events": [
         "Boysen Memorial 2026",
         "Femundløpet 2026",
         "Jomfrulandsløpet 2026",
         "Karlstad Stadslopp 2026",
         "Kristiansund Havmaraton 2026",
+        "Lierløpet - Ferieløpet 2026",
         "Løperådet Friday Night Lights 2026",
         "Maridalsvannet Rundt - Oslo Løpsfestival 2026",
         "Moseby Invitational 2026",
@@ -529,6 +530,93 @@
       "wa_points": null,
       "place": "",
       "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-0dec1cb16e1eec8e",
+      "person_id": "skv-p000322",
+      "person_slug": "thomas-nordbo-berg",
+      "published_date": "2026-06-28",
+      "published_date_label": "28.06.2026",
+      "week_number": 26,
+      "athlete_name": "Thomas Nordbø Berg",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M40",
+      "class_place": "3",
+      "event_label": "Lierløpet - Ferieløpet 2026",
+      "distance": "5 km",
+      "result_time_raw": "19:13",
+      "result_time_normalized": "19:13",
+      "result_time_seconds": 1153.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "9",
+      "notes_clean": "9. mann, klasse 3",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-39fb8ab043b37465",
+      "person_id": "skv-p000535",
+      "person_slug": "madeleine-heiberg-tromborg",
+      "published_date": "2026-06-28",
+      "published_date_label": "28.06.2026",
+      "week_number": 26,
+      "athlete_name": "Madeleine Heiberg Trømborg",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K23",
+      "class_place": "4",
+      "event_label": "Lierløpet - Ferieløpet 2026",
+      "distance": "10 km",
+      "result_time_raw": "42:28",
+      "result_time_normalized": "42:28",
+      "result_time_seconds": 2548.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "4",
+      "notes_clean": "4. kvinne, klasse 4",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-33914ffa3374039f",
+      "person_id": "skv-p000326",
+      "person_slug": "tobias-gram-caspersen",
+      "published_date": "2026-06-28",
+      "published_date_label": "28.06.2026",
+      "week_number": 26,
+      "athlete_name": "Tobias Gram-Caspersen",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M23",
+      "class_place": "1",
+      "event_label": "Lierløpet - Ferieløpet 2026",
+      "distance": "Halvmaraton",
+      "result_time_raw": "1:16:18",
+      "result_time_normalized": "1:16:18",
+      "result_time_seconds": 4578.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "1",
+      "notes_clean": "1. mann, klasse 1",
       "split_first_label": "",
       "split_first_display": "",
       "split_second_label": "",
@@ -38954,7 +39042,7 @@
     }
   ],
   "people": {
-    "profile_count": 470,
+    "profile_count": 471,
     "profiles": [
       {
         "person_id": "skv-p000001",
@@ -48490,6 +48578,34 @@
         "latest_result_date": "2026-05-23"
       },
       {
+        "person_id": "skv-p000535",
+        "profile_slug": "madeleine-heiberg-tromborg",
+        "display_name": "Madeleine Heiberg Trømborg",
+        "gender": "K",
+        "gender_label": "Kvinner",
+        "result_count": 1,
+        "distances": [
+          "10 km"
+        ],
+        "best_results": [
+          {
+            "result_id": "res-39fb8ab043b37465",
+            "distance": "10 km",
+            "source_distance": "10 km",
+            "result_time": "42:28",
+            "result_time_seconds": 2548.0,
+            "event_label": "Lierløpet - Ferieløpet 2026",
+            "published_date": "2026-06-28",
+            "published_date_label": "28.06.2026",
+            "week_number": 26,
+            "place": "4",
+            "class_place": "4"
+          }
+        ],
+        "first_result_date": "2026-06-28",
+        "latest_result_date": "2026-06-28"
+      },
+      {
         "person_id": "skv-p000357",
         "profile_slug": "madelen-tronstad-sagebakken",
         "display_name": "Madelén Tronstad Sagebakken",
@@ -54760,9 +54876,10 @@
         "display_name": "Thomas Nordbø Berg",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 3,
+        "result_count": 4,
         "distances": [
           "3000 m",
+          "5 km",
           "10 km"
         ],
         "best_results": [
@@ -54780,6 +54897,19 @@
             "class_place": "11"
           },
           {
+            "result_id": "res-0dec1cb16e1eec8e",
+            "distance": "5 km",
+            "source_distance": "5 km",
+            "result_time": "19:13",
+            "result_time_seconds": 1153.0,
+            "event_label": "Lierløpet - Ferieløpet 2026",
+            "published_date": "2026-06-28",
+            "published_date_label": "28.06.2026",
+            "week_number": 26,
+            "place": "9",
+            "class_place": "3"
+          },
+          {
             "result_id": "res-b05ef2d953c57333",
             "distance": "10 km",
             "source_distance": "10 km",
@@ -54794,7 +54924,7 @@
           }
         ],
         "first_result_date": "2026-04-11",
-        "latest_result_date": "2026-05-23"
+        "latest_result_date": "2026-06-28"
       },
       {
         "person_id": "skv-p000323",
@@ -54945,10 +55075,11 @@
         "display_name": "Tobias Gram-Caspersen",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 3,
+        "result_count": 4,
         "distances": [
           "5 km",
-          "10 km"
+          "10 km",
+          "Halvmaraton"
         ],
         "best_results": [
           {
@@ -54976,10 +55107,23 @@
             "week_number": 20,
             "place": "4",
             "class_place": "4"
+          },
+          {
+            "result_id": "res-33914ffa3374039f",
+            "distance": "Halvmaraton",
+            "source_distance": "Halvmaraton",
+            "result_time": "1:16:18",
+            "result_time_seconds": 4578.0,
+            "event_label": "Lierløpet - Ferieløpet 2026",
+            "published_date": "2026-06-28",
+            "published_date_label": "28.06.2026",
+            "week_number": 26,
+            "place": "1",
+            "class_place": "1"
           }
         ],
         "first_result_date": "2026-03-01",
-        "latest_result_date": "2026-05-15"
+        "latest_result_date": "2026-06-28"
       },
       {
         "person_id": "skv-p000451",
@@ -56618,6 +56762,7 @@
       "terje-gravvold": "skv-p000523",
       "therese-arvik": "skv-p000524",
       "tormod-tho": "skv-p000525",
+      "madeleine-heiberg-tromborg": "skv-p000535",
       "adne-andersen-andersen": "skv-p000001",
       "adne-sandvik-dyrnesli": "skv-p000003",
       "andreas-sjurseth": "skv-p000400",
@@ -56677,7 +56822,9 @@
       "lina-svarlien": "skv-p000529",
       "malene-kollberg": "skv-p000530",
       "oda-lier": "skv-p000531",
-      "simen-gimnes": "skv-p000532"
+      "simen-gimnes": "skv-p000532",
+      "madeleine-heiberg-tr-mborg": "skv-p000533",
+      "thomas-nordb-berg": "skv-p000534"
     },
     "slug_redirects": {
       "adne-andersen-andersen": "adne-andersen",
