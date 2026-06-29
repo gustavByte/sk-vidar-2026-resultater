@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-06-28T21:40:25+02:00",
+  "generated_at": "2026-06-29T10:13:43+02:00",
   "stats": {
-    "result_count": 1260,
+    "result_count": 1262,
     "athlete_count": 472,
-    "event_count": 165,
+    "event_count": 166,
     "week_count": 23,
     "latest_week": 26,
     "latest_date": "2026-06-28",
     "women_count": 514,
-    "men_count": 746,
+    "men_count": 748,
     "missing_gender_or_class_count": 0
   },
   "weeks": [
@@ -18,11 +18,11 @@
       "week_label": "Uke 26",
       "published_date": "2026-06-28",
       "published_date_label": "28.06.2026",
-      "result_count": 58,
-      "athlete_count": 57,
-      "event_count": 10,
+      "result_count": 60,
+      "athlete_count": 59,
+      "event_count": 11,
       "women_count": 20,
-      "men_count": 38,
+      "men_count": 40,
       "events": [
         "Boysen Memorial 2026",
         "Femundløpet 2026",
@@ -33,6 +33,7 @@
         "Løperådet Friday Night Lights 2026",
         "Maridalsvannet Rundt - Oslo Løpsfestival 2026",
         "Moseby Invitational 2026",
+        "Romeriksåsen på langs 2026",
         "Synnfjell Sky Race 2026"
       ]
     },
@@ -1806,6 +1807,64 @@
       "wa_points": null,
       "place": "46",
       "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-c965c650fbdeb04a",
+      "person_id": "skv-p000401",
+      "person_slug": "havard-berge",
+      "published_date": "2026-06-27",
+      "published_date_label": "27.06.2026",
+      "week_number": 26,
+      "athlete_name": "Håvard Berge",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M23-34",
+      "class_place": "",
+      "event_label": "Romeriksåsen på langs 2026",
+      "distance": "50 km",
+      "result_time_raw": "4:16:19",
+      "result_time_normalized": "4:16:19",
+      "result_time_seconds": 15379.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "1",
+      "notes_clean": "1. mann, CP1 1 36, CP2 2 47, CP3 4 25, min/km 5, 07",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-d152b5221328a278",
+      "person_id": "skv-p000406",
+      "person_slug": "reidar-sobstad",
+      "published_date": "2026-06-27",
+      "published_date_label": "27.06.2026",
+      "week_number": 26,
+      "athlete_name": "Reidar Søbstad",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M65-69",
+      "class_place": "",
+      "event_label": "Romeriksåsen på langs 2026",
+      "distance": "50 km",
+      "result_time_raw": "9:17:26",
+      "result_time_normalized": "9:17:26",
+      "result_time_seconds": 33446.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "243",
+      "notes_clean": "CP1 2 56, CP2 5 12, CP3 8 27, min/km 11, 08, bak +5 07",
       "split_first_label": "",
       "split_first_display": "",
       "split_second_label": "",
@@ -44416,10 +44475,11 @@
         "display_name": "Håvard Berge",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 3,
+        "result_count": 4,
         "distances": [
           "5 km",
-          "10 km"
+          "10 km",
+          "50 km"
         ],
         "best_results": [
           {
@@ -44450,7 +44510,7 @@
           }
         ],
         "first_result_date": "2026-05-02",
-        "latest_result_date": "2026-05-30"
+        "latest_result_date": "2026-06-27"
       },
       {
         "person_id": "skv-p000105",
@@ -52111,10 +52171,11 @@
         "display_name": "Reidar Søbstad",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 2,
+        "result_count": 3,
         "distances": [
           "5 km",
-          "10 km"
+          "10 km",
+          "50 km"
         ],
         "best_results": [
           {
@@ -52145,7 +52206,7 @@
           }
         ],
         "first_result_date": "2026-05-23",
-        "latest_result_date": "2026-06-21"
+        "latest_result_date": "2026-06-27"
       },
       {
         "person_id": "skv-p000481",
