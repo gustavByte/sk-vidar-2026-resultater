@@ -450,6 +450,41 @@ def test_rankings_deduplicate_best_result_per_person_id() -> None:
     assert men[0]["result_id"] == "res-fast"
 
 
+def test_5000m_is_a_standard_ranking_and_profile_distance(tmp_path: Path) -> None:
+    df = pd.DataFrame(
+        [
+            {
+                "distance": "5000 m",
+                "gender": "K",
+                "person_id": "skv-p000001",
+                "person_slug": "runner-one",
+                "result_id": "res-5000m",
+                "athlete_name": "Runner One",
+                "result_time_seconds": 935.7,
+                "result_time_normalized": "15:35.70",
+                "result_time_raw": "15:35.70",
+                "published_date_sort": pd.Timestamp("2026-07-04"),
+                "published_date_iso": "2026-07-04",
+                "published_date_label": "04.07.2026",
+                "week_number": 27,
+                "event_label": "Track Test",
+                "place": "1",
+                "class_place": "1",
+            }
+        ]
+    )
+    df["profile_distance"] = df.apply(normalize_ranking_distance, axis=1)
+
+    rankings = build_rankings(df)
+    five_thousand = next(group for group in rankings if group["distance"] == "5000 m")
+    assert five_thousand["women"][0]["result_id"] == "res-5000m"
+
+    identity = ensure_new_people_are_appended_without_changing_existing_ids(df, tmp_path)
+    profile = build_people_payload(df, identity)["profiles"][0]
+    assert "5000 m" in profile["distances"]
+    assert profile["best_results"][0]["distance"] == "5000 m"
+
+
 def test_public_payload_contract_and_private_field_validation(tmp_path: Path) -> None:
     df = pd.DataFrame(
         [

@@ -31,13 +31,14 @@ DISTANCE_ORDER = {
     "800 m": 1,
     "1500 m": 2,
     "3000 m": 3,
-    "5 km": 4,
-    "10 km": 5,
-    "Halvmaraton": 6,
-    "Maraton": 7,
-    "42 km": 7,
-    "30 km": 8,
-    "60 km": 9,
+    "5000 m": 4,
+    "5 km": 5,
+    "10 km": 6,
+    "Halvmaraton": 7,
+    "Maraton": 8,
+    "42 km": 8,
+    "30 km": 9,
+    "60 km": 10,
 }
 
 EVENT_NAME_OVERRIDES = {

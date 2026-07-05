@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-07-05T17:13:58+02:00",
+  "generated_at": "2026-07-05T17:46:13+02:00",
   "stats": {
-    "result_count": 1262,
-    "athlete_count": 472,
-    "event_count": 167,
+    "result_count": 1294,
+    "athlete_count": 480,
+    "event_count": 175,
     "week_count": 24,
     "latest_week": 27,
     "latest_date": "2026-07-04",
-    "women_count": 515,
-    "men_count": 747,
+    "women_count": 527,
+    "men_count": 767,
     "missing_gender_or_class_count": 0
   },
   "weeks": [
@@ -18,13 +18,21 @@
       "week_label": "Uke 27",
       "published_date": "2026-07-04",
       "published_date_label": "04.07.2026",
-      "result_count": 1,
-      "athlete_count": 1,
-      "event_count": 1,
-      "women_count": 1,
-      "men_count": 0,
+      "result_count": 33,
+      "athlete_count": 28,
+      "event_count": 9,
+      "women_count": 13,
+      "men_count": 20,
       "events": [
-        "The Pursuit 5000m"
+        "Hornindal Rundt 2026",
+        "Jølster Maraton 2026",
+        "Lofoten Skyrace 2026",
+        "Nordisk mesterskap i friidrett for masters 2026",
+        "Nordisk mesterskap i friidrett for masters 2026 - fredag",
+        "Odalsløpet 2026",
+        "Strømstadmilen 2026",
+        "The Pursuit 5000m",
+        "Unionsmarathon 2026"
       ]
     },
     {
@@ -495,6 +503,180 @@
   ],
   "results": [
     {
+      "result_id": "res-17ddc625554de40a",
+      "person_id": "skv-p000051",
+      "person_slug": "constantin-rust",
+      "published_date": "2026-07-04",
+      "published_date_label": "04.07.2026",
+      "week_number": 27,
+      "athlete_name": "Constantin Rust *",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M23-34",
+      "class_place": "3",
+      "event_label": "Hornindal Rundt 2026",
+      "distance": "38 km",
+      "result_time_raw": "4:38:33",
+      "result_time_normalized": "4:38:33",
+      "result_time_seconds": 16713.0,
+      "wa_gender": "M",
+      "wa_event": "38 km",
+      "wa_points": null,
+      "place": "3",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-7dd8f0af462d3705",
+      "person_id": "skv-p000185",
+      "person_slug": "leif-ole-havardsrud",
+      "published_date": "2026-07-04",
+      "published_date_label": "04.07.2026",
+      "week_number": 27,
+      "athlete_name": "Leif Ole Håvardsrud",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M35-39",
+      "class_place": "9",
+      "event_label": "Jølster Maraton 2026",
+      "distance": "Halvmaraton",
+      "result_time_raw": "1:22:08",
+      "result_time_normalized": "1:22:08",
+      "result_time_seconds": 4928.0,
+      "wa_gender": "M",
+      "wa_event": "Halvmaraton",
+      "wa_points": null,
+      "place": "33",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-0127823ef4fb226b",
+      "person_id": "skv-p000189",
+      "person_slug": "liv-berit-jegteberg-lystad",
+      "published_date": "2026-07-04",
+      "published_date_label": "04.07.2026",
+      "week_number": 27,
+      "athlete_name": "Liv Berit Jegteberg Lystad",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "K65-69",
+      "class_place": "1",
+      "event_label": "Jølster Maraton 2026",
+      "distance": "Maraton",
+      "result_time_raw": "4:06:24",
+      "result_time_normalized": "4:06:24",
+      "result_time_seconds": 14784.0,
+      "wa_gender": "K",
+      "wa_event": "Maraton",
+      "wa_points": null,
+      "place": "69",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-dea488c371779313",
+      "person_id": "skv-p000173",
+      "person_slug": "kristian-brenni",
+      "published_date": "2026-07-04",
+      "published_date_label": "04.07.2026",
+      "week_number": 27,
+      "athlete_name": "Kristian Brenni",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "Menn",
+      "class_place": "1",
+      "event_label": "Odalsløpet 2026",
+      "distance": "10 km",
+      "result_time_raw": "34:18",
+      "result_time_normalized": "34:18",
+      "result_time_seconds": 2058.0,
+      "wa_gender": "M",
+      "wa_event": "10 km",
+      "wa_points": null,
+      "place": "1",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-6a280e756a6cb47c",
+      "person_id": "skv-p000538",
+      "person_slug": "anniken-holst-berger",
+      "published_date": "2026-07-04",
+      "published_date_label": "04.07.2026",
+      "week_number": 27,
+      "athlete_name": "Anniken Holst-Berger",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "Kvinner",
+      "class_place": "",
+      "event_label": "Strømstadmilen 2026",
+      "distance": "5 km kvinner",
+      "result_time_raw": "23:39",
+      "result_time_normalized": "23:39",
+      "result_time_seconds": 1419.0,
+      "wa_gender": "K",
+      "wa_event": "5 km kvinner",
+      "wa_points": null,
+      "place": "5",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-1736680f0f5404fb",
+      "person_id": "skv-p000542",
+      "person_slug": "erlend-holst-berger",
+      "published_date": "2026-07-04",
+      "published_date_label": "04.07.2026",
+      "week_number": 27,
+      "athlete_name": "Erlend Holst-Berger",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "Menn",
+      "class_place": "",
+      "event_label": "Strømstadmilen 2026",
+      "distance": "10 km menn, topp 100",
+      "result_time_raw": "36:01",
+      "result_time_normalized": "36:01",
+      "result_time_seconds": 2161.0,
+      "wa_gender": "M",
+      "wa_event": "10 km menn, topp 100",
+      "wa_points": null,
+      "place": "14",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
       "result_id": "res-f45765f568404f5b",
       "person_id": "skv-p000193",
       "person_slug": "madelene-wanvik-holum",
@@ -516,6 +698,760 @@
       "wa_points": 1095.0,
       "place": "1",
       "notes_clean": "PB",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-9794b89f938b503c",
+      "person_id": "skv-p000537",
+      "person_slug": "albert-bolstad",
+      "published_date": "2026-07-04",
+      "published_date_label": "04.07.2026",
+      "week_number": 27,
+      "athlete_name": "Albert Bolstad",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M18-20",
+      "class_place": "1",
+      "event_label": "Unionsmarathon 2026",
+      "distance": "Halvmaraton",
+      "result_time_raw": "2:30:39",
+      "result_time_normalized": "2:30:39",
+      "result_time_seconds": 9039.0,
+      "wa_gender": "M",
+      "wa_event": "Halvmaraton",
+      "wa_points": null,
+      "place": "77",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-589ca4fce1017a3e",
+      "person_id": "skv-p000252",
+      "person_slug": "ole-jorgen-knoph",
+      "published_date": "2026-07-03",
+      "published_date_label": "03.07.2026",
+      "week_number": 27,
+      "athlete_name": "Ole Jørgen Knoph",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "Menn",
+      "class_place": "1",
+      "event_label": "Lofoten Skyrace 2026",
+      "distance": "HOKA Lofoten Skyrace 15 km",
+      "result_time_raw": "1:31:34",
+      "result_time_normalized": "1:31:34",
+      "result_time_seconds": 5494.0,
+      "wa_gender": "M",
+      "wa_event": "HOKA Lofoten Skyrace 15 km",
+      "wa_points": null,
+      "place": "1",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-1164c1387d7a3318",
+      "person_id": "skv-p000200",
+      "person_slug": "maren-mohagen",
+      "published_date": "2026-07-03",
+      "published_date_label": "03.07.2026",
+      "week_number": 27,
+      "athlete_name": "Maren Mohagen",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "Kvinner",
+      "class_place": "27",
+      "event_label": "Lofoten Skyrace 2026",
+      "distance": "HOKA Lofoten Skyrace 15 km",
+      "result_time_raw": "2:11:13",
+      "result_time_normalized": "2:11:13",
+      "result_time_seconds": 7873.0,
+      "wa_gender": "K",
+      "wa_event": "HOKA Lofoten Skyrace 15 km",
+      "wa_points": null,
+      "place": "78",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-95442e46fdf71f50",
+      "person_id": "skv-p000170",
+      "person_slug": "kjersti-simensen",
+      "published_date": "2026-07-03",
+      "published_date_label": "03.07.2026",
+      "week_number": 27,
+      "athlete_name": "Kjersti Simensen",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "Kvinner",
+      "class_place": "68",
+      "event_label": "Lofoten Skyrace 2026",
+      "distance": "HOKA Lofoten Skyrace 15 km",
+      "result_time_raw": "2:29:40",
+      "result_time_normalized": "2:29:40",
+      "result_time_seconds": 8980.0,
+      "wa_gender": "K",
+      "wa_event": "HOKA Lofoten Skyrace 15 km",
+      "wa_points": null,
+      "place": "170",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-1dbe58bd5ba7396c",
+      "person_id": "skv-p000361",
+      "person_slug": "mathias-hansen",
+      "published_date": "2026-07-03",
+      "published_date_label": "03.07.2026",
+      "week_number": 27,
+      "athlete_name": "Mathias Hansen",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "Menn",
+      "class_place": "44",
+      "event_label": "Lofoten Skyrace 2026",
+      "distance": "HOKA Lofoten Skyrace 32 km",
+      "result_time_raw": "4:34:11",
+      "result_time_normalized": "4:34:11",
+      "result_time_seconds": 16451.0,
+      "wa_gender": "M",
+      "wa_event": "HOKA Lofoten Skyrace 32 km",
+      "wa_points": null,
+      "place": "57",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-40e6d9440b34eadd",
+      "person_id": "skv-p000018",
+      "person_slug": "andrea-langmo",
+      "published_date": "2026-07-03",
+      "published_date_label": "03.07.2026",
+      "week_number": 27,
+      "athlete_name": "Andrea Langmo",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "Kvinner",
+      "class_place": "13",
+      "event_label": "Lofoten Skyrace 2026",
+      "distance": "HOKA Lofoten Skyrace 32 km",
+      "result_time_raw": "4:34:19",
+      "result_time_normalized": "4:34:19",
+      "result_time_seconds": 16459.0,
+      "wa_gender": "K",
+      "wa_event": "HOKA Lofoten Skyrace 32 km",
+      "wa_points": null,
+      "place": "59",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-cecfacf7750cabf7",
+      "person_id": "skv-p000478",
+      "person_slug": "asmund-skatvedt",
+      "published_date": "2026-07-03",
+      "published_date_label": "03.07.2026",
+      "week_number": 27,
+      "athlete_name": "Åsmund Skatvedt",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "Menn",
+      "class_place": "4",
+      "event_label": "Lofoten Skyrace 2026",
+      "distance": "HOKA Lofoten Skyrace Marathon",
+      "result_time_raw": "4:41:54",
+      "result_time_normalized": "4:41:54",
+      "result_time_seconds": 16914.0,
+      "wa_gender": "M",
+      "wa_event": "HOKA Lofoten Skyrace Marathon",
+      "wa_points": null,
+      "place": "4",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-7012aa49f82e9def",
+      "person_id": "skv-p000230",
+      "person_slug": "mikkel-trostheim",
+      "published_date": "2026-07-03",
+      "published_date_label": "03.07.2026",
+      "week_number": 27,
+      "athlete_name": "Mikkel Trøstheim",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "Menn",
+      "class_place": "66",
+      "event_label": "Lofoten Skyrace 2026",
+      "distance": "HOKA Lofoten Skyrace 32 km",
+      "result_time_raw": "4:45:12",
+      "result_time_normalized": "4:45:12",
+      "result_time_seconds": 17112.0,
+      "wa_gender": "M",
+      "wa_event": "HOKA Lofoten Skyrace 32 km",
+      "wa_points": null,
+      "place": "87",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-a7fc25dbe3a639d1",
+      "person_id": "skv-p000539",
+      "person_slug": "celine-hakestad",
+      "published_date": "2026-07-03",
+      "published_date_label": "03.07.2026",
+      "week_number": 27,
+      "athlete_name": "Celine Håkestad",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "Kvinner",
+      "class_place": "28",
+      "event_label": "Lofoten Skyrace 2026",
+      "distance": "HOKA Lofoten Skyrace 32 km",
+      "result_time_raw": "4:56:51",
+      "result_time_normalized": "4:56:51",
+      "result_time_seconds": 17811.0,
+      "wa_gender": "K",
+      "wa_event": "HOKA Lofoten Skyrace 32 km",
+      "wa_points": null,
+      "place": "122",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-e0c6297d6bcfbd4d",
+      "person_id": "skv-p000544",
+      "person_slug": "fredrikke-dahle-varsla",
+      "published_date": "2026-07-03",
+      "published_date_label": "03.07.2026",
+      "week_number": 27,
+      "athlete_name": "Fredrikke Dahle Varsla",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "Kvinner",
+      "class_place": "60",
+      "event_label": "Lofoten Skyrace 2026",
+      "distance": "HOKA Lofoten Skyrace 32 km",
+      "result_time_raw": "5:20:45",
+      "result_time_normalized": "5:20:45",
+      "result_time_seconds": 19245.0,
+      "wa_gender": "K",
+      "wa_event": "HOKA Lofoten Skyrace 32 km",
+      "wa_points": null,
+      "place": "200",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-d550fac80e5ec7dc",
+      "person_id": "skv-p000543",
+      "person_slug": "eskil-hostad",
+      "published_date": "2026-07-03",
+      "published_date_label": "03.07.2026",
+      "week_number": 27,
+      "athlete_name": "Eskil Høstad",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "Menn",
+      "class_place": "209",
+      "event_label": "Lofoten Skyrace 2026",
+      "distance": "HOKA Lofoten Skyrace 32 km",
+      "result_time_raw": "6:03:46",
+      "result_time_normalized": "6:03:46",
+      "result_time_seconds": 21826.0,
+      "wa_gender": "M",
+      "wa_event": "HOKA Lofoten Skyrace 32 km",
+      "wa_points": null,
+      "place": "350",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-0f215f0024129c4a",
+      "person_id": "skv-p000236",
+      "person_slug": "nicolai-lujan-foss",
+      "published_date": "2026-07-03",
+      "published_date_label": "03.07.2026",
+      "week_number": 27,
+      "athlete_name": "Nicolai Lujan Foss",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "Menn",
+      "class_place": "67",
+      "event_label": "Lofoten Skyrace 2026",
+      "distance": "HOKA Lofoten Skyrace Marathon",
+      "result_time_raw": "6:38:08",
+      "result_time_normalized": "6:38:08",
+      "result_time_seconds": 23888.0,
+      "wa_gender": "M",
+      "wa_event": "HOKA Lofoten Skyrace Marathon",
+      "wa_points": null,
+      "place": "99",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-f53e915e22bc54d6",
+      "person_id": "skv-p000540",
+      "person_slug": "erik-sorensen",
+      "published_date": "2026-07-03",
+      "published_date_label": "03.07.2026",
+      "week_number": 27,
+      "athlete_name": "Erik Sørensen",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "Menn",
+      "class_place": "104",
+      "event_label": "Lofoten Skyrace 2026",
+      "distance": "HOKA Lofoten Skyrace Marathon",
+      "result_time_raw": "7:06:19",
+      "result_time_normalized": "7:06:19",
+      "result_time_seconds": 25579.0,
+      "wa_gender": "M",
+      "wa_event": "HOKA Lofoten Skyrace Marathon",
+      "wa_points": null,
+      "place": "153",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-938b94711bd27b5d",
+      "person_id": "skv-p000408",
+      "person_slug": "celine-nordstaa",
+      "published_date": "2026-07-03",
+      "published_date_label": "03.07.2026",
+      "week_number": 27,
+      "athlete_name": "Celine Nordstaa",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "Kvinner",
+      "class_place": "321",
+      "event_label": "Lofoten Skyrace 2026",
+      "distance": "HOKA Lofoten Skyrace 32 km",
+      "result_time_raw": "7:42:27",
+      "result_time_normalized": "7:42:27",
+      "result_time_seconds": 27747.0,
+      "wa_gender": "K",
+      "wa_event": "HOKA Lofoten Skyrace 32 km",
+      "wa_points": null,
+      "place": "657",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-b2d12e20473dbec5",
+      "person_id": "skv-p000541",
+      "person_slug": "erlend-helgesen",
+      "published_date": "2026-07-03",
+      "published_date_label": "03.07.2026",
+      "week_number": 27,
+      "athlete_name": "Erlend Helgesen",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "Menn",
+      "class_place": "290",
+      "event_label": "Lofoten Skyrace 2026",
+      "distance": "HOKA Lofoten Skyrace Marathon",
+      "result_time_raw": "DNS",
+      "result_time_normalized": "DNS",
+      "result_time_seconds": null,
+      "wa_gender": "M",
+      "wa_event": "HOKA Lofoten Skyrace Marathon",
+      "wa_points": null,
+      "place": "469",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-86f7745019c1457b",
+      "person_id": "skv-p000187",
+      "person_slug": "lisbeth-pedersen",
+      "published_date": "2026-07-03",
+      "published_date_label": "03.07.2026",
+      "week_number": 27,
+      "athlete_name": "Lisbeth Pedersen",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "W50",
+      "class_place": "",
+      "event_label": "Nordisk mesterskap i friidrett for masters 2026",
+      "distance": "WV 800 Meters (W50,W55)",
+      "result_time_raw": "2:32.43",
+      "result_time_normalized": "2:32.43",
+      "result_time_seconds": 152.43,
+      "wa_gender": "K",
+      "wa_event": "WV 800 Meters (W50,W55)",
+      "wa_points": null,
+      "place": "1",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-d294b9a9fa6b166a",
+      "person_id": "skv-p000143",
+      "person_slug": "jessica-gunnarsson",
+      "published_date": "2026-07-03",
+      "published_date_label": "03.07.2026",
+      "week_number": 27,
+      "athlete_name": "Jessica Gunnarsson",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "W50",
+      "class_place": "",
+      "event_label": "Nordisk mesterskap i friidrett for masters 2026",
+      "distance": "WV 800 Meters (W50,W55)",
+      "result_time_raw": "2:33.97",
+      "result_time_normalized": "2:33.97",
+      "result_time_seconds": 153.97,
+      "wa_gender": "K",
+      "wa_event": "WV 800 Meters (W50,W55)",
+      "wa_points": null,
+      "place": "2",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-f48f70909b4055c0",
+      "person_id": "skv-p000283",
+      "person_slug": "simen-hagerup-kjeldsen",
+      "published_date": "2026-07-03",
+      "published_date_label": "03.07.2026",
+      "week_number": 27,
+      "athlete_name": "Simen Hagerup Kjeldsen",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M40",
+      "class_place": "",
+      "event_label": "Nordisk mesterskap i friidrett for masters 2026",
+      "distance": "MV 1500 Meters (M35-M50)",
+      "result_time_raw": "5:14.77",
+      "result_time_normalized": "5:14.77",
+      "result_time_seconds": 314.77,
+      "wa_gender": "M",
+      "wa_event": "MV 1500 Meters (M35-M50)",
+      "wa_points": null,
+      "place": "12",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-0f0d11e3a9338811",
+      "person_id": "skv-p000187",
+      "person_slug": "lisbeth-pedersen",
+      "published_date": "2026-07-03",
+      "published_date_label": "03.07.2026",
+      "week_number": 27,
+      "athlete_name": "Lisbeth Pedersen",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "W50",
+      "class_place": "",
+      "event_label": "Nordisk mesterskap i friidrett for masters 2026",
+      "distance": "WV 5000 Meters (W35-W80)",
+      "result_time_raw": "18:41.99",
+      "result_time_normalized": "18:41.99",
+      "result_time_seconds": 1121.99,
+      "wa_gender": "K",
+      "wa_event": "WV 5000 Meters (W35-W80)",
+      "wa_points": null,
+      "place": "2",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-5e047bea8cbf37e3",
+      "person_id": "skv-p000143",
+      "person_slug": "jessica-gunnarsson",
+      "published_date": "2026-07-03",
+      "published_date_label": "03.07.2026",
+      "week_number": 27,
+      "athlete_name": "Jessica Gunnarsson",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "W50",
+      "class_place": "",
+      "event_label": "Nordisk mesterskap i friidrett for masters 2026",
+      "distance": "WV 5000 Meters (W35-W80)",
+      "result_time_raw": "18:50.42",
+      "result_time_normalized": "18:50.42",
+      "result_time_seconds": 1130.42,
+      "wa_gender": "K",
+      "wa_event": "WV 5000 Meters (W35-W80)",
+      "wa_points": null,
+      "place": "4",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-a0883ec080769c0f",
+      "person_id": "skv-p000221",
+      "person_slug": "martin-kjall-ohlsson",
+      "published_date": "2026-07-03",
+      "published_date_label": "03.07.2026",
+      "week_number": 27,
+      "athlete_name": "Martin Kjäll-Ohlsson",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M45",
+      "class_place": "",
+      "event_label": "Nordisk mesterskap i friidrett for masters 2026",
+      "distance": "MV 10000 Meters (M35-M60, M70-M80)",
+      "result_time_raw": "33:48.77",
+      "result_time_normalized": "33:48.77",
+      "result_time_seconds": 2028.77,
+      "wa_gender": "M",
+      "wa_event": "MV 10000 Meters (M35-M60, M70-M80)",
+      "wa_points": null,
+      "place": "3",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-f77c44db0a09de9d",
+      "person_id": "skv-p000315",
+      "person_slug": "sven-thelin",
+      "published_date": "2026-07-03",
+      "published_date_label": "03.07.2026",
+      "week_number": 27,
+      "athlete_name": "Sven Thelin",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M55",
+      "class_place": "",
+      "event_label": "Nordisk mesterskap i friidrett for masters 2026",
+      "distance": "MV 10000 Meters (M35-M60, M70-M80)",
+      "result_time_raw": "37:46.04",
+      "result_time_normalized": "37:46.04",
+      "result_time_seconds": 2266.04,
+      "wa_gender": "M",
+      "wa_event": "MV 10000 Meters (M35-M60, M70-M80)",
+      "wa_points": null,
+      "place": "9",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-c6a0e867753e52b8",
+      "person_id": "skv-p000144",
+      "person_slug": "jo-trieu-soreide",
+      "published_date": "2026-07-03",
+      "published_date_label": "03.07.2026",
+      "week_number": 27,
+      "athlete_name": "Jo Trieu Søreide",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M50",
+      "class_place": "",
+      "event_label": "Nordisk mesterskap i friidrett for masters 2026",
+      "distance": "MV 10000 Meters (M35-M60, M70-M80)",
+      "result_time_raw": "49:17.89",
+      "result_time_normalized": "49:17.89",
+      "result_time_seconds": 2957.89,
+      "wa_gender": "M",
+      "wa_event": "MV 10000 Meters (M35-M60, M70-M80)",
+      "wa_points": null,
+      "place": "14",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-cd6e15c1a8b5cc51",
+      "person_id": "skv-p000221",
+      "person_slug": "martin-kjall-ohlsson",
+      "published_date": "2026-07-03",
+      "published_date_label": "03.07.2026",
+      "week_number": 27,
+      "athlete_name": "Martin Kjäll-Ohlsson",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M45",
+      "class_place": "",
+      "event_label": "Nordisk mesterskap i friidrett for masters 2026 - fredag",
+      "distance": "MV 5000 Meters (M35-M55):",
+      "result_time_raw": "16:18.82",
+      "result_time_normalized": "16:18.82",
+      "result_time_seconds": 978.82,
+      "wa_gender": "M",
+      "wa_event": "MV 5000 Meters (M35-M55):",
+      "wa_points": null,
+      "place": "3",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-d3ad0b57f11c03de",
+      "person_id": "skv-p000315",
+      "person_slug": "sven-thelin",
+      "published_date": "2026-07-03",
+      "published_date_label": "03.07.2026",
+      "week_number": 27,
+      "athlete_name": "Sven Thelin",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M55",
+      "class_place": "",
+      "event_label": "Nordisk mesterskap i friidrett for masters 2026 - fredag",
+      "distance": "MV 5000 Meters (M35-M55):",
+      "result_time_raw": "17:52.56",
+      "result_time_normalized": "17:52.56",
+      "result_time_seconds": 1072.56,
+      "wa_gender": "M",
+      "wa_event": "MV 5000 Meters (M35-M55):",
+      "wa_points": null,
+      "place": "7",
+      "notes_clean": "",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-58e7189356953423",
+      "person_id": "skv-p000283",
+      "person_slug": "simen-hagerup-kjeldsen",
+      "published_date": "2026-07-03",
+      "published_date_label": "03.07.2026",
+      "week_number": 27,
+      "athlete_name": "Simen Hagerup Kjeldsen",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M40",
+      "class_place": "",
+      "event_label": "Nordisk mesterskap i friidrett for masters 2026 - fredag",
+      "distance": "MV 5000 Meters (M35-M55):",
+      "result_time_raw": "19:50.73",
+      "result_time_normalized": "19:50.73",
+      "result_time_seconds": 1190.73,
+      "wa_gender": "M",
+      "wa_event": "MV 5000 Meters (M35-M55):",
+      "wa_points": null,
+      "place": "10",
+      "notes_clean": "",
       "split_first_label": "",
       "split_first_display": "",
       "split_second_label": "",
@@ -4613,35 +5549,6 @@
       "split_state": ""
     },
     {
-      "result_id": "res-dd084a37ac8490c2",
-      "person_id": "skv-p000346",
-      "person_slug": "vilde-vage-henriksen",
-      "published_date": "2026-06-20",
-      "published_date_label": "20.06.2026",
-      "week_number": 25,
-      "athlete_name": "Vilde Våge Henriksen",
-      "gender": "K",
-      "gender_label": "Kvinner",
-      "class_name": "Kvinner",
-      "class_place": "",
-      "event_label": "Track Night Vienna 2026",
-      "distance": "3000 m hinder",
-      "result_time_raw": "9:40.58",
-      "result_time_normalized": "9:40.58",
-      "result_time_seconds": 580.58,
-      "wa_gender": "",
-      "wa_event": "",
-      "wa_points": null,
-      "place": "3",
-      "notes_clean": "PB",
-      "split_first_label": "",
-      "split_first_display": "",
-      "split_second_label": "",
-      "split_second_display": "",
-      "split_delta_display": "",
-      "split_state": ""
-    },
-    {
       "result_id": "res-6c90a576bc875312",
       "person_id": "skv-p000029",
       "person_slug": "anna-marie-sirevag",
@@ -4663,6 +5570,35 @@
       "wa_points": null,
       "place": "12",
       "notes_clean": "PB, norsk U23-rekord",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-dd084a37ac8490c2",
+      "person_id": "skv-p000346",
+      "person_slug": "vilde-vage-henriksen",
+      "published_date": "2026-06-20",
+      "published_date_label": "20.06.2026",
+      "week_number": 25,
+      "athlete_name": "Vilde Våge Henriksen",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "Kvinner",
+      "class_place": "",
+      "event_label": "Track Night Vienna 2026",
+      "distance": "3000 m hinder",
+      "result_time_raw": "9:40.58",
+      "result_time_normalized": "9:40.58",
+      "result_time_seconds": 580.58,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "3",
+      "notes_clean": "PB",
       "split_first_label": "",
       "split_first_display": "",
       "split_second_label": "",
@@ -16242,6 +17178,122 @@
       "split_state": ""
     },
     {
+      "result_id": "res-a3d256acf534a237",
+      "person_id": "skv-p000237",
+      "person_slug": "nicolay-andersen",
+      "published_date": "2026-05-15",
+      "published_date_label": "15.05.2026",
+      "week_number": 20,
+      "athlete_name": "Nicolay Andersen",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M åpen",
+      "class_place": "1",
+      "event_label": "Bislettmila 2026",
+      "distance": "5000 m",
+      "result_time_raw": "14:17.40",
+      "result_time_normalized": "14:17.40",
+      "result_time_seconds": 857.4,
+      "wa_gender": "M",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "1",
+      "notes_clean": "elite",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-09019bcacc247f47",
+      "person_id": "skv-p000145",
+      "person_slug": "joakim-mohn",
+      "published_date": "2026-05-15",
+      "published_date_label": "15.05.2026",
+      "week_number": 20,
+      "athlete_name": "Joakim Mohn",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M åpen",
+      "class_place": "2",
+      "event_label": "Bislettmila 2026",
+      "distance": "5000 m",
+      "result_time_raw": "14:18.20",
+      "result_time_normalized": "14:18.20",
+      "result_time_seconds": 858.2,
+      "wa_gender": "M",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "2",
+      "notes_clean": "elite",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-4df4ddbf1066f8f9",
+      "person_id": "skv-p000252",
+      "person_slug": "ole-jorgen-knoph",
+      "published_date": "2026-05-15",
+      "published_date_label": "15.05.2026",
+      "week_number": 20,
+      "athlete_name": "Ole Jørgen Knoph",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M åpen",
+      "class_place": "6",
+      "event_label": "Bislettmila 2026",
+      "distance": "5000 m",
+      "result_time_raw": "15:33.20",
+      "result_time_normalized": "15:33.20",
+      "result_time_seconds": 933.2,
+      "wa_gender": "M",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "6",
+      "notes_clean": "elite",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-e7686894b317d7bc",
+      "person_id": "skv-p000225",
+      "person_slug": "matias-brekka",
+      "published_date": "2026-05-15",
+      "published_date_label": "15.05.2026",
+      "week_number": 20,
+      "athlete_name": "Matias Brekkå",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "M åpen",
+      "class_place": "7",
+      "event_label": "Bislettmila 2026",
+      "distance": "5000 m",
+      "result_time_raw": "15:35.20",
+      "result_time_normalized": "15:35.20",
+      "result_time_seconds": 935.2,
+      "wa_gender": "M",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "7",
+      "notes_clean": "elite",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
       "result_id": "res-4e86743259bf7648",
       "person_id": "skv-p000265",
       "person_slug": "riley-mcgown",
@@ -16959,122 +18011,6 @@
       "wa_points": 65.0,
       "place": "19",
       "notes_clean": "heat 1",
-      "split_first_label": "",
-      "split_first_display": "",
-      "split_second_label": "",
-      "split_second_display": "",
-      "split_delta_display": "",
-      "split_state": ""
-    },
-    {
-      "result_id": "res-a3d256acf534a237",
-      "person_id": "skv-p000237",
-      "person_slug": "nicolay-andersen",
-      "published_date": "2026-05-15",
-      "published_date_label": "15.05.2026",
-      "week_number": 20,
-      "athlete_name": "Nicolay Andersen",
-      "gender": "M",
-      "gender_label": "Menn",
-      "class_name": "M åpen",
-      "class_place": "1",
-      "event_label": "Bislettmila 2026",
-      "distance": "5000 m",
-      "result_time_raw": "14:17.40",
-      "result_time_normalized": "14:17.40",
-      "result_time_seconds": 857.4,
-      "wa_gender": "M",
-      "wa_event": "",
-      "wa_points": null,
-      "place": "1",
-      "notes_clean": "elite",
-      "split_first_label": "",
-      "split_first_display": "",
-      "split_second_label": "",
-      "split_second_display": "",
-      "split_delta_display": "",
-      "split_state": ""
-    },
-    {
-      "result_id": "res-09019bcacc247f47",
-      "person_id": "skv-p000145",
-      "person_slug": "joakim-mohn",
-      "published_date": "2026-05-15",
-      "published_date_label": "15.05.2026",
-      "week_number": 20,
-      "athlete_name": "Joakim Mohn",
-      "gender": "M",
-      "gender_label": "Menn",
-      "class_name": "M åpen",
-      "class_place": "2",
-      "event_label": "Bislettmila 2026",
-      "distance": "5000 m",
-      "result_time_raw": "14:18.20",
-      "result_time_normalized": "14:18.20",
-      "result_time_seconds": 858.2,
-      "wa_gender": "M",
-      "wa_event": "",
-      "wa_points": null,
-      "place": "2",
-      "notes_clean": "elite",
-      "split_first_label": "",
-      "split_first_display": "",
-      "split_second_label": "",
-      "split_second_display": "",
-      "split_delta_display": "",
-      "split_state": ""
-    },
-    {
-      "result_id": "res-4df4ddbf1066f8f9",
-      "person_id": "skv-p000252",
-      "person_slug": "ole-jorgen-knoph",
-      "published_date": "2026-05-15",
-      "published_date_label": "15.05.2026",
-      "week_number": 20,
-      "athlete_name": "Ole Jørgen Knoph",
-      "gender": "M",
-      "gender_label": "Menn",
-      "class_name": "M åpen",
-      "class_place": "6",
-      "event_label": "Bislettmila 2026",
-      "distance": "5000 m",
-      "result_time_raw": "15:33.20",
-      "result_time_normalized": "15:33.20",
-      "result_time_seconds": 933.2,
-      "wa_gender": "M",
-      "wa_event": "",
-      "wa_points": null,
-      "place": "6",
-      "notes_clean": "elite",
-      "split_first_label": "",
-      "split_first_display": "",
-      "split_second_label": "",
-      "split_second_display": "",
-      "split_delta_display": "",
-      "split_state": ""
-    },
-    {
-      "result_id": "res-e7686894b317d7bc",
-      "person_id": "skv-p000225",
-      "person_slug": "matias-brekka",
-      "published_date": "2026-05-15",
-      "published_date_label": "15.05.2026",
-      "week_number": 20,
-      "athlete_name": "Matias Brekkå",
-      "gender": "M",
-      "gender_label": "Menn",
-      "class_name": "M åpen",
-      "class_place": "7",
-      "event_label": "Bislettmila 2026",
-      "distance": "5000 m",
-      "result_time_raw": "15:35.20",
-      "result_time_normalized": "15:35.20",
-      "result_time_seconds": 935.2,
-      "wa_gender": "M",
-      "wa_event": "",
-      "wa_points": null,
-      "place": "7",
-      "notes_clean": "elite",
       "split_first_label": "",
       "split_first_display": "",
       "split_second_label": "",
@@ -39286,10 +40222,241 @@
           "published_date_label": "13.06.2026"
         }
       ]
+    },
+    {
+      "distance": "5000 m",
+      "women": [
+        {
+          "distance": "5000 m",
+          "source_distance": "5000 m",
+          "gender": "K",
+          "gender_label": "Kvinner",
+          "rank": 1,
+          "person_id": "skv-p000126",
+          "person_slug": "ilona-mononen",
+          "result_id": "res-98a0a3a4b7a75845",
+          "athlete_name": "Ilona Mononen",
+          "result_time": "15:04.48",
+          "result_time_seconds": 904.48,
+          "event_label": "IFAM Outdoor Brussels 2026",
+          "published_date": "2026-05-23",
+          "published_date_label": "23.05.2026"
+        },
+        {
+          "distance": "5000 m",
+          "source_distance": "5000 m",
+          "gender": "K",
+          "gender_label": "Kvinner",
+          "rank": 2,
+          "person_id": "skv-p000029",
+          "person_slug": "anna-marie-sirevag",
+          "result_id": "res-6c90a576bc875312",
+          "athlete_name": "Anna Marie Sirevåg",
+          "result_time": "15:23.39",
+          "result_time_seconds": 923.39,
+          "event_label": "Track Night Vienna 2026",
+          "published_date": "2026-06-20",
+          "published_date_label": "20.06.2026"
+        },
+        {
+          "distance": "5000 m",
+          "source_distance": "5000 m",
+          "gender": "K",
+          "gender_label": "Kvinner",
+          "rank": 3,
+          "person_id": "skv-p000012",
+          "person_slug": "amalie-saeten",
+          "result_id": "res-662efc6aaeaeaaba",
+          "athlete_name": "Amalie Sæten",
+          "result_time": "15:24.50",
+          "result_time_seconds": 924.5,
+          "event_label": "IFAM Outdoor Brussels 2026",
+          "published_date": "2026-05-23",
+          "published_date_label": "23.05.2026"
+        },
+        {
+          "distance": "5000 m",
+          "source_distance": "5000 m",
+          "gender": "K",
+          "gender_label": "Kvinner",
+          "rank": 4,
+          "person_id": "skv-p000193",
+          "person_slug": "madelene-wanvik-holum",
+          "result_id": "res-f45765f568404f5b",
+          "athlete_name": "Madelène Wanvik Holum",
+          "result_time": "15:35.70",
+          "result_time_seconds": 935.7,
+          "event_label": "The Pursuit 5000m",
+          "published_date": "2026-07-04",
+          "published_date_label": "04.07.2026"
+        },
+        {
+          "distance": "5000 m",
+          "source_distance": "5000 m",
+          "gender": "K",
+          "gender_label": "Kvinner",
+          "rank": 5,
+          "person_id": "skv-p000188",
+          "person_slug": "liselotte-farstad",
+          "result_id": "res-c007b059699d5b39",
+          "athlete_name": "Liselotte Farstad",
+          "result_time": "18:24.5",
+          "result_time_seconds": 1104.5,
+          "event_label": "Løperådet Friday Night Lights 2026",
+          "published_date": "2026-06-26",
+          "published_date_label": "26.06.2026"
+        },
+        {
+          "distance": "5000 m",
+          "source_distance": "5000 m",
+          "gender": "K",
+          "gender_label": "Kvinner",
+          "rank": 6,
+          "person_id": "skv-p000187",
+          "person_slug": "lisbeth-pedersen",
+          "result_id": "res-f11762dbd86fe2c9",
+          "athlete_name": "Lisbeth Pedersen",
+          "result_time": "19:04.7",
+          "result_time_seconds": 1144.7,
+          "event_label": "Bislett Open 2026",
+          "published_date": "2026-06-20",
+          "published_date_label": "20.06.2026"
+        }
+      ],
+      "men": [
+        {
+          "distance": "5000 m",
+          "source_distance": "5000 m",
+          "gender": "M",
+          "gender_label": "Menn",
+          "rank": 1,
+          "person_id": "skv-p000304",
+          "person_slug": "sondre-nordstad-moen",
+          "result_id": "res-159371db8fce045e",
+          "athlete_name": "Sondre Nordstad Moen",
+          "result_time": "13:37.32",
+          "result_time_seconds": 817.32,
+          "event_label": "Boysen Memorial 2026",
+          "published_date": "2026-06-24",
+          "published_date_label": "24.06.2026"
+        },
+        {
+          "distance": "5000 m",
+          "source_distance": "5000 m",
+          "gender": "M",
+          "gender_label": "Menn",
+          "rank": 2,
+          "person_id": "skv-p000237",
+          "person_slug": "nicolay-andersen",
+          "result_id": "res-a3d256acf534a237",
+          "athlete_name": "Nicolay Andersen",
+          "result_time": "14:17.40",
+          "result_time_seconds": 857.4,
+          "event_label": "Bislettmila 2026",
+          "published_date": "2026-05-15",
+          "published_date_label": "15.05.2026"
+        },
+        {
+          "distance": "5000 m",
+          "source_distance": "5000 m",
+          "gender": "M",
+          "gender_label": "Menn",
+          "rank": 3,
+          "person_id": "skv-p000145",
+          "person_slug": "joakim-mohn",
+          "result_id": "res-09019bcacc247f47",
+          "athlete_name": "Joakim Mohn",
+          "result_time": "14:18.20",
+          "result_time_seconds": 858.2,
+          "event_label": "Bislettmila 2026",
+          "published_date": "2026-05-15",
+          "published_date_label": "15.05.2026"
+        },
+        {
+          "distance": "5000 m",
+          "source_distance": "5000 m",
+          "gender": "M",
+          "gender_label": "Menn",
+          "rank": 4,
+          "person_id": "skv-p000302",
+          "person_slug": "sondre-lomeland",
+          "result_id": "res-8d8d6b701267b7a4",
+          "athlete_name": "Sondre Lomeland",
+          "result_time": "15:01.41",
+          "result_time_seconds": 901.41,
+          "event_label": "Boysen Memorial 2026",
+          "published_date": "2026-06-24",
+          "published_date_label": "24.06.2026"
+        },
+        {
+          "distance": "5000 m",
+          "source_distance": "5000 m",
+          "gender": "M",
+          "gender_label": "Menn",
+          "rank": 5,
+          "person_id": "skv-p000252",
+          "person_slug": "ole-jorgen-knoph",
+          "result_id": "res-4df4ddbf1066f8f9",
+          "athlete_name": "Ole Jørgen Knoph",
+          "result_time": "15:33.20",
+          "result_time_seconds": 933.2,
+          "event_label": "Bislettmila 2026",
+          "published_date": "2026-05-15",
+          "published_date_label": "15.05.2026"
+        },
+        {
+          "distance": "5000 m",
+          "source_distance": "5000 m",
+          "gender": "M",
+          "gender_label": "Menn",
+          "rank": 6,
+          "person_id": "skv-p000225",
+          "person_slug": "matias-brekka",
+          "result_id": "res-e7686894b317d7bc",
+          "athlete_name": "Matias Brekkå",
+          "result_time": "15:35.20",
+          "result_time_seconds": 935.2,
+          "event_label": "Bislettmila 2026",
+          "published_date": "2026-05-15",
+          "published_date_label": "15.05.2026"
+        },
+        {
+          "distance": "5000 m",
+          "source_distance": "5000 m",
+          "gender": "M",
+          "gender_label": "Menn",
+          "rank": 7,
+          "person_id": "skv-p000315",
+          "person_slug": "sven-thelin",
+          "result_id": "res-2b9b491a33a2f7f6",
+          "athlete_name": "Sven Thelin",
+          "result_time": "18:10.43",
+          "result_time_seconds": 1090.43,
+          "event_label": "Stockholm 5000m",
+          "published_date": "2026-05-23",
+          "published_date_label": "23.05.2026"
+        },
+        {
+          "distance": "5000 m",
+          "source_distance": "5000 m",
+          "gender": "M",
+          "gender_label": "Menn",
+          "rank": 8,
+          "person_id": "skv-p000383",
+          "person_slug": "daniel-espedokken-severinsen",
+          "result_id": "res-79ac5d5094eb7e3f",
+          "athlete_name": "Daniel Espedokken Severinsen",
+          "result_time": "19:45.9",
+          "result_time_seconds": 1185.9,
+          "event_label": "Bislett Open 2026",
+          "published_date": "2026-06-20",
+          "published_date_label": "20.06.2026"
+        }
+      ]
     }
   ],
   "people": {
-    "profile_count": 472,
+    "profile_count": 480,
     "profiles": [
       {
         "person_id": "skv-p000001",
@@ -39475,6 +40642,34 @@
         ],
         "first_result_date": "2026-03-01",
         "latest_result_date": "2026-06-27"
+      },
+      {
+        "person_id": "skv-p000537",
+        "profile_slug": "albert-bolstad",
+        "display_name": "Albert Bolstad",
+        "gender": "M",
+        "gender_label": "Menn",
+        "result_count": 1,
+        "distances": [
+          "Halvmaraton"
+        ],
+        "best_results": [
+          {
+            "result_id": "res-9794b89f938b503c",
+            "distance": "Halvmaraton",
+            "source_distance": "Halvmaraton",
+            "result_time": "2:30:39",
+            "result_time_seconds": 9039.0,
+            "event_label": "Unionsmarathon 2026",
+            "published_date": "2026-07-04",
+            "published_date_label": "04.07.2026",
+            "week_number": 27,
+            "place": "77",
+            "class_place": "1"
+          }
+        ],
+        "first_result_date": "2026-07-04",
+        "latest_result_date": "2026-07-04"
       },
       {
         "person_id": "skv-p000007",
@@ -39724,9 +40919,9 @@
         "result_count": 6,
         "distances": [
           "3000 m",
+          "5000 m",
           "5 km",
-          "10 km",
-          "5000 m"
+          "10 km"
         ],
         "best_results": [
           {
@@ -39740,6 +40935,19 @@
             "published_date_label": "15.05.2026",
             "week_number": 20,
             "place": "2",
+            "class_place": ""
+          },
+          {
+            "result_id": "res-662efc6aaeaeaaba",
+            "distance": "5000 m",
+            "source_distance": "5000 m",
+            "result_time": "15:24.50",
+            "result_time_seconds": 924.5,
+            "event_label": "IFAM Outdoor Brussels 2026",
+            "published_date": "2026-05-23",
+            "published_date_label": "23.05.2026",
+            "week_number": 21,
+            "place": "16",
             "class_place": ""
           },
           {
@@ -40002,10 +41210,11 @@
         "display_name": "Andrea Langmo",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 2,
+        "result_count": 3,
         "distances": [
           "5 km",
-          "10000 m"
+          "10000 m",
+          "HOKA Lofoten Skyrace 32 km"
         ],
         "best_results": [
           {
@@ -40023,7 +41232,7 @@
           }
         ],
         "first_result_date": "2026-03-01",
-        "latest_result_date": "2026-05-15"
+        "latest_result_date": "2026-07-03"
       },
       {
         "person_id": "skv-p000019",
@@ -40487,10 +41696,10 @@
         "distances": [
           "1500 m",
           "3000 m",
+          "5000 m",
           "5 km",
           "10 km",
-          "10000 m",
-          "5000 m"
+          "10000 m"
         ],
         "best_results": [
           {
@@ -40517,6 +41726,19 @@
             "published_date_label": "14.06.2026",
             "week_number": 24,
             "place": "5",
+            "class_place": ""
+          },
+          {
+            "result_id": "res-6c90a576bc875312",
+            "distance": "5000 m",
+            "source_distance": "5000 m",
+            "result_time": "15:23.39",
+            "result_time_seconds": 923.39,
+            "event_label": "Track Night Vienna 2026",
+            "published_date": "2026-06-20",
+            "published_date_label": "20.06.2026",
+            "week_number": 25,
+            "place": "12",
             "class_place": ""
           },
           {
@@ -40760,6 +41982,20 @@
         "latest_result_date": "2026-06-13"
       },
       {
+        "person_id": "skv-p000538",
+        "profile_slug": "anniken-holst-berger",
+        "display_name": "Anniken Holst-Berger",
+        "gender": "K",
+        "gender_label": "Kvinner",
+        "result_count": 1,
+        "distances": [
+          "5 km kvinner"
+        ],
+        "best_results": [],
+        "first_result_date": "2026-07-04",
+        "latest_result_date": "2026-07-04"
+      },
+      {
         "person_id": "skv-p000499",
         "profile_slug": "anniken-sletta",
         "display_name": "Anniken Sletta",
@@ -40937,13 +42173,14 @@
         "display_name": "Åsmund Skatvedt",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
-          "21,1 km"
+          "21,1 km",
+          "HOKA Lofoten Skyrace Marathon"
         ],
         "best_results": [],
         "first_result_date": "2026-06-13",
-        "latest_result_date": "2026-06-13"
+        "latest_result_date": "2026-07-03"
       },
       {
         "person_id": "skv-p000363",
@@ -41610,14 +42847,29 @@
         "latest_result_date": "2026-06-13"
       },
       {
+        "person_id": "skv-p000539",
+        "profile_slug": "celine-hakestad",
+        "display_name": "Celine Håkestad",
+        "gender": "K",
+        "gender_label": "Kvinner",
+        "result_count": 1,
+        "distances": [
+          "HOKA Lofoten Skyrace 32 km"
+        ],
+        "best_results": [],
+        "first_result_date": "2026-07-03",
+        "latest_result_date": "2026-07-03"
+      },
+      {
         "person_id": "skv-p000408",
         "profile_slug": "celine-nordstaa",
         "display_name": "Celine Nordstaa",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 2,
+        "result_count": 3,
         "distances": [
-          "Halvmaraton"
+          "Halvmaraton",
+          "HOKA Lofoten Skyrace 32 km"
         ],
         "best_results": [
           {
@@ -41635,7 +42887,7 @@
           }
         ],
         "first_result_date": "2026-05-23",
-        "latest_result_date": "2026-06-06"
+        "latest_result_date": "2026-07-03"
       },
       {
         "person_id": "skv-p000045",
@@ -41913,9 +43165,10 @@
         "display_name": "Constantin Rust *",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 4,
+        "result_count": 5,
         "distances": [
           "10 km",
+          "38 km",
           "Fyr til Fyr Konkurranse",
           "Trail 31 km"
         ],
@@ -41935,7 +43188,7 @@
           }
         ],
         "first_result_date": "2026-04-11",
-        "latest_result_date": "2026-06-20"
+        "latest_result_date": "2026-07-04"
       },
       {
         "person_id": "skv-p000052",
@@ -41973,11 +43226,24 @@
         "gender_label": "Menn",
         "result_count": 4,
         "distances": [
+          "5000 m",
           "5 km",
-          "10 km",
-          "5000 m"
+          "10 km"
         ],
         "best_results": [
+          {
+            "result_id": "res-79ac5d5094eb7e3f",
+            "distance": "5000 m",
+            "source_distance": "5000 m",
+            "result_time": "19:45.9",
+            "result_time_seconds": 1185.9,
+            "event_label": "Bislett Open 2026",
+            "published_date": "2026-06-20",
+            "published_date_label": "20.06.2026",
+            "week_number": 25,
+            "place": "12",
+            "class_place": "3"
+          },
           {
             "result_id": "res-2785513c6f8213f5",
             "distance": "5 km",
@@ -42886,6 +44152,20 @@
         "latest_result_date": "2026-06-27"
       },
       {
+        "person_id": "skv-p000540",
+        "profile_slug": "erik-sorensen",
+        "display_name": "Erik Sørensen",
+        "gender": "M",
+        "gender_label": "Menn",
+        "result_count": 1,
+        "distances": [
+          "HOKA Lofoten Skyrace Marathon"
+        ],
+        "best_results": [],
+        "first_result_date": "2026-07-03",
+        "latest_result_date": "2026-07-03"
+      },
+      {
         "person_id": "skv-p000393",
         "profile_slug": "erlend-berger",
         "display_name": "Erlend Berger",
@@ -43014,6 +44294,20 @@
         "latest_result_date": "2026-04-26"
       },
       {
+        "person_id": "skv-p000541",
+        "profile_slug": "erlend-helgesen",
+        "display_name": "Erlend Helgesen",
+        "gender": "M",
+        "gender_label": "Menn",
+        "result_count": 1,
+        "distances": [
+          "HOKA Lofoten Skyrace Marathon"
+        ],
+        "best_results": [],
+        "first_result_date": "2026-07-03",
+        "latest_result_date": "2026-07-03"
+      },
+      {
         "person_id": "skv-p000077",
         "profile_slug": "erlend-hellum",
         "display_name": "Erlend Hellum",
@@ -43068,6 +44362,20 @@
         ],
         "first_result_date": "2026-02-08",
         "latest_result_date": "2026-05-23"
+      },
+      {
+        "person_id": "skv-p000542",
+        "profile_slug": "erlend-holst-berger",
+        "display_name": "Erlend Holst-Berger",
+        "gender": "M",
+        "gender_label": "Menn",
+        "result_count": 1,
+        "distances": [
+          "10 km menn, topp 100"
+        ],
+        "best_results": [],
+        "first_result_date": "2026-07-04",
+        "latest_result_date": "2026-07-04"
       },
       {
         "person_id": "skv-p000078",
@@ -43237,6 +44545,20 @@
         ],
         "first_result_date": "2026-03-21",
         "latest_result_date": "2026-06-27"
+      },
+      {
+        "person_id": "skv-p000543",
+        "profile_slug": "eskil-hostad",
+        "display_name": "Eskil Høstad",
+        "gender": "M",
+        "gender_label": "Menn",
+        "result_count": 1,
+        "distances": [
+          "HOKA Lofoten Skyrace 32 km"
+        ],
+        "best_results": [],
+        "first_result_date": "2026-07-03",
+        "latest_result_date": "2026-07-03"
       },
       {
         "person_id": "skv-p000083",
@@ -43703,6 +45025,20 @@
         ],
         "first_result_date": "2026-03-01",
         "latest_result_date": "2026-06-13"
+      },
+      {
+        "person_id": "skv-p000544",
+        "profile_slug": "fredrikke-dahle-varsla",
+        "display_name": "Fredrikke Dahle Varsla",
+        "gender": "K",
+        "gender_label": "Kvinner",
+        "result_count": 1,
+        "distances": [
+          "HOKA Lofoten Skyrace 32 km"
+        ],
+        "best_results": [],
+        "first_result_date": "2026-07-03",
+        "latest_result_date": "2026-07-03"
       },
       {
         "person_id": "skv-p000430",
@@ -45256,10 +46592,10 @@
         "distances": [
           "1500 m",
           "3000 m",
+          "5000 m",
           "5 km",
           "10 km",
-          "3000 m hinder",
-          "5000 m"
+          "3000 m hinder"
         ],
         "best_results": [
           {
@@ -45286,6 +46622,19 @@
             "published_date_label": "15.05.2026",
             "week_number": 20,
             "place": "1",
+            "class_place": ""
+          },
+          {
+            "result_id": "res-98a0a3a4b7a75845",
+            "distance": "5000 m",
+            "source_distance": "5000 m",
+            "result_time": "15:04.48",
+            "result_time_seconds": 904.48,
+            "event_label": "IFAM Outdoor Brussels 2026",
+            "published_date": "2026-05-23",
+            "published_date_label": "23.05.2026",
+            "week_number": 21,
+            "place": "3",
             "class_place": ""
           },
           {
@@ -46159,10 +47508,12 @@
         "display_name": "Jessica Gunnarsson",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 5,
+        "result_count": 7,
         "distances": [
           "5 km",
-          "10 km"
+          "10 km",
+          "WV 5000 Meters (W35-W80)",
+          "WV 800 Meters (W50,W55)"
         ],
         "best_results": [
           {
@@ -46193,7 +47544,7 @@
           }
         ],
         "first_result_date": "2026-04-25",
-        "latest_result_date": "2026-06-13"
+        "latest_result_date": "2026-07-03"
       },
       {
         "person_id": "skv-p000144",
@@ -46201,10 +47552,11 @@
         "display_name": "Jo Trieu Søreide",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 5,
+        "result_count": 6,
         "distances": [
           "5 km",
-          "10 km"
+          "10 km",
+          "MV 10000 Meters (M35-M60, M70-M80)"
         ],
         "best_results": [
           {
@@ -46235,7 +47587,7 @@
           }
         ],
         "first_result_date": "2026-04-11",
-        "latest_result_date": "2026-05-24"
+        "latest_result_date": "2026-07-03"
       },
       {
         "person_id": "skv-p000421",
@@ -46289,8 +47641,8 @@
         "result_count": 3,
         "distances": [
           "1500 m",
-          "10 km",
-          "5000 m"
+          "5000 m",
+          "10 km"
         ],
         "best_results": [
           {
@@ -46305,6 +47657,19 @@
             "week_number": 18,
             "place": "15",
             "class_place": "9"
+          },
+          {
+            "result_id": "res-09019bcacc247f47",
+            "distance": "5000 m",
+            "source_distance": "5000 m",
+            "result_time": "14:18.20",
+            "result_time_seconds": 858.2,
+            "event_label": "Bislettmila 2026",
+            "published_date": "2026-05-15",
+            "published_date_label": "15.05.2026",
+            "week_number": 20,
+            "place": "2",
+            "class_place": "2"
           },
           {
             "result_id": "res-a2cbbe2bcb9f704a",
@@ -47543,10 +48908,11 @@
         "display_name": "Kjersti Simensen",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 2,
+        "result_count": 3,
         "distances": [
           "5 km",
-          "10 km"
+          "10 km",
+          "HOKA Lofoten Skyrace 15 km"
         ],
         "best_results": [
           {
@@ -47577,7 +48943,7 @@
           }
         ],
         "first_result_date": "2026-04-25",
-        "latest_result_date": "2026-05-27"
+        "latest_result_date": "2026-07-03"
       },
       {
         "person_id": "skv-p000171",
@@ -47685,7 +49051,7 @@
         "display_name": "Kristian Brenni",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 8,
+        "result_count": 9,
         "distances": [
           "5 km",
           "10 km",
@@ -47734,7 +49100,7 @@
           }
         ],
         "first_result_date": "2026-03-17",
-        "latest_result_date": "2026-06-20"
+        "latest_result_date": "2026-07-04"
       },
       {
         "person_id": "skv-p000174",
@@ -48249,9 +49615,10 @@
         "display_name": "Leif Ole Håvardsrud",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 2,
+        "result_count": 3,
         "distances": [
           "10 km",
+          "Halvmaraton",
           "Trail 21 km"
         ],
         "best_results": [
@@ -48267,10 +49634,23 @@
             "week_number": 17,
             "place": "430",
             "class_place": "65"
+          },
+          {
+            "result_id": "res-7dd8f0af462d3705",
+            "distance": "Halvmaraton",
+            "source_distance": "Halvmaraton",
+            "result_time": "1:22:08",
+            "result_time_seconds": 4928.0,
+            "event_label": "Jølster Maraton 2026",
+            "published_date": "2026-07-04",
+            "published_date_label": "04.07.2026",
+            "week_number": 27,
+            "place": "33",
+            "class_place": "9"
           }
         ],
         "first_result_date": "2026-04-25",
-        "latest_result_date": "2026-05-30"
+        "latest_result_date": "2026-07-04"
       },
       {
         "person_id": "skv-p000352",
@@ -48362,13 +49742,28 @@
         "display_name": "Lisbeth Pedersen",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 4,
+        "result_count": 6,
         "distances": [
+          "5000 m",
           "5 km",
           "Maraton",
-          "5000 m"
+          "WV 5000 Meters (W35-W80)",
+          "WV 800 Meters (W50,W55)"
         ],
         "best_results": [
+          {
+            "result_id": "res-f11762dbd86fe2c9",
+            "distance": "5000 m",
+            "source_distance": "5000 m",
+            "result_time": "19:04.7",
+            "result_time_seconds": 1144.7,
+            "event_label": "Bislett Open 2026",
+            "published_date": "2026-06-20",
+            "published_date_label": "20.06.2026",
+            "week_number": 25,
+            "place": "9",
+            "class_place": "1"
+          },
           {
             "result_id": "res-99dda8d7e90ca42a",
             "distance": "5 km",
@@ -48397,7 +49792,7 @@
           }
         ],
         "first_result_date": "2026-04-20",
-        "latest_result_date": "2026-06-20"
+        "latest_result_date": "2026-07-03"
       },
       {
         "person_id": "skv-p000488",
@@ -48421,10 +49816,23 @@
         "gender_label": "Kvinner",
         "result_count": 2,
         "distances": [
-          "10 km",
-          "5000 m"
+          "5000 m",
+          "10 km"
         ],
         "best_results": [
+          {
+            "result_id": "res-c007b059699d5b39",
+            "distance": "5000 m",
+            "source_distance": "5000 m",
+            "result_time": "18:24.5",
+            "result_time_seconds": 1104.5,
+            "event_label": "Løperådet Friday Night Lights 2026",
+            "published_date": "2026-06-26",
+            "published_date_label": "26.06.2026",
+            "week_number": 26,
+            "place": "2",
+            "class_place": "2"
+          },
           {
             "result_id": "res-3508e0607647a69a",
             "distance": "10 km",
@@ -48448,7 +49856,7 @@
         "display_name": "Liv Berit Jegteberg Lystad",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 6,
+        "result_count": 7,
         "distances": [
           "Maraton",
           "Birken Fjellmaraton",
@@ -48456,21 +49864,21 @@
         ],
         "best_results": [
           {
-            "result_id": "res-dc294175a8db332c",
+            "result_id": "res-0127823ef4fb226b",
             "distance": "Maraton",
             "source_distance": "Maraton",
-            "result_time": "4:15:34.2",
-            "result_time_seconds": 15334.2,
-            "event_label": "Det Norske Fjellmaraton 2026",
-            "published_date": "2026-06-06",
-            "published_date_label": "06.06.2026",
-            "week_number": 23,
-            "place": "67",
+            "result_time": "4:06:24",
+            "result_time_seconds": 14784.0,
+            "event_label": "Jølster Maraton 2026",
+            "published_date": "2026-07-04",
+            "published_date_label": "04.07.2026",
+            "week_number": 27,
+            "place": "69",
             "class_place": "1"
           }
         ],
         "first_result_date": "2026-02-08",
-        "latest_result_date": "2026-06-20"
+        "latest_result_date": "2026-07-04"
       },
       {
         "person_id": "skv-p000190",
@@ -48764,11 +50172,11 @@
         "distances": [
           "1500 m",
           "3000 m",
+          "5000 m",
           "5 km",
           "10 km",
           "Halvmaraton",
-          "3 km",
-          "5000 m"
+          "3 km"
         ],
         "best_results": [
           {
@@ -48796,6 +50204,19 @@
             "week_number": 24,
             "place": "6",
             "class_place": ""
+          },
+          {
+            "result_id": "res-f45765f568404f5b",
+            "distance": "5000 m",
+            "source_distance": "5000 m",
+            "result_time": "15:35.70",
+            "result_time_seconds": 935.7,
+            "event_label": "The Pursuit 5000m",
+            "published_date": "2026-07-04",
+            "published_date_label": "04.07.2026",
+            "week_number": 27,
+            "place": "1",
+            "class_place": "1"
           },
           {
             "result_id": "res-82e818a3ae99f825",
@@ -49190,10 +50611,11 @@
         "display_name": "Maren Mohagen",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 2,
+        "result_count": 3,
         "distances": [
           "10 km",
-          "Halvmaraton"
+          "Halvmaraton",
+          "HOKA Lofoten Skyrace 15 km"
         ],
         "best_results": [
           {
@@ -49224,7 +50646,7 @@
           }
         ],
         "first_result_date": "2026-04-11",
-        "latest_result_date": "2026-05-23"
+        "latest_result_date": "2026-07-03"
       },
       {
         "person_id": "skv-p000480",
@@ -50057,12 +51479,14 @@
         "display_name": "Martin Kjäll-Ohlsson",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 6,
+        "result_count": 8,
         "distances": [
           "5 km",
           "10 km",
           "Halvmaraton",
-          "3k gateløp"
+          "3k gateløp",
+          "MV 10000 Meters (M35-M60, M70-M80)",
+          "MV 5000 Meters (M35-M55):"
         ],
         "best_results": [
           {
@@ -50106,7 +51530,7 @@
           }
         ],
         "first_result_date": "2026-02-08",
-        "latest_result_date": "2026-06-27"
+        "latest_result_date": "2026-07-03"
       },
       {
         "person_id": "skv-p000222",
@@ -50269,10 +51693,11 @@
         "display_name": "Mathias Hansen",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 2,
+        "result_count": 3,
         "distances": [
           "5 km",
-          "Birkebeinerløpet 21 km"
+          "Birkebeinerløpet 21 km",
+          "HOKA Lofoten Skyrace 32 km"
         ],
         "best_results": [
           {
@@ -50290,7 +51715,7 @@
           }
         ],
         "first_result_date": "2026-05-02",
-        "latest_result_date": "2026-06-13"
+        "latest_result_date": "2026-07-03"
       },
       {
         "person_id": "skv-p000419",
@@ -50441,10 +51866,23 @@
         "gender_label": "Menn",
         "result_count": 3,
         "distances": [
-          "10 km",
-          "5000 m"
+          "5000 m",
+          "10 km"
         ],
         "best_results": [
+          {
+            "result_id": "res-e7686894b317d7bc",
+            "distance": "5000 m",
+            "source_distance": "5000 m",
+            "result_time": "15:35.20",
+            "result_time_seconds": 935.2,
+            "event_label": "Bislettmila 2026",
+            "published_date": "2026-05-15",
+            "published_date_label": "15.05.2026",
+            "week_number": 20,
+            "place": "7",
+            "class_place": "7"
+          },
           {
             "result_id": "res-ce4f6f1e1821e19f",
             "distance": "10 km",
@@ -50594,9 +52032,10 @@
         "display_name": "Mikkel Trøstheim",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 1,
+        "result_count": 2,
         "distances": [
-          "10 km"
+          "10 km",
+          "HOKA Lofoten Skyrace 32 km"
         ],
         "best_results": [
           {
@@ -50614,7 +52053,7 @@
           }
         ],
         "first_result_date": "2026-04-11",
-        "latest_result_date": "2026-04-11"
+        "latest_result_date": "2026-07-03"
       },
       {
         "person_id": "skv-p000231",
@@ -50846,11 +52285,12 @@
         "display_name": "Nicolai Lujan Foss",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 3,
+        "result_count": 4,
         "distances": [
           "5 km",
           "10 km",
-          "Halvmaraton"
+          "Halvmaraton",
+          "HOKA Lofoten Skyrace Marathon"
         ],
         "best_results": [
           {
@@ -50894,7 +52334,7 @@
           }
         ],
         "first_result_date": "2026-01-11",
-        "latest_result_date": "2026-06-20"
+        "latest_result_date": "2026-07-03"
       },
       {
         "person_id": "skv-p000237",
@@ -50934,6 +52374,19 @@
             "week_number": 9,
             "place": "",
             "class_place": ""
+          },
+          {
+            "result_id": "res-a3d256acf534a237",
+            "distance": "5000 m",
+            "source_distance": "5000 m",
+            "result_time": "14:17.40",
+            "result_time_seconds": 857.4,
+            "event_label": "Bislettmila 2026",
+            "published_date": "2026-05-15",
+            "published_date_label": "15.05.2026",
+            "week_number": 20,
+            "place": "1",
+            "class_place": "1"
           }
         ],
         "first_result_date": "2026-02-08",
@@ -51548,13 +53001,27 @@
         "display_name": "Ole Jørgen Knoph",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 4,
+        "result_count": 5,
         "distances": [
+          "5000 m",
           "5 km",
           "10 km",
-          "5000 m"
+          "HOKA Lofoten Skyrace 15 km"
         ],
         "best_results": [
+          {
+            "result_id": "res-4df4ddbf1066f8f9",
+            "distance": "5000 m",
+            "source_distance": "5000 m",
+            "result_time": "15:33.20",
+            "result_time_seconds": 933.2,
+            "event_label": "Bislettmila 2026",
+            "published_date": "2026-05-15",
+            "published_date_label": "15.05.2026",
+            "week_number": 20,
+            "place": "6",
+            "class_place": "6"
+          },
           {
             "result_id": "res-0c65a149db8b9366",
             "distance": "5 km",
@@ -51583,7 +53050,7 @@
           }
         ],
         "first_result_date": "2026-04-25",
-        "latest_result_date": "2026-06-13"
+        "latest_result_date": "2026-07-03"
       },
       {
         "person_id": "skv-p000253",
@@ -53132,12 +54599,14 @@
         "display_name": "Simen Hagerup Kjeldsen",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 8,
+        "result_count": 10,
         "distances": [
           "3000 m",
           "5 km",
           "10 km",
-          "3 km"
+          "3 km",
+          "MV 1500 Meters (M35-M50)",
+          "MV 5000 Meters (M35-M55):"
         ],
         "best_results": [
           {
@@ -53181,7 +54650,7 @@
           }
         ],
         "first_result_date": "2026-01-18",
-        "latest_result_date": "2026-05-27"
+        "latest_result_date": "2026-07-03"
       },
       {
         "person_id": "skv-p000284",
@@ -53882,10 +55351,10 @@
         "distances": [
           "1500 m",
           "3000 m",
+          "5000 m",
           "10 km",
           "Halvmaraton",
-          "10 miles",
-          "5000 m"
+          "10 miles"
         ],
         "best_results": [
           {
@@ -53913,6 +55382,19 @@
             "week_number": 24,
             "place": "11",
             "class_place": "11"
+          },
+          {
+            "result_id": "res-8d8d6b701267b7a4",
+            "distance": "5000 m",
+            "source_distance": "5000 m",
+            "result_time": "15:01.41",
+            "result_time_seconds": 901.41,
+            "event_label": "Boysen Memorial 2026",
+            "published_date": "2026-06-24",
+            "published_date_label": "24.06.2026",
+            "week_number": 26,
+            "place": "18",
+            "class_place": ""
           },
           {
             "result_id": "res-cc45c7c19d3a59ef",
@@ -53952,12 +55434,25 @@
         "gender_label": "Menn",
         "result_count": 6,
         "distances": [
+          "5000 m",
           "10 km",
           "Halvmaraton",
-          "Maraton",
-          "5000 m"
+          "Maraton"
         ],
         "best_results": [
+          {
+            "result_id": "res-159371db8fce045e",
+            "distance": "5000 m",
+            "source_distance": "5000 m",
+            "result_time": "13:37.32",
+            "result_time_seconds": 817.32,
+            "event_label": "Boysen Memorial 2026",
+            "published_date": "2026-06-24",
+            "published_date_label": "24.06.2026",
+            "week_number": 26,
+            "place": "2",
+            "class_place": ""
+          },
           {
             "result_id": "res-293568d6a08bae41",
             "distance": "10 km",
@@ -54432,13 +55927,15 @@
         "display_name": "Sven Thelin",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 10,
+        "result_count": 12,
         "distances": [
           "3000 m",
+          "5000 m",
           "5 km",
           "10 km",
           "10000 m",
-          "5000 m"
+          "MV 10000 Meters (M35-M60, M70-M80)",
+          "MV 5000 Meters (M35-M55):"
         ],
         "best_results": [
           {
@@ -54453,6 +55950,19 @@
             "week_number": 16,
             "place": "12",
             "class_place": "12"
+          },
+          {
+            "result_id": "res-2b9b491a33a2f7f6",
+            "distance": "5000 m",
+            "source_distance": "5000 m",
+            "result_time": "18:10.43",
+            "result_time_seconds": 1090.43,
+            "event_label": "Stockholm 5000m",
+            "published_date": "2026-05-23",
+            "published_date_label": "23.05.2026",
+            "week_number": 21,
+            "place": "95",
+            "class_place": ""
           },
           {
             "result_id": "res-41c29e2194ec0a8d",
@@ -54482,7 +55992,7 @@
           }
         ],
         "first_result_date": "2026-03-01",
-        "latest_result_date": "2026-06-24"
+        "latest_result_date": "2026-07-03"
       },
       {
         "person_id": "skv-p000316",
@@ -56703,6 +58213,14 @@
       "tormod-tho": "skv-p000525",
       "madeleine-heiberg-tromborg": "skv-p000535",
       "roisin-maria-long": "skv-p000536",
+      "albert-bolstad": "skv-p000537",
+      "anniken-holst-berger": "skv-p000538",
+      "celine-hakestad": "skv-p000539",
+      "erik-sorensen": "skv-p000540",
+      "erlend-helgesen": "skv-p000541",
+      "erlend-holst-berger": "skv-p000542",
+      "eskil-hostad": "skv-p000543",
+      "fredrikke-dahle-varsla": "skv-p000544",
       "adne-andersen-andersen": "skv-p000001",
       "adne-sandvik-dyrnesli": "skv-p000003",
       "andreas-sjurseth": "skv-p000400",

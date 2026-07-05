@@ -75,7 +75,7 @@ MATCH_CANDIDATE_COLUMNS = [
 APPLIED_MATCH_DECISIONS = {"merge", "alias_only", "reject"}
 OPEN_MATCH_DECISIONS = {"", "defer", "merge", "alias_only"}
 
-STANDARD_PROFILE_DISTANCES = ["800 m", "1500 m", "3000 m", "5 km", "10 km", "Halvmaraton", "Maraton"]
+STANDARD_PROFILE_DISTANCES = ["800 m", "1500 m", "3000 m", "5000 m", "5 km", "10 km", "Halvmaraton", "Maraton"]
 DISTANCE_ORDER = {distance: index for index, distance in enumerate(STANDARD_PROFILE_DISTANCES)}
 
 PRIVATE_PUBLIC_FIELD_NAMES = {
