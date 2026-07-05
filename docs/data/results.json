@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-07-05T17:58:40+02:00",
+  "generated_at": "2026-07-05T18:04:19+02:00",
   "stats": {
-    "result_count": 1293,
+    "result_count": 1295,
     "athlete_count": 479,
     "event_count": 175,
     "week_count": 24,
     "latest_week": 27,
     "latest_date": "2026-07-04",
-    "women_count": 527,
-    "men_count": 766,
+    "women_count": 528,
+    "men_count": 767,
     "missing_gender_or_class_count": 0
   },
   "weeks": [
@@ -18,11 +18,11 @@
       "week_label": "Uke 27",
       "published_date": "2026-07-04",
       "published_date_label": "04.07.2026",
-      "result_count": 32,
-      "athlete_count": 27,
+      "result_count": 34,
+      "athlete_count": 29,
       "event_count": 9,
-      "women_count": 13,
-      "men_count": 19,
+      "women_count": 14,
+      "men_count": 20,
       "events": [
         "Hornindal Rundt 2026",
         "Jølster Maraton 2026",
@@ -30,7 +30,7 @@
         "Nordisk mesterskap i friidrett for masters 2026",
         "Nordisk mesterskap i friidrett for masters 2026 - fredag",
         "Odalsløpet 2026",
-        "Strømstadmilen 2026",
+        "Strömstadmilen 2026",
         "The Pursuit 5000m",
         "Unionsmarathon 2026"
       ]
@@ -619,7 +619,65 @@
       "split_state": ""
     },
     {
-      "result_id": "res-6a280e756a6cb47c",
+      "result_id": "res-8fc5df082f8c7cc6",
+      "person_id": "skv-p000266",
+      "person_slug": "roger-thompson",
+      "published_date": "2026-07-04",
+      "published_date_label": "04.07.2026",
+      "week_number": 27,
+      "athlete_name": "Roger Thompson",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "10 km 50 år",
+      "class_place": "1",
+      "event_label": "Strömstadmilen 2026",
+      "distance": "10 km",
+      "result_time_raw": "00:36:42",
+      "result_time_normalized": "00:36:42",
+      "result_time_seconds": 2202.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "1",
+      "notes_clean": "Gateløp / landeveisløp; nøyaktig oppmålt distanse; start/mål Strömsvallen",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-c48e102f83550da8",
+      "person_id": "skv-p000306",
+      "person_slug": "sonia-slettvag",
+      "published_date": "2026-07-04",
+      "published_date_label": "04.07.2026",
+      "week_number": 27,
+      "athlete_name": "Sonia Slettvåg",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "Barnlopp 10-11 år",
+      "class_place": "1",
+      "event_label": "Strömstadmilen 2026",
+      "distance": "1,609 km",
+      "result_time_raw": "00:05:56",
+      "result_time_normalized": "00:05:56",
+      "result_time_seconds": 356.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "1",
+      "notes_clean": "Gateløp / landeveisløp; nøyaktig oppmålt distanse; start/mål Strömsvallen",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-f58de7827f42cda2",
       "person_id": "skv-p000538",
       "person_slug": "anniken-holst-berger",
       "published_date": "2026-07-04",
@@ -630,7 +688,7 @@
       "gender_label": "Kvinner",
       "class_name": "Kvinner",
       "class_place": "",
-      "event_label": "Strømstadmilen 2026",
+      "event_label": "Strömstadmilen 2026",
       "distance": "5 km kvinner",
       "result_time_raw": "23:39",
       "result_time_normalized": "23:39",
@@ -648,7 +706,7 @@
       "split_state": ""
     },
     {
-      "result_id": "res-1736680f0f5404fb",
+      "result_id": "res-a0c1b27990178131",
       "person_id": "skv-p000542",
       "person_slug": "erlend-holst-berger",
       "published_date": "2026-07-04",
@@ -659,7 +717,7 @@
       "gender_label": "Menn",
       "class_name": "Menn",
       "class_place": "",
-      "event_label": "Strømstadmilen 2026",
+      "event_label": "Strömstadmilen 2026",
       "distance": "10 km menn, topp 100",
       "result_time_raw": "36:01",
       "result_time_normalized": "36:01",
@@ -53737,7 +53795,7 @@
         "display_name": "Roger Thompson",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 5,
+        "result_count": 6,
         "distances": [
           "5 km",
           "10 km",
@@ -53772,7 +53830,7 @@
           }
         ],
         "first_result_date": "2026-03-29",
-        "latest_result_date": "2026-06-13"
+        "latest_result_date": "2026-07-04"
       },
       {
         "person_id": "skv-p000267",
@@ -55459,10 +55517,11 @@
         "display_name": "Sonia Slettvåg",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 8,
+        "result_count": 9,
         "distances": [
           "5 km",
           "10 km",
+          "1,609 km",
           "12 km"
         ],
         "best_results": [
@@ -55494,7 +55553,7 @@
           }
         ],
         "first_result_date": "2026-01-18",
-        "latest_result_date": "2026-06-28"
+        "latest_result_date": "2026-07-04"
       },
       {
         "person_id": "skv-p000307",
