@@ -1,18 +1,32 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-06-29T11:25:38+02:00",
+  "generated_at": "2026-07-05T17:13:58+02:00",
   "stats": {
-    "result_count": 1261,
+    "result_count": 1262,
     "athlete_count": 472,
-    "event_count": 166,
-    "week_count": 23,
-    "latest_week": 26,
-    "latest_date": "2026-06-28",
-    "women_count": 514,
+    "event_count": 167,
+    "week_count": 24,
+    "latest_week": 27,
+    "latest_date": "2026-07-04",
+    "women_count": 515,
     "men_count": 747,
     "missing_gender_or_class_count": 0
   },
   "weeks": [
+    {
+      "week_number": 27,
+      "week_label": "Uke 27",
+      "published_date": "2026-07-04",
+      "published_date_label": "04.07.2026",
+      "result_count": 1,
+      "athlete_count": 1,
+      "event_count": 1,
+      "women_count": 1,
+      "men_count": 0,
+      "events": [
+        "The Pursuit 5000m"
+      ]
+    },
     {
       "week_number": 26,
       "week_label": "Uke 26",
@@ -480,6 +494,35 @@
     }
   ],
   "results": [
+    {
+      "result_id": "res-f45765f568404f5b",
+      "person_id": "skv-p000193",
+      "person_slug": "madelene-wanvik-holum",
+      "published_date": "2026-07-04",
+      "published_date_label": "04.07.2026",
+      "week_number": 27,
+      "athlete_name": "Madelène Wanvik Holum",
+      "gender": "K",
+      "gender_label": "Kvinner",
+      "class_name": "SW",
+      "class_place": "1",
+      "event_label": "The Pursuit 5000m",
+      "distance": "5000 m",
+      "result_time_raw": "15:35.70",
+      "result_time_normalized": "15:35.70",
+      "result_time_seconds": 935.7,
+      "wa_gender": "K",
+      "wa_event": "5000m",
+      "wa_points": 1095.0,
+      "place": "1",
+      "notes_clean": "PB",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
     {
       "result_id": "res-d06c365612a4bbe8",
       "person_id": "skv-p000041",
@@ -48717,14 +48760,15 @@
         "display_name": "Madelène Wanvik Holum",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 11,
+        "result_count": 12,
         "distances": [
           "1500 m",
           "3000 m",
           "5 km",
           "10 km",
           "Halvmaraton",
-          "3 km"
+          "3 km",
+          "5000 m"
         ],
         "best_results": [
           {
@@ -48794,7 +48838,7 @@
           }
         ],
         "first_result_date": "2026-02-01",
-        "latest_result_date": "2026-06-14"
+        "latest_result_date": "2026-07-04"
       },
       {
         "person_id": "skv-p000194",

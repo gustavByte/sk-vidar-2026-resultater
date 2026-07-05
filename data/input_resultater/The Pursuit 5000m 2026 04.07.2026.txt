@@ -1,0 +1,9 @@
+The Pursuit 5000m
+Dato: 04.07.2026
+Sted: University of Stirling Track, Stirling (GBR)
+Kilder:
+- World Athletics: https://worldathletics.org/competition/calendar-results/results/7236993
+- OpenTrack: https://data.opentrack.run/en-gb/x/2026/GBR/pursuit-5000/event/R6/1/1/
+
+SK Vidar-resultat:
+2026-07-04 | Madelène Wanvik Holum | SW | 5000 m | 15:35.70 | plass 1 | PB | NOR; eksisterende SK Vidar-person skv-p000193 | World Athletics / OpenTrack | startnr 237
