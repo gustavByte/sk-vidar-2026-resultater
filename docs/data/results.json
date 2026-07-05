@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-07-05T17:51:57+02:00",
+  "generated_at": "2026-07-05T17:58:40+02:00",
   "stats": {
-    "result_count": 1295,
-    "athlete_count": 480,
+    "result_count": 1293,
+    "athlete_count": 479,
     "event_count": 175,
     "week_count": 24,
     "latest_week": 27,
     "latest_date": "2026-07-04",
-    "women_count": 528,
-    "men_count": 767,
+    "women_count": 527,
+    "men_count": 766,
     "missing_gender_or_class_count": 0
   },
   "weeks": [
@@ -18,11 +18,11 @@
       "week_label": "Uke 27",
       "published_date": "2026-07-04",
       "published_date_label": "04.07.2026",
-      "result_count": 34,
-      "athlete_count": 28,
+      "result_count": 32,
+      "athlete_count": 27,
       "event_count": 9,
-      "women_count": 14,
-      "men_count": 20,
+      "women_count": 13,
+      "men_count": 19,
       "events": [
         "Hornindal Rundt 2026",
         "Jølster Maraton 2026",
@@ -1112,35 +1112,6 @@
       "split_state": ""
     },
     {
-      "result_id": "res-b2d12e20473dbec5",
-      "person_id": "skv-p000541",
-      "person_slug": "erlend-helgesen",
-      "published_date": "2026-07-03",
-      "published_date_label": "03.07.2026",
-      "week_number": 27,
-      "athlete_name": "Erlend Helgesen",
-      "gender": "M",
-      "gender_label": "Menn",
-      "class_name": "Menn",
-      "class_place": "290",
-      "event_label": "Lofoten Skyrace 2026",
-      "distance": "HOKA Lofoten Skyrace Marathon",
-      "result_time_raw": "DNS",
-      "result_time_normalized": "DNS",
-      "result_time_seconds": null,
-      "wa_gender": "M",
-      "wa_event": "HOKA Lofoten Skyrace Marathon",
-      "wa_points": null,
-      "place": "469",
-      "notes_clean": "",
-      "split_first_label": "",
-      "split_first_display": "",
-      "split_second_label": "",
-      "split_second_display": "",
-      "split_delta_display": "",
-      "split_state": ""
-    },
-    {
       "result_id": "res-86f7745019c1457b",
       "person_id": "skv-p000187",
       "person_slug": "lisbeth-pedersen",
@@ -1364,35 +1335,6 @@
       "wa_event": "MV 10000 Meters (M35-M60, M70-M80)",
       "wa_points": null,
       "place": "14",
-      "notes_clean": "",
-      "split_first_label": "",
-      "split_first_display": "",
-      "split_second_label": "",
-      "split_second_display": "",
-      "split_delta_display": "",
-      "split_state": ""
-    },
-    {
-      "result_id": "res-781f47b1cdb88dc4",
-      "person_id": "skv-p000187",
-      "person_slug": "lisbeth-pedersen",
-      "published_date": "2026-07-03",
-      "published_date_label": "03.07.2026",
-      "week_number": 27,
-      "athlete_name": "Lisbeth Pedersen",
-      "gender": "K",
-      "gender_label": "Kvinner",
-      "class_name": "W50",
-      "class_place": "",
-      "event_label": "Nordisk mesterskap i friidrett for masters 2026",
-      "distance": "WV 1500 Meters (W40-W80)",
-      "result_time_raw": "DNS",
-      "result_time_normalized": "DNS",
-      "result_time_seconds": null,
-      "wa_gender": "K",
-      "wa_event": "WV 1500 Meters (W40-W80)",
-      "wa_points": null,
-      "place": "",
       "notes_clean": "",
       "split_first_label": "",
       "split_first_display": "",
@@ -40485,7 +40427,7 @@
     }
   ],
   "people": {
-    "profile_count": 480,
+    "profile_count": 479,
     "profiles": [
       {
         "person_id": "skv-p000001",
@@ -44321,20 +44263,6 @@
         ],
         "first_result_date": "2026-01-18",
         "latest_result_date": "2026-04-26"
-      },
-      {
-        "person_id": "skv-p000541",
-        "profile_slug": "erlend-helgesen",
-        "display_name": "Erlend Helgesen",
-        "gender": "M",
-        "gender_label": "Menn",
-        "result_count": 1,
-        "distances": [
-          "HOKA Lofoten Skyrace Marathon"
-        ],
-        "best_results": [],
-        "first_result_date": "2026-07-03",
-        "latest_result_date": "2026-07-03"
       },
       {
         "person_id": "skv-p000077",
@@ -49771,12 +49699,11 @@
         "display_name": "Lisbeth Pedersen",
         "gender": "K",
         "gender_label": "Kvinner",
-        "result_count": 7,
+        "result_count": 6,
         "distances": [
           "5000 m",
           "5 km",
           "Maraton",
-          "WV 1500 Meters (W40-W80)",
           "WV 5000 Meters (W35-W80)",
           "WV 800 Meters (W50,W55)"
         ],
@@ -58247,7 +58174,6 @@
       "anniken-holst-berger": "skv-p000538",
       "celine-hakestad": "skv-p000539",
       "erik-sorensen": "skv-p000540",
-      "erlend-helgesen": "skv-p000541",
       "erlend-holst-berger": "skv-p000542",
       "eskil-hostad": "skv-p000543",
       "fredrikke-dahle-varsla": "skv-p000544",
@@ -58312,7 +58238,8 @@
       "oda-lier": "skv-p000531",
       "simen-gimnes": "skv-p000532",
       "madeleine-heiberg-tr-mborg": "skv-p000533",
-      "thomas-nordb-berg": "skv-p000534"
+      "thomas-nordb-berg": "skv-p000534",
+      "erlend-helgesen": "skv-p000541"
     },
     "slug_redirects": {
       "adne-andersen-andersen": "adne-andersen",

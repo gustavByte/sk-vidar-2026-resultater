@@ -7,7 +7,7 @@ from datetime import datetime
 
 import pandas as pd
 
-from build_shared_weekly_results_2026 import EVENT_NAME_OVERRIDES, clean_note, extract_place, parse_time_for_sort
+from build_shared_weekly_results_2026 import EVENT_NAME_OVERRIDES, clean_note, extract_place, filter_publishable_results, parse_time_for_sort
 from person_identity import (
     SCHEMA_VERSION,
     assign_result_ids,
@@ -268,7 +268,7 @@ def load_results() -> pd.DataFrame:
         raise FileNotFoundError(f"Missing source workbook: {WEEKLY_RESULTS_FILE}")
 
     df = pd.read_excel(WEEKLY_RESULTS_FILE, sheet_name="results", engine="openpyxl")
-    working = df.copy()
+    working = filter_publishable_results(df)
 
     working["published_date"] = pd.to_datetime(working["published_date"], errors="coerce")
     working["published_date_iso"] = working["published_date"].dt.strftime("%Y-%m-%d")

@@ -12,6 +12,7 @@ from project_paths import SHARED_OVERVIEW_FILE, WEEKLY_RESULTS_FILE
 
 INPUT_FILE = WEEKLY_RESULTS_FILE
 OUTPUT_FILE = SHARED_OVERVIEW_FILE
+NON_PUBLISHABLE_RESULT_STATUSES = {"DNS", "DNF"}
 
 TITLE_FILL = PatternFill("solid", fgColor="A61E22")
 TITLE_FONT = Font(color="FFFFFF", bold=True, size=16)
@@ -273,6 +274,14 @@ def build_display_rows(df: pd.DataFrame) -> pd.DataFrame:
     return display
 
 
+def filter_publishable_results(df: pd.DataFrame) -> pd.DataFrame:
+    """Keep status-only rows out of public overview/statistics exports."""
+    normalized = df.get("result_time_normalized", pd.Series("", index=df.index)).fillna("").astype(str).str.strip()
+    raw = df.get("result_time_raw", pd.Series("", index=df.index)).fillna("").astype(str).str.strip()
+    status = normalized.mask(normalized.eq(""), raw).str.upper()
+    return df[~status.isin(NON_PUBLISHABLE_RESULT_STATUSES)].copy()
+
+
 def build_week_summary(df: pd.DataFrame) -> pd.DataFrame:
     working = df.copy()
     working = working[working["athlete_name"].notna()].copy()
@@ -448,9 +457,10 @@ def main() -> None:
         raise FileNotFoundError(f"Missing source workbook: {INPUT_FILE}")
 
     results_df = pd.read_excel(INPUT_FILE, sheet_name="results", engine="openpyxl")
-    display_df = build_display_rows(results_df)
-    summary_df = build_week_summary(results_df)
-    workbook = build_workbook(display_df, summary_df, results_df)
+    publish_df = filter_publishable_results(results_df)
+    display_df = build_display_rows(publish_df)
+    summary_df = build_week_summary(publish_df)
+    workbook = build_workbook(display_df, summary_df, publish_df)
     OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
     workbook.save(OUTPUT_FILE)
 
