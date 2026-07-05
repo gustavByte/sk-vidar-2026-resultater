@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-07-05T18:04:19+02:00",
+  "generated_at": "2026-07-05T18:35:13+02:00",
   "stats": {
-    "result_count": 1295,
-    "athlete_count": 479,
-    "event_count": 175,
+    "result_count": 1297,
+    "athlete_count": 480,
+    "event_count": 176,
     "week_count": 24,
     "latest_week": 27,
     "latest_date": "2026-07-04",
     "women_count": 528,
-    "men_count": 767,
+    "men_count": 769,
     "missing_gender_or_class_count": 0
   },
   "weeks": [
@@ -18,12 +18,13 @@
       "week_label": "Uke 27",
       "published_date": "2026-07-04",
       "published_date_label": "04.07.2026",
-      "result_count": 34,
-      "athlete_count": 29,
-      "event_count": 9,
+      "result_count": 36,
+      "athlete_count": 31,
+      "event_count": 10,
       "women_count": 14,
-      "men_count": 20,
+      "men_count": 22,
       "events": [
+        "Gornergrat Zermatt Marathon 2026",
         "Hornindal Rundt 2026",
         "Jølster Maraton 2026",
         "Lofoten Skyrace 2026",
@@ -502,6 +503,64 @@
     }
   ],
   "results": [
+    {
+      "result_id": "res-81510da1e4552c55",
+      "person_id": "skv-p000545",
+      "person_slug": "simen-havik",
+      "published_date": "2026-07-04",
+      "published_date_label": "04.07.2026",
+      "week_number": 27,
+      "athlete_name": "Simen Havik",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "HM M30",
+      "class_place": "16",
+      "event_label": "Gornergrat Zermatt Marathon 2026",
+      "distance": "Halbmarathon Men",
+      "result_time_raw": "2:19:31,0",
+      "result_time_normalized": "2:19:31.0",
+      "result_time_seconds": 8371.0,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "38",
+      "notes_clean": "Zermatt/St. Niklaus, Sveits; kilde Datasport",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
+    {
+      "result_id": "res-199242ab54067578",
+      "person_id": "skv-p000075",
+      "person_slug": "erlend-bruaset",
+      "published_date": "2026-07-04",
+      "published_date_label": "04.07.2026",
+      "week_number": 27,
+      "athlete_name": "Erlend Bruaset",
+      "gender": "M",
+      "gender_label": "Menn",
+      "class_name": "U M30",
+      "class_place": "22",
+      "event_label": "Gornergrat Zermatt Marathon 2026",
+      "distance": "Ultra Men",
+      "result_time_raw": "5:53:03,6",
+      "result_time_normalized": "5:53:03.6",
+      "result_time_seconds": 21183.6,
+      "wa_gender": "",
+      "wa_event": "",
+      "wa_points": null,
+      "place": "74",
+      "notes_clean": "Zermatt/St. Niklaus, Sveits; kilde Datasport",
+      "split_first_label": "",
+      "split_first_display": "",
+      "split_second_label": "",
+      "split_second_display": "",
+      "split_delta_display": "",
+      "split_state": ""
+    },
     {
       "result_id": "res-17ddc625554de40a",
       "person_id": "skv-p000051",
@@ -40485,7 +40544,7 @@
     }
   ],
   "people": {
-    "profile_count": 479,
+    "profile_count": 480,
     "profiles": [
       {
         "person_id": "skv-p000001",
@@ -44258,12 +44317,13 @@
         "display_name": "Erlend Bruaset",
         "gender": "M",
         "gender_label": "Menn",
-        "result_count": 4,
+        "result_count": 5,
         "distances": [
           "5 km",
           "10 km",
           "Halvmaraton",
-          "Maraton"
+          "Maraton",
+          "Ultra Men"
         ],
         "best_results": [
           {
@@ -44320,7 +44380,7 @@
           }
         ],
         "first_result_date": "2026-01-18",
-        "latest_result_date": "2026-04-26"
+        "latest_result_date": "2026-07-04"
       },
       {
         "person_id": "skv-p000077",
@@ -54668,6 +54728,20 @@
         "latest_result_date": "2026-07-03"
       },
       {
+        "person_id": "skv-p000545",
+        "profile_slug": "simen-havik",
+        "display_name": "Simen Havik",
+        "gender": "M",
+        "gender_label": "Menn",
+        "result_count": 1,
+        "distances": [
+          "Halbmarathon Men"
+        ],
+        "best_results": [],
+        "first_result_date": "2026-07-04",
+        "latest_result_date": "2026-07-04"
+      },
+      {
         "person_id": "skv-p000284",
         "profile_slug": "simen-holum-andersen",
         "display_name": "Simen Holum Andersen",
@@ -58236,6 +58310,7 @@
       "erlend-holst-berger": "skv-p000542",
       "eskil-hostad": "skv-p000543",
       "fredrikke-dahle-varsla": "skv-p000544",
+      "simen-havik": "skv-p000545",
       "adne-andersen-andersen": "skv-p000001",
       "adne-sandvik-dyrnesli": "skv-p000003",
       "andreas-sjurseth": "skv-p000400",
