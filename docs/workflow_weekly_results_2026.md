@@ -47,6 +47,17 @@ Nettsiden publiserer `person_id` og `person_slug` for hvert resultat. Selve iden
 
 Se `docs/person_identity_model.md` for detaljer.
 
+## Nettsidens datakontrakt (schema v3)
+
+`docs/data/results.json` inneholder i tillegg til resultater/uker/rankings/personer:
+
+- Per resultat: `is_pb`/`is_sb` (token-parsing av notatfeltet), `ranking_distance` (normalisert standarddistanse, tom for terrengløp)
+- Per uke: `pb_count`, `sb_count`, `wa_result_count`, `new_athlete_count`, `top_performances` (topp 3 etter WA-poeng, blandet kjønn)
+- `months[]`: månedsaggregat med norske etiketter
+- Profiler: `wa_points_best`, `pb_count`, `sb_count`; beste-resultater og rankings har `wa_points`
+
+JSON-en skrives minifisert. Frontenden tåler eldre payload (felter mangler → funksjoner degraderer stille), men bygg alltid på nytt etter skjemaendringer.
+
 ## Sikkerhetsstandard
 
 - Arbeidsfil, støttefiler og lokal database er private lokale filer.

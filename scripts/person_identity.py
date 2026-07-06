@@ -25,7 +25,7 @@ from project_paths import (
 
 
 PERSON_ID_PREFIX = "skv-p"
-SCHEMA_VERSION = 2
+SCHEMA_VERSION = 3
 
 REGISTRY_COLUMNS = [
     "person_id",
@@ -1147,6 +1147,7 @@ def _public_result_summary(row: pd.Series, distance: str | None = None) -> dict[
         "source_distance": source_distance,
         "result_time": _display_time(row),
         "result_time_seconds": row.get("result_time_seconds") if _has_valid_time(row.get("result_time_seconds")) else None,
+        "wa_points": row.get("wa_points") if _has_valid_time(row.get("wa_points")) else None,
         "event_label": _clean_text(row.get("event_label")),
         "published_date": _clean_text(row.get("published_date_iso") or row.get("published_date")),
         "published_date_label": _clean_text(row.get("published_date_label")),
@@ -1221,6 +1222,9 @@ def build_people_payload(df: pd.DataFrame, identity: IdentityData) -> dict[str, 
             for value in person_rows.get("published_date_iso", pd.Series(dtype=str))
             if _clean_text(value)
         ]
+        wa_values = pd.to_numeric(person_rows.get("wa_points", pd.Series(dtype=float)), errors="coerce").dropna()
+        pb_count = int(person_rows["is_pb"].sum()) if "is_pb" in person_rows.columns else 0
+        sb_count = int(person_rows["is_sb"].sum()) if "is_sb" in person_rows.columns else 0
         profiles.append(
             {
                 "person_id": person_id,
@@ -1231,6 +1235,9 @@ def build_people_payload(df: pd.DataFrame, identity: IdentityData) -> dict[str, 
                 "result_count": int(len(person_rows)),
                 "distances": distances,
                 "best_results": best_results,
+                "wa_points_best": float(wa_values.max()) if not wa_values.empty else None,
+                "pb_count": pb_count,
+                "sb_count": sb_count,
                 "first_result_date": min(published_dates) if published_dates else "",
                 "latest_result_date": max(published_dates) if published_dates else "",
             }

@@ -30,7 +30,17 @@ Hvis en Excel-fil står åpen i et annet program, kan den ikke flyttes eller ove
 
 ## Nettside
 
-Nettsiden ligger i `docs/` og er laget for GitHub Pages. Den viser resultater per uke og personprofiler, og leser kun fra `docs/data/results.json`.
+Nettsiden ligger i `docs/` og er laget for GitHub Pages. Den leser kun fra `docs/data/results.json` (schema v3, minifisert) og har fem hovedvisninger med hash-ruting:
+
+- `#/` — Oversikt: sesongtrend-graf, siste uke med ukens prestasjoner (WA-poeng), siste perser og snarveier
+- `#/uke/{nr}` — Ukevisning med delbare filtre i URL-en (`?kjonn=k&distanse=10 km&lop=…&sok=…&gruppering=lop`)
+- `#/personer` — Søkbar personkatalog; `#/person/{slug}` — profil med beste noteringer, klubbrangering, utviklingsgraf og aktivitet
+- `#/statistikk` — Topp 10 per distanse (utvidbar), WA-poeng-topplister, deltakelse, måned for måned, største løp
+- `#/sok?q=…` — Globalt søk på tvers av hele sesongen
+
+Koden er delt i ES-moduler under `docs/js/` (`router.js`, `state.js`, `derive.js`, `charts.js`, `views/…`) uten byggeverktøy. `docs/app.js` er inngangspunktet; bump `?v=`-parameteren i `docs/index.html` ved endringer i JS/CSS slik at nettlesere henter ny versjon (undermoduler arver ikke versjonsstempelet, men GitHub Pages cacher dem bare i ~10 minutter).
+
+PB/SB-merker parses fra notatfeltet ved bygging (`is_pb`/`is_sb`); ekte personlige rekorder kan ikke utledes siden datasettet kun dekker 2026. Backlog: normalisering av `class_name` for veteranstatistikk, egne løpssider (`#/lop/{…}`).
 
 Personmodellen er forklart i `docs/person_identity_model.md`.
 

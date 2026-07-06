@@ -8,148 +8,144 @@
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
     <title>SK Vidar 2026 resultater</title>
-    <meta name="description" content="Kompakt oversikt over SK Vidar-resultater i 2026, sortert per uke." />
+    <meta name="description" content="SK Vidar-resultater 2026: sesongoversikt, uke for uke, personprofiler og statistikk." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=20260428-mobile" />
-    <script type="module" src="./app.js?v=20260428-a11y"></script>
+    <link rel="stylesheet" href="./styles.css?v=20260706-v3" />
+    <script type="module" src="./app.js?v=20260706-v3"></script>
   </head>
   <body>
+    <nav class="top-nav" aria-label="Hovedmeny">
+      <div class="top-nav-inner">
+        <a class="nav-brand" href="#/">SK Vidar <span>2026</span></a>
+        <div class="nav-tabs">
+          <a class="nav-tab" data-tab="dashboard" href="#/">Oversikt</a>
+          <a class="nav-tab" data-tab="week" href="#/uke">Uker</a>
+          <a class="nav-tab" data-tab="people" href="#/personer">Personer</a>
+          <a class="nav-tab" data-tab="stats" href="#/statistikk">Statistikk</a>
+        </div>
+        <form class="nav-search" id="nav-search-form" role="search">
+          <input id="nav-search-input" type="search" placeholder="Søk i hele sesongen…" aria-label="Søk i hele sesongen" autocomplete="off" />
+        </form>
+      </div>
+    </nav>
+
     <main class="page">
-      <header class="hero">
-        <div>
-          <p class="eyebrow">SK Vidar 2026</p>
-          <h1>Resultater pr. uke</h1>
-          <p class="hero-copy">Siste uke åpnes som standard. Filtrer raskt på kjønn, distanse og søk.</p>
-          <div class="hero-actions">
-            <a class="jump-link" href="#season-top-10">Hopp til sesongens topp 10</a>
-          </div>
-        </div>
-        <dl class="stats" aria-label="Sammendrag">
-          <div>
-            <dt>Resultater</dt>
-            <dd id="stat-results">-</dd>
-          </div>
-          <div>
-            <dt>Løpere</dt>
-            <dd id="stat-athletes">-</dd>
-          </div>
-          <div>
-            <dt>Kvinner</dt>
-            <dd id="stat-women">-</dd>
-          </div>
-          <div>
-            <dt>Menn</dt>
-            <dd id="stat-men">-</dd>
-          </div>
-        </dl>
-      </header>
+      <p id="load-error" class="load-error" hidden></p>
 
-      <div id="week-view" class="route-view">
-      <section class="workspace" aria-label="Resultater">
-        <aside class="week-panel">
-          <div class="week-panel-head">
-            <strong>Uker</strong>
-            <span>Siste øverst</span>
-          </div>
-          <label class="field week-select-field">
-            <span>Velg uke</span>
-            <select id="week-select"></select>
-          </label>
-          <div id="weeks-list" class="weeks-list" aria-label="Uker"></div>
-        </aside>
+      <section id="view-dashboard" class="route-view" hidden aria-live="polite"></section>
 
-        <section class="table-panel">
-          <div class="toolbar">
-            <div class="toolbar-main">
-              <div>
-                <h2 id="selected-week-title">Laster…</h2>
-                <p id="selected-week-meta" class="toolbar-meta"></p>
+      <div id="view-week" class="route-view" hidden>
+        <section class="workspace" aria-label="Resultater">
+          <aside class="week-panel">
+            <div class="week-panel-head">
+              <strong>Uker</strong>
+              <span>Siste øverst</span>
+            </div>
+            <label class="field week-select-field">
+              <span>Velg uke</span>
+              <select id="week-select"></select>
+            </label>
+            <div id="weeks-list" class="weeks-list" aria-label="Uker"></div>
+          </aside>
+
+          <section class="table-panel">
+            <div class="toolbar">
+              <div class="toolbar-main">
+                <div class="toolbar-title-block">
+                  <div class="toolbar-title-row">
+                    <a id="week-prev" class="week-step" href="#/uke" hidden>←</a>
+                    <h2 id="selected-week-title">Laster…</h2>
+                    <a id="week-next" class="week-step" href="#/uke" hidden>→</a>
+                  </div>
+                  <p id="selected-week-meta" class="toolbar-meta"></p>
+                  <div class="toolbar-share">
+                    <button id="copy-link" class="copy-link" type="button">Kopier lenke</button>
+                    <span id="copy-status" class="copy-status" role="status" aria-live="polite"></span>
+                  </div>
+                </div>
+                <div class="segmented" role="group" aria-label="Kjønn">
+                  <button id="gender-all" class="segment is-active" type="button">Alle</button>
+                  <button id="gender-women" class="segment" type="button">Kvinner</button>
+                  <button id="gender-men" class="segment" type="button">Menn</button>
+                </div>
               </div>
-              <div class="segmented" role="group" aria-label="Kjønn">
-                <button id="gender-all" class="segment is-active" type="button">Alle</button>
-                <button id="gender-women" class="segment" type="button">Kvinner</button>
-                <button id="gender-men" class="segment" type="button">Menn</button>
+
+              <div class="toolbar-filters">
+                <div class="field field-events">
+                  <span>Løp</span>
+                  <div id="event-filter" class="event-filter" role="group" aria-label="Løp"></div>
+                </div>
+                <label class="field field-search">
+                  <span>Søk i uken</span>
+                  <input id="search-input" type="search" placeholder="Løper, løp eller notat" autocomplete="off" />
+                  <a id="global-search-hint" class="quiet-link global-search-hint" href="#/sok" hidden></a>
+                </label>
+                <div class="field field-view">
+                  <span>Visning</span>
+                  <div class="field-view-controls">
+                    <select id="distance-filter" aria-label="Distanse"></select>
+                    <button id="group-toggle" class="event-chip group-toggle" type="button" aria-pressed="false">Grupper per løp</button>
+                  </div>
+                </div>
               </div>
+
+              <div class="mini-stats" id="selected-week-stats" aria-live="polite"></div>
             </div>
 
-            <div class="toolbar-filters">
-              <div class="field field-events">
-                <span>Løp</span>
-                <div id="event-filter" class="event-filter" role="group" aria-label="Løp"></div>
-              </div>
-              <label class="field field-search">
-                <span>Søk</span>
-                <input id="search-input" type="search" placeholder="Løper, løp eller notat" />
-              </label>
-              <label class="field">
-                <span>Distanse</span>
-                <select id="distance-filter"></select>
-              </label>
+            <div class="table-wrap">
+              <table>
+                <colgroup>
+                  <col class="col-athlete" />
+                  <col class="col-class" />
+                  <col class="col-event" />
+                  <col class="col-distance" />
+                  <col class="col-time" />
+                  <col class="col-wa" />
+                  <col class="col-split" />
+                  <col class="col-split" />
+                  <col class="col-delta" />
+                  <col class="col-place" />
+                  <col class="col-place" />
+                  <col class="col-note" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>Løper</th>
+                    <th>Klasse</th>
+                    <th>Løp</th>
+                    <th>Distanse</th>
+                    <th>Tid</th>
+                    <th title="World Athletics-poeng">WA</th>
+                    <th>5 km / split 1</th>
+                    <th>Siste del / split 2</th>
+                    <th>Splitt</th>
+                    <th>Plass</th>
+                    <th>Kl.plass</th>
+                    <th>Notat</th>
+                  </tr>
+                </thead>
+                <tbody id="results-table"></tbody>
+              </table>
+              <div id="results-cards" class="results-cards" aria-live="polite"></div>
             </div>
 
-            <div class="mini-stats" id="selected-week-stats" aria-live="polite"></div>
-          </div>
-
-          <div class="table-wrap">
-            <table>
-              <colgroup>
-                <col class="col-athlete" />
-                <col class="col-gender" />
-                <col class="col-class" />
-                <col class="col-event" />
-                <col class="col-distance" />
-                <col class="col-time" />
-                <col class="col-split" />
-                <col class="col-split" />
-                <col class="col-delta" />
-                <col class="col-place" />
-                <col class="col-place" />
-                <col class="col-note" />
-              </colgroup>
-              <thead>
-                <tr>
-                  <th>Løper</th>
-                  <th>Kjønn</th>
-                  <th>Klasse</th>
-                  <th>Løp</th>
-                  <th>Distanse</th>
-                  <th>Tid</th>
-                  <th>5 km / split 1</th>
-                  <th>Siste del / split 2</th>
-                  <th>Splitt</th>
-                  <th>Plass</th>
-                  <th>Kl.plass</th>
-                  <th>Notat</th>
-                </tr>
-              </thead>
-              <tbody id="results-table"></tbody>
-            </table>
-            <div id="results-cards" class="results-cards" aria-live="polite"></div>
-          </div>
-
-          <p id="empty-state" class="empty-state" hidden>Ingen treff i valgt uke.</p>
+            <p id="empty-state" class="empty-state" hidden>Ingen treff i valgt uke.</p>
+          </section>
         </section>
-      </section>
-
-      <section id="season-top-10" class="rankings-section" aria-labelledby="rankings-title">
-        <div class="section-header">
-          <div>
-            <p class="section-kicker">Sesongoversikt</p>
-            <h2 id="rankings-title" class="section-heading">Topp 10 pr. standarddistanse</h2>
-          </div>
-          <p class="section-copy">Kun beste resultat per utøver vises. Kvinner og menn rangeres hver for seg.</p>
-        </div>
-        <div id="rankings-grid" class="rankings-grid" aria-live="polite"></div>
-      </section>
-
       </div>
 
-      <section id="profile-view" class="route-view profile-view" aria-live="polite" hidden></section>
+      <section id="view-people" class="route-view" hidden></section>
+
+      <section id="view-profile" class="route-view profile-view" hidden aria-live="polite"></section>
+
+      <section id="view-stats" class="route-view" hidden></section>
+
+      <section id="view-search" class="route-view" hidden></section>
 
       <footer class="footer">
         <span id="last-updated">Data oppdateres fra arbeidsboken.</span>

@@ -509,8 +509,11 @@ def test_public_payload_contract_and_private_field_validation(tmp_path: Path) ->
                 "result_time_raw": "15:50",
                 "result_time_normalized": "15:50",
                 "result_time_seconds": 950,
+                "wa_points": 900.0,
+                "is_pb": True,
+                "is_sb": False,
                 "place": "1",
-                "notes_clean": "",
+                "notes_clean": "PB",
                 "split_first_label": "",
                 "split_first_display": "",
                 "split_second_label": "",
@@ -524,7 +527,13 @@ def test_public_payload_contract_and_private_field_validation(tmp_path: Path) ->
     people_payload = build_people_payload(df, identity)
     payload = build_payload(df, build_weekly_summary(df), build_missing_report(df), build_rankings(df), people_payload)
 
-    assert payload["schema_version"] == 2
+    assert payload["schema_version"] == 3
+    assert payload["results"][0]["is_pb"] is True
+    assert payload["results"][0]["ranking_distance"] == "5 km"
+    assert payload["weeks"][0]["pb_count"] == 1
+    assert payload["weeks"][0]["new_athlete_count"] == 1
+    assert payload["weeks"][0]["top_performances"][0]["wa_points"] == 900.0
+    assert payload["months"][0]["month_label"] == "April"
     assert payload["people"]["profile_count"] == 1
     assert payload["results"][0]["person_id"] == "skv-p000001"
     validate_public_payload(payload)
@@ -537,7 +546,7 @@ def test_generated_public_json_has_people_and_no_private_fields() -> None:
     payload_path = ROOT / "docs" / "data" / "results.json"
     payload = json.loads(payload_path.read_text(encoding="utf-8"))
 
-    assert payload["schema_version"] == 2
+    assert payload["schema_version"] == 3
     assert "people" in payload
     assert all(result.get("person_id") for result in payload["results"])
     validate_public_payload(payload)

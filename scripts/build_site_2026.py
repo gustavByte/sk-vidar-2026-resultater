@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import math
+import re
 import sqlite3
 from datetime import datetime
 
@@ -114,6 +115,7 @@ PUBLIC_RESULT_FIELDS = [
     "class_place",
     "event_label",
     "distance",
+    "profile_distance",
     "result_time_raw",
     "result_time_normalized",
     "result_time_seconds",
@@ -122,6 +124,8 @@ PUBLIC_RESULT_FIELDS = [
     "wa_points",
     "place",
     "notes_clean",
+    "is_pb",
+    "is_sb",
     "split_first_label",
     "split_first_display",
     "split_second_label",
@@ -129,6 +133,21 @@ PUBLIC_RESULT_FIELDS = [
     "split_delta_display",
     "split_state",
 ]
+
+MONTH_LABELS_NO = {
+    1: "Januar",
+    2: "Februar",
+    3: "Mars",
+    4: "April",
+    5: "Mai",
+    6: "Juni",
+    7: "Juli",
+    8: "August",
+    9: "September",
+    10: "Oktober",
+    11: "November",
+    12: "Desember",
+}
 
 
 MOJIBAKE_MARKERS = ("\u00c3", "\u00c2", "\u00e2")
@@ -240,6 +259,16 @@ def has_valid_time(value: object) -> bool:
     return pd.notna(value) and value != float("inf")
 
 
+# PB/SB er manuelle merker fra kildens notater. Datasettet dekker kun 2026, så
+# ekte personlige rekorder kan ikke utledes her; når flerårsdata finnes kan et
+# `pb_source: manual|derived`-felt utvide disse flaggene.
+def parse_note_flags(note: object) -> dict[str, bool]:
+    if note is None or pd.isna(note):
+        return {"is_pb": False, "is_sb": False}
+    tokens = {part.strip().casefold() for part in re.split(r"[;,]", str(note))}
+    return {"is_pb": "pb" in tokens, "is_sb": "sb" in tokens}
+
+
 def normalize_ranking_distance(row: pd.Series) -> str:
     distance = str(row.get("distance") or "").strip()
     if distance in STANDARD_RANKING_DISTANCE_SET:
@@ -281,6 +310,9 @@ def load_results() -> pd.DataFrame:
     working["event_label"] = working["event_name"].fillna("").astype(str).str.strip().replace(EVENT_NAME_OVERRIDES)
     working["event_name"] = working["event_label"]
     working["notes_clean"] = working["notes"].apply(clean_note)
+    note_flags = working["notes_clean"].apply(parse_note_flags)
+    working["is_pb"] = note_flags.map(lambda flags: flags["is_pb"])
+    working["is_sb"] = note_flags.map(lambda flags: flags["is_sb"])
     working["place"] = [extract_place(position, note) for position, note in zip(working["position"], working["notes"])]
     working["result_time_source"] = working["result_time_normalized"].fillna(working["result_time_raw"])
     working["secondary_time_source"] = working["secondary_time_normalized"].fillna(working["secondary_time_raw"])
@@ -437,6 +469,9 @@ def build_weekly_summary(df: pd.DataFrame) -> pd.DataFrame:
             published_date_label=("published_date_label", "max"),
             women_count=("gender", lambda values: int((values == "K").sum())),
             men_count=("gender", lambda values: int((values == "M").sum())),
+            pb_count=("is_pb", "sum"),
+            sb_count=("is_sb", "sum"),
+            wa_result_count=("wa_points", lambda values: int(values.notna().sum())),
             events=(
                 "event_label",
                 lambda values: sorted({str(value).strip() for value in values if pd.notna(value) and str(value).strip()}),
@@ -445,6 +480,67 @@ def build_weekly_summary(df: pd.DataFrame) -> pd.DataFrame:
         .reset_index()
     )
     return grouped.sort_values(["week_number", "published_date_iso"], ascending=[False, False], na_position="last").reset_index(drop=True)
+
+
+def build_week_highlights(df: pd.DataFrame) -> dict[int, dict[str, object]]:
+    """Per uke: antall debutanter og topp 3 prestasjoner etter WA-poeng.
+
+    WA-poeng er kjønnsnormaliserte, så listen blandes på tvers av kjønn.
+    """
+    with_person = df[df["person_id"].fillna("").ne("")]
+    first_seen_week = with_person.groupby("person_id")["week_number"].min()
+    new_counts = first_seen_week.value_counts()
+
+    wa_df = df[df["wa_points"].notna()]
+    highlights: dict[int, dict[str, object]] = {}
+    for week_number in df["week_number"].dropna().unique():
+        week_key = int(week_number)
+        top_rows = (
+            wa_df[wa_df["week_number"] == week_number]
+            .sort_values(["wa_points", "result_time_seconds"], ascending=[False, True])
+            .head(3)
+        )
+        top_performances = [
+            {
+                "result_id": row.get("result_id"),
+                "person_id": row.get("person_id"),
+                "person_slug": row.get("person_slug"),
+                "athlete_name": row.get("athlete_name"),
+                "gender": row.get("gender"),
+                "distance": row.get("distance"),
+                "result_time": row.get("result_time_normalized") or row.get("result_time_raw"),
+                "wa_points": _serialize_value(row.get("wa_points")),
+                "event_label": row.get("event_label"),
+                "week_number": week_key,
+            }
+            for _, row in top_rows.iterrows()
+        ]
+        highlights[week_key] = {
+            "new_athlete_count": int(new_counts.get(week_number, 0)),
+            "top_performances": top_performances,
+        }
+    return highlights
+
+
+def build_months(df: pd.DataFrame) -> list[dict[str, object]]:
+    working = df[df["published_date_iso"].notna()].copy()
+    working["month"] = working["published_date_iso"].str.slice(0, 7)
+
+    months: list[dict[str, object]] = []
+    for month, group in working.groupby("month"):
+        months.append(
+            {
+                "month": month,
+                "month_label": MONTH_LABELS_NO.get(int(month[5:7]), month),
+                "result_count": int(len(group)),
+                "athlete_count": int(group["person_id"].nunique()),
+                "event_count": int(group["event_label"].nunique()),
+                "women_count": int((group["gender"] == "K").sum()),
+                "men_count": int((group["gender"] == "M").sum()),
+            }
+        )
+    months.sort(key=lambda entry: entry["month"])
+    return months
 
 
 def build_missing_report(df: pd.DataFrame) -> pd.DataFrame:
@@ -499,6 +595,7 @@ def build_rankings(df: pd.DataFrame) -> list[dict[str, object]]:
                         "athlete_name": row.get("athlete_name"),
                         "result_time": row.get("result_time_normalized") or row.get("result_time_raw"),
                         "result_time_seconds": _serialize_value(row.get("result_time_seconds")),
+                        "wa_points": _serialize_value(row.get("wa_points")),
                         "event_label": row.get("event_label"),
                         "published_date": row.get("published_date_iso"),
                         "published_date_label": row.get("published_date_label"),
@@ -524,7 +621,7 @@ def build_public_results(df: pd.DataFrame) -> list[dict[str, object]]:
         if field not in source_df.columns:
             source_df[field] = None
     public_df = source_df[PUBLIC_RESULT_FIELDS].copy()
-    public_df = public_df.rename(columns={"published_date_iso": "published_date"})
+    public_df = public_df.rename(columns={"published_date_iso": "published_date", "profile_distance": "ranking_distance"})
     return [row_to_dict(row) for _, row in public_df.iterrows()]
 
 
@@ -536,11 +633,14 @@ def build_payload(
     people_payload: dict[str, object],
 ) -> dict[str, object]:
     results = build_public_results(df)
+    highlights = build_week_highlights(df)
     weeks = []
     for _, row in summary_df.iterrows():
+        week_number = int(row["week_number"]) if pd.notna(row["week_number"]) else None
+        week_highlights = highlights.get(week_number, {"new_athlete_count": 0, "top_performances": []})
         weeks.append(
             {
-                "week_number": int(row["week_number"]) if pd.notna(row["week_number"]) else None,
+                "week_number": week_number,
                 "week_label": row["week_label"],
                 "published_date": row["published_date_iso"],
                 "published_date_label": row["published_date_label"],
@@ -549,6 +649,11 @@ def build_payload(
                 "event_count": int(row["event_count"]),
                 "women_count": int(row["women_count"]),
                 "men_count": int(row["men_count"]),
+                "pb_count": int(row["pb_count"]),
+                "sb_count": int(row["sb_count"]),
+                "wa_result_count": int(row["wa_result_count"]),
+                "new_athlete_count": week_highlights["new_athlete_count"],
+                "top_performances": week_highlights["top_performances"],
                 "events": row["events"],
             }
         )
@@ -562,6 +667,9 @@ def build_payload(
         "latest_date": df["published_date_iso"].max(),
         "women_count": int((df["gender"] == "K").sum()),
         "men_count": int((df["gender"] == "M").sum()),
+        "wa_result_count": int(df["wa_points"].notna().sum()),
+        "pb_count": int(df["is_pb"].sum()),
+        "sb_count": int(df["is_sb"].sum()),
         "missing_gender_or_class_count": int(len(missing_df)),
     }
 
@@ -570,6 +678,7 @@ def build_payload(
         "generated_at": datetime.now().astimezone().isoformat(timespec="seconds"),
         "stats": stats,
         "weeks": weeks,
+        "months": build_months(df),
         "results": results,
         "rankings": rankings,
         "people": people_payload,
@@ -659,7 +768,7 @@ def write_database(df: pd.DataFrame, summary_df: pd.DataFrame, payload: dict[str
 
 
 def write_json(payload: dict[str, object]) -> None:
-    JSON_FILE.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    JSON_FILE.write_text(json.dumps(payload, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
 
 
 def main() -> None:

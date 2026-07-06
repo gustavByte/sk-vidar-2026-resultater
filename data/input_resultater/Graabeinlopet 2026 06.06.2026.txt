@@ -1,0 +1,15 @@
+Graabeinløpet 2026 | 06.06.2026 | Race Result / EQTiming
+Kildeark: C:\Users\guzze\Documents\Python kode\Div beregininger\API resulater\Graabeinlopet 2026 - SK Vidar og OSI\output\graabeinlopet_2026_resultater.xlsx
+Filter: Vidar/OSI-relaterte fullforte treff, basert paa offisielt klubbfelt eller eksakt lokalt navnetreff.
+Rader i dette uttrekket: 3.
+
+2026-06-06 | Graabeinløpet 10 km | Benjamin Thürer | startnr 99 | Menn 35-39 | Bamford1869 | 00:34:42 | plass 2 | kjonn  | klasse  | SK Vidar | Lokalt navnetreff | Eksakt navnetreff: SK Vidar Slack-medlemmer; Eksakt navnetreff: SK Vidar aktive medlemmer | middels
+2026-06-06 | Graabeinløpet 10 km | Sveinung Brenno Flæthe | startnr 112 | Menn 35-39 | Konnerud IL | 00:38:24 | plass 5 | kjonn  | klasse  | OSI Friidrett | Lokalt navnetreff | Eksakt navnetreff: OSI medlemsfil navn | middels
+2026-06-06 | Graabeinløpet 10 km | Sindre Kummervold | startnr 93 | Menn 25-29 |  | 00:53:27 | plass 70 | kjonn  | klasse  | SK Vidar | Lokalt navnetreff | Eksakt navnetreff: SK Vidar Slack-medlemmer | middels
+
+Kilder:
+- https://my.raceresult.com/372539/results
+- https://my.raceresult.com/372539/participants
+- https://live.eqtiming.com/79243
+- Lokal nedlastingsmappe: C:\Users\guzze\Documents\Python kode\Div beregininger\API resulater\Graabeinlopet 2026 - SK Vidar og OSI
+- Metadata: C:\Users\guzze\Documents\Python kode\Div beregininger\API resulater\Graabeinlopet 2026 - SK Vidar og OSI\metadata.json

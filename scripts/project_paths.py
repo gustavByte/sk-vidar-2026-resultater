@@ -23,6 +23,8 @@ PERSON_EXTERNAL_IDS_FILE = PERSON_IDENTITY_DIR / "person_external_ids.csv"
 PERSON_SLUG_HISTORY_FILE = PERSON_IDENTITY_DIR / "person_slug_history.csv"
 RESULT_PERSON_OVERRIDES_FILE = PERSON_IDENTITY_DIR / "result_person_overrides.csv"
 PERSON_MATCH_DECISIONS_FILE = PERSON_IDENTITY_DIR / "person_match_decisions.csv"
+WA_SCORING_DB_FILE = ROOT_DIR.parent / "felles" / "WA Poeng" / "wa_scoring.db"
+WA_TOOLKIT_DIR = WA_SCORING_DB_FILE.parent
 
 WEEKLY_RESULTS_FILE = ARBEIDSFILER_DIR / "weekly_results_2026.xlsx"
 SHARED_OVERVIEW_FILE = DELT_OVERSIKT_DIR / "SK Vidar Langdistanse 2026.xlsx"
