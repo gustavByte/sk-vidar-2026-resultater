@@ -314,7 +314,7 @@ table {
 
 .rankings-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
   gap: 8px;
 }
 
@@ -412,24 +412,27 @@ table {
 }
 
 .ranking-line {
-  display: flex;
-  justify-content: space-between;
-  gap: 8px;
-  align-items: baseline;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 2px;
+  align-items: start;
 }
 
 .ranking-name {
+  display: block;
   min-width: 0;
   font-size: 0.86rem;
   line-height: 1.2;
+  overflow-wrap: anywhere;
 }
 
 .ranking-time {
-  flex: 0 0 auto;
+  justify-self: start;
+  max-width: 100%;
   font-family: "Space Grotesk", "IBM Plex Sans", system-ui, sans-serif;
   font-size: 0.86rem;
   font-weight: 700;
-  white-space: nowrap;
+  line-height: 1.15;
 }
 
 .ranking-meta {
