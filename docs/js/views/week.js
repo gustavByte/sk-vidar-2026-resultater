@@ -13,7 +13,7 @@ const current = {
   grouping: "",
 };
 
-const DISTANCE_ORDER = ["600 m", "800 m", "1500 m", "3000 m", "5000 m", "5 km", "10 km", "Halvmaraton", "Maraton", "42 km", "30 km", "60 km"];
+const DISTANCE_ORDER = ["600 m", "800 m", "1500 m", "3000 m", "3000 m hinder", "5000 m", "10000 m", "5 km", "10 km", "Halvmaraton", "Maraton", "42 km", "30 km", "60 km"];
 
 let els = null;
 let searchRenderFrame = 0;

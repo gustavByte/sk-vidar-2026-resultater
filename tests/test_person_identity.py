@@ -485,6 +485,61 @@ def test_5000m_is_a_standard_ranking_and_profile_distance(tmp_path: Path) -> Non
     assert profile["best_results"][0]["distance"] == "5000 m"
 
 
+def test_10000m_and_steeple_are_standard_profile_distances(tmp_path: Path) -> None:
+    df = pd.DataFrame(
+        [
+            {
+                "distance": "10000 m",
+                "gender": "K",
+                "person_id": "skv-p000001",
+                "person_slug": "runner-one",
+                "result_id": "res-10000m",
+                "athlete_name": "Runner One",
+                "result_time_seconds": 1900.0,
+                "result_time_normalized": "31:40",
+                "result_time_raw": "31:40",
+                "published_date_sort": pd.Timestamp("2026-07-04"),
+                "published_date_iso": "2026-07-04",
+                "published_date_label": "04.07.2026",
+                "week_number": 27,
+                "event_label": "Track Test",
+                "place": "1",
+                "class_place": "1",
+            },
+            {
+                "distance": "3000 m hinder",
+                "gender": "K",
+                "person_id": "skv-p000001",
+                "person_slug": "runner-one",
+                "result_id": "res-steeple",
+                "athlete_name": "Runner One",
+                "result_time_seconds": 560.0,
+                "result_time_normalized": "9:20",
+                "result_time_raw": "9:20",
+                "published_date_sort": pd.Timestamp("2026-07-05"),
+                "published_date_iso": "2026-07-05",
+                "published_date_label": "05.07.2026",
+                "week_number": 27,
+                "event_label": "Track Test",
+                "place": "1",
+                "class_place": "1",
+            },
+        ]
+    )
+    df["profile_distance"] = df.apply(normalize_ranking_distance, axis=1)
+
+    rankings = build_rankings(df)
+    ten_thousand = next(group for group in rankings if group["distance"] == "10000 m")
+    steeple = next(group for group in rankings if group["distance"] == "3000 m hinder")
+    assert ten_thousand["women"][0]["result_id"] == "res-10000m"
+    assert steeple["women"][0]["result_id"] == "res-steeple"
+
+    identity = ensure_new_people_are_appended_without_changing_existing_ids(df, tmp_path)
+    profile = build_people_payload(df, identity)["profiles"][0]
+    assert "10000 m" in profile["distances"]
+    assert "3000 m hinder" in profile["distances"]
+
+
 def test_public_payload_contract_and_private_field_validation(tmp_path: Path) -> None:
     df = pd.DataFrame(
         [

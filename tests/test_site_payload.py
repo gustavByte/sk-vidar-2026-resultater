@@ -151,11 +151,19 @@ def test_ranking_distance_for_road_and_trail_42k() -> None:
     trail = pd.Series({"distance": "42 km", "result_time_seconds": 9000.0, "event_label": "Lofoten Skyrace", "notes_clean": ""})
     standard = pd.Series({"distance": "10 km", "result_time_seconds": 2100.0, "event_label": "Testløpet", "notes_clean": ""})
     other = pd.Series({"distance": "3 km", "result_time_seconds": 600.0, "event_label": "Gateløp", "notes_clean": ""})
+    steeple = pd.Series({"distance": "3000 m hinder", "result_time_seconds": 560.0, "event_label": "Baneløp", "notes_clean": ""})
+    track_10000 = pd.Series({"distance": "10000 m", "result_time_seconds": 1900.0, "event_label": "Baneløp", "notes_clean": ""})
+    masters_5000 = pd.Series({"distance": "MV 5000 Meters (M35-M55):", "result_time_seconds": 980.0, "event_label": "Nordic Masters", "notes_clean": ""})
+    masters_800 = pd.Series({"distance": "WV 800 Meters (W50,W55)", "result_time_seconds": 150.0, "event_label": "Nordic Masters", "notes_clean": ""})
 
     assert normalize_ranking_distance(road) == "Maraton"
     assert normalize_ranking_distance(trail) == ""
     assert normalize_ranking_distance(standard) == "10 km"
     assert normalize_ranking_distance(other) == ""
+    assert normalize_ranking_distance(steeple) == "3000 m hinder"
+    assert normalize_ranking_distance(track_10000) == "10000 m"
+    assert normalize_ranking_distance(masters_5000) == "5000 m"
+    assert normalize_ranking_distance(masters_800) == "800 m"
 
 
 def test_write_json_is_minified(tmp_path, monkeypatch) -> None:

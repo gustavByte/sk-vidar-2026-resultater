@@ -1,7 +1,7 @@
 import { state, getWeekResults, resultsForPerson } from "./state.js";
 import { normalizeSearchText, sortResultsNewestFirst } from "./format.js";
 
-const STANDARD_DISTANCES = ["800 m", "1500 m", "3000 m", "5000 m", "5 km", "10 km", "Halvmaraton", "Maraton"];
+const STANDARD_DISTANCES = ["800 m", "1500 m", "3000 m", "3000 m hinder", "5000 m", "10000 m", "5 km", "10 km", "Halvmaraton", "Maraton"];
 const STANDARD_DISTANCE_SET = new Set(STANDARD_DISTANCES);
 
 const cache = new Map();

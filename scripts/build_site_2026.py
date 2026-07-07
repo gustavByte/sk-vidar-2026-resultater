@@ -34,14 +34,16 @@ DISTANCE_ORDER = {
     "800 m": 1,
     "1500 m": 2,
     "3000 m": 3,
-    "5000 m": 4,
-    "5 km": 5,
-    "10 km": 6,
-    "Halvmaraton": 7,
-    "Maraton": 8,
-    "42 km": 8,
-    "30 km": 9,
-    "60 km": 10,
+    "3000 m hinder": 4,
+    "5000 m": 5,
+    "10000 m": 6,
+    "5 km": 7,
+    "10 km": 8,
+    "Halvmaraton": 9,
+    "Maraton": 10,
+    "42 km": 10,
+    "30 km": 11,
+    "60 km": 12,
 }
 
 DEFAULT_SPLIT_LABELS = {
@@ -61,7 +63,9 @@ STANDARD_RANKING_DISTANCES = [
     "800 m",
     "1500 m",
     "3000 m",
+    "3000 m hinder",
     "5000 m",
+    "10000 m",
     "5 km",
     "10 km",
     "Halvmaraton",
@@ -78,6 +82,18 @@ TRAIL_EVENT_KEYWORDS = (
     "skyrace",
     "destroyer",
 )
+TRACK_DISTANCE_PATTERN = re.compile(
+    r"(?<!\d)(600|800|1500|3000|5000|10000|10[\s.,]?000)\s*(?:m|meter|meters)\b",
+    re.IGNORECASE,
+)
+TRACK_RANKING_DISTANCES = {
+    "800": "800 m",
+    "1500": "1500 m",
+    "3000": "3000 m",
+    "5000": "5000 m",
+    "10000": "10000 m",
+}
+STEEPLE_KEYWORDS = ("hinder", "steeple", "steeplechase")
 
 
 SPLIT_DISABLED_KEYWORDS = (
@@ -273,6 +289,15 @@ def normalize_ranking_distance(row: pd.Series) -> str:
     distance = str(row.get("distance") or "").strip()
     if distance in STANDARD_RANKING_DISTANCE_SET:
         return distance
+
+    normalized = re.sub(r"\s+", " ", distance.casefold())
+    if "3000" in normalized and any(keyword in normalized for keyword in STEEPLE_KEYWORDS):
+        return "3000 m hinder"
+
+    track_match = TRACK_DISTANCE_PATTERN.search(normalized)
+    if track_match:
+        meters = re.sub(r"\D", "", track_match.group(1))
+        return TRACK_RANKING_DISTANCES.get(meters, "")
 
     if distance != "42 km" or not has_valid_time(row.get("result_time_seconds")):
         return ""

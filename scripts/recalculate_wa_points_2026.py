@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import re
 import sys
 from dataclasses import dataclass
 
@@ -20,7 +21,14 @@ DISTANCE_TO_WA_EVENT = {
     "800 m": "800m",
     "1500 m": "1500m",
     "3000 m": "3000m",
+    "3000 m hinder": "3000m SC",
+    "3000m hinder": "3000m SC",
+    "3000 m steeplechase": "3000m SC",
+    "3000m steeplechase": "3000m SC",
+    "5000 m": "5000m",
     "5 km": "5 km",
+    "10000 m": "10000m",
+    "10 000 m": "10000m",
     "10 km": "10 km",
     "15 km": "15 km",
     "10 mile": "10 Miles",
@@ -35,7 +43,10 @@ WA_EVENT_DISPLAY = {
     "800m": "800m",
     "1500m": "1500m",
     "3000m": "3000m",
+    "3000m SC": "3000m hinder",
     "5 km": "5 km",
+    "5000m": "5000m",
+    "10000m": "10000m",
     "10 km": "10 km",
     "15 km": "15 km",
     "10 Miles": "10 Miles",
@@ -45,6 +56,11 @@ WA_EVENT_DISPLAY = {
 }
 
 ROAD_BISLETT_PREFIX = "bislett distanseserie"
+TRACK_DISTANCE_PATTERN = re.compile(
+    r"(?<!\d)(600|800|1500|3000|5000|10000|10[\s.,]?000)\s*(?:m|meter|meters)\b",
+    re.IGNORECASE,
+)
+STEEPLE_KEYWORDS = ("hinder", "steeple", "steeplechase")
 
 
 @dataclass(frozen=True)
@@ -89,6 +105,24 @@ def _wa_gender(value: str) -> str:
     return ""
 
 
+def _track_event_from_distance(distance: str) -> str:
+    normalized = re.sub(r"\s+", " ", distance.strip().casefold())
+    if normalized in DISTANCE_TO_WA_EVENT:
+        return DISTANCE_TO_WA_EVENT[normalized]
+
+    if "3000" in normalized and any(keyword in normalized for keyword in STEEPLE_KEYWORDS):
+        return "3000m SC"
+
+    match = TRACK_DISTANCE_PATTERN.search(normalized)
+    if not match:
+        return ""
+
+    meters = re.sub(r"\D", "", match.group(1))
+    if meters == "10000":
+        return "10000m"
+    return f"{meters}m"
+
+
 def _wa_event_for_row(row: pd.Series) -> str:
     distance = _clean_text(row.get("distance"))
     event_name = _clean_text(row.get("event_name")).casefold()
@@ -96,7 +130,7 @@ def _wa_event_for_row(row: pd.Series) -> str:
     if event_name.startswith(ROAD_BISLETT_PREFIX) and distance == "3000 m":
         return ""
 
-    return DISTANCE_TO_WA_EVENT.get(distance, "")
+    return _track_event_from_distance(distance) or DISTANCE_TO_WA_EVENT.get(distance, "")
 
 
 def _result_time(row: pd.Series) -> str:
