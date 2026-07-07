@@ -453,7 +453,7 @@ table {
 
 .toolbar {
   position: sticky;
-  top: var(--nav-height);
+  top: 0;
   z-index: 3;
   padding: 8px 10px 7px;
   border-bottom: 1px solid var(--line);
@@ -1211,7 +1211,7 @@ tbody tr:hover {
   }
 
   .toolbar {
-    top: calc(var(--nav-height) + env(safe-area-inset-top, 0px));
+    top: 0;
     padding: 10px;
   }
 
