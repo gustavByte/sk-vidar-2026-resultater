@@ -32,8 +32,9 @@ export function hrefPeople(params = {}) {
   return `#/personer${buildQuery(params)}`;
 }
 
-export function hrefStats(section = "") {
-  return section ? `#/statistikk/${encodeURIComponent(section)}` : "#/statistikk";
+export function hrefStats(section = "", params = {}) {
+  const base = section ? `#/statistikk/${encodeURIComponent(section)}` : "#/statistikk";
+  return `${base}${buildQuery(params)}`;
 }
 
 export function hrefSearch(query = "") {
@@ -81,7 +82,7 @@ export function parseHash(rawHash) {
       return segments.length > 1 ? { view: "person", params: { slug: segments[1] } } : { view: "people", params: {} };
     case "statistikk": {
       const section = segments.length > 1 && STATS_SECTIONS.has(segments[1]) ? segments[1] : "";
-      return { view: "stats", params: { section } };
+      return { view: "stats", params: { ...params, section } };
     }
     case "sok":
       return { view: "search", params: { q: params.q || "" } };

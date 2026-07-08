@@ -4,7 +4,7 @@ import * as dashboardView from "./js/views/dashboard.js";
 import * as weekView from "./js/views/week.js";
 import * as peopleView from "./js/views/people.js";
 import * as profileView from "./js/views/profile.js";
-import * as statsView from "./js/views/stats.js?v=20260708-highlights3";
+import * as statsView from "./js/views/stats.js?v=20260708-terrain1";
 import * as searchView from "./js/views/search.js";
 
 const views = {

@@ -2385,12 +2385,20 @@ tbody tr:hover {
   font-size: 0.64rem;
   font-weight: 700;
   letter-spacing: 0.03em;
+  text-decoration: none;
 }
 
 .highlight-badge--terrain {
   border-color: #cfded5;
   background: #edf5ef;
   color: #446f4a;
+}
+
+.highlight-badge--terrain:hover,
+.highlight-badge--terrain:focus-visible,
+.highlight-badge--terrain.is-active {
+  border-color: #9ec0a5;
+  color: #245a2d;
 }
 
 .highlight-badge--pb {
@@ -2414,6 +2422,123 @@ tbody tr:hover {
   margin: 0;
   color: var(--muted);
   font-size: 0.82rem;
+}
+
+.terrain-filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.terrain-filter-row .event-chip {
+  text-decoration: none;
+}
+
+.terrain-filter-row .event-chip span {
+  color: inherit;
+  opacity: 0.72;
+}
+
+.terrain-overview-summary {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.terrain-event-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.terrain-event-card {
+  display: grid;
+  gap: 8px;
+  min-width: 0;
+  padding: 10px;
+  border: 1px solid #e4ddd5;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.terrain-event-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: start;
+  min-width: 0;
+}
+
+.terrain-event-head h3 {
+  margin: 0 0 5px;
+  font-family: "Space Grotesk", "IBM Plex Sans", system-ui, sans-serif;
+  font-size: 0.98rem;
+  line-height: 1.15;
+  overflow-wrap: anywhere;
+}
+
+.terrain-event-week {
+  flex: 0 0 auto;
+  font-size: 0.72rem;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.terrain-event-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 10px;
+  color: var(--muted);
+  font-size: 0.74rem;
+}
+
+.terrain-event-best {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 8px;
+  padding-top: 7px;
+  border-top: 1px solid #efe7de;
+}
+
+.terrain-event-label {
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.terrain-event-best-body,
+.terrain-event-athlete,
+.terrain-event-result {
+  min-width: 0;
+}
+
+.terrain-event-athlete {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  align-items: baseline;
+  font-size: 0.84rem;
+}
+
+.terrain-event-athlete .person-link {
+  overflow-wrap: anywhere;
+}
+
+.terrain-event-result {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 8px;
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 0.74rem;
+}
+
+.terrain-event-result strong {
+  color: var(--text);
 }
 
 .stats-table-wrap {
@@ -2494,6 +2619,7 @@ tbody tr:hover {
 @media (max-width: 1080px) {
   .dashboard-grid,
   .highlight-columns,
+  .terrain-event-grid,
   .stats-columns {
     grid-template-columns: 1fr;
   }

@@ -37,7 +37,7 @@ const TERRAIN_OR_TRAIL_PATTERNS = [
 
 const KNOWN_TERRAIN_EVENTS = [
   /\bzegama\b/,
-  /\bmont blanc\b/,
+  /\bmont[-\s]?blanc\b/,
   /\butmb\b/,
   /\bval d aran\b/,
   /\bchianti ultra trail\b/,
@@ -61,14 +61,53 @@ const MAJOR_EVENT_PATTERNS = [
   { pattern: /\b(vm|world championship|world championships|verdensmesterskap)\b/, score: 920 },
   { pattern: /\b(em|european championship|european championships|europamesterskap|european cup)\b/, score: 780 },
   { pattern: /\b(nm|norgesmesterskap|nordisk mesterskap|nordic senior championships)\b/, score: 680 },
-  { pattern: /\b(zegama|mont blanc|utmb|val d aran|chianti ultra trail)\b/, score: 1200 },
+  { pattern: /\b(zegama|mont[-\s]?blanc|utmb|val d aran|chianti ultra trail)\b/, score: 1200 },
   { pattern: /\b(skyrunning youth world championships|gornergrat|zermatt|lofoten skyrace|synnfjell sky race)\b/, score: 760 },
   { pattern: /\b(boston marathon|london marathon|bislett games|diamond league|bauhaus galan|paavo nurmi games|track night vienna)\b/, score: 620 },
   { pattern: /\b(mesterskap|championship|cup)\b/, score: 360 },
 ];
 
+export const TERRAIN_TYPE_LABELS = {
+  fjellop: "Fjelløp",
+  trail: "Trail",
+  skyrace: "Skyrace",
+  terreng: "Terreng",
+  annet: "Annet",
+};
+
+export const TERRAIN_FILTER_TYPES = ["fjellop", "trail", "skyrace", "terreng"];
+
 function highlightText(row) {
   return normalizeSearchText([row.notes_clean, row.event_label, row.distance].filter(Boolean).join(" "));
+}
+
+export function terrainTypeTags(row) {
+  const text = highlightText(row);
+  if (!text) {
+    return [];
+  }
+
+  const tags = [];
+  if (/\bsky\s?race\b|\bskyrace\b|\bskyrunning\b/.test(text)) {
+    tags.push("skyrace");
+  }
+  if (/\bfjell\w*\b|\bzegama\b|\bmont[-\s]?blanc\b|\bgornergrat\b|\bzermatt\b|\bmendi\b|\bnorefjell\b|\b\d+\s*hm\+?\b/.test(text)) {
+    tags.push("fjellop");
+  }
+  if (/\btrail\b|\butmb\b|\bultratrail\b|\beco\s?trail\b/.test(text)) {
+    tags.push("trail");
+  }
+  if (/\bterreng\w*\b|\bskogsmaraton\b|\bbrunkollen rundt\b|\bfurumo terrengl/.test(text)) {
+    tags.push("terreng");
+  }
+  if (!tags.length && (TERRAIN_OR_TRAIL_PATTERNS.some((pattern) => pattern.test(text)) || KNOWN_TERRAIN_EVENTS.some((pattern) => pattern.test(text)))) {
+    tags.push("annet");
+  }
+  return tags;
+}
+
+export function terrainTypeOf(row) {
+  return terrainTypeTags(row)[0] || "";
 }
 
 function numericRank(value) {
@@ -146,7 +185,7 @@ export function isTerrainOrTrail(row) {
   if (!text) {
     return false;
   }
-  if (TERRAIN_OR_TRAIL_PATTERNS.some((pattern) => pattern.test(text)) || KNOWN_TERRAIN_EVENTS.some((pattern) => pattern.test(text))) {
+  if (terrainTypeTags(row).length) {
     return true;
   }
   const championshipTerrain = /\b(vm|em|nm)\b.*\b(fjell|terreng|trail|motbakke|ultra|skyrace|skyrunning)\b/.test(text);
@@ -232,6 +271,89 @@ export function terrainHighlights(limit = 6) {
     state.data.results.filter((row) => isTerrainOrTrail(row) && !hasFinitePoints(row)).sort(comparePerformanceHighlights),
   );
   return limit ? sorted.slice(0, limit) : sorted;
+}
+
+function compareTerrainEventGroups(a, b) {
+  const weekCompare = Number(b.latestWeek || 0) - Number(a.latestWeek || 0);
+  if (weekCompare !== 0) {
+    return weekCompare;
+  }
+  const dateCompare = String(b.latestDate || "").localeCompare(String(a.latestDate || ""));
+  if (dateCompare !== 0) {
+    return dateCompare;
+  }
+  const scoreCompare = Number(b.bestScore || 0) - Number(a.bestScore || 0);
+  if (scoreCompare !== 0) {
+    return scoreCompare;
+  }
+  const countCompare = Number(b.count || 0) - Number(a.count || 0);
+  if (countCompare !== 0) {
+    return countCompare;
+  }
+  return String(a.event_label || "").localeCompare(String(b.event_label || ""), "nb-NO");
+}
+
+export function terrainEventGroups({ type = "all", limit = 6 } = {}) {
+  const groups = memo("terrainEventGroups", () => {
+    const byEvent = new Map();
+    for (const row of state.data.results) {
+      if (!isTerrainOrTrail(row) || hasFinitePoints(row)) {
+        continue;
+      }
+      const eventLabel = String(row.event_label || "").trim() || "Ukjent løp";
+      let entry = byEvent.get(eventLabel);
+      if (!entry) {
+        entry = {
+          event_label: eventLabel,
+          rows: [],
+          types: new Set(),
+          weeks: new Set(),
+          count: 0,
+          women: 0,
+          men: 0,
+          best: row,
+          bestScore: Number.NEGATIVE_INFINITY,
+          latestDate: "",
+          latestWeek: 0,
+        };
+        byEvent.set(eventLabel, entry);
+      }
+
+      const score = performanceHighlightScore(row);
+      entry.rows.push(row);
+      entry.count += 1;
+      if (row.gender === "K") {
+        entry.women += 1;
+      } else if (row.gender === "M") {
+        entry.men += 1;
+      }
+      for (const tag of terrainTypeTags(row)) {
+        entry.types.add(tag);
+      }
+      if (row.week_number) {
+        entry.weeks.add(Number(row.week_number));
+        entry.latestWeek = Math.max(entry.latestWeek, Number(row.week_number));
+      }
+      if (String(row.published_date || "") > entry.latestDate) {
+        entry.latestDate = String(row.published_date || "");
+      }
+      if (score > entry.bestScore || (score === entry.bestScore && compareNewestThenRank(row, entry.best) < 0)) {
+        entry.best = row;
+        entry.bestScore = score;
+      }
+    }
+
+    return [...byEvent.values()]
+      .map((entry) => ({
+        ...entry,
+        types: [...entry.types],
+        weeks: [...entry.weeks].sort((a, b) => b - a),
+      }))
+      .sort(compareTerrainEventGroups);
+  });
+
+  const filtered = type && type !== "all" ? groups.filter((entry) => entry.types.includes(type)) : groups;
+  return limit ? filtered.slice(0, limit) : filtered;
 }
 
 // Full best-per-person rankings per standard distance, same ordering rules as
