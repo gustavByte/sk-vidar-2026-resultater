@@ -21,6 +21,161 @@ function hasFiniteTime(row) {
   return row.result_time_seconds !== null && row.result_time_seconds !== undefined && Number.isFinite(Number(row.result_time_seconds));
 }
 
+const TERRAIN_OR_TRAIL_PATTERNS = [
+  /\bterreng\w*\b/,
+  /\bfjell\w*\b/,
+  /\btrail\b/,
+  /\bmotbakke\b/,
+  /\bultra\w*\b/,
+  /\bsky\s?race\b/,
+  /\bskyrace\b/,
+  /\bskyrunning\b/,
+  /\bskogsmaraton\b/,
+  /\bbackyard\b/,
+  /\b\d+\s*hm\+?\b/,
+];
+
+const KNOWN_TERRAIN_EVENTS = [
+  /\bzegama\b/,
+  /\bmont blanc\b/,
+  /\butmb\b/,
+  /\bval d aran\b/,
+  /\bchianti ultra trail\b/,
+  /\bgornergrat\b/,
+  /\bzermatt\b/,
+  /\blofoten skyrace\b/,
+  /\bsynnfjell sky race\b/,
+  /\beco\s?trail\b/,
+  /\bhornindal rundt\b/,
+  /\bnorefjell trail\b/,
+  /\bsognefjord trail\b/,
+  /\btorshov trail\b/,
+  /\btrail des maures\b/,
+  /\bsandnes ultratrail\b/,
+  /\bromeriksasen pa langs\b/,
+  /\bnosen hundreds\b/,
+  /\bskyrunning youth world championships\b/,
+];
+
+const MAJOR_EVENT_PATTERNS = [
+  { pattern: /\b(vm|world championship|world championships|verdensmesterskap)\b/, score: 920 },
+  { pattern: /\b(em|european championship|european championships|europamesterskap|european cup)\b/, score: 780 },
+  { pattern: /\b(nm|norgesmesterskap|nordisk mesterskap|nordic senior championships)\b/, score: 680 },
+  { pattern: /\b(zegama|mont blanc|utmb|val d aran|chianti ultra trail)\b/, score: 1200 },
+  { pattern: /\b(skyrunning youth world championships|gornergrat|zermatt|lofoten skyrace|synnfjell sky race)\b/, score: 760 },
+  { pattern: /\b(boston marathon|london marathon|bislett games|diamond league|bauhaus galan|paavo nurmi games|track night vienna)\b/, score: 620 },
+  { pattern: /\b(mesterskap|championship|cup)\b/, score: 360 },
+];
+
+function highlightText(row) {
+  return normalizeSearchText([row.notes_clean, row.event_label, row.distance].filter(Boolean).join(" "));
+}
+
+function numericRank(value) {
+  const text = String(value ?? "").trim();
+  if (!text || /\b(dnf|dns|dq)\b/i.test(text)) {
+    return null;
+  }
+  const match = text.match(/\d+/);
+  if (!match) {
+    return null;
+  }
+  const rank = Number(match[0]);
+  return Number.isFinite(rank) && rank > 0 ? rank : null;
+}
+
+function placementScore(rank, scores) {
+  if (!rank) {
+    return 0;
+  }
+  if (rank === 1) {
+    return scores.first;
+  }
+  if (rank <= 3) {
+    return scores.top3;
+  }
+  if (rank <= 5) {
+    return scores.top5;
+  }
+  if (rank <= 10) {
+    return scores.top10;
+  }
+  if (rank <= 20) {
+    return scores.top20;
+  }
+  if (rank <= 50) {
+    return scores.top50;
+  }
+  return 0;
+}
+
+function majorEventScore(text) {
+  return MAJOR_EVENT_PATTERNS.reduce((best, entry) => (entry.pattern.test(text) ? Math.max(best, entry.score) : best), 0);
+}
+
+function noteHighlightScore(row, text) {
+  let score = 0;
+  if (row.is_pb || /\b(pb|pers|personlig rekord)\b/.test(text)) {
+    score += 120;
+  } else if (row.is_sb || /\b(sb|sesongbeste)\b/.test(text)) {
+    score += 80;
+  }
+  if (/\b(rekord|norgesrekord|klubbrekord)\b/.test(text)) {
+    score += 120;
+  }
+  if (/\b(1\. kvinne|1\. mann|vinner|seier)\b/.test(text)) {
+    score += 110;
+  }
+  return score;
+}
+
+function compareNewestThenRank(a, b) {
+  const dateCompare = String(b.published_date || "").localeCompare(String(a.published_date || ""));
+  if (dateCompare !== 0) {
+    return dateCompare;
+  }
+  const placeCompare = (numericRank(a.place) || Number.POSITIVE_INFINITY) - (numericRank(b.place) || Number.POSITIVE_INFINITY);
+  if (placeCompare !== 0) {
+    return placeCompare;
+  }
+  return String(a.athlete_name || "").localeCompare(String(b.athlete_name || ""), "nb-NO");
+}
+
+export function isTerrainOrTrail(row) {
+  const text = highlightText(row);
+  if (!text) {
+    return false;
+  }
+  if (TERRAIN_OR_TRAIL_PATTERNS.some((pattern) => pattern.test(text)) || KNOWN_TERRAIN_EVENTS.some((pattern) => pattern.test(text))) {
+    return true;
+  }
+  const championshipTerrain = /\b(vm|em|nm)\b.*\b(fjell|terreng|trail|motbakke|ultra|skyrace|skyrunning)\b/.test(text);
+  const terrainChampionship = /\b(fjell|terreng|trail|motbakke|ultra|skyrace|skyrunning)\b.*\b(vm|em|nm)\b/.test(text);
+  return championshipTerrain || terrainChampionship;
+}
+
+export function performanceHighlightScore(row) {
+  const text = highlightText(row);
+  const place = numericRank(row.place);
+  const classPlace = numericRank(row.class_place);
+
+  return (
+    majorEventScore(text) +
+    placementScore(place, { first: 660, top3: 540, top5: 430, top10: 320, top20: 210, top50: 110 }) +
+    placementScore(classPlace, { first: 280, top3: 220, top5: 170, top10: 110, top20: 60, top50: 25 }) +
+    noteHighlightScore(row, text) +
+    (isTerrainOrTrail(row) ? 80 : 0)
+  );
+}
+
+function comparePerformanceHighlights(a, b) {
+  const scoreCompare = performanceHighlightScore(b) - performanceHighlightScore(a);
+  if (scoreCompare !== 0) {
+    return scoreCompare;
+  }
+  return compareNewestThenRank(a, b);
+}
+
 // Uses the build-time normalization when present (schema v3); falls back to a
 // plain standard-distance check for older payloads.
 export function rankingDistanceOf(row) {
@@ -70,6 +225,41 @@ export function seasonWaPerPerson(limit) {
     return summaries;
   });
   return limit ? entries.slice(0, limit) : entries;
+}
+
+export function terrainHighlights(limit = 6) {
+  const sorted = memo("terrainHighlights", () =>
+    state.data.results.filter((row) => isTerrainOrTrail(row) && !hasFinitePoints(row)).sort(comparePerformanceHighlights),
+  );
+  return limit ? sorted.slice(0, limit) : sorted;
+}
+
+export function personalHighlights(limit = 6) {
+  const waSorted = memo("personalHighlightsWa", () => [...waResults()].sort((a, b) => Number(b.wa_points) - Number(a.wa_points) || compareNewestThenRank(a, b)));
+  const nonWaSorted = memo("personalHighlightsNonWa", () =>
+    state.data.results.filter((row) => !hasFinitePoints(row) && performanceHighlightScore(row) > 0).sort(comparePerformanceHighlights),
+  );
+
+  if (!limit) {
+    return [...waSorted, ...nonWaSorted];
+  }
+
+  const waLimit = Math.ceil(limit / 2);
+  const nonWaLimit = limit - waLimit;
+  const selected = [...waSorted.slice(0, waLimit), ...nonWaSorted.slice(0, nonWaLimit)];
+  if (selected.length >= limit) {
+    return selected;
+  }
+  const seen = new Set(selected.map((row) => row.result_id));
+  for (const row of [...waSorted.slice(waLimit), ...nonWaSorted.slice(nonWaLimit)]) {
+    if (!seen.has(row.result_id)) {
+      selected.push(row);
+    }
+    if (selected.length >= limit) {
+      break;
+    }
+  }
+  return selected;
 }
 
 // Full best-per-person rankings per standard distance, same ordering rules as

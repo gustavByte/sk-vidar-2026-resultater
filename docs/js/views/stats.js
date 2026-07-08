@@ -3,10 +3,21 @@ import { displayTime, escapeHtml, formatCount, formatEventLabel, formatWaPoints 
 import { hrefWeek } from "../router.js";
 import { genderPill, personLink } from "../templates.js";
 import { waChip } from "../badges.js";
-import { biggestEvents, fullRankingList, monthsSeries, participationTop, seasonWaPerPerson, seasonWaTopResults } from "../derive.js";
+import {
+  biggestEvents,
+  fullRankingList,
+  isTerrainOrTrail,
+  monthsSeries,
+  participationTop,
+  personalHighlights,
+  seasonWaPerPerson,
+  seasonWaTopResults,
+  terrainHighlights,
+} from "../derive.js";
 import { barChartSvg, chartLegendHtml, mountChart } from "../charts.js";
 
 const SECTIONS = [
+  { id: "hoydepunkter", label: "Høydepunkter" },
   { id: "topp-10", label: "Topp 10 per distanse" },
   { id: "wa", label: "WA-poeng" },
   { id: "deltakelse", label: "Deltakelse" },
@@ -59,6 +70,132 @@ function genderChipsHtml(groupName, active) {
         )
         .join("")}
     </div>
+  `;
+}
+
+function rowText(row) {
+  return [row.notes_clean, row.event_label, row.distance].filter(Boolean).join(" ").toLocaleLowerCase("nb-NO");
+}
+
+function terrainTypeLabel(row) {
+  const text = rowText(row);
+  if (text.includes("fjell") || text.includes("zegama") || text.includes("zermatt")) {
+    return "fjelløp";
+  }
+  if (text.includes("skyrace") || text.includes("sky race") || text.includes("skyrunning")) {
+    return "skyrace";
+  }
+  if (text.includes("trail") || text.includes("utmb")) {
+    return "trail";
+  }
+  if (text.includes("ultra")) {
+    return "ultra";
+  }
+  if (text.includes("motbakke")) {
+    return "motbakke";
+  }
+  if (text.includes("terreng")) {
+    return "terreng";
+  }
+  return isTerrainOrTrail(row) ? "terreng" : "";
+}
+
+function highlightBadge(label, modifier = "") {
+  const className = modifier ? ` highlight-badge--${modifier}` : "";
+  return `<span class="highlight-badge${className}">${escapeHtml(label)}</span>`;
+}
+
+function highlightBadgesHtml(row) {
+  const parts = [];
+  const terrainLabel = terrainTypeLabel(row);
+  if (terrainLabel) {
+    parts.push(highlightBadge(terrainLabel, "terrain"));
+  }
+  if (row.is_pb) {
+    parts.push(highlightBadge("PB", "pb"));
+  } else if (row.is_sb) {
+    parts.push(highlightBadge("SB", "sb"));
+  }
+  if (row.wa_points === null || row.wa_points === undefined || !Number.isFinite(Number(row.wa_points))) {
+    parts.push(highlightBadge("uten WA", "muted"));
+  } else {
+    parts.push(waChip(row.wa_points, { label: "WA" }));
+  }
+  return parts.join(" ");
+}
+
+function highlightPlaceText(row) {
+  const parts = [];
+  if (row.place) {
+    parts.push(`Plass ${row.place}`);
+  }
+  if (row.class_place) {
+    parts.push(`Klasse ${row.class_place}`);
+  }
+  return parts.join(" · ");
+}
+
+function highlightResultText(row) {
+  const distance = String(row.distance || "").trim();
+  const time = displayTime(row);
+  return [distance, time].filter(Boolean).join(" · ");
+}
+
+function highlightListHtml(rows, emptyText) {
+  if (!rows.length) {
+    return `<p class="highlight-empty">${escapeHtml(emptyText)}</p>`;
+  }
+
+  return `
+    <ol class="highlight-list">
+      ${rows
+        .map((row) => {
+          const place = highlightPlaceText(row);
+          const week = row.week_number ? `<a class="quiet-link highlight-week" href="${hrefWeek(row.week_number)}">Uke ${escapeHtml(row.week_number)}</a>` : "";
+          return `
+            <li class="highlight-row">
+              <div class="highlight-row-main">
+                <div class="highlight-athlete">${genderPill(row.gender)} ${personLink(row)}</div>
+                <div class="highlight-event">${escapeHtml(formatEventLabel(row.event_label))}</div>
+              </div>
+              <div class="highlight-row-meta">
+                <span class="highlight-result">${escapeHtml(highlightResultText(row))}</span>
+                ${place ? `<span>${escapeHtml(place)}</span>` : ""}
+                ${week}
+              </div>
+              <div class="highlight-badges">${highlightBadgesHtml(row)}</div>
+            </li>
+          `;
+        })
+        .join("")}
+    </ol>
+  `;
+}
+
+function highlightsSectionHtml() {
+  const terrainRows = terrainHighlights(6);
+  const personalRows = personalHighlights(6);
+
+  return `
+    <section class="stats-section highlights-section" id="stats-hoydepunkter" aria-labelledby="highlights-title">
+      <div class="section-header">
+        <div>
+          <p class="section-kicker">Utenfor de faste rankingene</p>
+          <h2 id="highlights-title" class="section-heading">Høydepunkter</h2>
+        </div>
+        <p class="section-copy">Korte lister som løfter sterke enkeltresultater, også der WA-poeng ikke finnes.</p>
+      </div>
+      <div class="highlight-columns">
+        <section class="highlight-card" aria-label="Terreng og fjell uten WA">
+          <h3 class="stats-block-heading">Terreng/fjell uten WA</h3>
+          ${highlightListHtml(terrainRows, "Ingen terreng- eller fjellresultater uten WA-poeng funnet.")}
+        </section>
+        <section class="highlight-card" aria-label="Sterke enkeltprestasjoner">
+          <h3 class="stats-block-heading">Sterke enkeltprestasjoner</h3>
+          ${highlightListHtml(personalRows, "Ingen høydepunkter funnet ennå.")}
+        </section>
+      </div>
+    </section>
   `;
 }
 
@@ -408,6 +545,7 @@ function renderContent(activeSection) {
         </div>
       </div>
       ${subNavHtml(activeSection)}
+      ${highlightsSectionHtml()}
       ${rankingsSectionHtml()}
       ${waSectionHtml()}
       ${participationSectionHtml()}

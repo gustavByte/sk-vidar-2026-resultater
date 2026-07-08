@@ -2294,6 +2294,128 @@ tbody tr:hover {
   letter-spacing: -0.02em;
 }
 
+.highlight-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.highlight-card {
+  min-width: 0;
+  padding: 10px;
+  border: 1px solid #e4ddd5;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.highlight-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.highlight-row {
+  display: grid;
+  gap: 4px;
+  padding: 8px 0;
+  border-top: 1px solid #efe7de;
+}
+
+.highlight-row:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.highlight-row-main,
+.highlight-athlete,
+.highlight-row-meta,
+.highlight-badges {
+  min-width: 0;
+}
+
+.highlight-athlete {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  align-items: baseline;
+  font-size: 0.86rem;
+}
+
+.highlight-athlete .person-link {
+  overflow-wrap: anywhere;
+}
+
+.highlight-event {
+  margin-top: 1px;
+  color: var(--muted);
+  font-size: 0.74rem;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+
+.highlight-row-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 10px;
+  color: var(--muted);
+  font-size: 0.72rem;
+}
+
+.highlight-result {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.highlight-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.highlight-badge {
+  display: inline-flex;
+  align-items: center;
+  height: 18px;
+  padding: 0 6px;
+  border: 1px solid #ddd4ca;
+  border-radius: 999px;
+  background: #f8f4ef;
+  color: var(--muted);
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.highlight-badge--terrain {
+  border-color: #cfded5;
+  background: #edf5ef;
+  color: #446f4a;
+}
+
+.highlight-badge--pb {
+  border-color: #cfe3d5;
+  background: #e7f1ea;
+  color: var(--green);
+}
+
+.highlight-badge--sb {
+  border-color: #e8dcb8;
+  background: #f7f0dd;
+  color: var(--yellow);
+}
+
+.highlight-badge--muted {
+  border-color: #e2dbd3;
+  background: #f2ece4;
+}
+
+.highlight-empty {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
 .stats-table-wrap {
   overflow-x: auto;
   border: 1px solid #e4ddd5;
@@ -2371,6 +2493,7 @@ tbody tr:hover {
 
 @media (max-width: 1080px) {
   .dashboard-grid,
+  .highlight-columns,
   .stats-columns {
     grid-template-columns: 1fr;
   }
