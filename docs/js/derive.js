@@ -234,34 +234,6 @@ export function terrainHighlights(limit = 6) {
   return limit ? sorted.slice(0, limit) : sorted;
 }
 
-export function personalHighlights(limit = 6) {
-  const waSorted = memo("personalHighlightsWa", () => [...waResults()].sort((a, b) => Number(b.wa_points) - Number(a.wa_points) || compareNewestThenRank(a, b)));
-  const nonWaSorted = memo("personalHighlightsNonWa", () =>
-    state.data.results.filter((row) => !hasFinitePoints(row) && performanceHighlightScore(row) > 0).sort(comparePerformanceHighlights),
-  );
-
-  if (!limit) {
-    return [...waSorted, ...nonWaSorted];
-  }
-
-  const waLimit = Math.ceil(limit / 2);
-  const nonWaLimit = limit - waLimit;
-  const selected = [...waSorted.slice(0, waLimit), ...nonWaSorted.slice(0, nonWaLimit)];
-  if (selected.length >= limit) {
-    return selected;
-  }
-  const seen = new Set(selected.map((row) => row.result_id));
-  for (const row of [...waSorted.slice(waLimit), ...nonWaSorted.slice(nonWaLimit)]) {
-    if (!seen.has(row.result_id)) {
-      selected.push(row);
-    }
-    if (selected.length >= limit) {
-      break;
-    }
-  }
-  return selected;
-}
-
 // Full best-per-person rankings per standard distance, same ordering rules as
 // the precomputed top-10 payload. Map key: `${distance}|${gender}`.
 export function fullRankings() {

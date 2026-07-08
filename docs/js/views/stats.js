@@ -9,7 +9,6 @@ import {
   isTerrainOrTrail,
   monthsSeries,
   participationTop,
-  personalHighlights,
   seasonWaPerPerson,
   seasonWaTopResults,
   terrainHighlights,
@@ -17,8 +16,8 @@ import {
 import { barChartSvg, chartLegendHtml, mountChart } from "../charts.js";
 
 const SECTIONS = [
-  { id: "hoydepunkter", label: "Høydepunkter" },
   { id: "topp-10", label: "Topp 10 per distanse" },
+  { id: "hoydepunkter", label: "Høydepunkter" },
   { id: "wa", label: "WA-poeng" },
   { id: "deltakelse", label: "Deltakelse" },
   { id: "maneder", label: "Måned for måned" },
@@ -174,7 +173,6 @@ function highlightListHtml(rows, emptyText) {
 
 function highlightsSectionHtml() {
   const terrainRows = terrainHighlights(6);
-  const personalRows = personalHighlights(6);
 
   return `
     <section class="stats-section highlights-section" id="stats-hoydepunkter" aria-labelledby="highlights-title">
@@ -183,16 +181,12 @@ function highlightsSectionHtml() {
           <p class="section-kicker">Utenfor de faste rankingene</p>
           <h2 id="highlights-title" class="section-heading">Høydepunkter</h2>
         </div>
-        <p class="section-copy">Korte lister som løfter sterke enkeltresultater, også der WA-poeng ikke finnes.</p>
+        <p class="section-copy">Kort liste som løfter sterke terreng- og fjellresultater der WA-poeng ikke finnes.</p>
       </div>
       <div class="highlight-columns">
         <section class="highlight-card" aria-label="Terreng og fjell uten WA">
           <h3 class="stats-block-heading">Terreng/fjell uten WA</h3>
           ${highlightListHtml(terrainRows, "Ingen terreng- eller fjellresultater uten WA-poeng funnet.")}
-        </section>
-        <section class="highlight-card" aria-label="Sterke enkeltprestasjoner">
-          <h3 class="stats-block-heading">Sterke enkeltprestasjoner</h3>
-          ${highlightListHtml(personalRows, "Ingen høydepunkter funnet ennå.")}
         </section>
       </div>
     </section>
@@ -545,8 +539,8 @@ function renderContent(activeSection) {
         </div>
       </div>
       ${subNavHtml(activeSection)}
-      ${highlightsSectionHtml()}
       ${rankingsSectionHtml()}
+      ${highlightsSectionHtml()}
       ${waSectionHtml()}
       ${participationSectionHtml()}
       ${monthsSectionHtml()}
