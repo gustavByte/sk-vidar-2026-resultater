@@ -1,5 +1,5 @@
 import { state } from "../state.js";
-import { displayTime, escapeHtml, formatCount, formatEventLabel, formatWaPoints, preferredScrollBehavior } from "../format.js";
+import { displayTime, escapeHtml, formatCount, formatEventLabel, formatWaPoints } from "../format.js";
 import { hrefWeek } from "../router.js";
 import { genderPill, personLink } from "../templates.js";
 import { waChip } from "../badges.js";
@@ -442,6 +442,33 @@ function renderContent(activeSection) {
   });
 }
 
+function scrollToStatsSection(section, attempt = 0) {
+  const target = container.querySelector(`#stats-${CSS.escape(section)}`);
+  if (!target) {
+    return;
+  }
+
+  const navBottom = document.querySelector(".top-nav")?.getBoundingClientRect().bottom || 0;
+  const rect = target.getBoundingClientRect();
+  const maxScroll = Math.max(0, document.documentElement.scrollHeight - window.innerHeight);
+  const top = rect.top + window.scrollY - navBottom - 10;
+  window.scrollTo({ top: Math.min(Math.max(0, top), maxScroll), behavior: "auto" });
+
+  if (attempt < 4) {
+    window.setTimeout(() => {
+      const nextRect = target.getBoundingClientRect();
+      const nextNavBottom = document.querySelector(".top-nav")?.getBoundingClientRect().bottom || 0;
+      const nextMaxScroll = Math.max(0, document.documentElement.scrollHeight - window.innerHeight);
+      const visibleHeight = Math.min(nextRect.bottom, window.innerHeight) - Math.max(nextRect.top, nextNavBottom);
+      const aligned = nextRect.top >= nextNavBottom + 6 && nextRect.top <= nextNavBottom + 90;
+      const atPageEnd = window.scrollY >= nextMaxScroll - 2 && visibleHeight > 0;
+      if (!aligned && !atPageEnd) {
+        scrollToStatsSection(section, attempt + 1);
+      }
+    }, 80 * (attempt + 1));
+  }
+}
+
 export function init(viewContainer) {
   container = viewContainer;
 }
@@ -450,12 +477,7 @@ export function render(params) {
   const section = params.section || "";
   renderContent(section);
   if (section) {
-    requestAnimationFrame(() => {
-      const target = container.querySelector(`#stats-${CSS.escape(section)}`);
-      if (target) {
-        target.scrollIntoView({ behavior: preferredScrollBehavior(), block: "start" });
-      }
-    });
+    requestAnimationFrame(() => scrollToStatsSection(section));
   } else {
     window.scrollTo({ top: 0, behavior: "auto" });
   }

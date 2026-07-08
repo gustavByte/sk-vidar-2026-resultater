@@ -1157,6 +1157,7 @@ tbody tr:hover {
 
   .week-panel {
     position: relative;
+    top: auto;
     margin: 0 0 8px;
     padding: 8px 0 10px;
   }
@@ -1211,7 +1212,8 @@ tbody tr:hover {
   }
 
   .toolbar {
-    top: 0;
+    position: static;
+    top: auto;
     padding: 10px;
   }
 
@@ -1297,7 +1299,7 @@ tbody tr:hover {
     overflow: visible;
   }
 
-  table {
+  .table-wrap > table {
     display: none;
   }
 
@@ -2103,9 +2105,7 @@ tbody tr:hover {
 }
 
 .people-letter {
-  position: sticky;
-  top: var(--nav-height);
-  z-index: 2;
+  position: static;
   margin: 0;
   padding: 4px 12px;
   border-bottom: 1px solid #e6dfd6;
