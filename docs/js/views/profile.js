@@ -9,9 +9,9 @@ import {
   hasValue,
   sortResultsNewestFirst,
 } from "../format.js";
-import { hrefDashboard, hrefWeek } from "../router.js";
+import { hrefPeople, hrefWeek } from "../router.js";
 import { resultBadges, waChip } from "../badges.js";
-import { clubRank, hasFinitePoints, progressionDistances, progressionSeries, weeksAscending } from "../derive.js";
+import { clubRank, hasFinitePoints, progressionDistances, progressionSeries, weeksAscending } from "../derive.js?v=20260710-refresh2";
 import { chartLegendHtml, lineChartSvg, mountChart, sparklineSvg } from "../charts.js";
 
 let container = null;
@@ -21,7 +21,7 @@ let selectedDistance = "";
 function profileNotFoundHtml(slug) {
   return `
     <article class="profile-shell profile-shell--empty">
-      <a class="back-link" href="${hrefDashboard()}">Til forsiden</a>
+      <a class="back-link" href="${hrefPeople()}">Alle personer</a>
       <p class="section-kicker">Personprofil</p>
       <h2>Fant ikke profilen</h2>
       <p class="profile-muted">Ingen publisert profil finnes for ${escapeHtml(slug || "denne lenken")}.</p>
@@ -245,9 +245,9 @@ function renderProfileContent(profile) {
     <article class="profile-shell">
       <div class="profile-head">
         <div>
-          <a class="back-link" href="${hrefDashboard()}">Til forsiden</a>
+          <a class="back-link" href="${hrefPeople()}">Alle personer</a>
           <p class="section-kicker">Personprofil</p>
-          <h2>${escapeHtml(profile.display_name || "")}</h2>
+          <h1>${escapeHtml(profile.display_name || "")}</h1>
           <p class="profile-muted">${formatCount(profile.result_count)} resultater${latest ? ` · ${latest}` : ""}</p>
         </div>
         <div class="profile-stat-grid profile-stat-grid--${statCells.length}" aria-label="Profilstatistikk">

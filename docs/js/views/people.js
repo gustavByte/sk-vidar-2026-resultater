@@ -4,6 +4,7 @@ import { hrefPeople, replaceHash } from "../router.js";
 import { genderPill, personLink } from "../templates.js";
 
 const current = { search: "", gender: "all", sort: "navn" };
+const PAGE_SIZE = 80;
 
 let container = null;
 let inputEl = null;
@@ -11,6 +12,8 @@ let listEl = null;
 let countEl = null;
 let sortEl = null;
 let genderButtons = null;
+let moreButton = null;
+let visibleLimit = PAGE_SIZE;
 let renderFrame = 0;
 
 function genderParamValue() {
@@ -52,7 +55,7 @@ function mount() {
       <div class="section-header">
         <div>
           <p class="section-kicker">Alle løpere</p>
-          <h2 class="section-heading">Personer</h2>
+          <h1 class="section-heading">Personer</h1>
         </div>
         <p class="section-copy">Alle med minst ett publisert resultat i 2026. Klikk et navn for full profil.</p>
       </div>
@@ -75,8 +78,9 @@ function mount() {
           </select>
         </label>
       </div>
-      <p id="people-count" class="toolbar-meta"></p>
-      <div id="people-list" class="people-list" aria-live="polite"></div>
+      <p id="people-count" class="toolbar-meta" role="status" aria-live="polite"></p>
+      <div id="people-list" class="people-list"></div>
+      <button id="people-more" class="people-more" type="button" hidden>Vis flere</button>
     </section>
   `;
 
@@ -85,9 +89,11 @@ function mount() {
   countEl = container.querySelector("#people-count");
   sortEl = container.querySelector("#people-sort");
   genderButtons = Array.from(container.querySelectorAll(".people-toolbar .segment"));
+  moreButton = container.querySelector("#people-more");
 
   inputEl.addEventListener("input", (event) => {
     current.search = event.target.value;
+    visibleLimit = PAGE_SIZE;
     syncUrl();
     cancelAnimationFrame(renderFrame);
     renderFrame = requestAnimationFrame(renderList);
@@ -95,6 +101,7 @@ function mount() {
 
   sortEl.addEventListener("change", (event) => {
     current.sort = event.target.value;
+    visibleLimit = PAGE_SIZE;
     syncUrl();
     renderList();
   });
@@ -102,10 +109,16 @@ function mount() {
   genderButtons.forEach((button) => {
     button.addEventListener("click", () => {
       current.gender = button.dataset.gender;
+      visibleLimit = PAGE_SIZE;
       syncUrl();
       renderGenderButtons();
       renderList();
     });
+  });
+
+  moreButton.addEventListener("click", () => {
+    visibleLimit += PAGE_SIZE;
+    renderList();
   });
 }
 
@@ -152,7 +165,7 @@ function personRowHtml(profile) {
   return `
     <div class="people-row">
       <span class="people-name">${genderPill(profile.gender)} ${personLink(profile)}</span>
-      <span class="people-count-cell">${formatCount(profile.result_count)} resultater</span>
+      <span class="people-count-cell">${formatCount(profile.result_count)} ${Number(profile.result_count) === 1 ? "resultat" : "resultater"}</span>
       <span class="people-distances">${distancePills}${extra > 0 ? `<span class="result-pill result-pill--muted">+${extra}</span>` : ""}</span>
       <span class="people-latest muted">${profile.latest_result_date ? `Sist: ${escapeHtml(profile.latest_result_date)}` : ""}</span>
     </div>
@@ -161,18 +174,23 @@ function personRowHtml(profile) {
 
 function renderList() {
   const profiles = filteredProfiles();
+  const visibleProfiles = profiles.slice(0, visibleLimit);
   const total = state.data.people?.profile_count || (state.data.people?.profiles || []).length;
   countEl.textContent = `Viser ${formatCount(profiles.length)} av ${formatCount(total)} personer`;
 
   if (!profiles.length) {
     listEl.innerHTML = `<p class="empty-state">Ingen personer matcher søket.</p>`;
+    moreButton.hidden = true;
     return;
   }
+
+  moreButton.hidden = visibleProfiles.length >= profiles.length;
+  moreButton.textContent = `Vis flere (${formatCount(profiles.length - visibleProfiles.length)} igjen)`;
 
   if (current.sort === "navn") {
     const sections = [];
     let currentLetter = "";
-    for (const profile of profiles) {
+    for (const profile of visibleProfiles) {
       const letter = (profile.display_name || "?").charAt(0).toLocaleUpperCase("nb-NO");
       if (letter !== currentLetter) {
         currentLetter = letter;
@@ -184,7 +202,7 @@ function renderList() {
     return;
   }
 
-  listEl.innerHTML = profiles.map(personRowHtml).join("");
+  listEl.innerHTML = visibleProfiles.map(personRowHtml).join("");
 }
 
 export function init(viewContainer) {
@@ -196,6 +214,7 @@ export function render(params) {
   current.search = params.sok || "";
   current.gender = parseGenderParam(params.kjonn || "");
   current.sort = ["navn", "resultater", "sist"].includes(params.sorter) ? params.sorter : "navn";
+  visibleLimit = PAGE_SIZE;
 
   if (document.activeElement !== inputEl) {
     inputEl.value = current.search;

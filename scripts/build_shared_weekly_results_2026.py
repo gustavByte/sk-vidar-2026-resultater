@@ -12,7 +12,7 @@ from project_paths import SHARED_OVERVIEW_FILE, WEEKLY_RESULTS_FILE
 
 INPUT_FILE = WEEKLY_RESULTS_FILE
 OUTPUT_FILE = SHARED_OVERVIEW_FILE
-NON_PUBLISHABLE_RESULT_STATUSES = {"DNS", "DNF"}
+NON_PUBLISHABLE_RESULT_STATUSES = {"DNS", "DNF", "DQ", "DSQ"}
 
 TITLE_FILL = PatternFill("solid", fgColor="A61E22")
 TITLE_FONT = Font(color="FFFFFF", bold=True, size=16)
@@ -278,10 +278,18 @@ def build_display_rows(df: pd.DataFrame) -> pd.DataFrame:
 
 def filter_publishable_results(df: pd.DataFrame) -> pd.DataFrame:
     """Keep status-only rows out of public overview/statistics exports."""
-    normalized = df.get("result_time_normalized", pd.Series("", index=df.index)).fillna("").astype(str).str.strip()
-    raw = df.get("result_time_raw", pd.Series("", index=df.index)).fillna("").astype(str).str.strip()
-    status = normalized.mask(normalized.eq(""), raw).str.upper()
-    return df[~status.isin(NON_PUBLISHABLE_RESULT_STATUSES)].copy()
+    status_columns = (
+        "result_time_normalized",
+        "result_time_raw",
+        "position",
+        "class_place",
+        "status",
+    )
+    blocked = pd.Series(False, index=df.index)
+    for column in status_columns:
+        values = df.get(column, pd.Series("", index=df.index)).fillna("").astype(str).str.strip().str.upper()
+        blocked |= values.isin(NON_PUBLISHABLE_RESULT_STATUSES)
+    return df[~blocked].copy()
 
 
 def build_week_summary(df: pd.DataFrame) -> pd.DataFrame:

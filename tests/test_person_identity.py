@@ -582,7 +582,7 @@ def test_public_payload_contract_and_private_field_validation(tmp_path: Path) ->
     people_payload = build_people_payload(df, identity)
     payload = build_payload(df, build_weekly_summary(df), build_missing_report(df), build_rankings(df), people_payload)
 
-    assert payload["schema_version"] == 3
+    assert payload["schema_version"] == 4
     assert payload["results"][0]["is_pb"] is True
     assert payload["results"][0]["ranking_distance"] == "5 km"
     assert payload["weeks"][0]["pb_count"] == 1
@@ -601,7 +601,7 @@ def test_generated_public_json_has_people_and_no_private_fields() -> None:
     payload_path = ROOT / "docs" / "data" / "results.json"
     payload = json.loads(payload_path.read_text(encoding="utf-8"))
 
-    assert payload["schema_version"] == 3
+    assert payload["schema_version"] == 4
     assert "people" in payload
     assert all(result.get("person_id") for result in payload["results"])
     validate_public_payload(payload)

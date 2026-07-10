@@ -82,6 +82,9 @@ function highlightText(row) {
 }
 
 export function terrainTypeTags(row) {
+  if (Array.isArray(row.terrain_tags) && row.terrain_tags.length) {
+    return [...new Set(row.terrain_tags.filter(Boolean))];
+  }
   const text = highlightText(row);
   if (!text) {
     return [];
@@ -301,7 +304,8 @@ export function terrainEventGroups({ type = "all", limit = 6 } = {}) {
         continue;
       }
       const eventLabel = String(row.event_label || "").trim() || "Ukjent løp";
-      let entry = byEvent.get(eventLabel);
+      const eventKey = String(row.event_id || eventLabel);
+      let entry = byEvent.get(eventKey);
       if (!entry) {
         entry = {
           event_label: eventLabel,
@@ -316,7 +320,7 @@ export function terrainEventGroups({ type = "all", limit = 6 } = {}) {
           latestDate: "",
           latestWeek: 0,
         };
-        byEvent.set(eventLabel, entry);
+        byEvent.set(eventKey, entry);
       }
 
       const score = performanceHighlightScore(row);
@@ -458,20 +462,38 @@ export function biggestEvents(limit) {
       }
       let entry = byEvent.get(label);
       if (!entry) {
-        entry = { event_label: label, count: 0, women: 0, men: 0, weeks: new Set() };
+        entry = {
+          event_label: label,
+          resultCount: 0,
+          athletes: new Set(),
+          women: new Set(),
+          men: new Set(),
+          weeks: new Set(),
+        };
         byEvent.set(label, entry);
       }
-      entry.count += 1;
+      entry.resultCount += 1;
+      const athleteKey = row.person_id || normalizeSearchText(row.athlete_name || "");
+      if (athleteKey) {
+        entry.athletes.add(athleteKey);
+      }
       if (row.gender === "K") {
-        entry.women += 1;
+        entry.women.add(athleteKey);
       } else if (row.gender === "M") {
-        entry.men += 1;
+        entry.men.add(athleteKey);
       }
       if (row.week_number) {
         entry.weeks.add(Number(row.week_number));
       }
     }
-    const entries = [...byEvent.values()].map((entry) => ({ ...entry, weeks: [...entry.weeks].sort((a, b) => a - b) }));
+    const entries = [...byEvent.values()].map((entry) => ({
+      event_label: entry.event_label,
+      count: entry.athletes.size,
+      resultCount: entry.resultCount,
+      women: entry.women.size,
+      men: entry.men.size,
+      weeks: [...entry.weeks].sort((a, b) => a - b),
+    }));
     entries.sort((a, b) => b.count - a.count || a.event_label.localeCompare(b.event_label, "nb-NO"));
     return entries;
   });

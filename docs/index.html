@@ -15,10 +15,11 @@
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=20260708-terrain1" />
-    <script type="module" src="./app.js?v=20260708-terrain1"></script>
+    <link rel="stylesheet" href="./styles.css?v=20260710-refresh2" />
+    <script type="module" src="./app.js?v=20260710-refresh2"></script>
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Hopp til innhold</a>
     <nav class="top-nav" aria-label="Hovedmeny">
       <div class="top-nav-inner">
         <a class="nav-brand" href="#/">SK Vidar <span>2026</span></a>
@@ -34,7 +35,7 @@
       </div>
     </nav>
 
-    <main class="page">
+    <main class="page" id="main-content" tabindex="-1">
       <p id="load-error" class="load-error" hidden></p>
 
       <section id="view-dashboard" class="route-view" hidden aria-live="polite"></section>
@@ -76,22 +77,27 @@
               </div>
 
               <div class="toolbar-filters">
-                <div class="field field-events">
-                  <span>Løp</span>
-                  <div id="event-filter" class="event-filter" role="group" aria-label="Løp"></div>
-                </div>
                 <label class="field field-search">
                   <span>Søk i uken</span>
                   <input id="search-input" type="search" placeholder="Løper, løp eller notat" autocomplete="off" />
                   <a id="global-search-hint" class="quiet-link global-search-hint" href="#/sok" hidden></a>
                 </label>
-                <div class="field field-view">
-                  <span>Visning</span>
-                  <div class="field-view-controls">
-                    <select id="distance-filter" aria-label="Distanse"></select>
-                    <button id="group-toggle" class="event-chip group-toggle" type="button" aria-pressed="false">Grupper per løp</button>
+                <details class="mobile-filter-details">
+                  <summary>Flere filtre</summary>
+                  <div class="mobile-filter-content">
+                    <div class="field field-events">
+                      <span>Løp</span>
+                      <div id="event-filter" class="event-filter" role="group" aria-label="Løp"></div>
+                    </div>
+                    <div class="field field-view">
+                      <span>Visning</span>
+                      <div class="field-view-controls">
+                        <select id="distance-filter" aria-label="Distanse"></select>
+                        <button id="group-toggle" class="event-chip group-toggle" type="button" aria-pressed="false">Grupper per løp</button>
+                      </div>
+                    </div>
                   </div>
-                </div>
+                </details>
               </div>
 
               <div class="mini-stats" id="selected-week-stats" aria-live="polite"></div>
@@ -131,7 +137,7 @@
                 </thead>
                 <tbody id="results-table"></tbody>
               </table>
-              <div id="results-cards" class="results-cards" aria-live="polite"></div>
+              <div id="results-cards" class="results-cards"></div>
             </div>
 
             <p id="empty-state" class="empty-state" hidden>Ingen treff i valgt uke.</p>
@@ -141,7 +147,7 @@
 
       <section id="view-people" class="route-view" hidden></section>
 
-      <section id="view-profile" class="route-view profile-view" hidden aria-live="polite"></section>
+      <section id="view-profile" class="route-view profile-view" hidden></section>
 
       <section id="view-stats" class="route-view" hidden></section>
 

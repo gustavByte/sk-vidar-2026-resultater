@@ -25,7 +25,7 @@ from project_paths import (
 
 
 PERSON_ID_PREFIX = "skv-p"
-SCHEMA_VERSION = 3
+SCHEMA_VERSION = 4
 
 REGISTRY_COLUMNS = [
     "person_id",

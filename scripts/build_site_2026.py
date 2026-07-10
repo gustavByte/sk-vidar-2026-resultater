@@ -20,7 +20,23 @@ from person_identity import (
     validate_public_payload,
     write_identity_reports,
 )
-from project_paths import IDENTITY_REPORT_DIR, MISSING_REPORT_FILE, OVERRIDES_FILE, ROOT_DIR, WEEKLY_RESULTS_FILE
+from project_paths import (
+    GENDER_CONFLICT_REPORT_FILE,
+    IDENTITY_REPORT_DIR,
+    MISSING_REPORT_FILE,
+    OVERRIDES_FILE,
+    QUALITY_REPORT_FILE,
+    ROOT_DIR,
+    WEEKLY_RESULTS_FILE,
+)
+from result_taxonomy import (
+    event_id_for_label,
+    event_type_for_row,
+    public_note_has_internal_markers,
+    split_public_internal_note,
+    terrain_tags_for_row,
+    wa_status_for_values,
+)
 
 
 DATA_DB_DIR = ROOT_DIR / "data" / "database"
@@ -130,6 +146,9 @@ PUBLIC_RESULT_FIELDS = [
     "class_name",
     "class_place",
     "event_label",
+    "event_id",
+    "event_type",
+    "terrain_tags",
     "distance",
     "profile_distance",
     "result_time_raw",
@@ -138,6 +157,7 @@ PUBLIC_RESULT_FIELDS = [
     "wa_gender",
     "wa_event",
     "wa_points",
+    "wa_status",
     "place",
     "notes_clean",
     "is_pb",
@@ -187,6 +207,8 @@ def repair_mojibake(text: str) -> str:
 def _serialize_value(value: object) -> object:
     if value is None:
         return None
+    if isinstance(value, (list, tuple, set)):
+        return [_serialize_value(item) for item in value]
     if pd.isna(value):
         return None
     if isinstance(value, float) and not math.isfinite(value):
@@ -285,6 +307,104 @@ def parse_note_flags(note: object) -> dict[str, bool]:
     return {"is_pb": "pb" in tokens, "is_sb": "sb" in tokens}
 
 
+def split_result_notes(row: pd.Series) -> tuple[str, str]:
+    return split_public_internal_note(
+        row.get("notes"),
+        row.get("public_note"),
+        row.get("internal_note"),
+    )
+
+
+def resolve_person_gender_conflicts(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
+    working = df.copy()
+    reports: list[dict[str, object]] = []
+
+    for person_id, rows in working[working["person_id"].fillna("").ne("")].groupby("person_id"):
+        genders = rows[rows["gender"].isin(GENDER_LABELS)]["gender"]
+        if genders.nunique() <= 1:
+            continue
+
+        counts = genders.value_counts()
+        top_count = int(counts.max())
+        candidates = sorted(counts[counts == top_count].index.tolist())
+        method = "majority"
+        if len(candidates) == 1:
+            chosen = candidates[0]
+        else:
+            latest_rows = rows[rows["gender"].isin(candidates)].sort_values(
+                ["published_date_sort", "week_sort"],
+                ascending=[False, False],
+                na_position="last",
+            )
+            chosen = str(latest_rows.iloc[0]["gender"])
+            method = "latest_result_tiebreak"
+
+        mask = working["person_id"].eq(person_id)
+        working.loc[mask, "gender"] = chosen
+        working.loc[mask, "gender_label"] = GENDER_LABELS[chosen]
+        reports.append(
+            {
+                "person_id": person_id,
+                "athlete_name": str(rows.iloc[0].get("athlete_name") or ""),
+                "gender_values": ",".join(f"{gender}:{int(count)}" for gender, count in counts.sort_index().items()),
+                "chosen_gender": chosen,
+                "resolution": method,
+                "result_count": int(len(rows)),
+            }
+        )
+
+    return working, pd.DataFrame(reports)
+
+
+def build_quality_report(df: pd.DataFrame) -> pd.DataFrame:
+    issues: list[dict[str, object]] = []
+
+    def add_issue(severity: str, code: str, row: pd.Series, detail: str) -> None:
+        issues.append(
+            {
+                "severity": severity,
+                "code": code,
+                "result_id": row.get("result_id", ""),
+                "published_date": row.get("published_date_iso", ""),
+                "event_label": row.get("event_label", ""),
+                "distance": row.get("distance", ""),
+                "athlete_name": row.get("athlete_name", ""),
+                "detail": detail,
+            }
+        )
+
+    required = ("published_date_iso", "event_label", "athlete_name", "person_id")
+    for _, row in df.iterrows():
+        for field in required:
+            if not str(row.get(field) or "").strip():
+                add_issue("error", f"missing_{field}", row, f"Mangler obligatorisk felt: {field}")
+        if not str(row.get("distance") or "").strip():
+            add_issue("warning", "missing_distance", row, "Mangler distanse")
+        if row.get("wa_status") == "missing":
+            add_issue("error", "missing_wa_points", row, "WA-berettiget resultat mangler WA-poeng")
+        if public_note_has_internal_markers(row.get("notes_clean")):
+            add_issue("error", "internal_public_note", row, "Offentlig notat inneholder intern kontrolltekst")
+
+    duplicate_fields = ["published_date_iso", "event_label", "distance", "person_id", "result_time_seconds"]
+    duplicate_mask = df.duplicated(duplicate_fields, keep=False)
+    for _, row in df[duplicate_mask].iterrows():
+        add_issue("error", "duplicate_result", row, "Eksakt resultatduplikat")
+
+    return pd.DataFrame(
+        issues,
+        columns=["severity", "code", "result_id", "published_date", "event_label", "distance", "athlete_name", "detail"],
+    )
+
+
+def validate_quality_report(report: pd.DataFrame) -> None:
+    if report.empty:
+        return
+    errors = report[report["severity"].eq("error")]
+    if not errors.empty:
+        codes = ", ".join(f"{code}={count}" for code, count in errors["code"].value_counts().sort_index().items())
+        raise ValueError(f"Publisering stoppet av datakvalitetsfeil: {codes}")
+
+
 def normalize_ranking_distance(row: pd.Series) -> str:
     distance = str(row.get("distance") or "").strip()
     if distance in STANDARD_RANKING_DISTANCE_SET:
@@ -329,12 +449,17 @@ def load_results() -> pd.DataFrame:
     working["published_date_label"] = working["published_date"].dt.strftime("%d.%m.%Y")
     working["week_number"] = pd.to_numeric(working["week_number"], errors="coerce")
     working["week_label"] = working["week_number"].apply(lambda value: f"Uke {int(value)}" if pd.notna(value) else "")
-    for column in ["event_name", "athlete_name", "notes", "category", "class_name", "gender", "class_place", "distance", "NM sync", "raw_entry", "slack_name", "name_in_message"]:
+    for column in ["event_name", "athlete_name", "notes", "public_note", "internal_note", "category", "class_name", "gender", "class_place", "distance", "NM sync", "raw_entry", "slack_name", "name_in_message"]:
         if column in working.columns:
             working[column] = working[column].map(normalize_text)
+        else:
+            working[column] = ""
     working["event_label"] = working["event_name"].fillna("").astype(str).str.strip().replace(EVENT_NAME_OVERRIDES)
     working["event_name"] = working["event_label"]
-    working["notes_clean"] = working["notes"].apply(clean_note)
+    split_notes = working.apply(split_result_notes, axis=1)
+    working["public_note"] = split_notes.map(lambda values: values[0])
+    working["internal_note"] = split_notes.map(lambda values: values[1])
+    working["notes_clean"] = working["public_note"].apply(clean_note)
     note_flags = working["notes_clean"].apply(parse_note_flags)
     working["is_pb"] = note_flags.map(lambda flags: flags["is_pb"])
     working["is_sb"] = note_flags.map(lambda flags: flags["is_sb"])
@@ -359,6 +484,18 @@ def load_results() -> pd.DataFrame:
     working["wa_points"] = pd.to_numeric(
         working.get("WA Poeng", pd.Series(index=working.index, dtype=object)),
         errors="coerce",
+    )
+    working["event_id"] = working["event_label"].map(event_id_for_label)
+    working["terrain_tags"] = working.apply(terrain_tags_for_row, axis=1)
+    working["event_type"] = working.apply(event_type_for_row, axis=1)
+    working["wa_status"] = working.apply(
+        lambda row: wa_status_for_values(
+            row.get("wa_points"),
+            row.get("wa_event"),
+            row.get("gender"),
+            row.get("result_time_source"),
+        ),
+        axis=1,
     )
 
     working["split_first_source"] = working.get("split_first_raw", pd.Series(index=working.index, dtype=object)).fillna("")
@@ -744,6 +881,9 @@ def write_database(df: pd.DataFrame, summary_df: pd.DataFrame, payload: dict[str
             "week_label",
             "event_name",
             "event_label",
+            "event_id",
+            "event_type",
+            "terrain_tags",
             "distance",
             "athlete_name",
             "gender",
@@ -755,9 +895,12 @@ def write_database(df: pd.DataFrame, summary_df: pd.DataFrame, payload: dict[str
             "wa_gender",
             "wa_event",
             "wa_points",
+            "wa_status",
             "position",
             "place",
             "notes",
+            "public_note",
+            "internal_note",
             "notes_clean",
             "split_first_label",
             "split_first_display",
@@ -771,6 +914,7 @@ def write_database(df: pd.DataFrame, summary_df: pd.DataFrame, payload: dict[str
             "split_delta_seconds",
         ]
     ].copy()
+    db_results["terrain_tags"] = db_results["terrain_tags"].apply(lambda values: ",".join(values) if isinstance(values, list) else str(values or ""))
     db_results = db_results.rename(
         columns={
             "published_date_iso": "published_date",
@@ -796,10 +940,19 @@ def write_json(payload: dict[str, object]) -> None:
     JSON_FILE.write_text(json.dumps(payload, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
 
 
+def write_quality_reports(quality_report: pd.DataFrame, gender_conflicts: pd.DataFrame) -> None:
+    DATA_DB_DIR.mkdir(parents=True, exist_ok=True)
+    quality_report.to_csv(QUALITY_REPORT_FILE, index=False, encoding="utf-8")
+    gender_conflicts.to_csv(GENDER_CONFLICT_REPORT_FILE, index=False, encoding="utf-8")
+
+
 def main() -> None:
-    load_overrides()
     df = load_results()
     df, identity = attach_person_identity(df)
+    df, gender_conflicts = resolve_person_gender_conflicts(df)
+    quality_report = build_quality_report(df)
+    write_quality_reports(quality_report, gender_conflicts)
+    validate_quality_report(quality_report)
     summary_df = build_weekly_summary(df)
     missing_df = build_missing_report(df)
     rankings = build_rankings(df)
@@ -816,6 +969,8 @@ def main() -> None:
     print(f"Created JSON export: {JSON_FILE}")
     print(f"Created missing report: {MISSING_REPORT_FILE}")
     print(f"Created identity reports: {IDENTITY_REPORT_DIR}")
+    print(f"Created quality report: {QUALITY_REPORT_FILE}")
+    print(f"Resolved gender conflicts: {len(gender_conflicts)}")
     print(f"Rows: {payload['stats']['result_count']}")
     print(f"People: {payload['people']['profile_count']}")
     print(f"Missing gender/class: {payload['stats']['missing_gender_or_class_count']}")

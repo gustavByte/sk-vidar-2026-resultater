@@ -13,10 +13,11 @@ import {
   seasonWaPerPerson,
   seasonWaTopResults,
   terrainEventGroups,
-} from "../derive.js";
+} from "../derive.js?v=20260710-refresh2";
 import { barChartSvg, chartLegendHtml, mountChart } from "../charts.js";
 
 const SECTIONS = [
+  { id: "", label: "Oversikt" },
   { id: "topp-10", label: "Topp 10 per distanse" },
   { id: "hoydepunkter", label: "Høydepunkter" },
   { id: "wa", label: "WA-poeng" },
@@ -29,6 +30,8 @@ let container = null;
 let waGender = "all";
 let participationGender = "all";
 let terrainType = "all";
+let currentSection = "";
+let rankingDistance = "";
 const expandedColumns = new Set();
 const VALID_TERRAIN_TYPES = new Set(["all", ...TERRAIN_FILTER_TYPES]);
 
@@ -47,7 +50,7 @@ function subNavHtml(activeSection) {
     <div class="stats-subnav" role="navigation" aria-label="Statistikkseksjoner">
       ${SECTIONS.map(
         (section) => `
-          <a class="event-chip${section.id === activeSection ? " is-active" : ""}" href="#/statistikk/${section.id}">${escapeHtml(section.label)}</a>
+          <a class="event-chip${section.id === activeSection ? " is-active" : ""}" href="${hrefStats(section.id)}"${section.id === activeSection ? ' aria-current="page"' : ""}>${escapeHtml(section.label)}</a>
         `,
       ).join("")}
     </div>
@@ -132,7 +135,7 @@ function terrainFilterChipsHtml(activeType, groups) {
       ${options
         .map(
           (option) => `
-            <a class="event-chip${option.key === activeType ? " is-active" : ""}" href="${hrefStats("hoydepunkter", option.key === "all" ? {} : { type: option.key })}" aria-pressed="${option.key === activeType ? "true" : "false"}">
+            <a class="event-chip${option.key === activeType ? " is-active" : ""}" href="${hrefStats("hoydepunkter", option.key === "all" ? {} : { type: option.key })}"${option.key === activeType ? ' aria-current="page"' : ""}>
               ${escapeHtml(option.label)} <span>${formatCount(option.count)}</span>
             </a>
           `,
@@ -292,7 +295,16 @@ function rankingColumnHtml(distance, genderKey, title, topEntries) {
 
 function rankingsSectionHtml() {
   const rankings = Array.isArray(state.data.rankings) ? state.data.rankings : [];
+  if (!rankings.some((group) => group.distance === rankingDistance)) {
+    rankingDistance = rankings[0]?.distance || "";
+  }
+  const distanceNav = rankings
+    .map(
+      (group) => `<a class="event-chip${group.distance === rankingDistance ? " is-active" : ""}" href="${hrefStats("topp-10", { distanse: group.distance })}"${group.distance === rankingDistance ? ' aria-current="page"' : ""}>${escapeHtml(group.distance || "")}</a>`,
+    )
+    .join("");
   const cards = rankings
+    .filter((group) => group.distance === rankingDistance)
     .map((group) => {
       const women = Array.isArray(group.women) ? group.women : [];
       const men = Array.isArray(group.men) ? group.men : [];
@@ -323,6 +335,7 @@ function rankingsSectionHtml() {
         </div>
         <p class="section-copy">Kun beste resultat per utøver vises. Kvinner og menn rangeres hver for seg.</p>
       </div>
+      <div class="stats-distance-nav" aria-label="Velg standarddistanse">${distanceNav}</div>
       <div class="rankings-grid">${cards || `<p class="ranking-empty">Ingen ranking-data tilgjengelig.</p>`}</div>
     </section>
   `;
@@ -330,7 +343,7 @@ function rankingsSectionHtml() {
 
 function waSectionHtml() {
   const topResults = seasonWaTopResults(200);
-  const filteredResults = topResults.filter((row) => genderMatchesFilter(row.gender, waGender)).slice(0, 25);
+  const filteredResults = topResults.filter((row) => genderMatchesFilter(row.gender, waGender)).slice(0, 15);
 
   const resultRows = filteredResults
     .map(
@@ -349,7 +362,7 @@ function waSectionHtml() {
 
   const perPerson = seasonWaPerPerson(0)
     .filter((entry) => genderMatchesFilter(entry.best.gender, waGender))
-    .slice(0, 25);
+    .slice(0, 15);
 
   const personRows = perPerson
     .map(
@@ -427,7 +440,7 @@ function participationSectionHtml() {
       <div class="section-header">
         <div>
           <p class="section-kicker">Deltakelse</p>
-          <h2 id="participation-title" class="section-heading">Flest løp</h2>
+          <h2 id="participation-title" class="section-heading">Flest resultater</h2>
         </div>
         <p class="section-copy">Antall publiserte resultater per løper i 2026.</p>
       </div>
@@ -553,26 +566,59 @@ function eventsSectionHtml() {
   `;
 }
 
+function overviewHtml() {
+  const resultCount = state.data.results?.length || 0;
+  const peopleCount = state.data.people?.profile_count || state.data.people?.profiles?.length || 0;
+  const eventCount = new Set((state.data.results || []).map((row) => row.event_id || row.event_label).filter(Boolean)).size;
+  const waCount = (state.data.results || []).filter((row) => row.wa_points !== null && row.wa_points !== undefined).length;
+  const items = [
+    { section: "topp-10", label: "Standarddistanser", value: `${state.data.rankings?.length || 0} distanser`, copy: "Beste tid per løper, kvinner og menn hver for seg." },
+    { section: "hoydepunkter", label: "Høydepunkter", value: `${terrainEventGroups({ limit: 0 }).length} løp`, copy: "Terreng, fjell, trail og skyrace uten WA-poeng." },
+    { section: "wa", label: "WA-poeng", value: `${formatCount(waCount)} resultater`, copy: "Sammenlign prestasjoner på tvers av graderbare distanser." },
+    { section: "deltakelse", label: "Flest resultater", value: `${formatCount(peopleCount)} løpere`, copy: "Se hvem som har flest publiserte resultater." },
+    { section: "maneder", label: "Måned for måned", value: `${formatCount(resultCount)} resultater`, copy: "Følg sesongvolumet gjennom året." },
+    { section: "lop", label: "Største løp", value: `${formatCount(eventCount)} løp`, copy: "Arrangementene med flest unike SK Vidar-deltakere." },
+  ];
+  return `
+    <section class="stats-overview" aria-labelledby="stats-overview-title">
+      <h2 id="stats-overview-title" class="visually-hidden">Statistikkoversikt</h2>
+      ${items.map((item) => `
+        <a class="stats-overview-item" href="${hrefStats(item.section)}">
+          <span class="stats-overview-label">${escapeHtml(item.label)}</span>
+          <strong>${escapeHtml(item.value)}</strong>
+          <span>${escapeHtml(item.copy)}</span>
+        </a>
+      `).join("")}
+    </section>
+  `;
+}
+
 function renderContent(activeSection) {
+  const sectionRenderers = {
+    "topp-10": rankingsSectionHtml,
+    hoydepunkter: highlightsSectionHtml,
+    wa: waSectionHtml,
+    deltakelse: participationSectionHtml,
+    maneder: monthsSectionHtml,
+    lop: eventsSectionHtml,
+  };
+  const content = activeSection ? sectionRenderers[activeSection]?.() || overviewHtml() : overviewHtml();
   container.innerHTML = `
     <div class="stats-shell">
       <div class="section-header">
         <div>
           <p class="section-kicker">Sesongen 2026</p>
-          <h2 class="section-heading">Statistikk</h2>
+          <h1 class="section-heading">Statistikk</h1>
         </div>
       </div>
       ${subNavHtml(activeSection)}
-      ${rankingsSectionHtml()}
-      ${highlightsSectionHtml()}
-      ${waSectionHtml()}
-      ${participationSectionHtml()}
-      ${monthsSectionHtml()}
-      ${eventsSectionHtml()}
+      ${content}
     </div>
   `;
 
-  mountMonthsChart();
+  if (activeSection === "maneder") {
+    mountMonthsChart();
+  }
 
   container.querySelectorAll("[data-gender-group]").forEach((button) => {
     button.addEventListener("click", () => {
@@ -581,7 +627,8 @@ function renderContent(activeSection) {
       } else {
         participationGender = button.dataset.gender;
       }
-      renderContent("");
+      const params = button.dataset.genderGroup === "wa" ? { kjonn: waGender } : { kjonn: participationGender };
+      window.location.hash = hrefStats(currentSection, params);
     });
   });
 
@@ -593,36 +640,9 @@ function renderContent(activeSection) {
       } else {
         expandedColumns.add(key);
       }
-      renderContent("");
+      renderContent(currentSection);
     });
   });
-}
-
-function scrollToStatsSection(section, attempt = 0) {
-  const target = container.querySelector(`#stats-${CSS.escape(section)}`);
-  if (!target) {
-    return;
-  }
-
-  const navBottom = document.querySelector(".top-nav")?.getBoundingClientRect().bottom || 0;
-  const rect = target.getBoundingClientRect();
-  const maxScroll = Math.max(0, document.documentElement.scrollHeight - window.innerHeight);
-  const top = rect.top + window.scrollY - navBottom - 10;
-  window.scrollTo({ top: Math.min(Math.max(0, top), maxScroll), behavior: "auto" });
-
-  if (attempt < 4) {
-    window.setTimeout(() => {
-      const nextRect = target.getBoundingClientRect();
-      const nextNavBottom = document.querySelector(".top-nav")?.getBoundingClientRect().bottom || 0;
-      const nextMaxScroll = Math.max(0, document.documentElement.scrollHeight - window.innerHeight);
-      const visibleHeight = Math.min(nextRect.bottom, window.innerHeight) - Math.max(nextRect.top, nextNavBottom);
-      const aligned = nextRect.top >= nextNavBottom + 6 && nextRect.top <= nextNavBottom + 90;
-      const atPageEnd = window.scrollY >= nextMaxScroll - 2 && visibleHeight > 0;
-      if (!aligned && !atPageEnd) {
-        scrollToStatsSection(section, attempt + 1);
-      }
-    }, 80 * (attempt + 1));
-  }
 }
 
 export function init(viewContainer) {
@@ -631,11 +651,17 @@ export function init(viewContainer) {
 
 export function render(params) {
   const section = params.section || "";
+  currentSection = section;
   terrainType = VALID_TERRAIN_TYPES.has(params.type) ? params.type : "all";
+  rankingDistance = params.distanse || rankingDistance;
+  waGender = ["all", "women", "men"].includes(params.kjonn) ? params.kjonn : "all";
+  participationGender = ["all", "women", "men"].includes(params.kjonn) ? params.kjonn : "all";
   renderContent(section);
-  if (section) {
-    requestAnimationFrame(() => scrollToStatsSection(section));
-  } else {
-    window.scrollTo({ top: 0, behavior: "auto" });
-  }
+  requestAnimationFrame(() => {
+    const nav = container.querySelector(".stats-subnav");
+    const active = nav?.querySelector('[aria-current="page"]');
+    if (nav && active) {
+      nav.scrollLeft = Math.max(0, active.offsetLeft - (nav.clientWidth - active.offsetWidth) / 2);
+    }
+  });
 }

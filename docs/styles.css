@@ -1,15 +1,15 @@
 :root {
-  --bg: #f0ece5;
-  --panel: #fcfbf8;
-  --panel-2: #f7f3ee;
-  --line: #d8d0c6;
+  --bg: #f3f4f5;
+  --panel: #ffffff;
+  --panel-2: #f7f8f9;
+  --line: #d9dde1;
   --text: #1c1815;
-  --muted: #756d66;
+  --muted: #666b70;
   --accent: #a61e22;
   --accent-soft: #f3d9db;
   --green: #176738;
   --yellow: #977400;
-  --shadow: 0 10px 36px rgba(44, 28, 21, 0.08);
+  --shadow: 0 4px 18px rgba(25, 28, 31, 0.06);
   --tap-target: 44px;
   --mobile-page-pad: clamp(8px, 2.8vw, 16px);
   --mobile-card-gap: 8px;
@@ -35,9 +35,7 @@ body {
   min-height: 100vh;
   font-family: "IBM Plex Sans", system-ui, sans-serif;
   color: var(--text);
-  background:
-    linear-gradient(180deg, rgba(166, 30, 34, 0.06), transparent 180px),
-    linear-gradient(180deg, #f8f4ef 0%, var(--bg) 100%);
+  background: var(--bg);
 }
 
 a {
@@ -2294,6 +2292,336 @@ tbody tr:hover {
   letter-spacing: -0.02em;
 }
 
+/* 2026 responsive refresh */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: fixed;
+  z-index: 100;
+  top: 8px;
+  left: 8px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: #fff;
+  color: var(--accent);
+  font-weight: 700;
+  transform: translateY(-150%);
+}
+
+.skip-link:focus {
+  transform: none;
+}
+
+.stats div,
+.week-panel,
+.table-panel,
+.rankings-section,
+.ranking-card,
+.ranking-column,
+.people-toolbar,
+.people-list,
+.search-shell,
+.profile-shell,
+.result-card,
+.stats-section:not(.rankings-section),
+.stats-table-wrap {
+  border-radius: 8px;
+}
+
+.toolbar-filters {
+  grid-template-columns: minmax(220px, 0.8fr) minmax(0, 2fr);
+}
+
+.mobile-filter-details > summary {
+  display: none;
+}
+
+.mobile-filter-content {
+  display: grid;
+  grid-template-columns: minmax(280px, 1fr) 250px;
+  gap: 6px;
+}
+
+.stats-distance-nav {
+  display: flex;
+  gap: 6px;
+  margin: 8px 0;
+  padding-bottom: 2px;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.stats-distance-nav .event-chip {
+  text-decoration: none;
+}
+
+.stats-overview {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.stats-overview-item {
+  display: grid;
+  gap: 5px;
+  min-height: 132px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  color: inherit;
+  text-decoration: none;
+  box-shadow: var(--shadow);
+}
+
+.stats-overview-item:hover,
+.stats-overview-item:focus-visible {
+  border-color: #bf8588;
+}
+
+.stats-overview-label {
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.stats-overview-item strong {
+  font-family: "Space Grotesk", "IBM Plex Sans", system-ui, sans-serif;
+  font-size: 1.25rem;
+}
+
+.stats-overview-item > span:last-child {
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.35;
+}
+
+.people-more {
+  display: block;
+  min-height: 40px;
+  margin: 10px auto 0;
+  padding: 7px 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--accent);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.profile-head h1 {
+  margin: 0;
+  font-family: "Space Grotesk", "IBM Plex Sans", system-ui, sans-serif;
+  font-size: clamp(1.8rem, 4vw, 3.2rem);
+  line-height: 1.05;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media (max-width: 1080px) {
+  .stats-overview {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .top-nav-inner {
+    padding-right: 0;
+  }
+
+  .nav-brand {
+    font-size: 0.86rem;
+  }
+
+  .nav-tabs {
+    flex: 1;
+  }
+
+  .nav-tab {
+    min-height: var(--nav-height);
+    padding-inline: 9px;
+    font-size: 0.78rem;
+  }
+
+  .week-panel {
+    border: 0;
+    box-shadow: none;
+    background: transparent;
+  }
+
+  .week-panel-head,
+  .weeks-list {
+    display: none;
+  }
+
+  .week-select-field {
+    padding: 0;
+  }
+
+  .toolbar {
+    padding: 8px;
+  }
+
+  .toolbar-main {
+    gap: 7px;
+  }
+
+  .toolbar-share {
+    display: none;
+  }
+
+  .toolbar-filters {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 7px;
+  }
+
+  .mobile-filter-details {
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: #fff;
+  }
+
+  .mobile-filter-details > summary {
+    display: block;
+    min-height: 40px;
+    padding: 9px 11px;
+    color: var(--accent);
+    font-size: 0.8rem;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  .mobile-filter-content {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 0 9px 9px;
+  }
+
+  .mini-stats {
+    margin-top: 7px;
+  }
+
+  .stats-subnav {
+    margin-inline: calc(-1 * var(--mobile-page-pad));
+    padding: 0 var(--mobile-page-pad) 4px;
+  }
+
+  .stats-subnav .event-chip,
+  .stats-distance-nav .event-chip,
+  .terrain-filter-row .event-chip {
+    min-height: 38px;
+  }
+
+  .stats-overview {
+    grid-template-columns: 1fr;
+    gap: 7px;
+  }
+
+  .stats-overview-item {
+    min-height: 0;
+    padding: 11px;
+  }
+
+  .rankings-section {
+    padding: 8px;
+  }
+
+  .stats-table-wrap,
+  .stats-table-wrap--narrow {
+    max-width: none;
+    overflow: visible;
+    border: 0;
+    background: transparent;
+  }
+
+  .stats-table,
+  .stats-table tbody,
+  .stats-table tr,
+  .stats-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .stats-table thead {
+    display: none;
+  }
+
+  .stats-table tbody {
+    display: grid;
+    gap: 7px;
+  }
+
+  .stats-table tr {
+    position: relative;
+    padding: 9px 9px 9px 38px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: #fff;
+  }
+
+  .stats-table td,
+  .stats-table th {
+    padding: 2px 0;
+    border: 0;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  .stats-table .stats-rank {
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    width: 24px;
+  }
+
+  .stats-table .time,
+  .stats-table .wa-cell {
+    display: inline-block;
+    width: auto;
+    margin-right: 7px;
+  }
+
+  .terrain-event-grid,
+  .ranking-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-head h1 {
+    font-size: clamp(1.55rem, 8vw, 2rem);
+    overflow-wrap: anywhere;
+  }
+
+  .profile-stat-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 .highlight-columns {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
@@ -2731,6 +3059,114 @@ tbody tr:hover {
 
   .chart--sparkline svg {
     height: 46px;
+  }
+}
+
+/* Final cascade for the responsive refresh. */
+.route-view h1[tabindex="-1"]:focus,
+.route-view h2[tabindex="-1"]:focus {
+  outline: none;
+}
+
+.stats div,
+.week-panel,
+.table-panel,
+.rankings-section,
+.ranking-card,
+.ranking-column,
+.people-toolbar,
+.people-list,
+.search-shell,
+.profile-shell,
+.result-card,
+.stats-section:not(.rankings-section),
+.stats-table-wrap {
+  border-radius: 8px;
+}
+
+@media (max-width: 760px) {
+  .week-panel-head,
+  .weeks-list {
+    display: none;
+  }
+
+  .week-panel {
+    border: 0;
+    box-shadow: none;
+    background: transparent;
+  }
+
+  .toolbar-filters {
+    grid-template-columns: 1fr;
+  }
+
+  .mobile-filter-details > summary {
+    display: block;
+  }
+
+  .mobile-filter-content,
+  .stats-overview,
+  .terrain-event-grid,
+  .ranking-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-table td,
+  .stats-table th {
+    white-space: normal;
+  }
+
+  .stats-table-wrap,
+  .stats-table-wrap--narrow {
+    max-width: none;
+    overflow: visible;
+    border: 0;
+    background: transparent;
+  }
+
+  .stats-table,
+  .stats-table tbody,
+  .stats-table tr,
+  .stats-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .stats-table thead {
+    display: none;
+  }
+
+  .stats-table tbody {
+    display: grid;
+    gap: 7px;
+  }
+
+  .stats-table tr {
+    position: relative;
+    padding: 9px 9px 9px 38px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: #fff;
+  }
+
+  .stats-table td {
+    padding: 2px 0;
+    border: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .stats-table .stats-rank {
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    width: 24px;
+  }
+
+  .stats-table .time,
+  .stats-table .wa-cell {
+    display: inline-block;
+    width: auto;
+    margin-right: 7px;
   }
 }
 
