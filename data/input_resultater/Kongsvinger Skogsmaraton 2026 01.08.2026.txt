@@ -1,0 +1,2 @@
+published_date;week_number;event_name;distance;athlete_name;result_time_raw;gender;class_name;class_place;position;notes
+2026-08-01;31;Kongsvinger Skogsmaraton 2026;Maraton;Liv Berit Jegteberg Lystad;4:47:16;K;K65-69;1;36;5. kvinne
