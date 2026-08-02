@@ -1,0 +1,3 @@
+published_date;week_number;event_name;distance;athlete_name;result_time_raw;gender;class_name;class_place;position;notes
+2026-08-01;31;Jordbærtrimmen 2026;10,7 km;Ingrid Skomedal Klovning;47:50;K;K35-39;2;;Terrengløp
+2026-08-01;31;Jordbærtrimmen 2026;10,7 km;Sigurd Skomedal Klovning;46:17;M;M35-39;4;;Terrengløp
