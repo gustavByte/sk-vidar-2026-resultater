@@ -1,0 +1,14 @@
+published_date;week_number;event_name;distance;athlete_name;result_time_raw;gender;class_name;class_place;position;notes
+2026-08-01;31;Jotunheimen Trail Run 2026;Halvmaraton;Anders Wigdahl;2:07:28;M;M35-39;6;31;27. mann
+2026-08-01;31;Jotunheimen Trail Run 2026;Halvmaraton;Inger Njølstad;3:11:50;K;K23-34;134;518;214. kvinne
+2026-08-01;31;Jotunheimen Trail Run 2026;Halvmaraton;Lise Molden Stensrud;2:34:57;K;K23-34;23;179;39. kvinne
+2026-08-01;31;Jotunheimen Trail Run 2026;Halvmaraton;Ole Anders Stokker;2:24:14;M;M23-34;45;105;86. mann
+2026-08-01;31;Jotunheimen Trail Run 2026;Halvmaraton;Åsmund Eek;2:41:10;M;M23-34;89;231;172. mann
+2026-08-01;31;Jotunheimen Trail Run 2026;Maraton;Sven Axel Kilander;4:09:21;M;M45-49;1;3;3. mann
+2026-08-01;31;Jotunheimen Trail Run 2026;Ultra;Åsmund Sunde Valseth;9:31:21;M;M35-39;5;8;8. mann
+2026-08-01;31;Jotunheimen Trail Run 2026;Halvmaraton;Hanne Marthe Lie;2:05:33;K;K35-39;1;27;3. kvinne
+2026-08-01;31;Jotunheimen Trail Run 2026;Halvmaraton;Sverre Rynning-Tønnesen;2:13:16;M;M23-34;27;52;44. mann
+2026-08-01;31;Jotunheimen Trail Run 2026;Maraton;Daniel Eikeland;7:05:51;M;M23-34;55;178;119. mann
+2026-08-01;31;Jotunheimen Trail Run 2026;Skyrace;Kasper Furnesvik;2:31:59;M;M23-34;41;140;88. mann
+2026-08-01;31;Jotunheimen Trail Run 2026;Ultra;Håvard Eggen;13:22:45;M;M23-34;40;145;123. mann
+2026-08-01;31;Jotunheimen Trail Run 2026;Halvmaraton;Ingvild Tveita;2:39:01;K;Kvinner;;214;
