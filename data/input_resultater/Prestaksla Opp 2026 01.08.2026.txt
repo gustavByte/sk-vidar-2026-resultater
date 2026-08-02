@@ -1,0 +1,2 @@
+published_date;week_number;event_name;distance;athlete_name;result_time_raw;gender;class_name;class_place;position;notes
+2026-08-01;31;Prestaksla Opp 2026;3 km;Sylvia Nordskar;31:43;K;K18-99;5;31;6. kvinne, motbakke
