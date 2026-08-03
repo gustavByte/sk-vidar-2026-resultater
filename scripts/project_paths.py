@@ -28,6 +28,11 @@ PERSON_EXTERNAL_IDS_FILE = PERSON_IDENTITY_DIR / "person_external_ids.csv"
 PERSON_SLUG_HISTORY_FILE = PERSON_IDENTITY_DIR / "person_slug_history.csv"
 RESULT_PERSON_OVERRIDES_FILE = PERSON_IDENTITY_DIR / "result_person_overrides.csv"
 PERSON_MATCH_DECISIONS_FILE = PERSON_IDENTITY_DIR / "person_match_decisions.csv"
+
+# Versioned, privacy-safe identity graph used to seed a fresh checkout. The
+# writable identity store above can also contain private external IDs and
+# review notes, so it remains ignored by Git.
+CANONICAL_PERSON_IDENTITY_DIR = ROOT_DIR / "config" / "person_identity"
 WA_SCORING_DB_FILE = ROOT_DIR.parent / "felles" / "WA Poeng" / "wa_scoring.db"
 WA_TOOLKIT_DIR = WA_SCORING_DB_FILE.parent
 

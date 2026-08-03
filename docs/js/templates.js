@@ -12,7 +12,9 @@ export function personLink(row, className = "person-link") {
 }
 
 export function genderPill(gender) {
-  return `<span class="gender-pill">${displayValue(gender)}</span>`;
+  const labels = { K: "Kvinne", M: "Mann" };
+  const label = labels[gender] || "Kjønn ikke oppgitt";
+  return `<span class="gender-pill" aria-label="${label}" title="${label}"><span aria-hidden="true">${displayValue(gender)}</span></span>`;
 }
 
 export function splitClass(row) {

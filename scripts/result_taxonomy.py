@@ -27,6 +27,57 @@ PUBLIC_NOTE_BLOCK_PATTERNS = (
 _INTERNAL_NOTE_RE = re.compile("|".join(f"(?:{pattern})" for pattern in PUBLIC_NOTE_BLOCK_PATTERNS), re.IGNORECASE)
 _NORMALIZE_NON_ALNUM_RE = re.compile(r"[^a-z0-9]+")
 
+MARATHON_KM = 42.195
+HALF_MARATHON_KM = 21.0975
+MILES_TO_KM = 1.609344
+
+# Distances that are named rather than written with a numeric unit in the
+# source workbook. Keep this list deliberately small: an unknown distance is
+# safer to omit from a cumulative ranking than to guess.
+_NAMED_DISTANCE_KM = {
+    "halvmaraton": HALF_MARATHON_KM,
+    "half marathon": HALF_MARATHON_KM,
+    "half-marathon": HALF_MARATHON_KM,
+    "halbmarathon men": HALF_MARATHON_KM,
+    "maraton": MARATHON_KM,
+    "marathon": MARATHON_KM,
+    "birken fjellmaraton": 42.0,
+    "hoka lofoten skyrace marathon": 42.0,
+    "maridalsvannet rundt": 13.0,
+    "festaløpet": 17.5,
+    "kaptein dreyers minneløp aktiv": 12.0,
+}
+
+# A few providers publish only a category name such as "Ultra". These
+# event-specific values are documented course lengths and must not be applied
+# to similarly named categories at other events.
+_EVENT_DISTANCE_KM = {
+    ("jotunheimen trail run 2026", "ultra"): 73.0,
+    ("jotunheimen trail run 2026", "skyrace"): 16.0,
+    ("gornergrat zermatt marathon 2026", "ultra men"): 45.595,
+    ("nordmarka skogsmaraton 2026", "ultra"): 63.2925,
+    ("nm terrengløp kort løype stafett 2026", "6 km stafett"): 3.0,
+    ("flækøyhøe upp 2026", "konkurranseklasse"): 4.0,
+    ("fyr til fyr 2026", "fyr til fyr konkurranse"): 43.0,
+    ("birkebeinerløpene 2026", "ungdomsbirken løp"): 5.0,
+    ("det norske fjellmaraton 2026", "fjellbukk"): 10.0,
+    ("saldilten 2026", "konkurranse kort"): 6.63,
+    ("skyrunning youth world championships 2026", "vertical"): 4.5,
+}
+
+# Result-level overrides are reserved for formats where two athletes in the
+# same category can complete different distances (notably backyard races), or
+# where the provider omitted the event distance from one specific result.
+_ATHLETE_EVENT_DISTANCE_KM = {
+    ("lommedalen backyard 2026", "backyard", "martine svendsen"): 80.4,
+    ("lommedalen backyard 2026", "backyard", "remi høiseth"): 80.4,
+    ("the arctic run 2026", "para arctic run", "tone gravvold"): HALF_MARATHON_KM,
+}
+
+_KILOMETER_DISTANCE_RE = re.compile(r"(?<![\d.,])(\d+(?:[.,]\d+)?)\s*(?:km|kilometers?|k)\b", re.IGNORECASE)
+_MILE_DISTANCE_RE = re.compile(r"(?<![\d.,])(\d+(?:[.,]\d+)?)\s*miles?\b", re.IGNORECASE)
+_METER_DISTANCE_RE = re.compile(r"(?<![\d.,])(\d+(?:[.,]\d+)?)\s*(?:m|meters?)\b", re.IGNORECASE)
+
 
 def clean_text(value: object) -> str:
     if value is None:
@@ -41,6 +92,83 @@ def normalize_search_text(value: object) -> str:
     text = unicodedata.normalize("NFKD", clean_text(value).casefold())
     text = "".join(character for character in text if not unicodedata.combining(character))
     return re.sub(r"\s+", " ", text).strip()
+
+
+def _number_from_match(match: re.Match[str]) -> float:
+    return float(match.group(1).replace(",", "."))
+
+
+def _numeric_distance_km(value: object) -> float | None:
+    text = clean_text(value)
+    if not text:
+        return None
+
+    kilometer_match = _KILOMETER_DISTANCE_RE.search(text)
+    if kilometer_match:
+        distance = _number_from_match(kilometer_match)
+    else:
+        mile_match = _MILE_DISTANCE_RE.search(text)
+        if mile_match:
+            distance = _number_from_match(mile_match) * MILES_TO_KM
+        else:
+            meter_match = _METER_DISTANCE_RE.search(text)
+            if not meter_match:
+                return None
+            distance = _number_from_match(meter_match) / 1000
+
+    if not 0 < distance <= 1000:
+        return None
+    return round(distance, 6)
+
+
+def competition_distance_km_for_row(row: object) -> float | None:
+    """Return the distance credited to one athlete for a published result.
+
+    The parser accepts explicit metric/imperial units and a conservative set
+    of named-distance overrides. Ambiguous categories remain ``None`` and are
+    excluded from cumulative distance statistics.
+    """
+
+    getter = getattr(row, "get", lambda _key, default="": default)
+    distance = clean_text(getter("distance", ""))
+    event = clean_text(getter("event_label", "") or getter("event_name", ""))
+    normalized_distance = normalize_search_text(distance)
+    normalized_event = normalize_search_text(event)
+    normalized_athlete = normalize_search_text(getter("athlete_name", ""))
+
+    athlete_override = _ATHLETE_EVENT_DISTANCE_KM.get(
+        (normalized_event, normalized_distance, normalized_athlete)
+    )
+    if athlete_override is not None:
+        return athlete_override
+
+    event_override = _EVENT_DISTANCE_KM.get((normalized_event, normalized_distance))
+    if event_override is not None:
+        return event_override
+
+    named_override = _NAMED_DISTANCE_KM.get(normalized_distance)
+    if named_override is not None:
+        return named_override
+
+    numeric_distance = _numeric_distance_km(distance)
+    if numeric_distance is not None:
+        return numeric_distance
+
+    # Backyard results are distance-dependent on completed laps. Only use an
+    # explicitly recorded total; elapsed time alone is not enough evidence.
+    if "backyard" in normalized_distance:
+        notes = getter("notes_clean", "") or getter("public_note", "") or getter("notes", "")
+        return _numeric_distance_km(notes)
+
+    return None
+
+
+def competition_distance_status_for_row(row: object) -> str:
+    getter = getattr(row, "get", lambda _key, default="": default)
+    normalized_distance = normalize_search_text(getter("distance", ""))
+    if normalized_distance == "kombinert":
+        return "excluded_aggregate"
+    return "known" if competition_distance_km_for_row(row) is not None else "unknown"
 
 
 def _row_text(row: object) -> str:

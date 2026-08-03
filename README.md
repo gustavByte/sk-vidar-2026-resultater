@@ -11,6 +11,7 @@ Prosjektet er ryddet slik at filer ligger etter funksjon i stedet for alt i rotm
 - `data/stottefiler/` inneholder private/lokale støttefiler
 - `data/stottefiler/result_overrides_2026.csv` inneholder manuelle overstyringer for kjønn og klasse
 - `data/stottefiler/personer/` inneholder lokalt personregister, aliaser, eksterne ID-er og manuelle personkoblinger
+- `config/person_identity/` inneholder en versjonert, personvernsikker kopi av stabile person-ID-er, aliaser og slug-historikk for reproducerbare bygg
 - `scripts/` inneholder Python-skript for oppdatering
 - `docs/` inneholder den publiserbare nettsiden og enkel dokumentasjon
 
@@ -21,7 +22,7 @@ Prosjektet er ryddet slik at filer ligger etter funksjon i stedet for alt i rotm
 3. Kontroller eventuelle avvik i `data/database/import_review_2026.csv`, rett kildefilen og kjør på nytt.
 4. Hent ferdig fil fra `data/delt_oversikt/`. Nettsiden bygges i `docs/` og databasen i `data/database/`.
 5. Hvis et løp mangler kjønn eller klasse, fyll det inn i `data/stottefiler/result_overrides_2026.csv`.
-6. Hvis en person er feil koblet, legg alias eller override i `data/stottefiler/personer/` og bygg siden på nytt.
+6. Hvis en person er feil koblet, legg alias eller override i `data/stottefiler/personer/` og bygg siden på nytt. Bygget oppdaterer automatisk den versjonerte identitetskopien.
 7. For raske navnematcher, kjør `python scripts/review_person_matches_2026.py --generate`, godkjenn i `person_match_decisions.csv`, og kjør `python scripts/review_person_matches_2026.py --apply`.
 
 Kjør `python scripts/update_results_2026.py --check` for kun å kontrollere innboksen. Kjør med `--build-only` for å bygge eksisterende arbeidsdata uten å lese innboksen.
@@ -32,12 +33,12 @@ Hvis en Excel-fil står åpen i et annet program, kan den ikke flyttes eller ove
 
 ## Nettside
 
-Nettsiden ligger i `docs/` og er laget for GitHub Pages. Den leser kun fra `docs/data/results.json` (schema v4, minifisert) og har fem hovedvisninger med hash-ruting:
+Nettsiden ligger i `docs/` og er laget for GitHub Pages. Den leser kun fra `docs/data/results.json` (schema v5, minifisert) og har fem hovedvisninger med hash-ruting:
 
 - `#/` — Oversikt: sesongtrend-graf, siste uke med ukens prestasjoner (WA-poeng), siste perser og snarveier
 - `#/uke/{nr}` — Ukevisning med delbare filtre i URL-en (`?kjonn=k&distanse=10 km&lop=…&sok=…&gruppering=lop`)
 - `#/personer` — Søkbar personkatalog; `#/person/{slug}` — profil med beste noteringer, klubbrangering, utviklingsgraf og aktivitet
-- `#/statistikk` — kompakt oversikt med egne undersider for standarddistanser, terreng/fjell uten WA, WA-poeng, deltakelse, måneder og største løp
+- `#/statistikk` — kompakt oversikt med egne undersider for standarddistanser, terreng/fjell uten WA, WA-poeng, deltakelse, samlede konkurransekilometer, måneder og største løp
 - `#/sok?q=…` — Globalt søk på tvers av hele sesongen
 
 Koden er delt i ES-moduler under `docs/js/` (`router.js`, `state.js`, `derive.js`, `charts.js`, `views/…`) uten byggeverktøy. `docs/app.js` er inngangspunktet; bump `?v=`-parameteren i `docs/index.html` ved endringer i JS/CSS slik at nettlesere henter ny versjon (undermoduler arver ikke versjonsstempelet, men GitHub Pages cacher dem bare i ~10 minutter).

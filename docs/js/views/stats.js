@@ -1,19 +1,20 @@
 import { state } from "../state.js";
 import { displayTime, escapeHtml, formatCount, formatEventLabel, formatWaPoints } from "../format.js";
 import { hrefStats, hrefWeek } from "../router.js";
-import { genderPill, personLink } from "../templates.js";
+import { genderPill, personLink } from "../templates.js?v=20260802-distance1";
 import { waChip } from "../badges.js";
 import {
   TERRAIN_FILTER_TYPES,
   TERRAIN_TYPE_LABELS,
   biggestEvents,
+  competitionDistanceSummary,
   fullRankingList,
   monthsSeries,
   participationTop,
   seasonWaPerPerson,
   seasonWaTopResults,
   terrainEventGroups,
-} from "../derive.js?v=20260710-refresh2";
+} from "../derive.js?v=20260802-distance1";
 import { barChartSvg, chartLegendHtml, mountChart } from "../charts.js";
 
 const SECTIONS = [
@@ -22,6 +23,7 @@ const SECTIONS = [
   { id: "hoydepunkter", label: "Høydepunkter" },
   { id: "wa", label: "WA-poeng" },
   { id: "deltakelse", label: "Deltakelse" },
+  { id: "kilometer", label: "Flest km" },
   { id: "maneder", label: "Måned for måned" },
   { id: "lop", label: "Største løp" },
 ];
@@ -29,11 +31,32 @@ const SECTIONS = [
 let container = null;
 let waGender = "all";
 let participationGender = "all";
+let distanceGender = "all";
 let terrainType = "all";
 let currentSection = "";
 let rankingDistance = "";
+let distanceExpanded = false;
 const expandedColumns = new Set();
 const VALID_TERRAIN_TYPES = new Set(["all", ...TERRAIN_FILTER_TYPES]);
+const kilometerFormat = new Intl.NumberFormat("nb-NO", {
+  minimumFractionDigits: 1,
+  maximumFractionDigits: 1,
+});
+
+function formatKilometers(value, { unit = true } = {}) {
+  const formatted = kilometerFormat.format(Number(value) || 0);
+  return unit ? `${formatted} km` : formatted;
+}
+
+function latestStatsDateLabel() {
+  const isoDate = String(state.data.stats?.latest_date || "");
+  const match = isoDate.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  if (!match) {
+    return "";
+  }
+  const date = new Date(Number(match[1]), Number(match[2]) - 1, Number(match[3]), 12);
+  return new Intl.DateTimeFormat("nb-NO", { day: "numeric", month: "long", year: "numeric" }).format(date);
+}
 
 function genderMatchesFilter(gender, filter) {
   if (filter === "women") {
@@ -349,12 +372,12 @@ function waSectionHtml() {
     .map(
       (row, index) => `
         <tr>
-          <td class="stats-rank">${index + 1}</td>
-          <td>${genderPill(row.gender)} ${personLink(row)}</td>
-          <td>${escapeHtml(formatEventLabel(row.event_label))}</td>
-          <td class="muted">${escapeHtml(row.distance || "")}</td>
-          <td class="time">${escapeHtml(displayTime(row))}</td>
-          <td class="wa-cell">${waChip(row.wa_points)}</td>
+          <td class="stats-rank" data-label="Plass">${index + 1}</td>
+          <td data-label="Løper">${genderPill(row.gender)} ${personLink(row)}</td>
+          <td data-label="Løp">${escapeHtml(formatEventLabel(row.event_label))}</td>
+          <td class="muted" data-label="Distanse">${escapeHtml(row.distance || "")}</td>
+          <td class="time" data-label="Tid">${escapeHtml(displayTime(row))}</td>
+          <td class="wa-cell" data-label="WA">${waChip(row.wa_points)}</td>
         </tr>
       `,
     )
@@ -368,11 +391,11 @@ function waSectionHtml() {
     .map(
       (entry, index) => `
         <tr>
-          <td class="stats-rank">${index + 1}</td>
-          <td>${genderPill(entry.best.gender)} ${personLink(entry.best)}</td>
-          <td>${escapeHtml(displayTime(entry.best))} <span class="muted">${escapeHtml(entry.best.distance || "")}</span></td>
-          <td class="wa-cell">${waChip(entry.best.wa_points)}</td>
-          <td class="muted">${entry.top3Average !== null ? formatWaPoints(entry.top3Average) : "—"}</td>
+          <td class="stats-rank" data-label="Plass">${index + 1}</td>
+          <td data-label="Løper">${genderPill(entry.best.gender)} ${personLink(entry.best)}</td>
+          <td data-label="Beste resultat">${escapeHtml(displayTime(entry.best))} <span class="muted">${escapeHtml(entry.best.distance || "")}</span></td>
+          <td class="wa-cell" data-label="WA">${waChip(entry.best.wa_points)}</td>
+          <td class="muted" data-label="Snitt 3 beste">${entry.top3Average !== null ? formatWaPoints(entry.top3Average) : "—"}</td>
         </tr>
       `,
     )
@@ -393,8 +416,9 @@ function waSectionHtml() {
           <h3 class="stats-block-heading">Beste enkeltprestasjoner</h3>
           <div class="stats-table-wrap">
             <table class="stats-table">
+              <caption class="visually-hidden">Beste enkeltprestasjoner etter World Athletics-poeng</caption>
               <thead>
-                <tr><th>#</th><th>Løper</th><th>Løp</th><th>Distanse</th><th>Tid</th><th>WA</th></tr>
+                <tr><th scope="col">#</th><th scope="col">Løper</th><th scope="col">Løp</th><th scope="col">Distanse</th><th scope="col">Tid</th><th scope="col">WA</th></tr>
               </thead>
               <tbody>${resultRows || `<tr><td colspan="6" class="muted">Ingen WA-graderte resultater.</td></tr>`}</tbody>
             </table>
@@ -404,8 +428,9 @@ function waSectionHtml() {
           <h3 class="stats-block-heading">Beste per person</h3>
           <div class="stats-table-wrap">
             <table class="stats-table">
+              <caption class="visually-hidden">Beste World Athletics-resultat per person</caption>
               <thead>
-                <tr><th>#</th><th>Løper</th><th>Beste resultat</th><th>WA</th><th>Snitt 3 beste</th></tr>
+                <tr><th scope="col">#</th><th scope="col">Løper</th><th scope="col">Beste resultat</th><th scope="col">WA</th><th scope="col">Snitt 3 beste</th></tr>
               </thead>
               <tbody>${personRows || `<tr><td colspan="5" class="muted">Ingen WA-graderte resultater.</td></tr>`}</tbody>
             </table>
@@ -426,10 +451,10 @@ function participationSectionHtml() {
     .map(
       (profile, index) => `
         <tr>
-          <td class="stats-rank">${index + 1}</td>
-          <td>${genderPill(profile.gender)} ${personLink(profile)}</td>
-          <td>${formatCount(profile.result_count)}</td>
-          <td class="muted">${formatCount((profile.distances || []).length)}</td>
+          <td class="stats-rank" data-label="Plass">${index + 1}</td>
+          <td data-label="Løper">${genderPill(profile.gender)} ${personLink(profile)}</td>
+          <td data-label="Resultater">${formatCount(profile.result_count)}</td>
+          <td class="muted" data-label="Distanser">${formatCount((profile.distances || []).length)}</td>
         </tr>
       `,
     )
@@ -447,12 +472,141 @@ function participationSectionHtml() {
       ${genderChipsHtml("participation", participationGender)}
       <div class="stats-table-wrap stats-table-wrap--narrow">
         <table class="stats-table">
+          <caption class="visually-hidden">Løpere med flest publiserte resultater i 2026</caption>
           <thead>
-            <tr><th>#</th><th>Løper</th><th>Resultater</th><th>Distanser</th></tr>
+            <tr><th scope="col">#</th><th scope="col">Løper</th><th scope="col">Resultater</th><th scope="col">Distanser</th></tr>
           </thead>
           <tbody>${rows}</tbody>
         </table>
       </div>
+    </section>
+  `;
+}
+
+function distanceTotalText(profile) {
+  const prefix = profile.unknown_result_count ? "Minst " : "";
+  return `${prefix}${formatKilometers(profile.total_km)}`;
+}
+
+function distancePodiumHtml(leaders) {
+  if (!leaders.length) {
+    return `<p class="ranking-empty">Ingen resultater med sikkert kjent distanse.</p>`;
+  }
+
+  const maxDistance = leaders[0].total_km || 1;
+  return `
+    <ol class="distance-podium" aria-label="Topp tre på konkurransekilometer">
+      ${leaders.slice(0, 3).map((profile, index) => {
+        const share = Math.max(4, (profile.total_km / maxDistance) * 100);
+        const uncertainty = profile.unknown_result_count
+          ? `<span class="distance-uncertain">+ ${formatCount(profile.unknown_result_count)} løp uten kjent distanse</span>`
+          : "";
+        return `
+          <li class="distance-podium-card distance-podium-card--${index + 1}">
+            <div class="distance-podium-topline">
+              <span class="distance-podium-place">${index + 1}</span>
+              <span class="distance-podium-count">${formatCount(profile.result_count)} løp telt</span>
+            </div>
+            <div class="distance-podium-athlete">${genderPill(profile.gender)} ${personLink(profile)}</div>
+            <strong class="distance-podium-total">${escapeHtml(distanceTotalText(profile))}</strong>
+            <div class="distance-podium-track" aria-hidden="true"><span style="width: ${share.toFixed(2)}%"></span></div>
+            ${uncertainty}
+          </li>
+        `;
+      }).join("")}
+    </ol>
+  `;
+}
+
+function competitionDistanceSectionHtml() {
+  const summary = competitionDistanceSummary();
+  const leaders = summary.leaders.filter((profile) => genderMatchesFilter(profile.gender, distanceGender));
+  const visibleLeaders = distanceExpanded ? leaders : leaders.slice(0, 50);
+  const maxDistance = leaders[0]?.total_km || 1;
+  const filteredTotalKm = leaders.reduce((sum, profile) => sum + profile.total_km, 0);
+  const filteredResultCount = leaders.reduce((sum, profile) => sum + profile.result_count, 0);
+
+  const rows = visibleLeaders
+    .map((profile, index) => {
+      const barWidth = Math.max(2, (profile.total_km / maxDistance) * 100);
+      const longestEvent = formatEventLabel(profile.longest_event_label);
+      const uncertainty = profile.unknown_result_count
+        ? `<span class="distance-uncertain">Minst – ${formatCount(profile.unknown_result_count)} løp mangler sikker distanse</span>`
+        : "";
+      return `
+        <tr>
+          <td class="stats-rank" data-label="Plass">${index + 1}</td>
+          <th class="distance-athlete" scope="row" data-label="Løper">${genderPill(profile.gender)} ${personLink(profile)}</th>
+          <td class="distance-total-cell" data-label="Konkurranse-km">
+            <strong>${escapeHtml(distanceTotalText(profile))}</strong>
+            <span class="distance-row-track" aria-hidden="true"><span style="width: ${barWidth.toFixed(2)}%"></span></span>
+            ${uncertainty}
+          </td>
+          <td class="numeric-cell" data-label="Løp telt">${formatCount(profile.result_count)}</td>
+          <td class="distance-longest" data-label="Lengste enkeltløp">
+            <strong>${escapeHtml(formatKilometers(profile.longest_km))}</strong>
+            ${longestEvent ? `<span title="${escapeHtml(longestEvent)}">${escapeHtml(longestEvent)}</span>` : ""}
+          </td>
+        </tr>
+      `;
+    })
+    .join("");
+
+  const coverage = summary.eligibleResultCount
+    ? (summary.includedResultCount / summary.eligibleResultCount) * 100
+    : 0;
+  const toggle = leaders.length > 50
+    ? `<button class="ranking-toggle distance-toggle" type="button" data-distance-toggle aria-expanded="${distanceExpanded ? "true" : "false"}">${
+        distanceExpanded ? "Vis topp 50" : `Vis alle (${formatCount(leaders.length)})`
+      }</button>`
+    : "";
+
+  return `
+    <section class="stats-section distance-section" id="stats-kilometer" aria-labelledby="distance-title">
+      <div class="section-header">
+        <div>
+          <p class="section-kicker">Konkurransevolum</p>
+          <h2 id="distance-title" class="section-heading">Flest konkurransekilometer</h2>
+        </div>
+        <p class="section-copy">Summen av den nominelle løpsdistansen i alle publiserte konkurranser så langt i 2026.</p>
+      </div>
+      ${genderChipsHtml("distance", distanceGender)}
+      <div class="distance-summary-grid" aria-label="Oppsummering for valgt kjønnsfilter">
+        <div class="distance-summary distance-summary--primary">
+          <span>Konkurranse-km i visningen</span>
+          <strong>${escapeHtml(formatKilometers(filteredTotalKm))}</strong>
+        </div>
+        <div class="distance-summary">
+          <span>Løpere med kjent distanse</span>
+          <strong>${formatCount(leaders.length)}</strong>
+        </div>
+        <div class="distance-summary">
+          <span>Resultater telt i visningen</span>
+          <strong>${formatCount(filteredResultCount)}</strong>
+        </div>
+      </div>
+      ${distancePodiumHtml(leaders)}
+      <p class="distance-method-note">
+        <strong>${formatCount(summary.includedResultCount)} av ${formatCount(summary.eligibleResultCount)}</strong> tellbare resultater har sikkert kjent distanse (${kilometerFormat.format(coverage)} %).
+        ${summary.unknownResultCount ? `${formatCount(summary.unknownResultCount)} er foreløpig utelatt.` : ""}
+        ${summary.excludedAggregateCount ? `${formatCount(summary.excludedAggregateCount)} sammenlagtplasseringer teller ikke som egne løp.` : ""}
+      </p>
+      <div class="stats-table-wrap distance-table-wrap">
+        <table class="stats-table distance-table">
+          <caption class="visually-hidden">Rangering etter samlede konkurransekilometer i 2026</caption>
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Løper</th>
+              <th scope="col">Konkurranse-km</th>
+              <th scope="col">Løp telt</th>
+              <th scope="col">Lengste enkeltløp</th>
+            </tr>
+          </thead>
+          <tbody>${rows || `<tr><td colspan="5" class="muted">Ingen resultater med sikkert kjent distanse.</td></tr>`}</tbody>
+        </table>
+      </div>
+      ${toggle}
     </section>
   `;
 }
@@ -495,10 +649,10 @@ function monthsSectionHtml() {
     .map(
       (month) => `
         <tr>
-          <td>${escapeHtml(month.month_label)}</td>
-          <td>${formatCount(month.result_count)}</td>
-          <td>${formatCount(month.athlete_count ?? 0)}</td>
-          <td>${formatCount(month.event_count ?? 0)}</td>
+          <td data-label="Måned">${escapeHtml(month.month_label)}</td>
+          <td data-label="Resultater">${formatCount(month.result_count)}</td>
+          <td data-label="Løpere">${formatCount(month.athlete_count ?? 0)}</td>
+          <td data-label="Løp">${formatCount(month.event_count ?? 0)}</td>
         </tr>
       `,
     )
@@ -516,8 +670,9 @@ function monthsSectionHtml() {
       ${chartLegendHtml(MONTH_SERIES)}
       <div class="stats-table-wrap stats-table-wrap--narrow">
         <table class="stats-table">
+          <caption class="visually-hidden">Resultatvolum måned for måned i 2026</caption>
           <thead>
-            <tr><th>Måned</th><th>Resultater</th><th>Løpere</th><th>Løp</th></tr>
+            <tr><th scope="col">Måned</th><th scope="col">Resultater</th><th scope="col">Løpere</th><th scope="col">Løp</th></tr>
           </thead>
           <tbody>${rows}</tbody>
         </table>
@@ -535,11 +690,11 @@ function eventsSectionHtml() {
         .join(", ");
       return `
         <tr>
-          <td class="stats-rank">${index + 1}</td>
-          <td>${escapeHtml(formatEventLabel(entry.event_label))}</td>
-          <td>${formatCount(entry.count)}</td>
-          <td class="muted">${formatCount(entry.women)} K · ${formatCount(entry.men)} M</td>
-          <td class="muted">${weekLinks}</td>
+          <td class="stats-rank" data-label="Plass">${index + 1}</td>
+          <td data-label="Løp">${escapeHtml(formatEventLabel(entry.event_label))}</td>
+          <td data-label="Deltakere">${formatCount(entry.count)}</td>
+          <td class="muted" data-label="Kvinner / menn">${formatCount(entry.women)} K · ${formatCount(entry.men)} M</td>
+          <td class="muted" data-label="Uke">${weekLinks}</td>
         </tr>
       `;
     })
@@ -556,8 +711,9 @@ function eventsSectionHtml() {
       </div>
       <div class="stats-table-wrap">
         <table class="stats-table">
+          <caption class="visually-hidden">Løp med flest unike SK Vidar-deltakere i 2026</caption>
           <thead>
-            <tr><th>#</th><th>Løp</th><th>Deltakere</th><th>K/M</th><th>Uke</th></tr>
+            <tr><th scope="col">#</th><th scope="col">Løp</th><th scope="col">Deltakere</th><th scope="col">K/M</th><th scope="col">Uke</th></tr>
           </thead>
           <tbody>${rows}</tbody>
         </table>
@@ -571,11 +727,13 @@ function overviewHtml() {
   const peopleCount = state.data.people?.profile_count || state.data.people?.profiles?.length || 0;
   const eventCount = new Set((state.data.results || []).map((row) => row.event_id || row.event_label).filter(Boolean)).size;
   const waCount = (state.data.results || []).filter((row) => row.wa_points !== null && row.wa_points !== undefined).length;
+  const distanceSummary = competitionDistanceSummary();
   const items = [
     { section: "topp-10", label: "Standarddistanser", value: `${state.data.rankings?.length || 0} distanser`, copy: "Beste tid per løper, kvinner og menn hver for seg." },
     { section: "hoydepunkter", label: "Høydepunkter", value: `${terrainEventGroups({ limit: 0 }).length} løp`, copy: "Terreng, fjell, trail og skyrace uten WA-poeng." },
     { section: "wa", label: "WA-poeng", value: `${formatCount(waCount)} resultater`, copy: "Sammenlign prestasjoner på tvers av graderbare distanser." },
     { section: "deltakelse", label: "Flest resultater", value: `${formatCount(peopleCount)} løpere`, copy: "Se hvem som har flest publiserte resultater." },
+    { section: "kilometer", label: "Konkurranse-km", value: formatKilometers(distanceSummary.totalKm), copy: "Se hvem som har samlet flest kilometer i konkurranser." },
     { section: "maneder", label: "Måned for måned", value: `${formatCount(resultCount)} resultater`, copy: "Følg sesongvolumet gjennom året." },
     { section: "lop", label: "Største løp", value: `${formatCount(eventCount)} løp`, copy: "Arrangementene med flest unike SK Vidar-deltakere." },
   ];
@@ -599,18 +757,22 @@ function renderContent(activeSection) {
     hoydepunkter: highlightsSectionHtml,
     wa: waSectionHtml,
     deltakelse: participationSectionHtml,
+    kilometer: competitionDistanceSectionHtml,
     maneder: monthsSectionHtml,
     lop: eventsSectionHtml,
   };
   const content = activeSection ? sectionRenderers[activeSection]?.() || overviewHtml() : overviewHtml();
+  const dateLabel = latestStatsDateLabel();
   container.innerHTML = `
     <div class="stats-shell">
-      <div class="section-header">
+      <header class="stats-page-header">
         <div>
           <p class="section-kicker">Sesongen 2026</p>
-          <h1 class="section-heading">Statistikk</h1>
+          <h1 class="stats-page-title">Statistikk</h1>
+          <p class="stats-page-intro">Prestasjoner, deltakelse og løpsvolum – samlet på ett sted.</p>
         </div>
-      </div>
+        ${dateLabel ? `<p class="stats-as-of"><span>Oppdatert til</span><strong>${escapeHtml(dateLabel)}</strong></p>` : ""}
+      </header>
       ${subNavHtml(activeSection)}
       ${content}
     </div>
@@ -624,12 +786,24 @@ function renderContent(activeSection) {
     button.addEventListener("click", () => {
       if (button.dataset.genderGroup === "wa") {
         waGender = button.dataset.gender;
+      } else if (button.dataset.genderGroup === "distance") {
+        distanceGender = button.dataset.gender;
       } else {
         participationGender = button.dataset.gender;
       }
-      const params = button.dataset.genderGroup === "wa" ? { kjonn: waGender } : { kjonn: participationGender };
+      const genderByGroup = {
+        wa: waGender,
+        distance: distanceGender,
+        participation: participationGender,
+      };
+      const params = { kjonn: genderByGroup[button.dataset.genderGroup] || "all" };
       window.location.hash = hrefStats(currentSection, params);
     });
+  });
+
+  container.querySelector("[data-distance-toggle]")?.addEventListener("click", () => {
+    distanceExpanded = !distanceExpanded;
+    renderContent(currentSection);
   });
 
   container.querySelectorAll(".ranking-toggle").forEach((button) => {
@@ -656,6 +830,7 @@ export function render(params) {
   rankingDistance = params.distanse || rankingDistance;
   waGender = ["all", "women", "men"].includes(params.kjonn) ? params.kjonn : "all";
   participationGender = ["all", "women", "men"].includes(params.kjonn) ? params.kjonn : "all";
+  distanceGender = ["all", "women", "men"].includes(params.kjonn) ? params.kjonn : "all";
   renderContent(section);
   requestAnimationFrame(() => {
     const nav = container.querySelector(".stats-subnav");

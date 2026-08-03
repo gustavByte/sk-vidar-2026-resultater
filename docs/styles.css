@@ -2443,6 +2443,471 @@ tbody tr:hover {
   }
 }
 
+/* ============================================================
+   Statistikk: konkurransekilometer og tilgjengelighetsløft
+   ============================================================ */
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.92);
+}
+
+.stats-page-header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: end;
+  min-height: 104px;
+  padding: 18px 20px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background:
+    linear-gradient(112deg, rgba(166, 30, 34, 0.1), transparent 44%),
+    repeating-linear-gradient(90deg, transparent 0 46px, rgba(28, 24, 21, 0.025) 46px 47px),
+    var(--panel);
+  box-shadow: var(--shadow);
+}
+
+.stats-page-header::after {
+  position: absolute;
+  right: -42px;
+  bottom: -66px;
+  width: 210px;
+  height: 120px;
+  border: 18px solid rgba(166, 30, 34, 0.08);
+  border-radius: 50%;
+  content: "";
+  transform: rotate(-8deg);
+  pointer-events: none;
+}
+
+.stats-page-title {
+  margin: 0;
+  font-family: "Space Grotesk", "IBM Plex Sans", system-ui, sans-serif;
+  font-size: clamp(1.75rem, 4vw, 2.8rem);
+  line-height: 0.95;
+  letter-spacing: -0.055em;
+}
+
+.stats-page-intro {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.stats-as-of {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 2px;
+  margin: 0;
+  text-align: right;
+}
+
+.stats-as-of span {
+  color: var(--muted);
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.stats-as-of strong {
+  font-family: "Space Grotesk", "IBM Plex Sans", system-ui, sans-serif;
+  font-size: 0.92rem;
+}
+
+.stats-subnav {
+  scroll-padding-inline: 4px;
+  scroll-snap-type: x proximity;
+  overscroll-behavior-x: contain;
+}
+
+.stats-subnav .event-chip {
+  min-height: 36px;
+  display: inline-flex;
+  align-items: center;
+  scroll-snap-align: start;
+  transition: border-color 140ms ease, background 140ms ease, color 140ms ease, transform 140ms ease;
+}
+
+.stats-subnav .event-chip:hover {
+  border-color: rgba(166, 30, 34, 0.45);
+  transform: translateY(-1px);
+}
+
+.distance-section {
+  background:
+    linear-gradient(180deg, rgba(166, 30, 34, 0.045), transparent 220px),
+    linear-gradient(180deg, var(--panel) 0%, var(--panel-2) 100%) !important;
+}
+
+.distance-summary-grid {
+  display: grid;
+  grid-template-columns: minmax(220px, 1.35fr) repeat(2, minmax(160px, 1fr));
+  gap: 8px;
+  margin: 8px 0 10px;
+}
+
+.distance-summary {
+  display: grid;
+  align-content: end;
+  gap: 5px;
+  min-height: 88px;
+  padding: 12px;
+  border: 1px solid #e4ddd5;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.88);
+}
+
+.distance-summary span {
+  color: var(--muted);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.distance-summary strong {
+  font-family: "Space Grotesk", "IBM Plex Sans", system-ui, sans-serif;
+  font-size: 1.35rem;
+  line-height: 1;
+  letter-spacing: -0.045em;
+  font-variant-numeric: tabular-nums;
+}
+
+.distance-summary--primary {
+  border-color: rgba(166, 30, 34, 0.35);
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 10px 24px rgba(166, 30, 34, 0.16);
+}
+
+.distance-summary--primary span {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.distance-summary--primary strong {
+  font-size: clamp(1.45rem, 3vw, 2rem);
+}
+
+.distance-podium {
+  display: grid;
+  grid-template-columns: minmax(0, 1.18fr) repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin: 0 0 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.distance-podium-card {
+  position: relative;
+  display: grid;
+  align-content: start;
+  gap: 7px;
+  min-height: 146px;
+  padding: 12px;
+  overflow: hidden;
+  border: 1px solid #e1d8cf;
+  border-top: 3px solid #b9aea4;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.distance-podium-card--1 {
+  border-top-color: var(--accent);
+  background: linear-gradient(145deg, #fff 35%, #fff2f2 100%);
+}
+
+.distance-podium-topline {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: center;
+}
+
+.distance-podium-place {
+  display: grid;
+  width: 28px;
+  height: 28px;
+  place-items: center;
+  border-radius: 50%;
+  background: #eee7df;
+  color: var(--text);
+  font-family: "Space Grotesk", "IBM Plex Sans", system-ui, sans-serif;
+  font-weight: 700;
+}
+
+.distance-podium-card--1 .distance-podium-place {
+  background: var(--accent);
+  color: #fff;
+}
+
+.distance-podium-count {
+  color: var(--muted);
+  font-size: 0.7rem;
+}
+
+.distance-podium-athlete {
+  min-height: 24px;
+  font-size: 0.88rem;
+}
+
+.distance-podium-total {
+  font-family: "Space Grotesk", "IBM Plex Sans", system-ui, sans-serif;
+  font-size: clamp(1.15rem, 2vw, 1.45rem);
+  line-height: 1;
+  letter-spacing: -0.04em;
+  font-variant-numeric: tabular-nums;
+}
+
+.distance-podium-track,
+.distance-row-track {
+  display: block;
+  height: 4px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #eee8e1;
+}
+
+.distance-podium-track span,
+.distance-row-track span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--accent);
+}
+
+.distance-method-note {
+  margin: 0 0 8px;
+  padding: 8px 10px;
+  border-left: 3px solid rgba(166, 30, 34, 0.5);
+  background: rgba(255, 255, 255, 0.64);
+  color: var(--muted);
+  font-size: 0.76rem;
+  line-height: 1.45;
+}
+
+.distance-method-note strong {
+  color: var(--text);
+}
+
+.distance-table {
+  min-width: 720px;
+}
+
+.stats-table tbody th {
+  padding: 6px 8px;
+  border-bottom: 1px solid #e6dfd6;
+  background: transparent;
+  color: var(--text);
+  font-size: 0.84rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-align: left;
+  text-transform: none;
+  white-space: normal;
+}
+
+.distance-table th:nth-child(3),
+.distance-table td:nth-child(3),
+.distance-table th:nth-child(4),
+.distance-table td:nth-child(4) {
+  text-align: right;
+}
+
+.distance-total-cell {
+  width: 230px;
+  font-variant-numeric: tabular-nums;
+}
+
+.distance-total-cell > strong {
+  display: block;
+}
+
+.distance-row-track {
+  width: 100%;
+  margin-top: 5px;
+  height: 3px;
+}
+
+.distance-longest {
+  max-width: 280px;
+}
+
+.distance-longest strong,
+.distance-longest span {
+  display: block;
+}
+
+.distance-longest span {
+  margin-top: 2px;
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 0.72rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.distance-uncertain {
+  display: block;
+  margin-top: 4px;
+  color: #8a5c00;
+  font-size: 0.68rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.numeric-cell {
+  font-variant-numeric: tabular-nums;
+}
+
+.distance-toggle {
+  display: block;
+  min-height: 38px;
+  margin: 10px auto 0;
+}
+
+.stats-table th {
+  font-size: 0.7rem;
+}
+
+.stats-table td,
+.stats-table tbody th {
+  padding-block: 8px;
+}
+
+@media (max-width: 900px) {
+  .distance-summary-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .distance-summary--primary {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 760px) {
+  .stats-page-header {
+    min-height: 0;
+    padding: 14px;
+    align-items: start;
+  }
+
+  .stats-page-intro {
+    max-width: 28ch;
+    font-size: 0.78rem;
+  }
+
+  .stats-as-of {
+    flex: 0 0 auto;
+    padding-top: 2px;
+  }
+
+  .stats-as-of span {
+    font-size: 0.58rem;
+  }
+
+  .stats-as-of strong {
+    max-width: 12ch;
+    font-size: 0.72rem;
+  }
+
+  .stats-subnav .event-chip,
+  .stats-distance-nav .event-chip,
+  .terrain-filter-row .event-chip {
+    min-height: var(--tap-target);
+  }
+
+  .distance-summary-grid,
+  .distance-podium {
+    grid-template-columns: 1fr;
+  }
+
+  .distance-summary--primary {
+    grid-column: auto;
+  }
+
+  .distance-summary {
+    min-height: 70px;
+  }
+
+  .distance-podium-card {
+    min-height: 0;
+  }
+
+  .distance-table {
+    min-width: 0;
+  }
+
+  /* Keep table headers available to assistive technology while presenting
+     each row as a labelled card on small screens. */
+  .stats-table thead {
+    position: absolute !important;
+    display: table-header-group;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  .stats-table tbody th {
+    display: grid;
+    width: 100%;
+    padding: 3px 0;
+    border: 0;
+  }
+
+  .stats-table td[data-label]:not(.stats-rank),
+  .stats-table tbody th[data-label] {
+    grid-template-columns: minmax(104px, 0.45fr) minmax(0, 1fr);
+    gap: 8px;
+    align-items: baseline;
+  }
+
+  .stats-table td[data-label]:not(.stats-rank) {
+    display: grid;
+  }
+
+  .stats-table td[data-label]:not(.stats-rank)::before,
+  .stats-table tbody th[data-label]::before {
+    content: attr(data-label);
+    color: var(--muted);
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .distance-table th:nth-child(3),
+  .distance-table td:nth-child(3),
+  .distance-table th:nth-child(4),
+  .distance-table td:nth-child(4) {
+    text-align: left;
+  }
+
+  .distance-total-cell,
+  .distance-longest {
+    width: auto;
+    max-width: none;
+  }
+
+  .distance-row-track {
+    grid-column: 2;
+  }
+
+  .distance-total-cell .distance-uncertain {
+    grid-column: 2;
+  }
+}
+
 @media (max-width: 1080px) {
   .stats-overview {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -3167,6 +3632,89 @@ tbody tr:hover {
     display: inline-block;
     width: auto;
     margin-right: 7px;
+  }
+}
+
+/* Final overrides for the statistics additions above. Keep these after the
+   legacy responsive cascade until that older CSS is consolidated. */
+.stats-table th {
+  font-size: 0.7rem;
+}
+
+.stats-table td,
+.stats-table tbody th {
+  padding-block: 8px;
+}
+
+.distance-table {
+  min-width: 720px;
+}
+
+@media (max-width: 760px) {
+  .stats-subnav .event-chip,
+  .stats-distance-nav .event-chip,
+  .terrain-filter-row .event-chip {
+    min-height: var(--tap-target);
+  }
+
+  .stats-table thead {
+    position: absolute !important;
+    display: table-header-group;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  .stats-table tbody th {
+    display: grid;
+    width: 100%;
+    padding: 3px 0;
+    border: 0;
+  }
+
+  .stats-table td[data-label]:not(.stats-rank),
+  .stats-table tbody th[data-label] {
+    grid-template-columns: minmax(104px, 0.45fr) minmax(0, 1fr);
+    gap: 8px;
+    align-items: baseline;
+  }
+
+  .stats-table td[data-label]:not(.stats-rank) {
+    display: grid;
+  }
+
+  .stats-table td[data-label]:not(.stats-rank)::before,
+  .stats-table tbody th[data-label]::before {
+    content: attr(data-label);
+    color: var(--muted);
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .distance-table {
+    min-width: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-nav-inner {
+    gap: 4px;
+  }
+
+  .nav-brand {
+    font-size: 0.8rem;
+  }
+
+  .nav-tab {
+    padding-inline: 7px;
+    font-size: 0.78rem;
   }
 }
 

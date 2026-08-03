@@ -1,4 +1,4 @@
-const STATS_SECTIONS = new Set(["hoydepunkter", "topp-10", "wa", "deltakelse", "maneder", "lop"]);
+const STATS_SECTIONS = new Set(["hoydepunkter", "topp-10", "wa", "deltakelse", "kilometer", "maneder", "lop"]);
 
 function buildQuery(params) {
   const search = new URLSearchParams();

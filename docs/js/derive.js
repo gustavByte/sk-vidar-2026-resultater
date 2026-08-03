@@ -447,6 +447,100 @@ export function participationTop(limit) {
   return limit ? sorted.slice(0, limit) : sorted;
 }
 
+export function competitionDistanceSummary() {
+  return memo("competitionDistanceSummary", () => {
+    const results = Array.isArray(state.data.results) ? state.data.results : [];
+    const byPerson = new Map();
+    let includedResultCount = 0;
+    let eligibleResultCount = 0;
+    let unknownResultCount = 0;
+    let excludedAggregateCount = 0;
+    let totalKm = 0;
+
+    for (const row of results) {
+      if (row.competition_distance_status === "excluded_aggregate") {
+        excludedAggregateCount += 1;
+        continue;
+      }
+      eligibleResultCount += 1;
+
+      const fallbackName = String(row.athlete_name || "").trim();
+      const personKey = row.person_id || normalizeSearchText(fallbackName);
+      const profile = row.person_id ? state.peopleById.get(row.person_id) : null;
+      let entry = personKey ? byPerson.get(personKey) : null;
+      if (!entry && personKey) {
+        entry = {
+          person_id: row.person_id || "",
+          person_slug: row.person_slug || profile?.profile_slug || "",
+          athlete_name: profile?.display_name || fallbackName,
+          gender: profile?.gender || row.gender || "",
+          total_km: 0,
+          result_count: 0,
+          events: new Set(),
+          longest_km: 0,
+          longest_distance: "",
+          longest_event_label: "",
+          unknown_result_count: 0,
+        };
+        byPerson.set(personKey, entry);
+      }
+
+      const distanceKm = Number(row.competition_distance_km);
+      if (!Number.isFinite(distanceKm) || distanceKm <= 0) {
+        if (entry) {
+          entry.unknown_result_count += 1;
+        }
+        unknownResultCount += 1;
+        continue;
+      }
+      if (!entry) {
+        continue;
+      }
+
+      entry.total_km += distanceKm;
+      entry.result_count += 1;
+      if (row.event_id || row.event_label) {
+        entry.events.add(row.event_id || row.event_label);
+      }
+      if (distanceKm > entry.longest_km) {
+        entry.longest_km = distanceKm;
+        entry.longest_distance = row.distance || "";
+        entry.longest_event_label = row.event_label || "";
+      }
+      includedResultCount += 1;
+      totalKm += distanceKm;
+    }
+
+    const leaders = [...byPerson.values()]
+      .filter((entry) => entry.result_count > 0)
+      .map((entry) => {
+        const { events, ...leader } = entry;
+        return { ...leader, event_count: events.size };
+      });
+    leaders.sort((a, b) => {
+      const distanceDiff = b.total_km - a.total_km;
+      if (Math.abs(distanceDiff) > 1e-9) {
+        return distanceDiff;
+      }
+      const resultDiff = b.result_count - a.result_count;
+      if (resultDiff !== 0) {
+        return resultDiff;
+      }
+      return normalizeSearchText(a.athlete_name).localeCompare(normalizeSearchText(b.athlete_name), "nb-NO");
+    });
+
+    return {
+      leaders,
+      totalKm,
+      includedResultCount,
+      eligibleResultCount,
+      unknownResultCount,
+      excludedAggregateCount,
+      resultCount: results.length,
+    };
+  });
+}
+
 export function latestPbResults(limit) {
   const sorted = memo("latestPbResults", () => sortResultsNewestFirst(state.data.results.filter((row) => row.is_pb || row.is_sb)));
   return limit ? sorted.slice(0, limit) : sorted;

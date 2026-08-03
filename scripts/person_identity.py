@@ -14,6 +14,7 @@ from typing import Any
 import pandas as pd
 
 from project_paths import (
+    CANONICAL_PERSON_IDENTITY_DIR,
     PERSON_ALIASES_FILE,
     PERSON_EXTERNAL_IDS_FILE,
     PERSON_IDENTITY_DIR,
@@ -25,7 +26,7 @@ from project_paths import (
 
 
 PERSON_ID_PREFIX = "skv-p"
-SCHEMA_VERSION = 4
+SCHEMA_VERSION = 5
 
 REGISTRY_COLUMNS = [
     "person_id",
@@ -288,8 +289,46 @@ def _write_csv(df: pd.DataFrame, path: Path, columns: list[str]) -> None:
 
 
 def ensure_identity_files(identity_dir: Path | None = None) -> IdentityPaths:
+    return ensure_identity_files_from_seed(identity_dir)
+
+
+def _copy_canonical_identity_seed(seed_dir: Path, paths: IdentityPaths) -> bool:
+    seed_paths = _identity_paths(seed_dir)
+    seed_registry = load_person_registry(seed_paths.registry)
+    if seed_registry.empty:
+        return False
+
+    for source, destination, columns in (
+        (seed_paths.registry, paths.registry, REGISTRY_COLUMNS),
+        (seed_paths.aliases, paths.aliases, ALIAS_COLUMNS),
+        (seed_paths.slug_history, paths.slug_history, SLUG_HISTORY_COLUMNS),
+        (seed_paths.result_overrides, paths.result_overrides, RESULT_OVERRIDE_COLUMNS),
+    ):
+        _write_csv(_read_csv(source, columns), destination, columns)
+    return True
+
+
+def ensure_identity_files_from_seed(
+    identity_dir: Path | None = None,
+    canonical_seed_dir: Path | None = None,
+) -> IdentityPaths:
     paths = _identity_paths(identity_dir)
     paths.identity_dir.mkdir(parents=True, exist_ok=True)
+
+    default_store = identity_dir is None
+    resolved_seed_dir = (
+        Path(canonical_seed_dir)
+        if canonical_seed_dir is not None
+        else (CANONICAL_PERSON_IDENTITY_DIR if default_store else None)
+    )
+    existing_registry = load_person_registry(paths.registry)
+    if existing_registry.empty and resolved_seed_dir is not None:
+        if not _copy_canonical_identity_seed(resolved_seed_dir, paths):
+            raise RuntimeError(
+                "Person identity store is empty and the canonical identity seed is missing or empty: "
+                f"{resolved_seed_dir}"
+            )
+
     for path, columns in (
         (paths.registry, REGISTRY_COLUMNS),
         (paths.aliases, ALIAS_COLUMNS),
@@ -301,6 +340,34 @@ def ensure_identity_files(identity_dir: Path | None = None) -> IdentityPaths:
         if not path.exists():
             _write_csv(pd.DataFrame(columns=columns), path, columns)
     return paths
+
+
+def write_canonical_identity_seed(
+    identity: IdentityData,
+    canonical_seed_dir: Path | None = None,
+) -> Path:
+    seed_dir = Path(canonical_seed_dir or CANONICAL_PERSON_IDENTITY_DIR)
+    seed_paths = _identity_paths(seed_dir)
+    seed_dir.mkdir(parents=True, exist_ok=True)
+
+    registry = _with_columns(identity.registry, REGISTRY_COLUMNS)
+    registry["created_at"] = ""
+    registry["updated_at"] = ""
+    registry["notes"] = ""
+
+    aliases = _with_columns(identity.aliases, ALIAS_COLUMNS)
+    aliases["notes"] = ""
+
+    slug_history = _with_columns(identity.slug_history, SLUG_HISTORY_COLUMNS)
+    result_overrides = _with_columns(identity.result_overrides, RESULT_OVERRIDE_COLUMNS)
+    result_overrides["reason"] = ""
+    result_overrides["notes"] = ""
+
+    _write_csv(registry, seed_paths.registry, REGISTRY_COLUMNS)
+    _write_csv(aliases, seed_paths.aliases, ALIAS_COLUMNS)
+    _write_csv(slug_history, seed_paths.slug_history, SLUG_HISTORY_COLUMNS)
+    _write_csv(result_overrides, seed_paths.result_overrides, RESULT_OVERRIDE_COLUMNS)
+    return seed_dir
 
 
 def load_person_registry(path: Path | None = None) -> pd.DataFrame:
@@ -975,8 +1042,9 @@ def ensure_new_people_are_appended_without_changing_existing_ids(
     results_df: pd.DataFrame,
     identity_dir: Path | None = None,
     now: datetime | None = None,
+    canonical_seed_dir: Path | None = None,
 ) -> IdentityData:
-    paths = ensure_identity_files(identity_dir)
+    paths = ensure_identity_files_from_seed(identity_dir, canonical_seed_dir)
     now_text = (now or datetime.now().astimezone()).isoformat(timespec="seconds")
     identity = load_identity_data(paths.identity_dir)
 
@@ -1123,7 +1191,10 @@ def ensure_new_people_are_appended_without_changing_existing_ids(
     _write_csv(external_ids, paths.external_ids, EXTERNAL_ID_COLUMNS)
     _write_csv(slug_history, paths.slug_history, SLUG_HISTORY_COLUMNS)
     _write_csv(identity.result_overrides, paths.result_overrides, RESULT_OVERRIDE_COLUMNS)
-    return load_identity_data(paths.identity_dir)
+    updated_identity = load_identity_data(paths.identity_dir)
+    if identity_dir is None or canonical_seed_dir is not None:
+        write_canonical_identity_seed(updated_identity, canonical_seed_dir)
+    return updated_identity
 
 
 def _display_time(row: pd.Series) -> str:
