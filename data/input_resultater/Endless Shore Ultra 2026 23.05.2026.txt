@@ -1,0 +1,2 @@
+published_date;week_number;event_name;distance;athlete_name;result_time_raw;gender;class_name;class_place;position;notes
+2026-05-23;21;Endless Shore Ultra 2026;50 km;Fabien Cohadon;5:23:23;M;M40-44;1;3;3. mann, startnummer 516, SK Vidar, terrengultra
