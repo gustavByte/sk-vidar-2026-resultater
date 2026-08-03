@@ -30,6 +30,8 @@ from project_paths import (
     WEEKLY_RESULTS_FILE,
 )
 from result_taxonomy import (
+    competition_distance_km_for_row,
+    competition_distance_status_for_row,
     event_id_for_label,
     event_type_for_row,
     public_note_has_internal_markers,
@@ -131,6 +133,7 @@ TEXT_REPLACEMENTS = {
 }
 TEXT_REPLACEMENTS["NM terrengl?p kort l?ype"] = "NM terrengløp kort løype"
 TEXT_REPLACEMENTS["Oslo L?psfestival - 5'ern v?r!"] = "Oslo Løpsfestival - 5'ern vår!"
+TEXT_REPLACEMENTS["Fisk mesterskap / Kalan mestaruus"] = "Finsk innendørsmesterskap 2026"
 
 
 PUBLIC_RESULT_FIELDS = [
@@ -150,6 +153,8 @@ PUBLIC_RESULT_FIELDS = [
     "event_type",
     "terrain_tags",
     "distance",
+    "competition_distance_km",
+    "competition_distance_status",
     "profile_distance",
     "result_time_raw",
     "result_time_normalized",
@@ -380,6 +385,13 @@ def build_quality_report(df: pd.DataFrame) -> pd.DataFrame:
                 add_issue("error", f"missing_{field}", row, f"Mangler obligatorisk felt: {field}")
         if not str(row.get("distance") or "").strip():
             add_issue("warning", "missing_distance", row, "Mangler distanse")
+        elif row.get("competition_distance_status") == "unknown":
+            add_issue(
+                "warning",
+                "unknown_competition_distance",
+                row,
+                "Distanse kan ikke summeres sikkert i statistikken for konkurransekilometer",
+            )
         if row.get("wa_status") == "missing":
             add_issue("error", "missing_wa_points", row, "WA-berettiget resultat mangler WA-poeng")
         if public_note_has_internal_markers(row.get("notes_clean")):
@@ -456,10 +468,18 @@ def load_results() -> pd.DataFrame:
             working[column] = ""
     working["event_label"] = working["event_name"].fillna("").astype(str).str.strip().replace(EVENT_NAME_OVERRIDES)
     working["event_name"] = working["event_label"]
+    ilona_3000m = (
+        working["event_label"].eq("Finsk innendørsmesterskap 2026")
+        & working["athlete_name"].eq("Ilona Mononen")
+        & working["distance"].fillna("").eq("")
+    )
+    working.loc[ilona_3000m, "distance"] = "3000 m"
     split_notes = working.apply(split_result_notes, axis=1)
     working["public_note"] = split_notes.map(lambda values: values[0])
     working["internal_note"] = split_notes.map(lambda values: values[1])
     working["notes_clean"] = working["public_note"].apply(clean_note)
+    working["competition_distance_km"] = working.apply(competition_distance_km_for_row, axis=1)
+    working["competition_distance_status"] = working.apply(competition_distance_status_for_row, axis=1)
     note_flags = working["notes_clean"].apply(parse_note_flags)
     working["is_pb"] = note_flags.map(lambda flags: flags["is_pb"])
     working["is_sb"] = note_flags.map(lambda flags: flags["is_sb"])
@@ -820,6 +840,10 @@ def build_payload(
             }
         )
 
+    competition_distances = pd.to_numeric(
+        df.get("competition_distance_km", pd.Series(index=df.index, dtype=float)),
+        errors="coerce",
+    )
     stats = {
         "result_count": int(len(df)),
         "athlete_count": int(df["person_id"].nunique()),
@@ -833,6 +857,11 @@ def build_payload(
         "pb_count": int(df["is_pb"].sum()),
         "sb_count": int(df["is_sb"].sum()),
         "missing_gender_or_class_count": int(len(missing_df)),
+        "known_distance_result_count": int(competition_distances.notna().sum()),
+        "unknown_distance_result_count": int(
+            df.get("competition_distance_status", pd.Series(index=df.index, dtype=str)).eq("unknown").sum()
+        ),
+        "competition_distance_km": float(competition_distances.sum()),
     }
 
     return {

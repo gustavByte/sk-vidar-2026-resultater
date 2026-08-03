@@ -7,6 +7,7 @@
 - `data/database/` er lokal database og kontrollfiler, ikke offentlig publisering
 - `data/database/identity_reports/` inneholder lokale rapporter for personkoblinger og public-payload-sjekk
 - `data/stottefiler/personer/` inneholder lokalt personregister, aliaser, eksterne ID-er og manuelle resultatoverstyringer
+- `config/person_identity/` inneholder den versjonerte, saniterte identitetskopien som gjør bygg reproducerbare i nye arbeidsområder
 - `docs/data/results.json` er eneste publiserte datafil for nettsiden
 - `scripts/build_shared_weekly_results_2026.py` bygger den delte oversikten på nytt
 - `scripts/build_site_2026.py` bygger publiseringsklar JSON for GitHub Pages
@@ -44,6 +45,7 @@ Nettsiden publiserer `person_id` og `person_slug` for hvert resultat. Selve iden
 - Sjekk `external_id_conflicts.csv` hvis samme eksterne ID ser ut til å peke til flere profiler.
 - Kjør `scripts/review_person_matches_2026.py --generate` for å lage en effektiv lokal kø med navnematcher som trenger manuell godkjenning.
 - Fyll `person_match_decisions.csv` og kjør `scripts/review_person_matches_2026.py --apply` før du bygger siden hvis profiler skal slås sammen.
+- Commit endringer under `config/person_identity/` sammen med den genererte JSON-filen; de oppdateres automatisk ved bygg og inneholder ikke private eksterne ID-er.
 
 Se `docs/person_identity_model.md` for detaljer.
 

@@ -9,6 +9,7 @@ Denne modellen gjør at samme løper får én stabil profil på nettsiden, selv 
 - `profile_slug` brukes til URL-er, men er ikke primærnøkkel.
 - Fuzzy matching skal bare lage rapportforslag. Usikre koblinger skal løses med alias, ekstern ID eller manuell override.
 - Lokale identitetsfiler ligger under `data/stottefiler/personer/` og skal ikke publiseres eller committes.
+- `config/person_identity/` er en versjonert, sanitert identitetskopi med stabile ID-er, offentlige navnealiaser og slug-historikk. Den inneholder aldri eksterne ID-er eller private notater.
 - Public frontend skal bare lese `docs/data/results.json`.
 
 ## Private støttefiler
@@ -48,17 +49,24 @@ Manuell godkjenningskø for foreslåtte navnematcher. Kjør `python scripts/revi
 
 Header-maler finnes i `docs/person_identity_templates/`.
 
+## Versjonert identitetskopi
+
+Et nytt arbeidsområde mangler de ignorerte støttefilene. Byggeskriptet fyller da den lokale identitetsmappen fra `config/person_identity/` før matching. Hvis både det lokale registeret og den versjonerte kopien er tomme, stopper bygget i stedet for å opprette en ny profil for hver navnevariant.
+
+Etter et vellykket bygg skrives en sanitert kopi av register, aliaser, slug-historikk og resultatoverstyringer tilbake til `config/person_identity/`. Eksterne kilde-ID-er, matchbeslutninger og notater forblir lokale.
+
 ## Byggeflyt
 
 `scripts/build_site_2026.py` gjør nå dette:
 
 1. Leser arbeidsboken.
 2. Genererer `result_id` for hvert resultat.
-3. Leser lokale identitetsfiler.
+3. Leser lokale identitetsfiler, eller fyller dem fra den versjonerte identitetskopien i et nytt arbeidsområde.
 4. Matcher resultat til person via manuell override, ekstern ID, alias eller eksakt registrert navn.
 5. Legger nye personer til i det lokale registeret uten å endre eksisterende `person_id`.
-6. Skriver public `docs/data/results.json` med `schema_version`, `person_id`, `person_slug` og `people`.
-7. Lager lokale kvalitetsrapporter i `data/database/identity_reports/`.
+6. Oppdaterer den saniterte identitetskopien i `config/person_identity/`.
+7. Skriver public `docs/data/results.json` med `schema_version`, `person_id`, `person_slug` og `people`.
+8. Lager lokale kvalitetsrapporter i `data/database/identity_reports/`.
 
 Rapportene dekker manglende `person_id`, aliaser som peker til flere personer, eksterne ID-er som peker til flere personer, dupliserte normaliserte navn, slug-kollisjoner, fuzzy-forslag og mulig lekkasje av private felt i public payload.
 

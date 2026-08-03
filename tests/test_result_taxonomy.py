@@ -9,12 +9,62 @@ if str(SCRIPTS) not in sys.path:
     sys.path.insert(0, str(SCRIPTS))
 
 from result_taxonomy import (  # noqa: E402
+    competition_distance_km_for_row,
+    competition_distance_status_for_row,
     event_type_for_row,
     public_note_has_internal_markers,
     split_public_internal_note,
     terrain_tags_for_row,
     wa_status_for_values,
 )
+
+
+def test_competition_distance_parses_common_units_and_named_distances() -> None:
+    assert competition_distance_km_for_row({"distance": "4,7 km"}) == 4.7
+    assert competition_distance_km_for_row({"distance": "5000 Meters"}) == 5.0
+    assert competition_distance_km_for_row({"distance": "3000 m hinder"}) == 3.0
+    assert competition_distance_km_for_row({"distance": "SKY 12.5K"}) == 12.5
+    assert competition_distance_km_for_row({"distance": "50K"}) == 50.0
+    assert competition_distance_km_for_row({"distance": "PDA 55 km / 3300 hm"}) == 55.0
+    assert competition_distance_km_for_row({"distance": "10 miles"}) == 16.09344
+    assert competition_distance_km_for_row({"distance": "Halvmaraton"}) == 21.0975
+    assert competition_distance_km_for_row({"distance": "Maraton"}) == 42.195
+    assert competition_distance_km_for_row({"distance": "42 km"}) == 42.0
+
+
+def test_competition_distance_uses_event_specific_and_backyard_values() -> None:
+    assert competition_distance_km_for_row(
+        {"event_label": "Jotunheimen Trail Run 2026", "distance": "Ultra"}
+    ) == 73.0
+    assert competition_distance_km_for_row(
+        {"event_label": "NM terrengløp kort løype stafett 2026", "distance": "6 km stafett"}
+    ) == 3.0
+    assert competition_distance_km_for_row(
+        {"distance": "Backyard", "notes_clean": "8 runder 53.6 km"}
+    ) == 53.6
+    assert competition_distance_km_for_row(
+        {
+            "event_label": "Lommedalen Backyard 2026",
+            "distance": "Backyard",
+            "athlete_name": "Martine Svendsen",
+        }
+    ) == 80.4
+    assert competition_distance_km_for_row(
+        {
+            "event_label": "The Arctic Run 2026",
+            "distance": "Para Arctic Run",
+            "athlete_name": "Tone Gravvold",
+        }
+    ) == 21.0975
+    assert competition_distance_km_for_row({"distance": "Festaløpet"}) == 17.5
+
+
+def test_competition_distance_does_not_guess_ambiguous_categories() -> None:
+    assert competition_distance_km_for_row({"distance": "Kombinert"}) is None
+    assert competition_distance_km_for_row({"distance": "Backyard", "notes_clean": "9 timer"}) is None
+    assert competition_distance_km_for_row({"distance": "Ultra"}) is None
+    assert competition_distance_status_for_row({"distance": "Kombinert"}) == "excluded_aggregate"
+    assert competition_distance_status_for_row({"distance": "Ultra"}) == "unknown"
 
 
 def test_terrain_taxonomy_catches_new_mont_blanc_event() -> None:

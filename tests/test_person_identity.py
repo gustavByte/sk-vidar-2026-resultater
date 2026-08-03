@@ -35,7 +35,7 @@ from person_identity import (  # noqa: E402
     slugify_person_name,
     validate_public_payload,
 )
-from project_paths import WEEKLY_RESULTS_FILE  # noqa: E402
+from project_paths import CANONICAL_PERSON_IDENTITY_DIR, WEEKLY_RESULTS_FILE  # noqa: E402
 
 
 def write_csv(path: Path, rows: list[dict[str, str]], columns: list[str]) -> None:
@@ -211,6 +211,118 @@ def write_basic_slug_history(tmp_path: Path, rows: list[dict[str, str]]) -> None
         rows,
         ["person_id", "profile_slug", "active_from", "active_to", "reason"],
     )
+
+
+def test_empty_private_store_is_seeded_with_stable_merged_identities(tmp_path: Path) -> None:
+    seed_dir = tmp_path / "canonical-seed"
+    private_dir = tmp_path / "private-store"
+    write_basic_registry(
+        seed_dir,
+        [
+            {"person_id": "skv-p000202", "display_name": "Maria Bipop", "profile_slug": "maria-bipop"},
+            {
+                "person_id": "skv-p000203",
+                "display_name": "Maria Bipop Bang Jensen",
+                "profile_slug": "maria-bipop-bang-jensen",
+                "status": "merged",
+                "merged_into_person_id": "skv-p000202",
+            },
+            {
+                "person_id": "skv-p000205",
+                "display_name": "Marianne Harnes",
+                "profile_slug": "marianne-harnes",
+                "status": "merged",
+                "merged_into_person_id": "skv-p000206",
+            },
+            {
+                "person_id": "skv-p000206",
+                "display_name": "Marianne Harnes Myhrer",
+                "profile_slug": "marianne-harnes-myhrer",
+            },
+        ],
+    )
+    write_csv(
+        seed_dir / "person_aliases.csv",
+        [
+            {
+                "person_id": "skv-p000202",
+                "alias": "Maria Bipop",
+                "normalized_alias": normalize_name("Maria Bipop"),
+                "source": "canonical_seed",
+                "active": "true",
+                "notes": "",
+            },
+            {
+                "person_id": "skv-p000203",
+                "alias": "Maria Bipop Bang Jensen",
+                "normalized_alias": normalize_name("Maria Bipop Bang Jensen"),
+                "source": "canonical_seed",
+                "active": "true",
+                "notes": "",
+            },
+            {
+                "person_id": "skv-p000205",
+                "alias": "Marianne Harnes",
+                "normalized_alias": normalize_name("Marianne Harnes"),
+                "source": "canonical_seed",
+                "active": "true",
+                "notes": "",
+            },
+            {
+                "person_id": "skv-p000206",
+                "alias": "Marianne Harnes Myhrer",
+                "normalized_alias": normalize_name("Marianne Harnes Myhrer"),
+                "source": "canonical_seed",
+                "active": "true",
+                "notes": "",
+            },
+        ],
+        ["person_id", "alias", "normalized_alias", "source", "active", "notes"],
+    )
+
+    results = pd.DataFrame(
+        [
+            {"result_id": "res-maria-short", "athlete_name": "Maria Bipop"},
+            {"result_id": "res-maria-full", "athlete_name": "Maria Bipop Bang Jensen"},
+            {"result_id": "res-marianne-short", "athlete_name": "Marianne Harnes"},
+            {"result_id": "res-marianne-full", "athlete_name": "Marianne Harnes Myhrer"},
+        ]
+    )
+    identity = ensure_new_people_are_appended_without_changing_existing_ids(
+        results,
+        private_dir,
+        now=datetime.fromisoformat("2026-08-03T18:00:00+02:00"),
+        canonical_seed_dir=seed_dir,
+    )
+    indexes = build_identity_indexes(identity)
+
+    matches = {
+        row["athlete_name"]: match_result_to_person(row, identity, indexes).person_id
+        for _, row in results.iterrows()
+    }
+    assert matches["Maria Bipop"] == matches["Maria Bipop Bang Jensen"] == "skv-p000202"
+    assert matches["Marianne Harnes"] == matches["Marianne Harnes Myhrer"] == "skv-p000206"
+    assert int((identity.registry["status"].str.casefold() != "merged").sum()) == 2
+
+
+def test_empty_private_store_fails_closed_without_canonical_seed(tmp_path: Path) -> None:
+    with pytest.raises(RuntimeError, match="canonical identity seed"):
+        ensure_new_people_are_appended_without_changing_existing_ids(
+            pd.DataFrame([{"result_id": "res-1", "athlete_name": "Runner"}]),
+            tmp_path / "private-store",
+            canonical_seed_dir=tmp_path / "missing-seed",
+        )
+
+
+def test_repository_identity_seed_contains_known_alias_merges() -> None:
+    identity = load_identity_data(CANONICAL_PERSON_IDENTITY_DIR)
+    indexes = build_identity_indexes(identity)
+
+    assert match_result_to_person({"athlete_name": "Maria Bipop"}, identity, indexes).person_id == "skv-p000202"
+    assert match_result_to_person({"athlete_name": "Maria Bipop Bang Jensen"}, identity, indexes).person_id == "skv-p000202"
+    assert match_result_to_person({"athlete_name": "Marianne Harnes"}, identity, indexes).person_id == "skv-p000206"
+    assert match_result_to_person({"athlete_name": "Marianne Harnes Myhrer"}, identity, indexes).person_id == "skv-p000206"
+    assert match_result_to_person({"athlete_name": "Liv Richter Melby"}, identity, indexes).person_id == "skv-p000190"
 
 
 def test_person_match_candidates_include_said_middle_name_variant(tmp_path: Path) -> None:
@@ -582,7 +694,7 @@ def test_public_payload_contract_and_private_field_validation(tmp_path: Path) ->
     people_payload = build_people_payload(df, identity)
     payload = build_payload(df, build_weekly_summary(df), build_missing_report(df), build_rankings(df), people_payload)
 
-    assert payload["schema_version"] == 4
+    assert payload["schema_version"] == 5
     assert payload["results"][0]["is_pb"] is True
     assert payload["results"][0]["ranking_distance"] == "5 km"
     assert payload["weeks"][0]["pb_count"] == 1
@@ -601,9 +713,31 @@ def test_generated_public_json_has_people_and_no_private_fields() -> None:
     payload_path = ROOT / "docs" / "data" / "results.json"
     payload = json.loads(payload_path.read_text(encoding="utf-8"))
 
-    assert payload["schema_version"] == 4
+    assert payload["schema_version"] == 5
     assert "people" in payload
     assert all(result.get("person_id") for result in payload["results"])
+    known_distances = [
+        result["competition_distance_km"]
+        for result in payload["results"]
+        if result.get("competition_distance_status") == "known"
+    ]
+    assert len(known_distances) == payload["stats"]["known_distance_result_count"]
+    assert payload["stats"]["unknown_distance_result_count"] == 0
+    assert all(isinstance(distance, (int, float)) and distance > 0 for distance in known_distances)
+    assert sum(known_distances) == pytest.approx(payload["stats"]["competition_distance_km"])
+    assert all(
+        result.get("competition_distance_km") is None
+        for result in payload["results"]
+        if result.get("competition_distance_status") == "excluded_aggregate"
+    )
+    slug_map = payload["people"]["slug_map"]
+    assert slug_map["maria-bipop"] == slug_map["maria-bipop-bang-jensen"] == "skv-p000202"
+    assert slug_map["marianne-harnes"] == slug_map["marianne-harnes-myhrer"] == "skv-p000206"
+
+    profiles = {profile["person_id"]: profile for profile in payload["people"]["profiles"]}
+    assert profiles["skv-p000202"]["result_count"] == 14
+    assert profiles["skv-p000206"]["result_count"] == 6
+    assert all(result["gender"] == "K" for result in payload["results"] if result["person_id"] == "skv-p000238")
     validate_public_payload(payload)
 
 
