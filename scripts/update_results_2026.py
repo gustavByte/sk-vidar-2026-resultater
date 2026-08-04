@@ -23,6 +23,7 @@ from result_import import ImportCandidate, adapt_source, file_sha256, result_key
 
 RESULTS_SHEET = "results"
 SUPPORTED_SUFFIXES = {".csv", ".txt", ".tsv", ".xlsx", ".xlsm"}
+IDENTITY_SOURCE_COLUMNS = ("slack_user_id", "world_athletics_id", "source_system", "source_person_id")
 
 
 def imported_hashes() -> set[str]:
@@ -94,6 +95,10 @@ def workbook_row(candidate: ImportCandidate, columns: list[str]) -> list[object]
         "distance": source.get("distance", ""),
         "category": source.get("class_name", ""),
         "athlete_name": source.get("athlete_name", ""),
+        "slack_user_id": source.get("slack_user_id", ""),
+        "world_athletics_id": source.get("world_athletics_id", ""),
+        "source_system": source.get("source_system", ""),
+        "source_person_id": source.get("source_person_id", ""),
         "result_time_raw": source.get("result_time_raw", ""),
         "result_time_normalized": source.get("result_time_raw", ""),
         "position": source.get("position", ""),
@@ -131,6 +136,10 @@ def append_candidates(candidates: list[ImportCandidate]) -> tuple[int, int]:
         workbook = load_workbook(temp_path)
         sheet = workbook[RESULTS_SHEET]
         columns = [str(cell.value or "") for cell in sheet[1]]
+        for identity_column in IDENTITY_SOURCE_COLUMNS:
+            if identity_column not in columns and any(candidate.row.get(identity_column) for candidate in unique):
+                columns.append(identity_column)
+                sheet.cell(row=1, column=len(columns), value=identity_column)
         for candidate in unique:
             sheet.append(workbook_row(candidate, columns))
         workbook.save(temp_path)

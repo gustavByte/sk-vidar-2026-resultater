@@ -17,7 +17,7 @@
 
 1. Oppdater `data/arbeidsfiler/weekly_results_2026.xlsx` med nye resultater.
 2. Kjør `scripts/build_shared_weekly_results_2026.py` og `scripts/build_site_2026.py`, eller batch-filen.
-3. Sjekk identitetsrapportene hvis nye personer, aliaser eller fuzzy-forslag dukker opp.
+3. Hvis et nytt navn ligner en eksisterende profil, stopper bygget før nettsiden oppdateres. Vurder kandidatrapporten og registrer beslutningen før du bygger på nytt.
 4. Del filen i `data/delt_oversikt/` med klubben.
 5. Publiser bare innholdet i `docs/` til GitHub Pages.
 
@@ -40,11 +40,14 @@ Nettsiden publiserer `person_id` og `person_slug` for hvert resultat. Selve iden
 
 - Legg sikre navnevarianter i `person_aliases.csv`.
 - Legg sikre kilde-ID-er i `person_external_ids.csv`.
+- Leverandør-ID-er må være scoped med `source_system`; `source_person_id=123` fra EQ Timing er en annen nøkkel enn `123` fra RaceDays. En ID uten kildesystem holdes tilbake til kontroll. `participant_id` og `deltaker_id` avvises fordi de normalt bare er stabile innen ett arrangement.
 - Bruk `result_person_overrides.csv` for enkeltresultater som ikke bør kobles automatisk.
 - Ikke bruk fuzzy-forslag som automatisk fasit. De ligger i `fuzzy_match_candidates.csv` for manuell vurdering.
 - Sjekk `external_id_conflicts.csv` hvis samme eksterne ID ser ut til å peke til flere profiler.
-- Kjør `scripts/review_person_matches_2026.py --generate` for å lage en effektiv lokal kø med navnematcher som trenger manuell godkjenning.
-- Fyll `person_match_decisions.csv` og kjør `scripts/review_person_matches_2026.py --apply` før du bygger siden hvis profiler skal slås sammen.
+- Kandidatkøen oppdateres automatisk ved hvert sidebygg. Uavklarte kandidater stopper publisering, slik at en ny navnevariant ikke rekker å bli en synlig duplikat.
+- Fyll `person_match_decisions.csv` med `merge`, `reject` eller `defer`, og bygg på nytt. `person_drafts.csv` reserverer samme foreløpige ID mellom forsøk; reservasjonen blir ikke publisert eller kopiert til `config/`. `defer` lar publisering fortsette mens paret undersøkes, så lenge begge profilene fortsatt finnes; de andre valgene bør begrunnes kort.
+- Ved `merge` beholdes den eldste stabile ID-en som standard, mens ønsket fullt navn kan settes i `preferred_display_name`. Aktive kjente skrivemåter kopieres til den beholdte personen som aliaser. Senere resultater med et av navnene kobles dermed direkte til samme `person_id`.
+- Sjekk også `resolved_slug_owner_conflicts.csv`: en historisk URL må aldri ha en annen eier enn en aktiv profil med samme slug.
 - Commit endringer under `config/person_identity/` sammen med den genererte JSON-filen; de oppdateres automatisk ved bygg og inneholder ikke private eksterne ID-er.
 
 Se `docs/person_identity_model.md` for detaljer.

@@ -17,13 +17,13 @@ Prosjektet er ryddet slik at filer ligger etter funksjon i stedet for alt i rotm
 
 ## Vanlig bruk
 
-1. Legg nye strukturerte resultatfiler i `data/input_resultater/inbox/`. Obligatoriske felt er dato, løp, distanse, navn, tid og sikkert kjønn/klasse.
+1. Legg nye strukturerte resultatfiler i `data/input_resultater/inbox/`. Obligatoriske felt er dato, løp, distanse, navn, tid og sikkert kjønn/klasse. En leverandørspesifikk `source_person_id` må alltid ha `source_system` (for eksempel `EQ Timing`), slik at like kilde-ID-er fra ulike systemer aldri blandes. Eventlokale felt som `participant_id` og `deltaker_id` godtas ikke som personidentitet.
 2. Kjør `Oppdater delt oversikt 2026.bat` fra prosjektroten. Filer med usikre felt holdes tilbake fra hele importen.
 3. Kontroller eventuelle avvik i `data/database/import_review_2026.csv`, rett kildefilen og kjør på nytt.
 4. Hent ferdig fil fra `data/delt_oversikt/`. Nettsiden bygges i `docs/` og databasen i `data/database/`.
 5. Hvis et løp mangler kjønn eller klasse, fyll det inn i `data/stottefiler/result_overrides_2026.csv`.
 6. Hvis en person er feil koblet, legg alias eller override i `data/stottefiler/personer/` og bygg siden på nytt. Bygget oppdaterer automatisk den versjonerte identitetskopien.
-7. For raske navnematcher, kjør `python scripts/review_person_matches_2026.py --generate`, godkjenn i `person_match_decisions.csv`, og kjør `python scripts/review_person_matches_2026.py --apply`.
+7. Bygget stopper automatisk hvis et nytt navn ligner en eksisterende profil. Vurder kandidatene i `data/database/identity_reports/person_match_candidates.csv`, registrer `merge`, `reject` eller `defer` i `person_match_decisions.csv`, og bygg på nytt. En privat reservasjon i `person_drafts.csv` gjør at den foreløpige profilen beholder samme ID mellom forsøk. Beslutningen anvendes i minnet og lagres først når alle kontroller passerer. Godkjente navnevarianter gjenkjennes automatisk ved senere resultater.
 
 Kjør `python scripts/update_results_2026.py --check` for kun å kontrollere innboksen. Kjør med `--build-only` for å bygge eksisterende arbeidsdata uten å lese innboksen.
 
