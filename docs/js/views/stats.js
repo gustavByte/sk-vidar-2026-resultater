@@ -23,7 +23,6 @@ const SECTIONS = [
   { id: "hoydepunkter", label: "Høydepunkter" },
   { id: "wa", label: "WA-poeng" },
   { id: "deltakelse", label: "Deltakelse" },
-  { id: "kilometer", label: "Flest km" },
   { id: "maneder", label: "Måned for måned" },
   { id: "lop", label: "Største løp" },
 ];
@@ -727,13 +726,11 @@ function overviewHtml() {
   const peopleCount = state.data.people?.profile_count || state.data.people?.profiles?.length || 0;
   const eventCount = new Set((state.data.results || []).map((row) => row.event_id || row.event_label).filter(Boolean)).size;
   const waCount = (state.data.results || []).filter((row) => row.wa_points !== null && row.wa_points !== undefined).length;
-  const distanceSummary = competitionDistanceSummary();
   const items = [
     { section: "topp-10", label: "Standarddistanser", value: `${state.data.rankings?.length || 0} distanser`, copy: "Beste tid per løper, kvinner og menn hver for seg." },
     { section: "hoydepunkter", label: "Høydepunkter", value: `${terrainEventGroups({ limit: 0 }).length} løp`, copy: "Terreng, fjell, trail og skyrace uten WA-poeng." },
     { section: "wa", label: "WA-poeng", value: `${formatCount(waCount)} resultater`, copy: "Sammenlign prestasjoner på tvers av graderbare distanser." },
     { section: "deltakelse", label: "Flest resultater", value: `${formatCount(peopleCount)} løpere`, copy: "Se hvem som har flest publiserte resultater." },
-    { section: "kilometer", label: "Konkurranse-km", value: formatKilometers(distanceSummary.totalKm), copy: "Se hvem som har samlet flest kilometer i konkurranser." },
     { section: "maneder", label: "Måned for måned", value: `${formatCount(resultCount)} resultater`, copy: "Følg sesongvolumet gjennom året." },
     { section: "lop", label: "Største løp", value: `${formatCount(eventCount)} løp`, copy: "Arrangementene med flest unike SK Vidar-deltakere." },
   ];
