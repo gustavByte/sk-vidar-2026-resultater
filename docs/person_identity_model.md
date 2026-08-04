@@ -9,7 +9,7 @@ Denne modellen gjør at samme løper får én stabil profil på nettsiden, selv 
 - `profile_slug` brukes til URL-er, men er ikke primærnøkkel.
 - Fuzzy matching skal bare lage rapportforslag. Usikre koblinger skal løses med alias, ekstern ID eller manuell override.
 - Lokale identitetsfiler ligger under `data/stottefiler/personer/` og skal ikke publiseres eller committes.
-- `config/person_identity/` er en versjonert, sanitert identitetskopi med stabile ID-er, offentlige navnealiaser og slug-historikk. Den inneholder aldri eksterne ID-er eller private notater.
+- `config/person_identity/` er en versjonert, sanitert identitetskopi med stabile ID-er, offentlige navnealiaser, slug-historikk og beslutninger uten private notater. Den inneholder aldri eksterne ID-er.
 - Public frontend skal bare lese `docs/data/results.json`.
 
 ## Private støttefiler
@@ -33,7 +33,7 @@ Eksakte navnealiaser som skal peke til en person. Bruk denne når samme person f
 
 `person_external_ids.csv`
 
-Lokale koblinger fra eksterne kilder til person, for eksempel Slack-ID eller senere World Athletics-/resultatkilde-ID. Disse ID-ene brukes bare i byggesteg og publiseres ikke.
+Lokale koblinger fra eksterne kilder til person, for eksempel Slack-ID eller World Athletics-/resultatkilde-ID. Slack- og World Athletics-ID-er har egne globale navnerom. En leverandørspesifikk `source_person_id` må ha `source_system`; den lagres som for eksempel `result_source:eq-timing` + `123`. En uscopet leverandør-ID stopper i kontroll og brukes aldri til automatisk kobling. Eventlokale `participant_id`/`deltaker_id` avvises fordi samme verdi kan gjenbrukes i neste løp. ID-ene brukes bare i byggesteg og publiseres ikke.
 
 `person_slug_history.csv`
 
@@ -45,7 +45,11 @@ Manuell kobling for enkeltresultater. Brukes når et resultat ikke trygt kan kob
 
 `person_match_decisions.csv`
 
-Manuell godkjenningskø for foreslåtte navnematcher. Kjør `python scripts/review_person_matches_2026.py --generate` for å lage `data/database/identity_reports/person_match_candidates.csv`, fyll beslutning i `person_match_decisions.csv`, og kjør `python scripts/review_person_matches_2026.py --apply`.
+Manuell godkjenningskø for foreslåtte navnematcher. Kjør `python scripts/review_person_matches_2026.py --generate` for å lage `data/database/identity_reports/person_match_candidates.csv`, fyll beslutning i `person_match_decisions.csv`, og bygg på nytt. Bygget anvender beslutningen i minnet før publisering, også når en kandidatprofil ennå ikke er lagret. Ved sammenslåing kan `preferred_display_name` settes slik at den eldste stabile `person_id`-en beholdes samtidig som det beste fulle navnet vises. `--apply` finnes fortsatt for vedlikehold av profiler som allerede ligger i registeret.
+
+`person_drafts.csv`
+
+Privat, lokal reservasjon av foreløpige person-ID-er. Den gjør at en uavklart kandidat får samme ID når en blokkert bygging kjøres på nytt, selv om andre nye navn kommer til i mellomtiden. En reservasjon promoteres bare når navn og eventuelle eksterne ID-er fortsatt stemmer; ID-kollisjon eller motstridende Slack-/World Athletics-ID stopper byggingen. Filen tas aldri med i den versjonerte identitetskopien.
 
 Header-maler finnes i `docs/person_identity_templates/`.
 
@@ -53,7 +57,7 @@ Header-maler finnes i `docs/person_identity_templates/`.
 
 Et nytt arbeidsområde mangler de ignorerte støttefilene. Byggeskriptet fyller da den lokale identitetsmappen fra `config/person_identity/` før matching. Hvis både det lokale registeret og den versjonerte kopien er tomme, stopper bygget i stedet for å opprette en ny profil for hver navnevariant.
 
-Etter et vellykket bygg skrives en sanitert kopi av register, aliaser, slug-historikk og resultatoverstyringer tilbake til `config/person_identity/`. Eksterne kilde-ID-er, matchbeslutninger og notater forblir lokale.
+Etter et vellykket bygg skrives en sanitert kopi av register, aliaser, slug-historikk, resultatoverstyringer og matchbeslutninger tilbake til `config/person_identity/`. Beslutningsnotater og eksterne kilde-ID-er forblir lokale. Dermed husker også nye arbeidsområder hvilke navnepar som allerede er avvist eller utsatt.
 
 ## Byggeflyt
 
@@ -63,14 +67,14 @@ Etter et vellykket bygg skrives en sanitert kopi av register, aliaser, slug-hist
 2. Genererer `result_id` for hvert resultat.
 3. Leser lokale identitetsfiler, eller fyller dem fra den versjonerte identitetskopien i et nytt arbeidsområde.
 4. Matcher resultat til person via manuell override, ekstern ID, alias eller eksakt registrert navn.
-5. Legger nye personer til i det lokale registeret uten å endre eksisterende `person_id`.
-6. Oppdaterer den saniterte identitetskopien i `config/person_identity/`.
-7. Skriver public `docs/data/results.json` med `schema_version`, `person_id`, `person_slug` og `people`.
-8. Lager lokale kvalitetsrapporter i `data/database/identity_reports/`.
+5. Reserverer en stabil foreløpig ID lokalt og lager eventuelle nye personer i minnet uten å endre eksisterende `person_id`.
+6. Lager kvalitetsrapporter og stopper hvis en navnekandidat er uavklart, en identitetsreferanse mangler, merge-grafen er ugyldig eller andre datakrav feiler.
+7. Stager privat register, sanitert identitetskopi, SQLite, mangelliste og public JSON, og committer eller ruller tilbake hele filsettet samlet.
+8. Den ferdige `docs/data/results.json` inneholder `schema_version`, `person_id`, `person_slug` og `people`.
 
-Rapportene dekker manglende `person_id`, aliaser som peker til flere personer, eksterne ID-er som peker til flere personer, dupliserte normaliserte navn, slug-kollisjoner, fuzzy-forslag og mulig lekkasje av private felt i public payload.
+Rapportene dekker manglende `person_id` med matchmetode og årsak, hengende identitetsreferanser, merge-sykluser, aliaser som peker til flere personer, eksterne ID-er som peker til flere personer, dupliserte normaliserte navn, slug-kollisjoner og historiske slugs med feil eier, fuzzy-forslag og mulig lekkasje av private felt i public payload. Flere aktive Slack-/World Athletics-ID-er på samme person rapporteres separat for kontroll, men kan være legitim konto-historikk.
 
-`person_match_candidates.csv` er en egen kø for manuell navnematching. Den bruker token-regler som samme første/siste navn, ekstra mellomnavn, initial mot mellomnavn og høy strenglikhet. Den kobler aldri automatisk.
+`person_match_candidates.csv` er en egen kø for manuell navnematching. Den bruker token-regler som samme første/siste navn, ekstra mellomnavn, initial mot mellomnavn og høy strenglikhet. Den kobler aldri automatisk. Køen er en publiseringsport: et uavklart par må få `merge`, `reject` eller `defer` før ny offentlig JSON kan skrives.
 
 ## Korrigere feil kobling
 
@@ -92,11 +96,10 @@ Hvis en navnevariant alltid skal peke til samme person:
 1. Kjør `python scripts/review_person_matches_2026.py --generate`.
 2. Åpne `data/database/identity_reports/person_match_candidates.csv`.
 3. Kopier `candidate_id`, `primary_person_id` og den andre personen til `data/stottefiler/personer/person_match_decisions.csv`.
-4. Sett `decision` til `merge`, `alias_only`, `reject` eller `defer`.
-5. Kjør `python scripts/review_person_matches_2026.py --apply`.
-6. Kjør `python scripts/build_site_2026.py`.
+4. Sett `decision` til `merge`, `reject` eller `defer`, begrunn valget i `notes`, og oppdater `reviewed_at` med et ISO-tidspunkt.
+5. Kjør `python scripts/build_site_2026.py`; beslutningen brukes i samme kontrollerte transaksjon og lagres først etter at alle datakontroller har passert. Privat og sanitert register, SQLite og public JSON committes samlet eller rulles tilbake samlet. Ved en sjelden feil i selve gjenopprettingen beholdes backupfilen og feilmeldingen oppgir recovery-stien.
 
-`merge` slår profilene sammen og beholder `primary_person_id`. `alias_only` legger navnevarianten som alias uten å slå sammen eksisterende profiler. `reject` skjuler forslaget fra fremtidige kandidatrapporter. `defer` lar forslaget bli liggende.
+`merge` slår profilene sammen og beholder `primary_person_id`. Kandidatrapporten foreslår den eldste/laveste stabile ID-en som primær; et bedre fullt navn settes separat i `preferred_display_name`. Bare aktive aliaser kopieres fra sekundærprofilen. `reject` skjuler forslaget fra fremtidige kandidatrapporter. `defer` lar forslaget bli liggende, men begge reserverte profiler må fortsatt finnes. Det interne valget `alias_only` er bare idempotent vedlikehold for en sekundærprofil som allerede resolver til den valgte primærprofilen; det skal ikke brukes for to aktive kandidatprofiler.
 
 ## Slå sammen profiler
 

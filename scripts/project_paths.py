@@ -28,6 +28,7 @@ PERSON_EXTERNAL_IDS_FILE = PERSON_IDENTITY_DIR / "person_external_ids.csv"
 PERSON_SLUG_HISTORY_FILE = PERSON_IDENTITY_DIR / "person_slug_history.csv"
 RESULT_PERSON_OVERRIDES_FILE = PERSON_IDENTITY_DIR / "result_person_overrides.csv"
 PERSON_MATCH_DECISIONS_FILE = PERSON_IDENTITY_DIR / "person_match_decisions.csv"
+PERSON_DRAFTS_FILE = PERSON_IDENTITY_DIR / "person_drafts.csv"
 
 # Versioned, privacy-safe identity graph used to seed a fresh checkout. The
 # writable identity store above can also contain private external IDs and
