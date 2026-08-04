@@ -1,0 +1,2 @@
+published_date;week_number;event_name;distance;athlete_name;result_time_raw;gender;class_name;class_place;position;notes
+2026-06-30;27;Brooks 3000m 2026;3000 m;Sven Thelin;10:26.74;M;MS;;;Heat D, Sollentunavallen, Sverige, EasyRecord: https://www.easyrecord.se/result?c=4CLCKK
