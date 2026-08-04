@@ -1,0 +1,2 @@
+published_date;week_number;event_name;distance;athlete_name;result_time_raw;gender;class_name;class_place;position;notes
+2026-05-30;22;Farsund Maraton 2026;10 km;Erlend Hellum;36:09;M;M23+;1;1;Farsundmila, 1. mann, startnummer 3023, gateløp, SK Vidar-relatert
