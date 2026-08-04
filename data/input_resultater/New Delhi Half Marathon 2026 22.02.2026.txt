@@ -1,0 +1,2 @@
+published_date;week_number;event_name;distance;athlete_name;result_time_raw;gender;class_name;class_place;position;notes
+2026-02-22;8;New Delhi Half Marathon 2026;Halvmaraton;Espen Bielke;1:36:08;M;Menn;;;Foreløpig resultat, startnummer 2001, Defence Colony Tehsil, India, RaceTime India SMS
