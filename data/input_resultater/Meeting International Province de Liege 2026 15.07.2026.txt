@@ -1,0 +1,2 @@
+published_date;week_number;event_name;distance;athlete_name;result_time_raw;gender;class_name;class_place;position;notes
+2026-07-15;29;Meeting International d'Athlétisme de la Province de Liège 2026;5000 m;Madelène Wanvik Holum;15:56.87;K;KS;;15;Liège, Belgia, Sportsklubben Vidar
