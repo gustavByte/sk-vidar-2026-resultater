@@ -3718,3 +3718,196 @@ tbody tr:hover {
   }
 }
 
+/* ============================================================
+   Deltakelsesrangering
+   ============================================================ */
+
+.participation-method {
+  display: flex;
+  max-width: 700px;
+  gap: 8px;
+  align-items: center;
+  margin: 0 0 9px;
+  padding: 8px 10px;
+  border-left: 3px solid rgba(166, 30, 34, 0.48);
+  background: #fbf8f4;
+  color: var(--muted);
+  font-size: 0.75rem;
+  line-height: 1.4;
+}
+
+.participation-method-badge {
+  flex: 0 0 auto;
+  padding: 3px 7px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.participation-table-wrap {
+  max-width: 700px;
+}
+
+.participation-table {
+  table-layout: fixed;
+}
+
+.participation-table th:first-child {
+  width: 74px;
+}
+
+.participation-table th:nth-child(3) {
+  width: 112px;
+}
+
+.participation-table th:nth-child(4) {
+  width: 128px;
+}
+
+.participation-table :is(th, td):nth-child(n + 3) {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.participation-table .participation-athlete {
+  font-weight: 600;
+}
+
+.participation-row {
+  transition: background-color 140ms ease, box-shadow 140ms ease;
+}
+
+.participation-row:hover,
+.participation-row:focus-within {
+  background: #fbf8f4;
+}
+
+.participation-table .participation-row--leader {
+  background: linear-gradient(90deg, rgba(243, 217, 219, 0.72), rgba(243, 217, 219, 0.12) 72%);
+  box-shadow: inset 3px 0 0 var(--accent);
+}
+
+.participation-rank-inner {
+  display: inline-flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.participation-rank-number {
+  display: inline-grid;
+  min-width: 30px;
+  min-height: 28px;
+  padding: 0 7px;
+  place-items: center;
+  border-radius: 999px;
+  background: #eee7df;
+  color: var(--text);
+  font-family: "Space Grotesk", "IBM Plex Sans", system-ui, sans-serif;
+  font-size: 0.76rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.participation-row--leader .participation-rank-number {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(166, 30, 34, 0.2);
+}
+
+.participation-rank-tie {
+  color: var(--accent);
+  font-size: 0.56rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.participation-count strong {
+  font-family: "Space Grotesk", "IBM Plex Sans", system-ui, sans-serif;
+  font-size: 0.94rem;
+}
+
+.participation-toggle {
+  display: block;
+  min-height: 38px;
+  margin: 10px 0 0 0;
+}
+
+@media (max-width: 760px) {
+  .participation-section .section-header {
+    display: block;
+  }
+
+  .participation-section .section-copy {
+    max-width: none;
+    margin-top: 6px;
+    text-align: left;
+  }
+
+  .participation-method {
+    align-items: flex-start;
+    max-width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .participation-table {
+    table-layout: auto;
+  }
+
+  .participation-table th:first-child,
+  .participation-table th:nth-child(3),
+  .participation-table th:nth-child(4) {
+    width: auto;
+  }
+
+  .participation-table .participation-row {
+    min-height: 82px;
+    padding: 10px 10px 10px 68px;
+  }
+
+  .participation-table .participation-row > td,
+  .participation-table .participation-row > th {
+    width: auto;
+  }
+
+  .participation-table .participation-rank {
+    top: 11px;
+    left: 10px;
+    width: 48px;
+  }
+
+  .participation-table .participation-rank-inner {
+    display: grid;
+    gap: 2px;
+    justify-items: start;
+  }
+
+  .participation-table .participation-athlete {
+    display: block;
+    padding: 0 0 7px;
+    font-size: 0.9rem;
+  }
+
+  .participation-table .participation-athlete::before {
+    display: none;
+  }
+
+  .participation-table .participation-count,
+  .participation-table .participation-distances {
+    grid-template-columns: minmax(104px, 1fr) auto;
+    text-align: left;
+  }
+
+  .participation-table .participation-cell-value {
+    text-align: right;
+  }
+
+  .participation-toggle {
+    min-height: var(--tap-target);
+  }
+}
+
