@@ -35,6 +35,7 @@ let terrainType = "all";
 let currentSection = "";
 let rankingDistance = "";
 let distanceExpanded = false;
+let participationExpanded = false;
 const expandedColumns = new Set();
 const VALID_TERRAIN_TYPES = new Set(["all", ...TERRAIN_FILTER_TYPES]);
 const kilometerFormat = new Intl.NumberFormat("nb-NO", {
@@ -65,6 +66,43 @@ function genderMatchesFilter(gender, filter) {
     return gender === "M";
   }
   return true;
+}
+
+// Standard competition ranking: equal values share a place, and the next
+// place equals one plus the number of entries ahead (1, 1, 3 rather than
+// 1, 1, 2). The input must already be sorted by the ranked value.
+export function rankCompetitionEntries(sortedItems, valueFor) {
+  const items = Array.isArray(sortedItems) ? sortedItems : [];
+  const scores = items.map((item) => {
+    const score = Number(valueFor(item));
+    return Number.isFinite(score) ? score : 0;
+  });
+  const groupSizes = new Map();
+  scores.forEach((score) => groupSizes.set(score, (groupSizes.get(score) || 0) + 1));
+
+  let previousScore;
+  let rank = 0;
+  return items.map((item, index) => {
+    const score = scores[index];
+    if (index === 0 || score !== previousScore) {
+      rank = index + 1;
+      previousScore = score;
+    }
+    return {
+      item,
+      rank,
+      score,
+      isTied: groupSizes.get(score) > 1,
+    };
+  });
+}
+
+export function rankingThroughPlace(entries, lastPlace) {
+  const place = Number(lastPlace);
+  if (!Number.isFinite(place) || place < 1) {
+    return [];
+  }
+  return entries.filter((entry) => entry.rank <= place);
 }
 
 function subNavHtml(activeSection) {
@@ -442,42 +480,60 @@ function waSectionHtml() {
 }
 
 function participationSectionHtml() {
-  const top = participationTop(0)
-    .filter((profile) => genderMatchesFilter(profile.gender, participationGender))
-    .slice(0, 20);
+  const filtered = participationTop(0).filter((profile) => genderMatchesFilter(profile.gender, participationGender));
+  const ranked = rankCompetitionEntries(filtered, (profile) => profile.result_count);
+  const leadingEntries = rankingThroughPlace(ranked, 20);
+  const visibleEntries = participationExpanded ? ranked : leadingEntries;
 
-  const rows = top
-    .map(
-      (profile, index) => `
-        <tr>
-          <td class="stats-rank" data-label="Plass">${index + 1}</td>
-          <td data-label="Løper">${genderPill(profile.gender)} ${personLink(profile)}</td>
-          <td data-label="Resultater">${formatCount(profile.result_count)}</td>
-          <td class="muted" data-label="Distanser">${formatCount((profile.distances || []).length)}</td>
+  const rows = visibleEntries
+    .map(({ item: profile, rank, isTied }) => {
+      const rankLabel = isTied ? `Delt ${rank}. plass` : `${rank}. plass`;
+      return `
+        <tr class="participation-row${rank === 1 ? " participation-row--leader" : ""}">
+          <td class="stats-rank participation-rank" data-label="Plass">
+            <span class="participation-rank-inner" aria-hidden="true">
+              <span class="participation-rank-number">${rank}</span>
+              ${isTied ? '<span class="participation-rank-tie">delt</span>' : ""}
+            </span>
+            <span class="visually-hidden">${rankLabel}</span>
+          </td>
+          <th class="participation-athlete" scope="row" data-label="Løper">${genderPill(profile.gender)} ${personLink(profile)}</th>
+          <td class="participation-count numeric-cell" data-label="Resultater"><strong class="participation-cell-value">${formatCount(profile.result_count)}</strong></td>
+          <td class="participation-distances numeric-cell muted" data-label="Ulike distanser"><span class="participation-cell-value">${formatCount((profile.distances || []).length)}</span></td>
         </tr>
-      `,
-    )
+      `;
+    })
     .join("");
 
+  const toggleLabel = participationExpanded ? "Vis topp 20-plasseringer" : `Vis alle (${formatCount(ranked.length)})`;
+  const toggle = ranked.length > leadingEntries.length
+    ? `<button class="ranking-toggle participation-toggle" type="button" data-participation-toggle aria-controls="participation-ranking-body" aria-expanded="${participationExpanded ? "true" : "false"}">${toggleLabel}</button>`
+    : "";
+
   return `
-    <section class="stats-section" id="stats-deltakelse" aria-labelledby="participation-title">
+    <section class="stats-section participation-section" id="stats-deltakelse" aria-labelledby="participation-title">
       <div class="section-header">
         <div>
           <p class="section-kicker">Deltakelse</p>
           <h2 id="participation-title" class="section-heading">Flest resultater</h2>
         </div>
-        <p class="section-copy">Antall publiserte resultater per løper i 2026.</p>
+        <p class="section-copy">Rangert etter antall publiserte resultater i 2026. Ulike distanser vises som kontekst.</p>
       </div>
       ${genderChipsHtml("participation", participationGender)}
-      <div class="stats-table-wrap stats-table-wrap--narrow">
-        <table class="stats-table">
-          <caption class="visually-hidden">Løpere med flest publiserte resultater i 2026</caption>
+      <p class="participation-method" id="participation-ranking-method">
+        <span class="participation-method-badge">Delt plass</span>
+        <span>Lik totalsum gir samme plass. Neste plass følger antall løpere foran – som 1, 1, 3.</span>
+      </p>
+      <div class="stats-table-wrap stats-table-wrap--narrow participation-table-wrap">
+        <table class="stats-table participation-table" aria-describedby="participation-ranking-method">
+          <caption class="visually-hidden">Løpere med flest publiserte resultater i 2026. Like resultatantall gir delt plass.</caption>
           <thead>
-            <tr><th scope="col">#</th><th scope="col">Løper</th><th scope="col">Resultater</th><th scope="col">Distanser</th></tr>
+            <tr><th scope="col">Plass</th><th scope="col">Løper</th><th scope="col" aria-sort="descending">Resultater</th><th scope="col">Ulike distanser</th></tr>
           </thead>
-          <tbody>${rows}</tbody>
+          <tbody id="participation-ranking-body">${rows}</tbody>
         </table>
       </div>
+      ${toggle}
     </section>
   `;
 }
@@ -787,6 +843,7 @@ function renderContent(activeSection) {
         distanceGender = button.dataset.gender;
       } else {
         participationGender = button.dataset.gender;
+        participationExpanded = false;
       }
       const genderByGroup = {
         wa: waGender,
@@ -803,7 +860,12 @@ function renderContent(activeSection) {
     renderContent(currentSection);
   });
 
-  container.querySelectorAll(".ranking-toggle").forEach((button) => {
+  container.querySelector("[data-participation-toggle]")?.addEventListener("click", () => {
+    participationExpanded = !participationExpanded;
+    renderContent(currentSection);
+  });
+
+  container.querySelectorAll(".ranking-toggle[data-column]").forEach((button) => {
     button.addEventListener("click", () => {
       const key = button.dataset.column;
       if (expandedColumns.has(key)) {
