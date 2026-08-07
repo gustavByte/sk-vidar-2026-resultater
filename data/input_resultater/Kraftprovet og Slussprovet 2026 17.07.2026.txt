@@ -1,0 +1,3 @@
+published_date;week_number;event_name;distance;athlete_name;result_time_raw;gender;class_name;class_place;position;notes
+2026-07-17;29;Slussprovet 2026;6,3 km;Ingrid Helene Nyhus;23:15;K;Kvinner;1;;SK Vidar, Trollhättan, Sverige
+2026-07-17;29;Kraftprovet 2026;11,6 km;Trond Einar Moen Pedersli;38:16;M;Menn;7;;Sportsklubben Vidar, Trollhättan, Sverige
