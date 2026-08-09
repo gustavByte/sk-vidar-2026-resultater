@@ -1,0 +1,2 @@
+published_date;week_number;event_name;distance;athlete_name;result_time_raw;gender;class_name;class_place;position;notes
+2026-08-08;32;Lunder Backyard 2026;80,4 km;Lars-Fredrik Forberg;6:43:16;M;Menn 18 år+;;;12 runder, startnummer 272, Sportsklubben Vidar
