@@ -1,0 +1,5 @@
+published_date;week_number;event_name;distance;athlete_name;result_time_raw;gender;class_name;class_place;position;notes
+2026-08-08;32;Høgevarde Trail Run 2026;23 km;Henrik Samdal;2:23:28;M;M40-44;2;4;Kjønnsplass 4, startnummer 84, Sportsklubben Vidar
+2026-08-08;32;Høgevarde Trail Run 2026;23 km;Jessica Katarina Gunnarsson;2:39:43;K;K50-54;1;16;Kjønnsplass 3, startnummer 85, Sportsklubben Vidar
+2026-08-08;32;Høgevarde Trail Run 2026;23 km;Arne Gilberg;2:50:52;M;M60-64;1;23;Kjønnsplass 19, startnummer 88, Sportsklubben Vidar
+2026-08-08;32;Høgevarde Trail Run 2026;23 km;Katrine Rolid;3:00:26;K;K50-54;2;30;Kjønnsplass 6, startnummer 78, Sportsklubben Vidar
