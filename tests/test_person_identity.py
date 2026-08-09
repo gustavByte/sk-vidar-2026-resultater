@@ -787,6 +787,87 @@ def write_basic_registry(tmp_path: Path, rows: list[dict[str, str]]) -> None:
     write_csv(tmp_path / "person_registry.csv", normalized_rows, columns)
 
 
+def test_result_override_does_not_promote_source_name_to_global_alias(tmp_path: Path) -> None:
+    henrik_hansen_id = "skv-p900001"
+    henrik_victor_id = "skv-p900002"
+    write_basic_registry(
+        tmp_path,
+        [
+            {
+                "person_id": henrik_hansen_id,
+                "display_name": "Henrik Hansen",
+                "profile_slug": "henrik-hansen",
+            },
+            {
+                "person_id": henrik_victor_id,
+                "display_name": "Henrik Victor Hansen",
+                "profile_slug": "henrik-victor-hansen",
+            },
+        ],
+    )
+    write_csv(
+        tmp_path / "person_aliases.csv",
+        [
+            {
+                "person_id": henrik_hansen_id,
+                "alias": "Henrik Hansen",
+                "normalized_alias": normalize_name("Henrik Hansen"),
+                "source": "test",
+                "active": "true",
+                "notes": "",
+            },
+            {
+                "person_id": henrik_victor_id,
+                "alias": "Henrik Victor Hansen",
+                "normalized_alias": normalize_name("Henrik Victor Hansen"),
+                "source": "test",
+                "active": "true",
+                "notes": "",
+            },
+        ],
+        ["person_id", "alias", "normalized_alias", "source", "active", "notes"],
+    )
+    write_csv(
+        tmp_path / "result_person_overrides.csv",
+        [
+            {
+                "result_id": "res-moseby",
+                "person_id": henrik_victor_id,
+                "active": "true",
+                "reason": "user_confirmed_identity",
+                "notes": "",
+            }
+        ],
+        ["result_id", "person_id", "active", "reason", "notes"],
+    )
+    results = pd.DataFrame(
+        [
+            {"result_id": "res-moseby", "athlete_name": "Henrik Hansen"},
+            {"result_id": "res-drammen", "athlete_name": "Henrik Hansen"},
+        ]
+    )
+
+    identity = ensure_new_people_are_appended_without_changing_existing_ids(
+        results,
+        tmp_path,
+        persist=False,
+    )
+    indexes = build_identity_indexes(identity)
+    matches = {
+        row["result_id"]: match_result_to_person(row, identity, indexes)
+        for _, row in results.iterrows()
+    }
+
+    assert matches["res-moseby"].person_id == henrik_victor_id
+    assert matches["res-moseby"].method == "result_override"
+    assert matches["res-drammen"].person_id == henrik_hansen_id
+    henrik_aliases = identity.aliases[
+        identity.aliases["normalized_alias"].eq(normalize_name("Henrik Hansen"))
+    ]
+    assert set(henrik_aliases["person_id"]) == {henrik_hansen_id}
+    assert build_identity_reports(pd.DataFrame(), identity)["alias_conflicts"].empty
+
+
 def test_existing_mojibake_display_names_are_repaired_for_public_profiles(tmp_path: Path) -> None:
     write_basic_registry(
         tmp_path,

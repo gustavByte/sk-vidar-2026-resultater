@@ -2188,7 +2188,13 @@ def ensure_new_people_are_appended_without_changing_existing_ids(
         match = match_result_to_person(row, identity, indexes)
         if not match.person_id:
             continue
-        aliases = _append_alias_if_missing(aliases, match.person_id, row.get("athlete_name"), "auto_seen_result_name")
+        if match.method != "result_override":
+            aliases = _append_alias_if_missing(
+                aliases,
+                match.person_id,
+                row.get("athlete_name"),
+                "auto_seen_result_name",
+            )
         for source, external_id in _external_keys_for_row(row):
             external_ids = _append_external_id_if_missing(external_ids, match.person_id, source, external_id)
 
