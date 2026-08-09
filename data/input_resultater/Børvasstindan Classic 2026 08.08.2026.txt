@@ -1,2 +1,2 @@
 published_date;week_number;event_name;distance;athlete_name;result_time_raw;gender;class_name;class_place;position;notes
-2026-08-08;32;Børvasstindan Classic 2026;31 km;Håvard Berge;3:03:32;M;M30-34;1;1;Kjønnsplass 1, startnummer 120, Sportsklubben Vidar, cirka 1500 høydemeter
+2026-08-08;32;Børvasstindan Classic 2026;35 km;Håvard Berge;3:03:32;M;M30-34;1;1;Kjønnsplass 1, startnummer 120, Sportsklubben Vidar, cirka 1100 høydemeter
