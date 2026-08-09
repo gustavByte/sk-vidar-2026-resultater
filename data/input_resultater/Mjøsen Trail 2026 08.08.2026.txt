@@ -1,2 +1,2 @@
 published_date;week_number;event_name;distance;athlete_name;result_time_raw;gender;class_name;class_place;position;notes
-2026-08-08;32;Mjøsen Trail 2026;21 km;Mathias Hansen;1:32:51;M;Menn;3;3;Kjønnsplass 3, startnummer 186, klubb i resultat OSE, brukerbekreftet Henrik Hansen
+2026-08-08;32;Mjøsen Trail 2026;21 km;Mathias Hansen;1:32:51;M;Menn;3;3;Kjønnsplass 3, startnummer 186, klubb i resultat OSE, brukerbekreftet Mathias Hansen
