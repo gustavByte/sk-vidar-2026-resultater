@@ -1,0 +1,2 @@
+published_date;week_number;event_name;distance;athlete_name;result_time_raw;gender;class_name;class_place;position;notes
+2026-08-09;32;City2Surf 2026;14 km;Cecilie Knudsen;1:00:13;K;Kvinner;;;Sydney, Australia
