@@ -1,0 +1,2 @@
+published_date;week_number;event_name;distance;athlete_name;result_time_raw;gender;class_name;class_place;position;notes
+2026-08-15;33;Bergen Skogsmaraton 2026;Maraton;Liv Berit Jegteberg Lystad;4:52:18;K;K65-69;;3;3. kvinne, +1:17:26
