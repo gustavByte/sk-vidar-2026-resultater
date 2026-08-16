@@ -1,0 +1,2 @@
+published_date;week_number;event_name;distance;athlete_name;result_time_raw;gender;class_name;class_place;position;notes
+2026-08-15;33;Trysil Løpet 2026;10 km;Tobias Gram-Caspersen;33:59;M;M23-39;4;4;4. mann, klasseplass 4, +0:49
