@@ -1,0 +1,2 @@
+published_date;week_number;event_name;distance;athlete_name;result_time_raw;gender;class_name;class_place;position;notes
+2026-08-15;33;Ultravasan 90 2026;90 km;Veslemøy Rønnevik;8:34:26;K;W35;;13;13. kvinne, +1:27:09, startnummer 2688
