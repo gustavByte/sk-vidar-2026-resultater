@@ -1,0 +1,12 @@
+Kystleden halvmaraton 2026
+Dato: 22.08.2026
+Distanse: Halvmaraton
+Type: Terreng-/stiløp
+
+SK Vidar-resultater:
+- Ådne Dyrnesli | M18-34 | 1:31:54.0 | 40. totalt | 13. i klassen | offisielt klubbtreff i EQ Timing
+- Marthe Meese Dolmen | K18-34 | 1:41:29.3 | 124. totalt | 8. i klassen | offisielt klubbtreff i EQ Timing
+
+Resultatkilde: EQ Timing fullrapport 220: https://live.eqtiming.com/api/Report/220?eventId=82887
+Klassifiseringskilde: https://www.tonsbergtri.no/next/p/27066/kystleden
+Tilgjengelighet: Komplett rapport kontrollert. Fritekstsøket ga tre treff, men Jon Vidar Arnesen representerte Fredrikstad og var bare et navnetreff.
