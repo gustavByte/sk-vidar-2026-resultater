@@ -1,0 +1,12 @@
+Mandalsmaraton 2026
+Dato: 22.08.2026
+Distanse: Halvmaraton
+Type: Gateløp
+
+SK Vidar-resultater:
+- Jonas Njerve | M23-34 | 1:20:08 | 11. totalt | 7. i klassen | brukerkorrigert identitet: EQ Timing viser Mikkel Waldeland Gautvik, men resultatet tilhører Jonas Njerve
+- Søren Fredriksen | M23-34 | 1:21:03 | 14. totalt | 9. i klassen | brukerbekreftet SK Vidar-resultat
+
+Resultatkilde: EQ Timing fullrapport 220 og brukerleverte resultatdetaljer: https://live.eqtiming.com/78582
+Klassifiseringskilde: https://mandalsmaraton.no/
+Tilgjengelighet: Brukeren korrigerer identiteten på startnummer 516 fra Mikkel Waldeland Gautvik til Jonas Njerve og godkjenner begge resultatene for SK Vidar.
