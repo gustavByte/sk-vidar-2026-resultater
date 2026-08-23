@@ -1,0 +1,13 @@
+Hedersløpet 2026
+Dato: 22.08.2026
+Distanse: 5 km
+Type: Kontrollmålt gateløp
+
+SK Vidar-resultater:
+- Roger Thompson | startnummer 466 | M50-54 | 18:14.0 | 1. totalt | 1. i klassen | offisielt EQTiming-klubbfelt: SK Vidar
+- Kristian Myhre | startnummer 375 | M35-39 | 21:17.0 | 7. totalt | 2. i klassen | offisielt EQTiming-klubbfelt: SK Vidar / Hv-02
+- Balder Meland | startnummer 10 | M20-22 | 37:43.0 | 2. totalt | 1. i klassen | offisielt EQTiming-klubbfelt: SK Vidar
+
+Resultatkilde: EQTiming, event 82530
+Klassifiseringskilde: https://live.eqtiming.com/82530
+Tilgjengelighet: Komplett EQTiming-liste lagret lokalt: 457 rader, tre offisielle Vidar-treff og ett utelatt navnetreff.
