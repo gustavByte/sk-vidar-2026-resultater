@@ -1,0 +1,11 @@
+Langs Åkrafjorden - 2026
+Dato: 22.08.2026
+Distanse: 11 km
+Type: Gateløp
+
+SK Vidar-resultater:
+- Veslemøy Rønnevik | startnummer 337 | K35-39 | 43:37 | 11. totalt | 2. i klassen | offisielt klubbfelt: Sportsklubben Vidar
+
+Resultatkilde: EQ Timing API, event 80718
+Klassifiseringskilde: https://live.eqtiming.com/80718
+Tilgjengelighet: Komplett måluttak lagret lokalt; ett offisielt SK Vidar-treff.
