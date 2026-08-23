@@ -1,0 +1,11 @@
+Glommamila 2026
+Dato: 22.08.2026
+Distanse: 10 km
+Type: Kontrollmålt 10 km landeveisløp
+
+SK Vidar-resultater:
+- Fredrik Sætereng Fyksen | startnummer 35 | M35-39 | 33:28.0 | 2. totalt | 1. i klassen | Eksakt offisielt SK Vidar-treff i komplett Race Result-eksport
+
+Resultatkilde: Komplett brukerlevert Race Result-CSV; kryssjekket mot Kondis-resultatlisten
+Klassifiseringskilde: https://innlandet.bedriftsidretten.no/next/events/p/1000165196/glommamila-2026
+Tilgjengelighet: 669 rader kontrollert; nøyaktig ett offisielt SK Vidar-treff. CSV-en dokumenterer totalplass 2, herreplass 2 og klasseplass 1.
