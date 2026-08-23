@@ -1,8 +1,6 @@
 from __future__ import annotations
 
 import argparse
-import json
-from pathlib import Path
 
 import pandas as pd
 
@@ -11,31 +9,29 @@ from person_identity import (
     apply_match_decisions,
     build_person_match_candidates,
     ensure_identity_files,
-    load_identity_data,
 )
-from project_paths import IDENTITY_REPORT_DIR, PERSON_IDENTITY_DIR, ROOT_DIR
+from project_paths import IDENTITY_REPORT_DIR
+from spreadsheet_security import csv_safe_dataframe
 
 
-PUBLIC_RESULTS_FILE = ROOT_DIR / "docs" / "data" / "results.json"
 PERSON_MATCH_CANDIDATES_FILE = IDENTITY_REPORT_DIR / "person_match_candidates.csv"
 
 
-def load_public_results() -> pd.DataFrame:
-    if not PUBLIC_RESULTS_FILE.exists():
-        return pd.DataFrame()
-    payload = json.loads(PUBLIC_RESULTS_FILE.read_text(encoding="utf-8"))
-    return pd.DataFrame(payload.get("results", []))
-
-
 def generate_candidates() -> pd.DataFrame:
-    ensure_identity_files(PERSON_IDENTITY_DIR)
-    identity = load_identity_data(PERSON_IDENTITY_DIR)
-    results_df = load_public_results()
+    from build_site_2026 import attach_person_identity, load_results
+
+    ensure_identity_files()
+    results_df, identity = attach_person_identity(load_results())
     candidates = build_person_match_candidates(identity, results_df)
     IDENTITY_REPORT_DIR.mkdir(parents=True, exist_ok=True)
     if candidates.empty:
         candidates = pd.DataFrame(columns=MATCH_CANDIDATE_COLUMNS)
-    candidates.to_csv(PERSON_MATCH_CANDIDATES_FILE, index=False, encoding="utf-8", lineterminator="\n")
+    csv_safe_dataframe(candidates).to_csv(
+        PERSON_MATCH_CANDIDATES_FILE,
+        index=False,
+        encoding="utf-8",
+        lineterminator="\n",
+    )
     return candidates
 
 
@@ -52,7 +48,7 @@ def main() -> None:
         args.generate = True
 
     if args.apply:
-        result = apply_match_decisions(PERSON_IDENTITY_DIR)
+        result = apply_match_decisions()
         counts = result["applied_counts"]
         print(
             "Applied decisions: "
@@ -66,6 +62,7 @@ def main() -> None:
                     f"- {error['candidate_id']}: {error['error']} "
                     f"({error['primary_person_id']} -> {error['secondary_person_id']})"
                 )
+            raise SystemExit(2)
 
     if args.generate:
         candidates = generate_candidates()

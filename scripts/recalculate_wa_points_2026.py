@@ -7,6 +7,7 @@ from dataclasses import dataclass
 import pandas as pd
 
 from project_paths import WA_SCORING_DB_FILE, WA_TOOLKIT_DIR, WEEKLY_RESULTS_FILE
+from spreadsheet_security import secure_openpyxl_worksheet
 
 
 RESULTS_SHEET = "results"
@@ -213,6 +214,7 @@ def recalculate_wa_points() -> tuple[pd.DataFrame, WaSummary]:
 def write_results_workbook(df: pd.DataFrame) -> None:
     with pd.ExcelWriter(WEEKLY_RESULTS_FILE, engine="openpyxl", mode="a", if_sheet_exists="replace") as writer:
         df.to_excel(writer, sheet_name=RESULTS_SHEET, index=False)
+        secure_openpyxl_worksheet(writer.book[RESULTS_SHEET], min_row=2)
 
 
 def main() -> None:

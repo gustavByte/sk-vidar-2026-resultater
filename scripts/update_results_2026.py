@@ -19,10 +19,13 @@ from project_paths import (
     WEEKLY_RESULTS_FILE,
 )
 from result_import import ImportCandidate, adapt_source, file_sha256, result_key
+from spreadsheet_security import csv_safe_dataframe, set_openpyxl_literal_cell
 
 
 RESULTS_SHEET = "results"
 SUPPORTED_SUFFIXES = {".csv", ".txt", ".tsv", ".xlsx", ".xlsm"}
+IDENTITY_SOURCE_COLUMNS = ("slack_user_id", "world_athletics_id", "source_system", "source_person_id")
+NOTE_COLUMNS = ("public_note", "internal_note")
 
 
 def imported_hashes() -> set[str]:
@@ -77,7 +80,7 @@ def scan_inbox() -> tuple[list[tuple[Path, str, list[ImportCandidate]]], list[di
 
 def write_review(rows: list[dict[str, object]]) -> None:
     IMPORT_REVIEW_FILE.parent.mkdir(parents=True, exist_ok=True)
-    pd.DataFrame(rows).to_csv(IMPORT_REVIEW_FILE, index=False, encoding="utf-8-sig")
+    csv_safe_dataframe(pd.DataFrame(rows)).to_csv(IMPORT_REVIEW_FILE, index=False, encoding="utf-8-sig")
 
 
 def existing_result_keys() -> set[tuple[str, ...]]:
@@ -94,10 +97,16 @@ def workbook_row(candidate: ImportCandidate, columns: list[str]) -> list[object]
         "distance": source.get("distance", ""),
         "category": source.get("class_name", ""),
         "athlete_name": source.get("athlete_name", ""),
+        "slack_user_id": source.get("slack_user_id", ""),
+        "world_athletics_id": source.get("world_athletics_id", ""),
+        "source_system": source.get("source_system", ""),
+        "source_person_id": source.get("source_person_id", ""),
         "result_time_raw": source.get("result_time_raw", ""),
         "result_time_normalized": source.get("result_time_raw", ""),
         "position": source.get("position", ""),
         "notes": source.get("notes", ""),
+        "public_note": source.get("public_note", ""),
+        "internal_note": source.get("internal_note", ""),
         "raw_entry": f"Importert fra {candidate.source_file}",
         "source_ts": f"adapter:{candidate.candidate_id}",
         "source_order": candidate.source_row,
@@ -131,8 +140,19 @@ def append_candidates(candidates: list[ImportCandidate]) -> tuple[int, int]:
         workbook = load_workbook(temp_path)
         sheet = workbook[RESULTS_SHEET]
         columns = [str(cell.value or "") for cell in sheet[1]]
+        extension_columns = [
+            column
+            for column in (*NOTE_COLUMNS, *IDENTITY_SOURCE_COLUMNS)
+            if column in NOTE_COLUMNS or any(candidate.row.get(column) for candidate in unique)
+        ]
+        for extension_column in extension_columns:
+            if extension_column not in columns:
+                columns.append(extension_column)
+                set_openpyxl_literal_cell(sheet, 1, len(columns), extension_column)
         for candidate in unique:
-            sheet.append(workbook_row(candidate, columns))
+            row_index = sheet.max_row + 1
+            for column_index, value in enumerate(workbook_row(candidate, columns), 1):
+                set_openpyxl_literal_cell(sheet, row_index, column_index, value)
         workbook.save(temp_path)
         temp_path.replace(WEEKLY_RESULTS_FILE)
     finally:
@@ -146,7 +166,7 @@ def append_manifest(entries: list[dict[str, object]]) -> None:
     IMPORT_MANIFEST_FILE.parent.mkdir(parents=True, exist_ok=True)
     previous = pd.read_csv(IMPORT_MANIFEST_FILE, dtype=str).fillna("") if IMPORT_MANIFEST_FILE.exists() else pd.DataFrame()
     combined = pd.concat([previous, pd.DataFrame(entries)], ignore_index=True)
-    combined.to_csv(IMPORT_MANIFEST_FILE, index=False, encoding="utf-8-sig")
+    csv_safe_dataframe(combined).to_csv(IMPORT_MANIFEST_FILE, index=False, encoding="utf-8-sig")
 
 
 def run_build_pipeline() -> None:

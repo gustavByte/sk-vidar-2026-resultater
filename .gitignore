@@ -15,5 +15,8 @@ data/stottefiler/
 # Includes local person identity registry, aliases, external IDs, and overrides.
 data/stottefiler/personer/
 
+# Private veteran analysis contains contact details and local source paths.
+outputs/veteraner_2026/
+
 # The site publishes JSON only; never commit a public SQLite export.
 docs/data/*.sqlite

@@ -21,6 +21,9 @@ PUBLIC_NOTE_BLOCK_PATTERNS = (
     r"fellestrening",
     r"mulig\s+sk\s+vidar",
     r"sk\s+vidar-relatert",
+    r"relatert\s+(?:treff|ut[oø]ver)",
+    r"\bpubliser\w*\b",
+    r"(?:sterk|sannsynlig|mulig)\s+kandidat",
     r"nye\s+l[oø]pere",
 )
 
@@ -234,18 +237,11 @@ def event_id_for_label(value: object) -> str:
     return f"evt-{stable[:48]}-{digest}"
 
 
-def split_public_internal_note(
-    notes: object,
-    public_note: object = "",
-    internal_note: object = "",
-) -> tuple[str, str]:
-    explicit_public = clean_text(public_note)
-    explicit_internal = clean_text(internal_note)
-    source = explicit_public or clean_text(notes)
-
+def _classify_note_parts(source: object, internal_note: object = "") -> tuple[str, str]:
     public_parts: list[str] = []
+    explicit_internal = clean_text(internal_note)
     internal_parts: list[str] = [explicit_internal] if explicit_internal else []
-    for part in re.split(r"\s*;\s*|(?<=[.!?])\s+", source):
+    for part in re.split(r"\s*;\s*|(?<=[.!?])\s+", clean_text(source)):
         part = part.strip(" .;,")
         if not part:
             continue
@@ -255,6 +251,34 @@ def split_public_internal_note(
             public_parts.append(part)
 
     return "; ".join(public_parts), "; ".join(dict.fromkeys(internal_parts))
+
+
+def classify_note_for_import(notes: object, internal_note: object = "") -> tuple[str, str]:
+    """Classify a legacy/source note before it enters the trusted workbook."""
+
+    return _classify_note_parts(notes, internal_note)
+
+
+def split_public_internal_note(
+    notes: object,
+    public_note: object = "",
+    internal_note: object = "",
+) -> tuple[str, str]:
+    """Return publishable and internal notes without trusting the legacy field.
+
+    ``notes`` is intentionally never a public fallback. It remains available as
+    the preserved raw source, while only ``public_note`` may cross a publication
+    boundary. Call ``classify_note_for_import`` during ingestion or migration.
+    """
+
+    explicit_public = clean_text(public_note)
+    explicit_internal = clean_text(internal_note)
+    public, rejected = _classify_note_parts(explicit_public, explicit_internal)
+
+    raw = clean_text(notes)
+    if raw and not explicit_public and not explicit_internal:
+        rejected = "; ".join(dict.fromkeys(part for part in (rejected, raw) if part))
+    return public, rejected
 
 
 def public_note_has_internal_markers(value: object) -> bool:

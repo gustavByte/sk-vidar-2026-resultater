@@ -8,6 +8,8 @@ from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 from openpyxl.utils import get_column_letter
 from openpyxl.worksheet.table import Table, TableStyleInfo
 from project_paths import SHARED_OVERVIEW_FILE, WEEKLY_RESULTS_FILE
+from result_taxonomy import split_public_internal_note
+from spreadsheet_security import set_openpyxl_literal_cell
 
 
 INPUT_FILE = WEEKLY_RESULTS_FILE
@@ -217,6 +219,23 @@ def build_display_rows(df: pd.DataFrame) -> pd.DataFrame:
     working = df.copy()
     working = working[working["athlete_name"].notna()].copy()
 
+    missing_note_columns = [column for column in ("public_note", "internal_note") if column not in working.columns]
+    if missing_note_columns:
+        raise ValueError(
+            "Arbeidsboken mangler eksplisitte notatfelt. Kjør "
+            "scripts/migrate_result_notes_2026.py før den delte oversikten bygges."
+        )
+    unclassified_notes = (
+        working["notes"].fillna("").astype(str).str.strip().ne("")
+        & working["public_note"].fillna("").astype(str).str.strip().eq("")
+        & working["internal_note"].fillna("").astype(str).str.strip().eq("")
+    )
+    if unclassified_notes.any():
+        raise ValueError(
+            f"Arbeidsboken har {int(unclassified_notes.sum())} uklassifiserte rånotater. "
+            "Kjør scripts/migrate_result_notes_2026.py før den delte oversikten bygges."
+        )
+
     gender_column = "gender" if "gender" in working.columns else "WA Kjønn"
     class_column = "class_name" if "class_name" in working.columns else "category"
 
@@ -244,8 +263,16 @@ def build_display_rows(df: pd.DataFrame) -> pd.DataFrame:
         .str.strip()
         .replace("nan", "")
     )
-    working["Plass"] = [extract_place(position, note) for position, note in zip(working["position"], working["notes"])]
-    working["Kort note"] = working["notes"].apply(clean_note)
+    approved_notes = working.apply(
+        lambda row: split_public_internal_note(
+            row.get("notes"),
+            row.get("public_note"),
+            row.get("internal_note"),
+        )[0],
+        axis=1,
+    )
+    working["Plass"] = [extract_place(position, note) for position, note in zip(working["position"], approved_notes)]
+    working["Kort note"] = approved_notes.apply(clean_note)
     working["distance_sort"] = working["Distanse"].map(DISTANCE_ORDER).fillna(99)
     working["time_sort"] = working["Tid"].apply(parse_time_for_sort)
 
@@ -376,7 +403,7 @@ def write_dataframe_with_table(ws, df: pd.DataFrame, start_row: int, table_name:
 
     for row_offset, row in enumerate(df.itertuples(index=False), 1):
         for col_idx, value in enumerate(row, 1):
-            cell = ws.cell(row=start_row + row_offset, column=col_idx, value=value)
+            cell = set_openpyxl_literal_cell(ws, start_row + row_offset, col_idx, value)
             cell.border = THIN_BORDER
             if col_idx in {1, 2, 5, 6, 7}:
                 cell.alignment = Alignment(horizontal="center", vertical="center")

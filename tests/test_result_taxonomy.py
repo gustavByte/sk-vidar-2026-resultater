@@ -9,6 +9,7 @@ if str(SCRIPTS) not in sys.path:
     sys.path.insert(0, str(SCRIPTS))
 
 from result_taxonomy import (  # noqa: E402
+    classify_note_for_import,
     competition_distance_km_for_row,
     competition_distance_status_for_row,
     event_type_for_row,
@@ -75,10 +76,30 @@ def test_terrain_taxonomy_catches_new_mont_blanc_event() -> None:
 
 
 def test_internal_note_is_removed_from_public_copy() -> None:
-    public, internal = split_public_internal_note("Sterk avslutning. Svak navnematch, sjekk Slack før publisering.")
+    public, internal = classify_note_for_import("Sterk avslutning. Svak navnematch, sjekk Slack før publisering.")
 
     assert public == "Sterk avslutning"
     assert "Slack" in internal
+    assert not public_note_has_internal_markers(public)
+
+
+def test_legacy_note_is_not_a_publication_fallback() -> None:
+    public, internal = split_public_internal_note("Sterk avslutning")
+
+    assert public == ""
+    assert internal == "Sterk avslutning"
+
+
+def test_only_explicit_public_note_crosses_publication_boundary() -> None:
+    public, internal = split_public_internal_note(
+        "Rånotat som beholdes privat",
+        "PB. Relatert utøver må kontrolleres før publisering.",
+        "Opprinnelig intern merknad",
+    )
+
+    assert public == "PB"
+    assert "Relatert utøver" in internal
+    assert "Opprinnelig intern merknad" in internal
     assert not public_note_has_internal_markers(public)
 
 

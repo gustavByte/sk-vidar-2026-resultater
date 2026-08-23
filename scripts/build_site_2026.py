@@ -5,18 +5,25 @@ import math
 import re
 import sqlite3
 from datetime import datetime
+from pathlib import Path
 
 import pandas as pd
 
 from build_shared_weekly_results_2026 import EVENT_NAME_OVERRIDES, clean_note, extract_place, filter_publishable_results, parse_time_for_sort
 from person_identity import (
+    MATCH_CANDIDATE_COLUMNS,
     SCHEMA_VERSION,
+    apply_match_decisions_to_identity,
     assign_result_ids,
     build_identity_indexes,
     build_identity_reports,
     build_people_payload,
+    build_person_match_candidates,
     ensure_new_people_are_appended_without_changing_existing_ids,
+    find_blocking_person_match_candidates,
     match_result_to_person,
+    persist_identity_data,
+    validate_identity_reports,
     validate_public_payload,
     write_identity_reports,
 )
@@ -39,6 +46,7 @@ from result_taxonomy import (
     terrain_tags_for_row,
     wa_status_for_values,
 )
+from spreadsheet_security import csv_safe_dataframe
 
 
 DATA_DB_DIR = ROOT_DIR / "data" / "database"
@@ -456,6 +464,23 @@ def load_results() -> pd.DataFrame:
     df = pd.read_excel(WEEKLY_RESULTS_FILE, sheet_name="results", engine="openpyxl")
     working = filter_publishable_results(df)
 
+    missing_note_columns = [column for column in ("public_note", "internal_note") if column not in working.columns]
+    if missing_note_columns:
+        raise ValueError(
+            "Arbeidsboken mangler eksplisitte notatfelt. Kjør "
+            "scripts/migrate_result_notes_2026.py før publisering."
+        )
+    unclassified_notes = (
+        working["notes"].fillna("").astype(str).str.strip().ne("")
+        & working["public_note"].fillna("").astype(str).str.strip().eq("")
+        & working["internal_note"].fillna("").astype(str).str.strip().eq("")
+    )
+    if unclassified_notes.any():
+        raise ValueError(
+            f"Publisering stoppet: {int(unclassified_notes.sum())} rånotater mangler eksplisitt klassifisering. "
+            "Kjør scripts/migrate_result_notes_2026.py."
+        )
+
     working["published_date"] = pd.to_datetime(working["published_date"], errors="coerce")
     working["published_date_iso"] = working["published_date"].dt.strftime("%Y-%m-%d")
     working["published_date_label"] = working["published_date"].dt.strftime("%d.%m.%Y")
@@ -483,7 +508,7 @@ def load_results() -> pd.DataFrame:
     note_flags = working["notes_clean"].apply(parse_note_flags)
     working["is_pb"] = note_flags.map(lambda flags: flags["is_pb"])
     working["is_sb"] = note_flags.map(lambda flags: flags["is_sb"])
-    working["place"] = [extract_place(position, note) for position, note in zip(working["position"], working["notes"])]
+    working["place"] = [extract_place(position, note) for position, note in zip(working["position"], working["public_note"])]
     working["result_time_source"] = working["result_time_normalized"].fillna(working["result_time_raw"])
     working["secondary_time_source"] = working["secondary_time_normalized"].fillna(working["secondary_time_raw"])
     working["result_time_seconds"] = working["result_time_source"].apply(parse_time_for_sort)
@@ -607,7 +632,14 @@ def load_results() -> pd.DataFrame:
 
 def attach_person_identity(df: pd.DataFrame) -> tuple[pd.DataFrame, object]:
     working = df.copy()
-    identity = ensure_new_people_are_appended_without_changing_existing_ids(working)
+    identity = ensure_new_people_are_appended_without_changing_existing_ids(working, persist=False)
+    identity, decision_result = apply_match_decisions_to_identity(identity)
+    if decision_result["error_count"]:
+        examples = "; ".join(
+            f"{error['candidate_id']}: {error['error']}"
+            for error in decision_result["errors"][:5]
+        )
+        raise ValueError(f"Publisering stoppet av ugyldige personbeslutninger: {examples}")
     indexes = build_identity_indexes(identity)
     canonical_names = {}
     for _, registry_row in identity.registry.fillna("").iterrows():
@@ -638,6 +670,35 @@ def attach_person_identity(df: pd.DataFrame) -> tuple[pd.DataFrame, object]:
     working["identity_match_review"] = match_reviews
     working["profile_distance"] = working.apply(normalize_ranking_distance, axis=1)
     return working, identity
+
+
+def write_and_validate_person_match_candidates(df: pd.DataFrame, identity: object) -> pd.DataFrame:
+    """Persist the review queue and stop before a duplicate can be published."""
+
+    candidates = build_person_match_candidates(identity, df)
+    if candidates.empty:
+        candidates = pd.DataFrame(columns=MATCH_CANDIDATE_COLUMNS)
+
+    IDENTITY_REPORT_DIR.mkdir(parents=True, exist_ok=True)
+    candidate_file = IDENTITY_REPORT_DIR / "person_match_candidates.csv"
+    csv_safe_dataframe(candidates).to_csv(candidate_file, index=False, encoding="utf-8", lineterminator="\n")
+
+    blocking = find_blocking_person_match_candidates(candidates)
+    if blocking.empty:
+        return candidates
+
+    examples = "; ".join(
+        f"{row.display_name_1} <-> {row.display_name_2}"
+        for row in blocking.head(5).itertuples(index=False)
+    )
+    if len(blocking) > 5:
+        examples += f"; +{len(blocking) - 5} til"
+    raise ValueError(
+        "Publisering stoppet av uavklarte personkoblinger: "
+        f"{len(blocking)} ({examples}). Vurder {candidate_file}, registrer beslutningen i "
+        "data/stottefiler/personer/person_match_decisions.csv, og bygg på nytt. "
+        "Bruk decision=defer når publisering bevisst skal fortsette mens et navn undersøkes."
+    )
 
 
 def build_weekly_summary(df: pd.DataFrame) -> pd.DataFrame:
@@ -876,10 +937,14 @@ def build_payload(
     }
 
 
-def write_database(df: pd.DataFrame, summary_df: pd.DataFrame, payload: dict[str, object], missing_df: pd.DataFrame) -> None:
-    DATA_DB_DIR.mkdir(parents=True, exist_ok=True)
-    PUBLIC_DATA_DIR.mkdir(parents=True, exist_ok=True)
-
+def write_database_file(
+    database_file: Path,
+    df: pd.DataFrame,
+    summary_df: pd.DataFrame,
+    payload: dict[str, object],
+    missing_df: pd.DataFrame,
+) -> None:
+    database_file.parent.mkdir(parents=True, exist_ok=True)
     metadata = pd.DataFrame(
         [
             {"key": "schema_version", "value": payload["schema_version"]},
@@ -954,30 +1019,52 @@ def write_database(df: pd.DataFrame, summary_df: pd.DataFrame, payload: dict[str
     summary_db = summary_df.copy()
     summary_db["events"] = summary_db["events"].apply(lambda values: ", ".join(values))
 
-    with sqlite3.connect(DB_FILE) as connection:
+    connection = sqlite3.connect(database_file)
+    try:
         metadata.to_sql("metadata", connection, if_exists="replace", index=False)
         db_results.to_sql("results", connection, if_exists="replace", index=False)
         summary_db.to_sql("weekly_summary", connection, if_exists="replace", index=False)
         missing_df.to_sql("missing_gender_class", connection, if_exists="replace", index=False)
+        connection.commit()
+    finally:
+        connection.close()
 
+
+
+def write_missing_report_file(missing_report_file: Path, missing_df: pd.DataFrame) -> None:
+    missing_report_file.parent.mkdir(parents=True, exist_ok=True)
+    csv_safe_dataframe(missing_df).to_csv(missing_report_file, index=False, encoding="utf-8")
+
+
+def write_database(df: pd.DataFrame, summary_df: pd.DataFrame, payload: dict[str, object], missing_df: pd.DataFrame) -> None:
+    write_database_file(DB_FILE, df, summary_df, payload, missing_df)
+    write_missing_report_file(MISSING_REPORT_FILE, missing_df)
     if LEGACY_PUBLIC_DB_FILE.exists():
         LEGACY_PUBLIC_DB_FILE.unlink()
-    missing_df.to_csv(MISSING_REPORT_FILE, index=False, encoding="utf-8")
+
+
+def write_json_file(json_file: Path, payload: dict[str, object]) -> None:
+    json_file.parent.mkdir(parents=True, exist_ok=True)
+    json_file.write_text(json.dumps(payload, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
 
 
 def write_json(payload: dict[str, object]) -> None:
-    JSON_FILE.write_text(json.dumps(payload, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    write_json_file(JSON_FILE, payload)
 
 
 def write_quality_reports(quality_report: pd.DataFrame, gender_conflicts: pd.DataFrame) -> None:
     DATA_DB_DIR.mkdir(parents=True, exist_ok=True)
-    quality_report.to_csv(QUALITY_REPORT_FILE, index=False, encoding="utf-8")
-    gender_conflicts.to_csv(GENDER_CONFLICT_REPORT_FILE, index=False, encoding="utf-8")
+    csv_safe_dataframe(quality_report).to_csv(QUALITY_REPORT_FILE, index=False, encoding="utf-8")
+    csv_safe_dataframe(gender_conflicts).to_csv(GENDER_CONFLICT_REPORT_FILE, index=False, encoding="utf-8")
 
 
 def main() -> None:
     df = load_results()
     df, identity = attach_person_identity(df)
+    write_and_validate_person_match_candidates(df, identity)
+    preliminary_identity_reports = build_identity_reports(df, identity)
+    write_identity_reports(preliminary_identity_reports, IDENTITY_REPORT_DIR)
+    validate_identity_reports(preliminary_identity_reports)
     df, gender_conflicts = resolve_person_gender_conflicts(df)
     quality_report = build_quality_report(df)
     write_quality_reports(quality_report, gender_conflicts)
@@ -989,9 +1076,18 @@ def main() -> None:
     payload = build_payload(df, summary_df, missing_df, rankings, people_payload)
     reports = build_identity_reports(df, identity, payload)
     write_identity_reports(reports, IDENTITY_REPORT_DIR)
+    validate_identity_reports(reports)
     validate_public_payload(payload)
-    write_database(df, summary_df, payload, missing_df)
-    write_json(payload)
+    if LEGACY_PUBLIC_DB_FILE.exists():
+        LEGACY_PUBLIC_DB_FILE.unlink()
+    persist_identity_data(
+        identity,
+        additional_file_writes=[
+            (DB_FILE, lambda staged_path: write_database_file(staged_path, df, summary_df, payload, missing_df)),
+            (MISSING_REPORT_FILE, lambda staged_path: write_missing_report_file(staged_path, missing_df)),
+            (JSON_FILE, lambda staged_path: write_json_file(staged_path, payload)),
+        ],
+    )
 
     print(f"Created SQLite database: {DB_FILE}")
     print("Public SQLite copy disabled")

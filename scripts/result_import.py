@@ -8,7 +8,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from result_taxonomy import split_public_internal_note
+from result_taxonomy import classify_note_for_import
 
 
 ALIASES = {
@@ -23,10 +23,15 @@ ALIASES = {
     "position": {"position", "place", "plass", "totalplass"},
     "class_place": {"class_place", "klasseplass", "plass_klasse"},
     "notes": {"notes", "note", "notat", "kommentar"},
+    "slack_user_id": {"slack_user_id", "slack_id"},
+    "world_athletics_id": {"world_athletics_id", "wa_person_id", "world_athletics_person_id"},
+    "source_person_id": {"source_person_id", "external_person_id"},
+    "source_system": {"source_system", "source_provider", "result_provider", "kildesystem"},
 }
 
 REQUIRED = ("published_date", "event_name", "distance", "athlete_name", "result_time_raw")
 NON_RESULTS = {"DNS", "DNF", "DQ", "DSQ"}
+EVENT_SCOPED_ID_HEADERS = {"participant_id", "deltaker_id"}
 
 
 def normalize_header(value: object) -> str:
@@ -114,6 +119,9 @@ def adapt_source(path: Path) -> list[ImportCandidate]:
         return [ImportCandidate(path.name, 0, candidate_id, "review", (str(error),), {})]
 
     columns = canonical_columns(frame)
+    event_scoped_id_columns = [
+        str(column) for column in frame.columns if normalize_header(column) in EVENT_SCOPED_ID_HEADERS
+    ]
     missing_headers = [column for column in REQUIRED if column not in columns]
     if missing_headers:
         candidate_id = hashlib.sha1(f"{path.name}|headers".encode("utf-8")).hexdigest()[:16]
@@ -126,6 +134,10 @@ def adapt_source(path: Path) -> list[ImportCandidate]:
         raw_date = row.get("published_date", "")
         parsed_date = pd.to_datetime(raw_date, errors="coerce", dayfirst=not bool(re.fullmatch(r"\d{4}-\d{2}-\d{2}", raw_date)))
         issues: list[str] = []
+        if any(_clean(source.get(column)) for column in event_scoped_id_columns):
+            issues.append(
+                "participant_id/deltaker_id er ikke en stabil person-ID; bruk source_person_id bare når kilden garanterer stabil identitet"
+            )
         if pd.isna(parsed_date):
             issues.append("Ugyldig dato")
         else:
@@ -140,12 +152,16 @@ def adapt_source(path: Path) -> list[ImportCandidate]:
         if result_status in NON_RESULTS:
             issues.append(f"Ikke publiserbart resultat: {result_status}")
 
-        public_note, internal_note = split_public_internal_note(row.get("notes", ""))
-        row["notes"] = public_note
+        raw_note = _clean(row.get("notes", ""))
+        public_note, internal_note = classify_note_for_import(raw_note)
+        row["notes"] = raw_note
+        row["public_note"] = public_note
         row["internal_note"] = internal_note
         row["gender"] = _gender(row.get("gender"), row.get("class_name"))
         if not row["gender"]:
             issues.append("Mangler sikkert kjønn")
+        if _clean(row.get("source_person_id")) and not _clean(row.get("source_system")):
+            issues.append("source_person_id krever source_system")
 
         key_text = "|".join(result_key(row))
         candidate_id = hashlib.sha1(f"{path.name}|{index + 2}|{key_text}".encode("utf-8")).hexdigest()[:16]
