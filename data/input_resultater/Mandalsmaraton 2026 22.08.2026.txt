@@ -1,0 +1,13 @@
+Mandalsmaraton 2026
+Dato: 22.08.2026
+Distanse: 10 km og Halvmaraton
+Type: Gateløp
+
+SK Vidar-resultater:
+- Celine Håkestad | K23-34 | 1:25:06 | 33. totalt | 1. i klassen | offisielt klubbtreff i EQ Timing
+- Jon-Henrik Eskeland | M23-34 | 36:14 | 12. totalt | 7. i klassen | offisielt klubbtreff i EQ Timing
+- Eivind Rosseland Stokke | M23-34 | 37:44 | 21. totalt | 11. i klassen | offisielt klubbtreff i EQ Timing
+
+Resultatkilde: EQ Timing fullrapport 220: https://live.eqtiming.com/api/Report/220?eventId=78582
+Klassifiseringskilde: https://mandalsmaraton.no/
+Tilgjengelighet: Komplett resultatrapport kontrollert. Tre fullførte SK Vidar-resultater publiseres; to DNF-rader er utelatt.
