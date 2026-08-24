@@ -1,0 +1,11 @@
+Hornindalsrokken Skyrace 2026
+Dato: 22.08.2026
+Distanse: 17,5 km
+Type: Skyrace / fjelløp
+
+SK Vidar-resultater:
+- Maia Kulle Andreassen | startnummer 57 | K15-17 | 2:34:19.0 | 21. totalt | 1. i klassen | offisielt klubbfelt Sportsklubben Vidar
+
+Resultatkilde: Brukerlevert EQTiming-eksport Resultlist-79631-20260824073021.csv og resultatbilder
+Klassifiseringskilde: Resultatbildet viser Hornindalsrokken Skyrace 2026, 22.08.2026 i Hornindal
+Tilgjengelighet: CSV-raden bekrefter totalplass 21, kvinneplass 1 og klasseplass 1. DNS-rader er utelatt.
