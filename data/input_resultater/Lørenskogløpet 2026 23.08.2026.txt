@@ -1,0 +1,15 @@
+Lørenskogløpet 2026
+Dato: 23.08.2026
+Distanse: 5 km og 10 km
+Type: Gateløp
+
+SK Vidar-resultater:
+- Anniken Holst-Berger | startnummer 407 | K23-34 | 45:06.5 | 164. totalt | 9. i klassen | offisielt klubbtreff
+- Jørgen Korum | startnummer 3 | M35-39 | 33:11.8 | 3. totalt | 2. i klassen | brukerbekreftet SK Vidar
+- Joakim Hope Soltveit | startnummer 261 | M40-44 | 37:22.8 | 30. totalt | 3. i klassen | offisielt klubbtreff
+- Noomi Linnea Stenset | startnummer 898 | K11-12 | 20:56.3 | 26. totalt | 2. i klassen | offisielt klubbtreff
+- Synøve Brox | startnummer 741 | K65-69 | 21:29.6 | 27. totalt | 1. i klassen | offisielt klubbtreff
+- Ernst Kristiansen | startnummer 885 | M75-79 | 25:39.6 | 68. totalt | 1. i klassen | offisielt klubbtreff
+
+Resultatkilde: Brukerlevert Race Result CSV (Resultlist-79651-20260824113319.csv) og resultatbilde
+Tilgjengelighet: Fem offisielle SK Vidar-klubbtreff samt Jørgen Korum etter uttrykkelig brukerbekreftelse. Vidar Udnesæth ble utelatt fordi søket traff fornavnet, mens klubbfeltet viser Haslum IL Langrenn. WA-poeng er slått opp i World Athletics Scoring Tables of Athletics 2025.
