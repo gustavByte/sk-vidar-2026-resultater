@@ -1,0 +1,15 @@
+adidas Stockholm Half Marathon 2026
+Dato: 29.08.2026
+Distanse: Halvmaraton
+Type: Landeveisløp
+
+SK Vidar-resultater:
+- Liv Melby | startnummer 126 | Senior | 01:23:50 | 23. plass blant kvinner; offisielt oppført som Liv Richter Melby; klubb: Vidar SK / Salomon Norge
+- Vilde Antonsen | startnummer 124 | Senior | 01:20:14 | 8. plass blant kvinner
+- Emil Aarstad | startnummer 23482 | Senior | 01:22:55 | 243. plass blant menn
+- Vilja Gruben | startnummer 30379 | Senior | 01:25:27 | 31. plass blant kvinner
+- Roger Thompson | startnummer 14052 | M50-54 | 01:20:11 | 151. plass blant menn
+
+Resultatkilde: https://stockholm.r.mikatiming.com/halvmarathon/2026/
+Klassifiseringskilde: https://www.stockholmhalfmarathon.se/about-the-race-2026/
+Tilgjengelighet: Fem fullførte SK Vidar-resultater levert som resultattekst og skjermbilde av brukeren.
