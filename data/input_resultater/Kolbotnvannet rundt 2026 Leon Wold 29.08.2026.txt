@@ -1,0 +1,10 @@
+Kolbotnvannet rundt 2026
+Dato: 29.08.2026
+Distanse: 5 km
+
+SK Vidar-resultater:
+- Leon Victor Wold | M15-17 | 22:47 | 4. totalt | 2. i klassen | 4. plass blant menn; offisielt oppført som Leon Wold; klubb: Sportsklubben Vidar
+
+Resultatkilde: https://live.eqtiming.com/api/Report/220?eventId=78815
+Klassifiseringskilde: https://kolbotnvannetrundt.no/gruppeside-en/praktisk-informasjon
+Tilgjengelighet: EQTiming event 78815, rapport 220. Rapporten dokumenterer total-, kjønns- og klasseplassering.
