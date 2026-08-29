@@ -1,0 +1,14 @@
+Porsgrunn Halvmaraton 2026
+Dato: 29.08.2026
+Distanse: 5 km, 10 km og Halvmaraton
+Type: Gateløp
+
+SK Vidar-resultater:
+- Noah Johannessen | M23-34 | 18:19 | 8. totalt | 4. i klassen | Offisiell klubb: SK Vidar; 8. mann
+- Dina Erika Hansen | K23-34 | 19:01 | 13. totalt | 1. i klassen | Offisiell klubb: SK Vidar; 1. kvinne
+- Mathilde Christin Knutsen | K23-34 | 35:48 | 2. totalt | 1. i klassen | Offisiell klubb: Sportsklubben Vidar; 1. kvinne
+- Knut Borkholm | M23-34 | 1:14:20 | 3. totalt | 2. i klassen | Offisiell klubb: SK Vidar; 3. mann
+
+Resultatkilde: EQTiming rapport 220 for event 80605
+Klassifiseringskilde: https://live.eqtiming.com/80605
+Tilgjengelighet: Fire fullførte resultater med offisiell klubbtilknytning til SK Vidar. Navnetreff uten Vidar-klubb er utelatt.
