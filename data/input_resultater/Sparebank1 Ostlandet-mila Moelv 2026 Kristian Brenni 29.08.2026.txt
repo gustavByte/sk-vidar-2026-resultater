@@ -1,0 +1,10 @@
+Sparebank1 Østlandet-mila Moelv 2026
+Dato: 29.08.2026
+Distanse: 10000 m
+
+SK Vidar-resultater:
+- Kristian Brenni | M23-34 | 33:53.5 | 1. totalt | 1. i klassen | 1. plass blant menn; klubb: Sportsklubben Vidar/Sub 1814
+
+Resultatkilde: https://live.eqtiming.com/api/Report/220?eventId=82317
+Klassifiseringskilde: https://www.xn--sparebank1stlandet-mila-umc.no/
+Tilgjengelighet: EQTiming event 82317, rapport 220. Ett av to Vidar-treff var DNF og er ikke publisert. WA-poeng er slått opp i World Athletics Scoring Tables of Athletics 2025.
