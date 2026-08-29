@@ -1,0 +1,11 @@
+Sjårdalsløpet 2026
+Dato: 29.08.2026
+Distanse: 7,5 km
+Type: Landeveisløp
+
+SK Vidar-resultater:
+- Sjur Krystad Prestsæter | startnummer 13 | M30-39 | 25:32.1 | 1. totalt | 1. i klassen | 1. plass blant menn; klubb: Sportsklubben Vidar/Energihuset
+
+Resultatkilde: https://live.eqtiming.com/api/Report/220?eventId=83924
+Klassifiseringskilde: https://stevna.no/kalender?kategori=road
+Tilgjengelighet: EQTiming event 83924, rapport 220. Rapporten dokumenterer total-, kjønns- og klasseplassering.
