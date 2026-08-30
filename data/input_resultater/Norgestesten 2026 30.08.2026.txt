@@ -1,0 +1,18 @@
+Norgestesten 2026
+Dato: 30.08.2026
+Distanse: 10 km
+Type: Gateløp
+
+SK Vidar-resultater:
+- Ingunn Monsen | startnummer 596 | K60-64 | 13:51.0 | 11. totalt | 1. i klassen | Offisiell klubb i EQTiming
+- Liv Kulle Andreassen | startnummer 635 | K18-19 | 18:17.0 | 15. totalt | 1. i klassen | Offisiell klubb i EQTiming
+- Martin Gulliksen | startnummer 551 | M35-39 | 34:20.0 | 5. totalt | 2. i klassen | Offisiell klubb i EQTiming
+- Christopher Bennett | startnummer 696 | M40-44 | 34:50.0 | 8. totalt | 1. i klassen | Offisiell klubb i EQTiming
+- Sindre Fanneløb | startnummer 681 | M23-34 | 35:11.0 | 9. totalt | 5. i klassen | Offisiell klubb i EQTiming
+- Anette Killerud Ødegård | startnummer 528 | K35-39 | 35:17.0 | 10. totalt | 2. i klassen | Offisiell klubb i EQTiming
+- Kristoffer Bugge | startnummer 684 | M45-49 | 35:18.0 | 11. totalt | 1. i klassen | Offisiell klubb i EQTiming
+- Runa Skrove Falch | startnummer 759 | K35-39 | 35:21.0 | 12. totalt | 3. i klassen | Offisiell klubb i EQTiming
+
+Resultatkilde: EQTiming rapport 220: https://live.eqtiming.com/api/Report/220?eventId=79397
+Klassifiseringskilde: https://live.eqtiming.com/79397
+Tilgjengelighet: Alle ferdige offisielle SK Vidar-resultater for klasser fra 14 år. K11 er utelatt.
