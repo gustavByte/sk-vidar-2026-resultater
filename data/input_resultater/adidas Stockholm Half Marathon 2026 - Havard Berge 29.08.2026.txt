@@ -4,8 +4,15 @@ Distanse: Halvmaraton
 Type: Landeveisløp
 
 SK Vidar-resultater:
-- Håvard Berge | Senior | 01:11:16 | brukerbekreftet SK Vidar, offisiell påmelding hadde tidligere klubb
+- Håvard Berge | startnummer 27 | Senior | 01:11:16 | 24. plass totalt | 23. i klassen | brukerbekreftet SK Vidar; offisielt lag: Unstad løpeklubb
 
-Resultatkilde: Manuelt innmeldt resultat fra utøveren
+Offisielle detaljer:
+- Nettotid: 01:11:16 | Gun time: 01:11:16 | Snittfart: 03:23 min/km | Status: fullført
+- 5 km: 00:17:07 | passeringsplass 33
+- 10 km: 00:33:57 | passeringsplass 26
+- 15 km: 00:50:58 | passeringsplass 24
+- 20 km: 01:07:48 | passeringsplass 24
+
+Resultatkilde: https://stockholm.r.mikatiming.com/halvmarathon/2026/?content=detail&event=SHM&idp=9TGBEQLS2201FE&lang=EN
 Klassifiseringskilde: https://www.stockholmhalfmarathon.se/about-the-race-2026/
-Tilgjengelighet: Resultatet ble meldt inn manuelt fordi klubbtilhørigheten i den offisielle påmeldingen ikke var oppdatert.
+Tilgjengelighet: Resultatet ble meldt inn manuelt og deretter kontrollert mot den offisielle detaljsiden. Den offisielle påmeldingen viser Unstad løpeklubb, mens utøveren er brukerbekreftet som SK Vidar.
