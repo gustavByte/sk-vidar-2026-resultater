@@ -1,0 +1,11 @@
+adidas Stockholm Half Marathon 2026
+Dato: 29.08.2026
+Distanse: Halvmaraton
+Type: Landeveisløp
+
+SK Vidar-resultater:
+- Håvard Berge | Senior | 01:11:16 | brukerbekreftet SK Vidar, offisiell påmelding hadde tidligere klubb
+
+Resultatkilde: Manuelt innmeldt resultat fra utøveren
+Klassifiseringskilde: https://www.stockholmhalfmarathon.se/about-the-race-2026/
+Tilgjengelighet: Resultatet ble meldt inn manuelt fordi klubbtilhørigheten i den offisielle påmeldingen ikke var oppdatert.
