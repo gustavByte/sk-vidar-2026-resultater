@@ -9,7 +9,7 @@ SK Vidar-resultater:
 - Madelène Wanvik Holum | K23-34 | 1:13:38 | 49. totalt
 - Tobias Gram-Caspersen | M23-34 | 1:13:53 | 58. totalt
 - Martin Kjäll-Ohlsson | M45-49 | 1:13:55 | 59. totalt
-- Marion Tibar | K45-49 | 1:14:41 | 74. totalt
+- Marion Tibar | K45-49 | 1:24:45 | Uoffisielt.
 - Mathias Kristiansen | M23-34 | 1:14:49 | 78. totalt
 - Christopher Bennett | M40-44 | 1:15:04 | 86. totalt
 - Haakon Hellebust | M23-34 | 1:15:56 | 94. totalt
@@ -34,6 +34,10 @@ SK Vidar-resultater:
 - Sindre Fanneløb | M23-34 | 1:44:59 | 1641. totalt
 - Rainer Henriksen | Klasse ikke oppgitt | 1:46:18 | 1711. totalt
 
+- Sunniva Kveim | Kvinner | 1:26:33 | Uoffisielt.
+
 Resultatkilde: https://live.ultimate.dk/desktop/front/index.php?eventid=7272&ignoreuseragent=true
 Klassifiseringskilde: https://www.sportsidioten.no/lop/drammen-halvmaraton-2026/
 Tilgjengelighet: Full resultatliste hentet fra leverandør. Kontrollerte målresultater. Rainer Henriksen: klasse mangler i resultatkilden. Kjønn er kontrollert mot Drammen 10K 2026: https://www.sportsidioten.no/resultater/m50-54-drammen-10k-2026/ .
+
+Tillegg og korreksjon 06.09.2026: Sunnivas tid er egenrapportert totaltid fra Strava etter chipfeil. Marions tid er korrigert som uoffisiell. Disse to tidene er oppgitt separat fra den offisielle resultatlisten; ingen plassering eller WA-poeng.
