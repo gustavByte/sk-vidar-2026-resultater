@@ -3,3 +3,5 @@ Ark: SK Vidar
 Løp: Sparebank 1 SØR-NORGE Drammen10K
 Dato: 11.04.2026
 Import: alle fullførte 10 KM-rader fra arket SK Vidar
+
+Korrigert utvalg 06.09.2026: Lars Martin Falcks 37:40 utelates fra SK Vidar-statistikken.
