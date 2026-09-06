@@ -1,0 +1,39 @@
+Drammen Halvmaraton 2026
+Dato: 05.09.2026
+Distanse: Halvmaraton
+
+SK Vidar-resultater:
+- Martin Stray Egeberg | M23-34 | 1:09:49 | 18. totalt
+- Erlend Brevik | M23-34 | 1:12:27 | 31. totalt
+- Olav Spikkeland | M23-34 | 1:13:21 | 43. totalt
+- Madelène Wanvik Holum | K23-34 | 1:13:38 | 49. totalt
+- Tobias Gram-Caspersen | M23-34 | 1:13:53 | 58. totalt
+- Martin Kjäll-Ohlsson | M45-49 | 1:13:55 | 59. totalt
+- Marion Tibar | K45-49 | 1:14:41 | 74. totalt
+- Mathias Kristiansen | M23-34 | 1:14:49 | 78. totalt
+- Christopher Bennett | M40-44 | 1:15:04 | 86. totalt
+- Haakon Hellebust | M23-34 | 1:15:56 | 94. totalt
+- Jon-Henrik Eskeland | M23-34 | 1:16:23 | 104. totalt
+- Cornelia Brummenæs | K23-34 | 1:19:38 | 191. totalt
+- Christoffer Christiansen Hagen | M35-39 | 1:20:49 | 237. totalt
+- Joakim Hope Soltveit | M40-44 | 1:21:24 | 257. totalt
+- Nora Duvaland * | K23-34 | 1:21:28 | 261. totalt
+- Even Lund | M23-34 | 1:23:43 | 342. totalt
+- Haakon Flinstad | M23-34 | 1:24:28 | 382. totalt
+- Thomas Beka | M40-44 | 1:25:40 | 455. totalt
+- Robin Kunze | M23-34 | 1:28:28 | 583. totalt
+- Torill Ytterhus Haugset | K23-34 | 1:28:56 | 618. totalt
+- Lars Martin Falck | M35-39 | 1:29:16 | 642. totalt
+- Valentin Hachet | M23-34 | 1:30:38 | 753. totalt
+- Ole Jacobsen | M65-69 | 1:30:43 | 757. totalt
+- Oda Laegran | K23-34 | 1:32:02 | 820. totalt
+- Børge Bårdsen | M23-34 | 1:32:43 | 854. totalt
+- Øistein Øverberg | M50-54 | 1:34:21 | 969. totalt
+- Eline Rud Wagle | K23-34 | 1:35:58 | 1092. totalt
+- Kristine Thomassen | K35-39 | 1:37:53 | 1182. totalt
+- Sindre Fanneløb | M23-34 | 1:44:59 | 1641. totalt
+- Rainer Henriksen | Klasse ikke oppgitt | 1:46:18 | 1711. totalt
+
+Resultatkilde: https://live.ultimate.dk/desktop/front/index.php?eventid=7272&ignoreuseragent=true
+Klassifiseringskilde: https://www.sportsidioten.no/lop/drammen-halvmaraton-2026/
+Tilgjengelighet: Full resultatliste hentet fra leverandør. Kontrollerte målresultater. Rainer Henriksen: klasse mangler i resultatkilden. Kjønn er kontrollert mot Drammen 10K 2026: https://www.sportsidioten.no/resultater/m50-54-drammen-10k-2026/ .
