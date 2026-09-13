@@ -3,8 +3,9 @@ Dato: 09.09.2026
 Distanse: 4.6 km
 
 SK Vidar-resultater:
-- Erik Sørensen | Trim M45-49 | 5:37:39
 
 Resultatkilde: https://live.eqtiming.com/81564#result:332844-0-1441717-1-1-
 Klassifiseringskilde: https://www.sportsidioten.no/resultater/bdo-lopet-kristiansand-2026/
 Tilgjengelighet: Hele målresultatlisten: 366 rader på Kort løype uten tidtaking.
+
+Korrigert utvalg 13.09.2026: Erik Sørensens trimregistrering er feil og er fjernet fra resultatstatistikken.
