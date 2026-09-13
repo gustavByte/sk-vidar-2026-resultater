@@ -1,0 +1,10 @@
+Junior NM friidrett 2026
+Dato: 30.08.2026
+Distanse: 5000 m
+
+SK Vidar-resultater:
+- Jakob Slengesol | U20 Menn | 15:18.80 | 14. totalt | 14. i klassen
+
+Resultatkilde: https://liveres.andro.no/liveres/347?day=3
+Klassifiseringskilde: https://liveres.andro.no/
+Tilgjengelighet: Offisiell AndRo/FriSys. U20 Menn 5000 m; heat 2; finished=True. Resultatstatus bevart.

@@ -1,0 +1,11 @@
+UM friidrett 2026
+Dato: 12.09.2026
+Distanse: 800 m
+
+SK Vidar-resultater:
+- Herman Unneland | G-16 | 2:00.89 | 5. totalt | 5. i klassen
+- Christopher Wiig | G-15 | 2:12.06 | 10. totalt | 10. i klassen
+
+Resultatkilde: https://liveres.andro.no/liveres/349?day=2
+Klassifiseringskilde: https://liveres.andro.no/
+Tilgjengelighet: Offisiell AndRo/FriSys. G-16 800 m; heat 2; finished=True. Resultatstatus bevart.

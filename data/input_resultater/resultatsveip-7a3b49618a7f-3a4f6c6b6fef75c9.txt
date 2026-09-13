@@ -1,0 +1,11 @@
+UM friidrett 2026
+Dato: 11.09.2026
+Distanse: 3000 m
+
+SK Vidar-resultater:
+- Kasper Sørlie-Reininger | G-18-19 | 8:20.94 | 4. totalt | 4. i klassen
+- Jakob Slengesol | G-17 | 8:36.75 | 3. totalt | 3. i klassen
+
+Resultatkilde: https://liveres.andro.no/liveres/349?day=1
+Klassifiseringskilde: https://liveres.andro.no/
+Tilgjengelighet: Offisiell AndRo/FriSys. G-18-19 3000 m; heat 0; finished=True. Resultatstatus bevart.
