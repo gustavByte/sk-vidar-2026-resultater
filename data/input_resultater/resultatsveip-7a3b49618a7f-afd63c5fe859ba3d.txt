@@ -68,7 +68,7 @@ SK Vidar-resultater:
 - Ingrid Løken | K24-34 | 0:44:18 | 1252. totalt
 - Henrik Thorsø Johansen | M24-34 | 0:44:20 | 1256. totalt
 - Katarina Thraning | K24-34 | 0:44:43 | 1340. totalt
-- Ole Jonas Nybø | M40-44 | 0:44:52 | 1379. totalt | Fartholder.
+- Aleksander Amundsen | M24-34 | 0:44:52 | 1379. totalt | Fartholder.
 - Michael Floater | M60-64 | 0:45:01 | 1408. totalt
 - Trine Alnæs | K24-34 | 0:45:26 | 1486. totalt
 - Silje Solvang | K24-34 | 0:45:29 | 1497. totalt
@@ -83,4 +83,4 @@ Resultatkilde: https://live.ultimate.dk/desktop/front/index.php?eventid=7257&ign
 Klassifiseringskilde: https://www.sportsidioten.no/lop/oslo-maraton-2026/
 Tilgjengelighet: Tid slik leverandørens resultatliste viser den. Chip/offisiell basis er ikke spesifisert i tabellen.
 
-Korrigert 13.09.2026: 10 km 33:26 tilhører Ruairi Long etter startnummerbytte og er uoffisielt, uten plassering, WA-poeng eller standardrangering. 10 km 44:52 tilhører Ole Jonas Nybø, fartholder.
+Korrigert 13.09.2026: 10 km 33:26 tilhører Ruairi Long etter startnummerbytte og er uoffisielt, uten plassering, WA-poeng eller standardrangering. 10 km 44:52 tilhører Aleksander Amundsen, fartholder (endelig navnerettelse 13.09.2026).
