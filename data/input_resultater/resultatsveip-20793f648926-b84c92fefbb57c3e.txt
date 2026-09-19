@@ -1,0 +1,12 @@
+Fýri Trail 2026
+Dato: 19.09.2026
+Distanse: 29 km
+
+SK Vidar-resultater:
+- Maria Bipop | Women 18-34 | 03:10:54 | 24. totalt
+- Kristina Axelsson | Women 18-34 | 03:13:31 | 29. totalt
+- Nicolai Lujan Foss | Male 18-34 | 03:16:12 | 32. totalt
+
+Resultatkilde: https://my.raceresult.com/421792/results
+Klassifiseringskilde: https://www.sportsidioten.no/resultater/
+Tilgjengelighet: Hele publiserte Race Result-listen, r=all. Chiptid fra oppgitt CHIP-felt. Pågående løpere holdes atskilt fra målresultater. Kjønn/klubb supplert fra offentlig deltakerliste på samme Race Result-ID.

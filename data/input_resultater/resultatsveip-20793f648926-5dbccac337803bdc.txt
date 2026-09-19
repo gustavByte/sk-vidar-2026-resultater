@@ -1,0 +1,10 @@
+Sandnes Halvmaraton 2026
+Dato: 19.09.2026
+Distanse: 5 km
+
+SK Vidar-resultater:
+- Thomas Nordbø Berg | Menn | 18:54 | 3. totalt
+
+Resultatkilde: https://my.raceresult.com/393041/results
+Klassifiseringskilde: https://www.sportsidioten.no/resultater/
+Tilgjengelighet: Hele publiserte Race Result-listen, r=all. Chiptid fra oppgitt CHIP-felt. Pågående løpere holdes atskilt fra målresultater. Kjønn/klubb supplert fra offentlig deltakerliste på samme Race Result-ID.
