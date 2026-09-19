@@ -3,8 +3,10 @@ Dato: 19.09.2026
 Distanse: 2.7 km
 
 SK Vidar-resultater:
-- Jacob Nitter | Menn 25-29 | 20:38 | 38. totalt
+- Jacob Nitter | Menn 25-29 | 20:38 | 34. blant menn | 38. totalt | 12. i klassen
 
 Resultatkilde: https://my.raceresult.com/357099/results
 Klassifiseringskilde: https://www.sportsidioten.no/resultater/
 Tilgjengelighet: Hele publiserte Race Result-listen, r=all. Chiptid fra oppgitt CHIP-felt. Pågående løpere holdes atskilt fra målresultater.
+
+Plasseringer kontrollert 19.09.2026: kjønnsplass, totalplass og klasseplass holdes atskilt. Separate baneklasser har bare klasseplass.

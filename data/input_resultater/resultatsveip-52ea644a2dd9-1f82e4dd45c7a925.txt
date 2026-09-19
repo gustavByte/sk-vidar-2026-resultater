@@ -3,16 +3,18 @@ Dato: 15.09.2026
 Distanse: 3000 m
 
 SK Vidar-resultater:
-- Theodor Botten | M Elite | 9:09.8 | 1. totalt | 1. i klassen
-- Sveinung Nersten | M23-34 | 10:05.6 | 26. totalt | 15. i klassen
-- Maria Bipop | K Elite | 10:16.0 | 31. totalt | 1. i klassen
-- Erik Bjørgum | M23-34 | 10:24.6 | 36. totalt | 18. i klassen
-- Sonia Slettvåg | K11-12 | 11:08.0 | 56. totalt | 1. i klassen
-- Simen Hagerup Kjeldsen | M40-44 | 11:21.8 | 64. totalt | 12. i klassen
-- Synøve Brox | K65-69 | 12:13.0 | 79. totalt | 1. i klassen
-- Alexandra Paus Laizet | K13-14 | 14:11.7 | 114. totalt | 1. i klassen
-- Dina Erika Hansen | K23-34 | 15:46.4 | 121. totalt | 9. i klassen
+- Theodor Botten | M Elite | 9:09.8 | 1. blant menn | 1. totalt | 1. i klassen
+- Sveinung Nersten | M23-34 | 10:05.6 | 26. blant menn | 26. totalt | 15. i klassen
+- Maria Bipop | K Elite | 10:16.0 | 1. blant kvinner | 31. totalt | 1. i klassen
+- Erik Bjørgum | M23-34 | 10:24.6 | 34. blant menn | 36. totalt | 18. i klassen
+- Sonia Slettvåg | K11-12 | 11:08.0 | 4. blant kvinner | 56. totalt | 1. i klassen
+- Simen Hagerup Kjeldsen | M40-44 | 11:21.8 | 59. blant menn | 64. totalt | 12. i klassen
+- Synøve Brox | K65-69 | 12:13.0 | 9. blant kvinner | 79. totalt | 1. i klassen
+- Alexandra Paus Laizet | K13-14 | 14:11.7 | 22. blant kvinner | 114. totalt | 1. i klassen
+- Dina Erika Hansen | K23-34 | 15:46.4 | 28. blant kvinner | 121. totalt | 9. i klassen
 
 Resultatkilde: https://live.eqtiming.com/83714#result:339722-0-1469732-1-1-
 Klassifiseringskilde: https://live.eqtiming.com/83714
 Tilgjengelighet: Hele målresultatlisten: 125 rader på 3000m. 3000 meter på Bislett-banen, 15. september 2026. Offisiell kilde: https://live.eqtiming.com/83714
+
+Plasseringer kontrollert 19.09.2026: kjønnsplass, totalplass og klasseplass holdes atskilt. Separate baneklasser har bare klasseplass.

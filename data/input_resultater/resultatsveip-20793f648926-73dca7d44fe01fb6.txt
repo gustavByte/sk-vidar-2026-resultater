@@ -3,8 +3,10 @@ Dato: 19.09.2026
 Distanse: 56 km
 
 SK Vidar-resultater:
-- Ragnhild Grieg | Damer | 08:25:41 | 52. totalt
+- Ragnhild Grieg | Damer | 08:25:41 | 10. blant kvinner | 52. totalt | 10. i klassen
 
 Resultatkilde: https://my.raceresult.com/421792/results
 Klassifiseringskilde: https://www.sportsidioten.no/resultater/
 Tilgjengelighet: Hele publiserte Race Result-listen, r=all. Chiptid fra oppgitt CHIP-felt. Pågående løpere holdes atskilt fra målresultater.
+
+Plasseringer kontrollert 19.09.2026: kjønnsplass, totalplass og klasseplass holdes atskilt. Separate baneklasser har bare klasseplass.

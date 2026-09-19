@@ -3,16 +3,18 @@ Dato: 19.09.2026
 Distanse: 5 km
 
 SK Vidar-resultater:
-- Thomas Kjellberg | M40-44 | 0:15:21 | 110. totalt
-- Anna Marie Sirevåg | FELITE | 0:15:41 | 136. totalt
-- Gustav Vasdal | M35-39 | 0:17:39 | 411. totalt
-- June Bui | F30-34 | 0:19:17 | 811. totalt
-- Michael Eriksson | M35-39 | 0:19:23 | 849. totalt
-- Synøve Brox | F65-69 | 0:20:10 | 1153. totalt
-- Kristian Myhre | M35-39 | 0:20:27 | 1236. totalt
-- Johanne Lægran | F25-29 | 0:24:02 | 2497. totalt
-- Anne Myhr | F60-64 | 0:24:09 | 2546. totalt
+- Thomas Kjellberg | M40-44 | 0:15:21 | 95. blant menn | 110. totalt | 3. i klassen
+- Anna Marie Sirevåg | FELITE | 0:15:41 | 22. blant kvinner | 136. totalt | 22. i klassen
+- Gustav Vasdal | M35-39 | 0:17:39 | 345. blant menn | 411. totalt | 33. i klassen
+- June Bui | F30-34 | 0:19:17 | 120. blant kvinner | 811. totalt | 22. i klassen
+- Michael Eriksson | M35-39 | 0:19:23 | 723. blant menn | 849. totalt | 87. i klassen
+- Synøve Brox | F65-69 | 0:20:10 | 173. blant kvinner | 1153. totalt | 1. i klassen
+- Kristian Myhre | M35-39 | 0:20:27 | 1041. blant menn | 1236. totalt | 130. i klassen
+- Johanne Lægran | F25-29 | 0:24:02 | 532. blant kvinner | 2498. totalt | 116. i klassen
+- Anne Myhr | F60-64 | 0:24:09 | 550. blant kvinner | 2547. totalt | 6. i klassen
 
 Resultatkilde: https://live.ultimate.dk/desktop/front/index.php?eventid=7951&ignoreuseragent=true
 Klassifiseringskilde: https://sparta.dk/events/vm-2026/
 Tilgjengelighet: Tid slik leverandørens resultatliste viser den. Chip/offisiell basis er ikke spesifisert i tabellen. Startlistekontroll 18.09: SK Vidar / VM-uttak.
+
+Plasseringer kontrollert 19.09.2026: kjønnsplass, totalplass og klasseplass holdes atskilt. Separate baneklasser har bare klasseplass.
