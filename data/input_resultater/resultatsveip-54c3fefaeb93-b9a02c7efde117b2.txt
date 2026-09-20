@@ -8,6 +8,7 @@ SK Vidar-resultater:
 - Magnus Warvik | M30-34 | 1:06:48 | 143. blant menn | 149. totalt | 10. i klassen
 - Constantin Rust * | M25-29 | 1:07:46 | 169. blant menn | 181. totalt | 24. i klassen
 - Jostein Rogstad | M35-39 | 1:08:29 | 183. blant menn | 200. totalt | 15. i klassen
+- Andreas Fossan | M25-29 | 1:09:03
 - Sondre Tragethon | M30-34 | 1:10:21 | 250. blant menn | 281. totalt | 39. i klassen
 - Erik Rønneberg | M35-39 | 1:10:33 | 259. blant menn | 294. totalt | 30. i klassen
 - Jørgen Korum | M35-39 | 1:10:54 | 281. blant menn | 321. totalt | 34. i klassen
@@ -69,7 +70,6 @@ SK Vidar-resultater:
 - Catherine Berg | F30-34 | 1:34:57 | 1007. blant kvinner | 7564. totalt | 248. i klassen
 - Daniel Espedokken Severinsen | M30-34 | 1:36:10 | 7084. blant menn | 8246. totalt | 1641. i klassen
 - Terje Gravvold | M50-54 | 1:36:18 | 7131. blant menn | 8309. totalt | 401. i klassen
-- Jose Carlos Medellín Corte | M30-34 | 1:36:23 | 7160. blant menn | 8353. totalt | 1655. i klassen
 - Frode Semb | M55-59 | 1:36:34 | 7244. blant menn | 8454. totalt | 232. i klassen
 - Bjarni Herrera Thorisson | M40-44 | 1:36:47 | 7336. blant menn | 8573. totalt | 866. i klassen
 - Reidar Søbstad | M65-69 | 1:37:31 | 7654. blant menn | 8991. totalt | 26. i klassen
@@ -88,8 +88,11 @@ SK Vidar-resultater:
 - Magnus Bækkevar Semb | Ikke oppgitt | 1:50:45 | 13833. blant menn | 18013. totalt
 - Madeleine Christensen | F35-39 | 1:50:58 | 4182. blant kvinner | 18152. totalt | 560. i klassen
 - Vegard Henriksen | M35-39 | 1:54:14 | 15234. blant menn | 20471. totalt | 2490. i klassen
-- Andreas Fossan | M25-29 | 2:01:22 | 17843. blant menn | 25570. totalt | 2728. i klassen
 
 Resultatkilde: https://live.ultimate.dk/desktop/front/index.php?eventid=7952&ignoreuseragent=true
 Klassifiseringskilde: https://worldathletics.org/competitions/world-athletics-road-running-championships/copenhagen26
 Tilgjengelighet: Løpende offisiell resultatliste; innhenting startet 2026-09-20T11:00:38+00:00. Startlistekontroll: SK Vidar / VM-uttak. Detaljvisningen bekrefter nettotid 01:03:06.
+
+Korrigering 20.09.2026: Andreas Fossan 1:09:03, bekreftet av løpsopplysningen og aktivitetstittelen «København halv: 69:03».
+Tidskilde: https://www.strava.com/activities/20251056919
+Plasseringene fra oppføringen med 2:01:22 er fjernet. Kjønns-, total- og klasseplass for 1:09:03 er ikke bekreftet.
