@@ -1,0 +1,15 @@
+Berlin Marathon 2026
+Dato: 27.09.2026
+Distanse: Maraton
+
+SK Vidar-resultater:
+- Erlend Brevik | Menn | 02:29:53 | 301. totalt
+- Jon-Henrik Eskeland | Menn | 02:39:11 | 846. totalt
+- Liselotte Farstad | Kvinner | 03:05:20 | 4604. totalt
+- Madelén Tronstad Sagebakken | Kvinner | 03:32:33 | 11492. totalt
+- Martin Stray Egeberg | Menn | 02:25:34 | 154. totalt
+- Olav Spikkeland | Menn | 02:38:33 | 785. totalt
+
+Resultatkilde: https://berlin.r.mikatiming.com/2026/?content=detail&fpid=search&pid=search&idp=HCH3C0OHF9128&lang=EN_CAP&event=BML_HCH3C0OH37C&num_results=100&search%5Bclub%5D=Sportsklubben+Vidar&search%5Bage_class%5D=%25&search%5Bsex%5D=%25&search%5Bnation%5D=%25&search_sort=name&search_event=BML_HCH3C0OH37C
+Klassifiseringskilde: https://berlin.r.mikatiming.com/2026/?content=detail&fpid=search&pid=search&idp=HCH3C0OHF9128&lang=EN_CAP&event=BML_HCH3C0OH37C&num_results=100&search%5Bclub%5D=Sportsklubben+Vidar&search%5Bage_class%5D=%25&search%5Bsex%5D=%25&search%5Bnation%5D=%25&search_sort=name&search_event=BML_HCH3C0OH37C
+Tilgjengelighet: Godkjent i lokal uke 39-gjennomgang.
