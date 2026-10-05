@@ -1,0 +1,10 @@
+Malmö Marathon
+Dato: 03.10.2026
+Distanse: Maraton
+
+SK Vidar-resultater:
+- Ingunn Monsen | K60 | 4:05:12 | 167. blant kvinner | 779. totalt | 4. i klassen
+
+Resultatkilde: https://results.neptron.se/e/malmomarathon2026?page=146
+Klassifiseringskilde: https://results.neptron.se/e/malmomarathon2026?page=146
+Tilgjengelighet: Hele den offisielle resultatlisten hentet over samtlige 219 sider. Distanse, fødselsår, brutto-/nettotid og plass er kontrollert mot løperdetaljen.
