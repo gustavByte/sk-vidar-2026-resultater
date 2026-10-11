@@ -1,0 +1,11 @@
+Göteborg Marathon 2026
+Dato: 10.10.2026
+Distanse: Maraton
+
+SK Vidar-resultater:
+- Kari Renslo Instefjord | K åpen | 03:15:18 | 3. blant kvinner | 38. totalt
+- Katarina Thraning | K åpen | 03:42:52 | 24. blant kvinner | 118. totalt
+
+Resultatkilde: https://goteborgmarathon.itsyourrace.com/Results/15520/2026/143801/332
+Klassifiseringskilde: https://goteborgmarathon.itsyourrace.com/Results.aspx?id=15520
+Tilgjengelighet: Alle sider for begge distanser hentet; total-, kjønn- og klasseplass er egne kildefelt. Alder oppgitt, fødselsår ikke utledet.

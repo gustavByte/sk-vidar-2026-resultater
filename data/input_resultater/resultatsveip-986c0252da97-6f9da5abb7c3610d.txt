@@ -1,0 +1,16 @@
+Cardiff Half Marathon 2026
+Dato: 04.10.2026
+Distanse: Halvmaraton
+
+SK Vidar-resultater:
+- Åsmund Eek | MSEN | 2:02:44 | 7853. blant menn | 7889. totalt | 3287. i klassen
+- Ida Matre | FSEN | 1:47:35 | 831. blant kvinner | 4685. totalt | 436. i klassen
+- Ole Anders Stokker | MSEN | 1:48:36 | 4697. blant menn | 3766. totalt | 2080. i klassen
+- Vebjørn Løvås | MSEN | 1:41:52 | 3208. blant menn | 2926. totalt | 1453. i klassen
+- Elliot Jones | MSEN | 2:03:33 | 8014. blant menn | 8997. totalt | 3344. i klassen
+- Erlend Sørtveit | MSEN | 1:12:59 | 74. blant menn | 80. totalt | 55. i klassen
+- Magnus Hjellum | MSEN | 1:09:39 | 39. blant menn | 43. totalt | 35. i klassen
+
+Resultatkilde: https://results.poweredbypacer.com/results/2fe02f95-2bd3-4391-8a0d-0642ccd38605/8a5d306d-e76f-4b21-b5a8-950e5b2b11cb?participantId=5d8a1c89-41fa-46a1-bd47-66c1d233e63d
+Klassifiseringskilde: https://www.cardiffhalfmarathon.co.uk/event-info/results/
+Tilgjengelighet: Alle 24 028 fullførende. Kildens nettside runder opp til hele sekunder. Plassering avledet fra hele feltets uavrundede tider etter kildens innstillinger: total=gun, kjønn/klasse=chip.
