@@ -1,0 +1,14 @@
+Rosa sløyfe-løpet Oslo
+Dato: 11.10.2026
+Distanse: 10 km
+
+SK Vidar-resultater:
+- Hannah Altmeier | Kvinner 25-29 | 44:26 | 22. blant kvinner | 81. totalt | 8. i klassen
+- Even Moa Myklebust | Menn 30-34 | 44:35 | 62. blant menn | 85. totalt | 10. i klassen
+- Malin Sommerstad Thomassen | Kvinner 30-34 | 45:21 | 32. blant kvinner | 105. totalt | 9. i klassen
+- Erik Bøhn | Menn 25-29 | 47:42 | 117. blant menn | 174. totalt | 28. i klassen
+- Elin Lippe Stavnes | Kvinner 45-49 | 1:05:11 | 874. blant kvinner | 1292. totalt | 53. i klassen
+
+Resultatkilde: https://my.raceresult.com/364538/results
+Klassifiseringskilde: https://www.sportsidioten.no/resultater/rosa-sloyfe-lopet-oslo-2026/
+Tilgjengelighet: Hele offentlige resultat- og påmeldingslister arkivert. Alternativ visning deduplisert på person-ID og deløp. Tidtaking søndag 11.10; lørdag 10.10 var uten tidtaking. Navn fra DisplayName i resultatlisten.

@@ -1,0 +1,16 @@
+Chicago Marathon
+Dato: 11.10.2026
+Distanse: Maraton
+
+SK Vidar-resultater:
+- Sondre Nordstad Moen | M35-39 | 2:15:49 | 34. blant menn | 37. totalt | 2. i klassen
+- Marius Borkenhagen | M40-44 | 2:49:46 | 1546. blant menn | 1657. totalt | 181. i klassen
+- Thomas Beka | M40-44 | 2:54:33 | 2091. blant menn | 2270. totalt | 283. i klassen
+- Lisbeth Pedersen | K50-54 | 2:57:08 | 214. blant kvinner | 2674. totalt | 2. i klassen
+- Tim Victor Bennett | M60-64 | 3:50:43 | 11924. blant menn | 16960. totalt | 268. i klassen
+- Terje Gravvold | M50-54 | 3:50:49 | 11943. blant menn | 16994. totalt | 950. i klassen
+- Kristin Overvaag | K55-59 | 3:18:12 | 1382. blant kvinner | 7155. totalt | 12. i klassen
+
+Resultatkilde: https://results.chicagomarathon.com/2026/?content=detail&pid=search&event=MAR&idp=2EFG96382E3667
+Klassifiseringskilde: https://results.chicagomarathon.com/2026/?content=detail&pid=search&event=MAR&idp=2EFG96382E3667
+Tilgjengelighet: Offisiell resultatdetalj lest i Chrome 12.10.2026: Place Overall, Place Gender, Place Age Group, Finish Time. Leverandøren betegner resultatene Unofficial Results. Hele NOR-utvalget: 116 oppføringer, 99 med sluttid. Klubbfilteret ble ignorert av leverandøren; ikke full internasjonal dekning.

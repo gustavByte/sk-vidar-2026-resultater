@@ -1,0 +1,22 @@
+Rosa sløyfe-løpet Oslo
+Dato: 11.10.2026
+Distanse: 5 km
+
+SK Vidar-resultater:
+- Thomas Nordbø Berg | Menn 40-44 | 0:18:31 | 15. blant menn | 15. totalt | 1. i klassen
+- Ole Anders Stokker | Menn 30-34 | 0:19:41 | 30. blant menn | 33. totalt | 11. i klassen
+- Mai Watson | Kvinner 35-39 | 0:20:21 | 7. blant kvinner | 54. totalt | 2. i klassen
+- Anna Syrstad | Kvinner 30-34 | 0:20:38 | 8. blant kvinner | 57. totalt | 3. i klassen
+- Øzlem Akdas | Kvinner 40-44 | 0:21:28 | 12. blant kvinner | 75. totalt | 1. i klassen
+- Kjersti Simensen | Kvinner 40-44 | 0:21:39 | 15. blant kvinner | 81. totalt | 2. i klassen
+- Felicia Therese Johannesdatter Volent | Jenter 11-14 | 0:23:47 | 50. blant kvinner | 167. totalt | 2. i klassen
+- Helene Riise Ronglan | Kvinner 25-29 | 0:28:02 | 334. blant kvinner | 571. totalt | 80. i klassen
+- Marita Bergum Sandberg | Kvinner 45-49 | 0:29:03 | 457. blant kvinner | 732. totalt | 20. i klassen
+- Dong Zhang | Menn 30-34 | 0:30:51 | 328. blant menn | 1003. totalt | 63. i klassen
+- Anders Nordby | Menn 50-54 | 0:32:06 | 372. blant menn | 1240. totalt | 18. i klassen
+- Mina Alavi | Jenter 11-14 | 0:33:28 | 1051. blant kvinner | 1464. totalt | 36. i klassen
+- Benjamin Hai Duong | Menn 35-39 | 0:38:31 | 509. blant menn | 2069. totalt | 50. i klassen
+
+Resultatkilde: https://my.raceresult.com/364538/results
+Klassifiseringskilde: https://www.sportsidioten.no/resultater/rosa-sloyfe-lopet-oslo-2026/
+Tilgjengelighet: Hele offentlige resultat- og påmeldingslister arkivert. Alternativ visning deduplisert på person-ID og deløp. Tidtaking søndag 11.10; lørdag 10.10 var uten tidtaking. Navn fra DisplayName i resultatlisten.
