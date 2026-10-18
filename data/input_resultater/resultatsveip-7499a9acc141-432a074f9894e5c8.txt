@@ -1,0 +1,16 @@
+Amsterdam Marathon 2026
+Dato: 18.10.2026
+Distanse: Maraton
+
+SK Vidar-resultater:
+- Kristian Frøyen | Msen | 2:27:49 | 98. blant menn | 111. totalt | 81. i klassen
+- Mari Kittelsen Gaardholm | Vsen | 2:55:12 | 57. blant kvinner | 1255. totalt | 49. i klassen
+- Marion Tibar | V40 | 2:56:30 | 72. blant kvinner | 1490. totalt | 10. i klassen
+- Hege Njå Bjørkmann | V45 | 2:59:00 | 83. blant kvinner | 1681. totalt | 2. i klassen
+- Rune Kavlie | M60 | 2:59:15 | 1992. blant menn | 2099. totalt | 3. i klassen
+- Jan Petter Mork | Msen | 3:03:52 | 2165. blant menn | 2285. totalt | 1034. i klassen
+- Vilde Dille Øvreeide * | Vsen | 3:12:36 | 258. blant kvinner | 3854. totalt | 161. i klassen
+
+Resultatkilde: https://live.ultimate.dk/desktop/front/index.php?eventid=8040&ignoreuseragent=true&pid=20306
+Klassifiseringskilde: https://www.tcsamsterdammarathon.nl/uitslagen
+Tilgjengelighet: Live målresultatliste hentet 2026-10-18T10:37:59+00:00. Feltet er fortsatt i løp; plasseringer kan endres. Detaljen bekrefter netto 2:27:49 og brutto 2:28:26. Plasseringene følger leverandørens brutto-rangering.
