@@ -134,3 +134,136 @@ SK Vidar-resultater:
 Resultatkilde: https://live.ultimate.dk/desktop/front/index.php?eventid=7395&language=no&ignoreuseragent=true
 Klassifiseringskilde: https://www.sportsidioten.no/lop/hytteplanmila-2026/
 Tilgjengelighet: Offisiell vist sluttid, bekreftet mot deltakerens detaljvisning. Netto- og bruttotid bevart separat; ingen generell konvertering mellom dem.
+
+5 km-splitter:
+Første del er offisiell kumulert 5 km-tid. Siste del = sluttid minus 5 km-tid.
+Splitt = siste 5 km minus første 5 km; pluss betyr langsommere siste halvdel.
+Begge deler bruker samme tidsgrunnlag som den publiserte sluttiden.
+
+- Henry McNulty | Første 5 km: 14:38 | Siste 5 km: 15:00 | Splitt: +0:22 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=230&language=en
+- Joakim Mohn | Første 5 km: 14:31 | Siste 5 km: 15:11 | Splitt: +0:40 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=215&language=en
+- Theodor Berre Jacobsen | Første 5 km: 14:46 | Siste 5 km: 14:57 | Splitt: +0:11 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=234&language=en
+- Nicolay Andersen | Første 5 km: 14:31 | Siste 5 km: 15:18 | Splitt: +0:47 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=237&language=en
+- Andreas Fossan | Første 5 km: 14:48 | Siste 5 km: 15:06 | Splitt: +0:18 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=276&language=en
+- David Ormstad Meier | Første 5 km: 14:49 | Siste 5 km: 15:13 | Splitt: +0:24 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=291&language=en
+- Kasper Sørlie-Reininger | Første 5 km: 15:00 | Siste 5 km: 15:37 | Splitt: +0:37 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=341&language=en
+- Constantin Rust * | Første 5 km: 15:17 | Siste 5 km: 15:30 | Splitt: +0:13 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=305&language=en
+- Haakon Engelsen Berg | Første 5 km: 15:17 | Siste 5 km: 15:33 | Splitt: +0:16 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=313&language=en
+- Therese Johaug | Første 5 km: 15:18 | Siste 5 km: 15:32 | Splitt: +0:14 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=2&language=en
+- Trond Einar Moen Pedersli | Første 5 km: 15:18 | Siste 5 km: 15:36 | Splitt: +0:18 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=242&language=en
+- Sondre Lomeland | Første 5 km: 15:00 | Siste 5 km: 15:56 | Splitt: +0:56 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=243&language=en
+- Magnus Warvik | Første 5 km: 15:38 | Siste 5 km: 16:01 | Splitt: +0:23 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=258&language=en
+- Erik Rønneberg | Første 5 km: 15:44 | Siste 5 km: 15:55 | Splitt: +0:11 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=409&language=en
+- Gaute Olberg | Første 5 km: 15:39 | Siste 5 km: 16:09 | Splitt: +0:30 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=327&language=en
+- Tobias Opdalshei Baumann | Første 5 km: 15:57 | Siste 5 km: 15:59 | Splitt: +0:02 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=400&language=en
+- Madelène Wanvik Holum | Første 5 km: 15:40 | Siste 5 km: 16:25 | Splitt: +0:45 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=10&language=en
+- Ådne Andersen | Første 5 km: 15:38 | Siste 5 km: 16:35 | Splitt: +0:57 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=236&language=en
+- Kristian Brenni | Første 5 km: 15:45 | Siste 5 km: 16:34 | Splitt: +0:49 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=394&language=en
+- Ole Jørgen Knoph | Første 5 km: 16:00 | Siste 5 km: 16:22 | Splitt: +0:22 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=370&language=en
+- Thomas Kjellberg | Første 5 km: 15:58 | Siste 5 km: 16:25 | Splitt: +0:27 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=399&language=en
+- Anna Marie Sirevåg | Første 5 km: 15:38 | Siste 5 km: 16:51 | Splitt: +1:13 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=9&language=en
+- Martin Stray Egeberg | Første 5 km: 15:59 | Siste 5 km: 16:30 | Splitt: +0:31 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=2770&language=en
+- Jonas Njerve | Første 5 km: 16:02 | Siste 5 km: 16:32 | Splitt: +0:30 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=402&language=en
+- Vilde Våge Henriksen | Første 5 km: 16:19 | Siste 5 km: 16:21 | Splitt: +0:02 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=14&language=en
+- Bjørn Alexander Hovland | Første 5 km: 16:15 | Siste 5 km: 16:29 | Splitt: +0:14 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=619&language=en
+- Theodor Botten | Første 5 km: 16:22 | Siste 5 km: 16:26 | Splitt: +0:04 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=4798&language=en
+- Fredrik Killerud | Første 5 km: 16:25 | Siste 5 km: 16:25 | Splitt: 00:00 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=393&language=en
+- Jørgen Røkkum Vevang | Første 5 km: 16:24 | Siste 5 km: 16:30 | Splitt: +0:06 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=413&language=en
+- Erlend Brevik | Første 5 km: 16:23 | Siste 5 km: 16:34 | Splitt: +0:11 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=3640&language=en
+- Paul Ogier | Første 5 km: 16:16 | Siste 5 km: 17:01 | Splitt: +0:45 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=4913&language=en
+- Oskar Røynås | Første 5 km: 16:36 | Siste 5 km: 16:49 | Splitt: +0:13 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=5154&language=en
+- Anton Heldal | Første 5 km: 16:44 | Siste 5 km: 16:51 | Splitt: +0:07 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=5078&language=en
+- Simon Tsuruta Pedersen | Første 5 km: 16:29 | Siste 5 km: 17:08 | Splitt: +0:39 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=5074&language=en
+- Christopher Bennett | Første 5 km: 16:38 | Siste 5 km: 17:15 | Splitt: +0:37 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=1925&language=en
+- Jakob Slengesol | Første 5 km: 15:39 | Siste 5 km: 18:22 | Splitt: +2:43 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=316&language=en
+- Magne Eie Ledsaak | Første 5 km: 16:55 | Siste 5 km: 17:10 | Splitt: +0:15 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=3301&language=en
+- Erlend Hellum | Første 5 km: 16:54 | Siste 5 km: 17:19 | Splitt: +0:25 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=1712&language=en
+- Christopher Wiig | Første 5 km: 17:13 | Siste 5 km: 17:12 | Splitt: -0:01 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=1518&language=en
+- Anette Killerud Ødegård | Første 5 km: 17:06 | Siste 5 km: 17:22 | Splitt: +0:16 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=39&language=en
+- Sindre Fanneløb | Første 5 km: 17:11 | Siste 5 km: 17:18 | Splitt: +0:07 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=4203&language=en
+- Mathilde Christin Knutsen | Første 5 km: 17:08 | Siste 5 km: 17:22 | Splitt: +0:14 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=52&language=en
+- Gjermund Fluge Ulleberg | Første 5 km: 17:10 | Siste 5 km: 17:24 | Splitt: +0:14 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=4096&language=en
+- Kristine Meinert Rød | Første 5 km: 17:02 | Siste 5 km: 17:34 | Splitt: +0:32 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=30&language=en
+- Håkon Mindrebøe | Første 5 km: 17:22 | Siste 5 km: 17:21 | Splitt: -0:01 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=570&language=en
+- Aksel Spence | Første 5 km: 17:28 | Siste 5 km: 17:20 | Splitt: -0:08 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=5459&language=en
+- Mikkel Trøstheim | Første 5 km: 17:28 | Siste 5 km: 17:21 | Splitt: -0:07 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=440&language=en
+- Roger Thompson | Første 5 km: 17:12 | Siste 5 km: 17:39 | Splitt: +0:27 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=4609&language=en
+- Jon-Henrik Eskeland | Første 5 km: 17:12 | Siste 5 km: 17:40 | Splitt: +0:28 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=3402&language=en
+- Jonas Virtanen | Første 5 km: 17:20 | Siste 5 km: 17:32 | Splitt: +0:12 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=5150&language=en
+- Emilie Mo | Første 5 km: 17:09 | Siste 5 km: 17:50 | Splitt: +0:41 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=34&language=en
+- Sara Kjeldsen Lie | Ingen offisiell 5 km-passering; splittene står tomme. | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=29&language=en
+- Halvor Myhrvold | Første 5 km: 17:42 | Siste 5 km: 17:30 | Splitt: -0:12 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=853&language=en
+- Mats Muluken Flogeland | Første 5 km: 17:40 | Siste 5 km: 17:40 | Splitt: 00:00 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=1013&language=en
+- Gustav Vasdal | Første 5 km: 17:14 | Siste 5 km: 18:11 | Splitt: +0:57 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=4741&language=en
+- Andreas Haugen Torjussen | Første 5 km: 16:58 | Siste 5 km: 18:31 | Splitt: +1:33 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=2582&language=en
+- Oscar Sperre | Første 5 km: 17:22 | Siste 5 km: 18:11 | Splitt: +0:49 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=4575&language=en
+- Marius Brevik | Første 5 km: 17:59 | Siste 5 km: 17:46 | Splitt: -0:13 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=5022&language=en
+- Joakim Hope Soltveit | Første 5 km: 17:52 | Siste 5 km: 18:16 | Splitt: +0:24 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=617&language=en
+- Livius Sverdrup | Første 5 km: 17:40 | Siste 5 km: 18:43 | Splitt: +1:03 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=1120&language=en
+- Pål Tømmerhol | Første 5 km: 18:22 | Siste 5 km: 18:04 | Splitt: -0:18 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=4966&language=en
+- Thomas Nordbø Berg | Første 5 km: 18:24 | Siste 5 km: 18:34 | Splitt: +0:10 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=919&language=en
+- Gudmund Høglund | Første 5 km: 18:38 | Siste 5 km: 18:27 | Splitt: -0:11 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=4536&language=en
+- Henrik Paus | Første 5 km: 17:59 | Siste 5 km: 19:28 | Splitt: +1:29 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=2206&language=en
+- Haakon Bakke | Første 5 km: 18:38 | Siste 5 km: 18:49 | Splitt: +0:11 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=5006&language=en
+- Erlend Bruaset | Første 5 km: 18:43 | Siste 5 km: 18:45 | Splitt: +0:02 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=2771&language=en
+- Morten Garvik | Første 5 km: 18:36 | Siste 5 km: 18:54 | Splitt: +0:18 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=565&language=en
+- Fredrik Camilo Halsbog | Første 5 km: 18:38 | Siste 5 km: 18:56 | Splitt: +0:18 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=5086&language=en
+- Leon Victor Wold | Første 5 km: 18:47 | Siste 5 km: 18:57 | Splitt: +0:10 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=4775&language=en
+- John Fuller | Første 5 km: 18:51 | Siste 5 km: 18:58 | Splitt: +0:07 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=905&language=en
+- Fredrik Hjorth Bentsen | Første 5 km: 18:54 | Siste 5 km: 19:09 | Splitt: +0:15 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=1277&language=en
+- Ole Jonas Nybø | Første 5 km: 18:58 | Siste 5 km: 19:06 | Splitt: +0:08 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=2725&language=en
+- Marie Bringsvor | Første 5 km: 19:12 | Siste 5 km: 19:14 | Splitt: +0:02 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=5391&language=en
+- Ine Skjellum | Første 5 km: 18:49 | Siste 5 km: 19:41 | Splitt: +0:52 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=162&language=en
+- Børge Bårdsen | Første 5 km: 19:06 | Siste 5 km: 19:40 | Splitt: +0:34 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=3478&language=en
+- Sofie Kjos Bergum | Første 5 km: 19:09 | Siste 5 km: 19:37 | Splitt: +0:28 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=991&language=en
+- Sven Thelin | Første 5 km: 18:56 | Siste 5 km: 19:54 | Splitt: +0:58 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=5681&language=en
+- Petter Østreng | Første 5 km: 18:56 | Siste 5 km: 20:14 | Splitt: +1:18 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=3846&language=en
+- Rune Kvernmo | Første 5 km: 19:44 | Siste 5 km: 19:34 | Splitt: -0:10 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=5502&language=en
+- Ulrika Axelsson | Første 5 km: 19:30 | Siste 5 km: 19:53 | Splitt: +0:23 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=5605&language=en
+- Ragnhild Sølvberg | Første 5 km: 19:07 | Siste 5 km: 20:17 | Splitt: +1:10 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=167&language=en
+- Elise Katrine Amdal | Første 5 km: 18:58 | Siste 5 km: 20:35 | Splitt: +1:37 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=5183&language=en
+- Harald Relling Nielsen | Første 5 km: 19:47 | Siste 5 km: 19:49 | Splitt: +0:02 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=5247&language=en
+- Aksel Anker Solberg-Hansen | Første 5 km: 19:54 | Siste 5 km: 19:45 | Splitt: -0:09 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=5559&language=en
+- Runar Østhaug | Første 5 km: 20:10 | Siste 5 km: 19:46 | Splitt: -0:24 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=3591&language=en
+- Stein Ellingsen * | Første 5 km: 19:53 | Siste 5 km: 20:05 | Splitt: +0:12 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=513&language=en
+- Ruairi Long | Første 5 km: 16:00 | Siste 5 km: 24:00 | Splitt: +8:00 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=421&language=en
+- Silje Solvang | Første 5 km: 19:47 | Siste 5 km: 20:18 | Splitt: +0:31 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=5463&language=en
+- Eldbjørg Moxnes | Første 5 km: 19:46 | Siste 5 km: 20:32 | Splitt: +0:46 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=5618&language=en
+- Ragnhild Aamdal | Første 5 km: 19:53 | Siste 5 km: 20:37 | Splitt: +0:44 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=4510&language=en
+- Erling Syversveen Lie | Første 5 km: 19:56 | Siste 5 km: 20:50 | Splitt: +0:54 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=4963&language=en
+- Simen Hagerup Kjeldsen | Første 5 km: 20:27 | Siste 5 km: 20:24 | Splitt: -0:03 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=3398&language=en
+- Emma Leiner | Første 5 km: 20:10 | Siste 5 km: 20:52 | Splitt: +0:42 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=5327&language=en
+- Sunniva Kveim | Første 5 km: 19:25 | Siste 5 km: 21:38 | Splitt: +2:13 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=900&language=en
+- Synøve Brox | Første 5 km: 20:15 | Siste 5 km: 20:57 | Splitt: +0:42 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=2511&language=en
+- Thomas Misje Mathiisen | Første 5 km: 20:17 | Siste 5 km: 21:09 | Splitt: +0:52 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=974&language=en
+- Sigurd Skomedal Klovning | Første 5 km: 20:48 | Siste 5 km: 20:48 | Splitt: 00:00 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=5129&language=en
+- Karianne Grefsrud Søfting | Første 5 km: 20:06 | Siste 5 km: 21:36 | Splitt: +1:30 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=5177&language=en
+- Mai Watson | Første 5 km: 20:16 | Siste 5 km: 21:33 | Splitt: +1:17 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=5439&language=en
+- Øistein Øverberg | Første 5 km: 20:39 | Siste 5 km: 21:12 | Splitt: +0:33 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=4602&language=en
+- Ger Wijnandus van Graas | Første 5 km: 20:55 | Siste 5 km: 21:15 | Splitt: +0:20 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=2640&language=en
+- Magnus Bækkevar Semb | Første 5 km: 21:10 | Siste 5 km: 21:05 | Splitt: -0:05 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=3344&language=en
+- Magnus Nymoen Rundgren | Første 5 km: 20:20 | Siste 5 km: 21:55 | Splitt: +1:35 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=2180&language=en
+- Vidar Stenset | Første 5 km: 21:20 | Siste 5 km: 21:01 | Splitt: -0:19 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=2172&language=en
+- Noomi Linnea Stenset | Første 5 km: 21:21 | Siste 5 km: 21:00 | Splitt: -0:21 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=1760&language=en
+- Ingrid Skomedal Klovning | Første 5 km: 21:18 | Siste 5 km: 21:06 | Splitt: -0:12 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=3162&language=en
+- Tone Gravvold | Første 5 km: 21:22 | Siste 5 km: 21:10 | Splitt: -0:12 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=1145&language=en
+- Mari Grønning Vatn | Første 5 km: 21:15 | Siste 5 km: 21:22 | Splitt: +0:07 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=5174&language=en
+- Kjersti Simensen | Første 5 km: 21:16 | Siste 5 km: 21:53 | Splitt: +0:37 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=5262&language=en
+- Kristian Myhre | Første 5 km: 21:18 | Siste 5 km: 21:55 | Splitt: +0:37 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=5385&language=en
+- Hanne Kristiansen | Første 5 km: 21:12 | Siste 5 km: 22:11 | Splitt: +0:59 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=3659&language=en
+- Kristine Thomassen | Første 5 km: 21:44 | Siste 5 km: 21:52 | Splitt: +0:08 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=1470&language=en
+- Christopher Aalholm | Første 5 km: 21:27 | Siste 5 km: 22:10 | Splitt: +0:43 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=858&language=en
+- Michael Floater | Første 5 km: 21:25 | Siste 5 km: 22:15 | Splitt: +0:50 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=2106&language=en
+- Håvard Haukdal | Første 5 km: 21:15 | Siste 5 km: 22:47 | Splitt: +1:32 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=1766&language=en
+- Jenny Toftner | Første 5 km: 21:53 | Siste 5 km: 22:16 | Splitt: +0:23 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=2651&language=en
+- Mari Kverneland Simensen | Første 5 km: 21:33 | Siste 5 km: 22:38 | Splitt: +1:05 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=2291&language=en
+- Ida Matre | Første 5 km: 21:51 | Siste 5 km: 22:28 | Splitt: +0:37 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=1694&language=en
+- Reidar Søbstad | Første 5 km: 21:53 | Siste 5 km: 22:39 | Splitt: +0:46 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=2407&language=en
+- Sverre Rynning-Tønnesen | Første 5 km: 22:11 | Siste 5 km: 22:32 | Splitt: +0:21 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=1938&language=en
+- Inger Njølstad | Første 5 km: 22:11 | Siste 5 km: 22:33 | Splitt: +0:22 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=1939&language=en
+- Jeppe Sverdrup | Første 5 km: 17:25 | Siste 5 km: 27:58 | Splitt: +10:33 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=625&language=en
+- Vebjørn Løvås | Første 5 km: 22:02 | Siste 5 km: 23:40 | Splitt: +1:38 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=2368&language=en
+- Gerrard Kennedy | Første 5 km: 23:49 | Siste 5 km: 23:26 | Splitt: -0:23 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=2331&language=en
+- Sofie Gotuholt | Første 5 km: 23:57 | Siste 5 km: 23:46 | Splitt: -0:11 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=3687&language=en
+- Runar Gilberg | Første 5 km: 24:56 | Siste 5 km: 25:37 | Splitt: +0:41 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=2671&language=en
+- Julie Garsiot | Første 5 km: 27:40 | Siste 5 km: 29:55 | Splitt: +2:15 | https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=3370&language=en
