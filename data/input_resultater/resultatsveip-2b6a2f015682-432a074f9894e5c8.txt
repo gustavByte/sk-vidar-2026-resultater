@@ -1,0 +1,16 @@
+Amsterdam Marathon 2026
+Dato: 18.10.2026
+Distanse: Maraton
+
+SK Vidar-resultater:
+- Martine Solli | Vsen | 3:36:11 | 677. blant kvinner | 6472. totalt | 386. i klassen
+- Christian Lillebo | M35 | 3:49:26 | 7343. blant menn | 8433. totalt | 1340. i klassen
+
+Resultatkilde: https://live.ultimate.dk/desktop/front/index.php?eventid=8040&language=en&pid=22829
+Klassifiseringskilde: https://www.sportsidioten.no/resultater/amsterdam-halvmarathon-2026/
+Tilgjengelighet: Hele resultatlisten; mottatte unike rader avstemt mot leverandørens total. Tidsgrunnlag kontrolleres i detaljen. Netto og brutto kontrollert i offisiell detalj. Rangering gjelder brutto innen det aktuelle deløpet.
+
+Mellomtider:
+Samme tidsgrunnlag som sluttiden. Siste del = sluttid minus første del. Ved omregning fra brutto til netto brukes dokumentert startforsinkelse; avrundede kildetider kan gi ett sekund avvik.
+- Martine Solli | Første halvmaraton: 1:40:15 | Siste halvmaraton: 1:55:56 | Splitt: +15:41
+- Christian Lillebo | Første halvmaraton: 1:52:34 | Siste halvmaraton: 1:56:52 | Splitt: +4:18

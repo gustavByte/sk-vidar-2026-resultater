@@ -1,0 +1,18 @@
+Amsterdam Marathon 2026
+Dato: 18.10.2026
+Distanse: Halvmaraton
+
+SK Vidar-resultater:
+- Henning Hellebust | Msen | 1:12:50 | 30. blant menn | 30. totalt | 25. i klassen
+- Jessica Gunnarsson | V | 1:25:12 | 6. blant kvinner | 50. totalt | 6. i klassen
+- Sofie Fosseli | Vsen | 1:35:55 | 213. blant kvinner | 1272. totalt | 140. i klassen
+
+Resultatkilde: https://live.ultimate.dk/desktop/front/index.php?eventid=8040&language=en&pid=20085
+Klassifiseringskilde: https://www.sportsidioten.no/resultater/amsterdam-halvmarathon-2026/
+Tilgjengelighet: Hele resultatlisten; mottatte unike rader avstemt mot leverandørens total. Tidsgrunnlag kontrolleres i detaljen. Netto og brutto kontrollert i offisiell detalj. Rangering gjelder brutto innen det aktuelle deløpet.
+
+Mellomtider:
+Samme tidsgrunnlag som sluttiden. Siste del = sluttid minus første del. Ved omregning fra brutto til netto brukes dokumentert startforsinkelse; avrundede kildetider kan gi ett sekund avvik.
+- Henning Hellebust | Første 10 km: 34:00 | Siste 11,0975 km: 38:50 | Splitt: ulike deldistanser
+- Jessica Gunnarsson | Første 10 km: 40:28 | Siste 11,0975 km: 44:44 | Splitt: ulike deldistanser
+- Sofie Fosseli | Første 10 km: 45:56 | Siste 11,0975 km: 49:59 | Splitt: ulike deldistanser
