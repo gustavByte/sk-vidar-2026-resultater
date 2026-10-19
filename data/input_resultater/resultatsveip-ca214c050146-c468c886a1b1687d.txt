@@ -1,0 +1,14 @@
+Hytteplanmila 2026
+Dato: 17.10.2026
+Distanse: 10 km
+
+SK Vidar-resultater:
+- Mathias Moen | M35-39 | 0:30:26 | 46. blant menn | 46. totalt | 4. i klassen
+
+Resultatkilde: https://live.ultimate.dk/desktop/front/index.php?eventid=7395&language=no&ignoreuseragent=true
+Klassifiseringskilde: https://www.sportsidioten.no/lop/hytteplanmila-2026/
+Tilgjengelighet: Hele resultatlisten; mottatte unike rader avstemt mot leverandørens total. Tidsgrunnlag kontrolleres i detaljen.
+
+Mellomtider:
+Samme tidsgrunnlag som sluttiden. Siste del = sluttid minus første del. Ved omregning fra brutto til netto brukes dokumentert startforsinkelse; avrundede kildetider kan gi ett sekund avvik.
+- Mathias Moen | Første 5 km: 15:00 | Siste 5 km: 15:26 | Splitt: +0:26
