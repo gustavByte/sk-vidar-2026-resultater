@@ -1,0 +1,14 @@
+SPAR Budapest halvmaraton
+Dato: 11.10.2026
+Distanse: Halvmaraton
+
+SK Vidar-resultater:
+- Emma Sandberg Ørjansen | K20-24 | 1:33:56 | 7. blant kvinner | 2. i klassen
+
+Resultatkilde: https://results.futanet.hu/race/2026_spar_21?embed=true
+Klassifiseringskilde: https://marathon.runinbudapest.com/half-marathon/
+Tilgjengelighet: Offisiell nettotid 1:33:56 og kjønns-/klasseplass bekreftet i resultatdiplomet. Kilden bruker W20 for kvinner 20–24 år. Blandet totalplass er ikke oppgitt. Offisiell halvveispassering (Féltáv / Half): 47:22 netto. Siste halvdel er beregnet som 1:33:56 minus 47:22 = 46:34. Splittfeltet er netto: kildeuttaket inneholder passeringer tidligere enn løperens dokumenterte startforsinkelse, så feltet kan ikke være kumulativ bruttotid. Emmas startforsinkelse på 1:00 er derfor ikke trukket fra nettomellomtiden. Kilden viser hele sekunder; ingen ytterligere avrunding er gjort.
+
+Mellomtider:
+Samme tidsgrunnlag som sluttiden. Siste del = sluttid minus første del. Ved omregning fra brutto til netto brukes dokumentert startforsinkelse; avrundede kildetider kan gi ett sekund avvik.
+- Emma Sandberg Ørjansen | Første halvdel: 47:22 | Siste halvdel: 46:34 | Splitt: −0:48
