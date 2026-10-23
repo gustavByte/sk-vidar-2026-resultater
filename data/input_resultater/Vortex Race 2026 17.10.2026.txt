@@ -1,0 +1,15 @@
+Vortex Race
+Dato: 17.10.2026
+Distanse: Motbakke
+Type: Løp opp spiralrampen i Vortex-bygget i Lausanne, Sveits.
+
+SK Vidar-resultater:
+- Riley McGown | startnummer 757 | Menn | 7:53.8 | 3. blant menn | 3. totalt
+
+Resultatkilde: https://sptiming.ch/vortex-race-2026/#1_09B1B9
+Klassifiseringskilde: https://vortexrace.ch/reglement/
+Tilgjengelighet: Resultatlisten og detaljvisningen fra Race Result-arrangement 424923, deltaker-ID 4403, bekrefter 7:53,8 og 3. plass totalt og blant menn, 15,0 sekunder bak vinneren. Listeklassen heter Race 3km, men reglementet beskriver 2,6 km innvendig rampe, ikke en kontrollmålt 3000-meter. Ingen nøyaktig totaldistanse legges til grunn. Resultatet registreres uten kilometerangivelse, WA-poeng eller standarddistanserangering. Offisielle nettomellomtider: Entrée Vortex 0:30,1; Last Lap IN 6:49,7; Finish 7:53,8. Den særskilte siste-runde-tiden er 1:04,1, som også er 7:53,8 minus 6:49,7. De to delene har ulike lengder og sammenlignes ikke som positiv/negativ splitt. API-feltet 200m to go har Exists=false og brukes ikke som en registrert offisiell passering. Ingen avrunding eller omregning fra brutto er gjort. Detaljkilde: https://my3.raceresult.com/424923/details/view?lang=en&mid=0&standalone=false&pid=4403
+
+Mellomtider:
+Samme tidsgrunnlag som sluttiden. Siste del = sluttid minus første del. Ved omregning fra brutto til netto brukes dokumentert startforsinkelse; avrundede kildetider kan gi ett sekund avvik.
+- Riley McGown | Til siste runde: 6:49.7 | Siste runde: 1:04.1 | Splitt: ulike deldistanser
