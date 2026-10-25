@@ -1,0 +1,14 @@
+Van Oers Marathon Brabant 2026
+Dato: 25.10.2026
+Distanse: Maraton
+
+SK Vidar-resultater:
+- Jonatan Risåsen | Msen | 2:58:48 | 34. blant menn | 35. totalt | 12. i klassen
+
+Resultatkilde: https://evenementen.uitslagen.nl/2026/marathonbrabant/details.php?s=565
+Klassifiseringskilde: https://www.marathonbrabant.nl/home/afstanden/van-oers
+Tilgjengelighet: Arrangørens resultatliste: netto 2:58:48, brutto 2:58:55. App/TRACX avviker; arrangørlisten prioriteres. Alle fire offisielle passeringer er bevart.
+
+Offisielle passeringer og kildekontroll:
+Uavklart tidsgrunnlag er bevart som kildeobservasjon og brukes ikke som netto mellomtid. Ingen manglende passering er anslått.
+- Jonatan Risåsen: {"status": "unavailable", "distance_km": 42.195, "cumulative_basis": "chip", "finish_time": "2:58:48", "reported_time": "2:58:55", "chip_time": "2:58:48", "reason": "Offisielle passeringer ved 10,0 km, 21,1 km og 31,0 km samt mål er bevart. Eksakt halvmaratonpunkt 21,0975 km er ikke bekreftet; like halvdeler er derfor ikke beregnet.", "timing_basis_note": "Passeringstabellens mål er lik netto sluttid. Arrangørens utslagen.nl-liste prioriteres foran app/TRACX. Ingen interpolasjon eller omregning fra klokkeslett.", "selected_finish_basis": "chip", "source": {"url": "https://evenementen.uitslagen.nl/2026/marathonbrabant/details.php?s=565", "sha256": "fae3b484dfce9cf497ba69207da11e651c2026767ee1cedfe915d27a8f8824c9", "fetched_at": "2026-10-25T14:23:42+00:00"}, "timing_points": {"10,0 km": "42:15", "21,1 km": "1:29:03", "31,0 km": "2:09:53", "Finish": "2:58:48"}}
