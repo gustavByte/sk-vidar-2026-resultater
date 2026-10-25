@@ -1,0 +1,16 @@
+Fredrikstad Multiconsult Maraton 2026
+Dato: 24.10.2026
+Distanse: Maraton
+
+SK Vidar-resultater:
+- Rune Mortensen | M55-59 | 4:20:04 | 39. blant menn | 50. totalt | 3. i klassen
+- Liv Berit Jegteberg Lystad | K65-69 | 4:34:17 | 14. blant kvinner | 60. totalt | 2. i klassen
+
+Resultatkilde: https://live.eqtiming.com/79791#result:326426-0-1419606-1-1-
+Klassifiseringskilde: https://www.sportsidioten.no/resultater/fredrikstad-maraton-2026/
+Tilgjengelighet: Hele målresultatlisten: 98 rader på Fredrikstad Multiconsult Maraton.
+
+Offisielle passeringer og kildekontroll:
+Uavklart tidsgrunnlag er bevart som kildeobservasjon og brukes ikke som netto mellomtid. Ingen manglende passering er anslått.
+- Rune Mortensen: {"status": "unavailable", "distance_km": 42.195, "checkpoint_km": 21.0975, "first_label": "Første halvmaraton", "second_label": "Siste halvmaraton", "reason": "Hele offisielle stasjonsoppsettet kontrollert: start, 14 km, 28 km og mål. Ingen halvmaratonpassering.", "selected_finish_basis": "chip", "source": {"url": "https://live.eqtiming.com/api/Event/79791", "sha256": "4937846efb3600405a7b5b3098a4f45c2ad99bbc9c00f64ad8fb095aec8a4c76", "fetched_at": "2026-10-25T09:15:45+00:00"}, "timing_points": {}, "other_official_points": [{"distance_km": 14.0, "reported_time": "1:22:39", "chip_time": "1:22:32", "source": {"url": "https://live.eqtiming.com/api/Result/Total/79791/326426?station=1419604&count=20000", "sha256": "1d1e620657cd0cfd7491908a21943af513336ac13164fb2db7b26f4144f66c71", "fetched_at": "2026-10-25T09:34:29+00:00"}}, {"distance_km": 28.0, "reported_time": "2:48:19", "chip_time": "2:48:11", "source": {"url": "https://live.eqtiming.com/api/Result/Total/79791/326426?station=1419605&count=20000", "sha256": "cc35054e72d8bc5e94a296dd93629f1ac903e18bcee95e97ab503ab4aab42c1a", "fetched_at": "2026-10-25T09:34:29+00:00"}}]}
+- Liv Berit Jegteberg Lystad: {"status": "unavailable", "distance_km": 42.195, "checkpoint_km": 21.0975, "first_label": "Første halvmaraton", "second_label": "Siste halvmaraton", "reason": "Hele offisielle stasjonsoppsettet kontrollert: start, 14 km, 28 km og mål. Ingen halvmaratonpassering.", "selected_finish_basis": "chip", "source": {"url": "https://live.eqtiming.com/api/Event/79791", "sha256": "4937846efb3600405a7b5b3098a4f45c2ad99bbc9c00f64ad8fb095aec8a4c76", "fetched_at": "2026-10-25T09:15:45+00:00"}, "timing_points": {}, "other_official_points": [{"distance_km": 14.0, "reported_time": "1:27:51", "chip_time": "1:27:49", "source": {"url": "https://live.eqtiming.com/api/Result/Total/79791/326426?station=1419604&count=20000", "sha256": "1d1e620657cd0cfd7491908a21943af513336ac13164fb2db7b26f4144f66c71", "fetched_at": "2026-10-25T09:34:29+00:00"}}, {"distance_km": 28.0, "reported_time": "2:56:28", "chip_time": "2:56:27", "source": {"url": "https://live.eqtiming.com/api/Result/Total/79791/326426?station=1419605&count=20000", "sha256": "cc35054e72d8bc5e94a296dd93629f1ac903e18bcee95e97ab503ab4aab42c1a", "fetched_at": "2026-10-25T09:34:29+00:00"}}]}

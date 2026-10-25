@@ -1,0 +1,18 @@
+10 km Pacing Bislett 2026
+Dato: 23.10.2026
+Distanse: 5000 m
+
+SK Vidar-resultater:
+- Anton Heldal | M35-39 | 0:16:03 | 2. blant menn | 2. totalt | 2. i klassen
+- Lars Stangeland | M20-34 | 0:17:27 | 18. blant menn | 18. totalt | 5. i klassen
+- Sigve Varslott Aalmo | M20-34 | 0:17:58 | 23. blant menn | 23. totalt | 7. i klassen
+
+Resultatkilde: https://live.ultimate.dk/desktop/front/index.php?eventid=7456&pid=380
+Klassifiseringskilde: https://www.sportsidioten.no/resultater/10-km-pacing-bislett-2026-kvalheimmila/
+Tilgjengelighet: Tid slik leverandørens resultatliste viser den. Chip/offisiell basis er ikke spesifisert i tabellen.
+
+Offisielle passeringer og kildekontroll:
+Uavklart tidsgrunnlag er bevart som kildeobservasjon og brukes ikke som netto mellomtid. Ingen manglende passering er anslått.
+- Anton Heldal: {"status": "unavailable", "distance_km": 5.0, "checkpoint_km": 2.5, "first_label": "Første 2,5 km", "second_label": "Siste 2,5 km", "reason": "Offisiell detaljvisning mangler den aktuelle mellompasseringen.", "selected_finish_basis": "reported", "source": {"url": "https://live.ultimate.dk/desktop/front/data.php?eventid=7456&mode=participantinfo&pid=380&language=en", "sha256": "92d9ad381223f7fa227142e7654842c3d749bd133865a55e0aca96b8be201d13", "fetched_at": "2026-10-25T09:17:16+00:00"}, "timing_points": {"0,2 km": "41", "0,6 km": "1:58", "1 km": "3:11", "1,4 km": "4:31", "1,8 km": "5:45", "2,2 km": "7:08", "2,6 km": "8:28", "3 km": "9:47", "3,4 km": "11:06", "3,8 km": "12:25", "4,2 km": "13:42", "4,6 km": "14:58", "5 km": "16:03"}}
+- Lars Stangeland: {"status": "unavailable", "distance_km": 5.0, "checkpoint_km": 2.5, "first_label": "Første 2,5 km", "second_label": "Siste 2,5 km", "reason": "Offisiell detaljvisning mangler den aktuelle mellompasseringen.", "selected_finish_basis": "reported", "source": {"url": "https://live.ultimate.dk/desktop/front/data.php?eventid=7456&mode=participantinfo&pid=184&language=en", "sha256": "6fdfa13b28604d44a0984358a6c46df0c65a55c94f3caa392ada8c9210262aa5", "fetched_at": "2026-10-25T09:17:17+00:00"}, "timing_points": {"0,2 km": "41", "0,6 km": "2:06", "1 km": "3:31", "1,4 km": "4:58", "1,8 km": "6:24", "2,2 km": "7:51", "2,6 km": "9:17", "3 km": "10:42", "3,4 km": "12:05", "3,8 km": "13:27", "4,2 km": "14:50", "4,6 km": "16:11", "5 km": "17:27"}}
+- Sigve Varslott Aalmo: {"status": "unavailable", "distance_km": 5.0, "checkpoint_km": 2.5, "first_label": "Første 2,5 km", "second_label": "Siste 2,5 km", "reason": "Offisiell detaljvisning mangler den aktuelle mellompasseringen.", "selected_finish_basis": "reported", "source": {"url": "https://live.ultimate.dk/desktop/front/data.php?eventid=7456&mode=participantinfo&pid=317&language=en", "sha256": "b6ac4131be31a5848bcf5e3c506ed67991d83779a82ba086e19dd5cdc4d75606", "fetched_at": "2026-10-25T09:17:17+00:00"}, "timing_points": {"0,2 km": "44", "0,6 km": "2:12", "1 km": "3:40", "1,4 km": "5:05", "1,8 km": "6:31", "2,2 km": "7:57", "2,6 km": "9:24", "3 km": "10:51", "3,4 km": "12:17", "3,8 km": "13:43", "4,2 km": "15:10", "4,6 km": "16:35", "5 km": "17:58"}}
