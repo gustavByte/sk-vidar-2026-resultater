@@ -1,7 +1,7 @@
 import { state, latestWeek, getWeek, getWeekResults } from "../state.js";
 import { escapeHtml, formatCount, formatEventLabel, getEventLabel, normalizeSearchText, preferredScrollBehavior } from "../format.js";
 import { hrefSearch, hrefWeek, replaceHash } from "../router.js";
-import { resultCardHtml, resultTableRowHtml } from "../templates.js";
+import { resultCardHtml, resultTableRowHtml } from "../templates.js?v=20261026-halfway";
 import { hasFinitePoints } from "../derive.js?v=20260710-refresh2";
 
 const current = {

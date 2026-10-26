@@ -30,12 +30,19 @@ export function splitClass(row) {
   return "split-delta--even";
 }
 
+function splitTimeHtml(time, label) {
+  if (!hasValue(time)) {
+    return "—";
+  }
+  return `<span class="split-time-value">${escapeHtml(time)}</span><span class="split-time-label">${escapeHtml(label)}</span>`;
+}
+
 export function resultTableRowHtml(row) {
   const place = displayValue(row.place);
   const classPlace = displayValue(row.class_place);
   const note = displayValue(row.notes_clean);
-  const splitFirst = displayValue(row.split_first_display);
-  const splitSecond = displayValue(row.split_second_display);
+  const splitFirst = splitTimeHtml(row.split_first_display, row.split_first_label || "Første del");
+  const splitSecond = splitTimeHtml(row.split_second_display, row.split_second_label || "Andre del");
   const splitDelta = displayValue(row.split_delta_display);
   const badges = resultBadges(row);
   const wa = Number.isFinite(Number(row.wa_points)) && row.wa_points !== null ? waChip(row.wa_points) : `<span class="muted">—</span>`;
@@ -72,10 +79,10 @@ export function resultCardHtml(row) {
 
   const splitParts = [
     hasValue(row.split_first_display)
-      ? `<span class="result-pill"><strong>${escapeHtml(row.split_first_label || "Split 1")}</strong>${escapeHtml(row.split_first_display)}</span>`
+      ? `<span class="result-pill"><strong>${escapeHtml(row.split_first_label || "Første del")}</strong>${escapeHtml(row.split_first_display)}</span>`
       : "",
     hasValue(row.split_second_display)
-      ? `<span class="result-pill"><strong>${escapeHtml(row.split_second_label || "Split 2")}</strong>${escapeHtml(row.split_second_display)}</span>`
+      ? `<span class="result-pill"><strong>${escapeHtml(row.split_second_label || "Andre del")}</strong>${escapeHtml(row.split_second_display)}</span>`
       : "",
     hasValue(row.split_delta_display)
       ? `<span class="result-pill split-delta ${splitClass(row)}"><strong>Splitt</strong>${escapeHtml(row.split_delta_display)}</span>`
