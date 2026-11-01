@@ -1,0 +1,10 @@
+Kullamannen by UTMB 2026 – Sprint Ultra 100km
+Dato: 30.10.2026
+Distanse: 108 km
+
+SK Vidar-resultater:
+- Steffen Brufladt | 20-34M | 10:11:57 | 8. blant menn | 11. totalt | 1. i klassen
+
+Resultatkilde: https://live.utmb.world/kullamannen/2026/100k
+Klassifiseringskilde: https://live.utmb.world/kullamannen/2026/100k
+Tilgjengelighet: Komplett PROGRESSIVE_RANKING inklusive statusrader, deduplisert på startnummer og kontrollert mot totalRunner. FINAL_RANKING er også arkivert. Offisiell distanse fra static.info; navn på deløpet kan være avrundet. raceTime er varighet og brukes bare som sluttid når isFinisher=true. Separate total-, kjønns- og klasseplasseringer fra ranking.

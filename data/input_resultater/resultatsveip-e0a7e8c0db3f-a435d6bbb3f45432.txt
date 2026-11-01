@@ -1,0 +1,16 @@
+Kondisløpet Elverum
+Dato: 01.11.2026
+Distanse: 10 km
+
+SK Vidar-resultater:
+- Fredrik Sætereng Fyksen | M35-39 | 39:32.6 | 22. blant menn | 28. totalt | 5. i klassen
+- Ger Wijnandus van Graas | M70-74 | 41:47.6 | 37. blant menn | 46. totalt | 1. i klassen
+
+Resultatkilde: https://live.eqtiming.com/81574#result:332893-0-1487537-1-1-
+Klassifiseringskilde: https://www.sportsidioten.no/resultater/kondislopet-elverum-2026/
+Tilgjengelighet: Hele målresultatlisten: 126 rader på 10 km. Arrangør bekrefter kontrollmålt 10 km på gang- og sykkelsti og elektronisk bruttotid. Det offisielle API-et viser samme verdi i rapportert/netto felt, men separat nettotid er ikke dokumentert. Tid med én desimal beholdes ordrett. Deltakerdetalj og stasjonsoppsett viser bare mål; ingen 5 km-passering finnes.
+
+Offisielle passeringer og kildekontroll:
+Uavklart tidsgrunnlag er bevart som kildeobservasjon og brukes ikke som netto mellomtid. Ingen manglende passering er anslått.
+- Fredrik Sætereng Fyksen: {"status": "unavailable", "distance_km": 10, "checkpoint_km": 5, "first_label": "Første 5 km", "second_label": "Siste 5 km", "reason": "Offisielt arrangementsoppsett og deltakerens Result/Contestant/Times er undersøkt. Begge løperne har nøyaktig én passering, Mål. Ingen offisiell 5 km-passering; ikke anslått.", "timing_basis_note": "Bruttotid ifølge arrangøren; bruk rapportert tid. NettoFormatert dupliserer rapportert verdi og dokumenterer ikke separat chiptid.", "selected_finish_basis": "reported", "source": {"url": "https://live.eqtiming.com/api/Result/Contestant/Times/81574/14964647", "sha256": "265472b9ff6409e911e004fcd06e6c949fc20b716e77b4561a8eeb39832a57c8", "fetched_at": "2026-11-01T16:03:10+00:00"}, "timing_points": {"Mål": "39:32.6"}}
+- Ger Wijnandus van Graas: {"status": "unavailable", "distance_km": 10, "checkpoint_km": 5, "first_label": "Første 5 km", "second_label": "Siste 5 km", "reason": "Offisielt arrangementsoppsett og deltakerens Result/Contestant/Times er undersøkt. Begge løperne har nøyaktig én passering, Mål. Ingen offisiell 5 km-passering; ikke anslått.", "timing_basis_note": "Bruttotid ifølge arrangøren; bruk rapportert tid. NettoFormatert dupliserer rapportert verdi og dokumenterer ikke separat chiptid.", "selected_finish_basis": "reported", "source": {"url": "https://live.eqtiming.com/api/Result/Contestant/Times/81574/14961422", "sha256": "3b6b982219d6d60375ca5985445aaf341625aebd66d4453ee742e015b0863bee", "fetched_at": "2026-11-01T16:03:10+00:00"}, "timing_points": {"Mål": "41:47.6"}}

@@ -1,0 +1,14 @@
+Bygdøy Backyard 2026
+Dato: 31.10.2026
+Distanse: 12 runder (80,5 km)
+
+SK Vidar-resultater:
+- Redwan Abdilahi Kahiye | Menn | 8:58:39 | 27. blant menn | 42. totalt
+
+Resultatkilde: https://www.racedays.run/event/bygdoy-backyard-2026/results/
+Klassifiseringskilde: https://www.racedays.run/event/bygdoy-backyard-2026/results/
+Tilgjengelighet: Alle 142 startende i offisiell resultatliste. Tiden er arrangørens sum løpt tid; siste runde bestemmer rangering ved likt rundeantall. Den viste plasseringen er totalplass. Ingen kjønnsplass utledet fra klubbens utvalg. Herreplass 27 fra full herreresultatliste hos Sportsidioten, kontrollert mot alle 142 offisielle kort (26 menn foran). Browserdetalj bekrefter 12 runder, totaldistansen vist som 80,47 km og hovedkort avrundet til 80,5 km. Sum løpt tid 8:58:39; siste runde 39:34.
+
+Offisielle passeringer og kildekontroll:
+Uavklart tidsgrunnlag er bevart som kildeobservasjon og brukes ikke som netto mellomtid. Ingen manglende passering er anslått.
+- Redwan Abdilahi Kahiye: {"status": "unavailable", "distance_km": 80.47, "cumulative_basis": "reported", "finish_time": "8:58:39", "reported_time": "8:58:39", "reason": "Standarddistanse-halvdelssplitt er ikke relevant for backyard. Alle avleste kumulative rundetider bevares som metadata.", "timing_basis_note": "Offisiell sum løpt tid, eksklusive pauser mellom rundene; ikke forløpt tid fra første start. Verdiene er lest fra Totalt-kolonnen, ikke beregnet ved å summere avrundede rundetider.", "selected_finish_basis": "reported", "source": {"url": "https://www.racedays.run/event/bygdoy-backyard-2026/results/", "sha256": "de0216454ec02ba270a7eda270c2f08b56f90d834b5c4949a51bb6a4f750a294", "fetched_at": "2026-11-01T11:42:29+00:00"}, "timing_points": {"Runde 1": "45:09", "Runde 2": "1:29:58", "Runde 3": "2:16:09", "Runde 4": "2:59:42", "Runde 5": "3:42:25", "Runde 6": "4:26:11", "Runde 7": "5:11:21", "Runde 8": "5:59:04", "Runde 9": "6:45:33", "Runde 10": "7:32:48", "Runde 11": "8:19:05", "Runde 12": "8:58:39"}, "other_official_points": [{"distance_km": 6.71, "reported_time": "45:09"}, {"distance_km": 13.41, "reported_time": "1:29:58"}, {"distance_km": 20.12, "reported_time": "2:16:09"}, {"distance_km": 26.82, "reported_time": "2:59:42"}, {"distance_km": 33.53, "reported_time": "3:42:25"}, {"distance_km": 40.24, "reported_time": "4:26:11"}, {"distance_km": 46.94, "reported_time": "5:11:21"}, {"distance_km": 53.65, "reported_time": "5:59:04"}, {"distance_km": 60.35, "reported_time": "6:45:33"}, {"distance_km": 67.06, "reported_time": "7:32:48"}, {"distance_km": 73.77, "reported_time": "8:19:05"}, {"distance_km": 80.47, "reported_time": "8:58:39"}]}

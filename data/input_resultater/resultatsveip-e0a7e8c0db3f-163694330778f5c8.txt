@@ -1,0 +1,12 @@
+Lillomarka Rundt 2026
+Dato: 31.10.2026
+Distanse: 50 km
+
+SK Vidar-resultater:
+- Kristine Green | Damer | 6:26:06 | 3. blant kvinner | 3. i klassen
+- Åsmund Sunde Valseth | Herrer | 5:09:25 | 2. blant menn | 2. i klassen
+- Oliver Halvorseth Sunde | Herrer | 6:13:09 | 19. blant menn | 19. i klassen
+
+Resultatkilde: https://lillomarka-tidtaking-lab.ejh189141.chatgpt.site/
+Klassifiseringskilde: https://lillomarka-tidtaking-lab.ejh189141.chatgpt.site/
+Tilgjengelighet: Arrangørens offentlige API, korrekt race-session og målpost. rank er rangering innen Damer/Herrer, kontrollert mot arrangørens viste tabell og Sportsidioten. Varighet fra elapsedMs, vist i hele sekunder med nedrunding; capturedAt er klokkeslett og brukes ikke som varighet.
