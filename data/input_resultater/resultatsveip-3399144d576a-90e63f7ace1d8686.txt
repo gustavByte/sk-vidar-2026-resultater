@@ -1,0 +1,16 @@
+Lierløpet 1. november 2026
+Dato: 01.11.2026
+Distanse: Halvmaraton
+
+SK Vidar-resultater:
+- Julie Thorp | K23-39 | 1:23:42 | 1. blant kvinner | 9. totalt | 1. i klassen
+- Philip Stenrud | M23-39 | 1:41:35 | 34. blant menn | 38. totalt | 16. i klassen
+
+Resultatkilde: https://live.ultimate.dk/desktop/front/index.php?eventid=7384&ignoreuseragent=true&pid=2430
+Klassifiseringskilde: https://rundrm.no/lierlopet-lopskalender/
+Tilgjengelighet: Hele distanselisten er kontrollert mot leverandørens radtall. Dato 1. november er bekreftet hos arrangøren. Netto/brutto er like; alle tilgjengelige mellompasseringer er bevart, og manglende standardpassering er ikke anslått.
+
+Offisielle passeringer og kildekontroll:
+Uavklart tidsgrunnlag er bevart som kildeobservasjon og brukes ikke som netto mellomtid. Ingen manglende passering er anslått.
+- Julie Thorp: {"status": "unavailable", "distance_km": 21.0975, "checkpoint_km": 10.0, "first_label": "Første 10 km", "second_label": "Siste 11,0975 km", "cumulative_basis": "chip", "finish_time": "1:23:42", "reported_time": "1:23:42", "chip_time": "1:23:42", "reason": "Offisiell detaljvisning har 3,8 km, 9,5 km, 15,3 km og mål, men ingen halvveis- eller 10 km-passering. Standard halvmaratonsplitter er derfor ikke beregnet.", "timing_basis_note": "Offisiell netto- og bruttotid er like. Mellomtidstabellens målpassering er lik sluttiden. Alle tilgjengelige kumulative passeringer er bevart; klokkeslett og avrundede segmenter brukes ikke som varighet.", "selected_finish_basis": "reported", "source": {"url": "https://live.ultimate.dk/desktop/front/data.php?eventid=7384&mode=participantinfo&pid=2430&language=en", "sha256": "66d24712784751dfd6007611dd2087f0047e76a54ec6ee224789a62358f99092", "fetched_at": "2026-11-02T11:30:16+00:00"}, "timing_points": {"3.8 KM": "15:34", "9.5 KM": "38:19", "15.3 KM": "1:01:13", "21.1 KM": "1:23:42"}}
+- Philip Stenrud: {"status": "unavailable", "distance_km": 21.0975, "checkpoint_km": 10.0, "first_label": "Første 10 km", "second_label": "Siste 11,0975 km", "cumulative_basis": "chip", "finish_time": "1:41:35", "reported_time": "1:41:35", "chip_time": "1:41:35", "reason": "Offisiell detaljvisning har 3,8 km, 9,5 km, 15,3 km og mål, men ingen halvveis- eller 10 km-passering. Standard halvmaratonsplitter er derfor ikke beregnet.", "timing_basis_note": "Offisiell netto- og bruttotid er like. Mellomtidstabellens målpassering er lik sluttiden. Alle tilgjengelige kumulative passeringer er bevart; klokkeslett og avrundede segmenter brukes ikke som varighet.", "selected_finish_basis": "reported", "source": {"url": "https://live.ultimate.dk/desktop/front/data.php?eventid=7384&mode=participantinfo&pid=2447&language=en", "sha256": "ebd218df8f0eaba4c0879791799b8060a44464e4f2c90dfd3d7515bed0d60c01", "fetched_at": "2026-11-02T11:30:17+00:00"}, "timing_points": {"3.8 KM": "18:03", "9.5 KM": "45:12", "15.3 KM": "1:12:57", "21.1 KM": "1:41:35"}}
