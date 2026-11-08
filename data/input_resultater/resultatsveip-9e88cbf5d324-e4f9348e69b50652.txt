@@ -1,0 +1,18 @@
+Jessheim Vintermaraton 2026
+Dato: 08.11.2026
+Distanse: 10 km
+
+SK Vidar-resultater:
+- Kristian Brenni | M23-34 | 32:16.0 | 13. blant menn | 13. totalt | 9. i klassen
+
+Resultatkilde: https://live.eqtiming.com/79399#result:325491-0-1488552-1-1-
+Klassifiseringskilde: https://www.vintermaraton.no/
+Tilgjengelighet: Hele målresultatlisten: 1315 rader på 10 km .
+
+Mellomtider:
+Samme tidsgrunnlag som sluttiden. Siste del = sluttid minus første del. Ved omregning fra brutto til netto brukes dokumentert startforsinkelse; avrundede kildetider kan gi ett sekund avvik.
+- Kristian Brenni | Første 5 km: 16:06.7 | Siste 5 km: 16:09.3 | Splitt: +0:02.6
+
+Offisielle passeringer og kildekontroll:
+Uavklart tidsgrunnlag er bevart som kildeobservasjon og brukes ikke som netto mellomtid. Ingen manglende passering er anslått.
+- Kristian Brenni: {"status": "available", "distance_km": 10.0, "checkpoint_km": 5.0, "first_label": "Første 5 km", "second_label": "Siste 5 km", "cumulative_basis": "reported", "cumulative_time": "16:06.7", "finish_time": "32:16.0", "reported_time": "32:16.0", "chip_time": "32:16.0", "halfway_note": "Offisiell 5 km-passering brukes for 10 km.", "timing_basis_note": "Offisiell Formatert brukes både ved kontrollpasseringer og mål. Kildens tidelssekunder beholdes; segmentet etter kontrollen er differansen mellom kumulativ måltid og kontrolltid. Ingen avrundede segmenter summeres. Formatert og NettoFormatert er like ved mål.", "selected_finish_basis": "reported", "source": {"url": "https://live.eqtiming.com/api/Result/Total/79399/325491?station=1488549&count=20000", "sha256": "301816d80bd99b7f15cb28a9bdd4664d543c3192409f59e9de23a06eb27f6851", "fetched_at": "2026-11-08T15:42:58+00:00"}, "timing_points": {"2,7 km": "8:47.3", "5 km": "16:06.7", "7,75 km": "25:00.1", "Forvarsel": "30:29.4", "Mål": "32:16.0"}, "other_official_points": [{"distance_km": 2.717, "reported_time": "8:47.3", "source": {"url": "https://live.eqtiming.com/api/Result/Total/79399/325491?station=1488548&count=20000", "sha256": "4f9201d43cf6b3d7700055bba78f2c871ce138add99d64f6bfc735864d11b36b", "fetched_at": "2026-11-08T15:42:58+00:00"}}, {"distance_km": 5.0, "reported_time": "16:06.7", "source": {"url": "https://live.eqtiming.com/api/Result/Total/79399/325491?station=1488549&count=20000", "sha256": "301816d80bd99b7f15cb28a9bdd4664d543c3192409f59e9de23a06eb27f6851", "fetched_at": "2026-11-08T15:42:58+00:00"}}, {"distance_km": 7.756, "reported_time": "25:00.1", "source": {"url": "https://live.eqtiming.com/api/Result/Total/79399/325491?station=1488689&count=20000", "sha256": "49937f1590464ec30cb55b7b758cc79280f2d91a8b8557ac6b7be558d42c8e89", "fetched_at": "2026-11-08T15:42:58+00:00"}}, {"distance_km": 9.44, "reported_time": "30:29.4", "source": {"url": "https://live.eqtiming.com/api/Result/Total/79399/325491?station=1488551&count=20000", "sha256": "ddf7daff5d74f9122887844aacbcb3df3f651704058aaac348a76a02cc4a62a3", "fetched_at": "2026-11-08T15:42:59+00:00"}}]}
