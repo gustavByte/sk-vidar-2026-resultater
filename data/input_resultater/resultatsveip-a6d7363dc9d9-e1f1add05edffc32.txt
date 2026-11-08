@@ -1,0 +1,14 @@
+Bèrnia Moscatell Trail 2026
+Dato: 08.11.2026
+Distanse: 21 km
+
+SK Vidar-resultater:
+- Maria Bipop | SENIOR-F | 2:41:32 | 1. blant kvinner | 13. totalt | 1. i klassen
+
+Resultatkilde: https://www.mychip.es/r/6ae9b825ee9c5b54dd2c6b84
+Klassifiseringskilde: https://www.mychip.es/m/6a563890c8bb112df3d443eb
+Tilgjengelighet: Hele tilgjengelige mål-listen ved kontrolltidspunktet. Offisielle pos_general, pos_gender og pos_category er separate. Oppgitt terrengdistanse 21 km og 1 150 m stigning fra tidtakerens løpskonfigurasjon. Resultattid er rapportert bruttotid, i samsvar med brukerens oppgitte tid.
+
+Offisielle passeringer og kildekontroll:
+Uavklart tidsgrunnlag er bevart som kildeobservasjon og brukes ikke som netto mellomtid. Ingen manglende passering er anslått.
+- Maria Bipop: {"status": "unavailable", "distance_km": 21.0, "cumulative_basis": "reported", "finish_time": "2:41:32", "reported_time": "2:41:32", "chip_time": "2:41:28", "reason": "Terrengløp uten standardisert halvveispassering. Tilgjengelige offisielle kontrollpasseringer er bevart.", "timing_basis_note": "Kontrollpasseringene bruker rapportert bruttotid. Mål vises i hele sekunder som i brukerens bekreftede resultat; rå bruttotid og nettotid er bevart i kildearkivet. Ingen klokkeslett brukes som varighet.", "selected_finish_basis": "reported", "source": {"url": "https://sfztfth1r1.execute-api.eu-central-1.amazonaws.com/prod/registrations", "sha256": "4298a8375f3a2c63bbf1fe7a40c9d797def083b166282e92732aafe21d17544d", "fetched_at": "2026-11-08T12:08:37+00:00"}, "timing_points": {"6,7 km": "46:23", "14,4 km": "1:58:14", "Mål": "2:41:32"}}

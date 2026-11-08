@@ -1,0 +1,21 @@
+Generali Málaga Marathon 2026
+Dato: 08.11.2026
+Distanse: Halvmaraton
+
+SK Vidar-resultater:
+- Fredrik Camilo Halsbog | M40 | 1:23:53.407 | 189. blant menn | 202. totalt | 27. i klassen
+- Madeleine Christensen | F35 | 2:00:37.976 | 1210. blant kvinner | 3958. totalt | 183. i klassen
+
+Resultatkilde: https://sportmaniacs.com/es/services/inscription/generali-maraton-malaga-2026
+Klassifiseringskilde: https://site.generalimaratonmalaga.com/home
+Tilgjengelighet: Foreløpige live-målresultater fra offisiell Copérnico-tidtaking. Nettotid bevart med API-ens millisekunder. Kjønns- og klasseplass beregnet fra hele mål-listens offisielle totalrekkefølge, ikke fra klubbens utvalg. Kan endres før endelig klassifisering.
+
+Mellomtider:
+Samme tidsgrunnlag som sluttiden. Siste del = sluttid minus første del. Ved omregning fra brutto til netto brukes dokumentert startforsinkelse; avrundede kildetider kan gi ett sekund avvik.
+- Fredrik Camilo Halsbog | Første 10 km: 39:31.664 | Siste 11,0975 km: 44:21.743 | Splitt: ulike deldistanser
+- Madeleine Christensen | Første 10 km: 59:08.333 | Siste 11,0975 km: 1:01:29.643 | Splitt: ulike deldistanser
+
+Offisielle passeringer og kildekontroll:
+Uavklart tidsgrunnlag er bevart som kildeobservasjon og brukes ikke som netto mellomtid. Ingen manglende passering er anslått.
+- Fredrik Camilo Halsbog: {"status": "available", "distance_km": 21.0975, "checkpoint_km": 10.0, "first_label": "Første 10 km", "second_label": "Siste 11,0975 km", "cumulative_basis": "chip", "cumulative_time": "39:31.664", "finish_time": "1:23:53.407", "reported_time": "1:23:53.407", "chip_time": "1:23:53.407", "timing_basis_note": "Offisielt net-felt (millisekunder) brukes både ved passeringer og mål. Ingen avrunding eller omregning fra bruttotid. Ingen offisiell halvveispassering ved 10,54875 km; 10 km og resterende 11,0975 km vises uten positiv/negativ splitt.", "selected_finish_basis": "reported", "source": {"url": "https://public-api.copernico.cloud/api/races/generali-maraton-malaga-2026/ranking/Medio%20Marat%C3%B3n/10K/official/all?fields=nationality%2Cgender%2Ccategory&limit=5000&page=1", "sha256": "943031326b78d7cc3e553a5fc2359f2675ee6c2049ff63cb9d1df40bd5900c80", "fetched_at": "2026-11-08T15:52:24+00:00"}, "timing_points": {"5K": "19:51.148", "10K": "39:31.664", "15K": "59:15.258", "20K": "1:19:36.353", "Meta": "1:23:53.407"}}
+- Madeleine Christensen: {"status": "available", "distance_km": 21.0975, "checkpoint_km": 10.0, "first_label": "Første 10 km", "second_label": "Siste 11,0975 km", "cumulative_basis": "chip", "cumulative_time": "59:08.333", "finish_time": "2:00:37.976", "reported_time": "2:00:37.976", "chip_time": "2:00:37.976", "timing_basis_note": "Offisielt net-felt (millisekunder) brukes både ved passeringer og mål. Ingen avrunding eller omregning fra bruttotid. Ingen offisiell halvveispassering ved 10,54875 km; 10 km og resterende 11,0975 km vises uten positiv/negativ splitt.", "selected_finish_basis": "reported", "source": {"url": "https://public-api.copernico.cloud/api/races/generali-maraton-malaga-2026/ranking/Medio%20Marat%C3%B3n/10K/official/all?fields=nationality%2Cgender%2Ccategory&limit=5000&page=1", "sha256": "943031326b78d7cc3e553a5fc2359f2675ee6c2049ff63cb9d1df40bd5900c80", "fetched_at": "2026-11-08T15:52:24+00:00"}, "timing_points": {"5K": "29:51.519", "10K": "59:08.333", "15K": "1:27:21.834", "20K": "1:55:04.959", "Meta": "2:00:37.976"}}
