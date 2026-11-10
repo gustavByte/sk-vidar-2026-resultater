@@ -1,0 +1,15 @@
+Perseløpet 2026 - testløp
+Dato: 07.11.2026
+Distanse: 5 km
+Type: 5 km på asfalt, Eidsvoll
+
+SK Vidar-resultater:
+- Sonia Slettvåg | startnummer 598 | K11 | 19:39 | 1. blant kvinner | 2. totalt | 1. i klassen
+
+Resultatkilde: https://www.racedays.run/event/perselopet-2026-2026-11-07/results/?tab=results
+Klassifiseringskilde: https://www.racedays.run/event/perselopet-2026-2026-11-07
+Tilgjengelighet: Hele resultatlisten og deltakerlisten har to deltakere, én fra Sportsklubben Vidar. Kildens W11 normaliseres til K11. Eksisterende etablert alias kobler Sonia Nakamura Slettvåg til Sonia Slettvåg, skv-p000306. Offisiell vist chip-sluttid 19:39 beholdes. Rå elapsedChipTime og gun time er begge 00:19:38.8400000, som Racedays viser oppavrundet til helt sekund. Kontrollpunktene er lest i chip-visning: 2,4 km (checkpoint=2390), 09:28, og 2,6 km (checkpoint=2633), 10:29. De bevares som kumulative passeringer med samme netto tidsgrunnlag. Ingen eksakt 2,5 km-passering er tilgjengelig, og ingen halvveispassering eller like deldistanser anslås.
+
+Offisielle passeringer og kildekontroll:
+Uavklart tidsgrunnlag er bevart som kildeobservasjon og brukes ikke som netto mellomtid. Ingen manglende passering er anslått.
+- Sonia Slettvåg: {"status": "available", "distance_km": 5, "cumulative_basis": "chip", "finish_time": "19:39", "reported_time": "19:39", "chip_time": "19:39", "halfway_note": "Offentlig kontrolliste viser 2,4 km og 2,6 km; ingen 2,5 km-kontroll.", "timing_basis_note": "Offisiell vist chip-sluttid 19:39 beholdes. Rå elapsedChipTime og gun time er begge 00:19:38.8400000, som Racedays viser oppavrundet til helt sekund. Kontrollpunktene er lest i chip-visning: 2,4 km (checkpoint=2390), 09:28, og 2,6 km (checkpoint=2633), 10:29. De bevares som kumulative passeringer med samme netto tidsgrunnlag. Ingen eksakt 2,5 km-passering er tilgjengelig, og ingen halvveispassering eller like deldistanser anslås.", "selected_finish_basis": "chip", "source": {"url": "https://www.racedays.run/event/perselopet-2026-2026-11-07/results/?tab=results", "sha256": "0761f6ca6d0710194bcc0c1fe0dba771dc43bfd3ad340177b04ece9504b6a5f0", "fetched_at": "2026-11-10T13:14:35+00:00"}, "timing_points": {"2,4 km": "09:28", "2,6 km": "10:29", "Mål": "19:39"}, "other_official_points": [{"distance_km": 2.39, "chip_time": "09:28", "source": {"url": "https://www.racedays.run/event/perselopet-2026-2026-11-07/results/?tab=results&checkpoint=2390", "fetched_at": "2026-11-10T13:14:35+00:00"}}, {"distance_km": 2.633, "chip_time": "10:29", "source": {"url": "https://www.racedays.run/event/perselopet-2026-2026-11-07/results/?tab=results&checkpoint=2633", "fetched_at": "2026-11-10T13:14:35+00:00"}}]}
